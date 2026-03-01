@@ -1,4 +1,4 @@
-# Whoisnext — Hukuki Dokümantasyon
+# Whoisnextapp — Hukuki Dokümantasyon
 
 WIN (Who is Next?) uygulamasına ait hukuki dökümantasyon ve mevzuat uyum portalının kaynak kodudur. **Next.js** ve **Nextra** ile oluşturulmuştur.
 

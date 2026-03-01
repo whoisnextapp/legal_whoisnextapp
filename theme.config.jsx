@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 
 const SITE_URL = 'https://legal.whoisnextapp.com'
-const DEFAULT_DESCRIPTION = 'Whoisnext uygulamasına ait sözleşmeler, politikalar, prosedürler, topluluk kuralları ve diğer tüm yasal dokümanlar. Hukuki dokümantasyon merkezi.'
+const DEFAULT_DESCRIPTION = 'Whoisnextapp uygulamasına ait sözleşmeler, politikalar, prosedürler, topluluk kuralları ve diğer tüm yasal dokümanlar. Hukuki dokümantasyon merkezi.'
 const SCHEMA_WEBSITE = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -12,7 +12,7 @@ const SCHEMA_WEBSITE = {
       '@type': 'WebSite',
       '@id': `${SITE_URL}/#website`,
       url: SITE_URL,
-      name: 'Whoisnext — Hukuki Dokümantasyon',
+      name: 'Whoisnextapp — Hukuki Dokümantasyon',
       description: DEFAULT_DESCRIPTION,
       publisher: { '@id': `${SITE_URL}/#organization-genesis` },
       inLanguage: 'tr-TR'
@@ -95,21 +95,21 @@ export default {
   useNextSeoProps() {
     const router = useRouter()
     const isHome = router.asPath === '/' || router.asPath === ''
-    const title = isHome ? 'Whoisnext — Hukuki Dokümantasyon' : undefined
-    const titleTemplate = isHome ? undefined : '%s | Whoisnext'
+    const title = isHome ? 'Whoisnextapp — Hukuki Dokümantasyon' : undefined
+    const titleTemplate = isHome ? undefined : '%s | Whoisnextapp'
     return {
       ...(title && { title }),
       ...(titleTemplate && { titleTemplate }),
-      defaultTitle: 'Whoisnext — Hukuki Dokümantasyon',
+      defaultTitle: 'Whoisnextapp — Hukuki Dokümantasyon',
       description: DEFAULT_DESCRIPTION,
       openGraph: {
         type: 'website',
         locale: 'tr_TR',
         url: SITE_URL,
-        site_name: 'Whoisnext — Hukuki Dokümantasyon',
-        title: title || 'Whoisnext — Hukuki Dokümantasyon',
+        site_name: 'Whoisnextapp — Hukuki Dokümantasyon',
+        title: title || 'Whoisnextapp — Hukuki Dokümantasyon',
         description: DEFAULT_DESCRIPTION,
-        images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: 'Whoisnext Legal' }],
+        images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: 'Whoisnextapp Legal' }],
       },
       twitter: {
         cardType: 'summary_large_image',
@@ -124,12 +124,12 @@ export default {
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="tr_TR" />
       <meta property="og:url" content={SITE_URL} />
-      <meta property="og:site_name" content="Whoisnext — Hukuki Dokümantasyon" />
-      <meta property="og:title" content="Whoisnext — Hukuki Dokümantasyon" />
+      <meta property="og:site_name" content="Whoisnextapp — Hukuki Dokümantasyon" />
+      <meta property="og:title" content="Whoisnextapp — Hukuki Dokümantasyon" />
       <meta property="og:description" content={DEFAULT_DESCRIPTION} />
       <meta property="og:image" content={`${SITE_URL}/og-image.png`} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Whoisnext — Hukuki Dokümantasyon" />
+      <meta name="twitter:title" content="Whoisnextapp — Hukuki Dokümantasyon" />
       <meta name="twitter:description" content={DEFAULT_DESCRIPTION} />
       <meta name="twitter:image" content={`${SITE_URL}/og-image.png`} />
       <meta name="author" content="Genesis Hukuk" />
