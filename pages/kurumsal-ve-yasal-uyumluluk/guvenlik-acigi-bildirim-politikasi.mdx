@@ -1,0 +1,542 @@
+# Güvenlik Açığı Bildirim Politikası (Vulnerability Disclosure Policy)
+
+import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
+
+**Son güncelleme:** 17.02.2026 · **Sürüm:** 1.0
+
+Bu politika; **WIN (Who is Next?)** platformu (“**Platform**”) üzerinde veya Platform’a bağlı altyapılarda tespit edilen **güvenlik açıklarının** ve **güvenlik zafiyetlerinin** nasıl bildirileceğini, bu bildirimlerin nasıl değerlendirileceğini ve giderileceğini, güvenlik araştırmacılarının hangi sınırlar içinde test yapabileceğini ve tarafların temel yükümlülüklerini açıklar.
+
+Bu metin; kullanıcı şikayetleri, içerik ihlali bildirimleri veya genel destek talepleri için değil, **teknik güvenlik açıkları** (örn. yetkisiz erişim, veri ifşası, hesap ele geçirme, yetki yükseltme, iş mantığı zafiyetleri, kriptografi/kimlik doğrulama hataları) için hazırlanmıştır.
+
+<Callout type="warning" title="Önemli — Hızlı özet">
+  - Bir güvenlik açığı bulduysanız, lütfen **kamuya açıklamadan** önce bize
+  bildirin: **`[SECURITY_CONTACT_EMAIL]`** (tercihen şifreli/PGP). - **Sosyal
+  mühendislik**, **DDoS/DoS**, **kötü amaçlı yazılım**, **hesap ele geçirme** ve
+  **kullanıcı verisine erişim** teşebbüsü yasaktır. - Testlerinizi **en az
+  etki** ile ve yalnızca **gerekli asgari adımlarla** gerçekleştirin; Platform’u
+  daha zayıf bir durumda bırakmayın. - İstemeden kişisel veriye veya özel
+  içeriğe erişirseniz: **derhal durun**, veriyi çoğaltmayın/indirmeyin, bize
+  bildirin ve talebimiz üzerine **güvenli şekilde silin**. - Bu politika;
+  **KVKK**, **TCK** (özellikle özel hayat/haberleşme gizliliği) ve (uygulanırsa)
+  **GDPR/DSA** çerçevesi ile uyumlu, “**iyi niyetli sorumlu açıklama**
+  (responsible disclosure)” yaklaşımını benimser.
+</Callout>
+
+---
+
+## İlişkili dokümanlar
+
+Bu politika aşağıdaki WIN dokümanlarıyla birlikte okunmalıdır:
+
+<Cards num={3}>
+  <Card title="Kullanım Koşulları" href="/sozlesmeler/kullanim-kosullari">
+    Platform kullanımı, yasak fiiller, hesap güvenliği ve sorumluluk sınırları.
+  </Card>
+  <Card
+    title="Gizlilik Politikası"
+    href="/gizlilik-ve-veri-koruma/gizlilik-politikasi"
+  >
+    Kişisel veri işleme, güvenlik tedbirleri ve veri saklama yaklaşımı.
+  </Card>
+  <Card
+    title="KVKK Aydınlatma Metni"
+    href="/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni"
+  >
+    KVKK kapsamında veri sorumlusu aydınlatması ve kullanıcı hakları.
+  </Card>
+  <Card
+    title="Topluluk Kuralları"
+    href="/topluluk-ve-guvenlik/topluluk-kurallari"
+  >
+    İçerik/iletişim ihlalleri, şikayet mekanizmaları ve yaptırımlar.
+  </Card>
+  <Card
+    title="Kolluk Kuvvetleri Rehberi"
+    href="/kurumsal-ve-yasal-uyumluluk/kolluk-kuvvetleri-rehberi"
+  >
+    Resmî makam taleplerinin alınması ve yanıtlanması standardı.
+  </Card>
+  <Card
+    title="DSA Uyum Sayfası"
+    href="/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi"
+  >
+    AB otoriteleri ve kullanıcı bildirim/itiraz mekanizmaları (uygulanırsa).
+  </Card>
+</Cards>
+
+---
+
+## Bölüm 1: Amaç, kapsam ve dayanak
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölümde politikanın (i) amacı, (ii) hangi varlıkları kapsadığı, (iii)
+  bildirim kanalının hangi konular için kullanılacağı ve (iv) temel mevzuat/ilke
+  çerçevesi açıklanır.
+</Callout>
+
+### 1.1 Amaç
+
+Bu politikanın amaçları:
+
+- Platform’un ve kullanıcıların **güvenliğini artırmak**,
+- Güvenlik açıklarının **hızlı, kontrollü ve ölçülü** şekilde giderilmesini sağlamak,
+- Araştırmacılar için **net bir bildirim kanalı** ve **standart bir süreç** oluşturmak,
+- Bildirimlerin kötüye kullanımını (şantaj, veri sızdırma, panik yaratma vb.) **önlemek**,
+- (Uygulanabilir olduğu ölçüde) KVKK/GDPR kapsamındaki veri güvenliği ve bildirim yükümlülükleri bakımından **hesap verebilirliği** güçlendirmektir.
+
+### 1.2 Kapsam (hangi tür güvenlik bildirimi?)
+
+Bu politika, aşağıdaki tür güvenlik bildirimlerini kapsar (sınırlı olmamak üzere):
+
+- **Yetkilendirme (authorization) zafiyetleri** (IDOR, broken access control),
+- **Kimlik doğrulama oturumu zafiyetleri** (session fixation, token sızıntısı, MFA bypass),
+- **Hesap ele geçirme** (account takeover) riskleri (örn. doğrulama akışı zafiyeti),
+- **Kişisel veri / hassas veri ifşası** (KVKK/GDPR riskleri),
+- **İş mantığı (business logic) zafiyetleri** (ödeme/abonelik, güvenlik doğrulama, kullanıcı engelleme vb.),
+- **Mobil uygulama zafiyetleri** (insecure storage, improper certificate validation vb.),
+- **API zafiyetleri** (rate-limit bypass, object-level authorization),
+- **Kriptografi ve anahtar yönetimi hataları** (uygulanabilir ise),
+- **Üçüncü taraf tedarikçi/SDK kaynaklı güvenlik riskleri** (etkisi Platform’a yansıyorsa).
+
+<Callout type="warning" title="Bu politika hangi konular için değildir?">
+  Bu kanal; genel müşteri desteği, hesap şifre sıfırlama, içerik şikayeti,
+  taciz/tehdit raporu, faturalama anlaşmazlığı veya “ürün önerisi” gibi konular
+  için tasarlanmamıştır. Bu tip talepler için ilgili destek kanallarını kullanın
+  (bkz. [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari) ve ilgili yardım
+  merkezi/iletişim alanı).
+</Callout>
+
+### 1.3 Kapsam içi varlıklar (in-scope)
+
+WIN’in teknik mimarisi ve yayımladığı ürünler zaman içinde değişebilir. Genel yaklaşım:
+
+- **Mobil uygulamalar**: WIN iOS ve Android uygulamaları (resmî mağaza sürümleri),
+- **Web alanları**: `[WIN_PRIMARY_DOMAIN]` (örn. `whoisnextapp.com`) ve ilgili alt alan adları,
+- **API uçları**: `[WIN_API_DOMAINS]` (örn. `api.whoisnextapp.com`, Firebase endpoint’leri vb.),
+- **Dokümantasyon portalı**: bu portalın alan adı ve içerikleri,
+- **Yetkilendirilmiş test ortamları** (varsa): `[WIN_STAGING_ENVIRONMENTS]`.
+
+<details>
+  <summary>**Kapsam içi varlık listesi (doldurulacak)**</summary>
+  <ul>
+    <li>
+      **Web**: <code>[LIST_OF_WEB_DOMAINS_AND_SUBDOMAINS]</code>
+    </li>
+    <li>
+      **API**: <code>[LIST_OF_API_DOMAINS]</code>
+    </li>
+    <li>
+      **Mobil**: <code>[APP_STORE_GOOGLE_PLAY_LISTING_URLS]</code>
+    </li>
+    <li>
+      **Diğer**: <code>[CDN_DOMAINS_PUSH_NOTIFICATION_DOMAINS]</code>
+    </li>
+  </ul>
+</details>
+
+### 1.4 Kapsam dışı (out-of-scope) — genel kurallar
+
+Aşağıdaki faaliyetler, iyi niyetli araştırma kapsamında dahi **kapsam dışıdır** ve kabul edilmez:
+
+- **DDoS/DoS** veya hizmeti kesintiye uğratmaya yönelik stres testleri,
+- **Sosyal mühendislik** (phishing, vishing, smishing) ve çalışan/tedarikçi hedefleme,
+- **Fiziksel saldırılar** (cihaz çalma, ofise erişim, donanım müdahalesi),
+- **Kötü amaçlı yazılım** yerleştirme veya kalıcı arka kapı oluşturma,
+- **Kullanıcı verilerini indirme/çoğaltma** (yalnızca etkisini göstermek için asgari kanıt yeterlidir),
+- Üçüncü taraf sistemlerine (örn. App Store/Google Play, ödeme sağlayıcıları) yönelik saldırılar (Platform’a doğrudan ve somut etkisi yoksa),
+- **Otomatik tarama** ve yüksek hacimli istek gönderimi (ön onay alınmadan).
+
+<Callout type="info" title="Not — otomasyon ve tarama">
+  Küçük ölçekli, hizmeti etkilemeyecek ve veri güvenliğini riske atmayacak
+  otomasyonlar (örn. sınırlı sayıda endpoint’te header kontrolü) bazı
+  programlarda kabul edilebilir. WIN özelinde otomasyon/tarama planınız varsa,
+  **önceden yazılı onay** alınmadan ilerlemeyin.
+</Callout>
+
+### 1.5 Dayanak ve uyum çerçevesi (genel atıf)
+
+Bu politikanın hazırlanmasında ve uygulanmasında, özellikle aşağıdaki düzenlemeler ve ilkeler dikkate alınır:
+
+- **6698 sayılı KVKK** (kişisel verilerin hukuka uygun işlenmesi ve veri güvenliği),
+- **KVKK Aydınlatma Yükümlülüğü Tebliği** (şeffaflık yaklaşımıyla bağlantılı),
+- **5237 sayılı TCK** (özellikle **Md. 132–140** kapsamında haberleşmenin/özel hayatın gizliliği ve kişisel verilerin hukuka aykırı elde edilmesi/ifşası riskleri),
+- **5651 sayılı Kanun** (yer sağlayıcı yükümlülükleri ve trafik verisi/log yaklaşımı),
+- **5809 sayılı Elektronik Haberleşme Kanunu** (iletişim altyapısı ve güvenliğiyle bağlantılı değerlendirmeler),
+- (Uygulanırsa) **GDPR** ve **DSA** (AB kullanıcıları/AB’ye yönelim ve şeffaflık/bildirim mekanizmaları bakımından).
+
+> Not: Bu liste örnek olup, WIN’in faaliyet gösterdiği ülkelere ve teknik mimariye göre ek mevzuat devreye girebilir.
+
+---
+
+## Bölüm 2: Tanımlar
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölümde, politika boyunca kullanılan temel kavramlar tanımlanır.
+</Callout>
+
+| Terim                                  | Açıklama                                                                                                                                                 |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Güvenlik açığı / zafiyet**           | Yetkisiz erişim, veri ifşası, hizmetin bütünlüğünün bozulması veya kullanıcı güvenliğinin zedelenmesiyle sonuçlanabilecek teknik veya iş mantığı hatası. |
+| **Bildirim (rapor)**                   | Araştırmacının bir zafiyeti, teknik ayrıntılarıyla birlikte WIN’e ilettiği yazılı bildirim.                                                              |
+| **Araştırmacı / bildirici**            | Zafiyeti tespit edip iyi niyetle WIN’e bildiren kişi/ekip.                                                                                               |
+| **Kişisel veri**                       | KVKK/GDPR kapsamında kimliği belirli/belirlenebilir kişiye ilişkin her türlü bilgi.                                                                      |
+| **Hassas nitelikli veri**              | KVKK/GDPR kapsamında özel nitelikli/özel kategori veri (örn. biyometrik veri).                                                                           |
+| **Kapsam (scope)**                     | Araştırmanın yapılabileceği varlıklar ve izin verilen test sınırları.                                                                                    |
+| **Good‑faith / iyi niyetli araştırma** | Kullanıcı güvenliğini tehlikeye atmadan, veri minimizasyonu ve zarar vermeme ilkeleriyle, raporlama amacıyla yürütülen araştırma.                        |
+| **Sorumlu açıklama**                   | Zafiyetin, giderilmeden önce kamuya açıklanmaması; giderim sürecinin koordineli yürütülmesi yaklaşımı.                                                   |
+
+---
+
+## Bölüm 3: Bildirim kanalları ve iletişim
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm, güvenlik açıklarının hangi kanallardan bildirileceğini ve güvenli
+  iletişim seçeneklerini açıklar.
+</Callout>
+
+### 3.1 Güvenlik ekibi iletişim noktası (taslak)
+
+<Callout
+  type="warning"
+  title="Taslak (doldurulacak) — Güvenlik bildirim kanalları"
+>
+  - **E‑posta (tercih edilen)**: **`[SECURITY_CONTACT_EMAIL]`** - **PGP /
+  şifreleme anahtarı (varsa)**: `[SECURITY_PGP_KEY_URL_OR_FINGERPRINT]` - **Web
+  formu (varsa)**: `[SECURITY_REPORT_FORM_URL]` - **Bug bounty platformu
+  (varsa)**: `[BUG_BOUNTY_PLATFORM_URL]`
+</Callout>
+
+<Tabs
+  items={[
+    "Güvenlik açığı bildirimi",
+    "Hesap / destek",
+    "İçerik şikayeti",
+    "Resmî talepler",
+  ]}
+>
+  <Tab>
+    **Teknik güvenlik açıkları** (yetkisiz erişim, veri ifşası, auth bypass vb.)
+    için bu politika kapsamında **`[SECURITY_CONTACT_EMAIL]`** kanalını
+    kullanın.
+  </Tab>
+  <Tab>
+    Hesap erişimi/şifre unutma gibi destek konuları için:
+    **`[SUPPORT_URL_OR_EMAIL]`**
+  </Tab>
+  <Tab>
+    Taciz/tehdit, içerik ihlali veya kullanıcı güvenliği şikayetleri için
+    uygulama içi “Bildir/Şikayet Et” akışını ve [Topluluk
+    Kuralları](/topluluk-ve-guvenlik/topluluk-kurallari) sayfasını kullanın.
+  </Tab>
+  <Tab>
+    Mahkeme/savcılık/kolluk talepleri için bkz. [Kolluk Kuvvetleri
+    Rehberi](/kurumsal-ve-yasal-uyumluluk/kolluk-kuvvetleri-rehberi).
+  </Tab>
+</Tabs>
+
+### 3.2 Yanlış kanal örnekleri
+
+- Hesap erişimi/şifre unutma: `[SUPPORT_URL_OR_EMAIL]`
+- İçerik/kişisel güvenlik şikayetleri: uygulama içi “Bildir/Şikayet Et” akışı (bkz. [Topluluk Kuralları](/topluluk-ve-guvenlik/topluluk-kurallari))
+- Resmî makam talepleri: bkz. [Kolluk Kuvvetleri Rehberi](/kurumsal-ve-yasal-uyumluluk/kolluk-kuvvetleri-rehberi)
+
+---
+
+## Bölüm 4: Güvenli ve etik araştırma kuralları
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm, araştırmacıların uyması gereken davranış kurallarını (yapılması
+  gerekenler / yapılmaması gerekenler) ve veri minimizasyonu yaklaşımını
+  belirler.
+</Callout>
+
+### 4.1 Temel prensipler
+
+Araştırma yürütürken şu prensipleri esas alın:
+
+- **Zarar vermeme**: Platform’u kesintiye uğratmayın; performansı düşürmeyin.
+- **Veri minimizasyonu**: Etkiyi kanıtlamak için gereken **asgari** kanıtla yetinin.
+- **Gizlilik**: Erişebileceğiniz herhangi bir veri/içeriği üçüncü kişilerle paylaşmayın.
+- **İyi niyet**: Hedefiniz düzeltme ve güvenlik iyileştirmesi olmalı; şantaj/tehdit yasaktır.
+
+### 4.2 Yapılmaması gerekenler (yasaklı faaliyetler)
+
+Aşağıdakiler yasaktır ve raporun işleme alınmamasına, hesabınızın kısıtlanmasına ve/veya hukuki yollara başvurulmasına neden olabilir:
+
+- **Toplu hesap oluşturma** veya sahte hesaplarla sistematik kötüye kullanım,
+- **Otomatik tarama**/yüksek hacimli istek gönderme (ön onay olmadan),
+- **Sosyal mühendislik** (phishing/vishing/smishing), çalışan veya kullanıcı hedefleme,
+- **DoS/DDoS**, kaynak tüketimi, spam,
+- **Kötü amaçlı yazılım** veya kalıcılık (persistence) girişimleri,
+- Başkalarının hesabına erişim denemeleri, parola tahmini, credential stuffing,
+- Kullanıcı verisini indirme/çoğaltma, mesajları okuma, foto/video arşivleme,
+- “Pivoting” (başka sistemlere sıçrama) ve gereksiz yetki yükseltme denemeleri,
+- Açığı “satma”, broker’lara iletme veya kamuya açıklama.
+
+### 4.3 Kişisel veri / özel içerik ile karşılaşılırsa (zorunlu davranış)
+
+İstemeden kişisel veriye veya özel içeriğe erişirseniz:
+
+<Steps>
+### Adım 1: Derhal durun
+Erişimi genişletmeyin; ek hesap/endpoint denemeleri yapmayın.
+
+### Adım 2: Veriyi çoğaltmayın
+
+İndirmeyin, ekran görüntüsü sayısını asgari tutun, paylaşmayın.
+
+### Adım 3: Güvenlik ekibine bildirin
+
+Elde ettiğiniz minimum kanıtla birlikte hemen bildirin.
+
+### Adım 4: Güvenli silme
+
+Talebimiz üzerine, raporla ilgili verileri **güvenli ve geri döndürülemez** şekilde silin.
+
+</Steps>
+
+<Callout type="warning" title="Önemli">
+  Özel hayatın/haberleşmenin gizliliği ve kişisel verilerin korunması; KVKK ve
+  TCK çerçevesinde yüksek hassasiyet taşır. Bu nedenle “kanıt toplama”
+  gerekçesiyle kullanıcı verisinin kapsamlı şekilde kopyalanması kabul edilmez.
+</Callout>
+
+---
+
+## Bölüm 5: Rapor içeriği (minimum gereksinimler)
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm, bir raporun hızlıca doğrulanabilmesi için hangi bilgileri içermesi
+  gerektiğini listeler.
+</Callout>
+
+### 5.1 Rapor kontrol listesi
+
+Raporunuzda mümkünse şu unsurlar bulunsun:
+
+- **Özet başlık** (tek cümle),
+- **Etkilenen varlık** (domain, uygulama sürümü, endpoint, ekran),
+- **Zafiyet türü** (örn. IDOR, auth bypass, bilgi ifşası),
+- **Adım adım yeniden üretim** (repro steps),
+- **Beklenen vs gerçekleşen davranış**,
+- **Etkisi** (en kötü senaryo + pratik etki),
+- **İstismar edilebilirlik** (hangi koşullarda?),
+- **Kanıt** (asgari ekran görüntüsü/video/PoC kodu),
+- **Önerilen düzeltme** (varsa),
+- **İletişim bilgileri** (geri dönüş için) ve tercih edilen dil.
+
+### 5.2 Hassas bilgileri güvenli paylaşma
+
+Raporunuzda yer alabilecek erişim belirteçleri (token), test hesabı bilgileri veya loglar; mümkünse:
+
+- ayrı bir dosyada,
+- şifreli biçimde,
+- parolası farklı kanaldan iletilerek
+
+paylaşılmalıdır.
+
+---
+
+## Bölüm 6: WIN’in değerlendirme ve çözüm süreci
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm, WIN’in raporu aldıktan sonra izlediği uçtan uca süreci ve hedef geri
+  dönüş zamanlarını açıklar (hedef süreler “SLA” değil, operasyonel
+  hedeflerdir).
+</Callout>
+
+### 6.1 Süreç akışı
+
+<Steps>
+### Adım 1: Alındı onayı
+Rapor kayda alınır ve bildiriciye alındı bilgisi iletilir.
+
+### Adım 2: Ön değerlendirme ve kapsam kontrolü
+
+Raporun kapsam içi olup olmadığı ve temel tekrar üretilebilirlik kontrol edilir; eksik bilgi varsa talep edilir.
+
+### Adım 3: Teknik doğrulama ve sınıflandırma
+
+Zafiyet doğrulanır; etki ve şiddet sınıfı belirlenir; gerekiyorsa geçici önlem uygulanır.
+
+### Adım 4: Düzeltme ve test
+
+Düzeltme geliştirilir; regresyon ve güvenlik testleri yapılır.
+
+### Adım 5: Yayına alma ve izleme
+
+Düzeltme üretime alınır; anomali izleme ve ek kontroller yapılır.
+
+### Adım 6: Kapanış ve geri bildirim
+
+Bildiriciye sonuç bilgisi verilir; uygunsa teşekkür/credit süreci işletilir.
+
+</Steps>
+
+### 6.2 Hedef yanıt süreleri (taslak)
+
+<Callout type="warning" title="Taslak (doldurulacak) — hedef süreler">
+  - **Alındı onayı**: `[ACK_TARGET_BUSINESS_DAYS]` iş günü - **İlk teknik
+  değerlendirme**: `[TRIAGE_TARGET_BUSINESS_DAYS]` iş günü - **Durum
+  güncellemesi**: en az `[STATUS_UPDATE_FREQUENCY_DAYS]` günde bir (devam eden
+  kritik konularda daha sık)
+</Callout>
+
+> Not: Bazı zafiyetler; tedarikçi bağımlılığı, mimari değişiklik veya mağaza onay süreçleri nedeniyle daha uzun sürebilir. Bu durumda bildirici düzenli olarak bilgilendirilir.
+
+---
+
+## Bölüm 7: Şiddet (severity) sınıflandırması ve önceliklendirme
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm, zafiyetlerin nasıl önceliklendirildiğini ve örnek hedef düzeltme
+  sürelerini açıklar.
+</Callout>
+
+WIN, önceliklendirmede (uygulanabilir ise) **CVSS** gibi standartları ve kendi risk değerlendirmesini birlikte kullanabilir.
+
+| Seviye     | Örnekler                                                                                           | Hedef giderim yaklaşımı (taslak)                                 |
+| ---------- | -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| **Kritik** | Toplu veri ifşası, kimlik doğrulama bypass, uzaktan kod çalıştırma, sistematik hesap ele geçirme   | `[CRITICAL_FIX_TARGET_DAYS]` gün içinde acil düzeltme/mitigasyon |
+| **Yüksek** | Tekil kullanıcı verisi ifşası (yüksek etki), yetki yükseltme, ödeme/abonelikte kritik mantık açığı | `[HIGH_FIX_TARGET_DAYS]` gün                                     |
+| **Orta**   | Sınırlı kapsamlı veri ifşası, belirli koşullarda istismar edilebilir zafiyet                       | `[MEDIUM_FIX_TARGET_DAYS]` gün                                   |
+| **Düşük**  | Düşük etkili hatalar, savunma derinliği iyileştirmeleri                                            | `[LOW_FIX_TARGET_DAYS]` gün / planlı iyileştirme                 |
+
+<Callout type="warning" title="Kapsam dışı örnekler (genel)">
+  Tek başına “versiyon bilgisi ifşası”, “güvenlik header’ı eksikliği” (somut
+  istismar olmadan), “self‑XSS”, “clickjacking sadece teorik”, “hizmeti
+  yavaşlatan tarama raporları” gibi bulgular; çoğu programda ödül/eşik kapsamına
+  girmez. WIN, etki ve istismar senaryosuna göre değerlendirme yapar.
+</Callout>
+
+---
+
+## Bölüm 8: Gizlilik, kamuya açıklama ve koordinasyon
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm, raporlanan zafiyetin kamuya açıklanması (public disclosure)
+  konusundaki kuralları ve koordinasyon yaklaşımını belirler.
+</Callout>
+
+### 8.1 Kamuya açıklama yasağı (varsayılan kural)
+
+Bildirilen zafiyet, WIN tarafından yazılı olarak izin verilmedikçe:
+
+- sosyal medya, blog, konferans konuşması,
+- CVE yayını,
+- üçüncü taraf broker/marketplace paylaşımı
+
+gibi yollarla kamuya açıklanmamalıdır.
+
+### 8.2 Koordineli açıklama (responsible disclosure)
+
+WIN; düzeltme yayımlandıktan sonra, uygun görülen hallerde:
+
+- bildiricinin teknik yazı yayımlamasına,
+- açıklamada belirli detayların maskelenmesine,
+- yayımlama tarihinin karşılıklı planlanmasına
+
+yaklaşım olarak olumlu bakar. Koordinasyon, zafiyetin etkisine ve kullanıcı güvenliği riskine göre yürütülür.
+
+---
+
+## Bölüm 9: Ödül / teşekkür (opsiyonel)
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm, bug bounty veya teşekkür yaklaşımını açıklar. Ödül programı yoksa,
+  en azından beklentiler netleştirilir.
+</Callout>
+
+WIN’in **bug bounty (ödül) programı**:
+
+- **Yoksa**: Bu politika bir “ödül taahhüdü” içermez. WIN, uygun görürse teşekkür/recognition sağlayabilir.
+- **Varsa**: Ödül kriterleri, kapsam listesi ve eşik/severity koşulları `[BUG_BOUNTY_PLATFORM_URL]` üzerinden yayımlanır.
+
+<Callout type="warning" title="Ödül uygunluğu (genel prensipler)">
+  - Aynı zafiyeti **ilk bildiren** kişi/ekip önceliklidir. - Raporun **yeniden
+  üretilebilir**, **etkiyi gösterir** ve **kapsam içi** olması gerekir. - Kural
+  ihlali (otomasyon, veri kopyalama, şantaj vb.) ödül/teşekkür uygunluğunu
+  ortadan kaldırabilir.
+</Callout>
+
+---
+
+## Bölüm 10: Güvenli liman (safe harbor) ve hukuki çerçeve
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm, iyi niyetli araştırma yapan kişiler için güvenli liman yaklaşımını
+  ve bu yaklaşımın sınırlarını açıklar.
+</Callout>
+
+WIN, bu politika kapsamında:
+
+- yalnızca **kapsam içi varlıklarda**,
+- yalnızca **gerekli asgari adımlarla**,
+- **kullanıcı verisine zarar vermeden** ve **kötüye kullanım olmaksızın**
+
+iyi niyetli araştırma yapan bildiricilerle iş birliği yapmayı hedefler.
+
+<Callout type="warning" title="Sınırlar">
+  <p>
+    Bu politika; hiçbir kişiye sınırsız test yetkisi vermez ve aşağıdaki
+    durumlarda güvenli liman uygulanmaz:
+  </p>
+  <ul>
+    <li>DoS/DDoS, sosyal mühendislik, şantaj, veri sızdırma</li>
+    <li>kullanıcı verisinin kapsamlı şekilde kopyalanması/çoğaltılması</li>
+    <li>üçüncü taraf sistemlere saldırı</li>
+    <li>kötü amaçlı yazılım veya kalıcılık girişimleri</li>
+    <li>yürürlükteki mevzuata aykırılık</li>
+  </ul>
+</Callout>
+
+> Not: WIN, KVKK/GDPR ve TCK/5651 gibi düzenlemeler çerçevesinde kullanıcı güvenliğini ve veri güvenliğini korumakla yükümlüdür. Bu nedenle güvenlik araştırmaları, her hâlükârda **hukuka uygun** ve **ölçülü** yürütülmelidir.
+
+---
+
+## Bölüm 11: Gizlilik ve veri silme yükümlülüğü
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm, bildirim sürecinde elde edilebilecek bilgilerin gizliliğini ve rapor
+  kapanışında veri silme yaklaşımını düzenler.
+</Callout>
+
+Araştırma sürecinde elde edilebilecek her türlü bilgi (sistem detayları, loglar, konfigürasyonlar, kullanıcı verileri vb.) **gizli** kabul edilir ve yalnızca bu politika kapsamındaki bildirimin amacı için kullanılmalıdır.
+
+WIN; raporun doğrulanması ve giderim için artık gerekli olmadığında, bildiriciden:
+
+- raporla ilgili verileri **güvenli şekilde silmesini**,
+- elinde kalan örnek kayıtları/çıktıları **geri döndürülemez biçimde imha etmesini**
+
+talep edebilir.
+
+---
+
+## Bölüm 12: Üçüncü taraflar ve tedarikçi zafiyetleri
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm, üçüncü taraf servislerdeki bulguların nasıl ele alınacağını açıklar.
+</Callout>
+
+WIN; Firebase, analiz/çökme raporlama, doğrulama/liveness, ödeme altyapısı ve benzeri **üçüncü taraf servisler** kullanabilir. Bir bulgu üçüncü tarafı ilgilendiriyorsa:
+
+- bulgunun Platform’a etkisini (varsa) bize bildirin,
+- üçüncü tarafın kendi güvenlik bildirim kanalına (varsa) da iletilmesi gerekebilir,
+- üçüncü tarafla paylaşılacak bilgi, veri minimizasyonu ilkesine uygun olmalıdır.
+
+---
+
+## Bölüm 13: Değişiklikler
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm, politikanın güncellenmesi ve yürürlük yaklaşımını açıklar.
+</Callout>
+
+WIN; mevzuat değişiklikleri, güvenlik standartları, teknik mimari veya operasyonel ihtiyaçlar nedeniyle bu politikayı güncelleyebilir. Güncel sürüm, uygulama içi "**Yasal**" alanında ve [whoisnextapp.com](https://whoisnextapp.com) üzerinde yayımlanır.
+
+---
+
+## Bölüm 14: İletişim
+
+Güvenlik açığı bildirimi için: **`[SECURITY_CONTACT_EMAIL]`**  
+Genel destek için: `[SUPPORT_URL_OR_EMAIL]`

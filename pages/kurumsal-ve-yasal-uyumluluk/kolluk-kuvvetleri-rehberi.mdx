@@ -1,0 +1,540 @@
+# Kolluk Kuvvetleri Rehberi (Law Enforcement Guidelines)
+
+import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components"
+
+**Son güncelleme:** 13.02.2026 · **Sürüm:** 1.0
+
+Bu rehber; WIN (Who is Next?) (“**Platform**”) tarafından işletilen hizmetler kapsamında, **kolluk kuvvetleri** ve diğer **yetkili resmî makamlar** (mahkemeler, Cumhuriyet başsavcılıkları, düzenleyici/idarî otoriteler vb.) tarafından iletilen **yasal veri taleplerinin** nasıl alınacağını, doğrulanacağını, değerlendirileceğini ve yanıtlanacağını açıklar.
+
+Bu rehber, hem:
+
+- resmî makamların **doğru kanal ve doğru içerikle** talep iletebilmesini,
+- hem de WIN’in talepleri **hukuka uygun**, **ölçülü**, **güvenli** ve **kayıt altına alınmış** şekilde ele almasını
+
+amaçlayan bir standarttır.
+
+<Callout type="warning" title="Önemli — Hızlı özet">
+- WIN, kişisel verileri ve içerikleri **kural olarak gizli** tutar; yalnızca **hukuken zorunlu** veya **hukuken yetkilendirilmiş** durumlarda ve **usulüne uygun** talepler kapsamında veri paylaşır (bkz. Bölüm 3).
+- Tüm taleplerde **kimlik/yetki doğrulaması** yapılır; eksik, belirsiz veya aşırı geniş talepler için **ek bilgi** istenebilir veya talep **reddedilebilir**.
+- Yanıtlar **veri minimizasyonu** ilkesiyle verilir; gereksiz/ölçüsüz kapsam daraltılır ve mümkünse **maskeleme/ayrıştırma** uygulanır.
+- **Acil durum** (hayati tehlike, yakın/geri döndürülemez zarar riski) hallerinde, gerekli koşullar sağlanırsa, WIN **sınırlı veri** paylaşabilir (bkz. Bölüm 8).
+- Bu rehber; WIN’in yürürlükteki mevzuattan doğan yükümlülüklerini ortadan kaldırmaz; ilgili yargı alanında **zorunlu hükümler** saklıdır.
+</Callout>
+
+---
+
+## İlişkili dokümanlar
+
+Bu rehber aşağıdaki WIN dokümanlarıyla birlikte okunmalıdır:
+
+<Cards num={3}>
+  <Card title="Gizlilik Politikası" href="/gizlilik-ve-veri-koruma/gizlilik-politikasi">
+    Veri kategorileri, işleme amaçları, paylaşım temelleri ve saklama yaklaşımı.
+  </Card>
+  <Card title="KVKK Aydınlatma Metni" href="/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni">
+    KVKK kapsamında aydınlatma yükümlülüğü ve ilgili kullanıcı haklarına genel çerçeve.
+  </Card>
+  <Card title="Kullanım Koşulları" href="/sozlesmeler/kullanim-kosullari">
+    Hizmet kuralları, içerik/hesap yönetimi ve ihlal süreçleri.
+  </Card>
+  <Card title="Topluluk Kuralları" href="/topluluk-ve-guvenlik/topluluk-kurallari">
+    Yasa dışı/zararlı içerik ve davranış türleri; bildirim ve yaptırım yaklaşımı.
+  </Card>
+  <Card title="DSA Uyum Sayfası" href="/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi" icon="🇪🇺">
+    AB otoriteleri için iletişim noktaları ve “order/notice & action” süreçleri (uygulanırsa).
+  </Card>
+  <Card title="Şeffaflık Raporları" href="/topluluk-ve-guvenlik/seffaflik-raporlari">
+    Devlet talepleri ve içerik aksiyonlarına ilişkin periyodik istatistik yaklaşımı.
+  </Card>
+  <Card title="Biyometrik Veri Rızası" href="/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza">
+    Selfie/liveness ve benzeri doğrulama süreçlerinde biyometrik verilerin işlenmesine ilişkin çerçeve.
+  </Card>
+  <Card title="Açık Rıza Metinleri" href="/gizlilik-ve-veri-koruma/acik-riza-metinleri">
+    Açık rıza gerektiren veri işleme/aktarımı senaryoları için standart metinler ve yaklaşım.
+  </Card>
+</Cards>
+
+---
+
+## Bölüm 1: Amaç, kapsam ve dayanak
+
+<Callout type="info" title="Bu bölümün özeti">
+Bu bölümde rehberin (i) amacı, (ii) hangi talep türleri ve makamları kapsadığı, (iii) mevzuat referansları ve coğrafi kapsam yaklaşımı açıklanır.
+</Callout>
+
+### 1.1 Amaç
+
+Bu rehberin temel amaçları:
+
+- Resmî makamlardan gelen taleplerin **usulüne uygun** şekilde alınmasını sağlamak,
+- Talepleri **hukuka uygunluk**, **gereklilik-orantılılık** ve **veri minimizasyonu** ilkeleriyle değerlendirmek,
+- Yanıtların **güvenli** biçimde üretilmesini ve iletilmesini sağlamak,
+- Süreçlerin **kayıt altına alınması** ve (uygunsa) **şeffaflık raporlamasına** girdi oluşturmak,
+- Sahte/yanıltıcı talepleri, yetkisiz ifşayı ve kötüye kullanımı **önlemek**.
+
+### 1.2 Kapsam (hangi talepler / hangi makamlar)
+
+Bu rehber, aşağıdaki talep türlerini kapsar (sınırlı olmamak üzere):
+
+- **Bilgi/Belge talepleri**: Hesap/abonelik bilgileri, trafik verisi/loglar, içerik verileri (varsa) vb.
+- **Veri koruma (preservation / legal hold) talepleri**: Belirli bir hesap veya içerik bakımından verinin silinmemesi/korunması.
+- **Acil durum talepleri**: Hayati tehlike veya yakın/geri döndürülemez zarar riski içeren durumlarda sınırlı veri paylaşımı.
+- **İçerik/hesap işlemleri**: Yasa dışı içerik iddiası, erişim engeli/kaldırma, hesap dondurma vb. (coğrafi bağlama göre farklı rejimler devreye girebilir).
+
+Bu rehber, aşağıdaki makam ve yetkili kurumların taleplerini hedefler:
+
+- **Mahkemeler** ve diğer yargı mercileri,
+- **Cumhuriyet başsavcılıkları** ve adlî merciler,
+- **Kolluk kuvvetleri** (polis/jandarma ve uzman birimler dahil),
+- Uygulanabilir olduğu ölçüde **düzenleyici/idarî otoriteler** (örn. belirli ülkelerde dijital hizmet/iletişim/rekabet otoriteleri).
+
+<Callout type="warning" title="Kapsam dışı talepler (özet)">
+- **Özel kişiler** (kullanıcılar, avukatlar, şirketler vb.) tarafından iletilen “bilgi/veri talebi” niteliğindeki başvurular bu rehber kapsamında **doğrudan** karşılanmaz. Bu kişiler, uygun kanalları (örn. KVKK başvurusu, mahkeme/tebligat süreçleri) kullanmalıdır.
+- **Fikri mülkiyet (telif/marka) bildirimleri** için bkz. [Fikri Mülkiyet Politikası](/kurumsal-ve-yasal-uyumluluk/fikri-mulkiyet-politikasi).
+- **Kullanıcı şikayetleri** ve moderasyon bildirimleri için bkz. [Topluluk Kuralları](/topluluk-ve-guvenlik/topluluk-kurallari) ve [DSA Uyum Sayfası](/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi) (uygulanırsa).
+</Callout>
+
+### 1.3 Coğrafi bağlam ve uygulanabilir rejimler (özet)
+
+WIN’in hizmet sunduğu ülke/bölgeler ve veri barındırma mimarisi; taleplere uygulanacak usul ve dayanakları etkileyebilir.
+
+<Tabs items={['Türkiye (5651/TCK)', 'KVKK & GDPR', 'AB (DSA)']}>
+  <Tab>
+    Türkiye’de yer sağlayıcı sorumluluğu, trafik verisi/log saklama yükümlülükleri ve içerik aksiyonları bakımından **5651 sayılı Kanun** ve ilgili ikincil mevzuat dikkate alınır. İçerik türüne göre **TCK** hükümleri (örn. müstehcenlik; haberleşmenin/özel hayatın gizliliği; verilerin hukuka aykırı elde edilmesi/ifşası) devreye girebilir.
+  </Tab>
+  <Tab>
+    Resmî makam talepleri; kişisel verilerin işlenmesi/aktarılması sonucunu doğurabilir. Türkiye’de **KVKK**, AB/AEA’da (ve AB’ye hizmet sunulması halinde) **GDPR** ilkeleri (amaçla sınırlılık, veri minimizasyonu, güvenlik, saklama süreleri, hesap verebilirlik) birlikte gözetilir.
+  </Tab>
+  <Tab>
+    AB’de hizmet sunulması halinde; bazı durumlarda AB otoritelerinin “bilgi sağlama emri” veya “yasa dışı içeriğe karşı işlem emri” gibi araçları **DSA** kapsamında gündeme gelebilir. AB otoriteleri için iletişim noktası ve süreçler için bkz. [DSA Uyum Sayfası](/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi).
+  </Tab>
+</Tabs>
+
+### 1.4 Dayanak mevzuat (genel atıf)
+
+WIN’in kolluk taleplerine yaklaşımı, özellikle aşağıdaki düzenlemeler dikkate alınarak kurgulanır:
+
+- **6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK)**.
+- **KVKK Aydınlatma Yükümlülüğü Tebliği** (aydınlatma içeriği/formatı; bildirim/şeffaflık yaklaşımıyla bağlantılı).
+- **Kişisel Verilerin Yurt Dışına Aktarılması Yönetmeliği** (sınır ötesi veri aktarımı çerçevesi; özellikle veri barındırma/tedarikçi mimarisi ile bağlantılı).
+- **5651 sayılı Kanun** (internet ortamında yapılan yayınlar; yer sağlayıcı sorumluluğu ve trafik verisi/log yükümlülükleri).
+- **5237 sayılı Türk Ceza Kanunu (TCK)** — özellikle:
+  - **Md. 226 (Müstehcenlik)**,
+  - **Md. 132–140 (Özel hayata/haberleşmeye karşı suçlar; kişisel verilerin hukuka aykırı kaydı/ele geçirilmesi/ifşası)**.
+- **5809 sayılı Elektronik Haberleşme Kanunu** (iletişim altyapısı ve güvenliğiyle bağlantılı değerlendirmeler kapsamında).
+- **GDPR** (AB kullanıcıları ve sınır ötesi veri aktarımı bağlamında).
+- **Digital Services Act (DSA)** (AB’de hizmet sunulması halinde; otoritelerle iletişim ve emir/notice süreçleri).
+
+> Not: Bu liste örnek olup, WIN’in faaliyet gösterdiği ülkelere göre ek mevzuat veya farklı usuller uygulanabilir.
+
+---
+
+## Bölüm 2: Tanımlar
+
+<Callout type="info" title="Bu bölümün özeti">
+Bu bölümde, rehber boyunca kullanılan temel kavramlar tanımlanır.
+</Callout>
+
+| Terim | Açıklama |
+|---|---|
+| **Kolluk kuvvetleri** | Polis/jandarma ve uzman birimler dahil olmak üzere suçun önlenmesi/soruşturulmasıyla görevli yetkili birimler. |
+| **Yetkili resmî makam** | Mahkeme, savcılık, kolluk veya ilgili düzenleyici/idarî otorite gibi, talep yöneltmeye kanunen yetkili kurum. |
+| **Yasal talep / yasal süreç** | Usulüne uygun düzenlenmiş ve yetkili makam tarafından iletilmiş; hukuki dayanağı bulunan yazılı talep/karar/emir. |
+| **Trafik verisi / log** | Hizmetin sunumu sırasında oluşan teknik kayıtlar (örn. IP, zaman damgası, cihaz/oturum bilgileri gibi) — kapsam, ilgili mevzuata ve teknik mimariye göre değişebilir. |
+| **İçerik verisi** | Profil içerikleri, fotoğraf/video, mesajlaşma içerikleri, raporlama/şikayet ekleri gibi kullanıcı tarafından üretilen veya hizmet sırasında oluşan içerikler (varsa). |
+| **Hesap verisi** | Hesap kimlik ve profil bilgileri, doğrulama durumları, ayar tercihleri, abonelik/purchase kayıtları gibi hesapla ilişkili veriler. |
+| **Koruma (preservation / legal hold)** | Belirli verilerin silinmesini/üzerine yazılmasını önlemek üzere geçici süreyle “hukuki koruma” altına alınması. |
+| **Acil durum** | Bir kişinin hayatı, beden bütünlüğü veya benzeri temel menfaatleri açısından yakın ve ciddi risk içeren durumlar. |
+| **Veri minimizasyonu** | İstenen amaç için gerekli olmayan verinin paylaşılmaması; kapsamın daraltılması ve mümkünse maskeleme uygulanması. |
+
+---
+
+## Bölüm 3: Taleplerin değerlendirilmesinde temel ilkeler
+
+<Callout type="info" title="Bu bölümün özeti">
+Bu bölüm, WIN’in tüm resmî makam taleplerinde uyguladığı değerlendirme ilkelerini ve karar kriterlerini açıklar.
+</Callout>
+
+### 3.1 Hukuka uygunluk ve usule uygunluk
+
+WIN:
+
+- yalnızca **yetkili makam** tarafından,
+- **usulüne uygun** biçimde iletilen,
+- **hukuki dayanağı** açık olan
+
+talep/kararlar kapsamında veri paylaşır.
+
+### 3.2 Gereklilik ve orantılılık (kapsam kontrolü)
+
+Talepler, amaçla bağlantılı olacak şekilde **kapsam, süre ve veri kategorisi** bakımından değerlendirilir. Aşırı geniş veya belirsiz taleplerde:
+
+- kapsam daraltılması istenir,
+- belirli hesap/olayla ilişkilendirme talep edilir,
+- gerekirse talep reddedilir veya kısmen karşılanır.
+
+### 3.3 Veri minimizasyonu ve ayrıştırma
+
+WIN, **en az veri** ile amaç gerçekleştirme prensibini benimser. Uygulanabilir olduğu ölçüde:
+
+- üçüncü kişilere ait veriler **ayıklanır**,
+- gereksiz alanlar **maskelenir**,
+- yalnızca ilgili zaman aralığı/olay ile sınırlı çıktı üretilir.
+
+### 3.4 Güvenlik, gizlilik ve bütünlük
+
+Talepler ve yanıtlar:
+
+- **yetkili ekipler** tarafından,
+- **ihtiyaç oldukça** erişim prensibiyle,
+- **güvenli iletişim** yöntemleri kullanılarak
+
+işlenir/iletilir.
+
+### 3.5 Şeffaflık ve kullanıcı bilgilendirmesi
+
+Kural olarak WIN, kullanıcıları etkileyen talepler konusunda **bildirim** yaklaşımını benimser. Ancak:
+
+- kanunen yasaklanmışsa,
+- soruşturmayı tehlikeye düşürme riski varsa,
+- bir kişinin güvenliğine yönelik risk varsa
+
+bildirim ertelenebilir veya yapılmayabilir (bkz. Bölüm 9).
+
+### 3.6 Kayıt altına alma ve hesap verebilirlik
+
+WIN, talepleri ve yanıtları:
+
+- iç sistemlerde kayıt altına alır,
+- gerekirse denetim/inceleme için iz bırakır,
+- uygun olduğu ölçüde şeffaflık raporlamasında istatistiksel olarak kullanır (bkz. [Şeffaflık Raporları](/topluluk-ve-guvenlik/seffaflik-raporlari)).
+
+---
+
+## Bölüm 4: Talep iletme kanalları ve kimlik doğrulama
+
+<Callout type="info" title="Bu bölümün özeti">
+Bu bölüm, resmî makamların talepleri hangi kanallardan iletebileceğini, WIN’in kimlik/yetki doğrulamasını nasıl yaptığını ve kabul edilen formatları açıklar.
+</Callout>
+
+### 4.1 Resmî iletişim noktası (taslak)
+
+<Callout type="warning" title="Taslak (doldurulacak) — Kolluk talepleri iletişim kanalları">
+- **Resmî talep e-postası**: `[LAW_ENFORCEMENT_CONTACT_EMAIL]`
+- **Acil durum e-postası (hayati tehlike)**: `[EMERGENCY_DISCLOSURE_EMAIL]`
+- **KEP / e-tebligat (varsa)**: `[KEP_ADDRESS_OR_UETS_INFO]`
+- **Posta adresi / tebligat adresi**: `[SERVICE_OF_PROCESS_ADDRESS]`
+- **Telefon (yalnızca doğrulama ve koordinasyon)**: `[LAW_ENFORCEMENT_PHONE]`
+- **PGP / şifreleme anahtarı (varsa)**: `[PGP_KEY_URL_OR_FINGERPRINT]`
+</Callout>
+
+> Not: AB otoriteleri için DSA Art. 11 iletişim noktası, yayımlanmışsa [DSA Uyum Sayfası](/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi) üzerinden takip edilmelidir.
+
+### 4.2 Talep formatı ve kabul edilen belgeler
+
+Taleplerin aşağıdaki nitelikleri taşıması beklenir:
+
+- **Yazılı** ve **resmî** nitelikte olması (ıslak imza / güvenli elektronik imza / resmî sistem üzerinden),
+- Talep eden makam/personelin **kimlik ve yetkisinin** anlaşılır olması,
+- **Dosya/evrak numarası**, **tarih** ve **hukuki dayanak** içermesi,
+- Talebin **kapsamının** (hesap/olay, veri kategorisi, zaman aralığı) belirli olması.
+
+WIN, yalnızca telefonla yapılan “sözlü” talepleri veya resmî kimliği doğrulanamayan başvuruları **işleme almaz**.
+
+### 4.3 Kimlik ve yetki doğrulaması (WIN’in yaptığı kontroller)
+
+WIN, talepleri değerlendirirken (uygulanabilir olduğu ölçüde) aşağıdaki kontrolleri yapabilir:
+
+- Talep eden kişinin kurum e-posta alan adı / resmî iletişim bilgisi doğrulaması,
+- İmza/kaşe/e-imza doğrulaması,
+- Kurumun resmî kanalları üzerinden geri arama ile teyit,
+- Talep içeriğinin usul ve kapsam açısından kontrolü.
+
+<Callout type="info" title="Sahte taleplere karşı koruma">
+Sahte veya kimliği belirsiz talepler, kullanıcı güvenliği ve veri güvenliği açısından yüksek risk taşır. Bu nedenle WIN; doğrulama adımlarını tamamlamadan veri paylaşmayabilir.
+</Callout>
+
+### 4.4 Yanıt süreleri (hedef yaklaşım)
+
+Yanıt süreleri; talebin kapsamına, teknik elde edilebilirliğe ve talebin eksiksizliğine göre değişebilir. Genel hedef yaklaşım:
+
+- **Eksiksiz standart talepler**: `[STANDARD_REQUEST_TARGET_DAYS]` iş günü içinde yanıtlanması hedeflenir.
+- **Koruma (preservation) talepleri**: doğrulama sonrası mümkün olan en kısa sürede işleme alınır.
+- **Acil durum talepleri**: doğrulama ve aciliyet kriterleri sağlanırsa, mümkün olan en kısa sürede yanıtlanır.
+
+> Not: Eksik/belirsiz taleplerde ek bilgi istenmesi, yanıt süresini uzatabilir.
+
+---
+
+## Bölüm 5: Talepte bulunması gereken asgari bilgiler
+
+<Callout type="info" title="Bu bölümün özeti">
+Bu bölüm, talebin işleme alınabilmesi için gerekli asgari alanları ve iyi uygulama önerilerini listeler.
+</Callout>
+
+### 5.1 Asgari alanlar (checklist)
+
+| Alan | Neden gerekli? |
+|---|---|
+| **Talep eden kurum/otorite** ve birim | Yetki/doğrulama için. |
+| **Talep eden kişinin adı-soyadı, unvanı** | İletişim ve yetki teyidi için. |
+| **Resmî iletişim bilgileri** (telefon/e-posta) | Doğrulama ve geri dönüş için. |
+| **Dosya/evrak numarası ve tarih** | Kayıt ve izlenebilirlik için. |
+| **Hukuki dayanak** (kanun maddesi/karar türü vb.) | Hukuka uygunluk değerlendirmesi için. |
+| **Talebin amacı** (özet) | Kapsam/orantılılık değerlendirmesi için. |
+| **İstenen veri kategorileri** | Veri minimizasyonu ve doğru çıktı için. |
+| **Zaman aralığı** | Aşırı geniş kapsamı önlemek ve doğru filtreleme için. |
+| **Hesap/İçerik tanımlayıcıları** | Doğru hesabı tespit için. |
+| **Gizlilik/bildirim yasağı** (varsa) | Kullanıcı bilgilendirmesi değerlendirmesi için. |
+| **Teslim yöntemi** (tercih) | Güvenli iletim planı için. |
+
+### 5.2 Hesap/İçerik tanımlayıcıları (örnekler)
+
+Taleplerin hızlı ve doğru şekilde karşılanabilmesi için, mümkünse aşağıdakilerden en az biri sağlanmalıdır:
+
+- Uygulama içi **kullanıcı ID** / hesap numarası: `[WIN_USER_ID_EXAMPLE]`
+- Kullanıcının kayıtlı **telefon numarası** veya **e-posta** (varsa)
+- Profil **kullanıcı adı** (handle) veya profilin uygulama içi **link/ekran görüntüsü**
+- İlgili içerik için **içerik ID** / mesaj ID / rapor ID (varsa)
+
+<Callout type="warning" title="Önemli not">
+Sadece ad-soyad veya genel profil tanımı ile yapılan talepler, yanlış eşleştirme riskini artırır ve ek bilgi gerektirir.
+</Callout>
+
+### 5.3 Talep şablonu (öneri)
+
+<details>
+  <summary>**Önerilen talep şablonu (kopyala‑yapıştır)**</summary>
+
+  - **Kurum/Otorite**: …
+  - **Birim**: …
+  - **Talep Eden** (Ad‑Soyad / Unvan): …
+  - **İletişim** (telefon / resmî e‑posta): …
+  - **Dosya/Evrak No**: …
+  - **Tarih**: …
+  - **Hukuki Dayanak**: …
+  - **Talebin Amacı (özet)**: …
+  - **Talep Türü**: (bilgi talebi / preservation / acil durum / içerik kaldırma vb.)
+  - **Hesap Tanımlayıcıları**: (user ID / telefon / e‑posta / handle / içerik ID)
+  - **İstenen Veri Kategorileri**: (hesap bilgisi / log / içerik / ödeme vb.)
+  - **Zaman Aralığı**: …
+  - **Gizlilik/Bildirim Kısıtı** (varsa): …
+  - **Teslim Tercihi** (şifreli e‑posta / güvenli link / KEP vb.): …
+</details>
+
+---
+
+## Bölüm 6: WIN’in talep değerlendirme ve yanıt süreci (uçtan uca)
+
+<Callout type="info" title="Bu bölümün özeti">
+Bu bölüm, WIN’in bir resmî talebi aldıktan sonra izlediği operasyonel ve hukuki adımları (kayıt → doğrulama → kapsam → çıktı → güvenli iletim → kapanış) adım adım açıklar.
+</Callout>
+
+<Steps>
+### Adım 1: Talebin alınması ve kayıt altına alınması
+Talep, resmî kanaldan alındığında benzersiz bir “talep kaydı” oluşturulur; dosya/evrak numarası, tarih, talep eden kurum ve kapsam not edilir.
+
+### Adım 2: Kimlik ve yetki doğrulaması
+Talep eden kişinin kurumsal kimliği ve yetkisi doğrulanır. Gerekirse resmî kanallardan geri dönüş/teyit yapılır.
+
+### Adım 3: Hukuki dayanak ve kapsam değerlendirmesi
+Talebin hukuki dayanağı, veri kategorileri, zaman aralığı ve hesap tanımlayıcıları kontrol edilir. Aşırı geniş/belirsiz taleplerde ek bilgi istenir veya kapsam daraltılır.
+
+### Adım 4: Veri çıkarımı ve minimizasyon
+Sadece talep kapsamına giren veriler çıkarılır. Üçüncü kişilere ait veriler ve gereksiz alanlar mümkünse ayıklanır/maskeleme yapılır.
+
+### Adım 5: Güvenli iletim
+Yanıt, talep eden makama güvenli yöntemle iletilir (örn. şifreli dosya, güvenli link, KEP vb.). İletim kanalı ve teslim teyidi kaydedilir.
+
+### Adım 6: Kapanış, saklama ve raporlama
+Talep kaydı kapatılır; yanıt dosyaları ve işlem logları ilgili saklama politikalarına uygun biçimde saklanır. Uygunsa şeffaflık raporlaması için istatistiksel veri üretilir.
+</Steps>
+
+---
+
+## Bölüm 7: Talep türleri ve yanıt kapsamı
+
+<Callout type="info" title="Bu bölümün özeti">
+Bu bölüm, sık görülen talep türlerini ve her tür bakımından WIN’in (i) beklediği asgari koşulları, (ii) tipik veri çıktılarını ve (iii) sınırlamalarını açıklar.
+</Callout>
+
+### 7.1 Standart bilgi talepleri (hesap/veri/işlem kayıtları)
+
+WIN, usulüne uygun ve hukuken geçerli talepler kapsamında, sistemlerinde mevcut olan verileri paylaşabilir. Örnek veri türleri:
+
+- **Hesap bilgileri**: kayıt tarihi, doğrulama durumu, profil/ayar bilgileri (varsa),
+- **İçerik verileri**: profil görselleri/metinleri, rapor ekleri; mesaj içerikleri (varsa),
+- **Teknik veriler**: giriş/çıkış zamanları, IP/oturum bilgileri (varsa),
+- **Satın alma/abonelik**: mağaza işlem kayıtları, faturalandırma destek kayıtları (varsa).
+
+> Not: WIN, yalnızca **kendi sistemlerinde bulunan** ve **teknik olarak erişilebilir** verileri sağlayabilir. Bazı veri türleri hiç tutulmuyor olabilir veya sınırlı süre saklanıyor olabilir (bkz. [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi)).
+
+### 7.2 Trafik verisi / log talepleri (5651 bağlamı)
+
+WIN; hizmetin sunumu sırasında oluşan trafik verisi/log kayıtlarını, **5651 sayılı Kanun** ve ilgili ikincil düzenlemelerde öngörülen yükümlülükler çerçevesinde ele alır.
+
+<Callout type="info" title="Trafik verisi talebinde iyi uygulama">
+- Talep, mümkünse **belirli bir hesap/oturum** veya **belirli bir zaman aralığı** ile sınırlanmalıdır.
+- Amaç ve kapsam net olmalıdır (örn. “X tarih aralığında Y kullanıcı ID’sine ait giriş IP kayıtları”).
+</Callout>
+
+### 7.3 Koruma (preservation / legal hold) talepleri
+
+WIN, usulüne uygun bir “koruma” talebi alması halinde:
+
+- ilgili hesap/içerik bakımından verinin silinmesini önlemek üzere **geçici koruma** uygulayabilir,
+- bu koruma süresince veriyi **normal saklama akışından** ayırabilir.
+
+<Callout type="info" title="Koruma (preservation) talebinde asgari bilgiler">
+- **Dosya/evrak no, tarih ve hukuki dayanak**
+- **Hesap/İçerik tanımlayıcıları** (user ID, telefon/e‑posta, içerik ID vb.)
+- **Korunması istenen veri kategorileri** (örn. log, mesaj, profil içerikleri)
+- **Zaman aralığı** (mümkünse)
+- **Talebin amacı** (özet) ve varsa **gizlilik/bildirim kısıtı**
+- **Koruma süresi** ve (varsa) **uzatma** talimatı/şekli
+</Callout>
+
+<Callout type="warning" title="Önemli — Preservation ≠ Disclosure">
+Koruma (preservation) talebi, verinin “muhafaza edilmesi” anlamına gelir; verinin “paylaşılması” için ayrıca hukuken geçerli bir **ifşa/teslim talebi** gerekir.
+</Callout>
+
+> Taslak süre parametresi: Koruma süresi ve uzatma mekanizması `[PRESERVATION_PERIOD_DAYS]` gün ve `[PRESERVATION_EXTENSION_RULE]` kuralı olarak belirlenmelidir.
+
+### 7.4 Acil durum talepleri (hayati tehlike / yakın zarar riski)
+
+WIN, istisnai olarak; bir kişinin güvenliğini korumak veya hayati tehlikeyi azaltmak amacıyla, hukuken izin verilen hallerde ve gerekli doğrulama yapıldıktan sonra, sınırlı veri paylaşabilir.
+
+<Callout type="warning" title="Acil durum kriteri (genel çerçeve)">
+Acil durum talepleri, “acil” ibaresi taşısa dahi otomatik olarak kabul edilmez. Talebin:
+- **somut** ve **yakın** bir risk içerdiğinin,
+- gecikmenin ciddi zarara yol açabileceğinin,
+- talep edenin **yetkili makam** olduğunun
+makul şekilde ortaya konması beklenir.
+</Callout>
+
+<Callout type="info" title="Acil durum talebinde beklenen içerik (checklist)">
+- **Acil durumun niteliği** (örn. kayıp kişi, intihar riski, ağır şiddet tehdidi) ve neden “zaman kritik” olduğu
+- **Talep eden makam/personel bilgileri** (kimlik, unvan, birim) + geri arama için resmî iletişim
+- **Dosya/evrak no** (varsa) ve hukuki dayanak/çerçeve (mümkünse)
+- **Hesap/olay tanımlayıcıları** (user ID, telefon/e‑posta, içerik ID vb.)
+- İstenen **veri kategorileri** ve **zaman aralığı**
+- Varsa **gizlilik/bildirim kısıtı** veya “tehlike” gerekçesi
+</Callout>
+
+<Callout type="warning" title="Acil durum yanıtı sonrası resmî süreç">
+Acil durum kapsamında yapılan sınırlı paylaşım, mümkün olan en kısa sürede, usulüne uygun resmî yazı/kararla desteklenmelidir. WIN, acil yanıtın ardından ek bilgi veya resmî belge talep edebilir.
+</Callout>
+
+### 7.5 İçerik kaldırma / erişim engeli / hesap işlemleri
+
+Yasa dışı içerik veya güvenlik riski içeren durumlarda:
+
+- WIN, kendi sözleşmesel kuralları (bkz. [Topluluk Kuralları](/topluluk-ve-guvenlik/topluluk-kurallari) ve [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari)) uyarınca içerik/hesap kısıtlamaları uygulayabilir,
+- coğrafi bağlama göre, yetkili otorite emirleri (örn. AB’de DSA kapsamındaki emirler) ayrıca değerlendirilir.
+
+---
+
+## Bölüm 8: Paylaşılabilecek veri kategorileri (örnek envanter)
+
+<Callout type="info" title="Bu bölümün özeti">
+Bu bölüm, kolluk taleplerinde gündeme gelebilecek veri kategorilerini ve paylaşımda izlenen genel sınırları örnekli biçimde listeler.
+</Callout>
+
+| Veri kategorisi | Örnek içerik | Notlar / hassasiyet |
+|---|---|---|
+| **Hesap tanımlayıcıları** | Kullanıcı ID, kayıt tarihi, doğrulama durumu | Talep kapsamına göre. |
+| **Profil verileri** | Profil fotoğrafı, profil metni, tercih alanları | UGC niteliğinde olabilir. |
+| **Mesajlaşma verileri (varsa)** | Mesaj içerikleri, ekler | Özel hayat ve haberleşme gizliliği hassasiyeti (TCK 132–140). |
+| **Rapor/şikayet verileri** | Kullanıcı raporları, ekran görüntüleri | Üçüncü kişilere ait veri içerebilir; minimizasyon/ayıklama önemli. |
+| **Teknik/oturum verileri** | IP, zaman damgası, cihaz/uygulama sürümü | 5651 bağlamında trafik verisi niteliği taşıyabilir. |
+| **Konum verileri (varsa)** | Yaklaşık/precise konum | İzin ve teknik mimariye göre değişebilir. |
+| **Ödeme/abonelik** | İşlem kimliği, paket türü, dönem | Mağaza kayıtları ve destek kayıtlarıyla sınırlı olabilir. |
+| **Doğrulama verileri (varsa)** | Selfie/liveness çıktıları, ID doğrulama kayıtları | Biyometrik/kimlik verisi niteliği taşıyabilir; daha yüksek güvenlik ve daha sıkı değerlendirme gerekir. Ayrıntı için bkz. [Biyometrik Veri Rızası](/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza) ve [Açık Rıza Metinleri](/gizlilik-ve-veri-koruma/acik-riza-metinleri). |
+
+<Callout type="warning" title="Paylaşılmayan/verilmeyen veri örnekleri (genel)">
+- Kullanıcı **parolaları**, gizli anahtarlar veya kimlik doğrulama sırları.
+- Teknik olarak WIN’de bulunmayan, üçüncü taraflarda tutulan ham veriler (yalnızca WIN’in erişebildiği/veri sorumlusu/işleyen rolleri kapsamında).
+- Gerçek zamanlı dinleme/izleme gibi, WIN’in hizmeti kapsamında bulunmayan veya hukuken/teknik olarak desteklenmeyen talepler.
+</Callout>
+
+---
+
+## Bölüm 9: Kullanıcı bilgilendirmesi ve şeffaflık
+
+<Callout type="info" title="Bu bölümün özeti">
+Bu bölüm, WIN’in kullanıcı bilgilendirmesi yaklaşımını ve şeffaflık raporlaması ile bağlantısını açıklar.
+</Callout>
+
+### 9.1 Kullanıcı bilgilendirmesi (genel ilke)
+
+Kural olarak WIN, bir kullanıcının verilerinin paylaşıldığı veya hesabına ilişkin işlem yapıldığı durumlarda, hukuken izin verilen ölçüde kullanıcıyı bilgilendirmeyi hedefler.
+
+### 9.2 Bildirim yapılmayan/ertelenen haller
+
+WIN aşağıdaki hallerde bildirim yapmayabilir veya erteleyebilir:
+
+- **Yasal gizlilik yükümlülüğü** veya **bildirim yasağı** varsa,
+- Bildirimin soruşturmayı tehlikeye düşürme ihtimali varsa,
+- Bir kişinin güvenliği bakımından risk yaratacaksa.
+
+### 9.3 Şeffaflık raporları
+
+WIN, uygun olduğu ölçüde, resmî makam talepleri ve içerik aksiyonlarına ilişkin istatistikleri periyodik olarak yayımlamayı hedefler. Bkz. [Şeffaflık Raporları](/topluluk-ve-guvenlik/seffaflik-raporlari).
+
+---
+
+## Bölüm 10: Uluslararası talepler ve sınır ötesi veri
+
+<Callout type="info" title="Bu bölümün özeti">
+Bu bölüm, yabancı otoritelerden gelen taleplerin genel yaklaşımını ve sınır ötesi veri aktarımı bağlamını açıklar.
+</Callout>
+
+### 10.1 Yabancı otoritelerden gelen talepler
+
+WIN, yabancı ülkelerden gelen talepleri değerlendirirken:
+
+- talebin **yetkili makam** tarafından yapılıp yapılmadığını,
+- talebin **WIN’in faaliyet gösterdiği ülke** bakımından usulüne uygunluğunu,
+- gerekli hallerde **uluslararası adlî yardımlaşma** veya yerel mekanizmaların kullanılıp kullanılmadığını
+
+gözetir.
+
+### 10.2 AB (DSA) kapsamında emirler (uygulanırsa)
+
+AB’de hizmet sunulması halinde; AB otoritelerinin emirleri ve iletişim noktaları için bkz. [DSA Uyum Sayfası](/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi).
+
+### 10.3 Sınır ötesi veri aktarımı ve barındırma
+
+WIN’in teknik altyapısında, verilerin hangi ülkelerde barındırıldığı ve hangi tedarikçilerin kullanıldığı; aktarım ve yanıt süreçlerini etkileyebilir. Türkiye’de, sınır ötesi aktarım senaryoları bakımından **KVKK** ve **Kişisel Verilerin Yurt Dışına Aktarılması Yönetmeliği** çerçevesi de dikkate alınır. Bu hususlara ilişkin genel yaklaşım için bkz. [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi).
+
+---
+
+## Bölüm 11: Güvenlik, kayıt tutma ve denetim
+
+<Callout type="info" title="Bu bölümün özeti">
+Bu bölüm, taleplerin ve yanıtların güvenli şekilde yönetilmesi, kayıt altına alınması ve denetime hazır tutulması yaklaşımını açıklar.
+</Callout>
+
+### 11.1 Erişim ve yetkilendirme
+
+Kolluk talepleri; yalnızca bu konuda yetkilendirilmiş hukuk/uyum ve güvenlik ekiplerinin kontrolünde işlenir. Erişimler kayıt altına alınır.
+
+### 11.2 Güvenli aktarım
+
+Yanıtlar, uygun görülen güvenli yöntemlerle iletilir (şifreli dosya, güvenli link, KEP vb.). Hassas veri içeren yanıtlar için ek güvenlik adımları uygulanabilir.
+
+### 11.3 Kayıt saklama (talep kayıtları)
+
+Talep kayıtları ve yanıt meta verileri (örn. tarih, kapsam, teslim yöntemi), hesap verebilirlik ve denetim amaçlarıyla, ilgili saklama politikalarına uygun süre boyunca saklanır.
+
+---
+
+## Bölüm 12: Değişiklikler ve iletişim
+
+<Callout type="info" title="Bu bölümün özeti">
+Bu bölüm, rehberin güncellenmesi ve resmî makamların iletişim için izlemesi gereken yolu açıklar.
+</Callout>
+
+WIN; mevzuat değişiklikleri, teknik mimari değişiklikleri veya operasyonel ihtiyaçlar nedeniyle bu rehberi güncelleyebilir. Güncel sürüm, uygulama içi "**Yasal**" alanında ve [whoisnextapp.com](https://whoisnextapp.com) adresinde yayımlanır.
+
+Resmî makamlar, taleplerini Bölüm 4’te belirtilen resmî kanallardan iletmelidir.

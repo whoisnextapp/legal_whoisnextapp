@@ -1,0 +1,58 @@
+# WIN Hukuki Altyapı - LLM Context
+
+Bu dökümantasyon, yapay zeka modelleri (LLMs) ve botların site içeriğini ve yapısını kolayca anlaması için özetlenmiştir.
+
+## Proje Hakkında
+**WIN (Who is Next?)**, modern bir sosyal eşleşme uygulamasıdır. Bu site, WIN uygulamasının hukuki altyapısını, veri işleme süreçlerini, KVKK uyumluluğunu, kullanıcı sözleşmelerini ve uygulama mimarisini detaylandıran resmi dökümantasyon portalıdır.
+
+## Ana Erişim Noktaları
+- **Root URL**: `https://legal.whoisnextapp.com`
+- **Ana sayfa**: `https://legal.whoisnextapp.com/` — Portal özeti ve bölüm bağlantıları.
+
+## Döküman Yapısı ve URL’ler
+
+### 1. Temel Sözleşmeler (`/sozlesmeler`)
+- Kullanım Koşulları — `/sozlesmeler/kullanim-kosullari`
+- Abonelik ve Satın Alma — `/sozlesmeler/abonelik-ve-satin-alma-kosullari`
+- Mesafeli Satış Sözleşmesi — `/sozlesmeler/mesafeli-satis-sozlesmesi`
+- Ön Bilgilendirme Formu — `/sozlesmeler/on-bilgilendirme-formu`
+- Uygulama İçi Lisans (EULA) — `/sozlesmeler/uygulama-ici-lisans-sozlesmesi`
+
+### 2. Gizlilik ve Veri Koruma (`/gizlilik-ve-veri-koruma`)
+- Gizlilik Politikası — `/gizlilik-ve-veri-koruma/gizlilik-politikasi`
+- KVKK Aydınlatma Metni — `/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni`
+- Çerez Politikası — `/gizlilik-ve-veri-koruma/cerez-politikasi`
+- Biyometrik Veri Aydınlatma ve Açık Rıza — `/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza`
+- Açık Rıza Metinleri — `/gizlilik-ve-veri-koruma/acik-riza-metinleri`
+
+### 3. Topluluk ve Güvenlik (`/topluluk-ve-guvenlik`)
+- Topluluk Kuralları — `/topluluk-ve-guvenlik/topluluk-kurallari`
+- Güvenlik İpuçları — `/topluluk-ve-guvenlik/guvenlik-ipuclari`
+- Şeffaflık Raporları — `/topluluk-ve-guvenlik/seffaflik-raporlari`
+
+### 4. Kurumsal ve Yasal Uyumluluk (`/kurumsal-ve-yasal-uyumluluk`)
+- Fikri Mülkiyet Politikası — `/kurumsal-ve-yasal-uyumluluk/fikri-mulkiyet-politikasi`
+- Kolluk Kuvvetleri Rehberi — `/kurumsal-ve-yasal-uyumluluk/kolluk-kuvvetleri-rehberi`
+- Güvenlik Açığı Bildirimi — `/kurumsal-ve-yasal-uyumluluk/guvenlik-acigi-bildirim-politikasi`
+- DSA Uyum Sayfası — `/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi`
+- Erişilebilirlik Beyanı — `/kurumsal-ve-yasal-uyumluluk/erisilebilirlik-beyani`
+
+### 5. Uygulama İçi Akışlar (`/uygulama-ici-akislar`)
+- Onboarding İzinleri — `/uygulama-ici-akislar/onboarding-izin-ekranlari`
+- Ödeme Ekranı Bilgileri — `/uygulama-ici-akislar/odeme-ekrani-bilgilendirmeleri`
+- Hesap Silme Bilgileri — `/uygulama-ici-akislar/hesap-silme-ekrani-bilgilendirmesi`
+
+## İçerik Özeti (LLM için)
+- **Hukuki uyum**: KVKK/ETK, açık rıza, biyometrik veri, çerez ve gizlilik metinleri.
+- **Sözleşmeler**: Kullanım koşulları, abonelik, mesafeli satış, ön bilgilendirme, EULA.
+- **Topluluk**: Topluluk kuralları, güvenlik ipuçları, şeffaflık raporları.
+- **Kurumsal**: Fikri mülkiyet, kolluk rehberi, güvenlik açığı bildirimi, DSA, erişilebilirlik.
+- **User journey**: Onboarding izinleri, ödeme ekranı bilgilendirmeleri, hesap silme akışı.
+
+## Teknik Detaylar
+- **Altyapı**: Nextra (Next.js tabanlı statik dokümantasyon)
+- **Dil**: Türkçe (varsayılan)
+
+## İletişim
+Bu dökümantasyon **Genesis Hukuk** tarafından hazırlanmıştır.  
+Web: [https://genesishukuk.com](https://genesishukuk.com)

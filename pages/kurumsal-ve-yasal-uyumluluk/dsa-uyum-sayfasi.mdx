@@ -1,0 +1,554 @@
+import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
+
+# DSA Uyum Sayfası (Digital Services Act)
+
+**Son güncelleme:** 12.02.2026 · **Sürüm:** 1.0
+
+Bu sayfa, Avrupa Birliği **Dijital Hizmetler Yasası** (**Digital Services Act — Regulation (EU) 2022/2065**, “**DSA**”) kapsamında WIN’in (“**Platform**”) uyum yaklaşımını, **iletişim noktalarını**, **yasa dışı içerik bildirimi** (notice & action), **itiraz/şikayet** ve **şeffaflık** mekanizmalarını açıklar.
+
+<Callout type="warning" title="Kapsam — Bu sayfa kimler içindir?">
+  - Bu sayfa, **AB’de bulunan/alıcı olan kullanıcılar** ve **AB otoriteleri**
+  bakımından DSA çerçevesinde hazırlanmıştır. - AB dışındaki kullanıcılar
+  bakımından, zorunlu yerel hukuk (örn. Türkiye’de 5651, KVKK, TCK vb.) ayrıca
+  uygulanabilir. - DSA uyumu; Platform’un **AB’de hizmet sunması / AB’ye
+  yönelmesi** (DSA kapsamına girme) halinde önem kazanır. Bu sayfa, hem mevcut
+  hem de hedeflenen AB faaliyeti için **hazırlık + şeffaflık** metni olarak
+  kurgulanmıştır.
+</Callout>
+
+---
+
+## İlişkili dokümanlar
+
+DSA kapsamında bu sayfa, aşağıdaki WIN dokümanlarıyla birlikte okunmalıdır:
+
+<Cards num={2}>
+  <Card
+    title="Kullanım Koşulları"
+    href="/sozlesmeler/kullanim-kosullari"
+  >
+    Hizmet kuralları, içerik ve hesap kısıtlamaları, bildirim/iletişim
+    kanalları.
+  </Card>
+  <Card
+    title="Topluluk Kuralları"
+    href="/topluluk-ve-guvenlik/topluluk-kurallari"
+  >
+    Yasaklı içerik/davranış kategorileri ve güvenli kullanım ilkeleri.
+  </Card>
+  <Card
+    title="Şeffaflık Raporları"
+    href="/topluluk-ve-guvenlik/seffaflik-raporlari"
+  >
+    DSA şeffaflık raporları ve istatistikler (yıllık/periyodik).
+  </Card>
+  <Card
+    title="Kolluk Kuvvetleri Rehberi"
+    href="/kurumsal-ve-yasal-uyumluluk/kolluk-kuvvetleri-rehberi"
+  >
+    Resmî makam taleplerinin iletilmesi ve acil durum prosedürleri.
+  </Card>
+  <Card
+    title="Gizlilik Politikası"
+    href="/gizlilik-ve-veri-koruma/gizlilik-politikasi"
+  >
+    Moderasyon, şikayet ve itiraz süreçlerinde kişisel verilerin işlenmesi.
+  </Card>
+  <Card
+    title="Erişilebilirlik Beyanı"
+    href="/kurumsal-ve-yasal-uyumluluk/erisilebilirlik-beyani"
+    icon="♿"
+  >
+    Uyum dokümanlarına erişilebilirlik (kullanıcı dostu sunum) yaklaşımı.
+  </Card>
+</Cards>
+
+---
+
+## Bölüm 1: Hizmet sağlayıcı bilgileri ve DSA kapsamı
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölümde Platform işletmecisi, hizmetin niteliği ve DSA’nın ne zaman
+  uygulanacağına dair çerçeve yer alır.
+</Callout>
+
+### 1.1 İşletmeci (Provider)
+
+- **Platform / Hizmet adı**: **WIN (Who is Next?)**
+- **İşletmeci**: **WIN TECH BİLİŞİM VE ORGANİZASYON TİC. A.Ş.**
+- **Resmî web sitesi**: **[whoisnextapp.com](https://whoisnextapp.com)**
+
+<Callout type="warning" title="Eksik kurumsal iletişim alanları">
+  DSA kapsamında bazı alanlarda **açık e-posta, posta adresi ve telefon** gibi
+  bilgilerin tekil “iletişim noktası” olarak yayımlanması gerekir. Bu bilgiler
+  nihai hale getirildiğinde bu sayfada güncellenecektir.
+</Callout>
+
+### 1.2 Hizmetin niteliği (DSA terminolojisi)
+
+WIN; kullanıcıların profil oluşturduğu, içerik ürettiği (profil metni/fotoğraf), diğer kullanıcılarla eşleştiği ve iletişim kurabildiği bir platform olarak, DSA terminolojisinde çoğunlukla:
+
+- **Aracı hizmet sağlayıcı (intermediary service provider)** ve
+- İçerik barındırma/erişilebilir kılma fonksiyonu bakımından **barındırma hizmeti (hosting service)** ve
+- Kullanıcı içeriklerini diğer kullanıcılarla buluşturma/dağıtma fonksiyonu bakımından **çevrimiçi platform (online platform)**
+
+olarak değerlendirilir.
+
+### 1.3 DSA’nın uygulanabilirliği (AB’ye “sunum” kriteri)
+
+DSA, hizmet sağlayıcı AB’de kurulu olsun veya olmasın, **AB’de hizmet sunulması** halinde uygulanır. DSA metninde; “AB ile kayda değer bağ”ın varlığı; **AB’de yerleşiklik**, **AB’de alıcı sayısının anlamlılığı** veya **faaliyetin AB’ye hedeflenmesi** gibi unsurlarla değerlendirilebilir (DSA gerekçeleri/recitals).
+
+<Tabs items={["AB (DSA)", "Türkiye (5651/TCK)", "KVKK & GDPR"]}>
+  <Tab>
+    AB’de hizmet sunulması halinde DSA; iletişim noktaları (Art. 11–12), yasal
+    temsilci (Art. 13), içerik moderasyonu şeffaflığı (Art. 14–15), yasa dışı
+    içerik bildirimi (Art. 16), gerekçe bildirimi (Art. 17), itiraz/şikayet
+    (Art. 20–21) ve diğer yükümlülükleri uygulatır.
+  </Tab>
+  <Tab>
+    Türkiye’de yer sağlayıcı sorumluluğu ve içerik kaldırma süreçleri bakımından
+    **5651 sayılı Kanun**; ayrıca içerik türlerine göre **TCK** hükümleri
+    devreye girebilir. WIN’in “yerel hukuk + DSA” ikili uyumu, çelişki halinde
+    zorunlu kamu düzeni kuralları saklı kalmak üzere kurgulanır.
+  </Tab>
+  <Tab>
+    DSA kapsamındaki şikayet/ihbar/itiraz süreçlerinde kişisel veri işlenebilir.
+    Türkiye’de **KVKK**, AB’de **GDPR** ilkeleri (veri minimizasyonu, amaçla
+    sınırlılık, güvenlik, saklama süreleri, haklar) paralel gözetilir. Bkz.
+    [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) ve [KVKK
+    Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni).
+  </Tab>
+</Tabs>
+
+---
+
+## Bölüm 2: DSA iletişim noktaları ve AB yasal temsilci
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm, DSA’nın zorunlu kıldığı **iletişim noktalarını** (Art. 11–12) ve
+  AB’de yerleşik olmayan sağlayıcılar için **yasal temsilci** (Art. 13) gereğini
+  açıklar.
+</Callout>
+
+### 2.1 AB otoriteleri için iletişim noktası (Art. 11 DSA)
+
+DSA **Madde 11** uyarınca WIN, AB Üye Devlet otoriteleri, Avrupa Komisyonu ve Dijital Hizmetler Kurulu ile **elektronik yöntemlerle doğrudan iletişim** için **tek bir iletişim noktası** belirler ve bunu kamuya açıklar.
+
+<Callout type="warning" title="Taslak (doldurulacak) — Art. 11 iletişim kanalı">
+  - **Art. 11 iletişim e-postası**: `[DSA_AUTHORITY_CONTACT_EMAIL]` -
+  **Alternatif/ikincil kanal**: `[DSA_AUTHORITY_WEB_FORM_OR_URL]` - **Kabul
+  edilen diller**: Türkçe, İngilizce (en az bir AB resmî dili + geniş kitlece
+  anlaşılan dil) - **Kimler kullanabilir?** Yalnızca **resmî otoriteler**.
+  Otorite dışı başvurular cevaplanmayabilir. - **Başvuruda asgari bilgiler**:
+  Ad-soyad, kurum/otorite adı, dosya/evrak no, talebin hukuki dayanağı ve
+  kapsamı.
+</Callout>
+
+### 2.2 Kullanıcılar için iletişim noktası (Art. 12 DSA)
+
+DSA **Madde 12** uyarınca WIN; kullanıcıların **kullanıcı dostu**, **hızlı** ve **doğrudan** şekilde iletişime geçebileceği bir iletişim noktası sağlar. Bu kanal **yalnızca otomatik araçlara** dayanamaz (insan desteği bulunmalıdır).
+
+WIN’in kullanıcı iletişim kanalları (DSA kapsamı dahil):
+
+- Uygulama içi **“Yardım / İletişim”** alanı
+- Uygulama içi **“Şikayet Et / Bildir”** akışları
+- Web sitesi üzerindeki iletişim kanalları: [whoisnextapp.com](https://whoisnextapp.com)
+
+<Callout type="info" title="Not">
+  DSA kapsamındaki başvurularda, mümkünse “DSA” ibaresi ve ilgili içerik/hesap
+  bilgileri eklenmesi değerlendirmeyi hızlandırır.
+</Callout>
+
+### 2.3 AB yasal temsilci (Art. 13 DSA) — AB’de yerleşik olmayan sağlayıcılar
+
+WIN’in AB’de kuruluşu bulunmaması ve AB’de hizmet sunması halinde, DSA **Madde 13** uyarınca, WIN’in AB’de **yazılı olarak** bir **yasal temsilci** ataması gerekir.
+
+<Callout type="warning" title="Taslak (doldurulacak) — Art. 13 yasal temsilci">
+  - **Yasal temsilci (AB)**: `[EU_LEGAL_REP_NAME_OR_ENTITY]` - **Ülke/Üye
+  Devlet**: `[EU_MEMBER_STATE]` - **Adres**: `[EU_LEGAL_REP_ADDRESS]` -
+  **E-posta / telefon**: `[EU_LEGAL_REP_EMAIL]` / `[EU_LEGAL_REP_PHONE]`
+</Callout>
+
+---
+
+## Bölüm 3: Yasa dışı içerik bildirimi (Notice & Action) — Art. 16 DSA
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm, kullanıcıların veya üçüncü kişilerin **yasa dışı içerik** iddiasını
+  nasıl bildireceğini ve WIN’in bu bildirimleri nasıl işleyeceğini açıklar (Art.
+  16 DSA).
+</Callout>
+
+### 3.1 “Yasa dışı içerik” nedir?
+
+DSA bağlamında “**yasa dışı içerik**”, AB hukuku veya ilgili Üye Devlet hukukuna göre yasa dışı sayılan bilgi/içeriktir. Örnekler (sınırlı olmamak üzere): cinsel istismar materyali, rıza dışı mahrem içerik, tehdit/şantaj, dolandırıcılık, nefret suçlarını teşvik, kişisel verilerin hukuka aykırı ifşası vb.
+
+<Callout type="info" title="Kural ihlali ≠ yasa dışılık">
+  Bir içerik **Topluluk Kuralları** veya **Kullanım Koşulları**’na aykırı
+  olabilir; ancak her aykırılık “yasa dışı” olmayabilir. Buna rağmen WIN,
+  sözleşmesel kurallar uyarınca da içerik/hizmet kısıtlamaları uygulayabilir
+  (Art. 17 DSA gerekçe bildirimi saklıdır).
+</Callout>
+
+### 3.2 Bildirim kanalları
+
+WIN, Art. 16 uyarınca bildirimleri **tamamen elektronik** yollarla kabul eder. Kanallar:
+
+- Uygulama içi **“Şikayet Et / Bildir”** akışı (tercih edilen)
+- Uygulama içi Yardım/İletişim ekranı üzerinden destek talebi
+- Web sitesi iletişim kanalları üzerinden bildirim
+
+### 3.3 Bildirimde bulunması gereken asgari bilgiler (Art. 16/2)
+
+DSA **Madde 16/2** uyarınca bildirimlerin “yeterince kesin ve gerekçeli” olabilmesi için aşağıdaki unsurlar bulunmalıdır:
+
+| Zorunlu unsur          | Ne demek?                                             | Pratik örnek                                      |
+| ---------------------- | ----------------------------------------------------- | ------------------------------------------------- |
+| (a) Gerekçeli açıklama | İçeriğin neden yasa dışı olduğunu anlatın             | “Bu profil, rıza dışı çıplak fotoğraf içeriyor.”  |
+| (b) Konum/yer bilgisi  | İçeriğin “tam yeri”                                   | İçerik ID’si, ekran adı, tarih/saat; mümkünse URL |
+| (c) Ad + e-posta       | Bildirimci kimliği (istisna: çocuk istismarı suçları) | “Ad Soyad / e-posta”                              |
+| (d) İyi niyet beyanı   | Bilgilerin doğru olduğuna inanıldığını beyan          | “Beyanım doğru ve eksiksizdir.”                   |
+
+<Callout
+  type="warning"
+  title="Çocuk istismarı (CSAE) gibi ağır suçlarda bildirimci kimliği"
+>
+  DSA Madde 16/2-(c) uyarınca, **çocukların cinsel istismarı** kapsamına giren
+  bazı suç türlerinde bildirimci ad/e-posta zorunluluğu uygulanmayabilir. WIN,
+  bu tür bildirimleri **önceliklendirir** ve gerektiğinde yetkili makamlara
+  yönlendirebilir.
+</Callout>
+
+### 3.4 Bildirim alındı onayı ve karar bildirimi (Art. 16/4–5)
+
+- **Alındı onayı**: Bildirimde e-posta/elektronik iletişim bilgisi varsa, WIN **gecikmeksizin** bildirim alındı onayı gönderir (Art. 16/4).
+- **Karar bildirimi**: WIN, bildirim konusu içerikle ilgili kararını ve **başvuru/itiraz yollarını** bildirimciye bildirir (Art. 16/5).
+
+### 3.5 İnceleme standardı ve otomasyon (Art. 16/6)
+
+WIN, bildirimleri **zamanında**, **özenli**, **keyfî olmayan** ve **objektif** şekilde değerlendirir. Otomatik araçlar kullanılırsa, kullanıcıya yapılan bildirimde bu kullanıma ilişkin bilgi verilir (Art. 16/6).
+
+<Callout type="info" title="Bildirimlerin “yeterlilik” standardı (Art. 16/3)">
+  DSA Madde 16/3 uyarınca, bildirim; özenli bir barındırma sağlayıcının
+  ayrıntılı bir hukuki inceleme yapmadan, bildirilen içeriğin yasa dışılığını
+  tespit edebilmesine imkân verecek kadar açık ve gerekçeli ise, ilgili içerik
+  bakımından “bilgi sahibi olma/farkındalık” (actual knowledge/awareness)
+  doğurabilir. Bu nedenle WIN, bildirim formunu mümkün olduğunca yapılandırılmış
+  ve açıklayıcı tasarlamayı hedefler.
+</Callout>
+
+---
+
+## Bölüm 4: İçerik moderasyonu ve “Gerekçe Bildirimi” — Art. 14, 15, 17 DSA
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm; moderasyon politikalarının şartlarda açıklanması (Art. 14),
+  şeffaflık raporları (Art. 15) ve içerik/hesap kısıtlamalarında “gerekçe
+  bildirimi” (Art. 17) süreçlerini açıklar.
+</Callout>
+
+### 4.1 Moderasyon kaynakları (otomasyon + insan incelemesi)
+
+WIN, güvenlik ve topluluk bütünlüğü için **otomatik sistemler**, **kullanıcı raporları** ve **insan moderasyon** süreçlerini birlikte kullanabilir.
+
+Örnek (teknik/ürün pratikleri):
+
+- Fotoğraf yüklemeleri, uygunsuz içerik riskine karşı **otomatik denetim** süreçlerinden geçirilebilir.
+- Selfie doğrulama/liveness süreçlerinde, sahte hesapları azaltmak için üçüncü taraf doğrulama teknolojileri kullanılabilir.
+
+<Callout type="info" title="Şeffaflık">
+  - DSA Madde 14 gereği, içerik moderasyonunda kullanılan politika/araçlar ve iç
+  şikayet sistemi işleyişi, [Kullanım
+  Koşulları](/sozlesmeler/kullanim-kosullari) ve ilgili politikalarda açık,
+  anlaşılır ve erişilebilir biçimde sunulur. - DSA Madde 14/2 uyarınca,
+  koşullardaki **önemli değişiklikler** kullanıcılara bildirilebilir.
+</Callout>
+
+### 4.2 Kısıtlama türleri (Art. 17/1)
+
+WIN; yasa dışı içerik veya sözleşmesel ihlal tespiti halinde, koşullara uygun ve ölçülü olarak şu tedbirleri uygulayabilir:
+
+- İçeriği kaldırma / erişimi engelleme / görünürlüğü düşürme (demotion)
+- Belirli işlevleri kısıtlama (örn. fotoğraf yükleme, mesajlaşma)
+- Ödemeleri/monetization’ı askıya alma (varsa)
+- Hesabı geçici askıya alma veya kalıcı kapatma
+
+### 4.3 Gerekçe Bildirimi (Statement of Reasons) (Art. 17)
+
+DSA **Madde 17** uyarınca WIN, içerik/hizmet kısıtlaması uyguladığında, etkilenen kullanıcıya **açık ve spesifik** bir gerekçe bildirimi sunar.
+
+Gerekçe bildirimi asgari olarak şunları içerir (Art. 17/3):
+
+- **Ne oldu?** (kaldırma/erişim engeli/demotion/askı/kapatma vb.), **süre** ve **coğrafi kapsam**
+- **Hangi olgu ve koşullara dayanıldı?** (kullanıcı bildirimi mi, re’sen inceleme mi)
+- **Otomasyon kullanıldı mı?** (otomatik tespit/inceleme bilgisi)
+- **Yasa dışılık iddiası varsa**: Hukuki dayanak + neden yasa dışı sayıldığı
+- **Kural ihlali varsa**: Sözleşmesel dayanak + neden ihlal sayıldığı
+- **Düzeltme yolları**: İç şikayet/itiraz, yargı dışı çözüm, yargı yolu
+
+<Callout type="info" title="İtiraz süresi">
+  DSA Madde 20 uyarınca, kullanıcılar **en az 6 ay** boyunca iç şikayet/itiraz
+  sistemi üzerinden başvuru yapabilir. İhtilafın hızlı çözümü için, mümkünse
+  **30 gün içinde** başvuru önerilir.
+</Callout>
+
+### 4.4 Hayat/beden güvenliği riski ve suç şüphesi (Art. 18)
+
+DSA **Madde 18** uyarınca; WIN, hayat veya beden güvenliğine yönelik suç şüphesi doğuran bilgiye vakıf olduğunda, ilgili Üye Devlet(ler)in kolluk/judicial makamlarını **gecikmeksizin** bilgilendirebilir.
+
+Bu başlıkla bağlantılı operasyonel süreçler için bkz. [Kolluk Kuvvetleri Rehberi](/kurumsal-ve-yasal-uyumluluk/kolluk-kuvvetleri-rehberi).
+
+---
+
+## Bölüm 5: İç şikayet/itiraz sistemi — Art. 20 DSA
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm, içerik kaldırma/hesap kısıtlama gibi kararlar için **ücretsiz**,
+  **elektronik** ve **etkili** iç şikayet/itiraz mekanizmasını açıklar (Art. 20
+  DSA).
+</Callout>
+
+### 5.1 Hangi kararlara itiraz edilebilir?
+
+DSA Madde 20 uyarınca kullanıcılar (ve bildirim yapan kişiler), en az 6 ay boyunca şu kararlara itiraz edebilir:
+
+- İçeriği kaldırma / erişimi engelleme / görünürlüğü kısıtlama kararları
+- Hizmeti kısmen/tamamen askıya alma veya sonlandırma
+- Hesabı askıya alma veya kapatma
+- Monetization kısıtları (varsa)
+
+### 5.2 İtirazın nasıl yapılacağı (pratik akış)
+
+<Steps>
+### Adım 1: Bildirime eriş
+Kısıtlama kararı size uygulama içi bildirim merkezinden ve/veya e-posta ile iletilebilir.
+
+### Adım 2: “İtiraz Et” bağlantısını kullan
+
+Karar bildirimindeki itiraz bağlantısı üzerinden ilgili forma yönlendirilirsiniz.
+
+### Adım 3: Gerekçenizi yazın ve delil ekleyin
+
+İtiraz konusu kararın neden hatalı olduğunu açıklayın; ekran görüntüsü, link/ID vb. ekleyin.
+
+### Adım 4: İnceleme ve sonuç
+
+İtiraz, zamanında ve ayrımcılık yapmadan incelenir. Gerekirse karar geri alınır veya düzeltilir (Art. 20/4).
+
+</Steps>
+
+### 5.3 İnsan gözetimi (Art. 20/6)
+
+WIN, itiraz kararı verirken **yalnızca otomatik sistemlere** dayanmaz; uygun nitelikte personel gözetimi bulunur (Art. 20/6).
+
+---
+
+## Bölüm 6: Yargı dışı uyuşmazlık çözümü — Art. 21 DSA
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm, iç itiraz yoluyla çözülemeyen uyuşmazlıklarda AB’de sertifikalı
+  yargı dışı uyuşmazlık çözüm organlarına erişimi açıklar (Art. 21 DSA).
+</Callout>
+
+DSA Madde 21 uyarınca kullanıcı; Art. 20 kapsamındaki kararlara ilişkin uyuşmazlık için, AB’de **sertifikalı** bir yargı dışı çözüm organını seçebilir. Bu süreç:
+
+- İç itiraz yolunu **ortadan kaldırmaz** (önce iç itiraz önerilir),
+- Mahkeme yolunu **engellemez**,
+- Çözüm organının kararı **bağlayıcı** olmak zorunda değildir.
+
+<Callout type="info" title="Kaynak">
+  AB Komisyonu, sertifikalı yargı dışı uyuşmazlık çözüm organlarının listesini
+  yayımlar: [Out-of-court dispute settlement bodies under the
+  DSA](https://digital-strategy.ec.europa.eu/en/policies/dsa-out-court-dispute-settlement).
+</Callout>
+
+<Callout type="info" title="Dijital Hizmetler Koordinatörü (DSC) şikayet yolu">
+  AB’de bulunan kullanıcılar, ayrıca bulundukları Üye Devletin **Dijital
+  Hizmetler Koordinatörü**’ne (Digital Services Coordinator) şikayette
+  bulunabilir. Komisyonun resmî liste sayfası: [Digital Services
+  Coordinators](https://digital-strategy.ec.europa.eu/en/policies/dsa-dscs).
+</Callout>
+
+---
+
+## Bölüm 7: Trusted flagger (Güvenilir işaretçi) — Art. 22 DSA
+
+DSA Madde 22 uyarınca, **trusted flagger** statüsündeki kuruluşların Art. 16 mekanizması üzerinden yaptığı bildirimler **öncelikli** ele alınır ve gecikmeksizin işlenir.
+
+<Callout type="info" title="Uygulama">
+  WIN; trusted flagger statüsünü doğrulamak için, başvuruda kimlik/kurum ve DSA
+  koordinatörü bilgilerini talep edebilir ve sadece doğrulanmış kanallar
+  üzerinden işlem yapabilir.
+</Callout>
+
+---
+
+## Bölüm 8: Kötüye kullanıma karşı önlemler — Art. 23 DSA
+
+DSA Madde 23 uyarınca WIN:
+
+- **Sıkça açıkça yasa dışı içerik** sağlayan kullanıcıların hizmetini **uyarı sonrası** makul süreyle askıya alabilir.
+- **Açıkça dayanaksız** bildirim/şikayetleri sıkça yapan kişilerin bildirim/şikayet işleme süreçlerini **uyarı sonrası** makul süreyle askıya alabilir.
+
+Bu politika, [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari) ve ilgili politikalarda açık ve örnekli şekilde düzenlenir.
+
+---
+
+## Bölüm 9: Şeffaflık raporları ve metrikler — Art. 15 ve Art. 24 DSA
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm, içerik moderasyonu ve DSA uyum metriklerinin hangi periyotla ve
+  hangi kapsamda yayımlanacağını açıklar.
+</Callout>
+
+### 9.1 Yıllık içerik moderasyonu raporu (Art. 15)
+
+WIN, DSA Madde 15 uyarınca (uygulanabilirlik ve istisnalar saklı kalmak üzere) yılda en az bir kez şu başlıkları içeren raporlar yayımlamayı hedefler:
+
+<Callout
+  type="info"
+  title="Mikro/küçük işletme istisnası (DSA Art. 15/2 ve Art. 19)"
+>
+  DSA; belirli şeffaflık ve çevrimiçi platform yükümlülükleri bakımından
+  **mikro/küçük işletme istisnası** öngörür. WIN’in ölçeğine göre bazı alt
+  yükümlülükler “zorunlu” olmayabilir; buna rağmen WIN, kullanıcı güvenliği ve
+  şeffaflık hedefiyle bu standartların önemli kısmını uygulamayı amaçlar.
+</Callout>
+
+- Otorite emirleri (kaldırma/bilgi talepleri) ve yanıt süreleri
+- Art. 16 bildirim sayıları (kategori bazında), işlem süreleri, otomasyon kullanımı
+- Re’sen moderasyon faaliyetleri ve kısıtlama türleri
+- İç şikayet/itiraz istatistikleri ve geri dönüşler
+- Otomatik sistemlerin amaçları, hata oranı ve güvenlik önlemleri
+
+### 9.2 Çevrimiçi platform ek raporlamaları (Art. 24)
+
+WIN, çevrimiçi platform olarak (Art. 24) ayrıca:
+
+- Art. 21 kapsamındaki yargı dışı uyuşmazlık sayısı/sonucu/süreleri
+- Art. 23 kapsamındaki askıya alma sayıları (türlere göre)
+
+gibi ek kalemleri raporlar.
+
+### 9.3 AB ortalama aylık aktif alıcı sayısı (Art. 24/2)
+
+DSA Madde 24/2 uyarınca, her platform için AB içindeki **ortalama aylık aktif alıcı** sayısı, geçmiş 6 ayın ortalaması olarak **en az altı ayda bir** yayımlanır.
+
+<Callout
+  type="warning"
+  title="Taslak (doldurulacak) — AB ortalama aylık aktif alıcı"
+>
+  - **Dönem**: `[START_DATE]` – `[END_DATE]` (son 6 ay) - **AB ortalama aylık
+  aktif alıcı**: `[EU_AVG_MONTHLY_ACTIVE_RECIPIENTS]` - **Metodoloji notu**: DSA
+  Art. 24/2 ve ilgili delegasyon metodolojisine göre hesaplanır; kişisel veri
+  içermez.
+</Callout>
+
+### 9.4 Gerekçe bildirimlerinin AB veri tabanına aktarımı (Art. 24/5)
+
+DSA Madde 24/5 uyarınca, çevrimiçi platformlar Art. 17 kapsamındaki bazı karar ve gerekçe bildirimlerini, Komisyonun yönettiği kamuya açık veri tabanına iletmekle yükümlü olabilir. WIN, bu iletimlerde **kişisel veri paylaşmama** ilkesini gözetir.
+
+### 9.5 Raporların yayımlanacağı yer
+
+Şeffaflık raporları, [Şeffaflık Raporları](/topluluk-ve-guvenlik/seffaflik-raporlari) sayfasında yayımlanır.
+
+---
+
+## Bölüm 10: Arayüz tasarımı (dark pattern yasağı) — Art. 25 DSA
+
+WIN, DSA Madde 25 uyarınca arayüzlerini kullanıcıların özgür ve bilinçli karar verme yetisini **aldatacak/manipüle edecek** şekilde tasarlamamayı hedefler.
+
+Örnek pratikler:
+
+- Abonelik iptali akışı, abonelik başlatmaya kıyasla ölçüsüz zorlaştırılmaz.
+- Kullanıcı tercihleri (izinler, bildirimler, çerez/izleme vb.) tekrar tekrar baskıyla istenmez.
+
+İlgili tüketici/abonelik süreçleri için bkz. [Abonelik ve Satın Alma Koşulları](/sozlesmeler/abonelik-ve-satin-alma-kosullari) ve [Ödeme Ekranı Bilgilendirmeleri](/uygulama-ici-akislar/odeme-ekrani-bilgilendirmeleri).
+
+---
+
+## Bölüm 11: Reklam şeffaflığı ve hassas veriler — Art. 26 DSA + GDPR/KVKK
+
+<Callout type="info" title="Önemli not">
+  Bu bölüm, WIN’in uygulama arayüzünde reklam göstermesi veya kullanıcı
+  içeriklerini “ticari iletişim” olarak işaretleme ihtiyacı doğması halinde
+  uygulanır (Art. 26 DSA).
+</Callout>
+
+DSA Madde 26 uyarınca, WIN reklam sunuyorsa; her reklam için kullanıcıya gerçek zamanlı olarak:
+
+- bunun bir **reklam** olduğunu,
+- reklamın kimin adına sunulduğunu,
+- reklamı kimin ödediğini (farklıysa),
+- hedeflemeyi belirleyen ana parametreleri ve bu parametrelerin nasıl değiştirileceğini
+
+anlaşılır biçimde göstermek zorundadır.
+
+DSA Madde 26/2 uyarınca, WIN ayrıca kullanıcıların Platform üzerinden sundukları içeriğin **ticari iletişim** içerip içermediğini beyan edebileceği bir işlev sunar. Kullanıcı bu beyanı verdiğinde, diğer kullanıcılar içeriğin ticari iletişim içerdiğini açıkça anlayabilmelidir.
+
+<Callout type="warning" title="Hassas veri ile hedefleme yasağı (Art. 26/3)">
+  WIN; kullanıcıların dini inanç, siyasi görüş vb. hassas nitelikte olabilecek
+  verilerini, reklam hedefleme/profiling için kullanmaz. Bu tür veriler, ancak
+  açıkça belirtilen amaçlarla (örn. eşleşme/filtreleme) işlenir; reklam
+  hedeflemede GDPR Art. 9 kapsamındaki özel kategorilere dayalı profiling
+  yapılmaz.
+</Callout>
+
+---
+
+## Bölüm 12: Öneri sistemi (eşleşme) şeffaflığı — Art. 27 DSA
+
+DSA Madde 27 uyarınca, WIN öneri/eşleşme sistemini kullanıyorsa, [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari) içinde:
+
+- öneri sistemindeki **ana parametreleri**,
+- kullanıcının bu parametreleri **etkileme/değiştirme** seçeneklerini
+
+açıklar.
+
+Örnek ana parametreler (ürün tasarımına göre değişebilir):
+
+- Konum/mesafe
+- Cinsiyet ve eşleşme tercihleri
+- Yaşam tarzı ve değer tercihleri (sigara/alkol, burç, din/siyasi görüş uyumu gibi)
+- Aktivite (son aktiflik, kullanıcı etkileşimleri)
+- Premium üyelik avantajları (varsa)
+
+<Callout type="info" title="Kullanıcı kontrolü">
+Kullanıcılar; filtreler ve tercih ayarları üzerinden öneri parametrelerini etkileme imkânına sahip olmalıdır. Bu kontrol seçenekleri uygulama içi “Ayarlar” ve ilgili ekranlarda sunulabilir.
+
+Birden fazla öneri/sıralama seçeneği varsa, kullanıcı tercih ettiği seçeneği **seçebilmeli** ve **istediği zaman değiştirebilmelidir**; bu işlev, önerilerin sunulduğu arayüzden doğrudan erişilebilir olmalıdır (DSA Art. 27/3).
+
+</Callout>
+
+---
+
+## Bölüm 13: 18+ yaş politikası ve küçüklerin korunması — Art. 28 DSA
+
+WIN, 18 yaş altına yönelik değildir. Buna rağmen DSA Madde 28’in küçüklerin korunmasına ilişkin yaklaşımı, ürün güvenliği bakımından dikkate alınır.
+
+Örnek uygulamalar (ürün tasarımına göre):
+
+- Kayıt sırasında yaş doğrulaması (örn. Google hesabı doğum tarihi, kullanıcı beyanı + minimum yaş kontrolü)
+- Şüpheli durumda ek doğrulama adımları ve/veya hesap kısıtlaması
+- Küçük olduğu anlaşılan kullanıcıların hesaplarının askıya alınması/kapatılması
+
+<Callout type="info" title="Küçükler için reklam yasağı">
+  WIN, makul kesinlikle kullanıcının küçük olduğunu bildiği durumlarda,
+  küçüklerin kişisel verileriyle profiling’e dayalı reklam sunmaz (Art. 28/2).
+  Bu yükümlülük; küçük olup olmadığını anlamak için “ek kişisel veri işleme”
+  zorunluluğu doğurmaz (Art. 28/3).
+</Callout>
+
+---
+
+## Bölüm 14: Güncellemeler ve sürüm yönetimi
+
+WIN; mevzuat, ürün ve güvenlik ihtiyaçları doğrultusunda bu sayfayı güncelleyebilir. Güncel metin uygulama içi “Yasal” bölümünde ve [whoisnextapp.com](https://whoisnextapp.com) adresinde yayımlanır.
+
+<Callout type="info" title="Çapraz referans">
+  Bu sayfada açıklanan mekanizmalar; [Kullanım
+  Koşulları](/sozlesmeler/kullanim-kosullari), [Topluluk
+  Kuralları](/topluluk-ve-guvenlik/topluluk-kurallari) ve [Şeffaflık
+  Raporları](/topluluk-ve-guvenlik/seffaflik-raporlari) ile birlikte, tutarlı
+  bir uyum seti olarak işletilir.
+</Callout>

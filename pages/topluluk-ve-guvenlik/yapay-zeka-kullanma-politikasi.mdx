@@ -1,0 +1,288 @@
+import { Callout, Tabs, Tab, Cards, Card } from "nextra/components";
+
+# Yapay Zeka Kullanma Politikası (AI Policy)
+
+**Son güncelleme:** 18.02.2026 · **Sürüm:** 1.0
+
+Bu sayfa; WIN (Who is Next?) uygulamasında **yapay zeka (AI)** ve **makine öğrenmesi (ML)** tabanlı sistemlerin nasıl kullanıldığını, hangi ilkelere bağlı kalındığını, kullanıcıların hakları ve yükümlülüklerini açıklar. Politika; eşleşme/öneri sistemleri, güvenlik ve moderasyon amaçlı otomatik araçlar ile (varsa) üretken yapay zeka (generative AI) özelliklerini kapsar.
+
+<Callout type="warning" title="Önemli — Kısa özet">
+  - WIN, **eşleşme ve öneri**, **güvenlik/dolandırıcılık/taciz önleme** ve (varsa) **isteğe bağlı özellikler** için yapay zeka kullanabilir.  
+  - **Şeffaflık**, **özgünlük** ve **eşitlik** ilkelerine bağlıyız; otomatik kararlarda gerektiğinde **insan incelemesi** ve **itiraz hakkı** sunulur.  
+  - **Yanıltıcı AI üretimi içerik** (profil/mesajda kendini veya niyeti yanlış tanıtma) [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari) ve [Topluluk Kuralları](/topluluk-ve-guvenlik/topluluk-kurallari) ihlali sayılabilir.  
+  - Veri işleme ve haklarınız [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) ile [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) kapsamında düzenlenir.
+</Callout>
+
+---
+
+## İlişkili dokümanlar
+
+Bu politika, aşağıdaki WIN dokümanlarıyla birlikte okunmalıdır:
+
+<Cards num={2}>
+  <Card title="Kullanım Koşulları" href="/sozlesmeler/kullanim-kosullari" icon="📜">
+    Bölüm 8: Algoritma ve otomatik karar alma; eşleşme/öneri, profiling, AI kullanımı ve üçüncü taraf AI/ML yasağı.
+  </Card>
+  <Card title="Topluluk Kuralları" href="/topluluk-ve-guvenlik/topluluk-kurallari" icon="🧭">
+    Yasaklı içerik/davranış; AI ile yanıltıcı temsil ve şikayet mekanizması.
+  </Card>
+  <Card title="Gizlilik Politikası" href="/gizlilik-ve-veri-koruma/gizlilik-politikasi" icon="🔒">
+    AI/öneri sistemleri için kullanılan veriler, saklama ve paylaşım esasları.
+  </Card>
+  <Card title="KVKK Aydınlatma Metni" href="/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni" icon="📋">
+    Profil çıkarma (profiling), otomatik karar ve veri işleme hukuki sebepleri.
+  </Card>
+  <Card title="DSA Uyum Sayfası" href="/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi" icon="🇪🇺">
+    AB’de hizmet sunulması halinde algoritmik şeffaflık ve içerik moderasyonu bilgisi.
+  </Card>
+  <Card title="Şeffaflık Raporları" href="/topluluk-ve-guvenlik/seffaflik-raporlari" icon="📊">
+    Moderasyon ve güvenlik süreçlerine ilişkin periyodik raporlama.
+  </Card>
+</Cards>
+
+---
+
+## Amaç ve kapsam
+
+### Amaç
+
+Bu politikanın amacı:
+
+- WIN’de **hangi yapay zeka ve otomatik sistemlerin** kullanıldığını açıklamak,
+- **Şeffaflık**, **özgünlük (authenticity)**, **eşitlik (equity)** ve **hesap verebilirlik** ilkelerini tek bir metinde toplamak,
+- Kullanıcıların **veri kullanımı**, **otomatik kararlar** ve **itiraz hakları** hakkında bilgilendirilmesini sağlamak,
+- **Ulusal (Türkiye)** ve **uluslararası (AB DSA, AB Yapay Zeka Tüzüğü vb.)** mevzuatla uyumlu bir çerçeve sunmaktır.
+
+### Kapsam
+
+Politika kapsamına girenler:
+
+- **Eşleşme ve öneri sistemleri** (profil sıralama, öneri, görünürlük),
+- **Güvenlik ve moderasyon** amaçlı yapay zeka (sahte profil, dolandırıcılık, taciz, spam tespiti),
+- **Otomatik kararlar** (geçici kısıtlama, işlem engelleme, hesap güvenlik adımları),
+- **(Varsa)** **isteğe bağlı** yapay zeka özellikleri (ör. profil metni önerisi, sohbet yardımcısı),
+- **(Varsa)** **Üretken yapay zeka (generative AI)** ile oluşturulan veya düzenlenen kullanıcı içerikleri (görsel, ses, metin).
+
+WIN’in **üçüncü taraflarca** geliştirilen AI/ML araçlarıyla Hizmetler veya Üye İçeriği üzerinde izinsiz etkileşim kurulmasına ilişkin kural, [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari) Bölüm 5’te (Üçüncü taraf uygulamalar) düzenlenir; bu politika ile uyumlu okunmalıdır.
+
+---
+
+## Tanımlar
+
+| Terim | Açıklama |
+|--------|----------|
+| **Yapay zeka (AI)** | Veri ve modeller kullanarak tahmin, sınıflandırma veya karar üreten; kural tabanlı veya makine öğrenmesi içeren sistemler. |
+| **Makine öğrenmesi (ML)** | Veriden öğrenen, insan müdahalesi olmadan çıktı üretebilen algoritmalar. |
+| **Öneri / eşleşme sistemi** | Kullanıcılara gösterilen profillerin sıralanması, önerilmesi veya görünürlüğünün ayarlanması amacıyla kullanılan sistem. |
+| **Profil çıkarma (profiling)** | Kişisel verilerin otomatik işlenmesi suretiyle kişinin belirli özellikleri hakkında çıkarım yapılması (KVKK m. 3/1(k)). |
+| **Otomatik karar** | İnsan müdahalesi olmadan veya sınırlı insan müdahalesiyle alınan, kullanıcıyı etkileyen karar. |
+| **Üretken yapay zeka (generative AI)** | Metin, görsel, ses veya video üreten yapay zeka sistemleri. |
+| **İnsan incelemesi (human review)** | Otomatik sistem çıktısının bir insan tarafından değerlendirilmesi. |
+
+Bu tanımlar, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK), AB Genel Veri Koruma Tüzüğü (GDPR) ve (uygulanabilir ise) AB Dijital Hizmetler Tüzüğü (DSA) ile uyumlu okunmalıdır.
+
+---
+
+## WIN’de yapay zeka kullanım alanları
+
+### Eşleşme ve öneri sistemleri
+
+WIN, Hizmetleri daha kullanışlı hâle getirmek amacıyla **öneri sistemleri** kullanabilir. Bu sistemler; size gösterilen profilleri **sıralayabilir**, **önerebilir** veya belirli profilleri **daha az görünür** hâle getirebilir. Kullanılan veri ve sinyallerin özeti, [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari) Bölüm 8.1 (Eşleşme ve Öneri Sistemleri) içinde yer alır; detaylı veri kategorileri ve hukuki sebepler [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) ile [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) içinde açıklanır.
+
+Öneri sistemleri **tahmin** niteliğindedir; belirli bir eşleşme veya sonuç **garanti edilmez**.
+
+### Güvenlik ve kötüye kullanım önleme
+
+WIN, **güvenlik** ve **kötüye kullanımın önlenmesi** amacıyla (ör. **sahte profil**, **dolandırıcılık**, **taciz** tespiti) yapay zeka destekli araçlar kullanabilir. Bu araçlar:
+
+- Şüpheli davranış örüntülerini tespit etmek,
+- Bot, spam veya sahte hesap sinyallerini değerlendirmek,
+- İçerik moderasyonunda (yasaklı içerik, nefret söylemi, reşit olmayan şüphesi vb.) insan moderatörlere destek sağlamak
+
+için kullanılabilir. Yapay zeka destekli mekanizmaların ürettiği sinyaller, gerektiğinde **insan incelemesi** ile birlikte değerlendirilir. Bu yaklaşım, [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari) Bölüm 8.3 (AI / Yapay Zeka Kullanımı) ve Bölüm 8.4 (Otomatik Kararlar) ile uyumludur.
+
+### İsteğe bağlı yapay zeka özellikleri
+
+WIN, Hizmetlerin sunumu kapsamında **isteğe bağlı** yapay zeka özellikleri sunabilir (ör. profil metni önerisi, sohbet başlatma ipuçları). Bu tür özellikler:
+
+- **Açıkça işaretlenir** ve kullanıcı **bilgilendirilir**,
+- **Kullanımı zorunlu değildir**; kullanıcı tercihine bağlıdır,
+- Veri işleme, [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) ve [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) kapsamında açıklanır.
+
+Bu tür özellikler sunuldukça, ilgili ekranlarda kısa açıklama ve (gerekirse) ayrı rıza/onay mekanizması sağlanabilir.
+
+### Üretken yapay zeka (generative AI) ile oluşturulan içerik
+
+WIN bir **tanışma / eşleşme (dating)** uygulamasıdır. Bu bağlamda güven ve özgünlük temeldir; **yapay zeka asla aldatıcı bir unsur olmamalıdır**. WIN, üretken yapay zeka (generative AI) ile oluşturulan veya düzenlenen içeriklerin kullanımına ilişkin **özel bir politika** oluşturmuştur. Aşağıdaki kurallar, hem şu an hem de ileride bu tür özellikler sunulduğunda geçerlidir.
+
+<Callout type="error" title="Temel kural — AI aldatıcı unsur olmamalı">
+  Profilde veya mesajlarda **kendinizi**, **görünümünüzü** veya **niyetinizi** yanıltıcı biçimde tanıtmak amacıyla AI kullanmak yasaktır. Diğer kullanıcıların **bilinçli ve güvenilir** bir şekilde eşleşme kararı verebilmesi için içerikleriniz **dürüst** olmalıdır.
+</Callout>
+
+#### Yasaklar (yapılmaması gerekenler)
+
+Aşağıdaki eylemler [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari) ve [Topluluk Kuralları](/topluluk-ve-guvenlik/topluluk-kurallari) ihlali sayılır:
+
+- **Yanıltıcı fotoğraf / görsel kullanımı:** Kendinize ait olmayan veya AI ile **köklü biçimde değiştirilmiş** (yaş, vücut, yüz, cinsiyet ifadesi vb.) görselleri, kendinize aitmiş gibi profilde kullanmak.
+- **Başka bir kişi gibi görünmek:** Başka bir gerçek kişinin görüntüsünü (deepfake, face swap, AI portre vb.) kendi profilinizde kullanmak veya o kişi gibi tanınmanızı sağlamak.
+- **AI içeriğini gerçek gibi sunmak:** AI ile üretilmiş veya düzenlenmiş görsel, ses veya videoyu **açıklama yapmadan** veya “gerçek / kendime ait” izlenimi vererek kullanmak (WIN “AI ile oluşturuldu” işareti talep ettiğinde işareti kullanmamak da bu kapsamda değerlendirilebilir).
+- **Yaş veya kimlikte ciddi sapma:** AI veya başka araçlarla görünümünüzü, yaşınızı veya kimliğinizi **belirgin şekilde** yanıltıcı biçimde değiştirmek (ör. reşit olmayan görünümü yetişkin gibi göstermek veya tam tersi).
+- **Sohbet / mesajda sahte kimlik:** Mesajlaşmada AI ile üretilmiş metin, ses veya görüntüyü **başka biriymiş gibi** veya gerçek kişiye aitmiş gibi kullanmak (ör. sahte sesli mesaj, sahte fotoğraf gönderimi).
+
+Bu liste sınırlayıcı değildir; benzer nitelikteki **aldatıcı veya yanıltıcı** AI kullanımı da ihlal sayılabilir. Ayrıntılı yasaklı içerik ve davranışlar [Topluluk Kuralları](/topluluk-ve-guvenlik/topluluk-kurallari) Bölüm 4 (İçerik kuralları) ve 4.1.2 (Profil fotoğrafı ve görsel standartları) içinde yer alır; **deepfake / yapay zekâ ile üretilmiş portreler** özellikle düzenlenmiştir.
+
+#### Öneriler (AI kullanırsanız uymanız gerekenler)
+
+WIN, (şu an veya ileride) AI ile oluşturulan/düzenlenen içerik kullanımına **sınırlı ve şeffaf** biçimde izin verebilir. Bu durumda aşağıdakilere uymanız önerilir ve (ürün özelliği olarak sunulduğunda) **zorunlu** kılınabilir:
+
+- **Açıklama yapın:** Profilde veya ilgili içerikte AI kullanıldığını **açıkça** belirtin. WIN “AI ile oluşturuldu” etiketi veya benzeri bir alan sunuyorsa, bu alanı kullanın.
+- **Kendinizi dürüst tanıtın:** AI ile yapılan düzenlemeler (örn. arka plan, hafif filtre), **sizin gerçek görünümünüzü veya kimliğinizi ciddi biçimde yanıltmamalı**. Karşı tarafın sizi yüz yüze gördüğünde makul beklenti içinde kalması hedeflenir.
+- **Sadece izin verilen alanlarda kullanın:** WIN’in AI özelliği sunmadığı alanlarda (örn. profil fotoğrafı) dış araçlarla üretilmiş ve **yanıltıcı** içerik yüklemek, yasaklar kapsamına girebilir.
+- **Başkalarının içeriğini izinsiz kullanmayın:** Başka bir kişinin fotoğrafını veya görüntüsünü AI ile işleyip kendi profilinizde kullanmak yasaktır; bu hem telif hem kimlik (impersonation) ihlalidir.
+
+Bu öneriler, **özgünlük (authenticity)** ilkesinin pratik karşılığıdır; güncellemeler uygulama içi bilgilendirme ve bu politika ile yayımlanacaktır.
+
+#### İhlal sonuçları (yaptırımlar)
+
+Yanıltıcı veya yasaklı AI içerik kullanımı tespit edildiğinde veya şikayet üzerine değerlendirildiğinde WIN, aşağıdaki yaptırımlardan bir veya birkaçını uygulayabilir. Sonuçlar, ihlalin **ağırlığı**, **tekrarı** ve **niyet**e göre belirlenir ([Kullanım Koşulları](/sozlesmeler/kullanim-kosullari) Bölüm 7, [Topluluk Kuralları](/topluluk-ve-guvenlik/topluluk-kurallari) yaptırım merdiveni ile uyumludur):
+
+| Olası yaptırım | Açıklama |
+|----------------|----------|
+| **Uyarı ve içerik kaldırma** | İhlal eden içerik kaldırılır; hesap sahibine uyarı ve politika hatırlatması yapılır. |
+| **Profil / özellik kısıtı** | Belirli özelliklerin (örn. fotoğraf yükleme, görünürlük) geçici olarak kısıtlanması. |
+| **Hesabın geçici askıya alınması** | Hesabın belirli süre kullanıma kapatılması; süre sonunda itiraz veya koşullu geri açılma. |
+| **Hesabın kalıcı olarak kapatılması** | Ağır veya tekrarlayan ihlallerde hesabın kalıcı feshi; aynı kişinin yeni hesap açması engellenebilir. |
+
+- **Şikayet ve tespit:** Diğer kullanıcılar, yanıltıcı AI içerik kullandığını düşündükleri profilleri **Şikayet Et** ile bildirebilir. WIN, şikayetleri ve (varsa) otomatik tespit araçlarını değerlendirir; gerektiğinde **insan incelemesi** yapar.
+- **İtiraz:** Hesap kısıtlaması veya kapatma kararına itiraz, [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari) Bölüm 7 ve uygulama içi itiraz/destek kanalı üzerinden yapılır.
+
+Üretken AI özellikleri henüz sunulmuyorsa, ileride sunulduğunda bu politika ve uygulama içi ekran metinleri güncellenecektir; **yasaklar ve sonuçlar** ise AI özelliği sunulsun ya da sunulmasın, **yanıltıcı içerik** ve **profil doğruluğu** kuralları kapsamında geçerlidir.
+
+---
+
+## İlkeler
+
+WIN, yapay zeka kullanımında aşağıdaki ilkelere bağlı kalır.
+
+### Şeffaflık
+
+- **Ne yaptığımızı açıklıyoruz:** AI’ın hangi amaçlarla (eşleşme, güvenlik, isteğe bağlı özellikler) kullanıldığı bu politika ve [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari) Bölüm 8’de özetlenir.
+- **Veri kullanımı:** Hangi veri kategorilerinin AI/öneri sistemlerinde kullanıldığı [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) ve [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) içinde belirtilir.
+- **Otomatik kararlar:** Sizi doğrudan etkileyen otomatik kararlarda mümkün olduğu ölçüde **bilgilendirme** yapılır ve **itiraz/inceleme** başvuru kanalı sunulur ([Kullanım Koşulları](/sozlesmeler/kullanim-kosullari) Bölüm 8.4, 8.5).
+
+AB’de bulunan kullanıcılar için, DSA kapsamındaki **algoritmik şeffaflık** ve **içerik moderasyonu** bilgisi [DSA Uyum Sayfası](/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi) üzerinden ayrıca açıklanır. DSA, özellikle içerik moderasyonunda **algoritmik karar verme ve insan incelemesi** hakkında şart ve koşullarda bilgi verilmesini öngörür (Regulation (EU) 2022/2065 ile uyumlu).
+
+### Özgünlük (authenticity)
+
+- **Dürüst temsil:** AI, kullanıcıların kendilerini **dürüst ve özgün** biçimde tanıtmasına engel olmamalıdır. WIN, anlamlı ve güvenilir bağlantılar kurulmasını hedefler.
+- **Yanıltıcı AI içeriği:** AI ile üretilmiş veya düzenlenmiş içeriklerin, kendinizi veya niyetinizi **yanıltıcı** biçimde sunmak için kullanılması kabul edilmez; ihlal [Topluluk Kuralları](/topluluk-ve-guvenlik/topluluk-kurallari) ve [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari) uyarınca yaptırıma tabidir.
+
+### Eşitlik (equity)
+
+- **Ayrımcılık yapmama:** AI sistemleri, **ırk, etnik köken, cinsiyet, cinsel yönelim, din, engellilik** vb. temelinde haksız ayrımcılığa yol açmayacak şekilde tasarlanmaya ve işletilmeye çalışılır.
+- **Önyargı azaltma:** Yeni AI özellikleri devreye alınırken, farklı kullanıcı grupları üzerindeki olası etkiler değerlendirilir; tespit edilen riskler azaltılmaya çalışılır.
+- **Eşit erişim:** Öneri ve eşleşme deneyimi, mümkün olduğunca **adil ve tutarlı** olacak şekilde gözetilir; ancak teknik sınırlar nedeniyle her durumda mükemmel eşitlik garanti edilemez.
+
+Bu ilkeler, 6698 sayılı KVKK’da öngörülen **kişisel verilerin hukuka ve dürüstlük kurallarına uygun işlenmesi** ve **ayrımcılık yasağı** (m. 4) ile uyumlu okunmalıdır.
+
+### Hesap verebilirlik
+
+- **Karar ve süreçler:** Otomatik kararların gerektiğinde **insan incelemesi** ile desteklenmesi ve **itiraz** yolunun sunulması hedeflenir.
+- **Şeffaflık raporları:** İçerik moderasyonu ve güvenlik süreçlerine ilişkin periyodik [Şeffaflık Raporları](/topluluk-ve-guvenlik/seffaflik-raporlari) yayımlanır; bu raporlar algoritmik ve insan tabanlı moderasyonu da kapsayacak şekilde güncellenebilir.
+
+### Güvenlik ve bütünlük
+
+- **Kötüye kullanım önleme:** AI, **sahte hesaplar**, **dolandırıcılık**, **taciz** ve **spam** gibi risklere karşı topluluk güvenliğini artırmak için kullanılır.
+- **Veri güvenliği:** AI sistemleri için kullanılan veriler, [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) ve teknik güvenlik önlemleri kapsamında korunur.
+
+### Gizlilik
+
+- **Veri minimizasyonu:** AI için yalnızca **gerekli ve orantılı** veriler kullanılır; amaçlar [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) ve [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) içinde açıklanır.
+- **Üçüncü tarafa satış:** WIN, kişisel verilerinizi **para karşılığı satmaz**; AI için kullanılan verilerin üçüncü taraflara aktarımı, bu belgelerdeki aktarım kurallarına tabidir.
+
+---
+
+## Veri ve gizlilik
+
+AI ve öneri sistemleri için kullanılan **veri kategorileri**, **işleme amaçları**, **saklama süreleri** ve **hukuki sebepler** aşağıdaki belgelerde ayrıntılı düzenlenir:
+
+- [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi)
+- [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni)
+
+**Profil çıkarma (profiling)** ve **otomatik karar verme** durumunda, KVKK m. 11 ve (AB’de bulunan kullanıcılar için) GDPR m. 22 uyarınca **bilgilendirme** ve **itiraz / insan müdahalesi talep etme** haklarınız bu belgelerde ve aşağıdaki “Otomatik kararlar ve itiraz” bölümünde özetlenir.
+
+---
+
+## Otomatik kararlar ve itiraz
+
+WIN, **Hizmet güvenliği** ve **dolandırıcılığın önlenmesi** amacıyla bazı durumlarda **otomatik kararlar** uygulayabilir. Örnekler: şüpheli davranış örüntülerinde belirli özelliklerin geçici kısıtlanması, şüpheli ödeme/işlem denemelerinde işlemin engellenmesi, bot/spam tespitinde hesap güvenlik adımlarının tetiklenmesi ([Kullanım Koşulları](/sozlesmeler/kullanim-kosullari) Bölüm 8.4).
+
+- **Bilgilendirme:** Bu tür bir otomatik karar sizin açınızdan **önemli bir etki** doğuruyorsa, mümkün olduğu ölçüde size **bilgilendirme** yapılır.
+- **İtiraz / inceleme:** **İtiraz** veya **insan incelemesi** talebi için başvuru kanalı sunulur. İtiraz süreci ve süreleri [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari) Bölüm 7 (Moderasyon, Askıya Alma, Fesih) ve (uygulanabilir ise) [DSA Uyum Sayfası](/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi) içinde açıklanır.
+- **KVKK / GDPR:** Otomatik karara itiraz ve insan müdahalesi talep etme haklarınız [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) ve [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) kapsamında da yer alır (KVKK m. 11, GDPR m. 22).
+
+---
+
+## Kullanıcı yükümlülükleri
+
+- **Yanıltıcı AI içeriği:** Kendinizi, görünümünüzü veya niyetinizi **yanıltıcı** şekilde tanıtmak amacıyla AI üretimi içerik (görsel, ses, video, metin) kullanmak [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari) ve [Topluluk Kuralları](/topluluk-ve-guvenlik/topluluk-kurallari) ihlali sayılır. İhlal; **içerik kaldırma**, **uyarı**, **özellik kısıtı**, **hesabın geçici askıya alınması** veya **kalıcı kapatılması** ile sonuçlanabilir (ayrıntı için yukarıdaki [Üretken yapay zeka ile oluşturulan içerik](#üretken-yapay-zeka-generative-ai-ile-oluşturulan-içerik) bölümündeki yasaklar ve ihlal sonuçları).
+- **Üçüncü taraf AI/ML araçları:** WIN’in **yazılı izni** olmadan, Hizmetler veya Üye İçeriği ile etkileşime giren **üçüncü taraf uygulamaları** (yapay zeka, makine öğrenmesi veya benzeri otomasyon dahil) **kullanmayacağınızı** veya **geliştirmeyeceğinizi** taahhüt edersiniz ([Kullanım Koşulları](/sozlesmeler/kullanim-kosullari) Bölüm 5).
+- **Şikayet:** Başka bir kullanıcının AI kullanımını ihlal olarak değerlendiriyorsanız, uygulama içi **Şikayet Et** veya ilgili bildirim kanalını kullanabilirsiniz ([Topluluk Kuralları](/topluluk-ve-guvenlik/topluluk-kurallari), [DSA Uyum Sayfası](/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi)).
+
+---
+
+## AB ve uluslararası çerçeve
+
+### Dijital Hizmetler Tüzüğü (DSA)
+
+AB’de hizmet sunulması halinde, **Regulation (EU) 2022/2065 (Digital Services Act)** kapsamında:
+
+- **İçerik moderasyonu** ve **algoritmik karar verme / insan incelemesi** hakkında şart ve koşullarda bilgi verilmesi,
+- **Öneri sistemleri** ve **sıralama (ranking)** ile ilgili şeffaflık,
+- **Gerekçe bildirimi** ve **itiraz/şikayet** mekanizmaları
+
+[DSA Uyum Sayfası](/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi) üzerinden ayrıca açıklanır. WIN’in mevzuat fihristinde DSA’ya atıf ve ilgili doküman yolu yer alır (WIN Regulation fihristi — Dijital Hizmetler Tüzüğü).
+
+### AB Yapay Zeka Tüzüğü (EU AI Act)
+
+AB Yapay Zeka Tüzüğü (Regulation (EU) 2024/1689 — AI Act), **risk temelli** bir çerçeve getirmektedir (kabul edilemez risk, yüksek risk, sınırlı risk, minimal risk). WIN’de kullanılan AI sistemleri (eşleşme/öneri, güvenlik/moderasyon) genel olarak **sınırlı risk** veya **minimal risk** kategorisinde değerlendirilebilecek niteliktedir; yüksek riskli AI kullanımı hedeflenmemektedir. Tüzüğün yürürlük tarihleri ve ek yükümlülükler değişebileceği için, AB pazarında hizmet sunuldukça bu politika ve ilgili sayfalar güncellenecektir.
+
+### Türkiye mevzuatı
+
+- **6698 sayılı KVKK:** Kişisel verilerin işlenmesi, profil çıkarma ve otomatik karar verme, [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) ve [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) ile uyumludur.
+- **5651 sayılı Kanun:** Yer sağlayıcı sorumluluğu ve trafik verisi saklama, içerik moderasyonu süreçleriyle birlikte [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari) ve [Şeffaflık Raporları](/topluluk-ve-guvenlik/seffaflik-raporlari) bağlamında değerlendirilir.
+
+---
+
+## Kontroller ve tercihler
+
+Kullanıcı olarak:
+
+- **Tercih ve filtrelerinizi** ayarlardan değiştirebilir (yaş, mesafe, eşleşme tercihleri vb.),
+- **Konum izninizi** yönetebilirsiniz ([Onboarding İzin Ekranları](/uygulama-ici-akislar/onboarding-izin-ekranlari)),
+- **İstenmeyen kullanıcıları** engelleyebilir veya şikayet edebilirsiniz,
+
+ve bu tercihlerinizin öneri sistemlerine yansımasını bekleyebilirsiniz. Öneri sistemlerinin nasıl çalıştığı ve varsa ayarlanabilir seçenekler [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari) Bölüm 8.5 (Kontroller ve Şeffaflık) içinde özetlenir.
+
+---
+
+## İletişim ve geri bildirim
+
+- **Genel destek ve hesap:** Uygulama içi Yardım veya **`[SUPPORT_URL_OR_EMAIL]`**.
+- **KVKK / veri hakları:** [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) içindeki veri sorumlusu iletişim bilgileri ve başvuru yolları.
+- **Otomatik karar / itiraz:** Hesap kısıtlaması veya feshi ile ilgili itirazlar, [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari) Bölüm 7 ve uygulama içi/itiraz formu veya destek kanalı üzerinden yapılır.
+- **AI politika hakkında geri bildirim:** Bu politika veya WIN’deki AI kullanımı hakkında soru veya geri bildiriminiz varsa, genel destek kanalı (**`[SUPPORT_URL_OR_EMAIL]`**) üzerinden iletebilirsiniz. Özel bir “AI geri bildirim” kanalı sunulduğunda bu sayfa güncellenecektir.
+
+---
+
+<footer
+  style={{
+    marginTop: "2rem",
+    paddingTop: "1rem",
+    borderTop: "1px solid var(--nextra-border-color)",
+    fontSize: "0.875rem",
+    color: "var(--nextra-text-muted)",
+  }}
+>
+  Bu politika, WIN hukuki dokümantasyonu kapsamında **Genesis Hukuk** tarafından hazırlanmıştır. Yapay zeka kullanım alanları ve ürün özellikleri değiştikçe politika güncellenebilir; önemli değişikliklerde sayfada **son güncelleme** tarihi güncellenir.
+</footer>

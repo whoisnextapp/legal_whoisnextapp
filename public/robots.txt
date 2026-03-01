@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://legal.whoisnextapp.com
+
+# Sitemaps
+Sitemap: https://legal.whoisnextapp.com/sitemap.xml

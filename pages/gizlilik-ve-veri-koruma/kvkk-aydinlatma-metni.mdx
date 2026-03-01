@@ -1,0 +1,572 @@
+import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
+
+# KVKK Aydınlatma Metni
+
+**Son güncelleme:** 12.02.2026 · **Sürüm:** 1.0
+
+Bu metin; **WIN (Who is Next?)** platformu (“**Platform**”) kapsamında kişisel verilerinizin **6698 sayılı Kişisel Verilerin Korunması Kanunu** (“**KVKK**”) uyarınca işlenmesine ilişkin **aydınlatma yükümlülüğünün** (KVKK m. 10 ve **KVKK Aydınlatma Yükümlülüğü Tebliği**) yerine getirilmesi amacıyla hazırlanmıştır.
+
+Bu metin, özellikle şu konularda bilgi verir:
+
+- **Veri sorumlusu kimliği ve iletişim kanalları**
+- **İşlenen kişisel veri kategorileri** (profil, konum, doğrulama, kullanım/cihaz, ödeme vb.)
+- **İşleme amaçları ve hukuki sebepler** (KVKK m. 5 ve m. 6)
+- **Aktarım (paylaşım) ve yurt dışı aktarım yaklaşımı** (KVKK m. 8 ve m. 9)
+- **Saklama süreleri ve imha** (KVKK m. 7 ve ikincil mevzuat)
+- **İlgili kişi hakları ve başvuru yolları** (KVKK m. 11–14)
+
+<Callout type="warning" title="Önemli — Kısa özet (katmanlı bilgilendirme)">
+  - **Platform türü:** WIN; kullanıcıların profil oluşturduğu, eşleştiği ve
+  mesajlaştığı bir sosyal eşleşme/dating uygulamasıdır. Profil bilgilerinizin
+  bir kısmı diğer kullanıcılara görünür hâle gelebilir. - **Hassas alanlar:**
+  Selfie/liveness doğrulaması (**biyometrik değerlendirme riski**), konum verisi
+  ve bazı onboarding soruları (din/siyasi görüş gibi) **özel nitelikli veri**
+  veya bu kapsama girebilecek çıkarımlar doğurabilir. Bu alanlar için ayrı
+  **açık rıza** kurgusu benimsenir. - **Üçüncü taraflar:** Platform; barındırma,
+  güvenlik, analitik, bildirim, ödeme ve doğrulama gibi amaçlarla hizmet
+  sağlayıcılarla çalışabilir. Bazı sağlayıcılar **veri işleyen**, bazıları
+  **bağımsız veri sorumlusu** olabilir. - **Haklarınız:** KVKK m. 11
+  kapsamındaki haklarınızı kullanabilirsiniz; başvuru yolları ve kimlik
+  doğrulama adımları aşağıdadır.
+</Callout>
+
+---
+
+## İlişkili dokümanlar
+
+Bu aydınlatma metni, aşağıdaki dokümanlarla birlikte okunmalıdır:
+
+<Cards num={3}>
+  <Card
+    title="Gizlilik Politikası"
+    href="/gizlilik-ve-veri-koruma/gizlilik-politikasi"
+  >
+    Veri işleme süreçleri, saklama ve aktarım ilkeleri.
+  </Card>
+  <Card
+    title="Çerez Politikası"
+    href="/gizlilik-ve-veri-koruma/cerez-politikasi"
+  >
+    Web çerezleri ve mobil SDK/izleyici teknolojileri hakkında şeffaflık.
+  </Card>
+  <Card
+    title="Açık Rıza Metinleri"
+    href="/gizlilik-ve-veri-koruma/acik-riza-metinleri"
+  >
+    Pazarlama, yurt dışı aktarım ve özel nitelikli veri rızaları.
+  </Card>
+  <Card
+    title="Biyometrik Veri Aydınlatma ve Rıza"
+    href="/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza"
+  >
+    Selfie/liveness doğrulama ve biyometrik değerlendirme süreçleri.
+  </Card>
+  <Card title="Kullanım Koşulları" href="/sozlesmeler/kullanim-kosullari">
+    Platformun kullanım kuralları, içerik ve hesap süreçleri.
+  </Card>
+  <Card
+    title="Kolluk Kuvvetleri Rehberi"
+    href="/kurumsal-ve-yasal-uyumluluk/kolluk-kuvvetleri-rehberi"
+  >
+    Resmî makam talepleri ve veri muhafaza (preservation) yaklaşımı.
+  </Card>
+</Cards>
+
+---
+
+## Bölüm 1: Amaç, kapsam ve mevzuat dayanağı
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm; aydınlatma metninin amacı, hangi kanalları kapsadığı ve temel
+  mevzuat referanslarını açıklar.
+</Callout>
+
+### 1.1 Amaç
+
+Bu metnin amacı; Platform kapsamında kişisel verilerinizin işlenmesine ilişkin olarak, KVKK m. 10 ve Aydınlatma Yükümlülüğü Tebliği uyarınca sizi **açık, anlaşılır ve erişilebilir** şekilde bilgilendirmektir.
+
+### 1.2 Kapsam (hangi kanallar)
+
+Bu metin aşağıdaki kanalları kapsar:
+
+- **WIN mobil uygulaması** (iOS/Android)
+- **WIN web alanları** (örn. [whoisnextapp.com](https://whoisnextapp.com) ve Platform ile bağlantılı diğer alan adları)
+- Platformla bağlantılı olabilecek **web uygulaması/help center** (varsa)
+
+> Not: Web alanlarında çerezler; mobil uygulamada ise çoğu zaman **SDK’lar** ve cihaz/reklam tanımlayıcıları (örn. IDFA/GAID) gibi “çerez benzeri” teknolojiler kullanılabilir. Detaylar için [Çerez Politikası](/gizlilik-ve-veri-koruma/cerez-politikasi) incelenmelidir.
+
+### 1.3 Temel mevzuat (genel atıf)
+
+WIN’in veri koruma yaklaşımında özellikle şu düzenlemeler dikkate alınır:
+
+- **6698 sayılı KVKK** (m. 4, m. 5, m. 6, m. 7, m. 8, m. 9, m. 10, m. 11–14)
+- **KVKK Aydınlatma Yükümlülüğü Tebliği**
+- **Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ**
+- **Kişisel Verilerin Yurt Dışına Aktarılması Yönetmeliği**
+- **Kişisel Verilerin Silinmesi, Yok Edilmesi veya Anonim Hale Getirilmesi Hakkında Yönetmelik**
+- **Veri Sorumluları Sicili Hakkında Yönetmelik (VERBİS)** (uygulanabilir olduğu ölçüde)
+- **5651 sayılı Kanun** (yer sağlayıcı yükümlülükleri ve trafik verisi/log saklama yaklaşımı)
+- **6563 sayılı ETK** ve **Ticari İletişim ve Ticari Elektronik İletiler Yönetmeliği** (ticari elektronik ileti izinleri ve ispat yükü)
+- **213 sayılı VUK** ve ikincil düzenlemeler (mali kayıtların saklanması — uygulanabilir olduğu ölçüde)
+
+AB/AEA’da hizmet sunulması hâlinde ayrıca **GDPR** ve ilgili yerel düzenlemeler dikkate alınır (bkz. “Ek: GDPR Bilgilendirme Notu”).
+
+---
+
+## Bölüm 2: Veri sorumlusu ve iletişim
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm; KVKK kapsamında veri sorumlusunun kimliği ve KVKK başvuruları için
+  iletişim kanallarını belirtir.
+</Callout>
+
+### 2.1 Veri sorumlusu
+
+KVKK kapsamında veri sorumlusu:
+
+- **Unvan:** **WIN TECH BİLİŞİM VE ORGANİZASYON TİC. A.Ş.** (“**WIN**”, “**biz**”)
+- **Web sitesi:** [whoisnextapp.com](https://whoisnextapp.com)
+
+### 2.2 İletişim ve KVKK başvuruları için kanallar
+
+KVKK kapsamındaki talepleriniz ve bu metne ilişkin sorularınız için:
+
+| Kanal                       | Bilgi                                                                      |
+| --------------------------- | -------------------------------------------------------------------------- |
+| **Uygulama içi**            | Ayarlar > Yardım/İletişim (veya benzeri)                                   |
+| **Web**                     | [whoisnextapp.com](https://whoisnextapp.com) üzerindeki iletişim kanalları |
+| **E‑posta (KVKK)**          | `[KVKK_EMAIL_ADDRESS]`                                                     |
+| **KEP / UETS (varsa)**      | `[KEP_ADDRESS_OR_UETS_INFO]`                                               |
+| **Posta / tebligat adresi** | `[SERVICE_OF_PROCESS_ADDRESS]`                                             |
+
+> Not: Bu metinde köşeli parantez içinde gösterilen alanlar, şirketin resmî iletişim bilgilerinin nihai hâli ile doldurulmalıdır. (Bu bilgiler uygulama içi “Yasal/Hakkında” alanında ve web sitesinde de yayımlanabilir.)
+
+### 2.3 Kimlik doğrulama
+
+KVKK başvurularında, hem sizin hem de diğer kullanıcıların güvenliği için **kimliğin doğrulanması** istenebilir. Kimliğin doğrulanamaması veya başvurunun eksik bilgi içermesi hâlinde ek bilgi talep edilebilir.
+
+### 2.4 VERBİS (varsa)
+
+WIN’in **VERBİS’e kayıt yükümlülüğü** bulunması hâlinde; sicil kaydı, irtibat kişisi ve ilgili açıklamalar (uygulanabilir olduğu ölçüde) güncel kanallarımız üzerinden yayımlanır:
+
+- **VERBİS kayıt no (varsa):** `[VERBIS_REGISTRATION_NO]`
+- **İrtibat kişisi (varsa):** `[VERBIS_CONTACT_PERSON]`
+
+---
+
+## Bölüm 3: Kişisel verileri toplama yöntemlerimiz ve kaynaklarımız
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm; kişisel verilerin hangi yollarla toplandığını
+  (doğrudan/otomatik/üçüncü taraf) ve hangi süreçlerde veri oluştuğunu açıklar.
+</Callout>
+
+Kişisel verileriniz; **otomatik**, **kısmen otomatik** veya (veri kayıt sisteminin parçası olmak kaydıyla) **otomatik olmayan** yöntemlerle; doğrudan sizden, cihazınızdan/uygulama kullanımınızdan veya üçüncü taraflardan elde edilebilir.
+
+Toplama yöntemlerine örnekler:
+
+- **Uygulama içi ekranlar/formlar** (profil alanları, tercihler, fotoğraf yükleme),
+- **Google ile giriş (OAuth)** gibi üçüncü taraf kimlik doğrulama,
+- **Selfie/liveness doğrulama** ve benzeri güvenlik adımları,
+- **Cihaz/teknik log** ve kullanım verileri,
+- **Çerez/SDK/izleyici teknolojileri** (web ve mobil),
+- **Destek/şikayet kanalları** (uygulama içi yardım, e‑posta; varsa telefon vb.),
+- **Resmî başvurular** (KVKK başvuruları; yetkili makam talepleri).
+
+<Tabs items={["Onboarding & Profil", "Doğrulama", "Eşleşme & Mesajlaşma", "Premium & Ödeme", "Ziyaretçi & Çerez/SDK", "Destek & Şikayet"]}>
+  <Tab>
+    Platforma kayıt olurken ve profilinizi oluştururken, genellikle **doğrudan sizden** veri alınır. Örnek:
+
+    - **Google ile giriş (OAuth)** kapsamında: ad, e‑posta, profil fotoğrafı, Google user ID (teknik).
+    - **Profil alanları:** isim/profil adı, cinsiyet, meslek, boy, burç, sigara/alkol sıklığı, profil notu.
+    - **Tercih/önem soruları:** dinin önem düzeyi, dış görünüş/maddi durum/siyasi görüş uyumu gibi eşleşme parametreleri (hassas/özel nitelikli veri çıkarımı doğurabilir).
+    - **Fotoğraf yükleme:** profil fotoğrafları (ör. 6 slot).
+
+    Bazı alanlar hizmetin sunulması için gerekli olabilir; vermemeniz hâlinde hizmetin bazı bölümleri çalışmayabilir.
+
+  </Tab>
+  <Tab>
+    Platform, sahte hesapları azaltmak ve kullanıcı güvenliğini artırmak için **selfie/liveness doğrulama** isteyebilir. Bu süreçte:
+
+    - **Kamera** ve (bazı senaryolarda) **mikrofon** izni istenebilir.
+    - Kullanıcıdan belirli bir pozu taklit ederek selfie çekmesi talep edilebilir.
+    - Doğrulama görüntüleri kural olarak **profilde yayımlanmaz**.
+
+    Bu süreç; **biyometrik değerlendirme** riskini doğurabileceği için ayrı aydınlatma ve açık rıza metinleriyle yönetilir (bkz. [Biyometrik Veri Aydınlatma ve Rıza](/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza)).
+
+  </Tab>
+  <Tab>
+    Platformu kullanmanız sırasında etkileşim verileri oluşur. Örnek:
+
+    - beğeni/ret davranışları, eşleşmeler,
+    - mesajlaşma kayıtları ve sohbet meta verileri (zaman, taraf, şikayet/engelleme ilişkisi),
+    - profil görüntüleme/keşif (deck) davranışı,
+    - güvenlik sinyalleri (spam/fraud şüphesi vb.).
+
+    Bu veriler; hizmetin sunulması, güvenlik ve kötüye kullanımın önlenmesi, ürün iyileştirme ve (varsa) moderasyon süreçlerinde kullanılabilir.
+
+  </Tab>
+  <Tab>
+    Premium abonelik ve satın alma süreçlerinde veriler; satın alma kanalına göre farklılaşır:
+
+    - **Apple App Store / Google Play** üzerinden satın alımda: mağaza tarafından üretilen sipariş/işlem bilgileri, abonelik durumu ve doğrulama amaçlı “receipt” verileri işlenebilir.
+    - **Ödeme sağlayıcıları** (varsa doğrudan ödeme): ödeme ve faturalama verileri işlenebilir.
+
+    Satın alma sürecinin sözleşmesel çerçevesi için [Abonelik ve Satın Alma Koşulları](/sozlesmeler/abonelik-ve-satin-alma-kosullari) incelenmelidir.
+
+  </Tab>
+  <Tab>
+    Web alanlarını ziyaret ettiğinizde veya uygulamada SDK/analitik çalıştığında, bazı veriler **otomatik** olarak toplanabilir. Örnek:
+
+    - IP adresi, cihaz/uygulama sürümü, tarayıcı bilgisi,
+    - oturum ve log kayıtları (trafik verisi niteliği taşıyabilir),
+    - çerez/SDK kimlikleri, reklam tanımlayıcıları (IDFA/GAID) (varsa).
+
+    Detaylar için [Çerez Politikası](/gizlilik-ve-veri-koruma/cerez-politikasi) incelenmelidir.
+
+  </Tab>
+  <Tab>
+    Destek, şikayet ve bildirim süreçlerinde; sizin sağladığınız bilgiler ve operasyonel kayıtlar işlenebilir. Örnek:
+
+    - destek talepleri, e‑posta yazışmaları, uygulama içi destek mesajları,
+    - şikayet/bildirim içerikleri, ekran görüntüleri (varsa), inceleme notları,
+    - karar ve itiraz kayıtları.
+
+    Bu veriler, hem kullanıcı güvenliği hem de hukuki yükümlülükler bakımından önem taşır.
+
+  </Tab>
+</Tabs>
+
+---
+
+## Bölüm 4: İşlenen kişisel veri kategorileri
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm; Platform kapsamında işlenebilecek kişisel veri türlerini kategori
+  bazında örnekler ve özellikle hassas/özel nitelikli alanlara dikkat çeker.
+</Callout>
+
+Platformun işleyişine göre aşağıdaki veri kategorileri işlenebilir:
+
+| Veri kategorisi                                | Örnekler (WIN bağlamı)                                                                              | Not                                                                                                                    |
+| ---------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **Kimlik**                                     | ad, profil adı (nickname), doğum tarihi/yaş (varsa), cinsiyet                                       | Bazı alanlar profil görünürlüğü kapsamında diğer kullanıcılara açık olabilir.                                          |
+| **İletişim**                                   | e‑posta (Google ile giriş), (varsa) telefon numarası, destek iletişim bilgileri                     | Resmî bildirimler kayıtlı e‑posta/uygulama içi bildirimle yapılabilir.                                                 |
+| **Hesap/Platform kimlikleri**                  | kullanıcı ID, Google user ID (teknik), oturum bilgileri                                             | Güvenlik ve hesap yönetimi için gereklidir.                                                                            |
+| **Profil verileri**                            | meslek, boy, burç, sigara/alkol sıklığı, profil notu                                                | Profil notu serbest metin olduğundan hassas veri paylaşmamanız önerilir.                                               |
+| **Tercih/uyum parametreleri (profil çıkarma)** | dinin önemi, dış görünüş/maddi durum/siyasi görüş uyumu gibi seçimler                               | Bu veriler, **özel nitelikli veri** veya bu kapsama girebilecek çıkarımlar doğurabileceği için ayrıca değerlendirilir. |
+| **Görsel/İçerik**                              | profil fotoğrafları, yüklenen görseller, mesaj içerikleri                                           | İçeriklerinizden siz sorumlusunuz (bkz. [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari)).                        |
+| **Doğrulama verileri**                         | selfie/liveness görüntüsü, doğrulama sonucu/rozeti; (varsa) yaş/kimlik doğrulama verileri          | Doğrulama görüntüsü kural olarak profilde yayımlanmaz.                                                                 |
+| **Konum**                                      | yaklaşık konum/mesafe, (izin verilirse) kesin konum (enlem/boylam)                                  | Konum, yüksek hassasiyetli veri olarak ele alınır.                                                                     |
+| **Kullanım/etkileşim**                         | beğeni/ret, eşleşme, mesajlaşma meta verisi, deck davranışı                                         | Öneri/eşleşme sistemlerinde ve güvenlikte kullanılabilir.                                                              |
+| **Cihaz/teknik/log**                           | IP, cihaz modeli, işletim sistemi, uygulama sürümü, çökme kayıtları, reklam tanımlayıcıları (varsa) | 5651 bağlamında “trafik verisi/log” niteliği doğabilir.                                                                |
+| **Finans/işlem**                               | abonelik durumu, sipariş/işlem numarası, iade kayıtları                                             | App Store/Google Play veya ödeme sağlayıcılarına göre değişir.                                                         |
+| **Hukuki işlem/uyum**                          | şikayet/itiraz kayıtları, moderasyon kararları, talep kayıtları                                     | Uyuşmazlık ve yükümlülükler bakımından saklama gerekebilir.                                                            |
+
+### 4.1 Özel nitelikli kişisel veriler ve hassas alanlar
+
+KVKK m. 6 kapsamında **özel nitelikli kişisel veriler**, özel korumaya tabidir. Platformda:
+
+- **Biyometrik veri** niteliği taşıyabilecek doğrulama süreçleri (selfie/liveness),
+- **Din** ve **siyasi görüş** gibi alanlara ilişkin seçimler veya bu yönde çıkarım doğurabilecek onboarding soruları,
+- Eşleşme tercihleri/filtreleri nedeniyle **cinsel yaşam/cinsel yönelim** konusunda dolaylı çıkarım doğurabilecek veriler,
+
+özel nitelikli veri olarak değerlendirilebilir veya bu riski doğurabilir. Bu nedenle bu alanlar; **ayrı aydınlatma**, **ayrı açık rıza** ve **yüksek güvenlik tedbirleri** ile ele alınır.
+
+---
+
+## Bölüm 5: Kişisel verileri hangi amaçlarla işliyoruz?
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm; Platformun çalışması, güvenlik, sözleşme ve uyum süreçleri için
+  kişisel verilerin hangi amaçlarla işlendiğini açıklar.
+</Callout>
+
+Kişisel verileriniz; Platformun özelliklerine ve kullanımınıza bağlı olarak aşağıdaki amaçlarla işlenebilir:
+
+- **Hesap oluşturma ve yönetimi** (Google ile giriş, oturum, profil oluşturma)
+- **Hizmetin sunulması** (eşleşme akışı, profil gösterimi, mesajlaşma)
+- **Öneri/eşleşme sistemlerinin çalıştırılması** (profil çıkarma, uyumluluk skorları, sıralama/öneri)
+- **Kullanıcı güvenliği ve kötüye kullanımın önlenmesi** (sahte hesap, bot/spam, dolandırıcılık tespiti; şikayet/engelleme)
+- **Selfie/liveness doğrulaması** (profil doğrulama, hizmet bütünlüğü)
+- **Konum bazlı özellikler** (yakın kullanıcı önerisi, mesafe gösterimi)
+- **Premium abonelik ve satın alma süreçleri** (aktivasyon, doğrulama, iade/itiraz)
+- **Müşteri destek ve iletişim süreçleri** (talep/şikayet yönetimi, destek kayıtları)
+- **Hukuki yükümlülüklerin yerine getirilmesi** (5651, ETK, KVKK başvuruları, resmî talepler)
+- **Uyuşmazlıkların çözümü ve hakların korunması** (talep, itiraz, delil saklama)
+- **Ürün geliştirme, analitik ve performans** (hata/çökme analizi, hizmet iyileştirme)
+- **Pazarlama/duyuru iletişimi** (varsa ve izin verdiğiniz ölçüde)
+
+---
+
+## Bölüm 6: İşlemenin hukuki sebepleri (KVKK m. 5 ve m. 6)
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm; kişisel veri işlemenin KVKK’daki hangi şartlara dayandığını (açık
+  rıza, sözleşme, meşru menfaat vb.) açıklar. Özel nitelikli veriler ayrıca ele
+  alınır.
+</Callout>
+
+### 6.1 KVKK m. 5 kapsamındaki dayanaklar
+
+Kişisel verileriniz; ilgili işleme faaliyetinin niteliğine göre aşağıdaki hukuki sebeplerden birine veya birkaçına dayanabilir:
+
+- **KVKK m. 5/2(c)**: Sözleşmenin kurulması veya ifası için zorunlu olması
+- **KVKK m. 5/2(ç)**: Hukuki yükümlülüğün yerine getirilmesi
+- **KVKK m. 5/2(e)**: Bir hakkın tesisi, kullanılması veya korunması için zorunlu olması
+- **KVKK m. 5/2(f)**: Meşru menfaat (temel hak ve özgürlüklere zarar vermemek kaydıyla)
+- **KVKK m. 5/1**: Açık rıza (özellikle zorunlu olmayan, profil çıkarma/hassas alanlar ve pazarlama gibi durumlarda)
+
+Örnek bir eşleştirme tablosu:
+
+| Süreç / amaç                           | Tipik veri türleri                                | Tipik hukuki sebep               |
+| -------------------------------------- | ------------------------------------------------- | -------------------------------- |
+| Hesap oluşturma ve hizmet sunumu       | hesap/profil verileri, oturum                     | KVKK m. 5/2(c)                   |
+| Güvenlik ve kötüye kullanım önleme     | cihaz/log, şikayet/engelleme, davranış sinyalleri | KVKK m. 5/2(f) ve/veya m. 5/2(e) |
+| Abonelik ve satın alma                 | satın alma/işlem verileri                         | KVKK m. 5/2(c) ve/veya m. 5/2(ç) |
+| Resmî makam talepleri ve mevzuat uyumu | trafik verisi/log, başvuru kayıtları              | KVKK m. 5/2(ç)                   |
+| Pazarlama iletişimi (varsa)            | iletişim + izin kayıtları                         | KVKK m. 5/1 + ETK                |
+
+### 6.2 Özel nitelikli kişisel veriler (KVKK m. 6)
+
+Platformda işlenen verilerin bir kısmı **özel nitelikli veri** niteliğinde olabilir veya bu kapsama girebilecek çıkarımlar doğurabilir. Bu tür veriler:
+
+- kural olarak yalnızca **açık rızanızla** (KVKK m. 6/2),
+- ayrıca **özel güvenlik tedbirleri** alınarak
+
+işlenir.
+
+Örnek: selfie/liveness doğrulaması, konum verisi, din/siyasi görüşe ilişkin tercih soruları ve eşleşme tercihleri.
+
+### 6.3 Açık rızanın yönetimi ve geri alınması
+
+Açık rıza gerektiren bir işlemde verdiğiniz rızayı, her zaman geri alabilirsiniz. Rızanın geri alınması, geri alma öncesi yapılan işlemlerin hukuka uygunluğunu etkilemez.
+
+Rıza yönetimi (varsa):
+
+- onboarding “açık rıza katmanı” üzerinden,
+- uygulama içi ayarlar üzerinden,
+- KVKK başvurusu kanalları üzerinden
+
+gerçekleştirilebilir.
+
+### 6.4 Profil çıkarma (profiling) ve münhasıran otomatik analiz
+
+Platform; tercihler, yaşam tarzı ve kullanım/etkileşim verilerini birlikte değerlendirerek **profil çıkarma** yapabilir ve öneri/eşleşme sıralamaları üretebilir.
+
+KVKK m. 11 kapsamında, **işlenen verilerinizin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme** hakkınız bulunmaktadır (bkz. Bölüm 11).
+
+---
+
+## Bölüm 7: Kişisel verilerin aktarılması (KVKK m. 8)
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm; verilerinizin kimlerle ve hangi amaçlarla
+  paylaşılabileceğini/aktarılabileceğini açıklar. “Diğer kullanıcılara
+  görünürlük” ayrıca belirtilir.
+</Callout>
+
+### 7.1 Diğer kullanıcılarla paylaşım (profil görünürlüğü)
+
+Platformun doğası gereği, profilinizdeki bazı veriler **diğer kullanıcılar tarafından görülebilir**. Örnek olarak:
+
+- isim/profil adı, yaş,
+- profil fotoğrafları,
+- mesafe (yaklaşık),
+- profil notu,
+- profilinizde gösterilen diğer özet alanlar (örn. burç, boy, sigara/alkol, bazı tercihler).
+
+> Uyarı: Serbest metin alanlarında (profil notu, mesajlar) telefon numarası, e‑posta, açık adres gibi kişisel bilgileri ve hassas/özel nitelikli verileri paylaşmamanız önerilir. Detaylı içerik kuralları için [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari) ve [Topluluk Kuralları](/topluluk-ve-guvenlik/topluluk-kurallari) geçerlidir.
+
+### 7.2 Hizmet sağlayıcılar ve iş ortakları
+
+WIN; Platformu işletmek ve iyileştirmek için hizmet sağlayıcılarla çalışabilir. Bu kapsamda verileriniz; örneğin aşağıdaki alıcı kategorilerine aktarılabilir:
+
+- **Barındırma ve altyapı sağlayıcıları** (bulut barındırma, veritabanı, CDN)
+- **Analitik ve performans/hata izleme** sağlayıcıları
+- **Bildirim ve iletişim** sağlayıcıları (e‑posta/push/SMS — varsa)
+- **Ödeme ve abonelik** altyapıları (App Store/Google Play ve/veya ödeme sağlayıcıları)
+- **Güvenlik ve kötüye kullanım önleme** sağlayıcıları (spam/fraud, bot tespiti)
+- **Doğrulama sağlayıcıları** (selfie/liveness — varsa üçüncü taraf)
+- **Müşteri destek** sağlayıcıları (ticketing/help desk — varsa)
+
+Bu sağlayıcılar, koşullara göre **veri işleyen** veya **bağımsız veri sorumlusu** konumunda olabilir.
+
+### 7.3 Resmî kurumlar, mahkemeler ve benzeri talepler
+
+Kanunen gerekli hâllerde, verileriniz **yetkili kamu kurum ve kuruluşları** ile paylaşılabilir (ör. mahkeme kararı, savcılık talebi, idari merci talebi). Bu paylaşımlar; KVKK m. 5/2(ç) ve ilgili mevzuat çerçevesinde yapılır.
+
+Resmî makam talepleri için süreç yaklaşımı: [Kolluk Kuvvetleri Rehberi](/kurumsal-ve-yasal-uyumluluk/kolluk-kuvvetleri-rehberi).
+
+### 7.4 Şirket işlemleri
+
+Bir birleşme, devralma, bölünme veya varlık devri gibi işlemlerde; veriler, işlem taraflarına ve danışmanlarına **gizlilik** yükümlülükleri altında aktarılabilir. Bu durumda, aktarımın kapsamı ve güvenlik önlemleri, ölçülülük ve mevzuat çerçevesinde belirlenir.
+
+---
+
+## Bölüm 8: Yurt dışına aktarım (KVKK m. 9)
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm; yurt dışına aktarım ihtimalini, uygulanabilecek hukuki mekanizmaları
+  ve (gerekiyorsa) açık rıza yaklaşımını açıklar.
+</Callout>
+
+Platform; bulut altyapısı veya bazı hizmet sağlayıcıların yurt dışında bulunması nedeniyle kişisel verilerin yurt dışına aktarılmasını gerektirebilir. Bu tür aktarım hâllerinde:
+
+- **KVKK m. 9** ve **Kişisel Verilerin Yurt Dışına Aktarılması Yönetmeliği** kapsamında gerekli şartlar sağlanır.
+- Uygulanabilir mekanizmalara göre; **açık rıza**, **yeterlilik kararı**, **uygun güvenceler** (örn. standart sözleşmeler) veya ilgili mevzuattaki diğer aktarım şartları değerlendirilir.
+
+Yurt dışı aktarım rızası gerektiren senaryolarda, rızalar **amaç‑özgülük** ve **ayrıştırma** ilkelerine uygun şekilde ayrı ayrı alınır (bkz. [Açık Rıza Metinleri](/gizlilik-ve-veri-koruma/acik-riza-metinleri)).
+
+---
+
+## Bölüm 9: Saklama süreleri ve imha
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm; veri saklama yaklaşımını, mevzuat kaynaklı zorunlu saklama
+  sürelerini ve silme/yok etme/anonimleştirme prensiplerini özetler.
+</Callout>
+
+WIN, kişisel verilerinizi; işleme amaçlarının gerektirdiği süre boyunca ve ilgili mevzuatta öngörülen saklama süreleriyle sınırlı olarak muhafaza etmeyi hedefler.
+
+Örnek saklama yaklaşımı (nihai süreler, teknik mimari ve süreçlere göre netleştirilmelidir):
+
+| Veri seti                          | Tipik saklama yaklaşımı                                            | Dayanak / Not                                                                        |
+| ---------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
+| **Trafik verisi / log**            | **1 yıldan az ve 2 yıldan fazla olmamak üzere**                    | 5651 Md. 5/3 ve ilgili ikincil mevzuat çerçevesinde                                  |
+| **Hesap/profil verileri**          | hesap aktif olduğu sürece; silme talebinde kural olarak silme/imha | KVKK m. 7 ve veri minimizasyonu ilkeleri                                             |
+| **Mesajlaşma ve etkileşim**        | hizmetin sunumu + güvenlik/uyuşmazlık ihtiyacı ile ölçülü süre     | Kötüye kullanım incelemeleri ve itiraz süreçleri etkileyebilir                       |
+| **Selfie/liveness doğrulama**      | mümkün olan en kısa süre + güvenlik amacıyla sınırlı pencere       | Biyometrik veri için yüksek koruma; bkz. biyometrik metin                            |
+| **Abonelik/işlem ve mali kayıtlar** | mevzuat ve denetim gerekleri kadar (uygulanabilir ise **10 yıl**)  | VUK ve diğer mali yükümlülükler; satın alma kanalına göre değişebilir                |
+| **Açık rıza / onay kayıtları**     | uyum ve ispat ihtiyacı ile ölçülü süre                             | ETK ve KVKK kapsamında ispat yükümlülüğü ve zamanaşımı süreleri dikkate alınabilir   |
+| **KVKK başvuruları**               | başvurunun sonuçlandırılması + hesap verebilirlik süresi           | Başvuru kayıtları denetim ve ispat amacıyla saklanabilir                             |
+
+İşleme sebeplerinin ortadan kalkması hâlinde veriler; **silinir**, **yok edilir** veya **anonim hâle getirilir**.
+
+### 9.1 Saklama süreleri nasıl belirlenir?
+
+Saklama süreleri belirlenirken, özellikle şu kriterler birlikte değerlendirilir:
+
+- **İşleme amacının gerektirdiği süre** (amaçla sınırlılık ve veri minimizasyonu),
+- **Mevzuat kaynaklı zorunlu saklama** yükümlülükleri (örn. 5651, VUK),
+- **Uyuşmazlık ve hakların korunması** bakımından makul delil saklama ihtiyacı (zamanaşımı süreleri),
+- **Güvenlik** (dolandırıcılık/kötüye kullanım incelemeleri) ve hesap verebilirlik.
+
+### 9.2 Silme, yok etme ve anonimleştirme
+
+Kişisel veriler; işleme sebeplerinin ortadan kalkması ve ilgili saklama süresinin dolması hâlinde, **Kişisel Verilerin Silinmesi, Yok Edilmesi veya Anonim Hale Getirilmesi Hakkında Yönetmelik** kapsamında:
+
+- **silinir** (erişilemez/yeniden kullanılamaz hâle getirilir),
+- **yok edilir** (fiziksel veya teknik yöntemlerle imha edilir),
+- veya **anonim hâle getirilir** (geri döndürülemez biçimde kimlikle ilişkilendirilemez hâle getirilir).
+
+---
+
+## Bölüm 10: Veri güvenliği
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm; kişisel verilerin korunması için alınan temel teknik ve idari
+  tedbirleri özetler ve güvenlik bildirim kanallarına köprü kurar.
+</Callout>
+
+WIN, kişisel verilerin güvenliğini sağlamak amacıyla; Platformun yapısına uygun **teknik** ve **idari** tedbirler uygular. Örnekler:
+
+- **Teknik tedbirler:** şifreleme/maskeleme (uygulanabilir olduğu ölçüde), güvenlik duvarı ve izinsiz erişim önleme, düzenli güvenlik taramaları, yedekleme ve geri yükleme, loglama/izleme, güncelleme ve zafiyet yönetimi.
+- **İdari tedbirler:** politika/prosedürler, çalışan farkındalığı ve eğitimler, tedarikçi seçiminde güvenlik değerlendirmesi, yetkilendirme süreçleri ve denetim izi.
+- **Erişim kontrolü:** rol tabanlı yetkilendirme, en az ayrıcalık, erişimlerin kayıt altına alınması ve düzenli gözden geçirilmesi.
+
+Güvenlik açığı bildirimleri için [Güvenlik Açığı Bildirim Politikası](/kurumsal-ve-yasal-uyumluluk/guvenlik-acigi-bildirim-politikasi) incelenebilir.
+
+---
+
+## Bölüm 11: İlgili kişi hakları ve başvuru yöntemleri
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm; KVKK m. 11 kapsamındaki haklarınızı, başvuru kanallarını ve yanıt
+  sürelerini açıklar.
+</Callout>
+
+### 11.1 KVKK m. 11 kapsamındaki haklarınız
+
+KVKK m. 11 uyarınca, veri sorumlusu olarak WIN’e başvurarak:
+
+- kişisel verilerinizin işlenip işlenmediğini öğrenme,
+- işlenmişse buna ilişkin bilgi talep etme,
+- işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme,
+- yurt içinde/yurt dışında aktarıldığı üçüncü kişileri bilme,
+- eksik/yanlış işlenmişse düzeltilmesini isteme,
+- KVKK m. 7 şartları çerçevesinde silinmesini/yok edilmesini isteme,
+- düzeltme/silme/yok etme işlemlerinin aktarılan üçüncü kişilere bildirilmesini isteme,
+- işlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme,
+- kanuna aykırı işleme nedeniyle zarara uğramanız hâlinde zararın giderilmesini talep etme
+
+haklarına sahipsiniz.
+
+### 11.2 Başvuru nasıl yapılır?
+
+KVKK m. 13 ve **Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ** uyarınca, taleplerinizi aşağıdaki yöntemlerle iletebilirsiniz (uygulanabilir olan kanallar):
+
+| Yöntem | Açıklama |
+| --- | --- |
+| **Yazılı başvuru** | Islak imzalı dilekçe ile posta/kargo veya elden teslim |
+| **Noter** | Noter aracılığıyla resmî tebligat |
+| **KEP** | Kayıtlı Elektronik Posta (KEP) üzerinden, güvenli elektronik imza/mobil imza ile |
+| **Güvenli e‑imza / mobil imza** | Güvenli elektronik imza veya mobil imza ile imzalanmış e‑posta |
+| **Sistemimizde kayıtlı e‑posta** | Sistemlerimizde kayıtlı e‑posta adresiniz üzerinden (kimlik doğrulama gerekebilir) |
+| **Başvuru formu (varsa)** | Web sitemizde veya uygulama içinde sunulan KVKK başvuru formu |
+
+<Steps>
+### 1. Talebinizi netleştirin
+Hangi hakkınızı kullanmak istediğinizi ve talebinizin kapsamını belirleyin (örn. erişim, düzeltme, silme).
+
+### 2. Başvuru kanalını seçin
+
+Bölüm 2.2’deki kanallardan (uygulama içi, e‑posta, KEP, posta) biriyle başvurun.
+
+### 3. Kimlik doğrulama
+
+Gerekli hâllerde kimliğinizi doğrulamak için ek bilgi/belge istenebilir.
+
+### 4. Yanıt süresi
+
+Başvurular, kural olarak **en geç 30 gün** içinde sonuçlandırılır.
+
+### 5. Kurula şikayet
+
+Başvurunun reddedilmesi, cevabın yetersiz bulunması veya süresinde yanıt verilmemesi hâllerinde; cevabı öğrendiğiniz tarihten itibaren **30 gün**, her hâlde başvuru tarihinden itibaren **60 gün** içinde Kişisel Verileri Koruma Kurulu’na şikâyette bulunabilirsiniz.
+
+</Steps>
+
+#### Başvuruda bulunması önerilen/aranan asgari bilgiler
+
+Başvurunuzun sağlıklı ve hızlı sonuçlanabilmesi için (Tebliğ’de öngörülen asgari unsurlar dahil) aşağıdaki bilgileri paylaşmanız önerilir:
+
+- ad, soyad ve başvuru yazılı ise imza,
+- Türkiye Cumhuriyeti vatandaşı iseniz **T.C. kimlik numarası**; yabancı iseniz uyruğunuz, pasaport numaranız veya varsa kimlik numaranız,
+- tebligata esas yerleşim yeri veya iş yeri adresi,
+- varsa bildirime esas elektronik posta adresi, telefon ve faks numarası,
+- talep konusu (hangi hakkınızı kullanmak istediğiniz) ve mümkünse ilgili bilgi/belgeler.
+
+> Not: Başka bir kişiye ait verileri (örn. başka bir kullanıcının mesajlarının kopyası gibi) talep etmeniz hâlinde, o kişinin hak ve özgürlüklerini korumak için talep reddedilebilir veya ek doğrulama/izin istenebilir.
+
+### 11.3 Ücretlendirme
+
+Kural olarak başvurular ücretsizdir. Ancak Kurul tarafından yayımlanabilecek tarife kapsamında ücret öngörülmesi hâlinde ücret talep edilebilir.
+
+---
+
+## Bölüm 12: Güncellemeler
+
+WIN; mevzuat, ürün mimarisi, güvenlik ihtiyaçları veya hizmet sağlayıcı değişiklikleri nedeniyle bu metni güncelleyebilir. Güncel sürüm uygulama içi "**Yasal**" alanında ve [whoisnextapp.com](https://whoisnextapp.com) üzerinde yayımlanır.
+
+---
+
+## Ek: GDPR Bilgilendirme Notu (AB/AEA) — (varsa)
+
+Platformun AB/AEA’da sunulması hâlinde, kişisel verilerin işlenmesinde **GDPR** hükümleri de uygulanabilir. Bu durumda:
+
+- GDPR’daki ek haklar (örn. **veri taşınabilirliği**, **işlemeye itiraz**, **rıza geri çekme**) gündeme gelebilir.
+- Yurt dışına aktarımda, GDPR’daki uygun aktarım mekanizmaları (örn. **SCC**) kullanılabilir.
+- AB/AEA’daki kullanıcılar, ilgili veri koruma otoritesine şikayette bulunma hakkına sahip olabilir.
+
+AB/DSA bağlamındaki iletişim ve temsilci bilgileri (varsa) için ayrıca [DSA Uyum Sayfası](/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi) incelenmelidir.

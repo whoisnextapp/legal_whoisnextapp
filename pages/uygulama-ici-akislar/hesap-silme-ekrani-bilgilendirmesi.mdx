@@ -1,0 +1,156 @@
+import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
+
+# Hesap Silme Ekranı Bilgilendirmesi
+
+**Son güncelleme:** 17.02.2026 · **Sürüm:** 1.0
+
+Bu doküman, WIN kullanıcısının **hesabını silme** (account deletion) akışında ekranda gösterilmesi gereken **zorunlu bilgilendirmeleri**, “geri dönülemezlik” uyarılarını ve **veri silme/saklama** dengesini açıklar.
+
+Bu sayfa, doğrudan sözleşme metni değil; **uygulama içi akış dokümantasyonu** niteliğindedir ve aşağıdaki metinlerle birlikte düşünülmelidir:
+
+<Cards num={4}>
+  <Card title="Kullanım Koşulları" href="/sozlesmeler/kullanim-kosullari">
+    Hesabın kapatılması, kısıtlama ve fesih hükümleri.
+  </Card>
+  <Card
+    title="Gizlilik Politikası"
+    href="/gizlilik-ve-veri-koruma/gizlilik-politikasi"
+  >
+    Saklama, paylaşım ve güvenlik çerçevesi.
+  </Card>
+  <Card
+    title="KVKK Aydınlatma Metni"
+    href="/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni"
+  >
+    Haklar ve başvuru yolları (silme/düzeltme/erişim).
+  </Card>
+  <Card
+    title="Abonelik ve Satın Alma Koşulları"
+    href="/sozlesmeler/abonelik-ve-satin-alma-kosullari"
+  >
+    Abonelik iptali ve ödeme süreçleri.
+  </Card>
+</Cards>
+
+---
+
+## 1. Temel mesajlar (ekranda net görünmeli)
+
+Hesap silme ekranında kullanıcıya şu mesajlar **tek bakışta** net anlatılmalıdır:
+
+1. **Bu işlem kalıcıdır** (geri alınamaz / geri dönüş yok).
+2. **Hesabın silinmesi** profilin görünmez olması ve erişimin kapanması anlamına gelir.
+3. **Uygulamayı silmek** ≠ **hesabı silmek** (farklı işlemlerdir).
+4. **Hesabı silmek** ≠ **aboneliği iptal etmek** (abonelik mağaza üzerinden iptal edilir).
+5. Bazı veriler, **yasal yükümlülükler** ve meşru menfaatler nedeniyle belirli sürelerle saklanabilir.
+6. Kullanıcı, KVKK kapsamında **silme talebi** ve diğer haklarını kullanabilir (bkz. KVKK Aydınlatma Metni).
+
+<Callout type="warning" title="En sık uyuşmazlık nedeni">
+  Kullanıcının “hesabı sildim → aboneliğim iptal oldu” varsayımı yanlıştır.
+  Hesap silme ekranında **abonelik iptali uyarısı** ve “aboneliği yönet”
+  yönlendirmesi mutlaka yer almalıdır.
+</Callout>
+
+---
+
+## 2. Akış planı (önerilen ekran sırası)
+
+<Steps>
+### Adım 1: Hesap silme sayfasına giriş
+Kullanıcı, Ayarlar > (Gizlilik/Yasal) > “Hesabımı Sil” ekranına gelir.
+
+### Adım 2: Sonuçların özeti (geri dönülemezlik)
+
+Kullanıcıya silme sonucu nelerin kaybolacağı ve geri dönüş olmadığı anlatılır.
+
+### Adım 3: Abonelik uyarısı (varsa)
+
+Kullanıcı aktif Premium aboneliğe sahipse, mağaza abonelik yönetimine yönlendirilir.
+
+### Adım 4: Veri saklama/silme bilgilendirmesi
+
+Hemen silinecek veriler ile yasal zorunluluk nedeniyle saklanacak veriler ayrıştırılır.
+
+### Adım 5: Onay / doğrulama
+
+Kullanıcının yanlışlıkla silmesini önlemek için (ör. “HESABIMI SİL” yazdırma) gibi bir onay adımı eklenir.
+
+### Adım 6: Tamamlandı ekranı
+
+Hesabın kapatıldığı, tekrar kullanım için yeniden kayıt gerekebileceği ve destek/başvuru kanalları gösterilir.
+
+</Steps>
+
+---
+
+## 3. Ekranda gösterilecek metinler (öneri şablonlar)
+
+### 3.1 Geri dönülemezlik uyarısı (şablon)
+
+> **Hesabını silmek geri alınamaz.**  
+> Hesabın silindiğinde profilin görünmez olur ve hesabına tekrar giriş yapamazsın.
+
+### 3.2 Silinecek içerikler (şablon)
+
+> Hesabını sildiğinde; profil bilgilerin, fotoğrafların, eşleşmelerin ve uygulama içi tercihlerinin büyük bölümü kaldırılır.  
+> Ancak, diğer kullanıcıların ekran görüntüsü alması gibi durumlarda paylaşımların üzerinde tam kontrol sağlanamayabilir.
+
+### 3.3 Abonelik uyarısı (şablon)
+
+> **Önemli:** Hesabını silmek aboneliğini otomatik iptal etmez.  
+> Aboneliğini App Store / Google Play üzerinden iptal etmelisin.  
+> Detay: [Abonelik ve Satın Alma Koşulları](/sozlesmeler/abonelik-ve-satin-alma-kosullari)
+
+### 3.4 “Uygulamayı silmek” uyarısı (şablon)
+
+> Uygulamayı telefonundan kaldırman hesabını silmez. Hesabını silmek için bu ekrandaki işlemi tamamlamalısın.
+
+---
+
+## 4. Veri silme ve saklama (şeffaflık tablosu)
+
+<Callout type="info" title="KVKK çerçevesi">
+  KVKK m. 7 uyarınca, işlenmesini gerektiren sebepler ortadan kalktığında
+  kişisel veriler silinir, yok edilir veya anonim hale getirilir. Ancak diğer
+  kanunlarda yer alan saklama yükümlülükleri saklıdır.
+</Callout>
+
+Aşağıdaki tablo, hesap silme sonrası olası saklama gerekliliklerini “ekran diliyle” özetler. Nihai süreler
+ve kapsam, **[Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi)** ve iç saklama matrisi ile birebir uyumlu olmalıdır.
+
+| Veri grubu / kayıt                                  | Silme sonrası durum                                                           | Amaç                                   | Dayanak (örnek)                                      |
+| --------------------------------------------------- | ----------------------------------------------------------------------------- | -------------------------------------- | ---------------------------------------------------- |
+| **Profil verileri** (ad/rumuz, tercih alanları vb.) | Kural olarak silinir/anonimleştirilir                                         | Hizmetin sona erdirilmesi              | KVKK m. 4–7                                          |
+| **Fotoğraflar**                                     | Kural olarak silinir                                                          | Hizmetin sona erdirilmesi              | KVKK m. 4–7                                          |
+| **Doğrulama/selfie kayıtları** (varsa)              | Kural olarak silinir; istisnai olarak uyuşmazlık/fraud durumunda saklanabilir | Güvenlik/fraud incelemesi              | KVKK m. 6–7; ilgili iç politika                      |
+| **Mesajlaşma kayıtları** (kullanılan mimariye göre) | Mimariye göre değişir; üçüncü kişilerin gizliliği dikkate alınır              | Uyuşmazlık/şikayet incelemesi          | KVKK m. 5/2(e) veya m. 5/2(f) (ölçülülükle)          |
+| **Trafik/log kayıtları** (IP, port, zaman vb.)      | Yasal süre boyunca saklanabilir                                               | Yasal yükümlülük                       | 5651 sayılı Kanun md. 5/3 (1–2 yıl aralığı)          |
+| **Ödeme/abonelik aktivasyon kayıtları**             | Meşru süre boyunca saklanabilir                                               | Muhasebe/uyuşmazlık/aktivasyon         | 6502 ve ilgili mevzuat; mağaza kayıtları; iç denetim |
+| **Şikayet/ihlâl kayıtları** (raporlar, kararlar)    | Belirli süre saklanabilir                                                     | Güvenlik, itiraz, tekrar ihlali önleme | Meşru menfaat; DSA hedefi varsa uyum                 |
+
+<Callout type="warning" title="Süreler için tek kaynak yaklaşımı">
+  Hesap silme ekranında “X gün/ay/yıl saklarız” gibi sayısal süreler
+  verilecekse, bu süreler mutlaka Gizlilik Politikası ve iç saklama matrisiyle
+  birebir aynı olmalıdır.
+</Callout>
+
+Doğrulama/selfie verisi saklama süreleri [Biyometrik Veri Aydınlatma ve Rıza](/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza) metni ile uyumlu olmalıdır.
+
+---
+
+## 5. Kullanıcının KVKK hakları ve başvuru yolları (ekranda kısa köprü)
+
+Hesap silme ekranının altına, kullanıcıya KVKK haklarını hatırlatan kısa bir köprü önerilir:
+
+> Kişisel verilerinle ilgili taleplerin (erişim, düzeltme, silme, itiraz vb.) için:  
+> [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni)
+
+---
+
+## 6. Ürün/UX notu (opsiyonel ama güçlü öneri)
+
+<Callout emoji="💡" title="Silmeden önce veri indir (opsiyonel)">
+  Kullanıcıya “verilerimi indir” gibi bir seçenek sunulması, hem kullanıcı
+  memnuniyetini artırır hem de KVKK/GDPR hak kullanımını pratikleştirir. Bu
+  özellik yoksa, en azından KVKK başvuru kanalına yönlendirme yapılmalıdır.
+</Callout>

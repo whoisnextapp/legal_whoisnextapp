@@ -1,0 +1,188 @@
+import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
+
+# Ödeme Ekranı Bilgilendirmeleri (Checkout / Abonelik Satın Alma)
+
+**Son güncelleme:** 17.02.2026 · **Sürüm:** 1.0
+
+Bu doküman, WIN Premium gibi ücretli özelliklerin satın alınması sırasında kullanıcıya gösterilmesi gereken **asgari yasal bilgilendirmeleri** ve önerilen **ekran metni şablonlarını** içerir.
+
+Bu sayfa, ödeme ekranının “UI kopyası” gibi düşünülebilir: satın alma anında kullanıcıyı doğru bilgilendirmek, “sonradan uyuşmazlık” riskini azaltmak ve mevcut sözleşmelerle tutarlılığı sağlamak için hazırlanmıştır.
+
+<Callout type="warning" title="Hızlı özet (en kritik 6 mesaj)">
+  - **Fiyat + dönem**: Toplam bedel ve faturalama dönemi net görünmeli. -
+  **Otomatik yenileme** (varsa): Yenileme ve iptal yolu net anlatılmalı. -
+  **İptal kanalı**: İptal, satın alımın yapıldığı **App Store/Google Play**
+  üzerinden yapılır. - **Uygulamayı silmek/hesabı silmek**: Aboneliği otomatik
+  iptal etmez. - **Cayma hakkı / istisna**: Dijital hizmette ifaya hemen
+  başlanması ve istisna halleri kullanıcıya açıkça bildirilmeli. - **İade**:
+  Çoğu durumda iade süreci **Apple/Google** prosedürlerine tabidir; zorunlu
+  tüketici hakları saklıdır.
+</Callout>
+
+<Cards num={3}>
+  <Card
+    title="Abonelik ve Satın Alma Koşulları"
+    href="/sozlesmeler/abonelik-ve-satin-alma-kosullari"
+  >
+    Ödeme/abonelik sözleşmesinin ana çerçevesi.
+  </Card>
+  <Card
+    title="Ön Bilgilendirme Formu"
+    href="/sozlesmeler/on-bilgilendirme-formu"
+  >
+    Satın alma öncesi bilgilendirme şablonu.
+  </Card>
+  <Card
+    title="Mesafeli Satış Sözleşmesi"
+    href="/sozlesmeler/mesafeli-satis-sozlesmesi"
+  >
+    Mesafeli satış ilişkisinin şablonu.
+  </Card>
+</Cards>
+
+---
+
+## 1. Dayanak ve hedef
+
+Bu ekran bilgilendirmeleri; başta aşağıdaki düzenlemeler dikkate alınarak kurgulanır:
+
+- **6502 sayılı Tüketicinin Korunması Hakkında Kanun** (özellikle haksız şartlardan kaçınma; tüketici haklarına saygı)
+- **Mesafeli Sözleşmeler Yönetmeliği** (özellikle md. 5–8: ön bilgilendirme ve “ödeme yükümlülüğü” uyarısı; md. 15: cayma hakkı istisnaları)
+- **Abonelik Sözleşmeleri Yönetmeliği** (özellikle md. 22–25: fesih/fesih kolaylığı ilkesi)
+- **6563 sayılı ETK** (özellikle md. 4: sipariş onayı aşamasında toplam bedelin görünürlüğü ve sipariş teyidi)
+
+<Callout type="info" title="Tutarlılık kuralı">
+  Burada önerilen metinler; uygulamadaki gerçek paket
+  adları/özellikleri/fiyatları ve **[Abonelik ve Satın Alma
+  Koşulları](/sozlesmeler/abonelik-ve-satin-alma-kosullari)** ile birebir uyumlu
+  olmalıdır.
+</Callout>
+
+---
+
+## 2. Ödeme akışı (önerilen ekran sırası)
+
+<Steps>
+### Adım 1: Premium ekranı (değer önerisi)
+Kullanıcı Premium’u görür; paketleri incelemek için “Devam / Paketleri gör” benzeri bir CTA görür.
+
+### Adım 2: Paket seçimi
+
+Haftalık/aylık gibi seçenekler, fiyat ve dönem bilgisiyle listelenir.
+
+### Adım 3: Ödeme öncesi bilgilendirme bloğu (in-app “son kontrol”)
+
+Kullanıcı mağaza ödeme ekranına gitmeden önce; fiyat, dönem, yenileme ve iptal yolu gibi kritik bilgiler
+tek blokta açıkça gösterilir.
+
+### Adım 4: Mağaza ödeme ekranı (App Store / Google Play)
+
+Kullanıcı satın alımı mağaza arayüzünde onaylar.
+
+### Adım 5: Başarılı / aktif abonelik ekranı
+
+“Aktif paket”, “bitiş/yenileme tarihi” ve “aboneliği yönet” yönlendirmeleri gösterilir.
+
+</Steps>
+
+---
+
+## 3. “Ödeme öncesi bilgilendirme” bloğu (zorunlu içerik listesi)
+
+Satın alma butonuna basmadan hemen önce, kullanıcıya en az aşağıdaki içerikler gösterilmelidir:
+
+1. **Ürün/hizmetin temel nitelikleri** (Premium kapsamı: hangi özellikler açılıyor?)
+2. **Toplam bedel** (vergiler dahil) ve **faturalama dönemi**
+3. **Otomatik yenileme durumu** (varsa) ve yenileme fiyatı mantığı (ör. “iptal edilmezse dönem sonunda yenilenir”)
+4. **İptal yöntemi**: App Store / Google Play abonelik yönetimi üzerinden
+5. **Hesap silme / uygulamayı silme ayrımı**: aboneliği otomatik iptal etmez
+6. **Cayma hakkı / istisna bilgilendirmesi** (dijital hizmetlerde ifaya başlama + istisna halleri)
+7. **Destek/şikayet kanalı yönlendirmesi** (abonelik aktivasyonu/geri yükleme/mağaza iadesi ayrımı)
+
+---
+
+## 4. Örnek metin şablonları (uygulama içi)
+
+### 4.1 Paket satırı (liste görünümü)
+
+Önerilen format:
+
+- **WIN Premium – Aylık**  
+  **₺X,XX / ay** · (varsa) otomatik yenileme · iptal: mağaza üzerinden
+
+### 4.2 Ödeme öncesi tek blok (önerilen)
+
+> **Seçtiğin paket:** WIN Premium – Aylık  
+> **Ücret:** ₺X,XX (vergiler dahil) / 1 ay  
+> **Yenileme:** İptal etmezsen dönem sonunda otomatik yenilenebilir ve mağaza hesabından tahsil edilir.  
+> **İptal:** App Store / Google Play → Abonelikler bölümünden iptal edebilirsin.  
+> **Önemli:** Uygulamayı silmek veya hesabını silmek aboneliği otomatik iptal etmez.  
+> **Detay:** [Abonelik ve Satın Alma Koşulları](/sozlesmeler/abonelik-ve-satin-alma-kosullari) ·
+> [Ön Bilgilendirme Formu](/sozlesmeler/on-bilgilendirme-formu) ·
+> [Mesafeli Satış Sözleşmesi](/sozlesmeler/mesafeli-satis-sozlesmesi)
+
+### 4.3 “Ödeme yükümlülüğü” uyarısı (buton ve yakınında)
+
+Mesafeli Sözleşmeler Yönetmeliği md. 8 yaklaşımıyla, buton/CTA yakınında şu netlik sağlanmalıdır:
+
+- Buton metni örneği: **“Abone ol ve ödemeyi onayla”** / **“Satın al (ödeme yükümlülüğü doğurur)”**
+- Buton altı kısa not:
+  > Bu işlemi onayladığında, mağaza hesabın üzerinden ücret tahsil edilir.
+
+### 4.4 Cayma hakkı / dijital hizmet istisnası (duruma göre)
+
+<Callout type="info" title="Ne zaman gösterilmeli?">
+  Premium erişimi, satın alımdan hemen sonra başlıyorsa ve dijital hizmet
+  “anında ifa” niteliği taşıyorsa, Mesafeli Sözleşmeler Yönetmeliği md. 15/1(ğ)
+  ve/veya 15/1(h) kapsamındaki istisnalar kullanıcıya açıkça bildirilmelidir.
+</Callout>
+
+Önerilen metin (şablon):
+
+> Premium özellikler, satın alımdan sonra **hemen** kullanılabilir hâle gelir.  
+> Dijital hizmetin ifasına hemen başlanması hâlinde, ilgili mevzuat kapsamında cayma hakkı istisnaları uygulanabilir.
+
+<Callout type="warning" title="Uygulama notu">
+  Bu alan, ürünün gerçek “ifa başlangıcı” ve şirketin cayma hakkı yaklaşımı
+  netleşmeden kesin ifade ile bağlayıcı biçimde yazılmamalıdır. Nihai metin; Ön
+  Bilgilendirme Formu ve Mesafeli Satış Sözleşmesi ile birebir uyumlu olmalıdır.
+</Callout>
+
+Cayma hakkı ve istisnaların tam metni için bkz. [Ön Bilgilendirme Formu](/sozlesmeler/on-bilgilendirme-formu) ve [Mesafeli Satış Sözleşmesi](/sozlesmeler/mesafeli-satis-sozlesmesi).
+
+---
+
+## 5. Mağaza (App Store / Google Play) ekranına geçişte not
+
+Mağaza ödeme ekranının içeriği (tahsilat, yenileme yönetimi, bazı iade adımları) mağaza kurallarıyla
+belirlenir. Ancak WIN, kendi ekranlarında:
+
+- mağaza üzerinden tahsilat yapıldığını,
+- iptalin mağaza abonelik yönetiminden yapılacağını,
+- hesap silmenin aboneliği otomatik iptal etmediğini
+
+net şekilde belirtmelidir.
+
+---
+
+## 6. Satın alma sonrası (başarılı ekran) bilgilendirmeleri
+
+Başarılı/aktif abonelik ekranında önerilen içerikler:
+
+- **Aktif paket adı**
+- **Dönem bitiş tarihi** (mümkünse)
+- **Yenileme durumu** (varsa) ve “Aboneliği Yönet” yönlendirmesi
+- “Satın alım geri yükleme (Restore Purchases)” (uygulanıyorsa)
+- “İade / sorun yaşıyorum” (Apple/Google yardım sayfalarına yönlendirme + uygulama içi destek)
+
+---
+
+## 7. Hesap silme ekranı ile köprü (ödeme uyuşmazlıklarını azaltır)
+
+Ödeme akışında veya Premium alanında, uygun bir yerde şu köprü kurulması önerilir:
+
+- [Hesap Silme Ekranı Bilgilendirmesi](/uygulama-ici-akislar/hesap-silme-ekrani-bilgilendirmesi)
+
+Önerilen kısa köprü metni:
+
+> Hesabını silmeden önce aboneliğini mağaza üzerinden iptal etmeyi unutma.

@@ -1,0 +1,172 @@
+import {
+  Callout,
+  Tabs,
+  Tab,
+  Steps,
+  FileTree,
+  Cards,
+  Card,
+} from "nextra/components";
+
+# Nextra Component Showroom
+
+Bu bölüm Nextra'da kullanabileceğiniz tüm görsel bileşenlerin örneklerini içerir. Yasal doküman sayfalarında aynı bileşenler kullanılabilir.
+
+---
+
+## 1. Callouts (Bilgi Kutuları)
+
+Sıradan metinlerden ayırmak istediğiniz önemli notlar için kullanılır.
+
+<Callout type="info" emoji="ℹ️">
+  Bu bir **bilgi** kutusudur. Genel bilgilendirmeler için kullanılır.
+</Callout>
+
+<Callout type="warning" emoji="⚠️">
+  Bu bir **uyarı** kutusudur. Dikkat edilmesi gereken yerler için idealdir.
+</Callout>
+
+<Callout type="error" emoji="🚫">
+  Bu bir **hata** kutusudur. Yapılmaması gerekenleri belirtir.
+</Callout>
+
+<Callout emoji="💡">
+  Bu bir **varsayılan (default)** kutudur. İpucu veya tavsiyeler için
+  kullanılabilir.
+</Callout>
+
+---
+
+## 2. Tabs (Sekmeler)
+
+Aynı alanda farklı kategorileri göstermek için kullanılır.
+
+<Tabs items={["KVKK", "GDPR", "California (CCPA)"]}>
+  <Tab>
+    Türkiye'de geçerli olan Kişisel Verilerin Korunması Kanunu detayları buraya
+    gelir.
+  </Tab>
+  <Tab>Avrupa Birliği genel veri koruma tüzüğü standartları.</Tab>
+  <Tab>ABD-California eyaleti gizlilik yasası örnekleri.</Tab>
+</Tabs>
+
+---
+
+## 3. Steps (Adım Adım Süreçler)
+
+Sıralı işlem veya kılavuzlar için mükemmeldir.
+
+<Steps>
+### Adım 1: Kayıt Ol
+Uygulamayı indirin ve telefon numaranızla giriş yapın.
+
+### Adım 2: Biyometrik Doğrulama
+
+"Liveness check" adımını tamamlayarak selfie doğrulamasını yapın.
+
+### Adım 3: Eşleşmeye Başla
+
+Profilinizi tamamlayın ve dürüstçe eşleşin.
+
+</Steps>
+
+---
+
+## 4. FileTree (Dosya Yapısı)
+
+Proje veya klasör yapısını göstermek için kullanılır.
+
+<FileTree>
+  <FileTree.Folder name="win-app" defaultOpen>
+    <FileTree.Folder name="pages">
+      <FileTree.File name="index.mdx" />
+      <FileTree.File name="compliance.mdx" />
+    </FileTree.Folder>
+    <FileTree.Folder name="public">
+      <FileTree.File name="logo.png" />
+      <FileTree.File name="favicon.ico" />
+    </FileTree.Folder>
+    <FileTree.File name="package.json" />
+  </FileTree.Folder>
+</FileTree>
+
+---
+
+## 5. Cards (Kart Tasarımları)
+
+Linkler veya özellikler için kullanılır. (Grid yapısındadır)
+
+<Cards num={2}>
+  <Card image title="Görselli Kart" href="/">
+    ![Banner](https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=400)
+    Kartın içine görseller de eklenebilir.
+  </Card>
+  <Card title="Ana Sayfa" href="/" arrow>
+    Whoisnext hukuki dokümantasyon giriş sayfası.
+  </Card>
+</Cards>
+
+---
+
+## 6. Tablolar (Zengin Markdown)
+
+Verileri organize etmek için standart markdown tabloları Nextra temasıyla uyumlu gelir.
+
+| Modül              | Durum           | Öncelik |
+| :----------------- | :-------------- | :-----: |
+| KVKK Aydınlatma    | ✅ Tamamlandı   | Yüksek  |
+| Çerez Politikası   | ⏳ Hazırlanıyor |  Orta   |
+| API Dokümantasyonu | ❌ Beklemede    |  Düşük  |
+
+---
+
+## 7. Kod Blokları (Gelişmiş)
+
+Dosya adı ve satır vurgulama gibi özelliklerle beraber:
+
+```javascript filename="auth.js" {3}
+function login(user) {
+  // Bu satır vurgulanmıştır
+  console.log(`${user} giriş yaptı.`);
+  return true;
+}
+```
+
+---
+
+## 8. Details (Açılır-Kapanır Bölümler)
+
+Ekstra detayları gizlemek için kullanılır.
+
+<details>
+  <summary>**Daha fazla teknik detay için tıklayın**</summary>
+  Burada gizli teknik dökümanlar veya karmaşık maddeler yer alabilir. Hukuki
+  metinlerin detayları için idealdir.
+</details>
+
+---
+
+## 9. Buttons (Özel Tasarımlar)
+
+Nextra default bir buton sunmaz ancak Tailwind ile premium butonlar yapılabilir:
+
+<div className="flex gap-4 mt-4">
+  <button className="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all font-semibold shadow-lg">
+    Ana Sayfa
+  </button>
+  <button className="px-6 py-2 border border-gray-300 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-all font-semibold">
+    İletişim
+  </button>
+</div>
+
+---
+
+## Nasıl Kullanılır?
+
+Portalın amacı ve doküman kategorileri hakkında **[Ana Sayfa](/)** üzerinden bilgi alabilirsiniz.
+
+---
+
+## Sistem Tercihleri
+
+Bu dökümantasyon sayfası **karanlık mod** destekler. Sağ üstteki ikon üzerinden tema değişikliği yapabilirsiniz.

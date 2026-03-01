@@ -1,0 +1,238 @@
+import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
+
+# Onboarding İzin Ekranları (Cihaz İzinleri ve Açıklamalar)
+
+**Son güncelleme:** 17.02.2026 · **Sürüm:** 1.0
+
+Bu doküman, WIN’in ilk açılış (onboarding) sürecinde kullanıcıdan isteyebileceği **cihaz izinlerini** (konum, bildirim, kamera, mikrofon, fotoğraflar/galeri) **ekran ekran** ve **metin metin** tarif eder.
+
+Amaç; kullanıcının **hangi izni neden istediğimizi**, izni **vermezse ne olacağını**, izni **sonradan nasıl geri alacağını** ve bunun **KVKK/Açık Rıza** katmanlarıyla ilişkisini şeffaf biçimde ortaya koymaktır.
+
+<Callout type="warning" title="Kritik ayrım: cihaz izni ≠ hukuki rıza">
+  Cihaz izni (iOS/Android sistem penceresi), yalnızca uygulamanın belirli bir donanım/veri
+  kaynağına erişebilmesini sağlar. Bu izin, tek başına tüm hukuki gereklilikleri karşılamaz.
+  Kişisel veri işleme bakımından ayrıca gerekli aydınlatma, hukuki sebep ve (gerekiyorsa) açık
+  rıza metinleri uygulanır.
+</Callout>
+
+<Cards num={3}>
+  <Card title="KVKK Aydınlatma Metni" href="/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni">
+    Veri kategorileri, amaçlar, hukuki sebepler, saklama ve haklar.
+  </Card>
+  <Card title="Açık Rıza Metinleri" href="/gizlilik-ve-veri-koruma/acik-riza-metinleri">
+    Konum, pazarlama, yurt dışı aktarım vb. için ayrıştırılmış rıza.
+  </Card>
+  <Card
+    title="Biyometrik Veri (Selfie) Metni"
+    href="/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza"
+  >
+    Selfie/liveness doğrulama kapsamında aydınlatma ve açık rıza.
+  </Card>
+</Cards>
+
+---
+
+## 1. Kapsam ve ilkeler
+
+### 1.1 Hangi izinler söz konusu?
+
+WIN onboarding ve doğrulama akışında aşağıdaki izinleri isteyebilir:
+
+- **Konum** (yaklaşık ve/veya kesin): konum bazlı öneriler ve mesafe bilgisi
+- **Bildirimler** (push): eşleşme/mesaj ve hizmet bildirimleri (pazarlama tercihleri ayrıca yönetilir)
+- **Kamera**: fotoğraf yükleme ve selfie/liveness doğrulama
+- **Mikrofon**: (varsa) doğrulama sırasında video/akış için ses erişimi
+- **Fotoğraflar / Medya kitaplığı**: galeriden fotoğraf seçimi/yükleme
+
+### 1.2 Tasarım ilkeleri (dark pattern yok)
+
+- İzin istemeden önce, **kısa bir “ön açıklama” ekranı** (pre-prompt) gösterilir.
+- **“Şimdi değil”** gibi alternatif sunulur (özelliğin doğası gereği zorunlu olmadığı hallerde).
+- İznin reddi halinde, kullanıcıya **ne kaybedeceği** ve **nereden tekrar açabileceği** açıkça anlatılır.
+- Aynı izin, kullanıcıyı yıpratacak biçimde tekrar tekrar istenmez; kullanıcı tercihi saygıyla yönetilir.
+
+---
+
+## 2. İzin isteme sırası (akış planı)
+
+<Steps>
+### Adım 1: Hukuki metinler ve açık rıza katmanı
+Kullanıcı, onboarding’de KVKK aydınlatma ve sözleşme bağlantılarını görür; gerekiyorsa açık rıza
+kutucukları (ör. konum, selfie/yüz doğrulama, pazarlama, yurt dışı aktarım) ayrı ayrı yönetilir.
+
+### Adım 2: Profil oluşturma ve temel alanlar
+Kullanıcı profil alanlarını doldurur; fotoğraf yüklemek için **galeri/kamera** erişimi gerekebilir.
+
+### Adım 3: Doğrulama katmanı (selfie/liveness)
+Kamera (ve tasarıma göre mikrofon) izni istenir; selfie çekimi ve doğrulama adımları başlar.
+
+### Adım 4: Ana akış ve hizmet bildirimleri
+Kullanıcı ana akışa geçtiğinde, mesaj/eşleşme bildirimleri için **bildirim izni** uygun zamanda istenir.
+
+### Adım 5: Konum bazlı özellikler
+Konum kullanan özellik ilk kez çalıştırılmadan hemen önce **konum izni** istenir.
+</Steps>
+
+<Callout type="info" title="Neden ‘uygun zamanda’ istemek önemli?">
+  Mevzuat uyumu yanında, iyi UX açısından da izinler “özellik ilk kez kullanılacağı an”da
+  gerekçesiyle birlikte istenmelidir. Bu yaklaşım, hem kabul oranını artırır hem de rızanın
+  bilgilendirmeye dayanması ilkesini güçlendirir.
+</Callout>
+
+---
+
+## 3. Konum izni (yaklaşık/kesin)
+
+### 3.1 İznin amacı
+
+- Yakın çevredeki kullanıcıları göstermek
+- Mesafe bilgisini hesaplamak (örn. “X km uzakta”)
+- Sahte hesap ve güvenlik risklerini azaltmaya yönelik sinyaller (varsa)
+
+### 3.2 Toplanan/veriye erişilen alanlar
+
+- Cihazın sağladığı **yaklaşık konum** ve/veya **kesin GPS konumu**
+- Konum hizmeti açık olduğu sürece konuma ilişkin teknik veriler (zaman damgası vb.)
+
+### 3.3 Hukuki çerçeve (özet)
+
+- Konum verisi, yüksek hassasiyetli bir veri setidir; **KVKK aydınlatması**nda açıkça anlatılır.
+- Konumun işlenmesi **açık rıza** gerektiriyorsa rıza kutucuğu ve geri çekme mekanizması,
+  [Açık Rıza Metinleri](/gizlilik-ve-veri-koruma/acik-riza-metinleri) ile uyumlu olmalıdır.
+
+### 3.4 Kullanıcıya gösterilecek ön açıklama (öneri metin)
+
+> Konum izni, sana yakın kullanıcıları gösterebilmemiz ve mesafe bilgisini hesaplayabilmemiz için gereklidir.  
+> Konumunu **kesin adres olarak paylaşmayız**; uygulama içinde yalnızca mesafe gibi türetilmiş bilgiler gösterilir.  
+> İzni istemezsen, konum bazlı eşleşme ve mesafe özellikleri çalışmayabilir.
+
+### 3.5 Sistem izin penceresi (iOS/Android) için notlar
+
+<Tabs items={["iOS", "Android"]}>
+  <Tab>
+    iOS’ta seçenekler cihaz sürümüne göre değişebilir (örn. “Uygulamayı kullanırken”, “Bir kez
+    izin ver”, “İzin verme”). Tercihe göre, uygulama içinde “Konum ayarlarına git” yönlendirmesi
+    sağlanır.
+  </Tab>
+  <Tab>
+    Android’de seçenekler “İzin ver”, “İzin verme” ve bazı sürümlerde “Bu seferlik” gibi
+    varyasyonlar gösterebilir. Kullanıcı reddederse “Uygulama Ayarları > İzinler” üzerinden
+    tekrar açabileceği hatırlatılır.
+  </Tab>
+</Tabs>
+
+### 3.6 İzin verilmezse ne olur?
+
+- Konum bazlı öneriler çalışmayabilir veya sınırlı çalışır
+- Mesafe bilgisi gösterilemeyebilir
+- Kullanıcı, daha sonra Ayarlar’dan izni vererek özelliği yeniden etkinleştirebilir
+
+---
+
+## 4. Bildirim izni (push)
+
+### 4.1 İznin amacı
+
+- Eşleşme ve mesaj bildirimleri
+- Güvenlik ile ilgili hizmet bildirimleri (ör. hesap güvenliği uyarıları)
+- (Varsa ve ayrıca tercih yönetiliyorsa) kampanya/duyuru bildirimleri
+
+<Callout type="warning" title="Pazarlama bildirimi = ayrıca tercih">
+  Push bildirim izni, pazarlama ileti izninin yerine geçmez. Pazarlama amaçlı bildirimler için ETK
+  çerçevesinde ayrıca tercih/rıza yönetimi gerekir (bkz. [Açık Rıza Metinleri](/gizlilik-ve-veri-koruma/acik-riza-metinleri)).
+</Callout>
+
+### 4.2 Kullanıcıya gösterilecek ön açıklama (öneri metin)
+
+> Bildirimlere izin verirsen, yeni eşleşme ve mesajlardan anında haberdar olursun.  
+> İstersen daha sonra Ayarlar’dan bildirimleri kapatabilirsin.
+
+### 4.3 İzin verilmezse ne olur?
+
+- Push bildirim gelmez; kullanıcı uygulamayı açtığında içerikleri görür
+- Kullanıcı, OS ayarlarından daha sonra bildirimleri açabilir
+
+---
+
+## 5. Kamera izni
+
+### 5.1 İznin amacı
+
+- Profil fotoğrafı ekleme (kamera ile çekim)
+- Selfie/liveness doğrulama (sahte hesapları önleme)
+
+### 5.2 Kullanıcıya gösterilecek ön açıklama (öneri metin)
+
+> Kamera izni, fotoğraf yüklemen ve selfie doğrulamasını tamamlaman için gereklidir.  
+> Doğrulama amaçlı çekilen selfie, profilinde herkese açık şekilde gösterilmez (doğrulama akışına göre).
+
+### 5.3 Biyometrik/özel nitelikli veri notu
+
+Selfie/liveness doğrulama akışı, **biyometrik veri** ve/veya **özel nitelikli kişisel veri** riskleri doğurabilir. Bu nedenle:
+
+- ilgili **ayrı aydınlatma** ve **açık rıza** metinleri uygulanmalı,
+- saklama süreleri ve silme/imha politikası şeffaf olmalı,
+- alternatif doğrulama/erişilebilirlik senaryoları değerlendirilmeli
+
+(bkz. [Biyometrik Veri Aydınlatma ve Rıza](/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza)).
+
+---
+
+## 6. Mikrofon izni (varsa)
+
+### 6.1 İznin amacı
+
+Bu izin, yalnızca doğrulama veya video tabanlı özelliklerde **ses erişimi** gerekli ise istenir.
+
+<Callout type="info" title="Not">
+  Mevcut kullanıcı yolculuğu notlarında doğrulama katmanında mikrofon izni adımı yer alıyor.
+  Mikrofon izninin teknik gerekçesi netleşmeden, izin metni “ses kaydı alıyoruz” gibi yorumlara
+  yol açmayacak şekilde dikkatle yazılmalıdır.
+</Callout>
+
+### 6.2 Kullanıcıya gösterilecek ön açıklama (öneri metin)
+
+> Mikrofon izni, doğrulama sırasında gerekli teknik kontrolleri yapabilmemiz içindir.  
+> Ses kaydı alınması/saklanması söz konusu ise, bu durum ayrıca açıkça belirtilir.
+
+### 6.3 İzin verilmezse ne olur?
+
+- İlgili doğrulama/özellik çalışmayabilir
+- Kullanıcı, OS ayarlarından izni daha sonra açabilir
+
+---
+
+## 7. Fotoğraflar / galeri (medya kitaplığı) izni
+
+### 7.1 İznin amacı
+
+- Galeriden fotoğraf seçerek profil fotoğrafı ekleme
+- (Varsa) doğrulama için galeriden fotoğraf seçimi
+
+### 7.2 Kullanıcıya gösterilecek ön açıklama (öneri metin)
+
+> Galerinden fotoğraf seçebilmek için erişim izni gerekir.  
+> İzni vermezsen, fotoğraf eklemek için kamerayı kullanabilirsin.
+
+---
+
+## 8. İzinleri geri alma / değiştirme (kullanıcı yönlendirmesi)
+
+<Callout type="warning" title="Ayar yolu her ekranda hatırlatılmalı">
+  Kullanıcı izin vermezse veya sonradan geri çekerse, ilgili ekranda “OS Ayarlarına Git”
+  şeklinde kısa bir yönlendirme verilmesi önerilir.
+</Callout>
+
+Önerilen kısa yönlendirme metni:
+
+> İzinlerini istediğin zaman cihazının Ayarlar menüsünden yönetebilirsin:  
+> Ayarlar → Uygulamalar → WIN → İzinler
+
+---
+
+## 9. Dokümanlar arası köprüler (bu ekrandan verilmesi önerilen linkler)
+
+- **KVKK/Açık rıza**: [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni), [Açık Rıza Metinleri](/gizlilik-ve-veri-koruma/acik-riza-metinleri)
+- **Selfie doğrulama**: [Biyometrik Veri Aydınlatma ve Rıza](/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza)
+- **Genel kullanım**: [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari)
+- **Gizlilik çerçevesi**: [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi)

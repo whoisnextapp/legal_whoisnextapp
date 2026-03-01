@@ -1,0 +1,313 @@
+import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
+
+# Biyometrik Veri Aydınlatma ve Açık Rıza Metni
+
+**Son güncelleme:** 18.02.2026 · **Sürüm:** 1.0
+
+Bu metin; **WIN (Who is Next?)** platformu (“**Platform**”) kapsamında uygulanan **selfie doğrulama / liveness kontrolü** akışında, kullanıcıdan alınan **selfie görüntüsü** ve bu görüntü üzerinden yapılan **yüz doğrulama** gibi işlemlerin **biyometrik veri** kapsamına girebilecek yönleri hakkında sizi bilgilendirmek ve bu işleme faaliyetleri için **açık rızanızı** almak amacıyla hazırlanmıştır.
+
+<Callout type="info" title="KVKK Aydınlatma Metni ve Gizlilik Politikası ile ilişki">
+Bu metin, **KVKK Aydınlatma Metni’nin yerine geçmez.** Veri sorumlusu bilgileri, genel veri kategorileri, hukuki sebepler, aktarım çerçevesi ve KVKK kapsamındaki haklarınız için lütfen: [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni).  
+Bu metin; özellikle **biyometrik veri** niteliği taşıyabilecek doğrulama sürecine ilişkin **özel ve detaylı** bilgilendirme ve **açık rıza** bölümüdür. Platformun günlük kullanımında “ne görünür, ne görünmez, hangi kontroller sende” gibi pratik açıklamalar için: [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi).
+</Callout>
+
+---
+
+## İlişkili dokümanlar (kısa yollar)
+
+<Cards num={3}>
+  <Card title="KVKK Aydınlatma Metni" href="/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni">
+    KVKK m. 10 kapsamındaki genel aydınlatma ve haklarınız.
+  </Card>
+  <Card title="Gizlilik Politikası" href="/gizlilik-ve-veri-koruma/gizlilik-politikasi">
+    Selfie/liveness adımının Platform içindeki pratik anlatımı.
+  </Card>
+  <Card title="Açık Rıza Metinleri" href="/gizlilik-ve-veri-koruma/acik-riza-metinleri">
+    Yurt dışı aktarım ve diğer rıza başlıkları için rıza şablonları.
+  </Card>
+  <Card title="Kullanım Koşulları" href="/sozlesmeler/kullanim-kosullari">
+    Sahte hesap yasağı, doğrulama süreçleri ve kullanıcı yükümlülükleri.
+  </Card>
+  <Card title="Topluluk Kuralları" href="/topluluk-ve-guvenlik/topluluk-kurallari">
+    Güvenli kullanım, ihlal bildirim ve yaptırım yaklaşımı.
+  </Card>
+  <Card title="Kolluk Kuvvetleri Rehberi" href="/kurumsal-ve-yasal-uyumluluk/kolluk-kuvvetleri-rehberi">
+    Resmî talepler ve veri muhafaza (preservation) yaklaşımı.
+  </Card>
+</Cards>
+
+---
+
+## 1) Kısa özet (katmanlı bilgilendirme)
+
+<Callout type="warning" title="Önemli — Bu özelliğin doğası gereği risk seviyesi yüksektir">
+- **Ne yapıyoruz?** Profil doğrulama amacıyla bir **selfie** alıyor ve (teknik araçlarla) yüz doğrulaması yapıyoruz. Bu işlem, KVKK bakımından **biyometrik veri** kapsamında değerlendirilebilir (KVKK m. 6).
+- **Neden yapıyoruz?** Sahte hesapları azaltmak, dolandırıcılık/taciz risklerini düşürmek ve Platform bütünlüğünü korumak için.
+- **Hangi teknoloji?** Mevcut kurguda yüz doğrulama için **Amazon Rekognition** gibi bir hizmetten yararlanılır. (Detaylar: Bölüm 6 ve 8)
+- **Pazarlama var mı?** Bu biyometrik işleme, **pazarlama amacıyla yapılmaz**; kişiselleştirilmiş reklam hedeflemesi için kullanılmaz.
+- **Görünür mü?** Doğrulama için çekilen selfie; **profil fotoğrafı olarak yayımlanmaz** ve diğer kullanıcılar tarafından görünür hale getirilmez.
+- **Rızayı geri çekebilir misiniz?** Evet. Dilediğiniz zaman geri çekebilirsiniz (KVKK m. 6; rıza geri çekme Bölüm 7). Geri çekme, o ana kadar yapılan işlemlerin hukuka uygunluğunu etkilemez.
+- **Rıza vermezseniz ne olur?** Selfie doğrulama; Platform güvenliği için tasarlanmış bir adım olduğundan, rıza verilmemesi halinde hesap oluşturma tamamlanamayabilir veya bazı işlevler kısıtlanabilir (Bölüm 10).
+</Callout>
+
+---
+
+## 2) Amaç, kapsam ve mevzuat dayanağı
+
+### 2.1 Amaç
+
+Bu metnin amacı; Platformun selfie doğrulama akışında gerçekleşen veri işleme faaliyetleri hakkında sizi **açık ve anlaşılır** şekilde bilgilendirmek ve (gerekli olduğu ölçüde) **açık rızanızı** almaktır.
+
+### 2.2 Kapsam
+
+Bu metin; Platformun aşağıdaki süreçlerini kapsar:
+
+- **Selfie doğrulama / liveness kontrolü** (kamera ile selfie çekimi veya doğrulama görseli sağlama),
+- **Yüz doğrulama** (selfie ile profil fotoğraf(lar)ı veya referans görsel(ler) arasında teknik karşılaştırma yapılması),
+- doğrulama sonucu oluşan **doğrulama durumu** ve buna ilişkin **işlem kayıtları** (zaman damgası, deneme sayısı vb.).
+
+> Not: Platformda profil fotoğrafı yükleme ve fotoğraf moderasyonu gibi başka görsel süreçler de bulunabilir. Bu metin, özellikle “**biyometrik veri**” niteliği taşıyabilecek **doğrulama** sürecine odaklanır.
+
+### 2.3 Mevzuat dayanağı (atıflar)
+
+Bu metin hazırlanırken özellikle şu düzenlemeler esas alınır:
+
+- **6698 sayılı KVKK**:  
+  - **m. 6** (biyometrik ve genetik veriler dâhil **özel nitelikli kişisel veriler**),  
+  - **m. 10** (aydınlatma yükümlülüğü),  
+  - **m. 11–14** (ilgili kişi hakları ve başvuru usulleri),  
+  - **m. 12** (veri güvenliğine ilişkin yükümlülükler).
+- **KVKK Aydınlatma Yükümlülüğü Tebliği** (katmanlı/açık bilgilendirme yaklaşımı).
+- **Kişisel Verilerin Yurt Dışına Aktarılması Yönetmeliği** (yurt dışı aktarım mekanizmaları — uygulanabilir olduğu ölçüde).
+
+AB/AEA’da hizmet sunulması hâlinde ayrıca GDPR yaklaşımı da dikkate alınır (Bölüm 7).
+
+---
+
+## 3) Biyometrik veri nedir? (bu akış açısından)
+
+KVKK kapsamında **biyometrik veri**, özel nitelikli kişisel veri kabul edilir (KVKK m. 6). Platform bağlamında biyometrik veri değerlendirmesi, özellikle şu durumlarda gündeme gelir:
+
+- selfie gibi **yüz görüntülerinin**, bir kişiyi **benzersiz biçimde tanımlamaya/doğrulamaya** imkân verecek şekilde teknik araçlarla işlenmesi,
+- “yüz doğrulama”, “yüz eşleştirme”, “liveness” gibi **doğrulama çıktıları** üretilmesi.
+
+<Callout type="info" title="Fotoğraf her zaman biyometrik veri değildir — ama doğrulama amacıyla işlendiğinde risk artar">
+Platformda profil fotoğrafı yükleme; kural olarak “biyometrik işlem” olarak tasarlanmamalıdır. Ancak fotoğraf/selfie, **kimlik/profil doğrulama** amacıyla teknik işleme tabi tutulduğunda “biyometrik veri” kapsamı gündeme gelebilir. Bu nedenle selfie doğrulama için ayrı bir metinle bilgilendirme ve açık rıza yaklaşımı benimsenmiştir.
+</Callout>
+
+---
+
+## 4) Selfie doğrulama akışı nasıl işler? (WIN’in mevcut kullanıcı yolculuğuna göre)
+
+<Steps>
+### Adım 1: Açık rıza katmanı
+Selfie doğrulama başlamadan önce, kullanıcıdan “selfie ve yüz bilgilerinin doğrulama amacıyla işlenmesine” ilişkin açık rıza istenir.
+
+### Adım 2: Kamera (ve bazı cihazlarda mikrofon) izni
+Doğrulama akışında:
+
+- **kamera izni** zorunlu olabilir,
+- bazı cihazlarda veya uygulama tasarımlarında **mikrofon izni** istenebilir (ör. video selfie altyapısı / teknik gereklilik).
+
+Bu izinler, cihazınızın işletim sistemi ayarlarından her zaman yönetilebilir.
+
+### Adım 3: Selfie çekimi (poz taklit / canlılık doğrulama)
+Platform, kullanıcıdan örnek bir pozu taklit ederek selfie çekmesini isteyebilir. Bu adımın rolü:
+
+- “gerçek kişi” olma ihtimalini artırmak,
+- sahte hesap/bot riskini azaltmaktır.
+
+> Önemli: Doğrulama için çekilen selfie görüntüsünün profilinizde gösterilmemesi hedeflenir.
+
+### Adım 4: Yüz doğrulama (teknik karşılaştırma)
+Selfie görüntüsü; doğrulama amacıyla, belirli teknik kontrollerden geçirilebilir ve yüz doğrulama çıktıları üretilir. Mevcut kurguda yüz doğrulama için **Amazon Rekognition** kullanılmaktadır.
+
+### Adım 5: Sonuç (doğrulandı / doğrulanamadı) ve yeniden deneme
+Doğrulama sonucuna göre:
+
+- doğrulama tamamlanabilir,
+- veya yeniden deneme / alternatif inceleme adımları gündeme gelebilir.
+</Steps>
+
+<Callout type="warning" title="Bu akış “yüksek hassasiyetli” kabul edilir">
+Yüz doğrulama gibi süreçler; yanlış eşleşme, ayrımcılık/yanlılık, hesap kilitlenmesi ve mahremiyet gibi riskler doğurabileceğinden; veri minimizasyonu, kısa saklama süresi ve güçlü güvenlik önlemleri özellikle önemlidir.
+</Callout>
+
+---
+
+## 5) Hangi veriler işlenir? (kategori bazında)
+
+Bu süreçte işlenebilecek veri türleri özetle şunlardır:
+
+| Veri / Çıktı | Açıklama | Kaynak | Not |
+| --- | --- | --- | --- |
+| **Doğrulama selfie görüntüsü** | Doğrulama için çekilen fotoğraf (veya doğrulama görseli) | Kullanıcı | Profil fotoğrafı olarak yayımlanması hedeflenmez. |
+| **Yüz doğrulama çıktıları** | Benzerlik skoru, eşleşme sonucu, doğrulama durumu gibi teknik çıktılar | Platform / sağlayıcı | Teknik çıktılar “biyometrik değerlendirme” kapsamında ele alınır. |
+| **Liveness / canlılık sinyalleri** (varsa) | Poza uyum, tekrar deneme sayısı, teknik kalite sinyalleri | Platform | Ürünün teknik tasarımına göre değişebilir. |
+| **İşlem meta verileri** | Doğrulama zamanı, deneme sayısı, hata kodu/başarı sonucu | Platform | Güvenlik ve kalite amaçlarıyla sınırlı tutulur. |
+| **Güvenlik kayıtları** (varsa) | Sahte hesap şüphesi, itiraz/inceleme notları | Platform | Uyuşmazlık ve güvenlik için saklama gerekebilir. |
+
+<Callout type="info" title="Biyometrik veriyi pazarlama için kullanmama taahhüdü">
+Selfie doğrulama kapsamında işlenen biyometrik veri; **reklam hedefleme**, **pazarlama profillemesi** veya **kampanya iletisi kişiselleştirmesi** amacıyla kullanılmaz.
+</Callout>
+
+---
+
+## 6) Hangi amaçlarla işleriz?
+
+Selfie doğrulama kapsamında biyometrik verileriniz; aşağıdaki amaçlarla ve bu amaçlarla **sınırlı** olarak işlenir:
+
+1. **Profil doğrulama**: Profilin bir gerçek kişiye ait olma ihtimalini artırmak ve sahte profilleri azaltmak.
+2. **Güvenlik ve kötüye kullanım önleme**: Bot/spam, kimlik taklidi ve dolandırıcılık risklerini azaltmak.
+3. **Hizmet bütünlüğü**: Platformda güvenilir eşleşme deneyimini desteklemek.
+4. **İtiraz/inceleme** (varsa): Doğrulama başarısızlıklarında veya itirazlarda kalite ve güvenlik incelemesi yapabilmek.
+5. **Hukuki yükümlülükler ve hakların korunması**: Resmî talepler, uyuşmazlıklar veya hukuki iddialar söz konusu olduğunda kayıtların saklanması gerekebilir.
+
+---
+
+## 7) Hukuki sebep ve açık rıza yaklaşımı
+
+<Tabs items={["KVKK (Türkiye)", "GDPR (AB/AEA) — bilgilendirme notu"]}>
+  <Tab>
+    KVKK kapsamında **biyometrik veriler özel nitelikli kişisel veridir** (KVKK m. 6). Platformun selfie doğrulama akışında biyometrik veri işlenmesi; kural olarak **açık rızanıza** dayanır.
+
+    Bu kapsamda:
+
+    - açık rıza, belirli bir konuya ilişkin, bilgilendirmeye dayanan ve özgür iradeyle açıklanan rıza olarak alınır,
+    - rızanızı **dilediğiniz zaman geri çekebilirsiniz**,
+    - rıza geri çekildiğinde; doğrulama özelliği ve buna bağlı bazı işlevler çalışmayabilir (Bölüm 10).
+
+    > Not: Platformun genel KVKK çerçevesi, veri sorumlusu bilgileri ve haklarınız için: [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni).
+  </Tab>
+  <Tab>
+    Platform AB/AEA’da sunuluyorsa; biyometrik veriler “özel kategori veri” olarak değerlendirilir ve selfie doğrulama gibi süreçlerde tipik yaklaşım **açık rıza**dır (GDPR Art. 9(2)(a)).
+
+    Bu sekme, genel bilgi amaçlıdır. Ülkenize göre ek haklar (itiraz, taşınabilirlik, düzenleyici otoriteye şikayet vb.) gündeme gelebilir.
+  </Tab>
+</Tabs>
+
+---
+
+## 8) Açık rıza metni (uygulama içinde kullanıcıya sunulacak şablon)
+
+Aşağıdaki metin, uygulama içinde kullanıcıya sunulacak açık rıza metninin **önerilen** şablonudur. Ürün akışına göre dil sadeleştirilebilir; ancak “ne işleniyor, kimlerle paylaşılıyor, hangi amaçla, ne kadar süre, rızayı geri çekme” unsurlarının korunması gerekir.
+
+<Callout type="info" title="Açık rıza şablonu">
+**Selfie/Yüz Verisi İşleme Açık Rızası (Biyometrik Veri)**
+
+Platformda profil doğrulama ve sahte hesapların önlenmesi amacıyla; doğrulama için sağladığım **selfie görüntüsünün** ve bu görüntü üzerinden gerçekleştirilecek **yüz doğrulama** işlemlerinin (biyometrik değerlendirme niteliğinde olabilecek teknik işlem ve çıktılar dâhil) işlenmesine **açık rıza veriyorum**.
+
+Bu kapsamda:
+
+- Doğrulama işlemi, mevcut kurguda **Amazon Rekognition** gibi teknik hizmetler kullanılarak gerçekleştirilebilir.
+- Doğrulama için sağladığım selfie görüntüsünün **profilimde yayımlanmayacağını** ve diğer kullanıcılara gösterilmeyeceğini biliyorum.
+- Bu biyometrik işlemenin **pazarlama amacıyla** yapılmayacağını ve reklam hedeflemesinde kullanılmayacağını biliyorum.
+- Biyometrik verilerimin saklama süresi ve imha yaklaşımı ile aktarım/yurt dışı aktarım bilgileri bu metinde açıklanmıştır.
+
+**Rızamı dilediğim zaman geri çekebileceğimi** ve geri çekmenin, geri çekme öncesindeki işlemlerin hukuka uygunluğunu etkilemeyeceğini biliyorum.
+</Callout>
+
+<Callout type="warning" title="Ayrı rıza gerektiren başlıklar (varsa ayrı kutu)">
+Selfie doğrulama kapsamında biyometrik verilerin **yurt dışındaki** hizmet sağlayıcılar tarafından işlenmesi/aktarılması söz konusuysa; KVKK m. 9 ve ilgili ikincil mevzuat kapsamında ayrıca **yurt dışı aktarım mekanizması** kurulması gerekir. Bu konu için metin ve rıza yaklaşımı: [Açık Rıza Metinleri](/gizlilik-ve-veri-koruma/acik-riza-metinleri) ve [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni).
+</Callout>
+
+---
+
+## 9) Saklama süresi ve imha (biyometrik veri özelinde)
+
+Selfie doğrulama kapsamında işlenen biyometrik veriler; **amaçla sınırlı** ve **gerekli süre** kadar saklanır; süre dolduğunda veya işleme amacı ortadan kalktığında güvenli şekilde silinir/imha edilir (KVKK m. 7).
+
+> Not: Aşağıdaki köşeli parantezli alanlar, teknik mimari ve operasyonel süreç netleştiğinde (saklama matrisi) sayısallaştırılmalıdır. Benzer yaklaşım için: [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni).
+
+| Veri / kayıt | Saklama yaklaşımı (önerilen yapı) | İmha tetikleyicileri (örnek) |
+| --- | --- | --- |
+| **Doğrulama selfie görüntüsü** | Doğrulama tamamlandıktan sonra en fazla **[SELFIE_SAKLAMA_SURESI]** süreyle; güvenlik/itiraz süreçleri için sınırlı saklanır. | hesap silme, rıza geri çekme, süre dolumu |
+| **Yüz doğrulama çıktıları** (skor/sonuç) | Kural olarak sadece “doğrulandı/doğrulanamadı” gibi minimal sonuç + zaman damgası saklanır; detaylı teknik çıktılar mümkün oldukça tutulmaz. | hesap silme, süre dolumu |
+| **Güvenlik/audit kayıtları** | Sahte hesap/dolandırıcılık şüphesi veya itiraz süreçlerinde; sınırlı erişimle **[AUDIT_SAKLAMA_SURESI]** saklanabilir. | uyuşmazlık çözümü, süre dolumu |
+
+### 9.1 Rıza geri çekilirse ne olur?
+
+Rızanızı geri çektiğinizde:
+
+- selfie/yüz doğrulama kapsamında biyometrik veri işleme durdurulur,
+- doğrulama için saklanan selfie görüntüsü ve ilgili kayıtlar, varsa hukuki/operasyonel istisnalar saklı kalmak üzere, güvenli şekilde silinmeye/imha edilmeye alınır,
+- doğrulama özelliği ve buna bağlı güvenlik mekanizmaları devre dışı kalabileceği için, hesap/özellik erişiminde kısıtlar oluşabilir (Bölüm 10).
+
+### 9.2 İstisnalar
+
+Aşağıdaki hallerde, verilerin daha uzun süre saklanması gerekebilir:
+
+- devam eden bir uyuşmazlık/itiraz süreci,
+- resmî makam talepleri veya hukuki yükümlülükler,
+- güvenlik/preservation (delil muhafazası) süreçleri.
+
+Bu istisnaların çerçevesi için: [Kolluk Kuvvetleri Rehberi](/kurumsal-ve-yasal-uyumluluk/kolluk-kuvvetleri-rehberi).
+
+---
+
+## 10) Rıza vermemenin veya geri çekmenin olası sonuçları
+
+Selfie doğrulama; Platformun sahte hesapları azaltma ve kullanıcı güvenliğini artırma yaklaşımının parçasıdır. Bu nedenle:
+
+- rıza verilmemesi halinde **hesap oluşturma** veya **Platformu kullanma** süreci tamamlanamayabilir,
+- rıza geri çekilirse, doğrulama durumunuz kaldırılabilir ve bazı özelliklere erişiminiz sınırlanabilir,
+- güvenlik gerekçesiyle belirli işlemler “doğrulama tamamlanana kadar” askıda kalabilir.
+
+<Callout type="info" title="Kullanıcı kontrolü">
+Rıza/izin yönetimi için (varsa) uygulama içi “Ayarlar > Yasal > Rızalar/İzinler” alanını kullanabilir veya KVKK başvuru kanalları üzerinden talepte bulunabilirsiniz. Detaylı başvuru usulü için: [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni).
+</Callout>
+
+---
+
+## 11) Aktarımlar ve hizmet sağlayıcılar (biyometrik süreç özelinde)
+
+Selfie doğrulama sürecinde; altyapı ve doğrulama amacıyla hizmet sağlayıcılar devreye girebilir. Mevcut kurguda:
+
+- doğrulama selfie’si ve ilişkili kayıtlar, **Google Cloud / Firebase** altyapısında saklanabilir,
+- yüz doğrulama işlemi için **Amazon Rekognition** kullanılabilir.
+
+> Önemli: Hizmet sağlayıcıların rolü; “veri işleyen” veya “bağımsız veri sorumlusu” olarak değişebilir. Genel rol yaklaşımı için: [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) ve [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi).
+
+| Sağlayıcı / sistem | Amaç | Veri türü | Lokasyon | Not |
+| --- | --- | --- | --- | --- |
+| **Google Cloud / Firebase** | Barındırma, saklama, uygulama altyapısı | Doğrulama selfie’si ve ilişkili kayıtlar | **[FIREBASE_REGION]** | Sunucu lokasyonu/yurt dışı aktarım mekanizması ayrıca değerlendirilir. |
+| **Amazon Rekognition (AWS)** | Yüz doğrulama (selfie karşılaştırma) | Selfie görüntüsü ve teknik doğrulama çıktıları | **[AWS_REKOGNITION_REGION]** | İşleme, doğrulama amacıyla sınırlı tutulmalıdır. |
+
+<Callout type="warning" title="Yurt dışı aktarım notu">
+Verilerin yurt dışındaki sunuculara aktarımı söz konusuysa; KVKK m. 9 ve ilgili yönetmelik kapsamında uygun aktarım mekanizması kurulması gerekir. Bu konuda ayrıntı: [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) ve [Açık Rıza Metinleri](/gizlilik-ve-veri-koruma/acik-riza-metinleri).
+</Callout>
+
+---
+
+## 12) Güvenlik önlemleri (özel nitelikli veri için ek hassasiyet)
+
+Biyometrik veriler, KVKK kapsamında **özel nitelikli** kabul edildiğinden; güvenlik önlemleri daha yüksek hassasiyetle ele alınır. Bu kapsamda (örnekler):
+
+- **Şifreleme**: veri aktarımında TLS; saklamada şifreleme (at-rest) ve güvenli anahtar yönetimi.
+- **Erişim kontrolü**: en az ayrıcalık (least privilege), rol bazlı yetkilendirme, MFA, kayıt altına alma.
+- **Ayrıştırma**: doğrulama selfie’sinin, profil fotoğraflarından ve genel içeriklerden ayrı mantıksal depolama/erişim politikalarıyla yönetilmesi.
+- **Denetim izi**: erişim ve işlem loglarının tutulması; anomali/ihlal tespiti.
+- **Tedarikçi yönetimi**: hizmet sağlayıcılarla veri işleme sözleşmeleri, gizlilik yükümlülükleri ve güvenlik denetimleri.
+- **İmha prosedürleri**: süre dolumlarında otomatik silme, silme taleplerinde hızlı imha; yedeklerde silme yaklaşımı.
+
+Genel veri güvenliği yaklaşımı için: [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) ve [Güvenlik Açığı Bildirim Politikası](/kurumsal-ve-yasal-uyumluluk/guvenlik-acigi-bildirim-politikasi).
+
+---
+
+## 13) Haklarınız ve başvuru yolları
+
+KVKK m. 11 kapsamında; kişisel verilerinizin işlenip işlenmediğini öğrenme, bilgi talep etme, amacına uygun kullanılıp kullanılmadığını öğrenme, aktarım yapılan üçüncü kişileri bilme, düzeltme/silme talep etme, itiraz ve zararınızın giderilmesini talep etme gibi haklara sahipsiniz.
+
+Bu hakların kullanımı ve başvuru usulü için: [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni).
+
+---
+
+## 14) Değişiklikler
+
+Bu metin, Platformun doğrulama kurgusu, tedarikçi altyapısı veya mevzuat değişiklikleri doğrultusunda güncellenebilir. Güncellemeler uygulama içi “Yasal” bölümünde ve [whoisnextapp.com](https://whoisnextapp.com) adresinde yayımlanır.
+
+---
+
+## 15) İletişim
+
+Bu metne ilişkin sorularınız ve KVKK kapsamındaki talepleriniz için, [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) içinde belirtilen iletişim kanallarını kullanabilirsiniz.

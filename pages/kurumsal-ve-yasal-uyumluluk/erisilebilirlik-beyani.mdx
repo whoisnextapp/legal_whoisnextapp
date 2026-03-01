@@ -1,0 +1,432 @@
+# Erişilebilirlik Beyanı
+
+import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
+
+**Son güncelleme:** 16.02.2026 · **Sürüm:** 1.0
+
+Bu sayfa, WIN (“**Platform**”) tarafından sunulan hizmetlerin; engelli bireyler dahil olmak üzere tüm kullanıcılar için **erişilebilir**, **kapsayıcı** ve **kullanılabilir** olmasına ilişkin yaklaşımı, uygulanan standartları ve geri bildirim kanallarını açıklar.
+
+<Callout type="info" title="Bu beyanın amacı">
+  - Erişilebilirlik standartlarına (örn. **WCAG** ve **EN 301 549**) uyum
+  yaklaşımımızı şeffaf biçimde açıklamak, - Kullanıcıların erişilebilirlik
+  engellerini **kolayca bildirebilmesini** ve uygun alternatif çözümlere
+  erişebilmesini sağlamak, - Erişilebilirlik çalışmalarının **sürekliliğini**
+  (test, iyileştirme, güncelleme) taahhüt etmektir.
+</Callout>
+
+---
+
+## İlişkili dokümanlar
+
+Bu beyan aşağıdaki WIN dokümanlarıyla birlikte okunmalıdır:
+
+<Cards num={3}>
+  <Card
+    title="Kullanım Koşulları"
+    href="/sozlesmeler/kullanim-kosullari"
+  >
+    Hizmetin kapsamı, hesap kuralları, iletişim kanalları ve kullanıcı
+    yükümlülükleri.
+  </Card>
+  <Card
+    title="Gizlilik Politikası"
+    href="/gizlilik-ve-veri-koruma/gizlilik-politikasi"
+  >
+    Erişilebilirlik bildirimleri dahil tüm destek süreçlerinde kişisel verilerin
+    işlenmesi.
+  </Card>
+  <Card
+    title="DSA Uyum Sayfası"
+    href="/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi"
+  >
+    AB kullanıcıları için şikayet/itiraz ve iletişim mekanizmaları (DSA
+    kapsamı).
+  </Card>
+  <Card
+    title="Topluluk Kuralları"
+    href="/topluluk-ve-guvenlik/topluluk-kurallari"
+  >
+    Güvenli ve kapsayıcı iletişim ilkeleri; ihlal bildirim yolları.
+  </Card>
+  <Card
+    title="Abonelik ve Satın Alma Koşulları"
+    href="/sozlesmeler/abonelik-ve-satin-alma-kosullari"
+  >
+    Premium/abonelik süreçleri ve mağaza kaynaklı satın alma akışları.
+  </Card>
+  <Card
+    title="Çerez Politikası"
+    href="/gizlilik-ve-veri-koruma/cerez-politikasi"
+  >
+    Web alanlarında çerez/izleyici tercihleri ve kontrol seçenekleri.
+  </Card>
+</Cards>
+
+---
+
+## Bölüm 1: Giriş, kapsam ve temel tanımlar
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölümde (i) bu beyanın hangi ürün/kanalları kapsadığı, (ii)
+  erişilebilirlikte temel kavramlar ve (iii) kapsam dışı kalabilecek üçüncü
+  taraf alanlar açıklanır.
+</Callout>
+
+### 1.1 Kapsam (hangi kanallar)
+
+Bu erişilebilirlik beyanı, WIN hizmetlerine erişim sağlanan aşağıdaki kanalları kapsar:
+
+- **WIN mobil uygulaması** (iOS ve Android) üzerinden sunulan tüm temel akışlar (kayıt/giriş, profil, eşleşme, mesajlaşma, şikayet/engelleme, premium/abonelik yönetimi vb.)
+- **WIN web alanları**: [whoisnextapp.com](https://whoisnextapp.com) ve WIN tarafından işletilen/işletilmesi planlanan web sayfaları
+- **Bu dokümantasyon portalı** üzerinde sunulan sözleşme ve uyum metinlerinin erişilebilir sunumu
+
+### 1.2 Temel tanımlar
+
+- **Erişilebilirlik (Accessibility):** Bir ürün veya hizmetin; engelli bireyler dahil olmak üzere herkes tarafından algılanabilir, işletilebilir, anlaşılabilir ve sağlam (robust) şekilde kullanılabilmesi.
+- **Erişilebilirlik engeli (Barrier):** Bir kullanıcı grubunun (örn. ekran okuyucu kullanan, düşük görme, işitme engeli olan veya motor beceri kısıtı bulunan kullanıcılar) hizmeti kullanmasını zorlaştıran/engelleyen tasarım, içerik veya teknik unsur.
+- **Yardımcı teknolojiler (Assistive Technologies):** Ekran okuyucular, ekran büyüteçleri, alternatif giriş yöntemleri, anahtar denetimleri (switch), sesle kontrol vb.
+- **Uygun alternatif (Alternative):** Erişilebilirlik engeli giderilene kadar, aynı sonuca ulaşmayı sağlayan makul alternatif çözüm (örn. destek ekibi aracılığıyla işlem tamamlama).
+
+### 1.3 Üçüncü taraf alanlar ve sınırlı kontrol
+
+WIN, hizmeti sunarken bazı üçüncü taraf teknolojilerden faydalanabilir. Bu bileşenlerin erişilebilirliği, ilgili üçüncü tarafın teknik özelliklerine ve kullanıcının cihaz/işletim sistemi ayarlarına bağlı olabilir. Örnekler:
+
+- **Google OAuth** ile giriş/hak doğrulama ekranları,
+- **Apple App Store / Google Play Store** abonelik satın alma ve iade ekranları,
+- (varsa) üçüncü taraf yüz doğrulama/liveness altyapısı ve kamera arayüzleri.
+
+<Callout type="warning" title="Önemli not">
+  Üçüncü taraf arayüzlerde yaşadığınız engelleri de bize bildirmenizi isteriz.
+  Her zaman doğrudan kontrol edemesek de, (i) alternatif çözüm üretmek ve (ii)
+  tedarikçi seçiminde/entegrasyonda iyileştirme yapmak için bu bildirimler
+  kritiktir.
+</Callout>
+
+---
+
+## Bölüm 2: Dayanak mevzuat ve hedeflenen standartlar
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölümde erişilebilirlik yaklaşımımızın dayandığı mevzuat ve teknik
+  standartlar yer alır.
+</Callout>
+
+### 2.1 Mevzuat referansı (özet)
+
+WIN’in erişilebilirlik yaklaşımı, özellikle aşağıdaki düzenlemeler dikkate alınarak kurgulanır:
+
+- **European Accessibility Act (EAA)** — **Directive (EU) 2019/882**: AB/AEA pazarında ürün ve hizmetlerde erişilebilirlik gerekliliklerine ilişkin çerçeve (özellikle dijital hizmetler ve e‑ticaret niteliği taşıyan hizmetler bakımından).
+
+> Not: WIN’in hangi bölgelerde hizmet sunduğuna göre zorunlu yerel hükümler farklılık gösterebilir. Bu beyan, hem mevcut faaliyet hem de hedeflenen pazarlar için erişilebilirlik yaklaşımını şeffaflaştırmayı amaçlar.
+
+### 2.2 Teknik standartlar ve prensipler
+
+WIN, erişilebilirlik hedeflerini belirlerken aşağıdaki standart ve ilkeleri esas alır:
+
+- **W3C Web Content Accessibility Guidelines (WCAG) 2.2 — Level AA**: Web ve mobil arayüzlerde erişilebilirlik için küresel kabul görmüş kriterler.
+- **EN 301 549**: AB’de ürün/hizmet erişilebilirliğinde sık kullanılan uyum standardı (EAA ile birlikte değerlendirilen çerçeve).
+- **POUR prensipleri** (Perceivable / Operable / Understandable / Robust): Erişilebilirliğin dört temel ilkesi.
+
+<Tabs items={["Algılanabilir", "İşletilebilir", "Anlaşılabilir", "Sağlam"]}>
+  <Tab>
+    Bilgi ve arayüz bileşenleri kullanıcılar tarafından farklı duyularla
+    algılanabilir olmalıdır. Örn. metin alternatifleri, yeterli kontrast, yazı
+    boyutu büyütme ile okunabilirlik.
+  </Tab>
+  <Tab>
+    Arayüz bileşenleri ve gezinme yolları işletilebilir olmalıdır. Örn. klavye
+    ile kullanım, odak sırası, hareket/animasyon kontrolü, zaman aşımı yönetimi.
+  </Tab>
+  <Tab>
+    İçerik ve arayüz davranışı anlaşılabilir olmalıdır. Örn. açık dil, tutarlı
+    bileşenler, net hata mesajları, doğrulama geri bildirimleri.
+  </Tab>
+  <Tab>
+    İçerik, farklı kullanıcı aracıları ve yardımcı teknolojilerle güvenilir
+    şekilde çalışmalıdır. Örn. semantik yapı, uygun erişilebilirlik etiketleri
+    ve uyumlu bileşenler.
+  </Tab>
+</Tabs>
+
+---
+
+## Bölüm 3: Uyum durumu (conformance) ve yaklaşım
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölümde uyum hedefimiz, uyum değerlendirme yöntemimiz ve “kısmi uyum”
+  ihtimalinin yönetimi açıklanır.
+</Callout>
+
+### 3.1 Hedeflenen uyum seviyesi
+
+WIN’in hedefi; hizmetleri, makul teknik ve ekonomik imkanlar dahilinde **WCAG 2.2 AA** kriterleriyle uyumlu şekilde tasarlamak ve sürdürmektir. AB/AEA pazarında hizmet sunulması halinde, erişilebilirlik gereklilikleri **EAA** ve ilgili standartlar (örn. **EN 301 549**) ile birlikte ele alınır.
+
+### 3.2 Uyum değerlendirmesi (nasıl ölçüyoruz)
+
+WIN, erişilebilirlik uyumunu aşağıdaki yöntemlerin kombinasyonuyla değerlendirir:
+
+- **Manuel testler:** Ekran okuyucu, klavye ile gezinme, odak yönetimi, kontrast ve metin ölçeklendirme gibi kritik kriterlerin insan gözlemiyle kontrolü.
+- **Otomatik analizler:** Erişilebilirlik hatalarını erken yakalamaya yönelik otomatik kontroller (web tarafında tarama araçları, kod kalite kuralları vb.).
+- **Sürüm bazlı iyileştirme:** Erişilebilirlik bulgularının ürün geliştirme döngüsüne işlenmesi ve sürümlerde giderilmesi.
+
+### 3.3 Kısmi uyum ve istisnalar
+
+Erişilebilirlik, sürekli iyileştirme gerektiren yaşayan bir alandır. Bazı içerik veya özelliklerde:
+
+- **Üçüncü taraf bağımlılıkları**,
+- **Platform (iOS/Android/Web) sınırlamaları**,
+- **Kullanıcı tarafından üretilen içerikler (UGC)**,
+- **Cihaz/OS sürümü farklılıkları**
+
+nedeniyle geçici **kısmi uyum** halleri oluşabilir. Bu durumda hedefimiz, kullanıcıya **makul alternatif** sunmak ve engeli mümkün olan en kısa sürede gidermektir.
+
+---
+
+## Bölüm 4: Erişilebilirliği destekleyen önlemler (süreç ve yönetişim)
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm; eğitim, tasarım-geliştirme prensipleri, test metodolojisi ve üçüncü
+  taraf tedarik yönetimi dahil olmak üzere erişilebilirliği kurumsal olarak
+  nasıl yönettiğimizi açıklar.
+</Callout>
+
+### 4.1 Eğitim ve farkındalık
+
+WIN ekibi, erişilebilirlikte iyi uygulamaları sürdürülebilir kılmak için:
+
+- erişilebilirlik prensipleri konusunda **düzenli eğitim ve rehberlik**,
+- yeni özelliklerin tasarım ve geliştirmesinde erişilebilirlik kontrol listeleri,
+- ürün/sunum ekipleri arasında erişilebilirlik sorumluluğunun paylaşılması
+
+gibi mekanizmalar kurmayı hedefler.
+
+### 4.2 Tasarım ilkeleri (UI/UX)
+
+Erişilebilir tasarım yaklaşımımızın örnek unsurları:
+
+- Metin ve arka plan arasında **yeterli kontrast**,
+- Bilginin yalnızca **renk** ile verilmemesi (ikon/etiket/yardım metni ile destek),
+- **Tutarlı navigasyon** ve tekrar eden bileşenlerde tutarlı davranış,
+- Hata durumlarında **açık, eyleme dönük** uyarılar (örn. “Bu alan zorunludur” + odak yönlendirme).
+
+### 4.3 Geliştirme ilkeleri (teknik)
+
+- Etkileşimli öğelerde **anlamlı erişilebilirlik etiketleri** (label, hint, role),
+- Odak yönetimi ve klavye ile kullanım gerektiren alanlarda **öngörülebilir odak sırası**,
+- Animasyonların mümkün olduğunca **OS “reduce motion”** ayarlarına saygılı şekilde tasarlanması,
+- Formlarda ve seçim bileşenlerinde **erişilebilir hata/başarı geri bildirimleri**.
+
+### 4.4 İçerik erişilebilirliği (metin ve dokümanlar)
+
+WIN dokümanları ve bilgilendirme metinleri hazırlanırken:
+
+- açık, sade ve anlaşılır dil,
+- başlık hiyerarşisi ve kısa paragraflar,
+- bağlantıların “buraya tıklayın” yerine **anlamlı bağlantı metni** içermesi
+
+gibi ilkeler esas alınır.
+
+### 4.5 Test ve doğrulama (örnek kapsam)
+
+Erişilebilirlik testleri, hizmetin niteliğine göre aşağıdaki alanları kapsayabilir:
+
+- **Kayıt/giriş** (Google OAuth akışı dahil),
+- **KVKK & sözleşme onayları** ve açık rıza kutuları,
+- **Kamera/mikrofon izinleri** ve doğrulama akışı (selfie/liveness),
+- **Eşleşme/mesajlaşma** arayüzleri,
+- **Şikayet/engelleme** akışları,
+- **Premium/abonelik** yönetimi (mağaza yönlendirmeleri dahil),
+- **Hesap yönetimi** (hesap silme dahil).
+
+---
+
+## Bölüm 5: Hizmetin tanımı ve erişilebilirlik tedbirleri (akış bazlı)
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm, WIN’in başlıca kullanıcı akışlarında erişilebilirlik açısından
+  hedeflenen tedbirleri örnekli şekilde açıklar.
+</Callout>
+
+### 5.1 Kayıt/Giriş (Google ile giriş)
+
+- Giriş/hesap seçimi ekranlarında etkileşimli öğelerin ekran okuyucularla **anlaşılır şekilde seslendirilmesi**,
+- Hata durumlarında (ör. oturum açılamadı) **açık hata mesajı** ve tekrar deneme yönlendirmesi,
+- (Web alanı varsa) klavye ile erişim ve odak sırası tutarlılığı.
+
+### 5.2 Hukuki onay & açık rıza ekranı (onboarding)
+
+WIN onboarding’inde; KVKK ve sözleşme bağlantıları ile ayrı ayrı açık rıza kutuları bulunur (örn. konum işleme, selfie/yüz doğrulama, yurtdışı aktarım, kampanya/bildirim izni).
+
+Bu ekranın erişilebilirliği bakımından hedeflenen örnek tedbirler:
+
+- Onay kutuları ve metinlerinin ekran okuyucu ile **doğru eşleştirilmesi**,
+- Linklerin (KVKK Aydınlatma Metni, Gizlilik Politikası, Kullanım Koşulları) **tek tek erişilebilir** olması,
+- Zorunlu alanlar için **anlaşılır** uyarılar ve odak yönlendirme,
+- Metinlerin cihaz erişilebilirlik ayarlarıyla (font büyütme vb.) uyumlu görünmesi.
+
+### 5.3 Profil oluşturma (formlar, seçimler, serbest metin)
+
+Profil adımları; isim, cinsiyet, meslek, boy, yaşam tarzı (sigara/alkol), burç, tercih parametreleri ve serbest metin alanları gibi çok adımlı bir form deneyimi içerir.
+
+Bu akışta hedeflenen erişilebilirlik tedbirleri:
+
+- Her alanın **etiketi (label)**, açıklaması ve hata mesajlarının ekran okuyucuya uygun sunumu,
+- Picker/scroll seçicilerde **işletilebilirlik** (alternatif giriş yöntemleri ile seçebilme),
+- Serbest metin alanlarında karakter sınırı gibi kuralların **açıkça** belirtilmesi,
+- “İleri/Devam” gibi butonlarda durumun (aktif/pasif) **anlaşılır** olması.
+
+### 5.4 Fotoğraf yükleme
+
+- Fotoğraf slotlarının (örn. 6 slot) ekran okuyucu ile **anlamlı şekilde** tanımlanması,
+- Yükleme/hata durumlarında kullanıcıya **net geri bildirim** (örn. dosya tipi, boyut),
+- (Varsa) görsel düzenleme/kırpma arayüzlerinde alternatif yönlendirme.
+
+### 5.5 Doğrulama katmanı (kamera/mikrofon izinleri, selfie/liveness)
+
+WIN’de “sahte hesap önleme” amacıyla kamera/mikrofon izinleri ve selfie/liveness benzeri doğrulama adımları bulunabilir.
+
+Bu akışta erişilebilirlik açısından:
+
+- İzin ekranlarının amacının **açık anlatılması** (neden kamera/mikrofon gerekir),
+- Talimatların **metin + (varsa) sesli** destekle anlaşılır sunumu,
+- Zaman kısıtı/tekrar deneme gibi durumlarda **kullanıcıya kontrol** sunulması,
+- Doğrulama tamamlanamadığında **alternatif destek** kanalı sağlanması
+
+hedeflenir.
+
+### 5.6 Ana akış (deck/kart akışı) ve profil görüntüleme
+
+- Kartlar arası geçişlerin, ekran okuyucuda **öngörülebilir** şekilde yapılması,
+- Önemli aksiyonların (beğen, geç, profil detay, engelle/bildir) erişilebilir etiketlerle sunulması,
+- Hareket/animasyon yoğunluğunun OS “reduce motion” ayarlarıyla uyumlu olması.
+
+### 5.7 Mesajlaşma ve etkileşim
+
+- Mesaj alanı, gönder butonu ve sohbet öğelerinde **odak yönetimi**,
+- Yeni mesaj bildirimlerinde kullanıcıyı rahatsız etmeyecek, fakat **kaçırılmayacak** geri bildirim,
+- Şikayet/engelleme aksiyonlarının mesajlaşma bağlamında **kolay erişilebilir** olması.
+
+### 5.8 Şikayet, ihlal bildirimi ve engelleme
+
+Erişilebilir ve güvenli bir topluluk için, kullanıcıların ihlal bildirebilmesi önemlidir. Bu nedenle:
+
+- “Şikayet et / bildir” aksiyonlarının **kolay bulunabilir** olması,
+- Bildirim formunda gerekli alanların anlaşılır olması,
+- Bildirim yapan kullanıcıya **alındı onayı** ve süreç bilgilendirmesi sunulması
+
+hedeflenir. (Bkz. [DSA Uyum Sayfası](/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi) ve [Topluluk Kuralları](/topluluk-ve-guvenlik/topluluk-kurallari).)
+
+### 5.9 Premium/abonelik ve satın alma
+
+WIN Premium gibi ücretli özellikler sunulması halinde:
+
+- Satın alma ekranlarında fiyat, dönem, yenileme ve iptal bilgilerinin **açık** ve erişilebilir sunumu,
+- Aboneliğin mağaza üzerinden yönetildiğinin **net** ifade edilmesi,
+- Abonelik yönetimine yönlendiren butonların erişilebilir olması
+
+esas alınır. (Bkz. [Abonelik ve Satın Alma Koşulları](/sozlesmeler/abonelik-ve-satin-alma-kosullari).)
+
+---
+
+## Bölüm 6: Bilinen sınırlamalar ve alternatifler
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölümde karşılaşılabilecek tipik erişilebilirlik sınırlamaları ve önerilen
+  alternatifler yer alır.
+</Callout>
+
+WIN, tüm kullanıcılar için erişilebilir bir deneyim sağlamayı hedefler; ancak aşağıdaki durumlarda sınırlamalar görülebilir:
+
+- **Eski uygulama sürümü**: Bazı erişilebilirlik iyileştirmeleri yalnızca güncel sürümde bulunabilir. (Çözüm: uygulamayı güncelleme.)
+- **Üçüncü taraf ekranlar** (Google giriş, App Store/Play satın alma): Bu ekranların erişilebilirliği ilgili sağlayıcının kontrolündedir. (Çözüm: alternatif kanal üzerinden destek.)
+- **Animasyon/gesture bağımlı etkileşimler**: Bazı etkileşimler cihaz ayarlarına bağlı olabilir. (Çözüm: OS “reduce motion”, erişilebilirlik ayarları.)
+
+<Callout type="warning" title="Alternatif çözüm talebi">
+  Bir engel nedeniyle kritik bir işlemi (örn. hesap erişimi, doğrulama, abonelik
+  yönetimi) tamamlayamıyorsanız, [Bölüm
+  7](#bölüm-7-geri-bildirim-engel-bildirimi-ve-iletişim) kapsamındaki
+  kanallardan bize ulaşın. Uygun olduğu ölçüde alternatif bir çözüm üretmeye
+  çalışırız.
+</Callout>
+
+---
+
+## Bölüm 7: Geri bildirim, engel bildirimi ve iletişim
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölümde erişilebilirlik engellerinin nasıl bildirileceği, hangi bilgilerin
+  istenebileceği ve destek sürecinin nasıl işleyeceği açıklanır.
+</Callout>
+
+### 7.1 Engel bildirimi nasıl yapılır?
+
+<Steps>
+### Adım 1: Engel yaşadığınız yeri not edin
+Hangi ekran/özellikte engel yaşadığınızı ve mümkünse adımlarınızı (örn. “Onboarding > KVKK ekranı > Konum rızası kutusu”) not edin.
+
+### Adım 2: Cihaz ve yardımcı teknoloji bilgisini ekleyin
+
+Cihaz modeli, işletim sistemi sürümü ve kullandığınız yardımcı teknolojiyi (örn. VoiceOver, TalkBack) belirtin.
+
+### Adım 3: Mümkünse ekran görüntüsü veya ekran kaydı ekleyin
+
+Bu, sorunu daha hızlı analiz etmemize yardımcı olur.
+
+### Adım 4: Bize ulaşın
+
+Uygulama içi **"Yardım/İletişim"** alanı veya [whoisnextapp.com](https://whoisnextapp.com) üzerindeki iletişim kanalları üzerinden “**Erişilebilirlik Engeli**” başlığıyla bildirim iletin.
+
+</Steps>
+
+### 7.2 Bizim yanıt ve iyileştirme yaklaşımımız
+
+Erişilebilirlik bildirimlerinde hedef yaklaşımımız:
+
+- Bildirimi **kayıt altına almak** ve gerekirse ek bilgi istemek,
+- Engelin niteliğine göre **geçici alternatif** çözüm sunmak,
+- Uygulanabilir hallerde engeli ürün geliştirme sürecine alarak **kalıcı düzeltme** yapmak.
+
+> Erişilebilirlik geliştirmeleri; teknik ve ekonomik imkanlar, güvenlik gereklilikleri ve üçüncü taraf bağımlılıkları çerçevesinde planlanır.
+
+### 7.3 Kişisel veriler (destek sürecinde)
+
+Erişilebilirlik bildiriminiz sırasında paylaştığınız bilgiler (iletişim bilgileri, cihaz/sürüm bilgisi, ekran görüntüsü vb.) destek sürecini yürütmek ve erişilebilirlik iyileştirmelerini planlamak amacıyla işlenebilir. Detaylar için bkz. [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) ve (varsa) ilgili aydınlatma metinleri.
+
+---
+
+## Bölüm 8: Denetim/başvuru yolları (AB/AEA odağı)
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölüm, AB/AEA pazarında erişilebilirlik alanındaki düzenleyici çerçeveye
+  dair genel bilgilendirme sağlar.
+</Callout>
+
+AB/AEA’da hizmet sunulması halinde, erişilebilirlik gereklilikleri bakımından ilgili ülkenin yetkili **pazar gözetimi/denetim** makamları devreye girebilir. Eğer erişilebilirlik bildiriminize makul süre içinde tatmin edici yanıt alamazsanız, ikamet ettiğiniz ülkenin yetkili merciine başvuru seçenekleri bulunabilir.
+
+<Callout type="warning" title="Kullanıcı yönlendirmesi">
+  Başvuru yolları ülkeye göre değiştiğinden, en doğru yönlendirme için önce bize
+  ulaşmanız ve mümkünse ülke/bölge bilginizi paylaşmanız önerilir.
+</Callout>
+
+---
+
+## Bölüm 9: Beyanın hazırlanması ve güncellenmesi
+
+<Callout type="info" title="Bu bölümün özeti">
+  Bu bölümde beyanın nasıl güncelleneceği ve hata/eksiklik bildirimlerinin nasıl
+  ele alınacağı belirtilir.
+</Callout>
+
+Bu beyan, azami özen gösterilerek hazırlanır ve:
+
+- mevzuat değişiklikleri,
+- ürün/sürüm değişiklikleri,
+- erişilebilirlik test bulguları ve kullanıcı geri bildirimleri
+
+doğrultusunda düzenli olarak gözden geçirilir ve güncellenebilir.
+
+<Callout emoji="💡">
+  Bu beyanda hata veya eksiklik tespit ederseniz, lütfen [Bölüm
+  7](#bölüm-7-geri-bildirim-engel-bildirimi-ve-iletişim) kapsamında bize
+  bildirin. Destek ve katkınız için teşekkür ederiz.
+</Callout>
