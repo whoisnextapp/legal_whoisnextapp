@@ -4,7 +4,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 **Son güncelleme:** 18.02.2026 · **Sürüm:** 1.0
 
-Bu sayfa; WIN’in (Who is Next?) (“**Platform**”) **şeffaflık** ve **hesap verebilirlik** yaklaşımı kapsamında, periyodik olarak yayımlanacak **Şeffaflık Raporları**nın kapsamını, rapor türlerini, metriklerini ve metodolojisini açıklar.
+Bu sayfa; **WIN’in** (“**Platform**”) **şeffaflık** ve **hesap verebilirlik** yaklaşımı kapsamında, periyodik olarak yayımlanacak **Şeffaflık Raporları**nın kapsamını, rapor türlerini, metriklerini ve metodolojisini açıklar.
 
 Şeffaflık raporları; hem kullanıcı güvenliğini güçlendirmek, hem de içerik moderasyonu ile resmî makam taleplerine ilişkin süreçlerin **ölçülebilir** ve **denetlenebilir** şekilde yönetilmesine yardımcı olmak için hazırlanır.
 
@@ -52,7 +52,7 @@ Bu sayfa; WIN’in (Who is Next?) (“**Platform**”) **şeffaflık** ve **hesa
 ## Rapor durumu (güncel)
 
 <Callout type="info" title="İlk rapor dönemi">
-  **İlk rapor dönemi (örn. 2026 Q3):** Uygulama henüz canlıya alınmadığı için bu dönemde raporlanacak veri bulunmamaktadır. Veri birikmeye başladığında, aşağıdaki şablona göre ilk gerçek rapor bu sayfaya eklenecektir.
+  **İlk rapor dönemi:** Uygulama henüz yayına alınmadığı için bu dönemde raporlanacak veri bulunmamaktadır. Uygulamanın tam kapasiteyle yayına alınmasını takip eden ilk takvim yılı sonunda ilk şeffaflık raporu yayımlanacaktır. Raporlar **Türkçe** ve **İngilizce** dillerinde hazırlanacaktır.
 </Callout>
 
 ---
@@ -92,7 +92,7 @@ Raporlar hazırlanırken şu ilkeler esas alınır:
 - **Moderasyon kararı**: İçerik kaldırma, görünürlük düşürme, özellik kısıtı, askı/kapatma gibi aksiyonlar.
 - **İtiraz/şikayet (appeal/complaint)**: Moderasyon kararlarına karşı iç itirazlar (AB’de DSA Art. 20 ve bağlantılı süreçler).
 - **Resmî makam talebi**: Mahkeme/savcılık/kolluk vb. yetkili makamların bilgi/veri talepleri (bkz. [Kolluk Kuvvetleri Rehberi](/kurumsal-ve-yasal-uyumluluk/kolluk-kuvvetleri-rehberi)).
-- **Emirler**: (Uygulanabilir ise) AB’de DSA kapsamındaki “bilgi sağlama emri” ve “yasa dışı içeriğe karşı işlem emri” gibi araçlar.
+- **Emirler**: AB’de DSA kapsamındaki “bilgi sağlama emri” ve “yasa dışı içeriğe karşı işlem emri” gibi araçlar.
 
 <Tabs items={["Türkiye odaklı (5651/KVKK/TCK)", "AB odaklı (DSA)"]}>
   <Tab>
@@ -122,21 +122,10 @@ Raporlar hazırlanırken şu ilkeler esas alınır:
   Bu bölüm; raporların periyodunu, yayımlama formatını ve raporların nerede yayınlanacağını açıklar.
 </Callout>
 
-### 3.1 Periyot (önerilen)
+- **Yıllık**: Yılda en az 1 kez yayımlanması planlanmaktadır (temel şeffaflık raporu paketi).
+- **Ara dönem güncellemeleri (opsiyonel)**: Kritik güvenlik vakaları veya mevzuat gerekliliği durumunda ara bilgilendirmeler yapılabilir.
 
-- **Yıllık**: En az yılda 1 kez (temel şeffaflık raporu paketi).
-- **Ara dönem güncellemeleri (opsiyonel)**: Üç aylık/altı aylık özetler (özellikle hızlı büyüme veya yüksek riskli dönemlerde).
-- **Olay bazlı özel rapor (opsiyonel)**: Büyük güvenlik olayı, sistemsel risk veya regülasyon gerektiren durumlarda.
-
-### 3.2 Format (önerilen)
-
-Raporlar mümkün olduğunca:
-
-- **Web sayfası** (okunabilir ve erişilebilir),
-- **İndirilebilir çıktı** (PDF) (opsiyonel),
-- **Makine okunur özet** (CSV/JSON) (opsiyonel; kişisel veri içermeyecek şekilde)
-
-formatlarında yayımlanır.
+Raporlar şu aşamada **manuel** süreçlerle hazırlanmakta ve Platform'un kurumsal web sitesi ile bu dokümantasyon portalı üzerinden **web sayfası** formatında yayımlanmaktadır.
 
 <Callout type="warning" title="Kişisel veri yayımlanmaması">
   Raporlar; kullanıcı/hesap/olay bazında teşhis edilebilir bilgi içermez. Küçük sayılar
@@ -151,8 +140,8 @@ formatlarında yayımlanır.
 | **Yasa dışı içerik (Notice & Action)** | DSA tarzı yasa dışı içerik bildirimleri | Yıllık (AB hedefi varsa) | `DSA Uyum Sayfası` |
 | **İtirazlar ve redress** | Karar kalitesi, kullanıcı hakları, süreç verimliliği | Yıllık | `Kullanım Koşulları`, `DSA` |
 | **Devlet/kolluk talepleri** | Resmî taleplerin hacmi ve yanıt yaklaşımı | Yıllık | `Kolluk Kuvvetleri Rehberi` |
-| **Fikri mülkiyet bildirimleri** (opsiyonel) | Telif/marka takedown görünümü | Yıllık | `Fikri Mülkiyet Politikası` |
-| **Ürün güvenliği** (opsiyonel) | Güvenlik açığı bildirimleri ve giderim | Yıllık | `Güvenlik Açığı Bildirim Politikası` |
+| **Fikri mülkiyet bildirimleri** | Telif/marka takedown görünümü | Yıllık | `Fikri Mülkiyet Politikası` |
+| **Ürün güvenliği** | Güvenlik açığı bildirimleri ve giderim | Yıllık | `Güvenlik Açığı Bildirim Politikası` |
 
 ---
 
@@ -171,9 +160,9 @@ Bu paket; **Topluluk Kuralları** kapsamında yapılan bildirimleri ve WIN’in 
 - Davranış ihlalleri (taciz, tehdit, dolandırıcılık vb.),
 - Off‑platform davranış iddiaları (uygun delil standardı ve operasyonel çerçeve ile sınırlı).
 
-### 4.2 Temel metrik seti (önerilen)
+### 4.2 Temel metrik seti
 
-| Metrik | Açıklama | Kırılımlar (örnek) |
+| Metrik | Açıklama | Kırılımlar |
 |---|---|---|
 | Toplam bildirim sayısı | Kullanıcılar tarafından yapılan bildirimler | kategori, içerik türü, ülke/bölge |
 | Benzersiz bildirilen hesap sayısı | Kaç farklı hesabın bildirildiği | kategori, dönem |
@@ -189,7 +178,7 @@ Bu paket; **Topluluk Kuralları** kapsamında yapılan bildirimleri ve WIN’in 
   hem raporlama hem de ürün akışı açısından standardize edilmelidir.
 </Callout>
 
-### 4.3 Aksiyon türleri (örnek taksonomi)
+### 4.3 Aksiyon türleri
 
 Bu raporda, aksiyonlar en az şu seviyelerde sınıflandırılabilir:
 
@@ -226,14 +215,14 @@ Rapor; (uygulanabilirlik ve istisnalar saklı kalmak üzere) en az şunları iç
 - Bildirimlerin “asgari unsur” tamamlama oranı (gerekçe + konum/ID + iyi niyet beyanı vb.),
 - Alındı onayı gönderim oranı ve süresi,
 - Ortalama/medyan karar süreleri,
-- Otomasyon kullanımı (varsa) ve insan incelemesiyle ilişkisi.
+- Otomasyon kullanımı ve insan incelemesiyle ilişkisi.
 
 ### 5.2 Gerekçe Bildirimi / Statement of Reasons (Art. 17)
 
 - Kısıtlama türlerine göre gerekçe bildirimi sayısı,
 - Kararların coğrafi kapsamı (AB içi / ülke bazlı),
 - Otomasyon kullanıldıysa buna ilişkin şeffaflık,
-- (Uygulanırsa) Art. 24/5 kapsamındaki kararların Komisyon veri tabanına iletimi hakkında özet.
+- AB’de uygulanması durumunda Art. 24/5 kapsamındaki kararların Komisyon veri tabanına iletimi hakkında özet.
 
 ### 5.3 İç itiraz ve redress (Art. 20–21)
 
@@ -249,9 +238,7 @@ Bu alt rapor; en az şunları içerir:
 - Açıkça dayanaksız bildirimlerin tekrarına ilişkin askıya alma/kısıtlama sayıları,
 - Sıkça açıkça yasa dışı içerik sağlayan hesaplara uygulanan yaptırımların sayısı.
 
-### 5.5 AB ortalama aylık aktif alıcı (Art. 24/2)
-
-AB hedefi varsa; geçmiş 6 ayın ortalaması olarak AB içindeki **ortalama aylık aktif alıcı** sayısı yayımlanır (kişisel veri içermez).
+AB hedefi varsa; geçmiş 6 ayın ortalaması olarak AB içindeki **ortalama aylık aktif alıcı** sayısı (Art. 24/2 DSA uyarınca) yayımlanacaktır; uygulama henüz yayına alınmadığı için bu sayı şu an için "0" (sıfır) veya "geçersiz" kabul edilir.
 
 ---
 
@@ -263,26 +250,26 @@ AB hedefi varsa; geçmiş 6 ayın ortalaması olarak AB içindeki **ortalama ayl
 
 Bu paket, [Kolluk Kuvvetleri Rehberi](/kurumsal-ve-yasal-uyumluluk/kolluk-kuvvetleri-rehberi) ile aynı taksonomiyi kullanır.
 
-### 6.1 Talep türleri (önerilen sınıflandırma)
+### 6.1 Talep türleri
 
-- **Bilgi/Belge talepleri** (hesap/profil, teknik log, içerik verisi (varsa), ödeme/abonelik).
+- **Bilgi/Belge talepleri** (hesap/profil, teknik log, içerik verisi, ödeme/abonelik).
 - **Trafik verisi / log talepleri** (Türkiye’de 5651 bağlamı).
 - **Koruma (preservation / legal hold)** talepleri.
 - **Acil durum** talepleri (hayati tehlike / yakın zarar riski).
 - **İçerik/hesap emirleri**:
   - Türkiye’de yerel usuller,
-  - AB’de (uygulanırsa) DSA kapsamındaki emirler (bilgi sağlama / yasa dışı içeriğe karşı işlem).
+  - AB’de DSA kapsamındaki emirler (bilgi sağlama / yasa dışı içeriğe karşı işlem).
 
 ### 6.2 Temel metrik seti (önerilen)
 
-| Metrik | Açıklama | Kırılımlar (örnek) |
+| Metrik | Açıklama | Kırılımlar |
 |---|---|---|
 | Toplam resmî talep sayısı | Tüm doğrulanmış talepler | ülke, talep türü |
 | Karşılanan talepler | Tam/partial/ret | talep türü, veri kategorisi |
 | Yanıt süreleri | Ortalama/medyan süre | talep türü, ülke |
 | Preservation talepleri | Koruma uygulanan kayıt sayısı | ülke, süre |
 | Acil durum talepleri | Acil değerlendirme sayıları | sonuç türü |
-| Emirler (opsiyonel) | Kaldırma/işlem emirleri | dayanak türü, ülke |
+| Emirler | Kaldırma/işlem emirleri | dayanak türü, ülke |
 
 <Callout type="warning" title="Sahte talepler ve reddedilen başvurular">
   Kimliği doğrulanamayan veya yetkisiz/sahte talepler ile aşırı geniş/belirsiz talepler
@@ -296,7 +283,7 @@ Kural olarak; hukuken izin verilen ölçüde kullanıcı bilgilendirmesi hedefle
 
 ---
 
-## Bölüm 7: Rapor Paketi D — Fikri mülkiyet bildirimleri (opsiyonel)
+## Bölüm 7: Rapor Paketi D — Fikri mülkiyet bildirimleri
 
 <Callout type="info" title="Bu bölümün özeti">
   Bu bölüm; telif/marka ve diğer fikri mülkiyet bildirimlerine ilişkin toplulaştırılmış metrik setini tanımlar.
@@ -306,7 +293,7 @@ Bu paket; [Fikri Mülkiyet Politikası](/kurumsal-ve-yasal-uyumluluk/fikri-mulki
 
 - gelen bildirim sayıları (telif/marka/diğer),
 - kaldırılan içerik sayısı,
-- karşı bildirim/itiraz sayıları (varsa),
+- karşı bildirim/itiraz sayıları,
 - tekrar ihlal (repeat infringer) yaptırımı göstergeleri
 
 gibi metrikleri içerebilir.
@@ -315,7 +302,7 @@ gibi metrikleri içerebilir.
 
 ---
 
-## Bölüm 8: Rapor Paketi E — Ürün güvenliği (opsiyonel)
+## Bölüm 8: Rapor Paketi E — Ürün güvenliği
 
 <Callout type="info" title="Bu bölümün özeti">
   Bu bölüm; güvenlik açığı bildirimlerinin sayısal şeffaflık özetini tanımlar (kişisel veri içermeden).
@@ -374,7 +361,7 @@ Raporlar; veriyi şu kaynaklardan toplayabilir:
 - Destek kanalları (help center / e‑posta),
 - Hukuk/uyum kanalları (resmî talep e‑postası/KEP vb.),
 - Moderasyon karar kayıtları,
-- Güvenlik açığı bildirim kanalı (opsiyonel).
+- Güvenlik açığı bildirim kanalı.
 
 ---
 

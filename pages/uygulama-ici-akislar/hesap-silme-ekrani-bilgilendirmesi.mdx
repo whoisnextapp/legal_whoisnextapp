@@ -59,25 +59,19 @@ Hesap silme ekranında kullanıcıya şu mesajlar **tek bakışta** net anlatıl
 ### Adım 1: Hesap silme sayfasına giriş
 Kullanıcı, Ayarlar > (Gizlilik/Yasal) > “Hesabımı Sil” ekranına gelir.
 
-### Adım 2: Sonuçların özeti (geri dönülemezlik)
+### Adım 3: Geçici dondurma (Deactivation) fazı
+İlk silme talebinde hesap **14 gün boyunca geçici olarak dondurulur.** Bu süre zarfında hesap görünmez olur ancak veriler henüz kalıcı olarak silinmez.
 
-Kullanıcıya silme sonucu nelerin kaybolacağı ve geri dönüş olmadığı anlatılır.
+### Adım 4: Abonelik yönetimi yönlendirmesi (Tek tık)
+Kullanıcı aktif aboneliğe sahipse, mağaza abonelik yönetimine (App Store/Google Play) doğrudan yönlendirilecek bir link sunulur.
 
-### Adım 3: Abonelik uyarısı (varsa)
+### Adım 5: 14 Günlük süre ve Kalıcı Silme
+Kullanıcı 14 gün içinde uygulamaya tekrar giriş yaparsa iki seçenekle karşılaşır:
+1. **Kalıcı olarak sil:** Bekleme süresini tamamlamadan verileri yok etme sürecini başlatır.
+2. **Devam et:** Hesabı dondurma modundan çıkarır ve normale döndürür.
 
-Kullanıcı aktif Premium aboneliğe sahipse, mağaza abonelik yönetimine yönlendirilir.
-
-### Adım 4: Veri saklama/silme bilgilendirmesi
-
-Hemen silinecek veriler ile yasal zorunluluk nedeniyle saklanacak veriler ayrıştırılır.
-
-### Adım 5: Onay / doğrulama
-
-Kullanıcının yanlışlıkla silmesini önlemek için (ör. “HESABIMI SİL” yazdırma) gibi bir onay adımı eklenir.
-
-### Adım 6: Tamamlandı ekranı
-
-Hesabın kapatıldığı, tekrar kullanım için yeniden kayıt gerekebileceği ve destek/başvuru kanalları gösterilir.
+### Adım 6: Onay / Tamamlandı ekranı
+İşlem tamamlandığında hesabın kapatıldığına dair onay bilgisini ve destek kanallarını gösterir.
 
 </Steps>
 
@@ -88,7 +82,7 @@ Hesabın kapatıldığı, tekrar kullanım için yeniden kayıt gerekebileceği 
 ### 3.1 Geri dönülemezlik uyarısı (şablon)
 
 > **Hesabını silmek geri alınamaz.**  
-> Hesabın silindiğinde profilin görünmez olur ve hesabına tekrar giriş yapamazsın.
+> Silme talebinle birlikte hesabın 14 gün boyunca dondurulacaktır. Bu süreden sonra verilerin kalıcı olarak silinir ve bir daha bu hesaba erişemezsin. Kalıcı silme işlemi tamamlandıktan sonra ek bir "geri alma/grace period" sunulmamaktadır.
 
 ### 3.2 Silinecek içerikler (şablon)
 
@@ -140,9 +134,7 @@ Doğrulama/selfie verisi saklama süreleri [Biyometrik Veri Aydınlatma ve Rıza
 
 ## 5. Kullanıcının KVKK hakları ve başvuru yolları (ekranda kısa köprü)
 
-Hesap silme ekranının altına, kullanıcıya KVKK haklarını hatırlatan kısa bir köprü önerilir:
-
-> Kişisel verilerinle ilgili taleplerin (erişim, düzeltme, silme, itiraz vb.) için:  
+> Kişisel verilerinle ilgili taleplerin (erişim, düzeltme, silme, itiraz vb.) için hesabın üzerinden başvuru yapabilirsin. Mevcut durumda uygulama içinden yapılan girişler birincil kimlik doğrulama yöntemi olarak kabul edilmektedir.
 > [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni)
 
 ---

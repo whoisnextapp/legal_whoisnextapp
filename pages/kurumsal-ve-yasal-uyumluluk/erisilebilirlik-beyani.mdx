@@ -8,7 +8,7 @@ Bu sayfa, WIN (“**Platform**”) tarafından sunulan hizmetlerin; engelli bire
 
 <Callout type="info" title="Bu beyanın amacı">
   - Erişilebilirlik standartlarına (örn. **WCAG** ve **EN 301 549**) uyum
-  yaklaşımımızı şeffaf biçimde açıklamak, - Kullanıcıların erişilebilirlik
+  yaklaşımımızı şeffaf biçimde açıklamak (şimdilik beyan seviyesinde), - Kullanıcıların erişilebilirlik
   engellerini **kolayca bildirebilmesini** ve uygun alternatif çözümlere
   erişebilmesini sağlamak, - Erişilebilirlik çalışmalarının **sürekliliğini**
   (test, iyileştirme, güncelleme) taahhüt etmektir.
@@ -76,9 +76,9 @@ Bu beyan aşağıdaki WIN dokümanlarıyla birlikte okunmalıdır:
 
 Bu erişilebilirlik beyanı, WIN hizmetlerine erişim sağlanan aşağıdaki kanalları kapsar:
 
-- **WIN mobil uygulaması** (iOS ve Android) üzerinden sunulan tüm temel akışlar (kayıt/giriş, profil, eşleşme, mesajlaşma, şikayet/engelleme, premium/abonelik yönetimi vb.)
-- **WIN web alanları**: [whoisnextapp.com](https://whoisnextapp.com) ve WIN tarafından işletilen/işletilmesi planlanan web sayfaları
-- **Bu dokümantasyon portalı** üzerinde sunulan sözleşme ve uyum metinlerinin erişilebilir sunumu
+- **WIN mobil uygulaması** (iOS ve Android) üzerinden sunulan tüm temel akışlar (kayıt/giriş, profil, eşleşme, mesajlaşma, şikayet/engelleme, premium/abonelik yönetimi vb.). WIN, şu aşamada yalnızca mobil platformlarda tam hizmet vermektedir.
+- **WIN web alanları**: [whoisnextapp.com](https://whoisnextapp.com) üzerinden sunulan bilgilendirme sayfaları (hizmete/uygulamaya doğrudan web erişimi şu an bulunmamaktadır).
+- **Bu dokümantasyon portalı** üzerinde sunulan sözleşme ve uyum metinlerinin erişilebilir sunumu.
 
 ### 1.2 Temel tanımlar
 
@@ -87,13 +87,12 @@ Bu erişilebilirlik beyanı, WIN hizmetlerine erişim sağlanan aşağıdaki kan
 - **Yardımcı teknolojiler (Assistive Technologies):** Ekran okuyucular, ekran büyüteçleri, alternatif giriş yöntemleri, anahtar denetimleri (switch), sesle kontrol vb.
 - **Uygun alternatif (Alternative):** Erişilebilirlik engeli giderilene kadar, aynı sonuca ulaşmayı sağlayan makul alternatif çözüm (örn. destek ekibi aracılığıyla işlem tamamlama).
 
-### 1.3 Üçüncü taraf alanlar ve sınırlı kontrol
+WIN, hizmeti sunarken aşağıdaki üçüncü taraf teknolojilerden ve SDK'lardan faydalanmaktadır:
 
-WIN, hizmeti sunarken bazı üçüncü taraf teknolojilerden faydalanabilir. Bu bileşenlerin erişilebilirliği, ilgili üçüncü tarafın teknik özelliklerine ve kullanıcının cihaz/işletim sistemi ayarlarına bağlı olabilir. Örnekler:
-
-- **Google OAuth** ile giriş/hak doğrulama ekranları,
-- **Apple App Store / Google Play Store** abonelik satın alma ve iade ekranları,
-- (varsa) üçüncü taraf yüz doğrulama/liveness altyapısı ve kamera arayüzleri.
+- **Google Sign-In / Firebase:** Kimlik doğrulama, bildirim ve veri altyapısı.
+- **Amazon Rekognition:** Profil fotoğrafı ve selfie doğrulama (liveness) süreçleri.
+- **MeiliSearch:** Arama ve filtreleme özellikleri.
+- **Twilio:** SMS ve e-posta doğrulama kanalları.
 
 <Callout type="warning" title="Önemli not">
   Üçüncü taraf arayüzlerde yaşadığınız engelleri de bize bildirmenizi isteriz.
@@ -159,15 +158,17 @@ WIN, erişilebilirlik hedeflerini belirlerken aşağıdaki standart ve ilkeleri 
 
 ### 3.1 Hedeflenen uyum seviyesi
 
-WIN’in hedefi; hizmetleri, makul teknik ve ekonomik imkanlar dahilinde **WCAG 2.2 AA** kriterleriyle uyumlu şekilde tasarlamak ve sürdürmektir. AB/AEA pazarında hizmet sunulması halinde, erişilebilirlik gereklilikleri **EAA** ve ilgili standartlar (örn. **EN 301 549**) ile birlikte ele alınır.
+WIN’in hedefi; hizmetleri, makul teknik ve ekonomik imkanlar dahilinde **WCAG 2.2 AA** kriterleriyle uyumlu şekilde tasarlamak ve sürdürmektir. Bu aşamada uyum durumu **beyan seviyesinde** olup, AB/AEA pazarında hizmet sunulması halinde, erişilebilirlik gereklilikleri **EAA** ve ilgili standartlar (örn. **EN 301 549**) ile birlikte ele alınır.
 
 ### 3.2 Uyum değerlendirmesi (nasıl ölçüyoruz)
 
-WIN, erişilebilirlik uyumunu aşağıdaki yöntemlerin kombinasyonuyla değerlendirir:
+WIN, erişilebilirlik uyumunu aşağıdaki yöntemlerin kombinasyonuyla değerlendirmeyi hedefler:
 
-- **Manuel testler:** Ekran okuyucu, klavye ile gezinme, odak yönetimi, kontrast ve metin ölçeklendirme gibi kritik kriterlerin insan gözlemiyle kontrolü.
-- **Otomatik analizler:** Erişilebilirlik hatalarını erken yakalamaya yönelik otomatik kontroller (web tarafında tarama araçları, kod kalite kuralları vb.).
+- **Manuel testler:** Ekran okuyucu, klavye ile gezinme, odak yönetimi, kontrast ve metin ölçeklendirme gibi kritik kriterlerin kontrolü.
+- **Otomatik analizler:** Erişilebilirlik hatalarını erken yakalamaya yönelik teknik kontroller.
 - **Sürüm bazlı iyileştirme:** Erişilebilirlik bulgularının ürün geliştirme döngüsüne işlenmesi ve sürümlerde giderilmesi.
+
+Şimdilik üçüncü taraf bağımsız denetim veya sertifikasyon süreci için spesifik bir takvim belirlenmemiş olup, süreç genel iyileştirme prensipleriyle yürütülmektedir.
 
 ### 3.3 Kısmi uyum ve istisnalar
 
@@ -285,14 +286,12 @@ Bu akışta hedeflenen erişilebilirlik tedbirleri:
 
 WIN’de “sahte hesap önleme” amacıyla kamera/mikrofon izinleri ve selfie/liveness benzeri doğrulama adımları bulunabilir.
 
-Bu akışta erişilebilirlik açısından:
+- Talimatların **metin ve sesli** destekle anlaşılır sunumu,
+- Zaman kısıtı/tekrar deneme gibi durumlarda **kullanıcıya kontrol** sunulması hedeflenir.
 
-- İzin ekranlarının amacının **açık anlatılması** (neden kamera/mikrofon gerekir),
-- Talimatların **metin + (varsa) sesli** destekle anlaşılır sunumu,
-- Zaman kısıtı/tekrar deneme gibi durumlarda **kullanıcıya kontrol** sunulması,
-- Doğrulama tamamlanamadığında **alternatif destek** kanalı sağlanması
-
-hedeflenir.
+<Callout type="warning" title="Önemli Sınırlama">
+  Selfie/liveness doğrulaması, Platform güvenliği için temel bir gerekliliktir. Belirli engeller (örn. motor beceri kısıtları, görme kaybı vb.) nedeniyle bu adımı tamamlayamayan kullanıcılar için **şu aşamada alternatif bir teknolojik doğrulama yöntemi bulunmamaktadır.** Bu tür durumlar için ileride "makul alternatif" çözümlerin (manuel inceleme vb.) devreye alınması planlanmaktadır.
+</Callout>
 
 ### 5.6 Ana akış (deck/kart akışı) ve profil görüntüleme
 
@@ -335,11 +334,7 @@ esas alınır. (Bkz. [Abonelik ve Satın Alma Koşulları](/sozlesmeler/abonelik
   alternatifler yer alır.
 </Callout>
 
-WIN, tüm kullanıcılar için erişilebilir bir deneyim sağlamayı hedefler; ancak aşağıdaki durumlarda sınırlamalar görülebilir:
-
-- **Eski uygulama sürümü**: Bazı erişilebilirlik iyileştirmeleri yalnızca güncel sürümde bulunabilir. (Çözüm: uygulamayı güncelleme.)
-- **Üçüncü taraf ekranlar** (Google giriş, App Store/Play satın alma): Bu ekranların erişilebilirliği ilgili sağlayıcının kontrolündedir. (Çözüm: alternatif kanal üzerinden destek.)
-- **Animasyon/gesture bağımlı etkileşimler**: Bazı etkileşimler cihaz ayarlarına bağlı olabilir. (Çözüm: OS “reduce motion”, erişilebilirlik ayarları.)
+WIN, tüm kullanıcılar için erişilebilir bir deneyim sağlamayı hedefler. Halihazırda ekran okuyucu, kontrast, yazı büyütme veya navigasyon bazlı **bilinen spesifik bir erişilebilirlik sorunu bulunmamaktadır.** Ancak aşağıdaki durumlarda genel teknolojik sınırlamalar görülebilir:
 
 <Callout type="warning" title="Alternatif çözüm talebi">
   Bir engel nedeniyle kritik bir işlemi (örn. hesap erişimi, doğrulama, abonelik
@@ -374,23 +369,20 @@ Bu, sorunu daha hızlı analiz etmemize yardımcı olur.
 
 ### Adım 4: Bize ulaşın
 
-Uygulama içi **"Yardım/İletişim"** alanı veya [whoisnextapp.com](https://whoisnextapp.com) üzerindeki iletişim kanalları üzerinden “**Erişilebilirlik Engeli**” başlığıyla bildirim iletin.
+Uygulama içi **"Yardım/İletişim"** alanındaki form veya [whoisnextapp.com](https://whoisnextapp.com) üzerindeki iletişim formu üzerinden “**Erişilebilirlik Engeli**” başlığıyla bildirim iletin. Bildirimleriniz için şu an **Türkçe** ve **İngilizce** dillerinde destek sağlanmaktadır.
 
 </Steps>
-
-### 7.2 Bizim yanıt ve iyileştirme yaklaşımımız
 
 Erişilebilirlik bildirimlerinde hedef yaklaşımımız:
 
 - Bildirimi **kayıt altına almak** ve gerekirse ek bilgi istemek,
+- Bildirimin tarafımıza ulaşmasından itibaren en geç **5 iş günü** içinde ilk değerlendirmeyi yapmak ve kullanıcıya geri dönmek,
 - Engelin niteliğine göre **geçici alternatif** çözüm sunmak,
 - Uygulanabilir hallerde engeli ürün geliştirme sürecine alarak **kalıcı düzeltme** yapmak.
 
 > Erişilebilirlik geliştirmeleri; teknik ve ekonomik imkanlar, güvenlik gereklilikleri ve üçüncü taraf bağımlılıkları çerçevesinde planlanır.
 
-### 7.3 Kişisel veriler (destek sürecinde)
-
-Erişilebilirlik bildiriminiz sırasında paylaştığınız bilgiler (iletişim bilgileri, cihaz/sürüm bilgisi, ekran görüntüsü vb.) destek sürecini yürütmek ve erişilebilirlik iyileştirmelerini planlamak amacıyla işlenebilir. Detaylar için bkz. [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) ve (varsa) ilgili aydınlatma metinleri.
+Erişilebilirlik bildiriminiz sırasında paylaştığınız bilgiler (iletişim bilgileri, cihaz/sürüm bilgisi, ekran görüntüsü vb.) destek sürecini yürütmek ve erişilebilirlik iyileştirmelerini planlamak amacıyla işlenebilir. Detaylar için bkz. [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) ve ilgili aydınlatma metinleri.
 
 ---
 
@@ -401,12 +393,9 @@ Erişilebilirlik bildiriminiz sırasında paylaştığınız bilgiler (iletişim
   dair genel bilgilendirme sağlar.
 </Callout>
 
-AB/AEA’da hizmet sunulması halinde, erişilebilirlik gereklilikleri bakımından ilgili ülkenin yetkili **pazar gözetimi/denetim** makamları devreye girebilir. Eğer erişilebilirlik bildiriminize makul süre içinde tatmin edici yanıt alamazsanız, ikamet ettiğiniz ülkenin yetkili merciine başvuru seçenekleri bulunabilir.
+AB/AEA’da hizmet sunulması halinde, erişilebilirlik gereklilikleri bakımından ilgili ülkenin yetkili **pazar gözetimi/denetim** makamları devreye girebilir. Eğer erişilebilirlik bildiriminize makul süre içinde tatmin edici yanıt alamazsanız, ikamet ettiğiniz ülkenin yetkili merciine başvuru seçenekleri bulunabilir. 
 
-<Callout type="warning" title="Kullanıcı yönlendirmesi">
-  Başvuru yolları ülkeye göre değiştiğinden, en doğru yönlendirme için önce bize
-  ulaşmanız ve mümkünse ülke/bölge bilginizi paylaşmanız önerilir.
-</Callout>
+Spesifik denetim makamı ve iletişim bilgileri için, işlemin niteliğine göre [DSA Uyum Sayfası](/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi) veya [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari) altındaki ilgili yönlendirmeleri inceleyebilirsiniz.
 
 ---
 

@@ -91,8 +91,8 @@ Konum kullanan özellik ilk kez çalıştırılmadan hemen önce **konum izni** 
 
 ### 3.2 Toplanan/veriye erişilen alanlar
 
-- Cihazın sağladığı **yaklaşık konum** ve/veya **kesin GPS konumu**
-- Konum hizmeti açık olduğu sürece konuma ilişkin teknik veriler (zaman damgası vb.)
+- Cihazın sağladığı **kesin GPS konumu** (eğer kullanıcı "Precise/Kesin" konum izni verirse "fine / high accuracy" verisi alınır)
+- Konum verisi **yalnızca uygulama açıkken (ön planda)** işlenir; arka planda konum takibi **asla yapılmaz.**
 
 ### 3.3 Hukuki çerçeve (özet)
 
@@ -133,7 +133,7 @@ Konum kullanan özellik ilk kez çalıştırılmadan hemen önce **konum izni** 
 
 ### 4.1 İznin amacı
 
-- Eşleşme ve mesaj bildirimleri
+- Eşleşme ve mesaj bildirimleri (Güvenlik gereği kilit ekranında mesaj içeriği veya gönderen ismi gösterilmez; sadece **“Yeni PICK var”**, **“Yeni Mesaj var”** şeklinde genel uyarı verilir)
 - Güvenlik ile ilgili hizmet bildirimleri (ör. hesap güvenliği uyarıları)
 - (Varsa ve ayrıca tercih yönetiliyorsa) kampanya/duyuru bildirimleri
 
@@ -184,10 +184,10 @@ Selfie/liveness doğrulama akışı, **biyometrik veri** ve/veya **özel nitelik
 
 Bu izin, yalnızca doğrulama veya video tabanlı özelliklerde **ses erişimi** gerekli ise istenir.
 
-<Callout type="info" title="Not">
-  Mevcut kullanıcı yolculuğu notlarında doğrulama katmanında mikrofon izni adımı yer alıyor.
-  Mikrofon izninin teknik gerekçesi netleşmeden, izin metni “ses kaydı alıyoruz” gibi yorumlara
-  yol açmayacak şekilde dikkatle yazılmalıdır.
+<Callout type="info" title="Teknik Not">
+  Mevcut süreçte, kullanılan API kamera açılırken otomatik olarak mikrofon izni de talep etmektedir.
+  Ancak WIN bünyesinde **hiçbir şekilde ses kaydı alınmamakta ve saklanmamaktadır.** 
+  Mikrofon izninin teknik olarak tamamen kaldırılması için çalışmalar sürdürülmektedir.
 </Callout>
 
 ### 6.2 Kullanıcıya gösterilecek ön açıklama (öneri metin)
@@ -209,9 +209,8 @@ Bu izin, yalnızca doğrulama veya video tabanlı özelliklerde **ses erişimi**
 - Galeriden fotoğraf seçerek profil fotoğrafı ekleme
 - (Varsa) doğrulama için galeriden fotoğraf seçimi
 
-### 7.2 Kullanıcıya gösterilecek ön açıklama (öneri metin)
-
 > Galerinden fotoğraf seçebilmek için erişim izni gerekir.  
+> İşletim sisteminin galeri izin modeli (iOS/Android) neyse o açılır; sınırlı (limited) veya tam erişim seçebilirsin.  
 > İzni vermezsen, fotoğraf eklemek için kamerayı kullanabilirsin.
 
 ---

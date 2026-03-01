@@ -4,7 +4,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 **Son güncelleme:** 20.02.2026 · **Sürüm:** 1.0
 
-Bu sayfa; **WIN (Who is Next?)** platformu (“**Platform**”) kapsamında, belirli veri işleme faaliyetleri için kullanıcıdan alınabilecek **açık rıza** (“**Açık Rıza**”) metinlerini ve uygulama içi tasarım önerilerini içerir.
+Bu sayfa; **WIN** platformu (“**Platform**”) kapsamında, belirli veri işleme faaliyetleri için kullanıcıdan alınabilecek **açık rıza** (“**Açık Rıza**”) metinlerini ve uygulama içi tasarım önerilerini içerir.
 
 <Callout type="warning" title="Önemli — Bu sayfa KVKK Aydınlatma Metni’nin yerine geçmez">
 KVKK kapsamındaki veri sorumlusu bilgileri, işleme amaçları, hukuki sebepler, aktarım çerçevesi ve haklarınız için: [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni).  
@@ -66,10 +66,12 @@ WIN’de kullanıcıdan alınan “evet”lerin tamamı aynı hukuki kategori de
     **KVKK açık rıza**, KVKK m. 5/1 ve özellikle **özel nitelikli kişisel veri** bakımından KVKK m. 6 kapsamında gündeme gelir.  
     WIN bağlamında açık rıza gerektirebilecek tipik başlıklar:
 
-    - **Biyometrik veri** niteliği taşıyabilecek selfie/liveness doğrulama (bkz. ayrı metin)
+    - **Biyometrik veri** niteliği taşıyabilecek selfie/liveness doğrulama (Kamera ile anlık çekim ve Pose API kontrolü — bkz. ayrı metin)
     - **Din / siyasi görüş** gibi özel nitelikli veri veya bu kapsama girebilecek çıkarım doğuran onboarding tercihleri
     - (Mekanizmaya göre) **yurt dışına aktarım** (KVKK m. 9)
     - (Ürün kurgusuna göre) **konum** ve benzeri yüksek hassasiyetli veriler
+
+    **Önemli:** Belirli rızaların (özellikle biyometrik doğrulama ve yurt dışı aktarım) verilmesi, Platformun güvenliği ve hizmetin teknik olarak sunulabilmesi için **fonksiyonel bir zorunluluk** olarak belirlenebilir; bu durumda rıza verilmemesi Platform kullanımını kısıtlayabilir.
   </Tab>
   <Tab>
     **Ticari elektronik ileti onayı**, 6563 sayılı ETK ve **Ticari İletişim ve Ticari Elektronik İletiler Hakkında Yönetmelik** kapsamındadır.  
@@ -108,38 +110,25 @@ Onboarding “Hukuki Onay & Açık Rıza” ekranında; en az şu linkler görü
 - [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari)
 - (Uygulanabilir olduğu ölçüde) [Çerez Politikası](/gizlilik-ve-veri-koruma/cerez-politikasi)
 
-Ardından, aşağıdaki rıza kutuları **ayrı ayrı** gösterilir.
+Ardından, aşağıdaki rıza kutuları **ayrı ayrı** gösterilir. **Önemli:** Platformun güvenliğini ve fonksiyonel işleyişini sağlamak adına bu rızaların verilmesi onboarding aşamasında **zorunlu** tutulmuştur.
 
 ### Adım 2: Rızaları ayrıştır (tek kutuya “her şey” koyma)
 Örnek ayrıştırma:
 
-- Konum verisi işleme (varsa)
+- Konum verisi işleme (GPS - Sadece Ön Plan)
 - Özel nitelikli/hassas alanlar (din/siyasi görüş vb.)
-- Yurt dışına aktarım (mekanizmaya göre)
-- Pazarlama iletileri (ETK/İYS)
-- (Varsa) Kişiselleştirilmiş reklam/izleme (IDFA/GAID vb.)
+- Yurt dışına aktarım (AWS us-east-1 / Firebase EU)
+- Pazarlama iletileri (SMS, E-posta, Push)
+- Kişiselleştirilmiş reklam/izleme (IDFA/GAID vb.)
 
 ### Adım 3: “Detaylı metin”e tek tıkla erişim
 Her checkbox yanında “Detay” linki ile, ilgili rızanın **detaylı metni** (bu sayfadaki şablonlar) açılabilmelidir.
 
 ### Adım 4: Kayıt/ispata uygun log tut
-Her rıza için en az şu alanlar kayıt altına alınmalıdır:
-
-- rıza başlığı (hangi konu)
-- rıza durumu (verdi / geri çekti)
-- tarih‑saat (timestamp) + saat dilimi
-- uygulama sürümü + metin sürümü (policy version)
-- rızanın alındığı ekran/kanal
-- (uygulanabilirse) IP/cihaz kimliği gibi teknik delil alanları
+Kullanıcının platformu kullanmaya başlaması için bu rızaları vermesi zorunludur. Bu nedenle, kullanıcının **kayıt olduğu tarih ve o tarihte yürürlükte olan politika sürümü**, rıza ispatının temelini oluşturur.
 
 ### Adım 5: Geri çekme ve tercih yönetimi
-Kullanıcı; rızalarını:
-
-- uygulama içi ayarlar üzerinden,
-- cihaz izinleri için OS ayarlarından,
-- pazarlama iletileri için ayrıca İYS / mesaj içi “ret” mekanizmalarıyla
-
-kolayca yönetebilmelidir.
+Kullanıcı; rızalarını uygulama içindeki **Ayarlar > Yasal > Rızalar** ekranı üzerinden yönetebilir veya geri çekebilir.
 </Steps>
 
 ---
@@ -160,15 +149,13 @@ Konum bilgilerimin (yaklaşık/kesin) **yakınımdaki kullanıcıları önermek*
 </Callout>
 
 <Callout type="info" title="Detaylı açık rıza metni (popup / sayfa) — şablon">
-**Konum Verisi İşleme Açık Rızası**
-
-Platformda; **yakınımdaki kullanıcıları önermek**, **mesafe bilgisi göstermek** ve (varsa) **konum bazlı filtre/öneri** özelliklerini sunmak amacıyla, cihazımdan elde edilen **konum bilgilerimin** (yaklaşık konum ve/veya GPS enlem‑boylam gibi kesin konum) işlenmesine açık rıza veriyorum.
+Platformda; **yakınımdaki kullanıcıları önermek**, **mesafe bilgisi göstermek** ve eşleşme deneyimini sağlamak amacıyla, cihazımdan elde edilen **kesin konum (GPS enlem-boylam)** bilgilerimin işlenmesine açık rıza veriyorum.
 
 Bu kapsamda:
 
-- Konum verisinin **yalnızca uygulamayı kullanırken** (ürün kurgusuna göre değişebilir) işlenebileceğini,
-- Konum iznini **cihaz ayarlarımdan** her zaman kapatabileceğimi,
-- Rızamı geri çektiğimde konuma dayalı özelliklerin **kısıtlanabileceğini** veya çalışmayabileceğini,
+- Konum verisinin **yalnızca uygulama açıkken (ön planda)** işleneceğini, arka planda konum takibi yapılmayacağını,
+- Konum iznini **cihaz ayarlarımdan** veya uygulama içi **Ayarlar** bölümünden her zaman yönetebileceğimi,
+- Rızamı geri çektiğimde konuma dayalı özelliklerin (eşleşme, mesafe gösterme vb.) çalışmayacağını,
 - Rızayı geri çekmenin, geri çekme öncesi işlemlerin hukuka uygunluğunu etkilemeyeceğini
 
 bildiğimi kabul ederim.
@@ -218,20 +205,13 @@ Din/siyasi görüş gibi hassas alanlara ilişkin tercih ve uyum parametrelerimi
 <Callout type="info" title="Detaylı açık rıza metni (popup / sayfa) — şablon">
 **Özel Nitelikli / Hassas Alanlara İlişkin Tercihlerin İşlenmesine Açık Rıza**
 
-Platformda; **eşleşme uyumluluğunu artırmak**, **tercih/uyum parametreleri oluşturmak** ve (varsa) **gelişmiş filtreleme** sağlamak amacıyla, onboarding ve kullanım sırasında beyan ettiğim veya tercih ettiğim aşağıdaki alanlara ilişkin verilerin işlenmesine açık rıza veriyorum:
+Platformda; **eşleşme uyumluluğunu artırmak**, **tercih/uyum parametreleri oluşturmak** ve profilimi kişiselleştirmek amacıyla, onboarding ve kullanım sırasında beyan ettiğim aşağıdaki alanlara ilişkin verilerin işlenmesine açık rıza veriyorum:
 
-- din/inançla ilgili tercih/önem düzeyi,
-- siyasi görüş uyumu ile ilgili tercih/önem düzeyi,
-- bu alanların kombinasyonundan doğabilecek profil çıkarımları.
-
-Bu kapsamda:
-
-- Bu verilerin KVKK m. 6 kapsamında **özel nitelikli veri** olarak değerlendirilebileceğini veya bu riski doğurabileceğini,
+- **Din:** din/inançla ilgili tercih/önem düzeyi (İnanmıyorum, Hayatımın merkezinde değil, Önemli, Çok önemli seçenekleri dahil),
+- **Siyasi Görüş:** siyasi görüş uyumu ile ilgili tercih/önem düzeyi (Politikayla ilgilenmiyorum, Farklı görüşte olabilir, Bir noktada önemli, Aynı görüşte olmamız çok önemli seçenekleri dahil),
+- Bu sorular için sunulan **“Belirtmek istemiyorum”** seçeneğini kullanarak veri paylaşmamayı seçebileceğimi,
 - Bu verilerin **pazarlama amacıyla** kullanılmayacağını ve reklam hedeflemede kullanılmayacağını,
-- Bu verilerin işlenmesinin, Platformun eşleşme deneyimini kişiselleştirme düzeyini etkileyebileceğini,
-- Rızamı dilediğim zaman geri çekebileceğimi; geri çekmenin geri çekme öncesi işlemlerin hukuka uygunluğunu etkilemeyeceğini
-
-bildiğimi kabul ederim.
+- Rızamı dilediğim zaman geri çekebileceğimi bildiğimi kabul ederim.
 </Callout>
 
 <Callout type="warning" title="Ürün notu — “Belirtmek istemiyorum / geç” seçeneği">
@@ -249,7 +229,7 @@ Selfie doğrulama / liveness kontrolü; biyometrik değerlendirme riski nedeniyl
 Bu sayfada yalnızca, onboarding rıza katmanında “biyometrik” rızaya referans vermek için kısa bir checkbox şablonu verilir.
 
 <Callout type="info" title="Checkbox etiketi (kısa metin) — önerilen">
-Profil doğrulama amacıyla selfie/yüz verimin biyometrik değerlendirme niteliğinde olabilecek şekilde işlenmesini kabul ediyorum. (Detay: Biyometrik Veri Metni)
+Profil doğrulama amacıyla selfie/yüz verimin **Amazon Rekognition** (CompareFaces) ve **Pose API** altyapısı üzerinden, sadece anlık kamera görüntüsü kullanılarak (galeri erişimi olmadan) işlenmesini kabul ediyorum. (Detay: Biyometrik Veri Metni)
 </Callout>
 
 ---
@@ -265,10 +245,13 @@ KVKK m. 9, 2024 değişikliği ile birlikte; yurt dışına aktarım için **yet
 
     Platform; bulut altyapısı ve hizmet sağlayıcılar nedeniyle kişisel verilerinizin yurt dışında bulunan sistemlerde işlenmesini gerektirebilir. Bu tür aktarımlar; KVKK m. 9 ve “Kişisel Verilerin Yurt Dışına Aktarılmasına İlişkin Usul ve Esaslar Hakkında Yönetmelik” kapsamında; **yeterlilik kararı** veya **uygun güvenceler** (örn. Kurul tarafından ilan edilen standart sözleşmeler) gibi mekanizmalarla gerçekleştirilir.
 
-    Platformun mevcut teknik kurgusunda örnek sağlayıcılar:
+    Platform'un mevcut teknik kurgusunda aşağıdaki sağlayıcılar kullanılmaktadır ve bu sağlayıcıların sunucuları ağırlıklı olarak **yurt dışında** (AB/ABD) bulunmaktadır:
 
-    - **Google Cloud / Firebase** (barındırma, veritabanı, bildirim altyapısı) — bölge: **[FIREBASE_REGION]**
-    - **Amazon Rekognition** (yüz doğrulama) — bölge: **[AWS_REKOGNITION_REGION]**
+    - **Google Cloud / Firebase:** Barındırma, veritabanı, bildirim altyapısı, Pose API. (Lokasyon: **EU**)
+    - **Amazon Rekognition (AWS):** Selfie doğrulama (anlık karşılaştırma). (Lokasyon: **us-east-1**)
+    - **MeiliSearch:** Arama ve filtreleme (katalog) altyapısı.
+    - **Twilio:** SMS ve e-posta doğrulama kanalları.
+    - **Google Sign-In:** Kimlik doğrulama arayüzü.
 
     Yurt dışı aktarım yaklaşımı, alıcı kategorileri ve haklarınız için: [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni).
     </Callout>
@@ -319,27 +302,23 @@ Ticari ileti izinleri, kanal bazında ayrıştırılmalıdır (örnek):
 - **SMS** ile pazarlama iletileri
 - **E‑posta** ile pazarlama iletileri
 - **Push bildirim** ile pazarlama iletileri
-- **Arama (call center)** ile tanıtım aramaları (varsa)
+- **Arama (call center)** ile tanıtım aramaları
 
 <Callout type="info" title="Checkbox etiketi (kısa metin) — örnekler">
 **(SMS)** WIN’in kampanya ve promosyonlarını SMS ile almak istiyorum.  
 **(E‑posta)** WIN’in kampanya ve promosyonlarını e‑posta ile almak istiyorum.  
-**(Push)** WIN’in kampanya ve promosyonlarını push bildirim olarak almak istiyorum.
+**(Bildirim)** WIN’den kampanya ve promosyon içerikli Push (Anlık) bildirimler almak istiyorum.
 </Callout>
 
 <Callout type="info" title="Detaylı onay metni (ETK/İYS) — şablon">
-**Ticari Elektronik İleti Onayı (Pazarlama İzni)**
-
-WIN TECH BİLİŞİM VE ORGANİZASYON TİC. A.Ş. tarafından; Platforma ilişkin kampanya, promosyon, duyuru ve tanıtımlar hakkında; tercih ettiğim iletişim kanalı/kanalları üzerinden (**SMS** / **e‑posta** / **push** / **arama** — seçtiklerim) ticari elektronik ileti gönderilmesine **onay veriyorum**.
+WIN TECH BİLİŞİM VE ORGANİZASYON TİC. A.Ş. tarafından; Platforma ilişkin kampanya, promosyon, duyuru ve tanıtımlar hakkında; **SMS** (Twilio üzerinden), **E-posta** (info@whoisnextapp.com üzerinden) ve **Pazarlama Push Bildirimleri** kanalları üzerinden ticari elektronik ileti gönderilmesine **onay veriyorum**.
 
 Bu kapsamda:
 
+- **Push Bildirimleri:** Pazarlama içerikli push bildirimlerini uygulama içi ayarlardan aktif/deaktif edebileceğimi; aktif etmem halinde kilit ekranında içeriğin kısa bir özetini görebileceğimi,
 - Onayımın, yalnızca seçtiğim kanallar için geçerli olduğunu,
 - Onayımı dilediğim zaman, hiçbir gerekçe göstermeksizin geri alabileceğimi (ret hakkı),
-- Ret hakkımı; gönderilen iletilerdeki yöntemlerle, uygulama içi ayarlardan ve/veya **İYS** üzerinden kullanabileceğimi,
-- Ret bildirimimin ulaşmasını takiben, ticari ileti gönderiminin mevzuatta öngörülen süre içinde durdurulacağını
-
-bildiğimi kabul ederim.
+- Ret hakkımı; gönderilen iletilerdeki yöntemlerle (unsubscribe linki, İPTAL kodu vb.), uygulama içi ayarlardan ve/veya **İYS** üzerinden kullanabileceğimi bildiğimi kabul ederim.
 </Callout>
 
 <Callout type="warning" title="Operasyon notu — onay metni tasarım kuralları (Yönetmelik m. 7)">
@@ -348,38 +327,28 @@ bildiğimi kabul ederim.
 - Elektronik ortamda alınan onaylarda, onayın alındığı bilgisi **24 saat içinde** alıcıya iletilmelidir (m. 7/3) (İYS üzerinden alınan onaylar için istisna olabilir).
 </Callout>
 
-### 4.6.2 İYS kayıtları ve ispat (özet)
-
-Yönetmelik gereği:
-
-- İYS üzerinden alınmayan onaylar, **3 iş günü** içinde İYS’ye kaydedilmelidir (m. 7/11).
-- Kaydedilmeyen onaylar **geçersiz** sayılabilir (m. 7/12).
-- Onay kayıtları ve ilgili kayıtlar **3 yıl** saklanır (m. 13/2).
+İYS (İleti Yönetim Sistemi), Türkiye’deki tüm ticari elektronik ileti izinlerinin tek bir merkezde toplanmasını sağlayan ulusal bir veri tabanıdır. WIN, mevzuat gereği aldığı pazarlama onaylarını İYS’ye kaydetmekle yükümlüdür. Kullanıcılar, verdikleri onayları diledikleri zaman [iys.org.tr](https://iys.org.tr) adresi üzerinden de kontrol edebilir veya reddedebilirler.
 
 ---
 
-## 4.7 (Varsa) Kişiselleştirilmiş reklam/izleme rızası (IDFA/GAID, SDK’lar)
+## 4.7 Kişiselleştirilmiş reklam/izleme rızası (IDFA/GAID, SDK’lar)
 
 WIN’in reklam/atıf/ölçüm altyapısı devreye alındığında, kullanıcıya **kişiselleştirilmiş reklam/izleme** tercihlerini yönetebileceği ayrı bir rıza sunulması önerilir. Web tarafında çerezler; mobilde ise SDK’lar ve reklam tanımlayıcıları (IDFA/GAID) gündeme gelebilir.
 
 Detaylı envanter ve tercih yönetimi çerçevesi için: [Çerez Politikası](/gizlilik-ve-veri-koruma/cerez-politikasi).
 
-<Callout type="info" title="Checkbox etiketi (kısa metin) — önerilen (varsa)">
+<Callout type="info" title="Checkbox etiketi (kısa metin)">
 Kişiselleştirilmiş reklam ve pazarlama ölçümü amacıyla reklam tanımlayıcılarımın (IDFA/GAID) ve kullanım verilerimin işlenmesini kabul ediyorum.
 </Callout>
 
 <Callout type="info" title="Detaylı rıza metni (popup / sayfa) — şablon">
-**Kişiselleştirilmiş Reklam/İzleme Rızası (Varsa)**
+**Kişiselleştirilmiş Reklam Rızası (AdMob)**
 
-Platformun reklam/atıf/ölçüm altyapısı kapsamında; reklam tanımlayıcılarımın (IDFA/GAID gibi), cihaz/uygulama kullanım verilerimin ve çerez/SDK benzeri teknolojilerle elde edilen sinyallerin; **kişiselleştirilmiş reklam gösterimi**, **kampanya performansı ölçümü** ve **pazarlama analitiği** amaçlarıyla işlenmesine açık rıza veriyorum.
+Platformda reklam gösterimi amacıyla **Google AdMob** altyapısı kullanılmaktadır. Şu an için kişiselleştirilmiş reklam hedeflemesi aktif olmasa da; reklam tanımlayıcılarımın (IDFA/GAID gibi) ve kullanım verilerimin reklam performansı ölçümü amacıyla işlenmesine açık rıza veriyorum.
 
 Bu kapsamda:
-
 - Rızamı dilediğim zaman geri çekebileceğimi,
-- Rızayı geri çektiğimde kişiselleştirilmiş reklam/ölçümün devre dışı kalabileceğini; buna rağmen genel (kişiselleştirilmemiş) reklamların görülebileceğini,
-- İşlenen veri türleri, üçüncü taraf sağlayıcılar ve yurt dışı aktarım yaklaşımının [Çerez Politikası](/gizlilik-ve-veri-koruma/cerez-politikasi) ve [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) içinde açıklandığını
-
-bildiğimi kabul ederim.
+- İşlenen veri türleri ve sağlayıcı detaylarının [Çerez Politikası](/gizlilik-ve-veri-koruma/cerez-politikasi) içinde açıklandığını bildiğimi kabul ederim.
 </Callout>
 
 ---
@@ -387,7 +356,7 @@ bildiğimi kabul ederim.
 ## 5) Rıza kayıtları (loglama) — önerilen minimum alanlar
 
 <Callout type="info" title="Neden önemli?">
-Hem KVKK (Aydınlatma Tebliği m. 5/e) hem de ETK/İYS süreçleri bakımından, rızaların/onayların **ispat edilebilir** olması gerekir. Bu nedenle rıza yönetimi “sadece UI” değil, aynı zamanda “kayıt sistemi”dir.
+Hem KVKK (Aydınlatma Tebliği m. 5/e) hem de ETK/İYS süreçleri bakımından, rızaların/onayların **ispat edilebilir** olması gerekir. WIN’de Platformu kullanmaya başlamak için belirli rızaların verilmesi zorunlu bir adım (blocking factor) olarak kurgulanmıştır. Bu nedenle, kullanıcının kayıt olduğu tarih ve o tarihte yürürlükte olan politika sürümü, rıza ispatının temelini oluşturur. Güncellemeler pop-up bildirimleri ile sunulur ve devam eden kullanım güncel rızanın teyidi sayılır.
 </Callout>
 
 Önerilen minimum rıza kaydı alanları:
@@ -401,9 +370,9 @@ Hem KVKK (Aydınlatma Tebliği m. 5/e) hem de ETK/İYS süreçleri bakımından,
 | **timestamp** | tarih‑saat + saat dilimi |
 | **policy_version** | metnin sürümü (ör. 2026‑02‑17 v1) |
 | **app_version** | uygulama sürümü |
-| **collection_point** | rızanın alındığı ekran/akış (onboarding, ayarlar vb.) |
-| **channel (ETK için)** | SMS / e‑posta / push / arama |
-| **evidence** | IP, device id, IYS kayıt ID vb. (uygulanabilir oldukça) |
+| **collection_point** | rızanın alındığı ekran/akış (kayıt sırasındaki checkbox vb.) |
+| **retention_period** | Rıza kayıtları, ispat ve yasal zamanaşımı gereği **10 yıl** saklanır. |
+| **channel (ETK için)** | Bildirim / SMS / E-posta |
 
 ---
 
@@ -411,8 +380,18 @@ Hem KVKK (Aydınlatma Tebliği m. 5/e) hem de ETK/İYS süreçleri bakımından,
 
 Rıza geri alma kanalları:
 
-- **Uygulama içi**: Ayarlar > Yasal/Rızalar (varsa)
-- **OS izinleri**: Konum/kamera/mikrofon/bildirim izinleri için cihaz ayarları
-- **ETK/İYS**: SMS/e‑posta içi ret mekanizması + İYS üzerinden ret
+- **Uygulama içi**: Ayarlar / Hesap Ayarları > Yasal/Rızalar
+- **Yardım ve Destek**: Uygulama içi bilet sistemi veya destek e-postası üzerinden ret talebi iletme.
+- **OS izinleri**: Konum/kamera/mikrofon/bildirim izinleri için cihaz ayarları.
+- **ETK/İYS**: SMS/e‑posta içi ret mekanizması + İYS üzerinden ret.
 
 Rızanın geri alınması, geri alma öncesi yapılan işlemlerin hukuka uygunluğunu etkilemez. Ancak geri alma sonrasında, rızaya bağlı bazı özellikler çalışmayabilir veya kısıtlanabilir.
+
+---
+
+## 7) Çocukların verileri ve yaş kısıtı
+
+WIN, yalnızca **18 yaş ve üzerindeki** bireylere yönelik bir hizmettir. Bu doğrultuda:
+- Kayıt sırasında yaş doğrulaması yapılır.
+- 18 yaş altındaki bireylerin verilerinin işlenmesi hedeflenmemektedir.
+- Eğer 18 yaş altı bir kullanıcının veri paylaştığı tespit edilirse, bu veriler derhal silinir ve hesap kapatılır.
