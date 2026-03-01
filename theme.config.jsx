@@ -71,7 +71,7 @@ export default {
   logo: (
     <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 12 }}>
       <img src="/logo.png" alt="Genesis Hukuk" width={32} height={32} />
-      <span style={{ fontWeight: 'bold' }}>Legal | Whoisnext</span>
+      <span style={{ fontWeight: 'bold' }}>Legal | Whoisnextapp</span>
     </div>
   ),
   project: {
@@ -88,7 +88,7 @@ export default {
       <>
         © {new Date().getFullYear()}{'\u00A0'}
         <a href="https://genesishukuk.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>Genesis Hukuk</a>
-        {'\u00A0'}& Whoisnext | Tüm hakları saklıdır.
+        {'\u00A0'}& Whoisnextapp | Tüm hakları saklıdır.
       </>
     ),
   },

@@ -23,16 +23,16 @@ export default function SEO({
   const { locale } = useRouter()
 
   const defaultTitle = locale === 'tr'
-    ? "Legal | Whoisnext - Sözleşmeler ve Uyumluluk"
-    : "Legal | Whoisnext - Agreements and Compliance"
+    ? "Legal | Whoisnextapp - Sözleşmeler ve Uyumluluk"
+    : "Legal | Whoisnextapp - Agreements and Compliance"
 
   const defaultDescription = locale === 'tr'
     ? "WIN uygulaması için hukuki uyum, KVKK ve sözleşme yönetimi portalı. Genesis Hukuk tarafından hazırlanmıştır."
     : "Legal compliance, KVKK, and contract management portal for the WIN application. Prepared by Genesis Hukuk."
 
   const defaultKeywords = locale === 'tr'
-    ? "Legal | Whoisnext, Kullanım Koşulları, KVKK, Aydınlatma Metni, Dating App Hukuku"
-    : "Legal | Whoisnext, Terms of Use, KVKK, Information Text, Dating App Law"
+    ? "Legal | Whoisnextapp, Kullanım Koşulları, KVKK, Aydınlatma Metni, Dating App Hukuku"
+    : "Legal | Whoisnextapp, Terms of Use, KVKK, Information Text, Dating App Law"
 
   const finalTitle = title || defaultTitle
   const finalDescription = description || defaultDescription
@@ -51,7 +51,7 @@ export default function SEO({
       <meta property="og:description" content={finalDescription} />
       <meta property="og:image" content={ogImage} />
       <meta property="og:url" content={canonical} />
-      <meta property="og:site_name" content={locale === 'tr' ? "Legal | Whoisnext" : "Legal | Whoisnext"} />
+      <meta property="og:site_name" content={locale === 'tr' ? "Legal | Whoisnextapp" : "Legal | Whoisnextapp"} />
       <meta property="og:locale" content={locale === 'tr' ? "tr_TR" : "en_US"} />
 
       {/* Twitter */}
