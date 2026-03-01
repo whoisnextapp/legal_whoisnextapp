@@ -85,8 +85,9 @@ Bu nedenle profil notu ve mesajlarda telefon numarası, e‑posta, açık adres 
     - **Profil notu** (kısa serbest metin)
     - **Profil özet alanları** (örn. burç, boy, meslek, sigara/alkol sıklığı gibi alanlar)
     - **Mesafe / yaklaşık konum** (örn. “5 km uzakta”)
-    - **Uyumluluk/puan göstergeleri:** Intelligence (Zeka), Politeness (Kibarlık) ve Fun (Eğlence) kategorilerindeki değerlendirme puanları.
-    - **Çevrim içi (Online) / Son görülme:** Uygulamadaki aktiflik durumunuz (Bu bilgi **yalnızca Premium** üyeler tarafından görülebilir ve kapatılamaz).
+    - **Uyumluluk/puan göstergeleri:** Sohbet esnasındaki değerlendirmelerden türetilen Intelligence (Zeka), Politeness (Kibarlık) ve Fun (Eğlence) kategorilerindeki puan ortalamaları.
+    - **Çevrim içi (Online) / Son görülme:** Uygulamadaki aktiflik durumunuz (Bu bilgi **yalnızca Premium** üyeler tarafından görülebilir).
+    - **Mavi/Yeşil Tik:** Fotoğrafla doğrulanmış profillerde görülen doğrulama rozeti.
 
     Hangi alanların göründüğünü, Platformun tasarımına göre “profil kartı” ekranında görürsünüz.
   </Tab>
@@ -180,8 +181,9 @@ Profilinizde tipik olarak **6 fotoğraf slotu** bulunur. Platformda güvenliği 
 
 **Selfie Doğrulama Akışı:**
 - Sadece **ön kamera** aracılığıyla anlık çekim yapılır; **galeri üzerinden fotoğraf yüklenemez.**
-- **CompareFaces** (Amazon) ve **Pose API** (Google) teknolojileriyle pozu ve kimliği doğrularız.
-- Bu adım, sahte hesapları önlemek için fonksiyonel bir zorunluluktur; rıza verilmemesi halinde hesap oluşturma tamamlanamaz.
+- **CompareFaces (Amazon Rekognition)**, **safeSearchDetection (Google Vision)** ve **Pose API (Google)** teknolojileriyle pozu ve kimliği doğrularız.
+- Bu adım, sahte hesapları önlemek için fonksiyonel bir zorunluluktur; rıza verilmemesi ve en az bir fotoğrafın doğrulanmaması halinde hesap keşif akışına (Deck) dahil edilmez.
+- Doğrulanan her fotoğrafın üzerinde yeşil tik/rozet yer alır. Başkalarıyla olan fotoğraflarda doğrulama yapılmaz; sadece kullanıcının kendisinin olduğu fotoğraflarda doğrulama ibaresi yer alır.
 - Fotoğraf yükleme sırasında:
 
 - galeri/kamera erişim izinleri,
@@ -213,8 +215,8 @@ Selfie doğrulama görüntülerinin profilde gösterilmemesi hedeflenir; bu alan
 
 Platformu kullandığınızda, şu tür veriler oluşabilir:
 
-- **Etkileşimler:** Beğeni/ret, eşleşme ve profil görüntüleme kayıtları.
-- **Puanlama (Evaluation):** Sohbet başladığında, karşı taraf en az 3 kelimeden oluşan 10 cümle limitini aştıktan sonra Intelligence (Zeka), Politeness (Kibarlık) ve Fun (Eğlence) niteliklerini değerlendirmenizi sağlayan bir pop-up sunulur. Bu puanlar profilinizde (Premium üyelerce) görülebilir.
+- **Etkileşimler:** Beğeni/ret, eşleşme, ikili seçim (dual picking) ve profil görüntüleme kayıtları.
+- **Puanlama (Evaluation):** Sohbet başladıktan sonra belirli bir etkileşim limitini aşan kullanıcılara; karşı tarafı Intelligence (Zeka), Politeness (Kibarlık) ve Fun (Eğlence) nitelikleri üzerinden değerlendirmesini sağlayan bir oylama aracı sunulur. Bu puanlar profil ortalamasına dahil edilir.
 - **Mesajlaşma:** Mesaj içeriği ve zaman meta verileri. Mesajlar **uçtan uca şifreli değildir**; moderasyon ve güvenlik amacıyla admin/moderatörler tarafından incelenebilir.
 - **Güvenlik sinyalleri:** Şikayet, engelleme ve şüpheli davranış kayıtları.
 
@@ -280,8 +282,9 @@ WIN; eşleşme ve öneri (deck) akışında, belirli parametreleri birlikte değ
 - **Tercih/önem parametreleri**: dış görünüş/maddi durum/siyasi görüş uyumu gibi seçimler
 - **Konum/mesafe**: yakınlık
 - **Kullanım davranışları**: beğeni/ret, eşleşme örüntüleri (Platform içinde)
-- **Doğrulama sinyalleri**: profil doğrulama durumu
-- **Premium etkileri**: görünürlük artırma gibi özellikler
+- **Doğrulama sinyalleri**: profil doğrulama durumu ve rozetler
+- **Cooldown (Soğuma Süresi)**: Deck akışında karşınıza çıkan ancak seçilmeyen profillerin belirli bir süre tekrar gösterilmemesi kuralı
+- **Premium etkileri**: görünürlük artırma, filtreleme ve online durum görme gibi özellikler
 
 <Callout type="info" title="Kontrol sizde: ne yapabilirsiniz?">
 - Tercihlerinizi güncelleyebilir ve izinlerinizi yönetebilirsiniz.  

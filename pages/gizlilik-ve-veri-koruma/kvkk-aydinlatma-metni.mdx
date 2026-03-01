@@ -184,7 +184,7 @@ Toplama yöntemlerine örnekler:
   </Tab>
   <Tab>
     Platform, sahte hesapları azaltmak ve kullanıcı güvenliğini artırmak için **selfie/liveness doğrulama** isteyebilir. Bu süreçte:
-    - **Biyometrik doğrulama:** Sahte hesapları önlemek amacıyla kamera aracılığıyla çekilen liveness/pose selfie'si ve yüz karşılaştırma (CompareFaces) işlemleri. (Bu adımın tamamlanması Platform kullanımı için **zorunludur**).
+    - **Biyometrik doğrulama:** Sahte hesapları önlemek amacıyla kamera aracılığıyla çekilen liveness/pose selfie'si ve yüz karşılaştırma (**Amazon Rekognition - CompareFaces**) işlemleri. Keşif akışında (Deck) yer alabilmek için en az bir fotoğrafın bu yöntemle doğrulanmış olması zorunludur. Doğrulanan fotoğraflarda yeşil tik/rozet gösterilir.
 
     - **Kamera** ve (bazı senaryolarda) **mikrofon** izni istenebilir. Teknik gereklilikler nedeniyle mikrofon izni alınmakla birlikte, herhangi bir ses kaydı gerçekleştirilmemektedir.
     - Kullanıcıdan belirli bir pozu taklit ederek selfie çekmesi talep edilebilir.
@@ -196,8 +196,9 @@ Toplama yöntemlerine örnekler:
   <Tab>
     Platformu kullanmanız sırasında etkileşim verileri oluşur. Örnek:
 
-    - Beğeni/ret davranışları, eşleşmeler.
-    - **Puanlama (Evaluation):** Sohbet sırasında belirli bir mesaj limitinden sonra (en az 3 kelimeden oluşan 10 cümle) karşı tarafı **Intelligence** (Zeka), **Politeness** (Kibarlık) ve **Fun** (Eğlence) kriterlerine göre değerlendirme verileri.
+    - Beğeni/ret davranışları, eşleşmeler, ikili seçim (dual picking) süreçleri.
+    - **Puanlama (Evaluation):** Sohbet sırasında belirli bir mesaj etkileşim limitinden sonra karşı tarafı **Intelligence** (Zeka), **Politeness** (Kibarlık) ve **Fun** (Eğlence) kriterlerine göre değerlendirme verileri.
+    - **Cooldown (Soğuma Süresi):** Deck'te gösterilen ancak seçilmeyen kullanıcıların tekrar gösterilmesine ilişkin algoritmik kısıtlama süreleri.
     - **Mesajlaşma:** Sohbet içerikleri ve meta veriler. Mesajlar **uçtan uca şifreli değildir**; güvenlik ve moderasyon amacıyla yetkili adminler tarafından incelenebilir.
     - Güvenlik sinyalleri (spam/fraud şüphesi vb.).
 
@@ -370,12 +371,12 @@ Platformun doğası gereği, profilinizdeki bazı veriler **diğer kullanıcıla
 **Herkese Açık / Platform İçi Görünürlük Matrisi:**
 - **Temel Bilgiler:** İsim, Yaş, Profil Fotoğrafları, Spotify Favori Şarkı (marş seçimi), çevrim içi (online) durumu (**yalnızca Premium üyelerce görülür**).
 - **Konum:** Yaklaşık konum yakınlığı (Ör: "5 km uzakta").
-- **Geri Bildirimler:** Diğer kullanıcılar tarafından verilen Intelligence, Politeness ve Fun puanları (**yalnızca Premium üyelerce görülür**).
+- **Geri Bildirimler:** Diğer kullanıcılar tarafından verilen Intelligence, Politeness ve Fun puan ortalamaları (**yalnızca Premium üyelerce görülür**).
 - **Hassas Parametreler:** "Din senin hayatında ne kadar önemli?", "Fiziksel görünüş senin hayatında ne kadar önemli?", "Maddi durum senin hayatında ne kadar önemli?", "Siyasi görüş senin hayatında ne kadar önemli?" sorularının cevapları.
 - **Kişisel Özellikler:** Boy, iş/meslek bilgisi, alkol ve sigara kullanım alışkanlıkları, burç.
 - **Serbest Metin:** "Kendi hakkında" yazdığı profil notu/bio (burada paylaşılan veriler kullanıcı sorumluluğundadır).
 
-**Premium Ayrıcalığı:** Premium paket sahipleri, profillerini tamamen gizleme (**hide profile**) özelliğini kullanarak görünürlüklerini kontrol edebilirler. Free (ücretsiz) kullanıcılar için profil bazlı gizleme özelliği sunulmamaktadır.
+**Premium Ayrıcalığı:** Premium paket sahipleri, profillerini tamamen gizleme (**hide profile**) özelliğini kullanarak görünürlüklerini kontrol edebilirler; ileri düzey deck filtreleri kullanabilirler; kendi puanlarını ve diğerlerinin puanlarını görebilirler; kullanıcıların çevrim içi durumunu izleyebilirler. Free (ücretsiz) kullanıcılar için bu özellikler sunulmamaktadır.
 
 > Uyarı: Serbest metin alanlarında (profil notu, mesajlar) telefon numarası, e‑posta, açık adres gibi kişisel bilgileri ve hassas/özel nitelikli verileri paylaşmamanız önerilir. Detaylı içerik kuralları için [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari) ve [Topluluk Kuralları](/topluluk-ve-guvenlik/topluluk-kurallari) geçerlidir.
 
