@@ -82,7 +82,7 @@ export default {
       </div>
     )
   },
-  docsRepositoryBase: 'https://github.com/avsercankoc/legal-whoisnext/blob/main',
+  docsRepositoryBase: 'https://github.com/whoisnextapp/legal_whoisnextapp/blob/main',
   footer: {
     text: (
       <>
