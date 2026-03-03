@@ -1,11 +1,11 @@
 {
   "index": "Whoisnext",
-  "sozlesmeler": "1. Temel Sözleşmeler",
-  "gizlilik-ve-veri-koruma": "2. Gizlilik ve Veri Koruma",
-  "topluluk-ve-guvenlik": "3. Topluluk ve Güvenlik",
-  "kurumsal-ve-yasal-uyumluluk": "4. Kurumsal ve Yasal Uyumluluk",
-  "uygulama-ici-akislar": "5. Uygulama İçi Akışlar",
-  "basvuru-formlari": "6. Başvuru Formları",
+  "sozlesmeler": "Temel Sözleşmeler",
+  "gizlilik-ve-veri-koruma": "Gizlilik ve Veri Koruma",
+  "topluluk-ve-guvenlik": "Topluluk ve Güvenlik",
+  "kurumsal-ve-yasal-uyumluluk": "Kurumsal ve Yasal Uyumluluk",
+  "uygulama-ici-akislar": "Uygulama İçi Akışlar",
+  "basvuru-formlari": "Başvuru Formları",
   "website": {
     "title": "Ana Sayfa",
     "type": "page",
