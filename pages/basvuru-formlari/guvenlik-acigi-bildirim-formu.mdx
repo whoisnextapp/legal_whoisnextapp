@@ -1,0 +1,72 @@
+import { Callout } from "nextra/components";
+
+# Güvenlik Açığı Bildirim Formu
+
+Bu form, platformumuzdaki güvenlik açıklarını veya teknik zaafiyetleri bildirmek isteyen araştırmacılar ve teknik ekipler tarafından kullanılır.
+
+---
+
+## Formu indir
+
+Formu doldurup imzaladıktan sonra taratarak **[info@whoisnextapp.com](mailto:info@whoisnextapp.com)** adresine gönderebilirsiniz.
+
+<div className="flex flex-wrap gap-3 mt-2">
+  <a
+    href="/formlar/guvenlik-acigi-bildirim-formu.pdf"
+    download
+    className="inline-flex items-center gap-2 px-4 py-3 bg-red-500 text-white rounded-lg font-medium no-underline hover:no-underline hover:bg-red-600 transition-colors leading-none [&>svg]:shrink-0 [&>svg]:block"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+    </svg>
+    <span>Güvenlik Açığı Bildirim Formu (PDF)</span>
+  </a>
+  <a
+    href="/formlar/guvenlik-acigi-bildirim-formu.docx"
+    download
+    className="inline-flex items-center gap-2 px-4 py-3 bg-red-600 text-white rounded-lg font-medium no-underline hover:no-underline hover:bg-red-700 transition-colors leading-none [&>svg]:shrink-0 [&>svg]:block"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+    </svg>
+    <span>Güvenlik Açığı Bildirim Formu (DOCX)</span>
+  </a>
+</div>
+
+---
+
+## Nasıl doldurulur?
+
+### Formun amacı
+
+Bu form, [Güvenlik Açığı Bildirim Politikası](/kurumsal-ve-yasal-uyumluluk/guvenlik-acigi-bildirim-politikasi) kapsamında **teknik güvenlik açıklarını** (yetkisiz erişim, veri ifşası, kimlik doğrulama bypass, iş mantığı zafiyeti vb.) bildirmek içindir. Genel destek, hesap/şifre talepleri, içerik şikayeti veya resmî makam talepleri için kullanılmaz; bu durumlarda ilgili kanallara başvurunuz.
+
+### Doldurulması gereken alanlar
+
+| Bölüm | Açıklama |
+|-------|----------|
+| **1. Bildirici bilgileri** | Ad/soyad veya takma ad, e-posta (zorunlu), tercih edilen dil. Geri dönüş ve teşekkür ödülü için WIN hesabı isteğe bağlı. |
+| **2. Özet başlık** | Zafiyeti tek cümleyle tanımlayın. |
+| **3. Etkilenen varlık** | Web / mobil / API; domain, uygulama sürümü veya endpoint; mümkünse ekran veya akış. |
+| **4. Zafiyet türü** | İlgili kutucukları işaretleyin (yetkilendirme, oturum, veri ifşası, iş mantığı, API vb.). |
+| **5. Adım adım yeniden üretim** | Zafiyetin nasıl tekrarlanacağını numaralı adımlarla yazın. |
+| **6. Beklenen vs gerçekleşen davranış** | Sistemin ne yapması gerektiği ile ne yaptığını karşılaştırın. |
+| **7. Etki ve istismar edilebilirlik** | En kötü senaryo ve hangi koşullarda istismar edilebileceği. |
+| **8. Kanıt** | Asgari düzeyde: ekran görüntüsü, kısa video veya minimal PoC. Kişisel veri içermemeli; veri minimizasyonu ilkesine uyun. |
+| **9. Önerilen düzeltme** | İsteğe bağlı. |
+| **10. Hassas bilgiler** | Token, test hesabı vb. varsa ayrı/şifreli dosyada iletin; bu alanda sadece “Ayrı şifreli dosyada iletildi” yazabilirsiniz. |
+| **11. İyi niyet beyanı** | Politika kurallarına (zarar vermeme, veri minimizasyonu, sorumlu açıklama) uyduğunuzu onaylayın. |
+| **12. Tarih ve imza** | Elektronik imza yeterlidir; ıslak imza yalnızca özel talep edilirse istenir. |
+
+### Eklenmesi gereken belgeler
+
+- **Kanıt:** Ekran görüntüsü, kısa video veya minimal PoC’u e-posta eki olarak gönderebilirsiniz; formda “Ek: …” diye belirtin.
+- **Hassas bilgiler** (erişim belirteci, test hesabı, log): Mümkünse ayrı dosyada ve şifreli; parola ayrı mesajla veya kanaldan iletin.
+- Ek belge zorunluluğu yoktur; asgari kanıt ve yeniden üretilebilir adımlar yeterlidir.
+
+### Gönderim ve dikkat edilecekler
+
+- **Gönderim:** Formu doldurup tarayarak **[info@whoisnextapp.com](mailto:info@whoisnextapp.com)** adresine e-posta ile gönderin. Tercihen şifreli (PGP) iletişim kullanılabilir.
+- **Alındı onayı:** Hedef 3 iş günü içinde; **ilk teknik değerlendirme:** hedef 7–14 iş günü.
+- **Politikaya uyum:** DDoS, sosyal mühendislik, toplu veri indirme ve kamuya erken açıklama yasaktır. İyi niyetli, asgari adımlarla ve kullanıcı verisine zarar vermeden araştırma yaptığınızı beyan ediyorsunuz.
+- Detaylı kurallar ve kapsam için [Güvenlik Açığı Bildirim Politikası](/kurumsal-ve-yasal-uyumluluk/guvenlik-acigi-bildirim-politikasi) metnini okuyun.

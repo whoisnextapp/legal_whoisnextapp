@@ -1,0 +1,108 @@
+import { Callout } from "nextra/components";
+
+export const FormCard = ({ title, desc, btnBg, href }) => (
+  <div className="mb-4">
+    <a
+      href={href}
+      className={`inline-flex items-center gap-2 px-4 py-3 ${btnBg} !text-white rounded-lg font-medium no-underline hover:no-underline focus:no-underline transition-colors [&svg]:shrink-0 [&svg]:block leading-none`}
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+      </svg>
+      <span>{title}</span>
+    </a>
+    <p className="text-sm text-gray-500 dark:text-gray-400 mt-1.5 mb-0">{desc}</p>
+  </div>
+);
+
+# Başvuru ve Bildirim Formları
+
+Bu sayfa, Whoisnextapp kullanıcılarının, yetkililerin veya üçüncü şahısların platformumuza resmi başvurularını ve yasal bildirimlerini iletebilmesi için oluşturulmuş standart yasal dokümanları içermektedir.
+
+Amacımız; platformumuzla etkileşimi şeffaf, hızlı ve yasal süreçlere uygun hale getirmektir.
+
+---
+
+## Başvuru yöntemleri
+
+Hazırladığınız formları aşağıdaki kanallar üzerinden tarafımıza iletebilirsiniz:
+
+| Yöntem | Açıklama |
+|--------|----------|
+| **E-posta** | Formları doldurup imzaladıktan sonra taratarak **[info@whoisnextapp.com](mailto:info@whoisnextapp.com)** adresine gönderebilirsiniz. |
+| **Fiziki posta (KVKK)** | KVKK ilgili kişi başvurularında yasal sürelerin başlaması için formun **ıslak imzalı** nüshasının **şirket adresimize** (Acıbadem Mah. Asafbey Sk. İmer Apt. No: 7 A, Kadıköy / İstanbul) fiziki posta veya kargo ile iletilmesi gerekmektedir. |
+
+<Callout type="warning" title="KVKK başvuruları">
+  KVKK başvurularının fiziki posta yoluyla yapılması, talebinizin resmiyeti ve yasal sürelerin takibi açısından önemlidir.
+</Callout>
+
+---
+
+## Form özeti
+
+Aşağıdaki tablo tüm başvuru ve bildirim formlarının kısa açıklamasını içerir. Her formun sayfasında “Nasıl doldurulur?” rehberi, doldurulması gereken alanlar tablosu ve gönderim bilgileri yer alır.
+
+| Form | Açıklama |
+|------|----------|
+| **Güvenlik Açığı Bildirim Formu** | Platformdaki teknik güvenlik açıklarını veya zaafiyetleri bildirmek için araştırmacılar ve teknik ekipler tarafından kullanılır. |
+| **KVKK Başvuru Formu** | Kişisel veri sahiplerinin KVKK kapsamında haklarını (bilgi talep etme, düzeltme, silme, itiraz vb.) kullanmaları için; ıslak imzalı ve fiziki posta ile iletilmelidir. |
+| **Şikayet ve İhbar Formu** | Topluluk kurallarını veya genel politikaları ihlal eden kullanıcı davranışlarının veya içeriklerin resmi olarak şikayet/ihbar edilmesi içindir. |
+| **İtiraz Formu** | Hesabı kısıtlanan, banlanan veya içerikleri kaldırılan kullanıcıların moderasyon kararlarına resmi itiraz başvurusu yapması için kullanılır. |
+| **İçerik İhlal Formu** | Platform kurallarına aykırı veya sakıncalı olduğunu düşündüğünüz içerikleri moderasyon ekibine resmi olarak bildirmeniz için kullanılır. |
+| **Fikri Mülkiyet (Telif) İhlal Formu** | Telif hakkı veya marka tescili gibi fikri mülkiyet haklarınıza tecavüz eden içeriklerin (FSEK, SMK, DMCA vb.) bildirilmesi için kullanılır. |
+| **Yasa Dışı İçerik Bildirim Formu** | 5651 ve ilgili mevzuat uyarınca açıkça suç teşkil eden içeriklerin **yalnızca resmî makamlar ve yetkili kurumlar** tarafından bildirimi içindir. |
+
+---
+
+## Formlara erişim
+
+Aşağıdaki butonlarla ilgili form sayfasına gidip formu indirebilir ve “Nasıl doldurulur?” rehberini inceleyebilirsiniz.
+
+<FormCard
+    title="Güvenlik Açığı Bildirim Formu"
+    desc="Platformdaki güvenlik açıklarını veya teknik zaafiyetleri bildirmek için araştırmacılar ve teknik ekipler tarafından kullanılır."
+    btnBg="bg-red-500 hover:bg-red-600"
+    href="/basvuru-formlari/guvenlik-acigi-bildirim-formu"
+/>
+
+<FormCard
+    title="KVKK Başvuru Formu"
+    desc="Kişisel veri sahiplerinin veri işlemelerine ilişkin haklarını kullanmaları ve talep iletmeleri için hazırlanan yasal formdur."
+    btnBg="bg-blue-500 hover:bg-blue-600"
+    href="/basvuru-formlari/kvkk-basvuru-formu"
+/>
+
+<FormCard
+    title="Şikayet ve İhbar Formu"
+    desc="Topluluk kurallarını veya genel politikaları ihlal eden kullanıcı davranışlarının resmi olarak şikayet edilmesi içindir."
+    btnBg="bg-orange-500 hover:bg-orange-600"
+    href="/basvuru-formlari/sikayet-ve-ihbar-formu"
+/>
+
+<FormCard
+    title="İtiraz Formu"
+    desc="Hesabı kısıtlanan, banlanan veya içerikleri kaldırılan kullanıcıların moderasyon kararlarına resmi itiraz süreçleri için kullanılır."
+    btnBg="bg-emerald-500 hover:bg-emerald-600"
+    href="/basvuru-formlari/itiraz-formu"
+/>
+
+<FormCard
+    title="İçerik İhlal Formu"
+    desc="Rahatsız edici, platform kurallarına aykırı veya sakıncalı olduğunu düşündüğünüz içerikleri moderasyon ekibine bildirmek için kullanılır."
+    btnBg="bg-purple-500 hover:bg-purple-600"
+    href="/basvuru-formlari/icerik-ihlal-formu"
+/>
+
+<FormCard
+    title="Fikri Mülkiyet (Telif) İhlal Formu"
+    desc="Telif hakkı veya marka tescili gibi fikri mülkiyet haklarınıza tecavüz eden içeriklerin (DMCA vb.) bildirilmesini sağlar."
+    btnBg="bg-indigo-500 hover:bg-indigo-600"
+    href="/basvuru-formlari/fikri-mulkiyet-telif-ihlal-formu"
+/>
+
+<FormCard
+    title="Yasa Dışı İçerik Bildirim Formu"
+    desc="5651 Sayılı Kanun ve yasal düzenlemeler uyarınca açıkça suç teşkil eden içeriklerin resmi makamlar ve yetkililerce bildirimi içindir."
+    btnBg="bg-rose-500 hover:bg-rose-600"
+    href="/basvuru-formlari/yasa-disi-icerik-bildirim-formu"
+/>
