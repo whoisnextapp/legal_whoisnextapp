@@ -48,3 +48,27 @@ nav[aria-label="Sidebar"] ol {
   margin-left: 0;
   counter-reset: none;
 }
+
+/* Erişilebilirlik: Nextra birincil metin rengi (linkler vb.) için
+   kontrastı artır. Açık temada daha koyu bir mavi, koyu temada daha
+   açık bir mavi kullanıyoruz. */
+.nx-text-primary-600 {
+  color: #1d4ed8 !important; /* blue-700 */
+}
+
+.dark .nx-text-primary-600 {
+  color: #93c5fd !important; /* blue-300 */
+}
+
+/* Erişilebilirlik: Küçük dokunma hedeflerini büyüt.
+   Nextra'nın "opens in a new tab" benzeri küçük linkleri genelde
+   .nx-p-2 .nx-text-current ile geliyor; minimum 44x44 px alan ver. */
+a[target="_blank"].nx-p-2.nx-text-current {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border-radius: 9999px;
+}

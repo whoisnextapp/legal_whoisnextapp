@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import { useTheme } from 'next-themes'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
@@ -43,13 +44,15 @@ function ThemeToggle() {
     <button
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       style={{
-        padding: '8px',
-        borderRadius: '8px',
+        padding: '12px',
+        borderRadius: '9999px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         cursor: 'pointer',
-        transition: 'all 0.2s'
+        transition: 'all 0.2s',
+        minWidth: 44,
+        minHeight: 44
       }}
       className="hover:bg-gray-100 dark:hover:bg-gray-800"
       aria-label="Temayı Değiştir"
@@ -71,7 +74,13 @@ function ThemeToggle() {
 export default {
   logo: (
     <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 12 }}>
-      <img src="/logo.png" alt="Genesis Hukuk" width={32} height={32} />
+      <Image
+        src="/logo.png"
+        alt="Genesis Hukuk"
+        width={32}
+        height={32}
+        priority={false}
+      />
       <span style={{ fontWeight: 'bold' }}>Legal | Whoisnextapp</span>
     </div>
   ),
