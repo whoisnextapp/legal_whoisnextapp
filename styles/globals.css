@@ -35,3 +35,16 @@ a {
   --background-color: #1a1a1a;
   --text-color: #f0f0f0;
 } 
+
+/* Nextra sol menü (sidebar) için liste numaralandırmasını kapat.
+   Bazı sayfalarda kullanılan Steps bileşeni, global liste stilleri
+   nedeniyle sidebar öğelerinin 1., 2. ... şeklinde numaralanmasına
+   yol açabiliyor. Sadece sidebar içindeki ul/ol öğelerini hedefleyip
+   numaralandırmayı sıfırlıyoruz. */
+nav[aria-label="Sidebar"] ul,
+nav[aria-label="Sidebar"] ol {
+  list-style: none !important;
+  padding-left: 0;
+  margin-left: 0;
+  counter-reset: none;
+}
