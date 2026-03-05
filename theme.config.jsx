@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Script from 'next/script'
 import { useTheme } from 'next-themes'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
@@ -44,15 +45,15 @@ function ThemeToggle() {
     <button
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       style={{
-        padding: '12px',
+        padding: '14px',
         borderRadius: '9999px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         cursor: 'pointer',
         transition: 'all 0.2s',
-        minWidth: 44,
-        minHeight: 44
+        minWidth: 48,
+        minHeight: 48
       }}
       className="hover:bg-gray-100 dark:hover:bg-gray-800"
       aria-label="Temayı Değiştir"
@@ -148,18 +149,22 @@ export default {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(SCHEMA_WEBSITE) }}
       />
-      {/* Google Analytics (gtag.js) */}
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-M67Y5HBPMM" />
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-M67Y5HBPMM');
-          `,
-        }}
+      {/* Google Analytics (gtag.js) - mobil performansı korumak için lazy yükle */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-M67Y5HBPMM"
+        strategy="lazyOnload"
       />
+      <Script
+        id="ga-gtag-init"
+        strategy="lazyOnload"
+      >
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-M67Y5HBPMM');
+        `}
+      </Script>
     </>
   ),
   primaryHue: 200, // Biraz daha farklı bir mavi tonu

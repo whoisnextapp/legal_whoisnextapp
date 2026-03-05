@@ -62,13 +62,13 @@ nav[aria-label="Sidebar"] ol {
 
 /* Erişilebilirlik: Küçük dokunma hedeflerini büyüt.
    Nextra'nın "opens in a new tab" benzeri küçük linkleri genelde
-   .nx-p-2 .nx-text-current ile geliyor; minimum 44x44 px alan ver. */
-a[target="_blank"].nx-p-2.nx-text-current {
+   .nx-p-2 .nx-text-current ile geliyor; minimum 48x48 px alan ver. */
+a.nx-p-2.nx-text-current {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 44px;
-  min-height: 44px;
+  min-width: 48px;
+  min-height: 48px;
   padding: 8px 12px;
   border-radius: 9999px;
 }
