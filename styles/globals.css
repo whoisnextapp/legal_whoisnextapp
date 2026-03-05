@@ -60,15 +60,16 @@ nav[aria-label="Sidebar"] ol {
   color: #93c5fd !important; /* blue-300 */
 }
 
-/* Erişilebilirlik: Küçük dokunma hedeflerini büyüt.
-   Nextra'nın "opens in a new tab" benzeri küçük linkleri genelde
-   .nx-p-2 .nx-text-current ile geliyor; minimum 48x48 px alan ver. */
-a.nx-p-2.nx-text-current {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 48px;
-  min-height: 48px;
-  padding: 8px 12px;
-  border-radius: 9999px;
+/* Erişilebilirlik: Tema / "opens in a new tab" dokunma hedefi 48x48 px (WCAG 2.5.5) */
+a.nx-p-2.nx-text-current,
+a[href="#"].nx-p-2.nx-text-current {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 48px !important;
+  min-height: 48px !important;
+  width: 48px !important;
+  height: 48px !important;
+  padding: 0 !important;
+  border-radius: 9999px !important;
 }

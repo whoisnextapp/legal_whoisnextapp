@@ -52,8 +52,10 @@ function ThemeToggle() {
         justifyContent: 'center',
         cursor: 'pointer',
         transition: 'all 0.2s',
-        minWidth: 48,
-        minHeight: 48
+        minWidth: '48px',
+        minHeight: '48px',
+        width: '48px',
+        height: '48px'
       }}
       className="hover:bg-gray-100 dark:hover:bg-gray-800"
       aria-label="Temayı Değiştir"
@@ -88,7 +90,10 @@ export default {
   project: {
     link: '#',
     icon: (
-      <div onClick={(e) => { e.stopPropagation(); e.preventDefault(); }}>
+      <div
+        onClick={(e) => { e.stopPropagation(); e.preventDefault(); }}
+        style={{ minWidth: '48px', minHeight: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+      >
         <ThemeToggle />
       </div>
     )
