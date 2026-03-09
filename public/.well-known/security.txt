@@ -1,0 +1,8 @@
+# WIN Güvenlik Açığı Bildirimi
+# Bu dosya RFC 9116 uyarınca güvenlik araştırmacılarına yöneliktir.
+
+Contact: mailto:info@whoisnextapp.com
+Expires: 2027-03-09T00:00:00.000Z
+Preferred-Languages: tr, en
+Policy: https://legal.whoisnextapp.com/kurumsal-ve-yasal-uyumluluk/guvenlik-acigi-bildirim-politikasi
+Canonical: https://legal.whoisnextapp.com/.well-known/security.txt
