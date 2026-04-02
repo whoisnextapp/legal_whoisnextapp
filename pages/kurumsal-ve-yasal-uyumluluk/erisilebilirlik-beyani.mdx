@@ -2,7 +2,7 @@
 
 import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
-**Son güncelleme:** 16.02.2026 · **Sürüm:** 1.0
+**Son güncelleme:** 02.04.2026 · **Sürüm:** 1.1
 
 Bu sayfa, WIN (“**Platform**”) tarafından sunulan hizmetlerin; engelli bireyler dahil olmak üzere tüm kullanıcılar için **erişilebilir**, **kapsayıcı** ve **kullanılabilir** olmasına ilişkin yaklaşımı, uygulanan standartları ve geri bildirim kanallarını açıklar.
 
@@ -90,7 +90,7 @@ Bu erişilebilirlik beyanı, WIN hizmetlerine erişim sağlanan aşağıdaki kan
 WIN, hizmeti sunarken aşağıdaki üçüncü taraf teknolojilerden ve SDK'lardan faydalanmaktadır:
 
 - **Google Sign-In / Firebase:** Kimlik doğrulama, bildirim ve veri altyapısı.
-- **Amazon Rekognition:** Profil fotoğrafı ve selfie doğrulama (liveness) süreçleri.
+- **Google Gemini 2.5 Flash:** Profil fotoğrafı ve selfie doğrulama (liveness) süreçleri.
 - **MeiliSearch:** Arama ve filtreleme özellikleri.
 - **Twilio:** SMS ve e-posta doğrulama kanalları.
 
@@ -248,10 +248,10 @@ Erişilebilirlik testleri, hizmetin niteliğine göre aşağıdaki alanları kap
   hedeflenen tedbirleri örnekli şekilde açıklar.
 </Callout>
 
-### 5.1 Kayıt/Giriş (Google ile giriş)
+### 5.1 Kayıt/Giriş (Google ve telefon ile giriş)
 
-- Giriş/hesap seçimi ekranlarında etkileşimli öğelerin ekran okuyucularla **anlaşılır şekilde seslendirilmesi**,
-- Hata durumlarında (ör. oturum açılamadı) **açık hata mesajı** ve tekrar deneme yönlendirmesi,
+- Giriş/hesap seçimi, OAuth yönlendirmesi ve telefon/OTP alanlarında etkileşimli öğelerin ekran okuyucularla **anlaşılır şekilde seslendirilmesi**,
+- Hata durumlarında (ör. oturum açılamadı, kod gönderilemedi) **açık hata mesajı** ve tekrar deneme yönlendirmesi,
 - (Web alanı varsa) klavye ile erişim ve odak sırası tutarlılığı.
 
 ### 5.2 Hukuki onay & açık rıza ekranı (onboarding)

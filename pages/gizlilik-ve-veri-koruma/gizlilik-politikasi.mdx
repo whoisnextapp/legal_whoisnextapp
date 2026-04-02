@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # Gizlilik Politikası
 
-**Son güncelleme:** 14.02.2026 · **Sürüm:** 1.0
+**Son güncelleme:** 02.04.2026 · **Sürüm:** 1.2
 
 Bu Gizlilik Politikası; **WIN** platformunu (“**Platform**”) kullanırken, kişisel verilerinizi nasıl ele aldığımızı **anlaşılır** ve **pratik** bir dille açıklar.
 
@@ -124,19 +124,16 @@ Bu nedenle profil notu ve mesajlarda telefon numarası, e‑posta, açık adres 
 
 Bu bölümde, Platformun tipik akışlarına göre “hangi adımda hangi veri” oluştuğunu anlatıyoruz. Hukuki çerçeve ve veri kategorileri tablosu için ayrıca [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) incelenmelidir.
 
-### 4.1 Google ile giriş / hesap oluşturma
+### 4.1 Hesap oluşturma ve giriş (Google / telefon)
 
-WIN’e girişte (mevcut tasarımda) **Google ile giriş (OAuth)** kullanılır. Bu süreçte Google, hesabınızdan bazı bilgileri Platformla paylaşacağını size bildirir. Tipik olarak:
+WIN’e giriş; **Google ile giriş (OAuth)** veya **telefon numarası ile giriş** (SMS/OTP) üzerinden sağlanabilir.
 
-- ad (veya Google profili adı),
-- e‑posta adresi,
-- profil fotoğrafı (Google),
-- Google user ID (teknik)
+**Google ile giriş:** Google, hesabınızdan Platformla paylaşılacağını bildirdiği bilgileri iletir. Tipik olarak ad (veya Google profili adı), e‑posta adresi, profil fotoğrafı ve Google user ID (teknik) alınabilir. E‑posta adresi, Google süreçleri uyarınca genellikle **doğrulanmış** kabul edilir. Profil oluşturma sonrasında, deck üzerinde beğeni gibi bazı etkileşimler için **telefon numarası doğrulaması** istenebilir; bu doğrulama tamamlanana kadar ilgili işlevler kısıtlanabilir.
 
-gibi bilgiler alınabilir.
+**Telefon ile giriş:** Kimlik doğrulama OTP tabanlıdır. **E‑posta doğrulaması** ve **telefon numarası doğrulaması** adımları, kayıt anından ziyade **profil oluşturma sürecinde** tamamlanacak şekilde konumlandırılmıştır.
 
 <Callout type="info" title="Üçüncü taraf giriş (OAuth) notu">
-Google; kendi hizmetleri bakımından **bağımsız veri sorumlusu** olarak hareket eder. Platform, Google’dan aldığı bilgileri; hesap oluşturma ve giriş işlemlerini yürütmek için kullanır. Ayrıntılı rol ve aktarım açıklamaları için [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) ve ilgili üçüncü tarafın kendi politikaları geçerlidir.
+Google; kendi hizmetleri bakımından **bağımsız veri sorumlusu** olarak hareket eder. Platform, Google’dan aldığı bilgileri; hesap oluşturma ve giriş işlemlerini yürütmek için kullanır. SMS/OTP doğrulamasında iletişim sağlayıcıları (ör. Twilio) teknik işlemci olarak devreye girebilir. Ayrıntılı rol ve aktarım açıklamaları için [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) ve ilgili üçüncü tarafların kendi politikaları geçerlidir.
 </Callout>
 
 ### 4.2 Hukuki onay & açık rıza katmanı (ilk giriş)
@@ -153,7 +150,7 @@ Detaylı metinler: [Açık Rıza Metinleri](/gizlilik-ve-veri-koruma/acik-riza-m
 
 ### 4.3 Profil oluşturma (temel alanlar)
 
-Onboarding akışında tipik olarak aşağıdaki profil alanları alınır:
+Onboarding akışında tipik olarak aşağıdaki profil alanları alınır. **Telefon numarası ile giriş** kullananlarda **e‑posta** ve **telefon** doğrulama adımları da bu profil oluşturma sürecinde tamamlanır.
 
 - **Profil adı** (max 16 karakter)
 - **Cinsiyet**
@@ -187,7 +184,7 @@ Profilinizde tipik olarak **6 fotoğraf slotu** bulunur. Platformda güvenliği 
 
 **Selfie Doğrulama Akışı:**
 - Sadece **ön kamera** aracılığıyla anlık çekim yapılır; **galeri üzerinden fotoğraf yüklenemez.**
-- **CompareFaces (Amazon Rekognition)**, **safeSearchDetection (Google Vision)** ve **Pose API (Google)** teknolojileriyle pozu ve kimliği doğrularız.
+- **Google Gemini 2.5 Flash** ile poz ve profil fotoğrafı tutarlılığını; **safeSearchDetection (Google Cloud Vision)** ile selfie üzerinde uygunsuz içerik denetimini gerçekleştiririz.
 - Bu adım, sahte hesapları önlemek için fonksiyonel bir zorunluluktur; rıza verilmemesi ve en az bir fotoğrafın doğrulanmaması halinde hesap keşif akışına (Deck) dahil edilmez.
 - Doğrulanan her fotoğrafın üzerinde yeşil tik/rozet yer alır. Başkalarıyla olan fotoğraflarda doğrulama yapılmaz; sadece kullanıcının kendisinin olduğu fotoğraflarda doğrulama ibaresi yer alır.
 - Fotoğraf yükleme sırasında:
@@ -217,7 +214,21 @@ Sahte hesabı azaltmak ve kullanıcı güvenini artırmak için selfie/liveness 
 
 Selfie doğrulama görüntülerinin profilde gösterilmemesi hedeflenir; bu alandaki işleme, saklama ve imha yaklaşımı için: [Biyometrik Veri Aydınlatma ve Rıza](/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza).
 
-### 4.8 Mesajlaşma ve etkileşimler
+### 4.8 Yüz verisi (face data) — toplama, kullanım, paylaşım ve saklama (tek özette)
+
+Platform şeffaflık taahhüdümüz doğrultusunda; **yüz verisi** ifadesiyle kastedilen hususları bu Gizlilik Politikası içinde özetleriz. Ayrıntılı hukuki çerçeve, rıza metni ve sağlayıcı tabloları için: [Biyometrik Veri Aydınlatma ve Rıza](/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza).
+
+**Ne toplanıyor?** Doğrulama akışında, **ön kamera** ile anlık çekilen **selfie görüntüsü** (galeriden yükleme sunulmaz); istenen **poz/liveness** doğrulaması; selfie ile **profil fotoğraflarınız** arasında yapılan **yüz doğrulama** kapsamında üretilen **teknik çıktılar** (ör. benzerlik skoru, eşleşme/doğrulama sonucu, durum bilgisi); sınırlı **işlem meta verileri** (ör. doğrulama zamanı, deneme sayısı, hata kodu); güvenlik ve itiraz süreçleri için **güvenlik kayıtları**. Profilde yayımlanan genel fotoğraf yüklemeleri ile doğrulama selfie’si ayrı kurgulanır; doğrulama selfie’sinin profilde gösterilmesi hedeflenmez.
+
+**Hangi amaçlarla kullanılıyor?** Profilin gerçek bir kişiye ait olma ihtimalini artırmak, **sahte hesapları** ve kötüye kullanımı azaltmak, Platform güvenliğini ve hizmet bütünlüğünü korumak; doğrulama itirazlarında inceleme yapabilmek; yasal yükümlülükler ve hakların korunması. Bu kapsamda işlenen yüz/biyometrik nitelikli veri **reklam hedefleme, pazarlama profillemesi veya kampanya kişiselleştirmesi** amacıyla kullanılmaz.
+
+**Üçüncü taraflar ve saklama yeri** Doğrulama işlemi; **Google Gemini 2.5 Flash** (poz ve profil tutarlılığı / kişi doğrulaması) ve **Google Cloud Vision** (**safeSearchDetection** — uygunsuz içerik denetimi) ile sınırlı otomatik değerlendirme için kullanılabilir. Altyapı olarak **Google Cloud / Firebase** tarafında barındırma ve teknik kayıtlar söz konusu olabilir. Kalıcı **biyometrik şablon** veya **embedding** saklanması **hedeflenmez**. Sağlayıcıların rolü ve lokasyon/aktarım ayrıntıları [Biyometrik Veri Aydınlatma ve Rıza](/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza) ile [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) içinde açıklanır.
+
+**Saklama süresi** Yüz tanıma işlemine konu **biyometrik harita** niteliğindeki veri, doğrulama tamamlandıktan sonra **derhal imha** edilir. Sistemde, biyometrik içerik taşımayan **“doğrulandı: evet/hayır”** durumu tutulabilir. İşlem güvenliği için tutulan **biyometrik olmayan** audit/teknik meta kayıtları ise yasal zamanaşımı ve meşru menfaat süreleri çerçevesinde sınırlı süreyle saklanabilir. Rıza geri çekilmesi ve istisnai uzun saklama halleri: [Biyometrik Veri Aydınlatma ve Rıza](/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza) **Bölüm 9–10**.
+
+İlgili diğer bölümler: **4.2** (rıza katmanı), **4.4** (profil fotoğrafları ve doğrulama akışı özeti), **4.7** (izinler ve teknik not).
+
+### 4.9 Mesajlaşma ve etkileşimler
 
 Platformu kullandığınızda, şu tür veriler oluşabilir:
 
@@ -228,7 +239,7 @@ Platformu kullandığınızda, şu tür veriler oluşabilir:
 
 Bu veriler; eşleşme deneyimini yürütmek, kötüye kullanımı önlemek ve uyuşmazlıkları yönetmek amacıyla kullanılabilir.
 
-### 4.9 Premium abonelik özellikleri
+### 4.10 Premium abonelik özellikleri
 
 Premium abonelik kapsamında ek gizlilik ve görünürlük özellikleri sunulabilir:
 
@@ -242,7 +253,7 @@ Premium abonelik kapsamında ek gizlilik ve görünürlük özellikleri sunulabi
 
 Sözleşmesel çerçeve ve ödeme detayları için: [Abonelik ve Satın Alma Koşulları](/sozlesmeler/abonelik-ve-satin-alma-kosullari) incelenmelidir.
 
-### 4.10 Destek, şikayet, itiraz ve güvenlik bildirimleri
+### 4.11 Destek, şikayet, itiraz ve güvenlik bildirimleri
 
 Profil kartlarında ve sohbet ekranlarında yer alan **"Bildir"** (Report) veya "Engelle" butonları aracılığıyla bildirimde bulunduğunuzda; destek kaydınız, yazışmalar ve inceleme notları işlenebilir.
 
@@ -254,7 +265,7 @@ Profil kartlarında ve sohbet ekranlarında yer alan **"Bildir"** (Report) veya 
 - [Güvenlik Açığı Bildirim Politikası](/kurumsal-ve-yasal-uyumluluk/guvenlik-acigi-bildirim-politikasi)
 - [Şeffaflık Raporları](/topluluk-ve-guvenlik/seffaflik-raporlari)
 
-### 4.11 Otomatik toplanan teknik veriler (cihaz, log, çerez/SDK)
+### 4.12 Otomatik toplanan teknik veriler (cihaz, log, çerez/SDK)
 
 Platformu kullandığınızda, bazı veriler **otomatik** olarak oluşur/toplanır. Örnek:
 
