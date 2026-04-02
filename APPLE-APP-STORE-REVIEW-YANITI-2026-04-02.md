@@ -107,7 +107,7 @@ Best regards,
 4. **Yüz verisi (teknik)**  
    - [ ] Üretimdeki gerçek akışın (Gemini, Vision, Firebase, saklama süreleri) güncel hukuki metinle uyumunu bir kez daha doğrula; sapma varsa hukuk/ürün ile senkronize et.
 
-**İç referans (şablon):** `pages/uygulama-ici-akislar/odeme-ekrani-bilgilendirmeleri.mdx` sürüm 1.2 — Apple 3.1.2(c) maddesi ve örnek blok.
+**İç referans (şablon):** `uygulama-ici-akislar/odeme-ekrani-bilgilendirmeleri.mdx` (repo kökü, ekip içi) — Apple 3.1.2(c) maddesi ve örnek blok.
 
 ---
 

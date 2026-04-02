@@ -49,7 +49,7 @@ Aşağıdaki path’ler mevcut `.mdx` dosyalarıyla eşleşiyor; değişiklik ge
 
 - `/sozlesmeler/*` (kullanim-kosullari, abonelik-ve-satin-alma-kosullari, mesafeli-satis-sozlesmesi, on-bilgilendirme-formu, uygulama-ici-lisans-sozlesmesi)
 - `/gizlilik-ve-veri-koruma/*` (gizlilik-politikasi, kvkk-aydinlatma-metni, cerez-politikasi, biyometrik-veri-aydinlatma-riza, acik-riza-metinleri)
-- `/uygulama-ici-akislar/*` (onboarding-izin-ekranlari, odeme-ekrani-bilgilendirmeleri, hesap-silme-ekrani-bilgilendirmesi)
+- `uygulama-ici-akislar/` (repo kökü, **yayımlanmaz**): ekip içi şablonlar; portaldaki karşılığı [Abonelik Bölüm 4](/sozlesmeler/abonelik-ve-satin-alma-kosullari#bölüm-4-satın-alma-süreci-ve-sözleşmenin-kurulması), [Kullanım Koşulları Bölüm 13](/sozlesmeler/kullanim-kosullari#bölüm-13-hesap-sonlandırma-ve-fesih), [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) vb.
 - `/topluluk-ve-guvenlik/*`, `/kurumsal-ve-yasal-uyumluluk/*` (ilgili tüm sayfalar)
 
 ---

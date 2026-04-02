@@ -37,17 +37,12 @@ Bu dökümantasyon, yapay zeka modelleri (LLMs) ve botların site içeriğini ve
 - DSA Uyum Sayfası — `/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi`
 - Erişilebilirlik Beyanı — `/kurumsal-ve-yasal-uyumluluk/erisilebilirlik-beyani`
 
-### Uygulama İçi Akışlar (`/uygulama-ici-akislar`)
-- Onboarding İzinleri — `/uygulama-ici-akislar/onboarding-izin-ekranlari`
-- Ödeme Ekranı Bilgileri — `/uygulama-ici-akislar/odeme-ekrani-bilgilendirmeleri`
-- Hesap Silme Bilgileri — `/uygulama-ici-akislar/hesap-silme-ekrani-bilgilendirmesi`
-
 ## İçerik Özeti (LLM için)
 - **Hukuki uyum**: KVKK/ETK, açık rıza, biyometrik veri, çerez ve gizlilik metinleri.
 - **Sözleşmeler**: Kullanım koşulları, abonelik, mesafeli satış, ön bilgilendirme, EULA.
 - **Topluluk**: Topluluk kuralları, güvenlik ipuçları, şeffaflık raporları.
 - **Kurumsal**: Fikri mülkiyet, kolluk rehberi, güvenlik açığı bildirimi, DSA, erişilebilirlik.
-- **User journey**: Onboarding izinleri, ödeme ekranı bilgilendirmeleri, hesap silme akışı.
+- **Satın alma / hesap**: Ön bilgilendirme, abonelik koşulları ve Kullanım Koşulları Bölüm 13 (hesap sonlandırma); uygulama içi ekran metin şablonları bu portala dahil edilmez (yalnızca ekip deposunda tutulur).
 
 ## Teknik Detaylar
 - **Altyapı**: Nextra (Next.js tabanlı statik dokümantasyon)

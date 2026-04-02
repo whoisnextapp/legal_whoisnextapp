@@ -44,7 +44,8 @@ npm run build
 │   ├── gizlilik-ve-veri-koruma/  # Gizlilik, KVKK, çerez, açık rıza
 │   ├── topluluk-ve-guvenlik/    # Topluluk kuralları, şeffaflık raporları
 │   ├── kurumsal-ve-yasal-uyumluluk/  # DSA, erişilebilirlik, güvenlik açığı vb.
-│   └── uygulama-ici-akislar/    # Onboarding, ödeme, hesap silme bilgilendirmeleri
+│   └── basvuru-formlari/      # Resmî başvuru formları
+├── uygulama-ici-akislar/      # Ekip içi: onboarding / ödeme / hesap silme ekran şablonları (siteye dahil değil)
 ├── public/                   # Statik dosyalar (logo, favicon, og-image, llms.txt, robots.txt)
 ├── components/               # React bileşenleri (SEO, Card vb.)
 ├── styles/                   # Global CSS
