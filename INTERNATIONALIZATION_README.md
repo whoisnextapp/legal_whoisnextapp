@@ -1,0 +1,100 @@
+# Internationalization (i18n) Implementation Report
+**Whoisnextapp Legal Documentation Portal**
+
+This document details the implementation of multi-language support (Turkish - English) for the Nextra-based legal documentation site (`legal.whoisnextapp.com`).
+
+---
+
+## 1. Core Architecture
+The project uses **Nextra 2** integrated with **Next.js i18n routing**.
+
+### Next.js Config (`next.config.js`)
+Internationalization was enabled with Turkish (`tr`) as the default locale and English (`en`) as the secondary locale.
+```javascript
+const nextConfig = {
+  i18n: {
+    locales: ['tr', 'en'],
+    defaultLocale: 'tr'
+  },
+  async redirects() {
+    return [
+      { source: '/', destination: '/anasayfa', permanent: true },
+      { source: '/en', destination: '/en/anasayfa', permanent: true },
+      // Sub-folder roots
+      { source: '/basvuru-formlari', destination: '/basvuru-formlari/formlar', permanent: true },
+      { source: '/en/basvuru-formlari', destination: '/en/basvuru-formlari/formlar', permanent: true }
+    ]
+  }
+}
+```
+
+### Nextra Middleware (`middleware.js`)
+A middleware was implemented to handle automatic locale detection based on browser preferences and to ensure correct routing for non-prefixed paths.
+```javascript
+export { locales as middleware } from 'nextra/locales'
+```
+
+---
+
+## 2. File-Based Content Structure
+Nextra 2 follows a specific naming convention for localized content: `[page_name].[locale].mdx`.
+
+- **Pages**: All existing `.mdx` files were renamed to `*.tr.mdx` (e.g., `gizlilik-politikasi.tr.mdx`).
+- **English Files**: Corresponding `*.en.mdx` files were created for all 28+ documentation pages.
+- **Index Files**: To avoid 404 issues at folder roots under i18n, ALL `index.mdx` files were replaced with descriptive slugs (e.g., `anasayfa.tr.mdx` at the root, `formlar.tr.mdx` in sub-folders). 
+- **Root Redirects**: The domain root `/` and folder roots (like `/basvuru-formlari`) are explicitly redirected in `next.config.js` to their respective descriptive slugs.
+
+---
+
+## 3. Sidebar and Menu Localization
+Nextra uses localized metadata files to define the sidebar structure for each language.
+
+- `_meta.tr.json`: Turkish sidebar titles (e.g., "Temel Sözleşmeler").
+- `_meta.en.json`: English sidebar titles (e.g., "Core Agreements").
+
+> **Warning**: Ensure keys in both JSON files match the filename SLUG exactly (without the locale part). For example, `anasayfa.tr.mdx` and `anasayfa.en.mdx` are both referenced by the key `"anasayfa"`.
+
+---
+
+## 4. Theme Configuration (`theme.config.jsx`)
+The theme was refactored to be fully locale-aware.
+
+### Interactive Components
+- **Language Switcher (Dropdown)**: Configured the standard Nextra `i18n` array to show the dropdown in the sidebar footer.
+- **Custom Header Switcher**: Created a `LanguageSwitch` component and injected it into `navbar.extraContent` next to the Theme Toggle. This provides a high-visibility "TR/EN" toggle in the header.
+
+### Dynamic SEO & Metadata
+- **`useNextSeoProps`**: Dynamically generates page titles (`%s | Whoisnextapp`) and descriptions based on the active locale.
+- **`head` Function**: Custom logic in the `head` function injects:
+  - `hreflang` alternate links for Google SEO (`tr`, `en`, and `x-default`).
+  - Locale-specific OpenGraph tags.
+  - JSON-LD Schema.org data for Organization/Website in both languages.
+
+---
+
+## 5. SEO & Sitemap
+The `next-sitemap.config.js` was updated to support `alternateRefs`, ensuring search engines correctly index both language versions of each document.
+
+---
+
+## 6. Troubleshooting & Resolution History
+During the implementation, several critical roadblocks were resolved:
+
+1. **NextRouter Not Mounted Error**: Fixed by inlining `useRouter` hooks carefully within functions (like `head()` and `footer.text`) instead of using standalone functional components that might try to execute during SSR without router availability.
+2. **Root (Folder) 404 Issues**: Resolved by eliminating `index.mdx` entirely and using descriptive slugs (e.g., `anasayfa`, `formlar`). Explicit redirects in `next.config.js` ensure the base URLs (like `/` or `/basvuru-formlari`) resolve correctly.
+3. **Sidebar/Content Syncing**: Fixed by aligning folder structure across both languages. Slugs are identical across TR/EN; only the `.locale` suffix changes.
+4. **Local Links & Rewrites**: Configured `theme.config.jsx` to treat the new slugs as the actual home page for metadata and SEO purposes.
+
+---
+
+## 7. Current State & Next Steps
+- [x] Multi-language routing active.
+- [x] Localized sidebars and search placeholders.
+- [x] Automatic user language detection (via middleware).
+- [x] Functional header-level language toggle.
+- [ ] **Next Step**: Content in `.en.mdx` files uses placeholders or manual translations. The user should replace these with finalized English legal texts.
+- [ ] **Production Check**: Run `npm run build` once before deployment to verify static generation consistency.
+
+---
+**Report Generated on**: 2026-04-04
+**Generated by**: Antigravity AI

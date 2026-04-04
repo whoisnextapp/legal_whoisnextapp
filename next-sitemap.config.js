@@ -1,13 +1,21 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: 'https://legal.whoisnextapp.com', // Replace with your actual domain
+    siteUrl: 'https://legal.whoisnextapp.com',
     generateRobotsTxt: true,
-    // Add any specific paths to exclude
-    exclude: ['/server-sitemap.xml'], // Example exclusion
+    exclude: ['/server-sitemap.xml'],
+    alternateRefs: [
+        {
+            href: 'https://legal.whoisnextapp.com/anasayfa',
+            hreflang: 'tr',
+        },
+        {
+            href: 'https://legal.whoisnextapp.com/en/anasayfa',
+            hreflang: 'en',
+        },
+    ],
     robotsTxtOptions: {
         policies: [
             { userAgent: '*', allow: '/' },
-            // { userAgent: 'Googlebot', disallow: '/private' }
         ]
     }
 }

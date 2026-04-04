@@ -1,0 +1,1501 @@
+WIN — App Store Connect Özel EULA / Kullanım Koşulları (düz metin)
+Kaynak: legal.whoisnextapp.com — MDX yayımlanan sürümlerden otomatik türetilmiştir.
+İçerik: (1) Kullanım Koşulları tam metin + (2) Uygulama İçi Lisans Sözleşmesi (yazılım EULA) tam metin.
+Harici belgelere yapılan atıflar tam URL ile gösterilmiştir.
+
+========================================================================
+BÖLÜM I — KULLANIM KOŞULLARI
+========================================================================
+
+# Kullanım Koşulları
+
+**Son güncelleme:** 02.04.2026 · **Sürüm:** 1.1
+
+Bu belge, WIN mobil uygulaması ve ilgili hizmetlerin kullanımına ilişkin kullanıcı ile işletmeci arasındaki hukuki ilişkiyi düzenler. Belgeyi kabul etmeden önce dikkatle okumanız önerilir. Kolay okunabilirlik için bölüm başlarında kısa özetlere yer verilmiştir; **bu özetler metnin tamamının yerine geçmez.**
+
+── Önemli — Başlamadan Önce Okuyun ──
+
+- **Yaş:** WIN hizmetleri yalnızca **18 yaşını doldurmuş** kişilere yöneliktir. Hizmeti kullanarak bu yaş şartını karşıladığınızı beyan etmiş sayılırsınız.
+- **Uyuşmazlık:** Ciddi uyuşmazlıklarda önce **60 gün** yazılı ön görüşme yükümlülüğü vardır. **Tüketici** iseniz 6502 sayılı Kanun uyarınca Tüketici Hakem Heyeti ve Tüketici Mahkemesi yolları açıktır; tüketici aleyhine tahkim zorunlu değildir. Tüketici davası sayılmayan uyuşmazlıklarda **yetkili mahkeme ve icra daireleri İstanbul Anadolu Mahkemeleri ve İstanbul Anadolu İcra Daireleri**dir (Bölüm 14 ve 15).
+- **Sorumluluk:** WIN, üyelerin kimlik doğrulaması yapmaz; diğer kullanıcılarla buluşma ve iletişimden doğan riskler size aittir. Sorumluluk sınırları Bölüm 12’de düzenlenmiştir.
+- **İçerik ve hesap:** Yüklediğiniz içerikler üzerinde WIN’e belirli lisanslar verirsiniz; ihlal hâlinde hesap kısıtlanabilir, askıya alınabilir veya kapatılabilir (Bölüm 5, 6 ve 13).
+
+Hizmete erişerek veya hesap oluşturarak bu Koşulları okuduğunuzu ve kabul ettiğinizi kabul etmiş sayılırsınız.
+
+---
+
+## Bölüm 1: Giriş ve Kabul
+
+── Bu bölümün özeti ──
+
+Bu bölümde sözleşmenin tarafları, ilişkili belgeler, koşulların kabulü ve
+  değişiklik kuralları yer alır. Hizmete erişerek veya hesap oluşturarak bu
+  Koşulları kabul etmiş sayılırsınız.
+
+### 1.1 Sözleşmenin Konusu ve Taraflar
+
+**WIN**, sosyal eşleşme amacıyla sunulan mobil uygulama ve ilgili çevrimiçi hizmetlerin ("**Hizmetler**") işletmecisidir. Hizmetler; uygulama içi özellikler, web alanları ve WIN’in bu Koşullar kapsamında sunduğu diğer işlevleri kapsar. Sözleşmede "**işletmeci**", "**biz**" veya "**WIN**" ifadeleri bu işletmecinin tüzel kişiliğini ifade eder. Hizmetlerin işletmecisi **WIN TECH Bilişim Organizasyon ve Ticaret A.Ş.** (Ticaret Sicil No: 1128235, Mersis No: 0811159971200001) olup resmî web sitesi **https://www.whoisnextapp.com/** adresindedir. İşletmeci unvanı, ticaret sicili ve iletişim bilgileri İletişim (#164-iletişim) bölümünde ve uygulama içinde yer alır.
+
+**Kullanıcı**, WIN Hizmetlerine kayıt olan veya bunları kullanan gerçek kişidir ("**siz**", "**üye**"). Bu Kullanım Koşulları, sizin WIN ile aranızda kurulan sözleşmenin temel metnidir ve Hizmetlere erişim ile kullanımınızı kapsar.
+
+Hizmetler, WIN’in sunulduğu ülkeler ve mağaza bölgeleri (ör. Türkiye ve uygulama mağazalarında listelendiği diğer bölgeler) çerçevesinde sunulur. Yurtdışından erişimde, yerel zorunlu tüketici hakları ve kamu düzeni kuralları saklı kalmak kaydıyla bu Koşullar ve Bölüm 15’teki uygulanacak hukuk geçerlidir.
+
+### 1.2 İlişkili Belgeler
+
+Aşağıdaki belgeler bu Kullanım Koşulları ile birlikte okunmalı ve Hizmetlerin kullanımıyla birlikte uygulanır:
+
+- Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi)
+- KVKK Aydınlatma Metni (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni)
+- Topluluk Kuralları (https://legal.whoisnextapp.com/topluluk-ve-guvenlik/topluluk-kurallari)
+- Güvenlik İpuçları (https://legal.whoisnextapp.com/topluluk-ve-guvenlik/guvenlik-ipuclari)
+- Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari)
+- Çerez Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/cerez-politikasi)
+- Erişilebilirlik Beyanı (https://legal.whoisnextapp.com/kurumsal-ve-yasal-uyumluluk/erisilebilirlik-beyani)
+- Güvenlik Açığı Bildirim Politikası (https://legal.whoisnextapp.com/kurumsal-ve-yasal-uyumluluk/guvenlik-acigi-bildirim-politikasi)
+
+WIN tarafından, belirli özellikler, kampanyalar veya satın alımlar kapsamında ayrıca özel koşullar sunulabilir. Bu tür ek koşullar, size sunulduğu ve kabul ettiğiniz ölçüde uygulanır.
+
+### 1.3 Kabul ve Yürürlük
+
+Bu Kullanım Koşulları; hesabınız olsun ya da olmasın, ücretsiz veya ücretli kullanıyor olmanızdan bağımsız olarak, Hizmetlere eriştiğiniz veya Hizmetleri kullandığınız andan itibaren uygulanır.
+
+Hesap oluştururken veya Hizmetlere ilk erişimde elektronik onay verdiğiniz anda bu Kullanım Koşulları sizin için yürürlüğe girer. 18 yaşında veya üzerinde olduğunuzu beyan etmeniz, bu Koşulları okuduğunuzu ve kabul ettiğinizi teyit eder.
+
+── Kabul etmiyorsanız kullanmayın ──
+
+Bu Koşulları kabul etmiyorsanız, Hizmetlere erişmeyin ve Hizmetleri
+  kullanmayın.
+
+### 1.4 Değişiklik ve Güncellemeler
+
+WIN, bu Koşulları tek taraflı olarak güncelleme hakkını saklı tutar. Değişiklikler e-posta, uygulama içi bildirim veya sitede yayımlanarak duyurulur; güncel metni görmek için bu sayfayı düzenli kontrol etmek sizin sorumluluğunuzdadır. Değişiklikten sonra Hizmetleri kullanmaya devam etmeniz, güncel Koşulları kabul ettiğiniz anlamına gelir. **Sorumluluk sınırı**, **uyuşmazlık çözümü**, **tahkim** veya **tüketici haklarına** ilişkin önemli değişikliklerde uygulama, yeniden açık onay isteyebilir; kabul etmezseniz Hizmeti kullanmayı bırakmanız gerekir.
+
+### 1.5 Elektronik Ortamda Bilgilendirme ve Sözleşmeye Erişim
+
+6563 sayılı Elektronik Ticaretin Düzenlenmesi Hakkında Kanun (ETK) ve 6502 sayılı Tüketicinin Korunması Hakkında Kanun kapsamında WIN, elektronik ortamda kurulan sözleşmelere ilişkin bilgilendirmeleri ve sözleşme metnine erişimi sağlamayı hedefler. Bu kapsamda:
+
+- Koşulların güncel sürümü Site üzerinde yayımlanabilir ve uygulama içinde görüntülenebilir.
+- Hesap oluşturma veya satın alma gibi işlemlerde, sözleşmenin kurulmasına ilişkin adımlar ve gerekli onay/izahlar uygulama içinde sunulabilir.
+- Veri giriş hatalarının fark edilmesi ve düzeltilmesine yönelik teknik imkânlar, uygulamanın sunduğu arayüz olanakları ölçüsünde sağlanır.
+
+---
+
+## Bölüm 2: Terminoloji ve Tanımlar
+
+── Bu bölümün özeti ──
+
+Aşağıdaki terimler (Uygulama, Hizmetler, Üye, Eşleşme, Moderasyon vb.) ve
+  içerik kategorileri, metnin tamamında aynı anlamda kullanılır.
+
+### 2.1 Platform Terminolojisi
+
+| Terim                                      | Açıklama                                                                                                                        |
+| **Uygulama**                               | WIN markalı mobil uygulama (iOS/Android).                                                                                       |
+| **Hizmetler**                              | Uygulama, web sitesi ve WIN tarafından sunulan tüm özellikler.                                                                  |
+| **Site**                                   | WIN’e ait https://whoisnextapp.com ve bu bağlantı kaynaklı diğer web alanları.                                                  |
+| **Hesap**                                  | Sizin adınıza oluşturulan kullanıcı hesabı.                                                                                     |
+| **Profil**                                 | Hesabınıza bağlı, diğer kullanıcılara gösterilen bilgi ve içerikler.                                                            |
+| **Üye**                                    | Kayıtlı kullanıcı.                                                                                                              |
+| **Deck / Kart**                            | Eşleşme arayüzünde gösterilen profil kartları.                                                                                  |
+| **Eşleşme (Match)**                        | Karşılıklı beğeni sonucu oluşan iletişim imkânı.                                                                                |
+| **Doğrulama (Verification)**               | Hesap güvenliği ve sahte profil riskinin azaltılması için yapılan fotoğrafla doğrulama süreci (örn. selfie/canlılık doğrulama). |
+| **Selfie Doğrulama / Canlılık (Liveness)** | Kullanıcının profil fotoğrafıyla eşleşen canlı selfie/poz adımlarıyla gerçek kişi olduğu doğrulanması.                          |
+| **You Picked (Senin Seçtiklerin)**         | Keşif akışında (Deck) karşınıza çıkan iki profil arasından beğendiğiniz ve listenize eklenen kişiler.                           |
+| **Picked You (Seni Seçenler)**             | Sizi beğenerek "You Picked" listesine ekleyen kullanıcılar. Mesajlaşma bu liste üzerinden başlatılır.                           |
+| **Bildirim / Raporlama (Report)**          | Bir kullanıcıyı veya içeriği, ihlal şüphesiyle uygulama içi kanallar üzerinden bildirme işlemi.                                 |
+| **Moderasyon**                             | Kullanıcı içeriği ve davranışlarının Koşullar ve mevzuat kapsamında değerlendirilmesi ve gerekli önlemlerin uygulanması.        |
+| **Kısıtlama / Askıya Alma / Kapatma**      | Hesap veya özelliklere erişimin sınırlanması, geçici durdurulması veya hesabın sonlandırılması.                                 |
+| **İtiraz (Appeal)**                        | Moderasyon kararlarına karşı kullanıcı tarafından yapılan değerlendirme/inceleme talebi.                                        |
+| **Profil Çıkarma (Profiling)**             | Tercihler ve kullanım verilerinin birlikte değerlendirilerek kullanıcıyla ilgili çıkarımlar üretilmesi.                         |
+| **Otomatik Karar**                         | İnsan müdahalesi olmaksızın veya ağırlıklı otomasyonla alınan güvenlik/uygunluk kararları (örn. şüpheli işlem tespiti).         |
+
+### 2.2 İçerik Kategorileri
+
+- **Sizin İçeriğiniz (Your Content):** Profil bilgileri, fotoğraflar, mesajlar ve selfie doğrulama görüntüleri dahil, sizin yüklediğiniz veya paylaştığınız tüm içerikler.
+- **Diğer Kullanıcı İçeriği (Member Content):** Diğer üyelerin paylaştığı içerikler.
+- **Platform İçeriği (Our Content):** WIN’e ait yazılım, logo, arayüz ve marka unsurları.
+
+### 2.3 Ücretli Hizmet Terimleri
+
+- **WIN Premium:** Ücretli abonelik paketi; özellikler Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari) içinde tanımlanır.
+- **Paket:** Seçilen abonelik süresi veya özellik seti.
+- **Sanal öğeler:** Uygulama içi satın alınabilir kredi veya benzeri öğeler; Bölüm 9’da özetlenir.
+
+---
+
+## Bölüm 3: Hesap Oluşturma ve Uygunluk Şartları
+
+── Bu bölümün özeti ──
+
+Hesap açabilmek ve Hizmetleri kullanabilmek için 18 yaş, tek hesap, gerçek
+  bilgi ve güvenlik kurallarına uymanız gerekir. Bu koşullara uyulmamanız
+  hâlinde erişiminiz sonlandırılabilir.
+
+### 3.1 Yaş ve Ehliyet
+
+WIN Hizmetleri yalnızca **18 yaşını doldurmuş** kişilere sunulur. Reşit olmayanlara hizmet verilmemektedir.
+
+Bu kapsamda:
+
+- 18 yaş altı olduğunuzdan şüphe edilmesi hâlinde, WIN **yaş doğrulama** amacıyla sizden ek bilgi/belge talep edebilir veya hesabınızı geçici olarak kısıtlayabilir.
+- Yaşınızın 18’den küçük olduğunun tespiti veya yaş doğrulamasının makul şekilde tamamlanamaması hâlinde hesabınız askıya alınabilir veya kapatılabilir.
+- Yaş hakkında **yanlış beyan**, bu Koşulların ihlali sayılır.
+
+── 18 yaş altı (sıfır tolerans) ──
+
+Reşit olmayan kullanıcıların hesap oluşturmasına ve reşit olmayanlara ilişkin
+  riskli içeriklere tolerans gösterilmez. Böyle bir durumla karşılaşırsanız
+  uygulama içi raporlama kanallarını kullanın.
+
+### 3.2 Kayıt Yöntemleri ve Kimlik Doğrulama Adımları
+
+Hesaba erişim; **Google Sign-In (OAuth)** veya **telefon numarası ile giriş** (SMS/OTP tabanlı kimlik doğrulama) yollarından biriyle sağlanabilir. Bu yollarla aktarılan veriler Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi) ve KVKK Aydınlatma Metni (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) kapsamında işlenir.
+
+**Telefon ile giriş:** İlk kimlik adımından sonra **e-posta doğrulaması** ve **telefon numarası doğrulaması** (OTP vb.), kayıt ekranından ayrı olarak **profil oluşturma sürecinde** tamamlanır. Bu adımlar tamamlanmadan hizmetin ilgili bölümleri kısıtlanabilir.
+
+**Google ile giriş:** Google hesabınız üzerinden paylaşılan e-posta adresi, Google’ın süreçleri uyarınca genellikle **zaten doğrulanmış** kabul edilir. Profil oluşturma sonrasında, deck üzerinde **beğeni (like)** verebilmek ve benzeri etkileşimler için uygulama içinde **telefon numarası doğrulamasına** yönlendirilebilirsiniz; bu doğrulama **zorunludur**.
+
+Giriş yönteminizi kullanarak:
+
+- İlgili hesabı (Google hesabı veya telefon hattı) kullanma yetkisine sahip olduğunuzu,
+- Google kullanıyorsanız hesabınıza ilişkin güvenlik önlemlerini (şifre, cihaz güvenliği, iki aşamalı doğrulama vb.) almanın sizin sorumluluğunuzda olduğunu,
+- Giriş ve profil kurulumu sırasında sözleşme ve KVKK metinlerinin gösterilebileceğini ve bazı işlemler için ayrı ayrı onay/açık rıza seçenekleri sunulabileceğini,
+  kabul edersiniz.
+
+### 3.3 Uygunluk Taahhütleri
+
+Hizmetleri kullanarak aşağıdakileri taahhüt edersiniz:
+
+- **Tek hesap:** Bir kişi yalnızca bir WIN hesabı oluşturabilir.
+- **Kişisel kullanım:** Hesabınız size özeldir; hesabınızı devredemez, satamaz, ödünç veremez veya üçüncü kişilerle ortak kullanamazsınız.
+- **Daha önce kaldırılmış hesaplar:** Hesabınız askıya alındıysa veya kapatıldıysa, WIN’in açık izni olmadan yeni hesap oluşturamazsınız.
+- **Gerçek bilgi:** Kayıt ve profil bilgilerinizin doğru ve güncel olması.
+- **Hukuka uygun kullanım:** WIN’in hizmet sunduğu ülkelerdeki yerel mevzuata ve genel hukuk kurallarına uymanız; Hizmetleri kullanmanızı yasaklayan hukuki bir engelin bulunmaması; Hizmetleri yürürlükteki mevzuata (gizlilik, fikri mülkiyet ve ticari iletişim mevzuatı dahil) aykırı şekilde kullanmamanız.
+- **Güncel sürüm:** Uygulama ve Site’nin mümkün olduğunca güncel sürümünü kullanmanız önerilir; eski sürümler güvenlik ve uyum riski taşıyabilir.
+- **Başka kullanıcının hesabını kullanmama:** Başka bir kullanıcının hesabını kullanmayacağınızı taahhüt edersiniz.
+- **Saadet zinciri / dolandırıcılık:** Hizmetleri saadet zinciri, dolandırıcılık veya benzeri yasadışı uygulamalarla bağlantılı kullanmayacağınızı taahhüt edersiniz.
+- **WIN onayı ima etmeme:** Beyanlarınızın veya içeriklerinizin WIN tarafından onaylandığını ima etmeyeceğinizi taahhüt edersiniz.
+- **Özel / mülkiyete tabi bilgi:** İfşa yetkiniz olmayan özel veya mülkiyete tabi bilgileri (ticari sır, gizlilik anlaşmalı bilgi vb.) ifşa etmeyeceğinizi taahhüt edersiniz.
+- **Kaynak gizleme:** İletilen bilginin kaynağını gizlemek için başlık veya tanıtıcıları manipüle etmeyeceğinizi taahhüt edersiniz.
+- **Çerçeveleme / gömme:** WIN’in önceden yazılı izni olmadan Hizmetleri başka bir sitede çerçeveleme (framing) veya gömme (embedding) yoluyla sunmayacağınızı taahhüt edersiniz.
+- **Üçüncü taraf uygulamalar (AI/ML dahil):** WIN’in yazılı izni olmadan Hizmetler veya Üye İçeriği ile etkileşime giren üçüncü taraf uygulamaları (yapay zeka, makine öğrenmesi veya benzeri otomasyon dahil) kullanmayacağınızı veya geliştirmeyeceğinizi taahhüt edersiniz.
+- **API kullanımı:** WIN’in yazılı izni olmadan WIN uygulama programlama arayüzüne (API) erişmeyeceğinizi, kullanmayacağınızı veya yayımlamayacağınızı taahhüt edersiniz.
+- **Zafiyet araştırması:** Hizmetlerin veya WIN sistemlerinin zafiyetlerini izinsiz araştırmayacağınızı, taramayacağınızı veya test etmeyeceğinizi taahhüt edersiniz; güvenlik açığı tespiti için Güvenlik Açığı Bildirim Politikası (https://legal.whoisnextapp.com/kurumsal-ve-yasal-uyumluluk/guvenlik-acigi-bildirim-politikasi) geçerlidir.
+
+WIN, şu aşamada üyeler için **resmi bir adli sicil (sabıka) kaydı veya suç tipi incelemesi yapmamaktadır**. Bu tür kontrollerin operasyonel zorlukları nedeniyle, kullanıcı güvenliğine ilişkin risk yönetimi raporlama ve moderasyon mekanizmalarıyla yürütülmektedir. Bununla birlikte; isteğe bağlı olarak sabıka veya ceza geçmişi gibi bazı **beyan ekranları** uygulama tarafından sunulabilir; bu hâlde verdiğiniz bilgilerin doğruluğundan siz sorumlusunuz. Bu tür beyanlar, kullanıcı beyanı niteliğindedir ve WIN’in resmî kayıt sorgulaması yaptığı anlamına gelmeyebilir.
+
+### 3.4 Hesap Güvenliği
+
+Giriş bilgilerinizi (OAuth ve telefon tabanlı giriş dahil) gizli tutmak ve yetkisiz erişimi önlemek sizin sorumluluğunuzdadır. Hesabınız üzerinden yapılan işlemler, aksi kanunen ispat edilmedikçe, sizin tarafınızdan yapılmış kabul edilebilir.
+
+Bu kapsamda:
+
+- Cihazınızı, giriş yönteminize bağlı hesabınızı (Google veya telefon tabanlı oturum) ve uygulama erişimlerinizi güvenli tutmalı; şüpheli durumları gecikmeksizin WIN’e bildirmelisiniz.
+- WIN, hesap güvenliği ve kötüye kullanımın önlenmesi amacıyla, şüpheli giriş/işlem tespit ettiğinde hesabınızı geçici olarak kısıtlayabilir ve ek doğrulama isteyebilir (örn. selfie doğrulama gibi).
+
+---
+
+## Bölüm 4: Hizmetlerin Sunumu ve Kullanım
+
+── Bu bölümün özeti ──
+
+Hizmetin amacı, ücretsiz/ücretli özellikler, profil kuralları, selfie
+  doğrulama, konum ve bildirim tercihleri ile keşif akışı (deck) bu bölümde
+  özetlenir.
+
+### 4.1 Hizmetlerin Amacı
+
+WIN, sosyal tanışma ve eşleşme amacıyla kullanılan bir platformdur. Evlilik danışmanlığı, çöpçatanlık veya profesyonel eşleştirme hizmeti sunulmamaktadır.
+
+### 4.2 Ücretsiz ve Ücretli Özellikler
+
+Temel eşleşme ve mesajlaşma gibi özellikler ücretsiz sunulabilir. Gelişmiş özellikler (örn. ek görünürlük, gelişmiş filtreler, istatistikler vb.) WIN Premium kapsamındadır.
+
+Ücretli özellikler, deneme süreleri, otomatik yenileme, fiyatlandırma ve iptal/iade süreçleri için Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari) geçerlidir. WIN, mevzuatın izin verdiği ölçüde, ücretli paketlerin kapsamını ve özelliklerin erişilebilirliğini zaman içinde değiştirebilir.
+
+### 4.3 Profil Oluşturma Kuralları
+
+Profil oluştururken bazı alanlar zorunlu olabilir. Örnek olarak:
+
+- **İsim / profil adı**: Google ile girişte isim Google üzerinden atanabilir; telefon akışında profil oluşturma sırasında siz belirleyebilirsiniz. Her iki durumda da ismi uygulama içinden **değiştirebilirsiniz**. Profil adının **gerçek adınız olması zorunlu değildir**; ancak Topluluk Kuralları (https://legal.whoisnextapp.com/topluluk-ve-guvenlik/topluluk-kurallari)na (hakaret, yanıltma vb. olmaması) uygun olmalıdır.
+- **Cinsiyet**, **doğum tarihi (yaş)**
+- En az **bir profil fotoğrafı** (yüzün net görünmesi istenebilir)
+
+Uygulama; profilinizi zenginleştirmek ve eşleşme/filtreleme deneyimini iyileştirmek amacıyla ayrıca şu tür alanları da sorabilir: **meslek**, **boy**, **sigara/alkol sıklığı**, **burç**, **profil notu (serbest metin)**, çeşitli **tercih/önem soruları** ve **fotoğraf yükleme** (örn. çoklu fotoğraf slotları).
+
+── Profil beyanı ve içerik sorumluluğu ──
+
+Profilinizde verdiğiniz bilgiler ve paylaştığınız içerikler bakımından; doğru
+  beyan, üçüncü kişi haklarına saygı ve yasaklı içerik/davranış hükümleri
+  saklıdır.
+
+### 4.4 Fotoğrafla Doğrulama ve Mavi/Yeşil Tik
+
+WIN, hesap ve profil güvenliği için **Google Gemini 2.5 Flash** kullanarak fotoğraf tabanlı selfie (canlılık / liveness) doğrulaması yapar. Bu süreçte:
+
+- Profilin aktif olarak keşif akışında yer alabilmesi için **en az 1 (bir) adet fotoğrafının doğrulanmış olması** şarttır.
+- Doğrulama işlemi, yüklenen profil fotoğrafındaki kişinin, o an çekilen canlı selfie'deki kişiyle aynı olduğunu teyit eder. **Başkasına ait fotoğraflarla doğrulama yapılamaz.**
+- Sadece doğrulanan fotoğraflarda **yeşil tik** (veya benzeri bir doğrulama ibaresi) yer alır.
+- Profilinizde başkalarıyla çekilmiş fotoğraflar yer alabilir; ancak doğrulama yalnızca "size" ait olan ve yüzünüzün net göründüğü fotoğraflar üzerinden gerçekleştirilir.
+- Doğrulama adımı tamamlanana kadar hizmetin belirli bölümleri (örn. deckte görünme) kısıtlanabilir.
+
+  ### 1. İzinler Doğrulama sürecinde kamera ve/veya mikrofon izni istenebilir.
+  ### 2. Canlılık (liveness) adımı Kullanıcıdan o an çekilecek canlı bir
+  selfie/poz ile profil fotoğrafını eşleştirmesi istenir. ### 3. Sonuç ve
+  İşaretleme Eşleşme başarılıysa ilgili fotoğraf "doğrulanmış" olarak
+  işaretlenir ve yeşil tik alır.
+
+### 4.5 Konum Bazlı Özellikler
+
+Eşleşme önerileri ve yakın çevre deneyimi konum bilgisine dayanabilir. Uygulamada kartlarda **mesafe** bilgisi gösterilebilir (örn. “5 km uzakta”).
+
+WIN, **konum geçmişi (location history) tutmamaktadır**; konum verisi, uygulama açılışında GPS veya ağ sinyalleri üzerinden anlık olarak alınarak mesafe hesaplamalarında ve eşleşme algoritmasında kullanılır. Konum iznini kapatmanız hâlinde, konum temelli özellikler sınırlı çalışabilir veya kullanılamayabilir. Konum verisinin işlenmesine ilişkin detaylar için Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi) ve KVKK metinleri geçerlidir.
+
+### 4.6 Onboarding: Sözleşmeler, KVKK ve Açık Rıza Katmanı
+
+Onboarding sırasında, kullanıcıya Kullanım Koşulları ve veri koruma metinleri görüntülenebilir ve bazı işlemler için ayrı ayrı açık rıza seçenekleri sunulabilir. Örneğin:
+
+- **Konum verisi işleme**
+- **Selfie / yüz doğrulama verisi işleme**
+- **Eşleşme tercihleri işleme**
+- **Yurt dışına veri aktarımı**
+- **Kampanya & bildirim izni**
+
+Bu kapsamda ayrıntılar için KVKK Aydınlatma Metni (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) ve Açık Rıza Metinleri (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/acik-riza-metinleri) geçerlidir.
+
+### 4.7 Bildirimler ve İletişim Tercihleri
+
+WIN, güvenlik, hesap yönetimi ve hizmet güncellemeleri gibi konularda uygulama içi bildirimler gönderebilir. Pazarlama/duyuru bildirimleri için ayrıca izin alınır ve bu izin geri çekilebilir.
+
+**Bildirim Gizliliği**: Kullanıcı gizliliğini korumak amacıyla, push bildirimlerinde (ekran kilidi vb.) mesaj içeriği önizlemesi gösterilmeyebilir; bildirimler yalnızca gönderen kişinin ismi ve “Yeni Mesaj” şeklinde bir alt metin içerebilir. Ticari elektronik iletişim süreçleri için ilgili mevzuat ve Açık Rıza Metinleri (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/acik-riza-metinleri) uygulanır.
+
+### 4.8 Keşif Akışı (Deck), İkili Seçim ve "Picked You" Listesi
+
+WIN’in temel keşif deneyimi şu akışla sunulur:
+
+- **İkili Seçim (Dual Picking):** Karşınıza iki farklı profil kartı çıkar. Bunlardan birini beğenerek seçersiniz. Seçtiğiniz profil yanına yeni bir aday açılır ve yeniden seçim yapmanız istenir.
+- **You Picked (Senin Seçtiklerin):** Bu akışın sonunda en son beğendiğiniz kişi "You Picked" olarak listenize eklenir.
+- **Picked You (Seni Seçenler):** Sizi "You Picked" olarak seçen kullanıcılar bu listede yer alır.
+- **Mesajlaşma Kısıtı:** Bir kullanıcıyla sohbet başlatabilmeniz için o kişinin sizi beğenerek **"Picked You"** listenizde yer alması gerekir.
+- **Listenin Güncellenmesi:** Sohbet başlattığınız kullanıcılar, "Picked You" listesinden kaldırılarak mesajlar listenize aktarılır.
+
+Kartlarda ve profil detayında aşağıdaki bilgiler gösterilebilir:
+
+- **Temel bilgiler:** isim, yaş, profil fotoğrafları (doğrulama durumu dahil), yaklaşık mesafe ve **çevrim içi (online/son görülme)** durumu (Yalnızca Premium üyelerce görülebilir).
+- **Parametreler:** Boy, iş/meslek, burç, alışkanlıklar ve puanlar.
+
+**Premium Ayrıcalıkları:**
+Premium üyeler; (i) günde **20 deck** görme hakkına (Standart: 5 deck/gün) sahip olmayı, (ii) decklerde **x2** daha fazla görünürlük avantajını, (iii) deckleri filtreleyebilme özelliğini, (iv) profillerini tamamen gizleme (**hide profile**) özelliğini, (v) mesajlarda okundu (görüldü) bilgisini görüntülemeyi, (vi) diğer üyelerin online/offline durumlarını görmeyi ve (vii) kendi puanlarını ve kullanıcıların size/diğerlerine verdiği puanları (Intelligence, Politeness, Fun) görmeyi talep edebilirler.
+
+── Profil ve içerik görünürlüğü ──
+
+Profiliniz ve paylaştığınız içerikler, Hizmetin sunulduğu coğrafyadaki
+  kullanıcılar tarafından görülebilir. İçeriklerinizi yüklemeden önce kontrol
+  edin. **Diğer kullanıcıların, bu Koşullara aykırı olsa bile içeriğinizi üçüncü
+  taraflarla paylaşabileceğini** kabul etmiş sayılırsınız; bu riski gözeterek
+  paylaşım yapmanız önerilir.
+
+---
+
+## Bölüm 5: Kullanıcı Yükümlülükleri ve Yasaklı Davranışlar
+
+── Bu bölümün özeti ──
+
+Genel yükümlülükler, yasaklı içerik ve eylemler ile profil/iletişim kuralları
+  burada düzenlenir. İhlal hâlinde hesap kısıtlanabilir veya kapatılabilir.
+
+### 5.1 Genel Yükümlülükler
+
+- Geçerli mevzuata ve Topluluk Kuralları (https://legal.whoisnextapp.com/topluluk-ve-guvenlik/topluluk-kurallari)na uymak,
+- Güvenlik İpuçları (https://legal.whoisnextapp.com/topluluk-ve-guvenlik/guvenlik-ipuclari)nı okumak ve dikkate almak,
+- **Diğer kullanıcıların içeriğini** yalnızca Hizmetin amacına uygun iletişim ve buluşma bağlamında kullanmak; bu içeriği kopyalama, ticari kullanım, taciz veya yasa dışı tehdit amacıyla kullanmamak,
+- Profil ve iletişim bilgilerinizi doğru ve güncel tutmak,
+- Başkalarının haklarına saygı göstermek; taciz/istismar/dolandırıcılık gibi riskli davranışlardan kaçınmak,
+- WIN’in güvenlik ve kötüye kullanım önleme tedbirlerini (örn. doğrulama, şüpheli işlem kontrolleri) atlatmaya çalışmamak.
+
+### 5.2 Yasaklı İçerik (Prohibited Content)
+
+Aşağıdaki içerikler yasaktır. Bu yasaklar; örneğin 5237 sayılı Türk Ceza Kanunu’ndaki müstehcenlik (TCK m. 226), tehdit (m. 106), şantaj (m. 107), hakaret (m. 125), dolandırıcılık (m. 157), haberleşmenin ve özel hayatın gizliliği (m. 132–140) hükümleri ile 5651 sayılı Kanun, 6698 sayılı KVKK ve fikri mülkiyet mevzuatı (FSEK/SMK) çerçevesinde değerlendirilir.
+
+── Yasaklı İçerikler ──
+
+- **Çocukların korunması (sıfır tolerans)**: Reşit olmayanlara ilişkin cinsel
+  içerik, istismar, “grooming” (kandırma/ayartma), çocukları tehlikeye atan her
+  türlü içerik; reşit olmayanların çıplak/uygunsuz görüntüleri; reşit
+  olmayanları hedefleyen içerikler. - **Müstehcenlik ve cinsel içerik**:
+  Pornografik, açık cinsel eylem tasviri; rıza dışı mahrem görüntü (paylaşım
+  veya paylaşma tehdidi); istenmeyen cinsel içerik gönderimi; cinsel içerik
+  karşılığında menfaat/para/hediye talebi. - **Şiddet ve tehlikeli içerik**:
+  Şiddeti teşvik eden veya yücelten, gerçekçi kan/yaralanma içeren içerikler;
+  kişiye yönelik saldırı çağrıları; kendine zarar verme/ intiharı teşvik eden
+  içerikler. - **Terör ve şiddet yanlısı aşırılık**: Terör örgütlerini, şiddet
+  yanlısı grupları veya faaliyetleri öven, teşvik eden veya propaganda niteliği
+  taşıyan içerikler. - **Nefret söylemi ve ayrımcılık**: Bir kişiyi veya grubu
+  hedef alan nefret, aşağılamaya veya şiddete çağrı; insanlıktan çıkarma,
+  ayrımcı hakaret ve söylemler. - **Dolandırıcılık ve manipülasyon**: “Romance
+  scam”, yatırım/kripto dolandırıcılığı, sahte çekiliş/hediye vaadi, kimlik avı
+  (phishing) linkleri, para/hediye/ödeme aracı talebi, sahte kimlik/ürün/hizmet
+  iddiaları. - **Ticari reklam ve spam**: Ürün/hizmet reklamı, yönlendirme
+  linkleri, toplu mesajlar, istenmeyen pazarlama; kumar/bahis veya fuhuşa
+  ilişkin teklifler/arananlar. - **Tehlikeli/denetimli ürünler ve maddeler**:
+  Silah, patlayıcı, uyuşturucu/uyarıcı maddeler, kaçak/denetimli ürünler veya
+  bunların teminini kolaylaştıran içerikler. - **Gizlilik ve kişisel veri
+  ihlali**: Başkasının telefon numarası, adresi, e-posta, kimlik bilgisi, özel
+  görüntüsü, mesaj içeriği vb. kişisel verilerini izinsiz paylaşmak; “doxxing”;
+  gizli haberleşmenin ifşası. - **Fikri mülkiyet ihlali**: Telifli eserlerin
+  izinsiz paylaşımı; marka/logo/tasarım ihlali; başkasının içeriğini kendine
+  aitmiş gibi yayımlama (ayrıntı için Bölüm 6 ve Fikri Mülkiyet
+  Politikası (https://legal.whoisnextapp.com/kurumsal-ve-yasal-uyumluluk/fikri-mulkiyet-politikasi)). - **Kamu
+  düzenine aykırı/kanuna aykırı içerikler**: 5651 sayılı Kanun kapsamında suç
+  teşkil eden içerikler dahil olmak üzere, yürürlükteki mevzuata aykırı diğer
+  içerikler.
+
+── İçerik değerlendirmesi ve müdahale ──
+
+WIN, içeriklerin bu Koşullara ve yürürlükteki mevzuata uygunluğunu; kullanıcı
+  bildirimleri, otomatik güvenlik sistemleri ve insan incelemesiyle
+  değerlendirebilir. Bildirim ve yaptırım süreçleri için Bölüm 7 geçerlidir.
+
+### 5.3 Yasaklı Eylemler
+
+- Kimlik, yaş, medeni durum, konum vb. konularda **yanıltıcı beyan**; başkası adına hesap açmak; kimliğe bürünmek (impersonation)
+- **Birden fazla hesap** açmak, hesap devretmek/satmak; askıya alma/ban kararlarını **aşmaya çalışmak** (örn. yeni hesap açmak, kısıtlamaları dolanmak, VPN ile yaptırım kaçırma)
+- Otomatik araçlar (bot), scraping, izinsiz API kullanımı; etkileşimleri yapay olarak artırma/azaltma; sistemleri manipüle etme
+- Tersine mühendislik, decompile, uygulama güvenliğini zayıflatma; virüs/malware yükleme; şüpheli linklerle kimlik avı (phishing)
+- Taciz, zorbalık, ısrarlı takip (stalking), nefret söylemi; tehdit, şantaj, iftira/hakaret; fiziksel veya cinsel şiddet tehdidi
+- Para/hediye/ödeme aracı istemek; borç/yardım/bağış talebi; “yatırım fırsatı” vb. finansal yönlendirmeler; kullanıcıları başka platformlara çekmeye çalışma
+- Kumar/bahis, fuhuş, insan ticareti, uyuşturucu/kaçak ürün, silah vb. **yasadışı mal/hizmet** temini veya aracılığı
+- Başkalarının kişisel verilerini toplama, ifşa etme; izinsiz ekran görüntüsü/mesaj paylaşımı; mahrem görüntüleri rıza dışı yayma veya yaymakla tehdit etme
+- **Kötü niyetli/asılsız bildirim** yapmak veya raporlama araçlarını taciz amaçlı kullanmak
+
+### 5.4 Profil ve İletişim Kuralları
+
+WIN, kullanıcı güvenliğini ve dolandırıcılık risklerinin azaltılmasını hedefler. Bu nedenle profil ve mesajlaşma alanlarında aşağıdaki kurallar uygulanır:
+
+- **Kişisel iletişim bilgisi paylaşımı** (telefon, e-posta, sosyal medya hesabı, açık adres vb.) yasaktır.
+- **Banka bilgileri, kredi kartı numarası veya P2P ödeme kullanıcı adı** (ör. para transferi uygulaması kullanıcı adı) profilde veya mesajlarda sergilenemez / paylaşılamaz.
+- **Üçüncü kişilerin kişisel verilerini** (başkasının telefonu, adresi, kimlik bilgisi, özel görüntüsü, mesaj içeriği vb.) izinsiz paylaşmak yasaktır.
+- Profil fotoğrafı/biografide **çocukların tek başına** yer aldığı görseller ile çocukları tehlikeye sokabilecek içerikler yasaktır.
+- Kimliğinizi belirsizleştiren veya gerçeğe aykırı izlenim yaratan **aşırı filtre / manipülasyon** (görsel değiştirme, yüzü gizleme vb.) kullanımı yasaklanabilir veya kısıtlanabilir.
+- Profil ve içeriklerde; yönlendirme linkleri, reklam, “satış” veya “iş teklifi” gibi **ticari amaçlı** paylaşımlar yasaktır.
+
+── Güvenli iletişim ──
+
+Uygulama dışına (SMS, WhatsApp, e-posta, sosyal medya vb.) geçmeden önce
+  dikkatli olun. Güvenliğe ilişkin öneriler için Güvenlik
+  İpuçları (https://legal.whoisnextapp.com/topluluk-ve-guvenlik/guvenlik-ipuclari) sayfasını inceleyin.
+
+---
+
+## Bölüm 6: İçerik ve Fikri Mülkiyet
+
+── Bu bölümün özeti ──
+
+Sizin içeriğinizin sorumluluğu, WIN’e verdiğiniz lisans, telif/marka ihlali
+  bildirimi (uyar-kaldır), platform içeriği ve marka kullanımı bu bölümde yer
+  alır.
+
+### 6.1 Sizin İçeriğinizin Sorumluluğu
+
+Yüklediğiniz veya paylaştığınız içerikten yalnızca siz sorumlusunuz. İçeriğinizin yürürlükteki mevzuata ve bu Koşullara uygun olduğunu, üçüncü kişi haklarına zarar vermediğini ve gerekli izinlere sahip olduğunuzu garanti edersiniz.
+
+Özellikle, aşağıdakilerden siz sorumlusunuz:
+
+- Fotoğraf/video gibi içeriklerde yer alan kişilerin **açık rızalarını** ve gerekli kullanım izinlerini almak
+- Üçüncü kişilere ait telifli eserleri, markaları, logoları veya ticari işaretleri izinsiz kullanmamak
+- Başkalarının kişilik haklarını, gizlilik haklarını veya kişisel verilerini ihlal etmemek
+
+İçeriğiniz nedeniyle WIN veya üçüncü kişilere yönelen taleplerde, Bölüm 12’deki tazminat hükümleri saklıdır.
+
+── Fikri mülkiyet ihlali hesabınızı etkileyebilir ──
+
+Telif/marka ihlali veya izinsiz içerik paylaşımı; içeriğin kaldırılmasına,
+  görünürlüğün kısıtlanmasına, hesabın askıya alınmasına veya kapatılmasına yol
+  açabilir (bkz. Bölüm 7).
+
+### 6.2 WIN'e Verilen Lisans (UGC)
+
+WIN’in Hizmetleri sunabilmesi için, Sizin İçeriğiniz üzerinde aşağıdaki lisansı WIN’e vermiş olursunuz. Bu lisans, içerik paylaşımınızın niteliğine göre, mevzuatın izin verdiği ölçüde uygulanır.
+
+### 1. Lisansın kapsamı
+İçeriği yüklediğinizde, WIN’e; **dünya çapında**, **telifsiz (royalty-free)**, **devredilebilir** ve **alt lisanslanabilir** şekilde; barındırma, depolama, çoğaltma, işleme/uyarlama, çevirme, yayımlama, kamuya iletme ve Hizmetler kapsamında görünür kılma yetkisi verirsiniz.
+
+### 2. Hizmetin işletilmesi ve geliştirilmesi
+
+Bu lisans, Hizmetlerin sunulması, güvenlik ve kötüye kullanımın önlenmesi, hata giderme, performans ölçümü, ürün geliştirme ve kullanıcı deneyimini iyileştirme amaçlarını kapsar.
+
+### 3. Tanıtım / promosyon kullanımı
+
+WIN, Hizmetleri tanıtmak amacıyla (ör. uygulama içi ekran görüntüleri, web sitesi tanıtımları) Sizin İçeriğinizi kullanabilir. Bu kullanım, mümkün olduğu ölçüde makul ve ölçülü yapılır; özel hayatın gizliliği ve veri koruma kuralları saklıdır.
+
+### 4. İçeriğin kaldırılması ve lisansın devamı
+
+Sizin İçeriğiniz silindiğinde veya hesabınız kapatıldığında, WIN’in Sizin İçeriğiniz üzerindeki lisansı, kural olarak Hizmet içi görünürlük açısından sona erer. Ancak; yasal yükümlülükler, uyuşmazlıkların çözümü, güvenlik incelemeleri, yedekleme süreçleri ve hakların korunması gibi sebeplerle sınırlı ölçüde devam edebilir (Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi)).
+
+### 5. İzinsiz kullanıma karşı yetki
+
+İçeriğinizin üçüncü kişilerce Hizmet dışında izinsiz kullanıldığını düşündüğünüzde, WIN’in (uyar-kaldır ve ilgili mevzuat çerçevesinde) **sizin adınıza** başvuruda bulunma veya talepte bulunma yetkisini verdiğinizi kabul edersiniz. WIN’in bu konuda herhangi bir yükümlülük altına girmesi zorunlu değildir.
+
+### 6.3 Fikri mülkiyet ihlali bildirimi (Uyar-Kaldır)
+
+WIN, 5846 sayılı FSEK ve 6769 sayılı SMK kapsamında telif ve marka ihlali iddialarını ciddiyetle değerlendirir. İhlal bildirimi yapılması hâlinde, dosya içeriği ve mevzuata göre içerik kaldırma/erişim kısıtlama gibi işlemler yapılabilir. Bildirimde aşağıdaki bilgilerin yer alması gerekir:
+
+### 1. Hak sahipliği ve eser tanımı
+İhlal edildiğini iddia ettiğiniz eseri/markayı ve hak sahipliğinizi (veya yetkili temsilci olduğunuzu) açıkça belirtin.
+
+### 2. İhlal içeriğinin yeri
+
+İhlal içeriğinin uygulama içindeki yerini (kullanıcı adı, profil linki, ekran görüntüsü, tarih/saat) mümkün olduğunca net sunun; tespit için yeterli bilgi verin.
+
+### 3. İyi niyet beyanı
+
+Şikayetin iyi niyetle yapıldığını ve söz konusu kullanımın yetkili olmadığını düşündüğünüzü beyan edin.
+
+### 4. İletişim bilgileri
+
+Sizinle iletişime geçilebilmesi için ad, e-posta ve gerekirse telefon veya posta adresi paylaşın.
+
+Bildirim, hak sahibi veya yetkili temsilci tarafından **imzalanmış** (fiziksel veya elektronik) olmalıdır; bildirimdeki bilgilerin **doğru olduğunu** beyan ettiğiniz kabul edilir. **Yukarıdaki zorunlu bilgileri eksik olan bildirimler işleme alınmayabilir.** Yanlış veya kötü niyetli bildirimler hukuki sonuç ve yaptırım doğurabilir. Bildirim için Fikri Mülkiyet (Telif) İhlal Formu (https://legal.whoisnextapp.com/basvuru-formlari/fikri-mulkiyet-telif-ihlal-formu) kullanılabilir; detaylar ve iletişim kanalları (e-posta/adres) için Fikri Mülkiyet Politikası (https://legal.whoisnextapp.com/kurumsal-ve-yasal-uyumluluk/fikri-mulkiyet-politikasi) geçerlidir.
+
+### 6.4 Platform İçeriği ve Uygulama Lisansı
+
+WIN’e ait yazılım, arayüz, tasarım, veritabanı, logo, marka ve diğer içerikler (“Platform İçeriği”) WIN’e aittir veya WIN tarafından lisanslanmıştır.
+
+Size, Platform İçeriğini yalnızca Hizmetleri kullanmanız için **kişisel**, **ticari olmayan**, **devredilemez**, **alt lisanslanamaz** ve **iptal edilebilir** şekilde sınırlı bir kullanım hakkı tanınır. **Bu Koşullara uyulmamanız hâlinde bu lisans ve Hizmete erişim yetkiniz otomatik olarak sona erer.**
+
+Uygulama yazılımına ilişkin kullanım lisansı ve teknik kısıtlamalar için ayrıca Uygulama İçi Lisans Sözleşmesi (EULA) (https://legal.whoisnextapp.com/sozlesmeler/uygulama-ici-lisans-sozlesmesi) geçerlidir.
+
+### 6.5 Marka ve Tanıtım Unsurları
+
+WIN adı, logosu ve ayırt edici işaretleri WIN’in marka hakları kapsamındadır. WIN’in yazılı izni olmadan, WIN markasını veya benzerini; ticari amaçlarla, yanıltıcı şekilde veya üçüncü kişileri WIN ile bağlantılı olduğunuz izlenimine sokacak biçimde kullanamazsınız.
+
+### 6.6 Geri Bildirim Lisansı
+
+WIN’e ürün geliştirme, güvenlik veya kullanıcı deneyimi amaçlarıyla ilettiğiniz öneri, fikir veya geri bildirimleri, WIN’in herhangi bir bedel ödemeksizin kullanabileceğini, geliştirebileceğini ve paylaşabileceğini kabul edersiniz.
+
+### 6.7 FSEK ve 6769 SMK Atıfları
+
+Telif hakları 5846 sayılı Fikir ve Sanat Eserleri Kanunu (FSEK), marka ve ticari görünüm 6769 sayılı Sınai Mülkiyet Kanunu (SMK) ile korunur. Ayrıntılı kurallar Fikri Mülkiyet Politikası (https://legal.whoisnextapp.com/kurumsal-ve-yasal-uyumluluk/fikri-mulkiyet-politikasi) içinde yer alır.
+
+• Fikri Mülkiyet Politikası: Telif/marka ihlali bildirimi ve uyar-kaldır süreçleri. — https://legal.whoisnextapp.com/kurumsal-ve-yasal-uyumluluk/fikri-mulkiyet-politikasi
+• Uygulama İçi Lisans (EULA): Uygulama yazılımının kullanım lisansı ve teknik kısıtlar. — https://legal.whoisnextapp.com/sozlesmeler/uygulama-ici-lisans-sozlesmesi
+
+---
+
+## Bölüm 7: İçerik Moderasyonu, Şikayet ve Uygulama
+
+── Bu bölümün özeti ──
+
+İhlal bildirimi nasıl yapılır, moderasyon kararları ve itiraz (appeal) süreci,
+  5651 sayılı Kanun çerçevesi bu bölümde özetlenir.
+
+### 7.1 Moderasyon Yetkisi
+
+WIN, kullanıcı güvenliğini sağlamak, hukuka aykırı içerikleri azaltmak ve Topluluk Kuralları (https://legal.whoisnextapp.com/topluluk-ve-guvenlik/topluluk-kurallari)na uyumu sürdürmek amacıyla moderasyon uygular.
+
+5651 sayılı Kanun kapsamında WIN, yer sağlayıcı niteliğinde olabilir. Bu kapsamda:
+
+- Yer sağlayıcının, yer sağladığı içeriği **önceden kontrol etme** veya hukuka aykırı faaliyeti **araştırma** yükümlülüğü bulunmaz (5651 Md. 5/1).
+- Buna karşılık, hukuka aykırı içerikten **haberdar edilmesi** hâlinde ilgili içeriği yayından çıkarma yükümlülüğü doğabilir (5651 Md. 5/2).
+
+WIN’in kullanıcı içeriklerini **önceden izleme veya inceleme yükümlülüğü yoktur**; buna karşılık kendi takdiriyle içeriği kaldırma, düzenleme, erişimi kısıtlama veya hesap üzerinde işlem yapma hakkı saklıdır.
+
+WIN, moderasyonu; kullanıcı bildirimleri, otomatik sistemler ve insan moderatör incelemesiyle yürütür.
+
+**Mesajlaşma ve Gizlilik:** Platformdaki mesajlaşmalar **uçtan uca şifreli (end-to-end encrypted) değildir.** Moderasyon ekipleri ve sistem yöneticileri; şikayet, güvenlik sinyali veya hukuka aykırılık şüphesi hâlinde mesaj içeriklerini inceleme yetkisine sahiptir. Moderasyon, hem hukuka aykırı içeriklere hem de Koşullara/Topluluk Kurallarına aykırı davranışlara yönelik olabilir.
+
+**Kullanıcı Değerlendirme (Intelligence, Politeness, Fun):** Sohbet sırasında, belirli bir etkileşim limitine (örn. 10 cümle) ulaşıldığında, tarafınıza diğer kullanıcıyı **karakteristik özellikler** (Zeka, Kibarlık, Eğlence vb.) üzerinden puanlamanızı öneren bir buton açılır. Bu puanlar anonimleştirilerek profillerin puan ortalamasını oluşturur ve güvenilir topluluk deneyimi için kullanılır.
+
+### 7.2 Şikayet Mekanizması
+
+İhlal bildirimi uygulama içi **“Şikayet Et”** veya raporlama özelliği üzerinden yapılabilir. Bazı hallerde, WIN ek bilgi istemek üzere sizinle iletişime geçebilir.
+
+#### 7.2.1 Neler bildirilmelidir?
+
+Örnek olarak aşağıdaki durumlar bildirilmelidir:
+
+- Taciz, tehdit, ısrarlı takip, nefret söylemi, zorbalık
+- Para/hediye/ödeme bilgisi talebi, dolandırıcılık şüphesi, sahte profil
+- Rıza dışı cinsel içerik gönderimi veya müstehcen içerik
+- Reşit olmayanlara ilişkin içerik/şüphe
+- Üçüncü kişilerin kişisel verilerinin izinsiz paylaşımı
+
+Sadece mesajlara cevap verilmemesi, beğenilerin geri dönmemesi, görüş/kimlik farklılığı gibi durumlar kural olarak “ihlal” sayılmaz.
+
+#### 7.2.2 Bildirim nasıl yapılır?
+
+### 1. Uygulama içinden bildirim
+Profil veya mesaj ekranındaki **“Şikayet Et”** seçeneği ile bildirim oluşturun.
+
+### 2. Sebep seçimi ve delil
+
+Şikayet sebebini seçin ve mümkünse açıklama ile destekleyin (ör. mesaj içeriği, kullanıcı adı, tarih/saat, ekran görüntüsü).
+
+### 3. Güvenlik
+
+Bildirim sonrası ilgili kullanıcıyı **engellemeniz** önerilir. Şikayet, kural olarak diğer kullanıcıya “kim tarafından” yapıldığı bilgisi verilmeden değerlendirilir.
+
+Yazılı kayıt veya resmî başvuru gerektiğinde içerik ihlali bildirimi için İçerik İhlal Formu (https://legal.whoisnextapp.com/basvuru-formlari/icerik-ihlal-formu), genel şikayet/ihbar için Şikayet ve İhbar Formu (https://legal.whoisnextapp.com/basvuru-formlari/sikayet-ve-ihbar-formu) kullanılabilir.
+
+#### 7.2.3 Kötü niyetli/asılsız bildirimler
+
+Raporlama sisteminin kasıtlı olarak kötüye kullanılması (asılsız, yanıltıcı veya taciz amaçlı şikayet) Koşulların ihlali sayılabilir ve yaptırıma tabi olabilir.
+
+### 7.3 Askıya Alma / Hesap Kapatma
+
+İhlal tespitinde WIN, ihlalin niteliğine göre aşağıdaki önlemleri alabilir:
+
+- içerik kaldırma / görünürlüğü kısıtlama
+- uyarı
+- belirli özellikleri kısıtlama (mesajlaşma, içerik yükleme vb.)
+- geçici askıya alma
+- kalıcı hesap kapatma
+
+Tekrarlayan (mükerrer) ihlallerde hesap sonlandırma uygulanabilir. Ön ihbar zorunluluğu olmaksızın işlem yapılması gerekebilecek güvenlik ve kötüye kullanım hallerinde WIN, hızlı aksiyon alabilir.
+
+#### 7.3.1 Bildirim
+
+İçerik kaldırma veya hesap kısıtı uygulanması hâlinde, mümkün olduğu ölçüde size uygulama içi bildirim ve/veya e-posta ile gerekçe ve itiraz yolu hakkında bilgi verilir. Ancak, diğer kullanıcıların güvenliği/mahremiyeti veya yasal yükümlülükler nedeniyle, her durumda tüm detaylar paylaşılamayabilir.
+
+#### 7.3.2 İtiraz (Appeal)
+
+Moderasyon kararlarına veya bir bildirime “işlem yapılmaması” kararına karşı itiraz etme imkânı sunulur.
+
+- **Yöntem**: İtirazlar şu an için **destek e-postası** üzerinden kabul edilmektedir. Karar bildiriminde yer alan yönergeleri izleyerek itirazınızı iletebilirsiniz. Yazılı ve yapılandırılmış başvuru gerektiğinde İtiraz Formu (https://legal.whoisnextapp.com/basvuru-formlari/itiraz-formu) kullanılabilir.
+- **Süre (SLA)**: İletilen itirazlar, **en geç 30 gün** içinde incelenerek sonuçlandırılır. Olağanüstü durumlar veya operasyonel yoğunluk halinde bu süre istisnai olarak uzayabilir; bu durumda başvuru sahibi bilgilendirilir.
+- **Başvuru süresi**: İtirazların, karar bildiriminden itibaren **en geç 6 ay** içinde yapılması önerilir.
+
+İtiraz kabul edilirse, kısıtlamalar kaldırılabilir. İçeriğin yeniden yayımlanması, içeriğin saklanıp saklanmadığı ve veri saklama süreleri gibi sebeplerle her zaman mümkün olmayabilir; bu durumda içeriği yeniden yüklemenize izin verilebilir.
+
+AB’de bulunan kullanıcılar için, ek şikayet/itiraz kanalları ve DSA kapsamındaki süreçler DSA Uyum Sayfası (https://legal.whoisnextapp.com/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi) üzerinden ayrıca açıklanır.
+
+#### 7.3.3 Grup Şirketleri ile Ban Paylaşımı
+
+WIN, şu aşamada diğer uygulamalar veya iştiraklerle "yasaklı kullanıcı listesi" paylaşımı yapmamaktadır. Ancak platform güvenliğini artırmak amacıyla, gelecekte grup şirketleri veya iş ortaklarıyla ihlal verilerinin (mevzuata uygun şekilde) paylaşılması ve çoklu platform yasağı uygulanması hakkını saklı tutar.
+
+### 7.4 5651 Sayılı Kanun
+
+5651 sayılı İnternet Ortamında Yapılan Yayınların Düzenlenmesi Hakkında Kanun kapsamında yer sağlayıcı sorumluluk çerçevesi uygulanır. Hukuka aykırı içeriklere ilişkin bildirimler (uyarı yöntemi dahil) değerlendirilir ve Kanun ile uyumlu şekilde işlem tesis edilir; trafik bilgilerinin saklanması da bu Kanundaki sürelere tabidir.
+
+Resmî makam talepleri (polis, savcılık vb.) yalnızca geçerli ve usulüne uygun talepler çerçevesinde değerlendirilir. Resmî makamlar, yasa dışı içerik bildirimini Yasa Dışı İçerik Bildirim Formu (https://legal.whoisnextapp.com/basvuru-formlari/yasa-disi-icerik-bildirim-formu) üzerinden iletebilir. Detaylar için Kolluk Kuvvetleri Rehberi (https://legal.whoisnextapp.com/kurumsal-ve-yasal-uyumluluk/kolluk-kuvvetleri-rehberi) ve periyodik raporlar için Şeffaflık Raporları (https://legal.whoisnextapp.com/topluluk-ve-guvenlik/seffaflik-raporlari) sayfalarına bakınız.
+
+---
+
+## Bölüm 8: Algoritma ve Otomatik Karar Alma
+
+── Bu bölümün özeti ──
+
+Eşleşme ve öneri sistemleri, profil çıkarma (profiling), yapay zeka kullanımı
+  ve otomatik güvenlik kararları ile şeffaflık ve kullanıcı kontrolleri bu
+  bölümde özetlenir.
+
+### 8.1 Eşleşme ve Öneri Sistemleri
+
+WIN, Hizmetleri daha kullanışlı hâle getirmek amacıyla **öneri sistemleri** kullanabilir. Bu sistemler; size gösterilen profilleri **sıralayabilir**, **önerebilir** veya belirli profilleri **daha az görünür** hâle getirebilir.
+
+Öneri sistemleri, aşağıdaki veri ve sinyallerin bir kısmını birlikte değerlendirebilir:
+
+- **Tercihleriniz ve filtreleriniz** (ör. yaş aralığı, mesafe, temel eşleşme tercihleri)
+- **Konum bilgisi** (izin verdiğiniz ölçüde) ve konumla ilişkili eşleşme sinyalleri
+- **Etkileşim geçmişi** (ör. beğeni/ret davranışları, mesajlaşma etkileşimleri)
+- **Güvenlik sinyalleri** (ör. engelleme/şikayet ilişkileri, doğrulama durumları)
+- **Profil kalitesi/tutarlılığına ilişkin sinyaller** (ör. eksik alanlar, tekrar eden davranış örüntüleri)
+
+Bu değerlendirmeler, eşleşme olasılığını artırmaya yönelik bir tahmin mekanizmasıdır; belirli bir eşleşme veya sonuç garanti edilmez.
+
+**Görünürlük ve Cooldown (Soğuma Süresi):**
+Keşif akışında (Deck) karşınıza çıkan ancak seçmediğiniz profiller için belirli bir **cooldown (soğuma)** süresi uygulanır. Bu süre zarfında aynı profil tekrar listenizde gösterilmez; bu sayede daha fazla kullanıcıyla etkileşime girmeniz teşvik edilir.
+
+### 8.2 Profiling ve Otomatik Değerlendirme
+
+WIN, kişiselleştirilmiş öneriler sunmak için **profil çıkarma (profiling)** ve belirli otomatik değerlendirmeler yapabilir. Bu kapsamda; tercihlerinize, davranışlarınıza ve Hizmetleri kullanım biçiminize ilişkin çıkarımlar üretilebilir.
+
+Bu süreçlerin kapsamı, kullanılan veri kategorileri, hukuki sebepler ve kullanıcı haklarına ilişkin detaylar:
+
+- KVKK Aydınlatma Metni (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni)
+- Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi)
+
+belgelerinde açıklanır.
+
+### 8.3 AI / Yapay Zeka Kullanımı
+
+WIN, güvenlik ve kötüye kullanımın önlenmesi amacıyla (ör. **sahte profil**, **dolandırıcılık**, **taciz** tespiti) yapay zeka destekli araçlar kullanabilir. Ayrıca, Hizmetlerin sunumu kapsamında bazı **isteğe bağlı** özelliklerde yapay zeka kullanılabilir.
+
+Yapay zeka kullanımı, kullanıcı davranışlarını ve güvenliğini iyileştirmeyi hedefler; ancak her durumda kesin sonuç vermez. Yapay zekâ destekli mekanizmaların ürettiği sinyaller, gerektiğinde insan incelemesiyle birlikte değerlendirilebilir.
+
+Kullanıcıların yanıltıcı şekilde AI üretimi içeriklerle kendini veya niyetini yanlış tanıtması, Koşulların ve Topluluk Kurallarının ihlali sayılabilir. Ayrıntılı ilkeler, veri kullanımı ve itiraz hakları için Yapay Zeka Kullanma Politikası (https://legal.whoisnextapp.com/topluluk-ve-guvenlik/yapay-zeka-kullanma-politikasi) incelenmelidir.
+
+### 8.4 Otomatik Kararlar (Güvenlik ve Dolandırıcılık Önleme)
+
+WIN, Hizmet güvenliği ve dolandırıcılığın önlenmesi amacıyla bazı durumlarda otomatik kararlar uygulayabilir. Örneğin:
+
+- şüpheli davranış örüntülerinde belirli özelliklerin geçici kısıtlanması,
+- şüpheli ödeme/işlem denemelerinde işlemin engellenmesi,
+- bot/spam davranışlarının tespitinde hesap güvenliği adımlarının tetiklenmesi.
+
+Bu tür bir otomatik karar, sizin açınızdan önemli bir etki doğuruyorsa, mümkün olduğu ölçüde bilgilendirme yapılır ve itiraz/inceleme talebi için başvuru kanalı sunulur.
+
+### 8.5 Kontroller ve Şeffaflık
+
+Öneri sistemlerinin nasıl çalıştığı, kullanabileceği temel parametreler ve varsa ayarlanabilir seçenekler hakkında şeffaflık sağlanması hedeflenir. Kullanıcı olarak:
+
+- tercih ve filtrelerinizi ayarlardan değiştirebilir,
+- konum izninizi cihaz ayarlarından yönetebilirsiniz (Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi) — konum verisi),
+- istenmeyen kullanıcıları engelleyebilir veya şikayet edebilirsiniz,
+
+ve bu tercihlerinizin öneri sistemlerine yansımasını bekleyebilirsiniz.
+
+AB’de bulunan kullanıcılar için, DSA kapsamındaki raporlama ve şeffaflık yükümlülükleri DSA Uyum Sayfası (https://legal.whoisnextapp.com/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi) üzerinden ayrıca açıklanır.
+
+---
+
+## Bölüm 9: Ödeme, Abonelik ve Sanal Öğeler
+
+── Bu bölümün özeti ──
+
+Ödeme ve abonelik koşulları ilişkili belgelerde düzenlenir; otomatik yenileme,
+  iptal ve sanal öğelere ilişkin özet bilgiler burada yer alır.
+
+### 9.1 Genel
+
+Ödeme ve abonelik koşulları aşağıdaki belgelerde düzenlenir:
+
+- Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari)
+- Ön Bilgilendirme Formu (https://legal.whoisnextapp.com/sozlesmeler/on-bilgilendirme-formu)
+- Mesafeli Satış Sözleşmesi (https://legal.whoisnextapp.com/sozlesmeler/mesafeli-satis-sozlesmesi)
+- Abonelik ve Satın Alma Koşulları — Bölüm 4 (satın alma süreci ve bilgilendirme) (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari#bölüm-4-satın-alma-süreci-ve-sözleşmenin-kurulması)
+
+### 9.2 Özet Bilgiler
+
+- Abonelikler otomatik yenilenebilir; iptal, satın alımın yapıldığı Apple/Google **mağaza hesabı** üzerinden yapılır (WIN uygulama içinde yönlendirme/kolay erişim sağlayabilir). Abonelik Sözleşmeleri Yönetmeliği uyarınca iptal, aboneliğin kurulduğu kanal üzerinden aynı kolaylıkla yapılabilir.
+- Dijital içerik ve hizmetlerde 6502 sayılı Tüketicinin Korunması Hakkında Kanun ve Mesafeli Sözleşmeler Yönetmeliği kapsamında cayma hakkı istisnaları uygulanabilir.
+
+### 9.3 Sanal Öğeler
+
+WIN, şu aşamada yalnızca **Premium üyelik / abonelik** satışı yapmaktadır. Paket fiyatları pazar koşullarına göre **değişkenlik gösterebilir**; güncel fiyatlar her zaman uygulama içi satın alma ekranlarında gösterilir. Uygulama içinde satın alınabilir sanal para, kredi veya harcanabilir öğeler lisans niteliğindedir; devredilemez ve nakde çevrilemez. Gelecekte bu tür sanal öğelerin eklenmesi hâlinde, iade ve kullanım koşulları Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari)nda ayrıca belirtilir.
+
+---
+
+## Bölüm 9A: Reklamlar ve Üçüncü Taraf İçerikleri
+
+Hizmetler; üçüncü taraflarca sunulan **reklamlar**, **tanıtımlar**, **sponsorlu içerikler** (banner, video vb.) veya dış web sitelerine/kaynaklara yönlendiren bağlantılar içerebilir. Uygulama içinde reklam hizmetleri için **AdMob (Google)** altyapısı kullanılabilir.
+
+WIN; bu tür reklamları veya üçüncü taraf içeriklerini **onaylamaz**; üçüncü taraf sitelerinin, kaynaklarının veya sundukları ürün/hizmetlerin erişilebilirliği, doğruluğu veya içeriğinden **sorumlu değildir**. Bu tür içeriklerle etkileşiminiz, ilgili üçüncü tarafın kendi kullanım koşulları ve gizlilik politikalarına tabidir. Reklamların her zaman sunulacağı veya belirli bir biçimde gösterileceği yönünde garanti verilmez; WIN, reklam modellerini dilediği zaman değiştirme hakkını saklı tutar.
+
+---
+
+## Bölüm 10: Gizlilik ve Veri Koruma
+
+── Bu bölümün özeti ──
+
+Gizlilik ve kişisel veri işleme kuralları Gizlilik Politikası ve KVKK
+  Aydınlatma Metni’nde açıklanır; bu bölüm yalnızca referans ve kısa özet sunar.
+
+### 10.1 Referans
+
+Gizlilik ve kişisel veri işleme kuralları aşağıdaki belgelerde açıklanır. Hizmeti kullanarak bu politikaları kabul etmiş sayılırsınız:
+
+- Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi)
+- KVKK Aydınlatma Metni (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni)
+- KVKK Başvuru Formu (https://legal.whoisnextapp.com/basvuru-formlari/kvkk-basvuru-formu) — Kişisel veri haklarınızı kullanmak için başvuru yapabileceğiniz form ve yönlendirme.
+- Şikayet ve İhbar Formu (https://legal.whoisnextapp.com/basvuru-formlari/sikayet-ve-ihbar-formu) — Topluluk kuralları ihlali veya kullanıcı davranışı şikayetleri için yazılı başvuru formu.
+- İçerik İhlal Formu (https://legal.whoisnextapp.com/basvuru-formlari/icerik-ihlal-formu) — Platform kurallarına aykırı içerik bildirimi (moderasyon) için yazılı başvuru formu.
+- Yasa Dışı İçerik Bildirim Formu (https://legal.whoisnextapp.com/basvuru-formlari/yasa-disi-icerik-bildirim-formu) — Resmî makamların 5651/DSA kapsamında yasa dışı içerik bildirimi için kullanacağı form.
+
+### 10.2 Özet
+
+WIN, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında veri sorumlusudur. Verileriniz hizmet sunumu, güvenlik, analitik ve yasal yükümlülükler dahil amaçlarla işlenir; KVKK Aydınlatma Yükümlülüğü Tebliği’ne uygun aydınlatma metinleri sunulur. KVKK m. 11 kapsamındaki haklarınızı (bilgi talep etme, düzeltme, silme, itiraz vb.) kullanmak için KVKK Başvuru Formu (https://legal.whoisnextapp.com/basvuru-formlari/kvkk-basvuru-formu) sayfasından formu indirip başvurunuzu iletebilirsiniz. Web alanlarımızda çerez yönetimi için bir Çerez Tercih Paneli (**CMP**) sunulmakta olup tercihlerinizi dilediğiniz zaman güncelleyebilirsiniz. Yurt dışına aktarım varsa Gizlilik Politikası ve Kişisel Verilerin Yurt Dışına Aktarılması Yönetmeliği çerçevesinde belirtilir.
+
+Kanuni zorunluluk, bu Koşulların uygulanması, üçüncü taraf veya WIN haklarının korunması veya suç/dolandırıcılık şüphesi incelemesi gibi hallerde WIN’in hesap bilgilerinize (içerik dahil) **erişebileceğini**, **saklayabileceğini** veya **ifşa edebileceğini** kabul edersiniz; ayrıntılar Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi) içinde yer alır.
+
+---
+
+## Bölüm 11: Sorumluluk Reddi ve Sınırlaması
+
+── Bu bölümün özeti ──
+
+Hizmetler "olduğu gibi" sunulur; kesintisiz veya hatasız çalışma garantisi
+  yoktur. Kullanıcı etkileşimlerinden ve teknik zararlardan WIN sorumlu
+  tutulamaz; sorumluluk üst sınırı yasal çerçevede belirlenir.
+
+### 11.1 "Olduğu Gibi" (As-Is) Beyanı
+
+Hizmetler "olduğu gibi" ve "mevcut olduğu şekilde" sunulur. Kesintisiz veya hatasız çalışma garantisi verilmez. Eşleşme veya ilişkilerin uyumluluğu konusunda herhangi bir taahhüt verilmez.
+
+Aşağıdaki hususlarda, yürürlükteki mevzuatın izin verdiği ölçüde, WIN herhangi bir garanti vermez:
+
+- Hizmetlerin her zaman erişilebilir/çalışır olacağı, güvenli olacağı veya hatasız çalışacağı
+- Hataların her zaman düzeltileceği veya Hizmetlerin belirli bir performans/sonuç sağlayacağı
+- Uygulama içi içeriklerin (kullanıcı içerikleri dahil) eksiksiz, doğru, güncel veya amacınıza uygun olduğu
+- Belirli bir zamanda belirli sayıda aktif kullanıcı bulunacağı, kullanıcıların sizinle iletişim kuracağı veya görüşeceği
+- İnternet servis sağlayıcınız, cihazınız, işletim sisteminiz veya üçüncü taraf servislerden (Apple/Google mağazaları, ödeme altyapıları vb.) kaynaklanan kesinti ve arızaların oluşmayacağı
+
+### 11.2 Kullanıcı Etkileşimleri
+
+── Sorumluluk Reddi ──
+
+WIN, üyeler için **sabıka kaydı veya resmi kimlik doğrulama kontrolü yapmaz**;
+  kullanıcıların kimliği, niyeti, dürüstlüğü veya geçmişi hakkında **beyan veya
+  garanti vermez**. WIN'in Bölüm 3.3 (#33-uygunluk-taahhütleri) kapsamında
+  belirttiği üzere, adli sicil incelemesi yapma yükümlülüğü veya operasyonel
+  kapasitesi bulunmamaktadır. Diğer kullanıcıların davranışlarından,
+  iletilerinden veya gerçek dünyada gerçekleşen buluşmalardan WIN sorumlu
+  tutulamaz. Güvenlik İpuçları (https://legal.whoisnextapp.com/topluluk-ve-guvenlik/guvenlik-ipuclari) ve
+  dikkatli buluşma uyarılarını okumanız önerilir. **Güvenlik İpuçları,
+  güvenliğinizin garantisi veya yerine geçen bir tedbir değildir**; yeni biriyle
+  iletişim veya buluşmada her zaman dikkatli olmanız gerekir.
+
+Kullanıcılarla mesajlaşma, içerik paylaşımı veya yüz yüze görüşme dahil tüm etkileşimlerde, karar ve risk değerlendirmesi size aittir. Başka bir kullanıcıyla kişisel bilgi paylaşmanız veya uygulama dışına çıkmanız hâlinde doğabilecek zararların önlenmesi için WIN, teknik ve operasyonel tedbirler alsa da her türlü sonucu bütünüyle kontrol edemez. Güvenlik ihlali, virüs, hata, kesinti, ağ arızası veya üçüncü taraf servislerden kaynaklanan teknik zararlardan WIN sorumlu tutulamaz.
+
+### 11.3 Sorumluluk Üst Sınırı
+
+6098 sayılı Türk Borçlar Kanunu (TBK) ve 6502 sayılı Tüketicinin Korunması Hakkında Kanun’a uygun olarak, WIN’in sözleşmeden doğan toplam sorumluluğu (zorunlu tüketici hakları saklı kalmak kaydıyla) son 24 ay içinde ödenen abonelik bedelleri toplamı veya sabit bir tutarla sınırlandırılabilir. Bu sınır, zorunlu yasal tüketici haklarını ortadan kaldırmaz.
+
+Yürürlükteki mevzuatın izin verdiği ölçüde WIN; kar kaybı, itibar kaybı, veri kaybı, iş kesintisi, dolaylı/sonuçsal zararlar gibi kalemlerden sorumlu tutulamaz.
+
+Bu bölümde yer alan sınırlamalar:
+
+- Kasten veya ağır kusurla verilen zararlar ile
+- Kanunen sınırlandırılamayan tüketici hakları ve sorumluluk halleri ile
+- 6502 sayılı Kanun kapsamında haksız şart sayılabilecek hükümler
+
+yönünden uygulanmaz veya uygulanabildiği ölçüde uygulanır. Bu bölümdeki sorumluluk sınırlamaları, başvurulabilecek çarelerin amacı bakımından başarısız olması hâlinde dahi geçerlidir.
+
+---
+
+## Bölüm 12: Tazminat (İndemnity)
+
+── Bu bölümün özeti ──
+
+İçeriğiniz veya hesap kullanımınızdan doğan üçüncü taraf talepleri karşısında
+  WIN’i tazmin etmeyi, yasal çerçevede kabul edersiniz.
+
+### 12.1 Kullanıcının Tazminat Yükümlülüğü
+
+Bu Koşulların veya yürürlükteki hukukun ihlali, Sizin İçeriğinizden veya hesap kullanımınızdan doğan üçüncü taraf talepleri (dava, tazminat, idari yaptırım iddiaları dahil) nedeniyle WIN’in, yöneticilerinin, çalışanlarının ve iş ortaklarının uğradığı zararları, masrafları ve makul avukatlık ücretlerini, yürürlükteki mevzuatın izin verdiği ölçüde tazmin etmeyi kabul edersiniz.
+
+Tazminat yükümlülüğünüz, özellikle aşağıdaki hallerde gündeme gelebilir:
+
+- Sizin İçeriğinizin veya davranışlarınızın üçüncü kişilerin kişilik haklarını, fikri mülkiyet haklarını veya gizlilik haklarını ihlal etmesi
+- Dolandırıcılık, sahte profil, taciz, tehdit, izinsiz veri paylaşımı gibi davranışlar
+- Üçüncü kişilere veya WIN’e yönelen hukuka aykırı kullanım nedeniyle doğan talepler
+
+WIN, tazminat kapsamına giren bir talep hakkında sizi makul şekilde bilgilendirmeye çalışır. Sizden beklenen; gerekli bilgi ve belgeleri sağlamak, savunmaya makul ölçüde destek olmak ve zararın artmasını önleyecek şekilde iş birliği yapmaktır.
+
+Bu madde, WIN’in kendi kusurundan kaynaklanan zararlardan doğan sorumluluğunu ortadan kaldırmaz ve zorunlu tüketici mevzuatı hükümlerini sınırlamaz.
+
+---
+
+## Bölüm 13: Hesap Sonlandırma ve Fesih
+
+── Bu bölümün özeti ──
+
+Hesabı devre dışı bırakma, kalıcı silme, WIN tarafından sonlandırma, pasif
+  hesapların silinmesi ve fesih sonrası sonuçlar bu bölümde düzenlenir.
+
+### 13.1 Kullanıcı Tarafından Sonlandırma
+
+Hesabınıza ilişkin sonlandırma işlemleri iki farklı şekilde gerçekleşebilir: **(i) profilin devre dışı bırakılması (görünürlüğün kapatılması)** ve **(ii) hesabın silinmesi (kalıcı kapatma)**. Uygulama içi adımlar ve hukuki sonuçlar aşağıda (özellikle **13.1.2 Hesabı silme**) ayrıntılandırılmıştır.
+
+#### 13.1.1 Profili devre dışı bırakma (görünürlüğü kapatma)
+
+İsterseniz hesabınızı silmeden, profilinizi geçici olarak **devre dışı** bırakabilir ve diğer kullanıcılara görünmez hâle getirebilirsiniz. Profil devre dışı bırakıldığında:
+
+- Profiliniz diğer kullanıcılara görünmez.
+- Bu işlem, veri saklama ve yasal yükümlülüklere ilişkin saklama sürelerini kendiliğinden ortadan kaldırmaz (detay için Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi)).
+- Profilünüzü devre dışı bıraktıktan sonra, belirli bir süre içinde hesabınızı yeniden etkinleştirmeniz hâlinde, profiliniz ve hesabınıza bağlı veriler (mevzuatın izin verdiği ölçüde) geri getirilebilir. Bu sürenin sonunda, hesabın tamamen silinmesi söz konusu olabilir.
+
+#### 13.1.2 Hesabı silme (kalıcı kapatma)
+
+Hesabınızı uygulama içindeki **Ayarlar > Hesap > Hesabı Sil** (veya benzeri) adımlarını takip ederek silebilirsiniz. Hesap silme işlemi kural olarak **geri döndürülemez** olup, aşağıdaki sonuçları doğurabilir:
+
+- Profiliniz ve hesabınıza bağlı görünür alanlar diğer kullanıcılara kapatılır.
+- **Geçici Dondurma (Deactivation):** Silme talebinizle birlikte hesabınız **14 gün boyunca** geçici olarak dondurulur. Bu süre zarfında uygulamaya tekrar giriş yaparsanız, silme işlemini iptal ederek devam edebilir veya kalıcı silme sürecini manuel olarak tamamlayabilirsiniz. 14 günlük sürenin sonunda verileriniz kalıcı olarak silinir.
+- Hesabınıza bağlı eşleşme, mesajlaşma ve benzeri kayıtların uygulama içinden erişimi sona erebilir.
+- Uygulama içi sanal öğeler/avantajlar ve promosyon tanımları, hesapla birlikte sonlanabilir ve iade/bedel ödenmesi söz konusu olmayabilir (zorunlu yasal haklar saklıdır).
+
+#### 13.1.3 Uygulamayı cihazdan kaldırma
+
+Uygulamayı telefonunuzdan silmeniz, tek başına hesabınızı silmez. Hesabınızı kapatmak istiyorsanız uygulama içindeki ilgili adımları izlemeniz gerekir.
+
+#### 13.1.4 Abonelik iptali (Hesap silmeden bağımsız)
+
+Abonelik iptali, **hesap silmeden ayrı bir işlemdir**. Aboneliği iptal etmeniz profilinizi otomatik olarak kaldırmaz; aynı şekilde hesabınızı silmeniz de, aboneliğiniz mağaza üzerinden başlatıldıysa, mağaza tarafında otomatik yenilemeyi kendiliğinden durdurmayabilir.
+
+- Aboneliği **Apple App Store** veya **Google Play** üzerinden başlattıysanız, iptal/yenileme yönetimi ilgili mağaza hesabınız üzerinden yapılır.
+- Aboneliği iptal ettiğinizde, aksi belirtilmedikçe abonelik avantajları **dönem sonuna kadar** kullanılmaya devam edebilir.
+- Abonelik ve satın alma detayları için Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari) geçerlidir.
+
+Abonelik sözleşmelerinin feshi ve sonuçlarına ilişkin bilgilendirme, 6502 sayılı Kanun ve Abonelik Sözleşmeleri Yönetmeliği çerçevesinde yapılır.
+
+### 13.2 WIN Tarafından Sonlandırma
+
+WIN; işbu Koşulların, Topluluk Kuralları (https://legal.whoisnextapp.com/topluluk-ve-guvenlik/topluluk-kurallari)nın veya yürürlükteki mevzuatın ihlali, kötüye kullanım, güvenlik riski, dolandırıcılık şüphesi, çoklu hesap, reşit olmama şüphesi, üçüncü kişilerin haklarının ihlali, hukuka aykırı içerik, sistem güvenliğini tehlikeye atan davranışlar veya resmi makam talepleri gibi hallerde hesabınızı:
+
+- uyarı vererek,
+- belirli özellikleri kısıtlayarak,
+- geçici olarak askıya alarak,
+- kalıcı olarak kapatarak
+
+sonlandırabilir.
+
+Hesabın WIN tarafından kapatılması/askıya alınması hâlinde, ödenmiş bedellerin iadesi ancak **zorunlu tüketici mevzuatı** ve satın alma kanalının (Apple/Google vb.) iade politikaları çerçevesinde mümkündür. **Önemli:** Topluluk Kurallarının veya Kullanım Koşullarının ihlali (ban) nedeniyle hesabın kapatılması durumunda, mevcut dönem için ödenmiş bedellere ilişkin herhangi bir **ücret iadesi yapılmaz**.
+
+Güvenlik ve kötüye kullanımın önlenmesi amacıyla, hesabı kapatılan kullanıcıların yeni hesap açmasının engellenmesi için gerekli asgari veriler, Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi) kapsamında ve mevzuata uygun şekilde saklanabilir.
+
+### 13.3 Pasif (İnaktif) Hesapların Silinmesi
+
+WIN, veri minimizasyonu ve güvenlik amacıyla, uzun süre **aktif olmayan** hesapları silebilir. Bir hesabın uzun süre aktif olmadığı; hesabın uzun süre uygulamayı kullanmaması ve/veya uygulamanın sunucularla bağlantı kurmaması gibi göstergelerle değerlendirilebilir.
+
+Örneğin, **2 yıl** boyunca aktif olmayan hesaplar pasif sayılabilir. Bu kapsamdaki silme işlemlerinde, mümkün olduğu ölçüde kayıtlı e-posta adresinize **önceden bildirim** yapılır. Bildirim süresinde hesabınızı yeniden etkinleştirmeniz/uygulamaya giriş yapmanız hâlinde silme işlemi durdurulabilir. Silme işleminden sonra hesabı geri getirme imkânı bulunmayabilir.
+
+### 13.4 Fesih Sonrası (Sonuçlar ve Veri Saklama)
+
+Hesabın silinmesi veya kapatılması sonrasında:
+
+- Profiliniz ve hesabınıza bağlı görünür alanlar uygulama içinde kapatılır.
+- Hesabınıza bağlı dijital avantajlar ve sanal öğeler sona erebilir; bu durumda kural olarak ek bir tazminat ödenmez (zorunlu yasal haklar saklıdır).
+- Kişisel verilerin saklanması ve silinmesi süreçleri Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi) ve 6698 sayılı KVKK çerçevesinde yürütülür. KVKK uyarınca, işleme sebeplerinin ortadan kalkması hâlinde veriler silinir/yok edilir/anonim hâle getirilir; diğer kanunlardaki saklama hükümleri saklıdır.
+- 5651 sayılı Kanun uyarınca, yer sağlayıcıların hizmete ilişkin **trafik bilgilerini** belirli sürelerle saklama yükümlülüğü bulunabilir. Bu kapsamda trafik verileri, mevzuatta öngörülen sürelerle (5651 Md. 5/3: **bir yıldan az ve iki yıldan fazla olmamak üzere**) muhafaza edilebilir.
+
+### 13.5 Süreklilik (Survival)
+
+Hesabın sonlandırılması, niteliği gereği sona erdikten sonra da uygulanması gereken hükümleri ortadan kaldırmaz. Özellikle fikri mülkiyet/lisans, sorumluluk sınırı, tazminat, uyuşmazlık çözümü, uygulanacak hukuk ve yetkili mahkeme hükümleri yürürlükte kalır.
+
+---
+
+## Bölüm 14: Uyuşmazlık Çözümü ve Tahkim
+
+── Bu bölümün özeti ──
+
+Ciddi uyuşmazlıklarda 60 günlük yazılı ön görüşme, tüketici iseniz Tüketici
+  Hakem Heyeti ve Tüketici Mahkemesi yolları ile yetkili mahkeme ve icra
+  daireleri bu bölümde özetlenir.
+
+### 14.1 Ön Görüşme
+
+Ciddi uyuşmazlıklarda taraflar, dava veya tahkime başvurmadan önce en az **60 gün** süreyle yazılı olarak görüşme (ön görüşme) yapmayı kabul eder. Taraflar, uyuşmazlığı çözmek için **iyi niyetle müzakere** yürütmeyi kabul eder. Bildirim, **kayıtlı e-posta** üzerinden veya WIN’in uygulama/Site veya İletişim (https://www.whoisnextapp.com/#company) bölümünde belirttiği resmî **destek/hukuk e-posta adresine** yapılır. Bildirimde en az şunlar yer almalıdır: (1) adınız ve soyadınız, (2) hesabınızı tespit etmeye yarayan bilgiler (örn. kayıtlı e-posta, kullanıcı adı), (3) uyuşmazlığın kısa özeti, talep ettiğiniz sonuç ve varsa iddia ettiğiniz zararların hesaplanması. Ön görüşme sürecinde taraflarca yapılan teklif, vaat veya davranışlar, sonraki hukuki süreçte (dava veya tahkim) delil olarak ileri sürülemez; bu kural yasal zorunluluklara tabidir.
+
+### 14.2 Türkiye Uygulaması
+
+### Yazılı bildirim
+Uyuşmazlığı WIN'e yazılı bildirin; 60 günlük süre bu bildirimden itibaren işler.
+
+### Tüketici iseniz
+
+6502 sayılı Kanun uyarınca Tüketici Hakem Heyeti ve Tüketici Mahkemesi yolları açıktır; tüketici lehine tahkim zorunluluğu getirilemez.
+
+### Yetkili mahkeme
+
+Bu Koşullardan doğan uyuşmazlıklarda Türkiye Cumhuriyeti kanunları uygulanır. Yetkili mahkeme ve icra daireleri **İstanbul Anadolu Mahkemeleri ve İstanbul Anadolu İcra Daireleri**dir.
+
+### 14.3 AB / UK Kullanıcıları
+
+AB veya Birleşik Krallık’ta ikamet eden kullanıcılar için ODR (Online Dispute Resolution) platformu ve zorunlu tahkim kısıtlamaları ilgili mevzuata göre uygulanır.
+
+---
+
+## Bölüm 15: Uygulanacak Hukuk ve Yetkili Mahkeme
+
+── Bu bölümün özeti ──
+
+Türkiye Cumhuriyeti kanunları uygulanır; tüketici hakları saklıdır. Yetkili
+  mahkeme ve icra daireleri İstanbul Anadolu; tüketici davalarında tüketicinin
+  yerleşim yeri mahkemesi de yetkilidir.
+
+### 15.1 Uygulanacak Hukuk
+
+Bu Kullanım Koşulları ve Hizmetlere ilişkin uyuşmazlıklar **Türkiye Cumhuriyeti kanunlarına** tabidir. Özellikle aşağıdaki mevzuat uygulama alanına girer:
+
+- **6502 sayılı Tüketicinin Korunması Hakkında Kanun** – Tüketici işlemleri, haksız şartlar (Md. 5), Tüketici Hakem Heyeti (Md. 66-72) ve Tüketici Mahkemeleri (Md. 73) ile tüketici davalarında yetki (Md. 73/5: tüketicinin yerleşim yeri veya genel yetki kurallarına göre tüketici mahkemesi).
+- **6563 sayılı Elektronik Ticaretin Düzenlenmesi Hakkında Kanun (ETK)** – Elektronik ortamda kurulan sözleşmeler, bilgi verme yükümlülüğü (Md. 3) ve varsa alternatif uyuşmazlık çözüm mekanizmalarına ilişkin bilgilendirme.
+- **6100 sayılı Hukuk Muhakemeleri Kanunu (HMK)** – Tüketici mahkemelerinde görülecek davalar HMK’nın Altıncı Kısım hükümlerine göre yürütülür (6502 sayılı Kanun Md. 73/4).
+- **Mesafeli Sözleşmeler Yönetmeliği** – 6502 sayılı Kanunun 48 ve 84’üncü maddelerine dayanır; mesafeli satış ve dijital içerik sözleşmelerinde ön bilgilendirme ve sözleşme şartları.
+
+Tüketici sıfatı taşıyan kullanıcılar için 6502 sayılı Kanunla tanınan **Tüketici Hakem Heyeti** (belirli parasal sınır altındaki uyuşmazlıklarda başvuru zorunluluğu) ve **Tüketici Mahkemesi** yolları saklıdır; tüketici lehine tahkim zorunluluğu getirilemez.
+
+**Avrupa Birliği, Avrupa Ekonomik Alanı, Birleşik Krallık veya İsviçre’de ikamet eden kullanıcılar için:** Bu Koşullardaki uygulanacak hukuk ve yetkili mahkeme hükümleri, ilgili ülkelerdeki **zorunlu tüketici koruma kurallarını** ortadan kaldırmaz; yerel zorunlu haklar saklıdır. Uyuşmazlık çözümü için 14.3 AB / UK Kullanıcıları (#143-ab--uk-kullanıcıları) alt bölümüne bakınız.
+
+### 15.2 Yetkili Mahkeme ve İcra Daireleri
+
+Bu Koşullardan, Hizmetlerden veya sizin ile WIN arasındaki ilişkiden doğan ve 6502 sayılı Kanun kapsamında tüketici davası sayılmayan uyuşmazlıklarda **yetkili mahkeme ve icra daireleri İstanbul Anadolu Mahkemeleri ile İstanbul Anadolu İcra Daireleri**dir.
+
+Tüketici olarak 6502 sayılı Kanunun 73/5’inci maddesi uyarınca **tüketici davaları**, tüketicinin yerleşim yerinin bulunduğu yerdeki tüketici mahkemesinde de açılabilir; bu hak sözleşmeyle kısıtlanamaz.
+
+### 15.3 Dil
+
+Resmî ve esas metin **Türkçe**dir. 6502 sayılı Kanunun 4’üncü maddesi uyarınca sözleşmelerin en az 12 punto, anlaşılabilir bir dilde, açık, sade ve okunabilir şekilde düzenlenmesi esastır. Çeviri metinler yalnızca kolaylık amacıyla sunulur; uyuşmazlıkta **Türkçe metin** geçerlidir.
+
+---
+
+## Bölüm 16: Çeşitli Hükümler
+
+── Bu bölümün özeti ──
+
+Sözleşmenin bütünlüğü, ayrılabilirlik, feragat, devir, iletişim,
+  acente/ortaklık yok ve tüketici haklarına atıflar bu bölümde yer alır.
+
+### 16.1 Bütünlük (Entire Agreement)
+
+Bu Kullanım Koşulları, Gizlilik Politikası, KVKK Aydınlatma Metni, Topluluk Kuralları ve satın alma sırasında kabul ettiğiniz ek koşullarla birlikte, sizin ile WIN arasında Hizmetlere ilişkin **tam sözleşmeyi** oluşturur. Önceki sözlü veya yazılı anlaşmaların, mutabakatların veya beyanların yerini alır; bu hüküm, kanunla kısıtlanmadığı sürece **sahte beyan nedeniyle sorumluluk** iddialarını ortadan kaldırmaz.
+
+**Ayrılabilirlik (Severability):** Bu Koşullardan herhangi bir hükmün yetkili bir mahkeme veya idari merci tarafından geçersiz, hukuka aykırı veya uygulanamaz sayılması hâlinde, yalnızca o hüküm geçersiz sayılır; diğer hükümler, sözleşmenin genel dengesini ciddi biçimde bozmadığı sürece **tam geçerliliklerini korur**.
+
+### 16.2 Feragat (Waiver)
+
+WIN’in herhangi bir hakkını, yetkisini veya ayrıcalığını kullanmaması veya geciktirmesi, o hakka ilişkin **feragat** sayılmaz. Herhangi bir hakkın tek seferlik veya kısmi kullanımı, aynı hakkın veya başka hakların ileride kullanılmasını engellemez. Koşullardaki hiçbir hükmün ihlal edilmesine tek taraflı göz yumma, ilgili hükmün artık uygulanmayacağı anlamına gelmez.
+
+### 16.3 Devir (Assignment and Transfer)
+
+- **Kullanıcı:** Bu sözleşmeden doğan hak ve yükümlülüklerinizi üçüncü kişilere **devredemezsiniz**. Hesabınız **kişiye özeldir ve devredilemez**; yasada aksine bir hüküm yoksa, hesap sahibinin ölümü hâlinde hesaba ilişkin haklar ilgili miras hukuku kurallarına göre değerlendirilir.
+- **WIN:** WIN, işletmesini, varlıklarını veya bu Koşullar kapsamındaki hak ve yükümlülüklerini bir **birleşme, devralma veya devir** kapsamında, önceden bildirimde bulunarak devredebilir. Bu durumda sözleşmeniz, devralan taraf ile devam eder.
+- **Sözleşmenin devri (Contract transfer):** Haklı bir sebeple (ör. iş modelinin köklü değişimi, yasal zorunluluk) WIN, sözleşmenizi uygun gördüğü bir şirkete devretme hakkını saklı tutar; bu durumda size **makul bir süre önceden** yazılı bildirim yapılır. Bildirimde devralan şirket ve gerekçe belirtilir. Bu süre içinde sözleşmeyi feshetme hakkınız saklıdır; feshetmezseniz devir bildirimde belirtilen tarihte geçerli olur.
+
+### 16.4 İletişim (Contact)
+
+- **İşletmeci:** **WIN TECH Bilişim Organizasyon ve Ticaret A.Ş.** — **Ticaret Sicil No:** 1128235, **Mersis No:** 0811159971200001. **Adres:** Acıbadem Mah. Asafbey Sk. İmer Apt. No: 7 A, Kadıköy / İstanbul. **Vergi Dairesi:** Kadıköy Vergi Dairesi — **Vergi Kimlik No:** 8111599712. **Resmî web sitesi:** www.whoisnextapp.com (https://www.whoisnextapp.com/). **E-posta:** support@whoisnextapp.com.
+- **WIN’e ulaşım:** Soru, şikayet veya talepleriniz için uygulama içi **"Yardım"**, **"Şikayet Et"** veya **"İletişim"** bölümü, whoisnextapp.com (https://whoisnextapp.com) üzerindeki iletişim sayfası veya WIN tarafından açıklanan e-posta / posta adresi kullanılabilir.
+- **WIN’in size ulaşması:** WIN, sözleşmesel ve yasal bildirimleri **kayıtlı e-posta adresinize**, **uygulama içi bildirim** veya uygulama/Site üzerinden yayımlama yoluyla yapabilir. Sözleşmesel amaçlarla bu yöntemler **yazılı bildirim** yerine geçer; yasada öngörülen istisnalar saklıdır.
+- **Güncel bilgi:** İletişim bilgilerinizi (e-posta, telefon vb.) güncel tutmanız gerekmektedir. Güncel olmayan bilgi nedeniyle bildirimlerin size ulaşmamasından WIN sorumlu tutulamaz.
+
+### 16.5 Acente, Ortaklık ve Temsil Yok
+
+Bu Kullanım Koşulları, sizin ile WIN arasında **acente, ortaklık, ortak girişim, franchise veya işveren–işçi ilişkisi** oluşturmaz. Siz WIN adına taahhütte bulunamaz, WIN’i bağlayıcı beyanlar yapamazsınız.
+
+### 16.6 Başlıklar
+
+Bu metindeki bölüm ve alt başlıklar yalnızca **okunabilirlik ve kolaylık** amacıyla konulmuştur; sözleşmenin yorumlanmasında bağlayıcı hukuki anlam taşımaz.
+
+### 16.7 Elektronik İletişim ve Bildirimler
+
+Hizmeti kullanarak, WIN’den **elektronik yolla** (e-posta, uygulama içi mesaj, push bildirimi vb.) iletişim ve bildirim almayı kabul edersiniz. Sözleşmesel ve yasal gereklilikler açısından WIN’in size elektronik olarak ilettiği koşullar, bildirimler ve açıklamalar **yazılı** sayılır; yürürlükteki mevzuatta aksine bir hüküm yoksa geçerlidir.
+
+### 16.8 Tüketici Hakem Heyeti ve Dava Yolu
+
+6502 sayılı Tüketicinin Korunması Hakkında Kanun kapsamındaki **tüketici haklarınız** (Tüketici Hakem Heyeti ve Tüketici Mahkemesi yolları dahil) saklıdır. Yürürlükteki yasalarda öngörülmediği sürece WIN, tüketici hakem heyeti önündeki **zorunlu uyuşmazlık çözümüne katılmakla** yükümlü değildir; tüketici olarak doğrudan mahkeme yoluna başvurma hakkınız yasayla düzenlenir.
+
+---
+
+• Gizlilik ve Veri: Gizlilik Politikası ve KVKK Aydınlatma Metni — https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi
+• Topluluk ve Güvenlik: Topluluk Kuralları ve Güvenlik İpuçları — https://legal.whoisnextapp.com/topluluk-ve-guvenlik/topluluk-kurallari
+• Abonelik ve Ödeme: Abonelik ve Satın Alma Koşulları — https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari
+• Fikri Mülkiyet: Fikri Mülkiyet Politikası — https://legal.whoisnextapp.com/kurumsal-ve-yasal-uyumluluk/fikri-mulkiyet-politikasi
+
+
+========================================================================
+BÖLÜM II — UYGULAMA İÇİ LİSANS SÖZLEŞMESİ (EULA)
+========================================================================
+
+# Uygulama İçi Lisans Sözleşmesi (EULA)
+
+**Son güncelleme:** 13.02.2026 · **Sürüm:** 1.0
+
+Bu belge; **WIN** mobil uygulamasının ("**Uygulama**") **yazılım olarak lisanslanmasına** ilişkin kuralları düzenleyen **Son Kullanıcı Lisans Sözleşmesi**’dir ("**EULA**"). Bu EULA, Uygulama yazılımını **hangi şartlarda** kullanabileceğinizi, **hangi kısıtların** bulunduğunu, **fikri mülkiyet haklarını** ve **mağaza/işletim sistemi ek koşullarını** açıklar.
+
+Bu EULA, **Kullanım Koşulları (https://legal.whoisnextapp.com/sozlesmeler/kullanim-kosullari)**’nın ayrılmaz parçasıdır ve onunla birlikte uygulanır. Uygulama yazılımına (kurulum, cihaz kapsamı, teknik kısıtlar) ilişkin konularda bu EULA; diğer tüm konularda Kullanım Koşulları (https://legal.whoisnextapp.com/sozlesmeler/kullanim-kosullari) önceliklidir.
+
+── Önemli — Hızlı özet ──
+
+- **Uygulama satılmaz; lisanslanır:** Bu EULA size Uygulama üzerinde
+  **mülkiyet hakkı** vermez; yalnızca belirli şartlarla **sınırlı bir kullanım
+  lisansı** verir. - **Kişisel kullanım:** Lisans **kişisel**, **ticari
+  olmayan**, **devredilemez**, **alt lisanslanamaz** ve **geri alınabilir**
+  niteliktedir. - **Kısıtlar:** Tersine mühendislik, kaynak koda dönüştürme,
+  kopyalama/dağıtma, güvenlik önlemlerini aşma, otomasyon/bot kullanımı ve
+  Uygulama’yı amaç dışı kullanımlar **yasaktır**. - **Mağaza kuralları:**
+  Uygulama **Apple App Store** ve/veya **Google Play Store** üzerinden
+  indirildiğinde, ilgili mağazanın koşulları ayrıca uygulanır. - **Kişisel
+  veri:** Uygulama üzerinden bazı kişisel veriler işlenir; bu işleme
+  faaliyetleri bu EULA’da değil, Gizlilik
+  Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi) ve KVKK Aydınlatma
+  Metni (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) ile (gerekli yerlerde)
+  Açık Rıza Metinleri (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/acik-riza-metinleri) kapsamında
+  yürütülür.
+
+• Kullanım Koşulları: Platformu kullanma ve hesap/ içerik kuralları. — https://legal.whoisnextapp.com/sozlesmeler/kullanim-kosullari
+• Gizlilik Politikası: Veri işleme, saklama ve aktarım esasları. — https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi
+• KVKK Aydınlatma Metni: Veri sorumlusu ve KVKK kapsamındaki bilgilendirme. — https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni
+• Abonelik ve Satın Alma: Premium ve uygulama içi satın alımlar. — https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari
+
+---
+
+## Bölüm 1: Amaç, Kapsam ve Kabul
+
+── Bu bölümün özeti ──
+
+Bu bölümde EULA’nın amacı, hangi varlıkları kapsadığı, diğer dokümanlarla
+  ilişkisi ve nasıl kabul edildiği açıklanır. Uygulamayı indirerek/kurarak veya
+  kullanarak bu EULA’yı kabul etmiş sayılırsınız.
+
+Bu EULA, Uygulama’nın işletmecisi ve hak sahibi olan **WIN TECH Bilişim Organizasyon ve Ticaret A.Ş.** (Ticaret Sicil No: 1128235, Mersis No: 0811159971200001) ("**WIN TECH**" veya kısaca "**WIN**", "**işletmeci**", "**biz**") ile Uygulama’yı indirerek/kurarak/kullanarak bu EULA’yı kabul eden gerçek kişi ("**Kullanıcı**", "**siz**") arasında akdedilir.
+
+İşletmeciye ilişkin ticaret sicili, iletişim ve bildirim kanalları; Kullanım Koşulları (https://legal.whoisnextapp.com/sozlesmeler/kullanim-kosullari) içinde yer alan **İletişim** bölümünde yer alır. Resmî e-posta: support@whoisnextapp.com.
+
+### 1.2 Kapsam
+
+Bu EULA kapsamına aşağıdakiler (sınırlı olmamak üzere) dahildir:
+
+- Uygulama’nın kendisi (mobil uygulama dosyası, arayüz ve yazılım bileşenleri),
+- Uygulama güncellemeleri, yamalar, yükseltmeler ve yeni sürümler,
+- Uygulama’ya gömülü veya Uygulama ile birlikte çalışan yazılım/SDK bileşenleri,
+- Uygulama’nın kullanımı için gerekli erişim anahtarları, teknik doğrulamalar ve lisans kontrolleri,
+- Uygulama üzerinden sunulan yazılımsal özellikler (ör. kullanıcı arayüzleri, filtreler, doğrulama akışları).
+
+Bu EULA; Uygulama üzerinden sunulan hizmetin genel işleyişi, hesap/üyelik kuralları, topluluk kuralları, içerik ve moderasyon, sorumluluk sınırları, uyuşmazlık çözümü gibi konularda **Kullanım Koşulları (https://legal.whoisnextapp.com/sozlesmeler/kullanim-kosullari)** ile birlikte değerlendirilir.
+
+### 1.3 Kabul ve yürürlük
+
+Bu EULA:
+
+- Uygulama’yı indirmeniz, kurmanız veya kullanmanız,
+- Uygulama içinde EULA/Koşullar ekranında "kabul ediyorum" benzeri bir onay vermeniz,
+- Uygulama’yı kullanmaya devam etmeniz
+
+ile yürürlüğe girer ve sizin için bağlayıcı olur.
+
+── Kabul etmiyorsanız kullanmayın ──
+
+Bu EULA’yı kabul etmiyorsanız Uygulama’yı indirmeyin, kurmayın ve kullanmayın;
+  mevcutsa Uygulama’yı cihazınızdan kaldırın.
+
+### 1.4 Diğer metinlerle ilişki ve öncelik
+
+Bu EULA; özellikle 5846 sayılı **Fikir ve Sanat Eserleri Kanunu (FSEK)** ve 6769 sayılı **Sınai Mülkiyet Kanunu (SMK)** kapsamında Uygulama yazılımının telif/marka korunması, ayrıca 6502 sayılı Kanun ve 6563 sayılı Kanun gibi tüketici ve elektronik işlem çerçeveleri dikkate alınarak hazırlanmıştır.
+
+Bu EULA aşağıdaki metinlerle birlikte uygulanır:
+
+- Kullanım Koşulları (https://legal.whoisnextapp.com/sozlesmeler/kullanim-kosullari)
+- Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi)
+- KVKK Aydınlatma Metni (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni)
+- Biyometrik Veri Aydınlatma ve Rıza Metni (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza) (selfie/yüz doğrulama varsa)
+- Topluluk Kuralları (https://legal.whoisnextapp.com/topluluk-ve-guvenlik/topluluk-kurallari)
+- Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari) (premium/uygulama içi satın alımlar için)
+
+Metinler arasında çelişki olması hâlinde:
+
+- **Uygulama yazılımının lisanslanması** ile **cihaz/kurulum/teknik kısıtlar** konusunda bu EULA,
+- diğer tüm konularda Kullanım Koşulları (https://legal.whoisnextapp.com/sozlesmeler/kullanim-kosullari)
+
+öncelikle uygulanır. Zorunlu mevzuat ve mağaza kuralları saklıdır.
+
+### 1.5 Değişiklikler
+
+WIN, mevzuat değişiklikleri, güvenlik ihtiyaçları, ürün geliştirme veya mağaza gereklilikleri sebebiyle bu EULA’yı güncelleyebilir. Güncel metin, uygulama içi "Yasal" alanında ve whoisnextapp.com (https://whoisnextapp.com) üzerinde yayımlanabilir.
+
+Değişiklikten sonra Uygulama’yı kullanmaya devam etmeniz, güncellenmiş EULA’yı kabul ettiğiniz anlamına gelir. Önemli değişikliklerde, mümkün olduğu ölçüde uygulama içi bildirim ve/veya e-posta ile bilgilendirme yapılabilir.
+
+---
+
+## Bölüm 2: Tanımlar
+
+── Bu bölümün özeti ──
+
+Bu bölümde geçen terimler, EULA’nın tamamında aynı anlamda kullanılır.
+
+| Terim                   | Açıklama                                                                                                                   |
+| **Uygulama**            | WIN mobil uygulaması ve bu uygulamanın yazılım bileşenleri.                                                                |
+| **Hizmetler**           | Uygulama ve WIN tarafından sunulan ilgili çevrimiçi hizmetler (detaylar Kullanım Koşulları’nda).                           |
+| **Mağaza**              | Apple App Store ve/veya Google Play Store gibi Uygulama’nın indirildiği üçüncü taraf uygulama mağazası.                    |
+| **Cihaz**               | Uygulama’yı kurduğunuz iOS/Android mobil cihaz veya tablet.                                                                |
+| **Hesap**               | Uygulama içinde size tahsis edilen kullanıcı hesabı (örn. Google Sign-In ile).                                             |
+| **Platform İçeriği**    | Uygulama yazılımı, arayüz, tasarım, marka, logo, veritabanı ve WIN’e ait/ lisanslı diğer içerikler.                        |
+| **Kullanıcı İçeriği**   | Profil bilgileri, fotoğraflar, mesajlar ve benzeri şekilde sizin sağladığınız içerikler (detaylar Kullanım Koşulları’nda). |
+| **Güncelleme**          | Uygulama’nın yeni sürümü, yama, hata düzeltmesi veya güvenlik güncellemesi.                                                |
+| **Açık Kaynak Bileşen** | Uygulama içinde kullanılabilen ve kendi lisans koşullarına tabi olan açık kaynak yazılımlar.                               |
+
+---
+
+## Bölüm 3: Lisansın Niteliği ve Kapsamı
+
+── Bu bölümün özeti ──
+
+Bu bölüm, WIN’in size hangi kapsamda lisans verdiğini ve lisansın temel
+  özelliklerini açıklar. Lisans, yalnızca kişisel kullanım içindir ve ihlal
+  hâlinde otomatik olarak sona erebilir.
+
+### 3.1 Lisansın verilmesi (WIN → kullanıcı)
+
+Bu EULA’ya ve Kullanım Koşulları (https://legal.whoisnextapp.com/sozlesmeler/kullanim-kosullari)’na uymanız şartıyla WIN, size Uygulama’yı **WIN’in amaçladığı şekilde** kullanmanız için **kişisel**, **dünya çapında**, **telifsiz**, **devredilemez**, **gayri-münhasır**, **geri alınabilir** ve **alt lisanslanamaz** bir lisans verir.
+
+Bu lisans:
+
+- Uygulama’yı cihazınıza **indirmeniz**, **kurmanız** ve **çalıştırmanız**,
+- Uygulama’nın sunduğu özelliklerden **yararlanmanız**,
+- Uygulama’yı yalnızca **kişisel ve ticari olmayan amaçlarla** kullanmanız
+
+ile sınırlıdır.
+
+### 3.2 Mülkiyet yok; hakların saklı tutulması
+
+Uygulama üzerindeki tüm fikri mülkiyet hakları WIN’e ve/veya WIN’in lisans verenlerine aittir. Bu EULA kapsamında size verilen hak, bir **kullanım lisansı**dır. Bu EULA:
+
+- Uygulama’nın **satışı**,
+- Uygulama üzerinde **mülkiyet devri**,
+- kaynak kod, algoritma veya teknik tasarımların **devri**
+
+olarak yorumlanamaz.
+
+### 3.3 Cihaz ve platform kapsamı
+
+Uygulama’nın hangi cihazlarda ve hangi mağaza koşullarıyla kullanılabileceği, indirilen mağazaya göre değişebilir. Aşağıdaki açıklamalar, genel çerçeveyi belirler; mağaza koşulları ve cihaz üreticisi koşulları saklıdır.
+
+── iOS / Apple App Store ──
+
+Uygulama, Apple App Store üzerinden indirildiyse:
+    - Uygulama’yı, App Store koşullarının izin verdiği ölçüde,
+        Apple marka ve kontrolünüzdeki cihazlarda
+        kullanabilirsiniz.
+      
+- Güvenlik ve lisans yönetimi gereği, hesabınızla **aynı anda yalnızca tek
+        bir cihazda** aktif oturum açabilirsiniz. Yeni bir cihazda oturum
+        açılması, önceki cihazdaki oturumun sonlanmasına yol açabilir.
+      
+- App Store’un dijital hak yönetimi (DRM) ve teknik kısıtları geçerlidir.
+
+── Android / Google Play ──
+
+Uygulama, Google Play Store üzerinden indirildiyse:
+    - Uygulama’yı, Google Play koşullarının izin verdiği ölçüde,
+        kontrolünüzdeki ve desteklenen Android cihazlarda kullanabilirsiniz.
+      
+- Güvenlik ve lisans yönetimi gereği, hesabınızla **aynı anda yalnızca tek
+        bir cihazda** aktif oturum açabilirsiniz. Yeni bir cihazda oturum
+        açılması, önceki cihazdaki oturumun sonlanmasına yol açabilir.
+      
+- Google Play’in teknik/DRM kısıtları ve cihaz uyumluluğu kuralları
+        geçerlidir.
+
+── Web / Site ──
+
+WIN’e web sitesi üzerinden erişim sağlanıyorsa:
+    - WIN, şu aşamada yalnızca mobil uygulamalar (iOS/Android) üzerinden
+        hizmet vermektedir; web sitesi (`whoisnextapp.com`) üzerinden doğrudan
+        uygulamaya/mesajlaşmaya erişim (web-app) şuan için sunulmamaktadır ancak
+        gelecekte eklenebilir.
+      
+- Web sitesi kullanımı esasen
+        Kullanım Koşulları (https://legal.whoisnextapp.com/sozlesmeler/kullanim-kosullari) ile
+        düzenlenir.
+
+### 3.4 Lisansın devredilemezliği
+
+Bu EULA kapsamındaki lisansı; üçüncü kişilere **devredemez**, **kiralayamaz**, **ödünç veremez**, **satamaz**, **alt lisanslayamaz** veya herhangi bir şekilde üçüncü kişilerin Uygulama’yı sizin yerinize kullanmasına izin veremezsiniz.
+
+### 3.5 Lisansın süresi ve otomatik sona erme
+
+Lisans, bu EULA’ya ve Kullanım Koşulları (https://legal.whoisnextapp.com/sozlesmeler/kullanim-kosullari)’na uyduğunuz sürece yürürlükte kalır. İhlal hâlinde:
+
+- lisansınız **otomatik olarak sona erer**,
+- Uygulama’yı kullanmayı derhal bırakmanız,
+- Uygulama’yı cihazınızdan kaldırmanız
+
+gerekir. Hesabın askıya alınması veya kapatılması hâlinde, lisans ve erişim yetkiniz ayrıca sona erebilir (bkz. Kullanım Koşulları (https://legal.whoisnextapp.com/sozlesmeler/kullanim-kosullari)).
+
+---
+
+## Bölüm 4: Kullanım Kısıtları ve Yasaklar
+
+── Bu bölümün özeti ──
+
+Bu bölüm, lisansın sınırlarını ve Uygulama’yı kullanırken yapmamanız
+  gerekenleri listeler. Teknik kısıtları aşmaya yönelik girişimler, hesabın
+  kapatılmasına ve hukuki sorumluluğa yol açabilir.
+
+### 4.1 Genel kısıtlar
+
+Uygulama’yı:
+
+- ticari amaçlarla (reklam, pazarlama, işe alım, veri toplama, satış vb.),
+- WIN’in rakibi olacak ürün/hizmet geliştirmek için,
+- üçüncü kişilerin haklarını ihlal edecek şekilde,
+- yürürlükteki mevzuata aykırı şekilde
+
+kullanamazsınız.
+
+### 4.2 Teknik kısıtlar (tersine mühendislik ve güvenlik)
+
+── Kesinlikle yasak ──
+
+Uygulama’nın kaynak koduna erişmeye çalışmak, tersine mühendislik yapmak,
+  güvenlik önlemlerini aşmak veya Uygulama’yı manipüle etmek yasaktır.
+
+Özellikle (sınırlı olmamak üzere) şunları yapmamayı kabul edersiniz:
+
+- Uygulama’yı veya herhangi bir kısmını kopyalamak, çoğaltmak, dağıtmak, yayımlamak,
+- Uygulama üzerinde tersine mühendislik (reverse engineering), decompile, disassemble işlemleri yapmak,
+- kaynak koda dönüştürmek, kaynak kodu elde etmeye çalışmak,
+- güvenlik/kopya koruma/DRM, lisans doğrulama veya benzeri teknik önlemleri devre dışı bırakmak veya aşmak,
+- Uygulama’nın işleyişine müdahale eden, bozucu veya zarar verici kod/araçlar (bot, script, emulator üzerinden hile, otomasyon aracı vb.) kullanmak,
+- Uygulama üzerinden veri çekme (scraping), dizinleme (indexing), otomatik tarama yapmak,
+- Uygulama’nın API’lerine veya teknik arayüzlerine yazılı izin olmaksızın erişmek veya bunları yayınlamak.
+
+### 4.3 Hesap ve erişim güvenliği ile ilgili yasaklar
+
+- Hesabınızı veya cihazınızı üçüncü kişilere kullandırmak,
+- başkasının hesabını kullanmak,
+- Uygulama’ya yetkisiz erişim sağlamaya çalışmak,
+- güvenlik açıklarını araştırmak/test etmek (yetkisiz pentest),
+- başka kullanıcıların mahremiyetini ihlal edecek şekilde içerik toplamak veya paylaşmak
+
+yasaktır.
+
+---
+
+## Bölüm 5: Fikri Mülkiyet, İçerik ve Marka Hakları
+
+── Bu bölümün özeti ──
+
+Uygulama yazılımı ve Platform İçeriği WIN’e aittir veya WIN tarafından
+  lisanslanmıştır. Kullanıcı İçeriği için haklar ve lisanslar esasen Kullanım
+  Koşulları’nda düzenlenir.
+
+### 5.1 Platform İçeriği (Uygulama yazılımı ve arayüz)
+
+Uygulama; yazılım kodu, arayüz tasarımları, metinler, görseller, veritabanı yapıları ve benzeri unsurlar bakımından 5846 sayılı **FSEK** ve ilgili mevzuat kapsamında korunur. Uygulama üzerinde yer alan marka, logo ve ayırt edici işaretler ise 6769 sayılı **SMK** ve ilgili mevzuat kapsamında korunur.
+
+WIN’in açık yazılı izni olmaksızın Platform İçeriği’nin:
+
+- kısmen veya tamamen çoğaltılması,
+- değiştirilmesi,
+- kamuya iletilmesi,
+- ticari amaçla kullanılması
+
+yasaktır.
+
+### 5.2 Kullanıcı İçeriği (profil, fotoğraf, mesaj vb.)
+
+Kullanıcı İçeriği üzerindeki haklarınız ve WIN’e verdiğiniz lisanslar, **Kullanım Koşulları (https://legal.whoisnextapp.com/sozlesmeler/kullanim-kosullari)** içinde özellikle **"İçerik ve Fikri Mülkiyet"** bölümünde düzenlenir. Bu EULA, Kullanıcı İçeriği lisanslarını tekrar etmeksizin şu ilkeyi teyit eder:
+
+- İçeriğinizi yüklerken üçüncü kişilerin haklarını ihlal etmemek ve gerekli izinlere sahip olmak sizin sorumluluğunuzdadır.
+- WIN, Hizmetleri sunabilmek için İçeriğiniz üzerinde belirli bir kullanım lisansı talep eder; kapsam ve sınırlar Kullanım Koşulları’nda yazılıdır.
+
+### 5.3 İhlal bildirimleri (telif/marka)
+
+Telif veya marka ihlali bildirimleri ve "uyar-kaldır" süreçleri için:
+
+- Kullanım Koşulları (https://legal.whoisnextapp.com/sozlesmeler/kullanim-kosullari) içindeki ilgili hükümler ve
+- Fikri Mülkiyet Politikası (https://legal.whoisnextapp.com/kurumsal-ve-yasal-uyumluluk/fikri-mulkiyet-politikasi)
+
+geçerlidir. Bildirimde bulunmak için Fikri Mülkiyet (Telif) İhlal Formu (https://legal.whoisnextapp.com/basvuru-formlari/fikri-mulkiyet-telif-ihlal-formu) kullanılabilir.
+
+---
+
+## Bölüm 6: Üçüncü Taraf Yazılımlar, Açık Kaynak ve Entegrasyonlar
+
+── Bu bölümün özeti ──
+
+Uygulama, üçüncü taraf hizmetler ve açık kaynak bileşenler içerebilir. Bu
+  bileşenler, kendi lisans/koşullarına tabi olabilir ve çelişki halinde ilgili
+  üçüncü taraf koşulları uygulanabilir.
+
+### 6.1 Üçüncü taraf hizmetler ve SDK'lar
+
+Uygulama; kimlik doğrulama, bildirim, barındırma, analitik veya güvenlik amaçlarıyla üçüncü taraf hizmet sağlayıcılarını ve yazılım geliştirme kitlerini (SDK) kullanabilir. Uygulama içinde kullanılan temel üçüncü taraf servisleri şunlardır:
+
+- **Google Firebase:** Veri depolama, bildirim yönetimi, analitik ve hata loglama.
+- **Google Gemini 2.5 Flash:** Profil fotoğrafı ve selfie doğrulama (poz ve tutarlılık).
+- **Google Cloud Vision:** Uygunsuz içerik tespiti (Safe Search).
+- **MeiliSearch:** Uygulama içi arama ve filtreleme optimizasyonu.
+- **Twilio:** SMS ve e-posta doğrulama süreçleri.
+- **Google Cloud Vision & Run:** İçerik denetimi ve teknik poz doğrulama süreçleri.
+
+Bu tür hizmetlerin kullanımına ilişkin detaylar ve veri işleme rolleri, Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi) kapsamında açıklanır. WIN, üçüncü taraf sağlayıcıların kendi sistem/koşullarından kaynaklanan kesinti veya uyumsuzluklardan, yürürlükteki mevzuatın izin verdiği ölçüde sorumlu değildir.
+
+### 6.2 Açık kaynak bileşenler
+
+Uygulama içerisinde açık kaynak yazılımlar bulunabilir. Bu bileşenler, kendi lisans koşullarına tabidir. Açık kaynak lisansları ile bu EULA arasında çelişki olması hâlinde, çelişen kısım bakımından ilgili açık kaynak lisansı uygulanır.
+
+── Geliştirme notu ──
+
+Uygulama içinde veya web sitesinde "Açık Kaynak Lisansları" sayfası/ekranı
+  sunulması önerilir. Bu ihtiyaç, `gelistirme_notlari.md` içinde ayrıca takip
+  edilmektedir.
+
+---
+
+## Bölüm 7: Güncellemeler, Sürüm Yönetimi ve Destek
+
+── Bu bölümün özeti ──
+
+Uygulama güncellenebilir; bazı güncellemeler zorunlu olabilir. Eski sürümler
+  güvenlik riski doğurabilir ve çalışmayabilir.
+
+### 7.1 Güncellemeler ve yeni sürümler
+
+WIN, Uygulama’yı güvenlik, uyumluluk ve işlevsellik amaçlarıyla güncelleyebilir. Güncellemeler:
+
+- hata düzeltmeleri,
+- güvenlik yamaları,
+- performans iyileştirmeleri,
+- yeni özellikler
+
+şeklinde olabilir.
+
+### 7.2 Otomatik güncellemeler ve mağaza kontrolleri
+
+Mağaza ayarlarınıza ve cihaz ayarlarınıza bağlı olarak Uygulama güncellemeleri otomatik indirilebilir/kurulabilir. Uygulama’nın güncel sürümünü kullanmak sizin sorumluluğunuzdadır. Güncellemeleri kapatmanız veya geciktirmeniz hâlinde bazı özellikler çalışmayabilir.
+
+### 7.3 Destek ve iletişim
+
+Uygulama’ya ilişkin teknik destek, bakım ve lisans talepleriniz için resmi iletişim kanalımız olan **support@whoisnextapp.com** e-posta adresini kullanabilirsiniz. Ayrıca uygulama içi "Yardım" alanı ve whoisnextapp.com (https://whoisnextapp.com) üzerindeki formlar üzerinden de destek sağlanabilir.
+
+---
+
+## Bölüm 8: Cihaz İzinleri, Teknik Gereksinimler ve Güvenlik
+
+── Bu bölümün özeti ──
+
+Uygulama’nın bazı özellikleri (konum, kamera, mikrofon vb.) cihaz izinlerine
+  bağlıdır. İzin vermemeniz veya izni geri almanız hâlinde ilgili özellikler
+  çalışmayabilir.
+
+### 8.1 Minimum sistem gereksinimleri
+
+Uygulama’nın desteklediği minimum işletim sistemi sürümleri ve cihaz gereksinimleri, ilgili mağaza sayfasında ve/veya uygulama içi bilgilendirmelerde belirtilir. Desteklenmeyen cihaz veya işletim sistemi sürümlerinde Uygulama’nın çalışmaması hâlinde WIN sorumlu değildir.
+
+### 8.2 İzinler (konum, kamera, mikrofon, bildirim)
+
+Uygulama, işlevleri gereği aşağıdaki izinleri isteyebilir:
+
+| İzin            | Neden gerekli olabilir?                   | İlgili hukuki metin                                                                                                                      |
+| **Konum**       | Konum bazlı öneriler/eşleşmeler           | Açık Rıza Metinleri (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/acik-riza-metinleri), Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi) |
+| **Kamera**      | Profil fotoğrafı çekimi, selfie doğrulama | Biyometrik Veri Aydınlatma ve Rıza (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza)                                           |
+| **Mikrofon**    | Doğrulama akışının teknik gereksinimleri  | Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi)                                                                      |
+| **Bildirimler** | Uygulama içi bildirim/push                | Açık Rıza Metinleri (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/acik-riza-metinleri)                                                                      |
+
+### 8.3 Selfie/yüz doğrulama ve biyometrik risk
+
+Uygulama’da selfie/yüz doğrulama gibi özellikler bulunması hâlinde, bu süreçler kişisel veri ve hatta özel nitelikli veri değerlendirmesine konu olabilir. Bu nedenle, ilgili aydınlatma ve açık rıza süreçleri:
+
+- KVKK Aydınlatma Metni (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni),
+- Biyometrik Veri Aydınlatma ve Rıza Metni (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza),
+- Açık Rıza Metinleri (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/acik-riza-metinleri)
+
+ile düzenlenir.
+
+### 8.4 Kullanıcının güvenlik sorumluluğu
+
+Hesap bilgilerinizin ve cihaz güvenliğinizin sağlanması, yetkisiz erişimlerin önlenmesi ve cihazınızın güvenliğinin korunması bakımından gerekli önlemleri almak sizin sorumluluğunuzdadır. Hesabınız üzerinden yapılan işlemler, kural olarak sizin işleminiz sayılır (detaylar Kullanım Koşulları (https://legal.whoisnextapp.com/sozlesmeler/kullanim-kosullari)).
+
+---
+
+## Bölüm 9: Garanti Reddi ve Sorumluluk
+
+── Bu bölümün özeti ──
+
+Uygulama “olduğu gibi” sunulur; kesintisiz veya hatasız çalışacağı garanti
+  edilmez. Zorunlu tüketici ve mevzuat haklarınız saklıdır.
+
+Uygulama ve Platform İçeriği, yürürlükteki mevzuatın izin verdiği ölçüde "**olduğu gibi**" ve "**mevcut olduğu şekilde**" sunulur. WIN:
+
+- Uygulama’nın kesintisiz veya hatasız çalışacağını,
+- her cihaz/işletim sistemi kombinasyonu ile uyumlu olacağını,
+- eşleşme/uyumluluk sonuçlarının belirli bir başarı sağlayacağını
+
+taahhüt etmez.
+
+Bu bölüm, zorunlu tüketici haklarınızı ortadan kaldırmaz. Uygulamaya ve Hizmetlere ilişkin sorumluluk redleri ve sorumluluk sınırları ayrıca Kullanım Koşulları (https://legal.whoisnextapp.com/sozlesmeler/kullanim-kosullari) içinde düzenlenmiştir.
+
+---
+
+## Bölüm 10: Fesih ve Lisansın Sona Ermesi
+
+── Bu bölümün özeti ──
+
+EULA ihlali, lisansın sona ermesine ve erişimin kapatılmasına yol açabilir.
+  Uygulamayı silmek, tek başına hesabınızı silmeyebilir.
+
+### 10.1 Kullanıcının feshi (Uygulamayı kaldırma)
+
+Uygulama’yı cihazınızdan kaldırabilirsiniz. Ancak Uygulama’yı kaldırmanız, **hesabınızı otomatik olarak silmeyebilir**. Hesap silme ve veri saklama süreçleri Kullanım Koşulları (https://legal.whoisnextapp.com/sozlesmeler/kullanim-kosullari) ve Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi) kapsamında yürütülür.
+
+### 10.2 WIN tarafından fesih / erişim kısıtı
+
+WIN, bu EULA veya Kullanım Koşulları (https://legal.whoisnextapp.com/sozlesmeler/kullanim-kosullari) ihlali, güvenlik riski, kötüye kullanım şüphesi veya mevzuat gereklilikleri hâlinde hesabınızı askıya alabilir, kısıtlayabilir veya kapatabilir. Bu durumda lisansınız sona erer.
+
+### 10.3 Sona ermenin sonuçları
+
+Lisans sona erdiğinde:
+
+- Uygulama’yı kullanmayı derhal bırakmalı,
+- Uygulama’yı cihazınızdan kaldırmalı,
+- WIN’in Platform İçeriği üzerindeki tüm haklarını ihlal etmeyecek şekilde hareket etmelisiniz.
+
+### 10.4 Süreklilik
+
+Fesih veya sona erme; niteliği gereği sona erdikten sonra da uygulanması gereken hükümlerin uygulanmasını engellemez. Özellikle fikri mülkiyet, kısıtlar, sorumluluk redleri ve uyuşmazlık hükümleri yürürlükte kalır.
+
+---
+
+## Bölüm 11: Mağaza/Platforma Özel Hükümler (Apple & Google)
+
+── Bu bölümün özeti ──
+
+Uygulama’yı Apple App Store veya Google Play Store üzerinden indiriyorsanız,
+  ilgili mağazanın koşulları uygulanır. Mağaza sağlayıcıları, bu EULA’nın tarafı
+  değildir (aşağıdaki özel hükümler saklı kalmak kaydıyla).
+
+── Apple App Store (iOS) ──
+
+**iOS kullanıcıları için:** Uygulama Apple App Store üzerinden indirildiyse,
+    bu EULA, siz ve WIN arasındadır; **Apple** bu EULA’nın tarafı değildir.
+    - Mağaza koşulları: App Store kullanım koşulları ve
+        Apple’ın ilgili politika/kuralları ayrıca uygulanır. Bu EULA, mağaza
+        koşullarını bertaraf edecek şekilde yorumlanamaz.
+      
+- Bakım ve destek: Uygulama’ya ilişkin bakım ve destek
+        yükümlülüğü, yürürlükteki mevzuatın izin verdiği ölçüde WIN’e aittir;
+        Apple’ın bu konuda yükümlülüğü yoktur.
+      
+- Garanti ve talepler: Apple, Uygulama’ya ilişkin garanti
+        taahhüdü vermez; ürün sorumluluğu, tüketici talepleri ve benzeri
+        iddialar bakımından (zorunlu haller saklı kalmak kaydıyla) WIN
+        sorumludur.
+      
+- Fikri mülkiyet iddiaları: Uygulama’nın üçüncü kişilerin
+        fikri mülkiyet haklarını ihlal ettiği iddialarında (zorunlu haller saklı
+        kalmak kaydıyla) değerlendirme ve süreçler WIN tarafından yürütülür.
+      
+- Üçüncü kişi yararlanıcı: Uygulama Apple App Store
+        üzerinden indirildiyse Apple ve Apple’ın bağlı şirketleri, bu EULA’nın
+        ilgili hükümleri bakımından üçüncü kişi yararlanıcıdır ve bu EULA’yı
+        size karşı ileri sürebilir.
+
+── Google Play Store (Android) ──
+
+**Android kullanıcıları için:** Uygulama Google Play Store üzerinden
+    indirildiyse, bu EULA, siz ve WIN arasındadır; **Google** bu EULA’nın tarafı
+    değildir.
+    - Mağaza koşulları: Google Play koşulları ve Google’ın
+        ilgili politika/kuralları ayrıca uygulanır. Bu EULA, mağaza koşullarını
+        bertaraf edecek şekilde yorumlanamaz.
+      
+- Ödeme ve abonelik: Satın alma/abonelik işlemleri,
+        ilgili mağaza hesabınız üzerinden yürütülür (detaylar:
+        Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari)
+        ).
+
+---
+
+## Bölüm 12: Uygulanacak Hukuk ve Çeşitli Hükümler
+
+── Bu bölümün özeti ──
+
+Bu EULA’ya uygulanacak hukuk ve uyuşmazlık çözümü esasları, genel olarak
+  Kullanım Koşulları’na atıfla belirlenir. Zorunlu tüketici haklarınız saklıdır.
+
+### 12.1 Uygulanacak hukuk ve yetki
+
+Bu EULA’nın yorumlanması ve uygulanmasında, zorunlu mevzuat hükümleri saklı kalmak kaydıyla Türk Hukuku uygulanır. Uyuşmazlıkların çözümü, yetkili mahkeme ve tüketici yolları gibi hükümler için Kullanım Koşulları (https://legal.whoisnextapp.com/sozlesmeler/kullanim-kosullari) içindeki ilgili bölümler uygulanır.
+
+### 12.2 Bölünebilirlik
+
+Bu EULA hükümlerinden herhangi birinin geçersiz veya uygulanamaz sayılması, diğer hükümlerin geçerliliğini etkilemez.
+
+### 12.3 Hakların devri
+
+WIN, bu EULA kapsamındaki hak ve yükümlülüklerini, mevzuata uygun şekilde ve gerekli bilgilendirmeleri yapmak kaydıyla devredebilir. Kullanıcı olarak siz, bu EULA kapsamındaki lisansı devredemezsiniz.
+
+### 12.4 İletişim
+
+Bu EULA ile ilgili resmi bildirim ve talepleriniz için **support@whoisnextapp.com** adresi veya Kullanım Koşulları (https://legal.whoisnextapp.com/sozlesmeler/kullanim-kosullari) içindeki iletişim kanalları kullanılabilir.
