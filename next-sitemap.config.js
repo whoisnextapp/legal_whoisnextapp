@@ -25,28 +25,45 @@ module.exports = {
   transform: async (config, path) => {
     const normalized = path.startsWith('/') ? path : `/${path}`
 
-    if (normalized.endsWith('.en')) {
-      return null
-    }
-
-    if (!normalized.endsWith('.tr')) {
-      return null
-    }
-
-    const canonicalPath = normalized.replace(/\.tr$/, '')
-    /** next-sitemap, href'i site kökü kabul edip `loc` ile birleştirir; tam sayfa URL'si verme. */
     const root = String(config.siteUrl).replace(/\/$/, '')
 
-    return {
-      loc: canonicalPath,
+    /**
+     * `loc` bazen `/en/...` olduğundan, next-sitemap’in kök+loc birleştirmesi tr/en hreflang’i bozuyor.
+     * Tüm alternatifleri tam URL + hrefIsAbsolute ile veriyoruz.
+     */
+    const hreflangAlternatesFor = (canonicalPath) => {
+      const trUrl = `${root}${canonicalPath}`
+      const enUrl = `${root}/en${canonicalPath}`
+      return [
+        { href: trUrl, hreflang: 'tr', hrefIsAbsolute: true },
+        { href: enUrl, hreflang: 'en', hrefIsAbsolute: true },
+        { href: trUrl, hreflang: 'x-default', hrefIsAbsolute: true },
+      ]
+    }
+
+    const commonFields = (canonicalPath) => ({
       changefreq: config.changefreq,
       priority: config.priority,
       lastmod: config.autoLastmod ? new Date().toISOString() : undefined,
-      alternateRefs: [
-        { href: root, hreflang: 'tr' },
-        { href: `${root}/en`, hreflang: 'en' },
-        { href: root, hreflang: 'x-default' },
-      ],
+      alternateRefs: hreflangAlternatesFor(canonicalPath),
+    })
+
+    if (normalized.endsWith('.en')) {
+      const canonicalPath = normalized.replace(/\.en$/, '')
+      return {
+        ...commonFields(canonicalPath),
+        loc: `/en${canonicalPath}`,
+      }
     }
+
+    if (normalized.endsWith('.tr')) {
+      const canonicalPath = normalized.replace(/\.tr$/, '')
+      return {
+        ...commonFields(canonicalPath),
+        loc: canonicalPath,
+      }
+    }
+
+    return null
   },
 }
