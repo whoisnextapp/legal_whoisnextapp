@@ -1,9 +1,542 @@
-# Security Vulnerability Disclosure
+# Vulnerability Disclosure Policy
 
-import { Callout } from "nextra/components";
+import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
-<Callout type="info">
-  The English translation of this document is currently being prepared. Please check back soon.
+**Last updated:** 17.02.2026 · **Version:** 1.0
+
+This policy explains how **security vulnerabilities** and **security weaknesses** identified on the **WIN** platform ("**Platform**") or on infrastructures connected to the Platform should be reported, how these reports will be assessed and remediated, within which boundaries security researchers may conduct testing, and the core obligations of the parties.
+
+This text is prepared not for user complaints, content violation notices, or general support requests, but for **technical security vulnerabilities** (e.g., unauthorized access, data exposure, account takeover, privilege escalation, business logic weaknesses, cryptography/authentication errors).
+
+<Callout type="warning" title="Important — Quick Summary">
+  - If you found a security vulnerability, please report it to us **before public
+  disclosure**: **support@whoisnextapp.com** (preferably encrypted/PGP). -
+  **Social engineering**, **DDoS/DoS**, **malware**, **account takeover**, and
+  attempts to **access user data** are prohibited. - Conduct your tests with
+  **minimum impact** and only with the **minimum necessary steps**; do not leave
+  the Platform in a weaker state. - If you unintentionally access personal data
+  or private content: **stop immediately**, do not replicate/download the data,
+  report it to us, and **securely delete** it upon request. - This policy adopts
+  a "**good-faith responsible disclosure**" approach aligned with **KVKK**, **TCC**
+  (especially privacy of private life/communications), and the **GDPR/DSA**
+  framework.
 </Callout>
 
-The full English version of this document will be available shortly. For now, please refer to the [Turkish version](./) or contact us for assistance.
+---
+
+## Related Documents
+
+This policy should be read together with the following WIN documents:
+
+<Cards num={3}>
+  <Card title="Terms of Use" href="/sozlesmeler/kullanim-kosullari">
+    Platform use, prohibited acts, account security, and limits of liability.
+  </Card>
+  <Card
+    title="Privacy Policy"
+    href="/gizlilik-ve-veri-koruma/gizlilik-politikasi"
+  >
+    Personal data processing, security measures, and data retention approach.
+  </Card>
+  <Card
+    title="KVKK Information Notice"
+    href="/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni"
+  >
+    Data controller disclosure and user rights under KVKK.
+  </Card>
+  <Card
+    title="Community Guidelines"
+    href="/topluluk-ve-guvenlik/topluluk-kurallari"
+  >
+    Content/communication violations, complaint mechanisms, and sanctions.
+  </Card>
+  <Card
+    title="Law Enforcement Guide"
+    href="/kurumsal-ve-yasal-uyumluluk/kolluk-kuvvetleri-rehberi"
+  >
+    Standard for receiving and responding to official authority requests.
+  </Card>
+  <Card
+    title="DSA Compliance Page"
+    href="/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi"
+  >
+    EU authority and user notice/objection mechanisms.
+  </Card>
+  <Card
+    title="Security Tips"
+    href="/topluluk-ve-guvenlik/guvenlik-ipuclari"
+  >
+    User safety and secure usage recommendations.
+  </Card>
+</Cards>
+
+---
+
+## Section 1: Purpose, Scope, and Legal Basis
+
+<Callout type="info" title="Summary of this section">
+  This section explains (i) the purpose of the policy, (ii) which assets it
+  covers, (iii) for which matters the reporting channel should be used, and (iv)
+  the core legal/principle framework.
+</Callout>
+
+### 1.1 Purpose
+
+The purposes of this policy are:
+
+- To **increase the security** of the Platform and users,
+- To ensure that security vulnerabilities are remediated in a **rapid, controlled, and proportionate** manner,
+- To establish a **clear reporting channel** and a **standard process** for researchers,
+- To **prevent** misuse of reports (blackmail, data leaking, panic creation, etc.),
+- To strengthen **accountability** (to the extent applicable) regarding data security and notification obligations under KVKK/GDPR.
+
+### 1.2 Scope (What Type of Security Reports?)
+
+This policy covers the following types of security reports (including but not limited to):
+
+- **Authorization weaknesses** (IDOR, broken access control),
+- **Authentication/session weaknesses** (session fixation, token leakage, MFA bypass),
+- **Account takeover** risks (e.g., verification flow weaknesses),
+- **Personal data / sensitive data exposure** (KVKK/GDPR risks),
+- **Business logic weaknesses** (payment/subscription, security verification, user blocking, etc.),
+- **Mobile application weaknesses** (insecure storage, improper certificate validation, etc.),
+- **API weaknesses** (rate-limit bypass, object-level authorization),
+- **Cryptography and key management errors** (if applicable),
+- **Third-party vendor/SDK-originated security risks** (if their impact is reflected on the Platform).
+
+<Callout type="warning" title="What is this policy NOT for?">
+  This channel is not designed for topics such as general customer support,
+  account password reset, content complaints, harassment/threat reports, billing
+  disputes, or product suggestions. For such requests, please use the relevant
+  support channels (see [Terms of Use](/sozlesmeler/kullanim-kosullari) and the
+  relevant help center/contact area).
+</Callout>
+
+### 1.3 In-Scope Assets
+
+WIN's technical architecture and published products may change over time. General approach:
+
+- **Mobile applications**: WIN iOS and Android applications (official store versions),
+- **Web domains**: **whoisnextapp.com** and related subdomains,
+- **API endpoints**: **api.whoisnextapp.com** and Firebase endpoints,
+- **Documentation portal**: this portal's domain and content.
+
+<details>
+  <summary>**In-scope asset list**</summary>
+  <ul>
+    <li>**Web**: whoisnextapp.com, legal.whoisnextapp.com</li>
+    <li>**API**: api.whoisnextapp.com, Google Firebase (EU) infrastructure</li>
+    <li>**Mobile**: official versions on Apple App Store and Google Play Store</li>
+  </ul>
+  <p>
+    <strong>Test environments:</strong> There is currently no separate test/staging
+    environment open; opening one may be planned in the future. If you have
+    specific testing requirements, a joint solution can be explored by contacting
+    us during your report.
+  </p>
+</details>
+
+### 1.4 Out of Scope — General Rules
+
+The following activities are **out of scope** and not accepted, even under good-faith research:
+
+- **DDoS/DoS** or stress tests intended to interrupt service,
+- **Social engineering** (phishing, vishing, smishing) and employee/vendor targeting,
+- **Physical attacks** (device theft, office access, hardware tampering),
+- Deploying **malware** or creating persistent backdoors,
+- **Downloading/replicating user data** (minimum evidence is sufficient to demonstrate impact),
+- Attacks against third-party systems (e.g., App Store/Google Play, payment providers) (unless there is direct and concrete impact on the Platform),
+- **Automated scanning** and sending high-volume requests (without prior approval).
+
+<Callout type="info" title="Note — automation and scanning">
+  Small-scale automations that do not affect service and do not put data security
+  at risk (e.g., header checks on a limited number of endpoints) may be
+  acceptable in some programs. For WIN, if you have an automation/scanning plan,
+  do not proceed without **prior written approval**.
+</Callout>
+
+### 1.5 Legal Basis and Compliance Framework (General Reference)
+
+In preparing and applying this policy, the following regulations and principles are particularly taken into account:
+
+- **Law No. 6698 (KVKK)** (lawful processing of personal data and data security),
+- **KVKK Communique on the Obligation to Inform** (in connection with transparency approach),
+- **Turkish Criminal Code No. 5237 (TCC)** (especially risks under **Articles 132-140** regarding privacy of communication/private life and unlawful obtaining/disclosure of personal data),
+- **Law No. 5651** (hosting provider obligations and traffic data/log approach),
+- **Electronic Communications Law No. 5809** (assessments related to communication infrastructure and security),
+- **GDPR** and **DSA** (for EU users/targeting the EU and transparency/notification mechanisms).
+
+> Note: This list is illustrative; additional legislation may apply depending on the countries where WIN operates and its technical architecture.
+
+---
+
+## Section 2: Definitions
+
+<Callout type="info" title="Summary of this section">
+  This section defines the key concepts used throughout the policy.
+</Callout>
+
+| Term                                   | Description                                                                                                                                                   |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Security vulnerability / weakness**  | A technical or business-logic error that may result in unauthorized access, data exposure, compromise of service integrity, or impairment of user security. |
+| **Report (notification)**              | A written notification through which the researcher communicates a vulnerability to WIN together with technical details.                                      |
+| **Researcher / reporter**              | The person/team that identifies the vulnerability and reports it to WIN in good faith.                                                                        |
+| **Personal data**                      | Any information relating to an identified/identifiable person under KVKK/GDPR.                                                                                |
+| **Sensitive data**                     | Special category data under KVKK/GDPR (e.g., biometric data).                                                                                                 |
+| **Scope**                              | The assets where research can be performed and the permitted testing boundaries.                                                                               |
+| **Good-faith research**                | Research conducted for reporting purposes without endangering user safety, under data minimization and non-harm principles.                                  |
+| **Responsible disclosure**             | The approach of not publicly disclosing a vulnerability before remediation and coordinating the remediation process.                                           |
+
+---
+
+## Section 3: Reporting Channels and Communication
+
+<Callout type="info" title="Summary of this section">
+  This section explains through which channels security vulnerabilities should be
+  reported and the secure communication options.
+</Callout>
+
+### 3.1 Security Team Contact Point
+
+<Callout type="info" title="Security reporting channels">
+  - **Email**: **support@whoisnextapp.com** — For sensitive information, PGP
+  encrypted communication is recommended where possible. - **Accepted
+  languages**: Reports can be submitted in Turkish, English, or any language. -
+  **Structured report**: The [Vulnerability Disclosure
+  Form](/basvuru-formlari/guvenlik-acigi-bildirim-formu) can be completed,
+  scanned, and sent to the same address. - **security.txt**: Researchers can
+  access policy and contact details at
+  [whoisnextapp.com](https://whoisnextapp.com)/.well-known/security.txt and
+  [legal.whoisnextapp.com](https://legal.whoisnextapp.com)/.well-known/security.txt
+  (RFC 9116).
+</Callout>
+
+<Tabs
+  items={[
+    "Vulnerability report",
+    "Account / support",
+    "Content complaint",
+    "Official requests",
+  ]}
+>
+  <Tab>
+    For **technical security vulnerabilities** (unauthorized access, data
+    exposure, auth bypass, etc.), use **support@whoisnextapp.com** under this
+    policy.
+  </Tab>
+  <Tab>
+    For account access, password reset, and general support, use in-app **Help**
+    or **Contact** screens, or **support@whoisnextapp.com** (see the Contact
+    section in [Terms of Use](/sozlesmeler/kullanim-kosullari)).
+  </Tab>
+  <Tab>
+    For content violations, harassment, or personal safety complaints, use the
+    in-app **Report** / **Submit Complaint** flow; see [Community
+    Guidelines](/topluluk-ve-guvenlik/topluluk-kurallari) and [Content Violation
+    Form](/basvuru-formlari/icerik-ihlal-formu).
+  </Tab>
+  <Tab>
+    For court, prosecution, or law enforcement requests, see [Law Enforcement
+    Guide](/kurumsal-ve-yasal-uyumluluk/kolluk-kuvvetleri-rehberi).
+  </Tab>
+</Tabs>
+
+### 3.2 Examples of Wrong Channels
+
+- Account access/password forgotten: In-app "Help/Support" channels
+- Content/personal safety complaints: in-app "Report/Submit Complaint" flow (see [Community Guidelines](/topluluk-ve-guvenlik/topluluk-kurallari))
+- Official authority requests: see [Law Enforcement Guide](/kurumsal-ve-yasal-uyumluluk/kolluk-kuvvetleri-rehberi)
+
+---
+
+## Section 4: Secure and Ethical Research Rules
+
+<Callout type="info" title="Summary of this section">
+  This section sets the rules of conduct researchers must follow (do's / don'ts)
+  and the data minimization approach.
+</Callout>
+
+### 4.1 Core Principles
+
+When conducting research, follow these principles:
+
+- **Do no harm**: Do not interrupt the Platform; do not degrade performance.
+- **Data minimization**: Limit yourself to the **minimum** evidence required to demonstrate impact.
+- **Confidentiality**: Do not share any data/content you can access with third parties.
+- **Good faith**: Your goal must be remediation and security improvement; blackmail/threat is prohibited.
+
+### 4.2 Prohibited Actions
+
+The following are prohibited and may result in the report not being processed, your account being restricted, and/or legal action:
+
+- **Bulk account creation** or systematic abuse with fake accounts,
+- **Automated scanning**/high-volume requests (without prior approval),
+- **Social engineering** (phishing/vishing/smishing), targeting employees or users,
+- **DoS/DDoS**, resource exhaustion, spam,
+- **Malware** or persistence attempts,
+- Attempts to access others' accounts, password guessing, credential stuffing,
+- Downloading/replicating user data, reading messages, archiving photos/videos,
+- "Pivoting" (jumping to other systems) and unnecessary privilege escalation attempts,
+- "Selling" the vulnerability, sharing with brokers, or disclosing publicly.
+
+### 4.3 If You Encounter Personal Data / Private Content (Mandatory Conduct)
+
+If you unintentionally access personal data or private content:
+
+<Steps>
+### Step 1: Stop immediately
+Do not expand access; do not try additional accounts/endpoints.
+
+### Step 2: Do not replicate data
+
+Do not download it, keep screenshots to a minimum, do not share.
+
+### Step 3: Notify the security team
+
+Report immediately with the minimum evidence you obtained.
+
+### Step 4: Secure deletion
+
+Upon request, securely and irreversibly delete data related to the report.
+
+</Steps>
+
+<Callout type="warning" title="Important">
+  Privacy of private life/communications and protection of personal data are
+  highly sensitive under KVKK and TCC. Therefore, comprehensive copying of user
+  data under the justification of "collecting evidence" is not accepted.
+</Callout>
+
+---
+
+## Section 5: Report Content (Minimum Requirements)
+
+<Callout type="info" title="Summary of this section">
+  This section lists what information a report should include so it can be
+  verified quickly.
+</Callout>
+
+### 5.1 Report Checklist
+
+If possible, include the following in your report:
+
+- **Summary title** (single sentence),
+- **Affected asset** (domain, app version, endpoint, screen),
+- **Vulnerability type** (e.g., IDOR, auth bypass, information disclosure),
+- **Step-by-step reproduction** (repro steps),
+- **Expected vs actual behavior**,
+- **Impact** (worst-case scenario + practical impact),
+- **Exploitability** (under which conditions?),
+- **Evidence** (minimum screenshot/video/PoC code),
+- **Suggested fix**,
+- **Contact details** (for follow-up) and preferred language.
+
+### 5.2 Secure Sharing of Sensitive Information
+
+Access tokens, test account credentials, or logs that may be included in your report should, where possible, be shared:
+
+- in a separate file,
+- in encrypted format,
+- with the password delivered through a different channel.
+
+---
+
+## Section 6: WIN's Assessment and Resolution Process
+
+<Callout type="info" title="Summary of this section">
+  This section explains WIN's end-to-end process after receiving a report and
+  target response times (target durations are operational targets, not "SLA").
+</Callout>
+
+### 6.1 Process Flow
+
+Incoming vulnerability reports are evaluated with priority by the Platform's **WIN Team** and coordinated with relevant units.
+
+<Steps>
+### Step 1: Acknowledgment of receipt
+The report is recorded and acknowledgment information is sent to the reporter.
+
+### Step 2: Preliminary assessment and scope check
+
+Whether the report is in scope and basic reproducibility are checked; missing information is requested if needed.
+
+### Step 3: Technical verification and classification
+
+The vulnerability is verified; impact and severity level are determined; temporary mitigation is applied if necessary.
+
+### Step 4: Remediation and testing
+
+The fix is developed; regression and security tests are performed.
+
+### Step 5: Deployment and monitoring
+
+The fix is released to production; anomaly monitoring and additional checks are carried out.
+
+### Step 6: Closure and feedback
+
+Outcome information is provided to the reporter; if appropriate, thank-you/credit process is carried out.
+
+</Steps>
+
+### 6.2 Target Response Times
+
+- **Acknowledgment of receipt**: 3 business days
+- **Initial technical assessment**: 7-14 business days
+- **Status update**: At intervals depending on process complexity.
+
+> Note: Some vulnerabilities may take longer due to vendor dependency, architectural changes, or store approval processes. In that case, the reporter is informed regularly.
+
+---
+
+## Section 7: Severity Classification and Prioritization
+
+<Callout type="info" title="Summary of this section">
+  This section explains how vulnerabilities are prioritized and example target
+  remediation timelines.
+</Callout>
+
+WIN may use standards such as **CVSS** (where applicable) together with its own risk assessment for prioritization.
+
+| Level      | Examples                                                                                          | Target remediation approach                 |
+| ---------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| **Critical** | Mass data exposure, authentication bypass, remote code execution, systematic account takeover   | Urgent fix/mitigation within 24-72 hours    |
+| **High**   | Single-user data exposure (high impact), privilege escalation, critical logic flaw in payment/subscription | 1-7 business days                           |
+| **Medium** | Limited-scope data exposure, vulnerabilities exploitable under specific conditions                | 7-30 business days                          |
+| **Low**    | Low-impact issues, defense-in-depth improvements                                                  | Planned improvement cycle                   |
+
+<Callout type="warning" title="Out-of-scope examples (general)">
+  Findings such as version information disclosure alone, missing security headers
+  (without concrete exploit), self-XSS, purely theoretical clickjacking, or scan
+  reports that slow down the service are not generally within reward/threshold
+  scope in most programs. WIN evaluates based on impact and exploit scenario.
+</Callout>
+
+---
+
+## Section 8: Confidentiality, Public Disclosure, and Coordination
+
+<Callout type="info" title="Summary of this section">
+  This section sets the rules on public disclosure of reported vulnerabilities
+  and the coordination approach.
+</Callout>
+
+### 8.1 Public Disclosure Prohibition (Default Rule)
+
+Unless permitted in writing by WIN, a reported vulnerability must not be publicly disclosed through:
+
+- social media, blog, conference talk,
+- CVE publication,
+- third-party broker/marketplace sharing.
+
+### 8.2 Coordinated Disclosure (Responsible Disclosure)
+
+After remediation is published, WIN takes a positive approach, where appropriate, to:
+
+- allowing the reporter to publish a technical write-up,
+- masking certain details in the disclosure,
+- planning the publication date mutually.
+
+Coordination is carried out according to the vulnerability's impact and user security risk.
+
+> **Time expectation:** In line with industry practices, public disclosure is generally targeted at **90 days** after remediation; this duration may be flexibly adjusted by mutual agreement according to vulnerability complexity and vendor dependencies.
+
+---
+
+## Section 9: Reward / Thanks (Optional)
+
+<Callout type="info" title="Summary of this section">
+  This section explains the thank-you and reward approach. Rewards may vary by
+  vulnerability impact; contact may be established for details.
+</Callout>
+
+WIN values a thank-you and reward approach for **unique**, **impact-proven**, and **in-scope** valid technical vulnerabilities submitted under good-faith research. It shows due diligence in this matter and aims for a **generous** evaluation.
+
+- **Reward types**: Rewards (e.g., additional deck viewing rights, Premium benefits, or similar bonuses) may vary by **severity** and **impact** of the vulnerability; not all findings are rewarded equally.
+- **Flexibility**: Reward types and amounts may be updated over time. Details may be discussed after reporting.
+- **Implementation**: Rewards are defined after vulnerability verification and remediation, if the reporter has a WIN account.
+
+<Callout type="warning" title="Reward eligibility (general principles)">
+  - The person/team that **first reports** the same vulnerability has priority. -
+  The report must be **reproducible**, **show impact**, and be **in scope**. -
+  Rule violations (automation, data copying, blackmail, etc.) may eliminate
+  reward/thank-you eligibility.
+</Callout>
+
+---
+
+## Section 10: Safe Harbor and Legal Framework
+
+<Callout type="info" title="Summary of this section">
+  This section explains the safe harbor approach for good-faith researchers and
+  the boundaries of this approach.
+</Callout>
+
+Under this policy, WIN aims to cooperate with reporters conducting good-faith research:
+
+- only on **in-scope assets**,
+- only with **minimum necessary steps**,
+- **without harming user data** and **without abuse**.
+
+<Callout type="warning" title="Boundaries">
+  <div>
+    This policy does not grant unlimited testing authorization to anyone, and
+    safe harbor does not apply in the following cases:
+    <ul>
+      <li>DoS/DDoS, social engineering, blackmail, data leaking</li>
+      <li>comprehensive copying/replication of user data</li>
+      <li>attacks on third-party systems</li>
+      <li>malware or persistence attempts</li>
+      <li>non-compliance with applicable legislation</li>
+    </ul>
+  </div>
+</Callout>
+
+> Note: WIN is obliged to protect user security and data security within frameworks such as KVKK/GDPR and TCC/5651. Therefore, security research must, in all cases, be conducted **lawfully** and **proportionately**.
+
+---
+
+## Section 11: Confidentiality and Data Deletion Obligation
+
+<Callout type="info" title="Summary of this section">
+  This section regulates confidentiality of information that may be obtained in
+  the reporting process and the data deletion approach at report closure.
+</Callout>
+
+Any information that may be obtained during the research process (system details, logs, configurations, user data, etc.) is considered **confidential** and should only be used for the purpose of reporting under this policy.
+
+When no longer necessary for report verification and remediation, WIN may request the reporter to:
+
+- **securely delete** report-related data,
+- **irreversibly destroy** sample records/outputs remaining in their possession.
+
+---
+
+## Section 12: Third Parties and Vendor Vulnerabilities
+
+<Callout type="info" title="Summary of this section">
+  This section explains how findings in third-party services will be handled.
+</Callout>
+
+WIN may use **third-party services** such as Firebase, analytics/crash reporting, verification/liveness, payment infrastructure, and similar services. If a finding concerns a third party:
+
+- report the finding's impact on the Platform to us,
+- it may also need to be submitted to the third party's own vulnerability reporting channel,
+- information to be shared with the third party must comply with data minimization principle.
+
+---
+
+## Section 13: Changes
+
+<Callout type="info" title="Summary of this section">
+  This section explains the policy update and effectiveness approach.
+</Callout>
+
+WIN may update this policy due to changes in legislation, security standards, technical architecture, or operational needs. The current version is published in the in-app "**Legal**" area and on [whoisnextapp.com](https://whoisnextapp.com).
+
+---
+
+## Section 14: Contact
+
+- **Vulnerability report:** **support@whoisnextapp.com** — The [Vulnerability Disclosure Form](/basvuru-formlari/guvenlik-acigi-bildirim-formu) can be completed, scanned, and sent to the same address. For sensitive information, PGP encrypted communication is recommended where possible.
+- **General support / account:** In-app Help or Contact screens; **support@whoisnextapp.com** (see [Terms of Use](/sozlesmeler/kullanim-kosullari) Section 16.4).
+- **Subscription / payment:** **legal@whoisnextapp.com** (see [Subscription and Purchase Terms](/sozlesmeler/abonelik-ve-satin-alma-kosullari)).

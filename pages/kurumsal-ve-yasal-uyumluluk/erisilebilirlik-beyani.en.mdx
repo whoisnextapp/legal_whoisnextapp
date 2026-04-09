@@ -1,9 +1,390 @@
 # Accessibility Statement
 
-import { Callout } from "nextra/components";
+import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
-<Callout type="info">
-  The English translation of this document is currently being prepared. Please check back soon.
+**Last updated:** 02.04.2026 · **Version:** 1.1
+
+This page explains the approach, applied standards, and feedback channels regarding ensuring that the services provided by WIN ("**Platform**") are **accessible**, **inclusive**, and **usable** for all users, including individuals with disabilities.
+
+<Callout type="info" title="Purpose of this statement">
+  - To transparently explain our approach to compliance with accessibility standards (e.g., **WCAG** and **EN 301 549**) (currently at statement level), - To ensure that users can **easily report** accessibility barriers and access appropriate alternative solutions, - To commit to the **continuity** of accessibility efforts (testing, improvement, updates).
 </Callout>
 
-The full English version of this document will be available shortly. For now, please refer to the [Turkish version](./) or contact us for assistance.
+---
+
+## Related documents
+
+This statement should be read together with the following WIN documents:
+
+<Cards num={3}>
+  <Card
+    title="Terms of Use"
+    href="/sozlesmeler/kullanim-kosullari"
+  >
+    Scope of the service, account rules, communication channels, and user obligations.
+  </Card>
+  <Card
+    title="Privacy Policy"
+    href="/gizlilik-ve-veri-koruma/gizlilik-politikasi"
+  >
+    Processing of personal data in all support processes, including accessibility notifications.
+  </Card>
+  <Card
+    title="DSA Compliance Page"
+    href="/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi"
+  >
+    Complaint/objection and communication mechanisms for EU users (DSA scope).
+  </Card>
+  <Card
+    title="Community Guidelines"
+    href="/topluluk-ve-guvenlik/topluluk-kurallari"
+  >
+    Principles for safe and inclusive communication; violation reporting channels.
+  </Card>
+  <Card
+    title="Subscription and Purchase Terms"
+    href="/sozlesmeler/abonelik-ve-satin-alma-kosullari"
+  >
+    Premium/subscription processes and store-originated purchase flows.
+  </Card>
+  <Card
+    title="Cookie Policy"
+    href="/gizlilik-ve-veri-koruma/cerez-politikasi"
+  >
+    Cookie/tracker preferences and control options in web areas.
+  </Card>
+</Cards>
+
+---
+
+## Section 1: Introduction, scope, and core definitions
+
+<Callout type="info" title="Summary of this section">
+  This section explains (i) which products/channels are covered by this statement, (ii) core accessibility concepts, and (iii) third-party areas that may fall outside scope.
+</Callout>
+
+### 1.1 Scope (which channels)
+
+This accessibility statement covers the following channels through which access to WIN services is provided:
+
+- **WIN mobile application** (iOS and Android), covering all core flows (registration/login, profile, matching, messaging, complaint/blocking, premium/subscription management, etc.). At this stage, WIN provides full service only on mobile platforms.
+- **WIN web areas**: informational pages provided via [whoisnextapp.com](https://whoisnextapp.com) (direct web access to the service/application is currently not available).
+- Accessible presentation of contract and compliance texts provided on **this documentation portal**.
+
+### 1.2 Core definitions
+
+- **Accessibility:** The ability of a product or service to be perceivable, operable, understandable, and robustly usable by everyone, including individuals with disabilities.
+- **Accessibility barrier:** Any design, content, or technical element that makes it difficult or impossible for a user group (e.g., screen reader users, users with low vision, hearing impairments, or motor limitations) to use the service.
+- **Assistive Technologies:** Screen readers, screen magnifiers, alternative input methods, switch controls, voice control, etc.
+- **Alternative:** A reasonable alternative solution that allows reaching the same outcome until an accessibility barrier is removed (e.g., completing the process via support team assistance).
+
+While providing the service, WIN uses the following third-party technologies and SDKs:
+
+- **Google Sign-In / Firebase:** Authentication, notification, and data infrastructure.
+- **Google Gemini 2.5 Flash:** Profile photo and selfie verification (liveness) processes.
+- **MeiliSearch:** Search and filtering features.
+- **Twilio:** SMS and email verification channels.
+
+<Callout type="warning" title="Important note">
+  We also ask you to report barriers you experience in third-party interfaces. Even if we cannot always directly control them, these reports are critical for (i) producing alternative solutions and (ii) improving supplier selection/integration.
+</Callout>
+
+---
+
+## Section 2: Legal basis and targeted standards
+
+<Callout type="info" title="Summary of this section">
+  This section sets out the legal framework and technical standards on which our accessibility approach is based.
+</Callout>
+
+### 2.1 Legal reference (summary)
+
+WIN's accessibility approach is designed with particular consideration of the following regulation:
+
+- **European Accessibility Act (EAA)** — **Directive (EU) 2019/882**: The framework on accessibility requirements for products and services in the EU/EEA market (especially for digital services and services with e-commerce characteristics).
+
+> Note: Mandatory local provisions may vary depending on the regions where WIN provides services. This statement aims to make the accessibility approach transparent for both current operations and target markets.
+
+### 2.2 Technical standards and principles
+
+When setting accessibility targets, WIN takes the following standards and principles as a basis:
+
+- **W3C Web Content Accessibility Guidelines (WCAG) 2.2 — Level AA:** Globally recognized criteria for accessibility in web and mobile interfaces.
+- **EN 301 549:** A frequently used compliance standard in the EU for product/service accessibility (a framework considered together with the EAA).
+- **POUR principles** (Perceivable / Operable / Understandable / Robust): The four core principles of accessibility.
+
+<Tabs items={["Perceivable", "Operable", "Understandable", "Robust"]}>
+  <Tab>
+    Information and user interface components should be perceivable through
+    different senses. E.g., text alternatives, sufficient contrast, readability
+    with increased font size.
+  </Tab>
+  <Tab>
+    User interface components and navigation paths should be operable. E.g., keyboard
+    usage, focus order, motion/animation control, timeout management.
+  </Tab>
+  <Tab>
+    Content and interface behavior should be understandable. E.g., plain language, consistent
+    components, clear error messages, validation feedback.
+  </Tab>
+  <Tab>
+    Content should reliably work with different user agents and assistive
+    technologies. E.g., semantic structure, appropriate accessibility labels,
+    and compatible components.
+  </Tab>
+</Tabs>
+
+---
+
+## Section 3: Conformance status and approach
+
+<Callout type="info" title="Summary of this section">
+  This section explains our conformance target, conformance assessment method, and management of possible "partial conformance".
+</Callout>
+
+### 3.1 Targeted conformance level
+
+WIN's objective is to design and maintain services in accordance with **WCAG 2.2 AA** criteria within reasonable technical and economic means. At this stage, the conformance status is **at statement level**; where services are provided in the EU/EEA market, accessibility requirements are addressed together with the **EAA** and relevant standards (e.g., **EN 301 549**).
+
+### 3.2 Conformance assessment (how we measure)
+
+WIN aims to assess accessibility conformance through a combination of the following methods:
+
+- **Manual testing:** Verification of critical criteria such as screen reader use, keyboard navigation, focus management, contrast, and text scaling.
+- **Automated analyses:** Technical checks aimed at early detection of accessibility errors.
+- **Release-based improvements:** Feeding accessibility findings into the product development cycle and resolving them in releases.
+
+At present, no specific timeline has been set for third-party independent audit or certification processes; the process is being carried out in line with general improvement principles.
+
+### 3.3 Partial conformance and exceptions
+
+Accessibility is a living area that requires continuous improvement. In some content or features:
+
+- **Third-party dependencies**,
+- **Platform (iOS/Android/Web) limitations**,
+- **User-generated content (UGC)**,
+- **Device/OS version differences**
+
+may result in temporary **partial conformance** situations. In such cases, our goal is to provide the user with a **reasonable alternative** and remove the barrier as quickly as possible.
+
+---
+
+## Section 4: Measures supporting accessibility (process and governance)
+
+<Callout type="info" title="Summary of this section">
+  This section explains how we institutionally manage accessibility, including training, design-development principles, testing methodology, and third-party vendor management.
+</Callout>
+
+### 4.1 Training and awareness
+
+To make good accessibility practices sustainable, the WIN team aims to establish mechanisms such as:
+
+- **regular training and guidance** on accessibility principles,
+- accessibility checklists in the design and development of new features,
+- sharing accessibility responsibility across product/delivery teams.
+
+### 4.2 Design principles (UI/UX)
+
+Example elements of our accessible design approach:
+
+- **Sufficient contrast** between text and background,
+- Not conveying information by **color alone** (supporting with icons/labels/help text),
+- **Consistent navigation** and consistent behavior in recurring components,
+- **Clear, action-oriented** warnings in error states (e.g., "This field is required" + focus redirection).
+
+### 4.3 Development principles (technical)
+
+- **Meaningful accessibility labels** on interactive elements (label, hint, role),
+- **Predictable focus order** in areas requiring focus management and keyboard use,
+- Designing animations to respect OS **"reduce motion"** settings wherever possible,
+- **Accessible error/success feedback** in forms and selection components.
+
+### 4.4 Content accessibility (text and documents)
+
+When preparing WIN documents and informational texts, principles such as the following are taken as a basis:
+
+- clear, plain, and understandable language,
+- heading hierarchy and short paragraphs,
+- links containing **meaningful link text** instead of "click here".
+
+### 4.5 Testing and validation (sample scope)
+
+Depending on the nature of the service, accessibility tests may cover the following areas:
+
+- **Registration/login** (including Google OAuth flow),
+- **KVKK & contract approvals** and explicit consent boxes,
+- **Camera/microphone permissions** and verification flow (selfie/liveness),
+- **Matching/messaging** interfaces,
+- **Complaint/blocking** flows,
+- **Premium/subscription** management (including store redirects),
+- **Account management** (including account deletion).
+
+---
+
+## Section 5: Service description and accessibility measures (flow-based)
+
+<Callout type="info" title="Summary of this section">
+  This section explains, with examples, the measures targeted for accessibility across WIN's main user flows.
+</Callout>
+
+### 5.1 Registration/Login (Google and phone login)
+
+- Ensuring interactive elements in login/account selection, OAuth redirects, and phone/OTP fields are **announced clearly** by screen readers,
+- In error cases (e.g., session could not be opened, code could not be sent), providing a **clear error message** and retry guidance,
+- (If web area exists) keyboard accessibility and consistency of focus order.
+
+### 5.2 Legal consent & explicit consent screen (onboarding)
+
+In WIN onboarding, there are separate explicit consent boxes together with KVKK and contract links (e.g., location processing, selfie/face verification, international transfer, campaign/notification permission).
+
+Sample targeted measures for accessibility of this screen:
+
+- **Correct association** of checkboxes and their texts for screen readers,
+- Making links (KVKK Information Text, Privacy Policy, Terms of Use) **individually accessible**,
+- **Understandable** warnings and focus redirection for required fields,
+- Ensuring texts display compatibly with device accessibility settings (font enlargement, etc.).
+
+### 5.3 Profile creation (forms, selections, free text)
+
+Profile steps include a multi-step form experience with fields such as name, gender, profession, height, lifestyle (smoking/alcohol), zodiac sign, preference parameters, and free text fields.
+
+Targeted accessibility measures in this flow:
+
+- Presentation of each field's **label**, description, and error messages in a screen reader-friendly way,
+- **Operability** in picker/scroll selectors (ability to select via alternative input methods),
+- **Clearly** specifying rules such as character limits in free text fields,
+- Making the status (active/passive) of buttons such as "Next/Continue" **understandable**.
+
+### 5.4 Photo upload
+
+- Defining photo slots (e.g., 6 slots) in a **meaningful** way for screen readers,
+- Providing the user with **clear feedback** on upload/error states (e.g., file type, size),
+- (If available) alternative guidance in visual editing/cropping interfaces.
+
+### 5.5 Verification layer (camera/microphone permissions, selfie/liveness)
+
+In WIN, there may be verification steps such as camera/microphone permissions and selfie/liveness for the purpose of "fake account prevention."
+
+- Presenting instructions clearly with **text and audio** support,
+- In situations such as time limits/retries, the goal is to provide **user control**.
+
+<Callout type="warning" title="Important Limitation">
+  Selfie/liveness verification is a core requirement for Platform security. For users who cannot complete this step due to certain barriers (e.g., motor limitations, vision loss, etc.), **there is currently no alternative technological verification method at this stage.** In such cases, introducing "reasonable alternative" solutions (e.g., manual review) is planned for the future.
+</Callout>
+
+### 5.6 Main flow (deck/card flow) and profile viewing
+
+- Making transitions between cards **predictable** in screen readers,
+- Presenting key actions (like, pass, profile details, block/report) with accessible labels,
+- Ensuring motion/animation intensity is compatible with OS "reduce motion" settings.
+
+### 5.7 Messaging and interaction
+
+- **Focus management** in message field, send button, and chat items,
+- Feedback for new message notifications that does not disturb the user but is **not missable**,
+- Making complaint/block actions **easily accessible** in messaging context.
+
+### 5.8 Complaint, violation reporting, and blocking
+
+For an accessible and safe community, it is important that users can report violations. Therefore:
+
+- "Report / notify" actions should be **easy to find**,
+- Required fields in the reporting form should be understandable,
+- The reporting user should be provided with **receipt confirmation** and process information.
+
+This is targeted. (See [DSA Compliance Page](/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi) and [Community Guidelines](/topluluk-ve-guvenlik/topluluk-kurallari).)
+
+### 5.9 Premium/subscription and purchase
+
+If paid features such as WIN Premium are offered:
+
+- **Clear** and accessible presentation of price, period, renewal, and cancellation information on purchase screens,
+- **Clearly** stating that subscription is managed through the store,
+- Ensuring buttons redirecting to subscription management are accessible.
+
+These are taken as a basis. (See [Subscription and Purchase Terms](/sozlesmeler/abonelik-ve-satin-alma-kosullari).)
+
+---
+
+## Section 6: Known limitations and alternatives
+
+<Callout type="info" title="Summary of this section">
+  This section includes typical accessibility limitations that may be encountered and recommended alternatives.
+</Callout>
+
+WIN aims to provide an accessible experience for all users. At present, there is **no known specific accessibility issue** related to screen readers, contrast, text enlargement, or navigation. However, general technological limitations may occur in the following situations:
+
+<Callout type="warning" title="Alternative solution request">
+  If you cannot complete a critical process (e.g., account access, verification, subscription management) due to a barrier, please contact us through the channels under [Section 7](#section-7-feedback-barrier-reporting-and-contact). To the extent appropriate, we will try to produce an alternative solution.
+</Callout>
+
+---
+
+## Section 7: Feedback, barrier reporting, and contact
+
+<Callout type="info" title="Summary of this section">
+  This section explains how accessibility barriers can be reported, what information may be requested, and how the support process works.
+</Callout>
+
+### 7.1 How to report a barrier?
+
+<Steps>
+### Step 1: Note where you experienced the barrier
+Note which screen/feature you experienced the barrier on and, if possible, your steps (e.g., "Onboarding > KVKK screen > Location consent box").
+
+### Step 2: Add device and assistive technology information
+
+Specify your device model, operating system version, and the assistive technology you use (e.g., VoiceOver, TalkBack).
+
+### Step 3: If possible, add a screenshot or screen recording
+
+This helps us analyze the issue faster.
+
+### Step 4: Contact us
+
+Submit your report with the title "**Accessibility Barrier**" via the form in the in-app **"Help/Contact"** area or through the contact form at [whoisnextapp.com](https://whoisnextapp.com). Support is currently available for your reports in **Turkish** and **English**.
+
+</Steps>
+
+Our target approach in accessibility reports:
+
+- To **record** the report and request additional information if necessary,
+- To make an initial assessment and respond to the user within a maximum of **5 business days** from when the report reaches us,
+- To provide a **temporary alternative** solution based on the nature of the barrier,
+- In applicable cases, to make a **permanent fix** by incorporating the barrier into the product development process.
+
+> Accessibility improvements are planned within the framework of technical and economic means, security requirements, and third-party dependencies.
+
+The information you share during your accessibility report (contact details, device/version information, screenshot, etc.) may be processed for the purpose of running the support process and planning accessibility improvements. For details, see the [Privacy Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi) and related information texts.
+
+---
+
+## Section 8: Audit/application channels (EU/EEA focus)
+
+<Callout type="info" title="Summary of this section">
+  This section provides general information about the regulatory framework in accessibility within the EU/EEA market.
+</Callout>
+
+If services are provided in the EU/EEA, the competent **market surveillance/audit** authorities of the relevant country may be involved with regard to accessibility requirements. If you do not receive a satisfactory response to your accessibility report within a reasonable time, there may be application options to the competent authority in your country of residence.
+
+For specific supervisory authority and contact details, you may review the relevant guidance under the [DSA Compliance Page](/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi) or [Terms of Use](/sozlesmeler/kullanim-kosullari), depending on the nature of the process.
+
+---
+
+## Section 9: Preparation and updating of the statement
+
+<Callout type="info" title="Summary of this section">
+  This section specifies how the statement will be updated and how error/deficiency notifications will be handled.
+</Callout>
+
+This statement is prepared with utmost care and:
+
+- legal/regulatory changes,
+- product/release changes,
+- accessibility test findings and user feedback
+
+is regularly reviewed and may be updated accordingly.
+
+<Callout emoji="💡">
+  If you identify any error or deficiency in this statement, please notify us under [Section 7](#section-7-feedback-barrier-reporting-and-contact). Thank you for your support and contribution.
+</Callout>

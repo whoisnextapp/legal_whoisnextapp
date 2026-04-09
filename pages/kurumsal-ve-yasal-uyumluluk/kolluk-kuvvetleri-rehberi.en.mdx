@@ -1,9 +1,635 @@
-# Law Enforcement Guide
+import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
-import { Callout } from "nextra/components";
+# Law Enforcement Guidelines
 
-<Callout type="info">
-  The English translation of this document is currently being prepared. Please check back soon.
+**Last updated:** 13.02.2026 · **Version:** 1.0
+
+This guide explains how **legal data requests** submitted by **law enforcement** and other **competent public authorities** (courts, Offices of the Chief Public Prosecutor, regulatory/administrative authorities, etc.) are received, verified, assessed, and answered in connection with services operated by **WIN** (“**Platform**”).
+
+This guide is a standard that aims both:
+
+- to enable public authorities to submit requests through the **correct channel and with the correct content**, and
+- for WIN to handle requests in a manner that is **lawful**, **proportionate**, **secure**, and **recorded**.
+
+<Callout type="warning" title="Important — Quick summary">
+  - WIN keeps personal data and content **confidential as a rule**; it shares
+  data only in **legally mandatory** or **legally authorized** situations and
+  within **procedurally proper** requests (see Section 3). - In all requests,
+  **identity/authority verification** is performed; **additional information**
+  may be requested for incomplete, vague, or overly broad requests, or the
+  request may be **rejected**. - Responses are provided under the principle of
+  **data minimization**; unnecessary/disproportionate scope is narrowed and,
+  where possible, **masking/segregation** is applied. - In **emergency**
+  situations (risk to life or imminent/irreparable harm), where required
+  conditions are met, WIN may share **limited data** (see Section 8). - This
+  guide does not relieve WIN of obligations arising from applicable law;
+  **mandatory provisions** in the relevant jurisdiction are reserved.
 </Callout>
 
-The full English version of this document will be available shortly. For now, please refer to the [Turkish version](./) or contact us for assistance.
+---
+
+## Related documents
+
+This guide should be read together with the following WIN documents:
+
+<Cards num={3}>
+  <Card
+    title="Privacy Policy"
+    href="/gizlilik-ve-veri-koruma/gizlilik-politikasi"
+  >
+    Data categories, processing purposes, sharing bases, and retention
+    approach.
+  </Card>
+  <Card
+    title="KVKK Information Notice"
+    href="/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni"
+  >
+    Disclosure obligation under KVKK and general framework for related user
+    rights.
+  </Card>
+  <Card title="Terms of Use" href="/sozlesmeler/kullanim-kosullari">
+    Service rules, content/account management, and violation processes.
+  </Card>
+  <Card
+    title="Community Guidelines"
+    href="/topluluk-ve-guvenlik/topluluk-kurallari"
+  >
+    Types of illegal/harmful content and behavior; notice and enforcement
+    approach.
+  </Card>
+  <Card
+    title="DSA Compliance Page"
+    href="/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi"
+    icon="🇪🇺"
+  >
+    Contact points for EU authorities and “order/notice & action” processes.
+  </Card>
+  <Card
+    title="Illegal Content Notice Form"
+    href="/basvuru-formlari/yasa-disi-icerik-bildirim-formu"
+  >
+    Form to be used by public authorities for illegal content notices under
+    Law No. 5651 and the DSA.
+  </Card>
+  <Card
+    title="Transparency Reports"
+    href="/topluluk-ve-guvenlik/seffaflik-raporlari"
+  >
+    Periodic statistical approach regarding government requests and content
+    actions.
+  </Card>
+  <Card
+    title="Biometric Data Consent"
+    href="/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza"
+  >
+    Framework for processing biometric data in selfie/liveness and similar
+    verification processes.
+  </Card>
+  <Card
+    title="Explicit Consent Texts"
+    href="/gizlilik-ve-veri-koruma/acik-riza-metinleri"
+  >
+    Standard texts and approach for data processing/transfer scenarios requiring
+    explicit consent.
+  </Card>
+</Cards>
+
+---
+
+## Section 1: Purpose, scope, and legal basis
+
+<Callout type="info" title="Summary of this section">
+  This section explains (i) the purpose of the guide, (ii) which types of
+  requests and authorities it covers, (iii) legislative references and the
+  geographic scope approach.
+</Callout>
+
+### 1.1 Purpose
+
+The main purposes of this guide are:
+
+- To ensure requests from public authorities are received in a **procedurally proper** manner,
+- To assess requests under the principles of **lawfulness**, **necessity and proportionality**, and **data minimization**,
+- To ensure responses are produced and transmitted in a **secure** manner,
+- To **record** processes and, where appropriate, generate input for **transparency reporting**,
+- To **prevent** fraudulent/misleading requests, unauthorized disclosure, and abuse.
+
+### 1.2 Scope (which requests / which authorities)
+
+This guide covers the following types of requests (including but not limited to):
+
+- **Information/document requests**: Account/subscription information, traffic data/logs, content data, etc.
+- **Data preservation (preservation / legal hold) requests**: Preventing deletion or ensuring preservation of data with respect to a specific account or content.
+- **Emergency requests**: Limited data sharing in situations involving risk to life or imminent/irreparable harm.
+- **Content/account measures**: Allegations of illegal content, access blocking/removal, account freezing, etc. (different regimes may apply depending on geographic targeting).
+
+This guide is addressed to requests from the following authorities and competent institutions:
+
+- **Courts** and other judicial bodies,
+- **Offices of the Chief Public Prosecutor** and judicial authorities,
+- **Law enforcement** (including police/gendarmerie and specialist units),
+- **Regulatory/administrative authorities**, to the extent applicable (e.g., digital services/communications/competition authorities in certain countries).
+
+<Callout type="warning" title="Out-of-scope requests (summary)">
+  - Applications of an “information/data request” nature submitted by
+  **private individuals** (users, lawyers, companies, etc.) are **not** handled
+  **directly** under this guide. Such persons must use appropriate channels
+  (e.g., KVKK applications, court/service of process procedures). - For
+  **intellectual property (copyright/trademark) notices**, see [Intellectual
+  Property
+  Policy](/kurumsal-ve-yasal-uyumluluk/fikri-mulkiyet-politikasi); the
+  [Intellectual Property (Copyright) Infringement
+  Form](/basvuru-formlari/fikri-mulkiyet-telif-ihlal-formu) may be used for
+  notices. - For **user complaints** and moderation notices, see [Community
+  Guidelines](/topluluk-ve-guvenlik/topluluk-kurallari) and the [DSA Compliance
+  Page](/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi). For content violation
+  notices, the [Content Violation
+  Form](/basvuru-formlari/icerik-ihlal-formu) may be used; for general
+  complaints/reports, the [Complaint and Report
+  Form](/basvuru-formlari/sikayet-ve-ihbar-formu); and for objections to
+  moderation decisions, the [Objection
+  Form](/basvuru-formlari/itiraz-formu) may be used.
+</Callout>
+
+### 1.3 Geographic context and applicable regimes (summary)
+
+The countries/regions where WIN provides services and the data hosting architecture may affect the procedures and legal bases applicable to requests.
+
+<Tabs items={["Turkiye (5651/TCK)", "KVKK & GDPR", "EU (DSA)"]}>
+  <Tab>
+    In Turkiye, **Law No. 5651** and related secondary legislation are taken
+    into account regarding hosting provider liability, traffic data/log retention
+    obligations, and content actions. Depending on the type of content,
+    provisions of the **Turkish Penal Code (TCK)** may apply (e.g., obscenity;
+    confidentiality of communications/private life; unlawful obtaining/disclosure
+    of data).
+  </Tab>
+  <Tab>
+    Public authority requests may result in the processing/transfer of personal
+    data. In Turkiye, **KVKK**, and in the EU/EEA (and where services are
+    provided to the EU), **GDPR** principles (purpose limitation, data
+    minimization, security, retention periods, accountability) are considered
+    together.
+  </Tab>
+  <Tab>
+    Where services are provided in the EU, in some situations tools such as EU
+    authorities’ “orders to provide information” or “orders to act against illegal
+    content” may arise under the **DSA**. For contact points and processes for
+    EU authorities, see the [DSA Compliance
+    Page](/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi).
+  </Tab>
+</Tabs>
+
+### 1.4 Legal basis (general reference)
+
+WIN’s approach to law enforcement requests is structured taking into account in particular the following rules:
+
+- **Law No. 6698 on the Protection of Personal Data (KVKK)**.
+- **Communique on the Procedures and Principles to be Complied with in Fulfilling the Disclosure Obligation** (content/format of disclosure; linked to notice/transparency approach).
+- **Regulation on the Transfer of Personal Data Abroad** (cross-border data transfer framework; linked in particular to hosting/supplier architecture).
+- **Law No. 5651** (publications on the internet; hosting provider liability and traffic data/log obligations).
+- **Turkish Penal Code No. 5237 (TCK)** — in particular:
+  - **Art. 226 (Obscenity)**,
+  - **Art. 132–140 (Offenses against private life/communications; unlawful recording, capture, or disclosure of personal data)**.
+- **Electronic Communications Law No. 5809** (to the extent relevant to assessments linked to communications infrastructure and security).
+- **GDPR** (in the context of EU users and cross-border data transfer).
+- **Digital Services Act (DSA)** (where services are provided in the EU; communication with authorities and order/notice processes).
+
+> Note: This list is illustrative; additional legislation or different procedures may apply depending on the countries where WIN operates.
+
+---
+
+## Section 2: Definitions
+
+<Callout type="info" title="Summary of this section">
+  This section defines key concepts used throughout the guide.
+</Callout>
+
+| Term | Explanation |
+| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Law enforcement** | Authorized units tasked with preventing and investigating crime, including police/gendarmerie and specialist units. |
+| **Competent public authority** | An institution legally authorized to direct requests, such as a court, prosecutor’s office, law enforcement, or the relevant regulatory/administrative authority. |
+| **Legal request / legal process** | A written request/decision/order that is properly formalized and transmitted by a competent authority and has a legal basis. |
+| **Traffic data / log** | Technical records generated during provision of the service (e.g., IP, time stamp, device/session information, etc.) — scope may vary depending on applicable law and technical architecture. |
+| **Content data** | User-generated content such as profile content, photos/videos, messaging content, reporting/complaint attachments, or content arising during the service. |
+| **Account data** | Data related to the account such as account identity and profile information, verification status, preference settings, subscription/purchase records. |
+| **Preservation (preservation / legal hold)** | Temporarily placing specific data under “legal preservation” to prevent deletion or overwriting. |
+| **Emergency** | Situations involving imminent and serious risk to a person’s life, bodily integrity, or similar fundamental interests. |
+| **Data minimization** | Not sharing data that is not necessary for the requested purpose; narrowing scope and, where possible, applying masking. |
+
+---
+
+## Section 3: Core principles in assessing requests
+
+<Callout type="info" title="Summary of this section">
+  This section explains the assessment principles and decision criteria WIN
+  applies to all public authority requests.
+</Callout>
+
+### 3.1 Lawfulness and procedural compliance
+
+WIN shares data only within requests/decisions that:
+
+- are transmitted by a **competent authority**,
+- are communicated in a **procedurally proper** manner,
+- have a clear **legal basis**.
+
+### 3.2 Necessity and proportionality (scope control)
+
+Requests are assessed with respect to **scope, duration, and data categories** in connection with the purpose. For overly broad or vague requests:
+
+- narrowing of scope is requested,
+- linkage to a specific account/incident is required,
+- the request may be rejected or only partially fulfilled if necessary.
+
+### 3.3 Data minimization and segregation
+
+WIN adopts the principle of achieving the purpose with the **least data**. To the extent applicable:
+
+- data belonging to third parties is **filtered out**,
+- unnecessary fields are **masked**,
+- output is produced limited only to the relevant time range/incident only.
+
+### 3.4 Security, privacy, and integrity
+
+Requests and responses are:
+
+- handled/transmitted by **authorized teams**,
+- under the principle of access **only as needed**,
+- using **secure communication** methods.
+
+### 3.5 Transparency and user notification
+
+As a rule, WIN adopts a **notification** approach regarding requests affecting users. However, notification may be delayed or not provided if:
+
+- it is prohibited by law,
+- there is a risk of compromising an investigation,
+- there is a risk to a person’s safety  
+  (see Section 9).
+
+### 3.6 Record-keeping and accountability
+
+WIN:
+
+- records requests and responses in internal systems,
+- leaves an audit trail where necessary for audit/review,
+- uses them statistically in transparency reporting to the extent appropriate (see [Transparency Reports](/topluluk-ve-guvenlik/seffaflik-raporlari)).
+
+---
+
+## Section 4: Request channels and authentication
+
+<Callout type="info" title="Summary of this section">
+  This section explains which channels public authorities may use to submit
+  requests, how WIN performs identity/authority verification, and accepted
+  formats.
+</Callout>
+
+### 4.1 Official communication channels
+
+<Callout type="info" title="Law enforcement request channels">
+  - **Official request email**: **support@whoisnextapp.com** (At this stage,
+  designated as the single channel for all corporate and legal requests.) -
+  **Emergency (24/7)**: WIN does not currently operate a separate 24/7
+  emergency telephone or on-call system for public authorities; emergency
+  requests must also be sent via official email. Operational responsibility in
+  this regard lies with the relevant law enforcement units. - **KEP / UETS**:
+  There is currently no active KEP or UETS address. Official notifications and
+  legal requests are accepted via the company address or corporate email
+  channels. - **Postal / service address**: WIN TECH Bilişim Organizasyon ve
+  Ticaret A.Ş. (For address details, please see [Terms of Use Section
+  16.4](/sozlesmeler/kullanim-kosullari#164-iletişim).)
+</Callout>
+
+> Note: For EU authorities, the DSA Art. 11 contact point, if published, should be followed via the [DSA Compliance Page](/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi).
+
+### 4.2 Request format and accepted documents
+
+Requests are expected to meet the following characteristics:
+
+- Be **written** and **official** in nature (wet ink / secure electronic signature / via official systems),
+- Clearly show the **identity and authority** of the requesting authority/personnel,
+- Include **file/document number**, **date**, and **legal basis**,
+- Have a defined **scope** (account/incident, data categories, time range).
+
+WIN **does not process** “oral” requests made by telephone only or applications whose official identity cannot be verified.
+
+### 4.3 Identity and authority verification (checks performed by WIN)
+
+When assessing requests, WIN may perform the following checks (to the extent applicable):
+
+- Verification of the requesting person’s institutional email domain / official contact information,
+- Verification of signature/stamp/e-signature,
+- Confirmation via callback through the institution’s official channels,
+- Review of the request content for procedure and scope.
+
+<Callout type="info" title="Protection against fraudulent requests">
+  Fraudulent or unidentified requests carry high risk for user safety and data
+  security. Therefore, WIN may not share data until verification steps are
+  completed.
+</Callout>
+
+### 4.4 Response times (target approach)
+
+Response times may vary depending on the scope of the request, technical availability, and completeness of the request. General target approach:
+
+- **Complete standard requests**: The goal is to complete the initial assessment and begin a response **within 5 business days**.
+- **Preservation requests**: Processed as soon as possible after verification.
+- **Emergency requests**: Answered on a priority basis if verification and urgency criteria are met.
+
+> Note: Requesting additional information for incomplete/vague requests may extend response times.
+
+---
+
+## Section 5: Minimum information required in a request
+
+<Callout type="info" title="Summary of this section">
+  This section lists the minimum fields required for a request to be processed
+  and good practice recommendations.
+</Callout>
+
+### 5.1 Minimum fields (checklist)
+
+| Field | Why is it required? |
+| ------------------------------------------------- | ----------------------------------------------------- |
+| **Requesting institution/authority** and unit | For authority/verification. |
+| **Name-surname and title** of the requesting person | For communication and authority confirmation. |
+| **Official contact information** (phone/email) | For verification and follow-up. |
+| **File/document number and date** | For record-keeping and traceability. |
+| **Legal basis** (statute article/type of decision, etc.) | For lawfulness assessment. |
+| **Purpose of the request** (summary) | For scope/proportionality assessment. |
+| **Requested data categories** | For data minimization and correct output. |
+| **Time range** | To prevent overly broad scope and enable correct filtering. |
+| **Account/content identifiers** | To identify the correct account. |
+| **Confidentiality/notification restriction** | For assessment of user notification. |
+| **Delivery method** (preference) | For secure transmission planning. |
+
+### 5.2 Account/content identifiers (examples)
+
+For requests to be handled quickly and correctly, at least one of the following should be provided where possible:
+
+- In-app **user ID** / account number: `12345678` (Example)
+- Registered **phone number** or **email** of the user
+- Profile **username** (handle) or in-app **link/screenshot** of the profile
+- **Content ID** / message ID / report ID for the relevant content
+
+<Callout type="warning" title="Important note">
+  Queries can be run using all elements necessary to identify a person (ID,
+  mobile phone, email, etc.), and there is no limitation in this regard.
+  However, specific identifiers (ID/URL) reduce the risk of incorrect matching.
+</Callout>
+
+### 5.3 Request template (suggestion)
+
+<details>
+  <summary>**Suggested request template (copy‑paste)**</summary>
+
+- **Institution/Authority**: …
+- **Unit**: …
+- **Requesting person** (Name‑Surname / Title): …
+- **Contact** (phone / official e‑mail): …
+- **File/Document No.**: …
+- **Date**: …
+- **Legal Basis**: …
+- **Purpose of the request (summary)**: …
+- **Request type**: (information request / preservation / emergency / content removal, etc.)
+- **Account identifiers**: (user ID / phone / e‑mail / handle / content ID)
+- **Requested data categories**: (account info / log / content / payment, etc.)
+- **Time range**: …
+- **Confidentiality/notification restriction**: …
+- **Delivery preference** (encrypted email / secure link / KEP, etc.): …
+
+</details>
+
+---
+
+## Section 6: WIN’s end-to-end request assessment and response process
+
+<Callout type="info" title="Summary of this section">
+  This section explains step by step the operational and legal steps WIN
+  follows after receiving a public request (record → verification → scope →
+  output → secure transmission → closure).
+</Callout>
+
+<Steps>
+### Step 1: Receipt and recording of the request
+When the request is received through an official channel, a unique “request record” is created; file/document number, date, requesting institution, and scope are noted.
+
+### Step 2: Identity and authority verification
+
+The requesting person’s institutional identity and authority are verified. If necessary, follow-up/confirmation is made through official channels.
+
+### Step 3: Assessment of legal basis and scope
+
+The legal basis of the request, data categories, time range, and account identifiers are reviewed. For overly broad/vague requests, additional information is requested or scope is narrowed.
+
+### Step 4: Data extraction and minimization
+
+Only data falling within the request scope is extracted. Data relating to third parties and unnecessary fields are filtered/masked where possible.
+
+### Step 5: Secure transmission
+
+The response is transmitted to the requesting authority by secure means (e.g., encrypted file, secure link, KEP, etc.). The transmission channel and delivery confirmation are recorded.
+
+### Step 6: Closure, retention, and reporting
+
+The request record is closed; response files and transaction logs are retained in accordance with relevant retention policies. Statistical data is generated for transparency reporting where appropriate.
+
+</Steps>
+
+---
+
+## Section 7: Request types and response scope
+
+<Callout type="info" title="Summary of this section">
+  This section explains common request types and, for each type, (i) minimum
+  conditions WIN expects, (ii) typical data outputs, and (iii) limitations.
+</Callout>
+
+### 7.1 Standard information requests (account/data/transaction records)
+
+WIN may share data available in its systems within procedurally proper and legally valid requests. Example data types:
+
+- **Account information**: registration date, verification status, profile/settings information, Device ID and session (login/last seen) records,
+- **Content data**: profile images/texts, report attachments; message content stored on **Google Firebase** (messages are not end-to-end encrypted),
+- **Technical data**: login/logout times, IP/session information, error/activity logs obtained via automated infrastructure services such as Firebase,
+- **Purchase/subscription**: App Store / Google Play transaction records and subscription status information.
+
+> Note: WIN can provide only data that **exists in its own systems** (server-side login/last seen, etc.) and is **technically accessible**.
+
+### 7.2 Traffic data / log requests (Law No. 5651 context)
+
+WIN handles traffic data/log records generated during provision of the service within the obligations foreseen under **Law No. 5651** and related secondary legislation.
+
+<Callout type="info" title="Good practice for traffic data requests">
+  - The request should, where possible, be limited to a **specific
+  account/session** or a **specific time range**. - Purpose and scope should be
+  clear (e.g., “login IP records for user ID Y in date range X”).
+</Callout>
+
+### 7.3 Preservation (preservation / legal hold) requests
+
+Where WIN receives a procedurally proper “preservation” request:
+
+- it may apply **temporary preservation** to prevent deletion of data with respect to the relevant account/content,
+- during this preservation, it may **separate** the data from the **normal retention flow**.
+
+<Callout type="info" title="Minimum information for a preservation request">
+  - **File/document no., date, and legal basis** - **Account/content
+  identifiers** (user ID, phone/e‑mail, content ID, etc.) - **Data categories to
+  be preserved** (e.g., log, message, profile content) - **Time range** (where
+  possible) - **Purpose of the request** (summary) and, if any,
+  **confidentiality/notification restriction** - **Preservation duration** and
+  **extension** instruction/method
+</Callout>
+
+<Callout type="warning" title="Important — Preservation ≠ Disclosure">
+  A preservation request means data is **retained**; a separate legally valid
+  **disclosure/delivery request** is required for data to be **shared**.
+</Callout>
+
+- **Preservation period**: The standard preservation period is applied as a **minimum of 90 days**. Extension requests must be submitted in official writing before the period ends.
+
+### 7.4 Emergency requests (risk to life / imminent harm)
+
+Exceptionally, where permitted by law and after necessary verification, WIN may share limited data to protect a person’s safety or reduce imminent life-threatening risk.
+
+<Callout type="warning" title="Emergency criteria (general framework)">
+  Emergency requests are not automatically accepted even if labeled
+  “emergency.” The request is expected to reasonably demonstrate that: - it
+  involves a **concrete** and **imminent** risk, - delay could cause serious
+  harm, - the requester is a **competent authority**.
+</Callout>
+
+<Callout type="info" title="Expected content for an emergency request (checklist)">
+  - **Nature of the emergency** (e.g., missing person, suicide risk, serious
+  threat of violence) and why it is “time-critical” - **Requesting
+  authority/personnel information** (identity, title, unit) + official contact
+  for callback - **File/document no.** and legal basis/framework (where
+  possible) - **Account/incident identifiers** (user ID, phone/e‑mail, content
+  ID, etc.) - Requested **data categories** and **time range** - If any,
+  **confidentiality/notification restriction** or “danger” justification
+</Callout>
+
+<Callout type="warning" title="Official process after an emergency response">
+  Limited sharing within an emergency framework should be supported, as soon as
+  possible, by procedurally proper official writing/decision. WIN may request
+  additional information or official documents after an emergency response.
+</Callout>
+
+### 7.5 Content removal / access blocking / account measures
+
+In situations involving illegal content or security risks:
+
+- WIN may apply content/account restrictions under its own contractual rules (see [Community Guidelines](/topluluk-ve-guvenlik/topluluk-kurallari) and [Terms of Use](/sozlesmeler/kullanim-kosullari)),
+- depending on geographic targeting, orders of competent authorities (e.g., orders under the DSA in the EU) are assessed separately.
+
+Public authorities may use the form on the [Illegal Content Notice Form](/basvuru-formlari/yasa-disi-icerik-bildirim-formu) page to submit illegal content notices in a standard and traceable manner; the form contains fields aligned with Law No. 5651, the TCK, and the DSA.
+
+---
+
+## Section 8: Categories of data that may be shared (sample inventory)
+
+<Callout type="info" title="Summary of this section">
+  This section lists, by way of example, data categories that may arise in law
+  enforcement requests and general limits observed in sharing.
+</Callout>
+
+| Data category | Example content | Notes / sensitivity |
+| -------------------------- | ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Account identifiers** | User ID, registration date, verification status | Depending on request scope. |
+| **Profile data** | Profile photo, profile text, preference fields | May be user-generated content. |
+| **Messaging data** | Message content, attachments | Stored on Google Firebase; not end-to-end encrypted. |
+| **Report/complaint data** | User reports, screenshots | May contain third-party data; minimization is important. |
+| **Technical/session data** | Device ID, IP, session login/last seen time, error logs | Last seen data is on the server; technical error logs are stored on Firebase/SDK infrastructure. |
+| **Location data** | Approximate or precise (GPS) location information | The app is location-based (finding the nearest user). Retained for the legal retention periods foreseen in legislation. |
+| **Payment/subscription** | Transaction ID, package type, period | Store records and commercial evidence retention periods (10 years) apply. |
+| **Verification data** | Selfie photos, verification result (success/fail) | Photo verification is performed with **Google Gemini 2.5 Flash**. Raw selfie/profile photos are stored on Firebase. WIN accesses the verification result (success/fail) through this process. |
+
+<Callout type="warning" title="Examples of data not shared/provided (general)">
+  - User **passwords**, secret keys, or authentication secrets. - Raw data held
+  by third parties that WIN does not technically possess (only within WIN’s
+  accessible roles as data controller/processor). - Requests such as real-time
+  monitoring/listening that are not within WIN’s service scope or not
+  legally/technically supported.
+</Callout>
+
+---
+
+## Section 9: User notification and transparency
+
+<Callout type="info" title="Summary of this section">
+  This section explains WIN’s approach to user notification and its connection
+  to transparency reporting.
+</Callout>
+
+### 9.1 User notification and responsibility
+
+Notifying the user in the context of government/law enforcement requests is not WIN’s responsibility or obligation. Prosecutor’s office and law enforcement investigations are confidential as a rule. Therefore, there is no obligation to notify users regarding data sharing carried out pursuant to procedurally proper requests.
+
+### 9.2 Situations where notification is not made or is delayed
+
+WIN may not notify or may delay notification in the following situations:
+
+- Where there is a **legal confidentiality obligation** or **notification prohibition**,
+- Where notification could compromise an investigation,
+- Where it would create a risk to a person’s safety.
+
+### 9.3 Transparency reports
+
+WIN aims to publish statistics regarding public authority requests and content actions periodically to the extent appropriate. See [Transparency Reports](/topluluk-ve-guvenlik/seffaflik-raporlari).
+
+---
+
+## Section 10: International requests and cross-border data
+
+<Callout type="info" title="Summary of this section">
+  This section explains the general approach to requests from foreign authorities
+  and the cross-border data transfer context.
+</Callout>
+
+### 10.1 Requests from foreign authorities
+
+When assessing requests from foreign authorities outside Turkiye, WIN considers whether the request has been transmitted in a procedurally proper manner through the Republic Prosecutor’s Office of the relevant country or an equivalent official/judicial institution. Such applications are responded to only through authorized official channels.
+
+### 10.2 Orders under the EU (DSA)
+
+Where services are provided in the EU, for orders of EU authorities and contact points, see the [DSA Compliance Page](/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi).
+
+### 10.3 Cross-border data transfer and hosting
+
+In WIN’s technical infrastructure, which countries host data and which suppliers are used may affect transfer and response processes. In Turkiye, the **KVKK** and **Regulation on the Transfer of Personal Data Abroad** framework is also considered for cross-border transfer scenarios. For the general approach on these matters, see the [Privacy Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi).
+
+---
+
+## Section 11: Security, record-keeping, and audit
+
+<Callout type="info" title="Summary of this section">
+  This section explains how requests and responses are managed securely,
+  recorded, and kept ready for audit.
+</Callout>
+
+### 11.1 Access and authorization
+
+Law enforcement requests are processed only under the control of legal/compliance and security teams authorized on this topic. Accesses are recorded.
+
+### 11.2 Secure transmission
+
+While the transmission method for responses has not yet been finalized as a single technical standard, transmission is principally carried out by taking necessary security measures via encrypted files, secure links, or notification systems.
+
+### 11.3 Retention of records (request records)
+
+Request records and response metadata (e.g., date, scope, delivery method) are retained for the period appropriate under relevant retention policies for accountability and audit purposes.
+
+---
+
+## Section 12: Changes and contact
+
+<Callout type="info" title="Summary of this section">
+  This section explains how the guide is updated and the path public authorities
+  should follow for contact.
+</Callout>
+
+WIN may update this guide due to legislative changes, technical architecture changes, or operational needs. The current version is published in the in-app “**Legal**” section and at [whoisnextapp.com](https://whoisnextapp.com).
+
+Public authorities should submit their requests through the official channels stated in Section 4.

@@ -1,9 +1,387 @@
+import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
+
 # Transparency Reports
 
-import { Callout } from "nextra/components";
+**Last updated:** 18.02.2026 · **Version:** 1.0
 
-<Callout type="info">
-  The English translation of this document is currently being prepared. Please check back soon.
+This page describes the scope, report types, metrics, and methodology of the **Transparency Reports** to be published periodically within **WIN’s** (“**Platform**”) approach to **transparency** and **accountability**.
+
+Transparency reports are prepared both to strengthen user safety and to help ensure that processes relating to content moderation and requests from public authorities are managed in a **measurable** and **auditable** manner.
+
+<Callout type="warning" title="Important — This page is a “report template”">
+  This page explains **which headings and metrics** will be used to produce the reports (template/methodology).
+  As periodic statistics are published, **new period report sections** may be added to this page or linked from separate pages.
 </Callout>
 
-The full English version of this document will be available shortly. For now, please refer to the [Turkish version](./) or contact us for assistance.
+---
+
+## Related documents
+
+Transparency reports are operated together with the following WIN documents as a single coherent “safety and compliance” set:
+
+<Cards num={2}>
+  <Card title="Community Guidelines" href="/topluluk-ve-guvenlik/topluluk-kurallari">
+    Types of prohibited content/behaviour, the reporting (complaint) mechanism, and the enforcement ladder.
+  </Card>
+  <Card title="Security Tips" href="/topluluk-ve-guvenlik/guvenlik-ipuclari">
+    Safe messaging for users, fraud warnings, and consent guidance.
+  </Card>
+  <Card title="Terms of Use" href="/sozlesmeler/kullanim-kosullari">
+    Service rules, violation sanctions, account suspension/termination, and the appeals framework.
+  </Card>
+  <Card title="DSA Compliance Page" href="/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi">
+    In the EU, if the service is offered: notice & action, statement of reasons, and appeal/complaint reporting obligations.
+  </Card>
+  <Card title="Law Enforcement Guide" href="/kurumsal-ve-yasal-uyumluluk/kolluk-kuvvetleri-rehberi">
+    Receipt, verification, scope control, and secure response principles for requests from public authorities.
+  </Card>
+  <Card title="Privacy Policy" href="/gizlilik-ve-veri-koruma/gizlilik-politikasi">
+    Processing, retention, and transfer of personal data in complaint/review/appeal processes.
+  </Card>
+  <Card title="Intellectual Property Policy" href="/kurumsal-ve-yasal-uyumluluk/fikri-mulkiyet-politikasi">
+    Copyright/trademark infringement notices and notice-and-takedown procedure.
+  </Card>
+  <Card title="Vulnerability Disclosure Policy" href="/kurumsal-ve-yasal-uyumluluk/guvenlik-acigi-bildirim-politikasi">
+    Responsible reporting of product security vulnerabilities, triage, and remediation approach.
+  </Card>
+</Cards>
+
+---
+
+## Report status (current)
+
+<Callout type="info" title="First reporting period">
+  **First reporting period:** Because the application has not yet been released, there is no data to report for this period. The first transparency report will be published at the end of the first calendar year following full-capacity release of the application. Reports will be prepared in **Turkish** and **English**.
+</Callout>
+
+---
+
+## Section 1: Purpose and principles
+
+<Callout type="info" title="Summary of this section">
+  This section explains “why” transparency reports are produced and the core principles followed in reporting.
+</Callout>
+
+WIN publishes transparency reports for the following purposes:
+
+- **Strengthening user trust**: Making content moderation and safety processes visible.
+- **Increasing accountability**: Making decisions and processes measurable.
+- **Detecting risks early**: Operational improvement through category-based trends (fraud, harassment, suspected minor safety issues, etc.).
+- **Supporting regulatory compliance**: Transparency obligations under the DSA (Regulation (EU) 2022/2065) in the EU in particular, and process disciplines in the 5651/KVKK context in Türkiye.
+
+The following principles apply when preparing reports:
+
+- **Accuracy and consistency**: Definitions, counting rules, and periods are stated clearly; comparability is preserved.
+- **Data minimization and privacy**: Personal data is not published; if small numbers would undermine anonymity, suppression/rounding is applied.
+- **Proportionality**: The balance between “how much to report” and security/privacy is observed.
+- **Accessibility**: Reports are published in formats that are as understandable and accessible as possible (see [Accessibility Statement](/kurumsal-ve-yasal-uyumluluk/erisilebilirlik-beyani)).
+
+---
+
+## Section 2: Scope and definitions
+
+<Callout type="info" title="Summary of this section">
+  This section defines the types of events within report scope, how reports may differ across “geographic/legal” contexts, and key terms.
+</Callout>
+
+Transparency reports generally cover the following event/process classes:
+
+- **User report / complaint**: Reports made on suspicion of a Community Guidelines violation.
+- **Illegal content notice**: Applications concerning content alleged to be “illegal” (of particular importance in the EU/DSA context).
+- **Moderation decision**: Actions such as content removal, visibility reduction, feature restriction, suspension/closure.
+- **Appeal/complaint**: Internal appeals against moderation decisions (in the EU, DSA Art. 20 and related processes).
+- **Public authority request**: Information/data requests from competent authorities such as courts, prosecution, law enforcement, etc. (see [Law Enforcement Guide](/kurumsal-ve-yasal-uyumluluk/kolluk-kuvvetleri-rehberi)).
+- **Orders**: In the EU under the DSA, tools such as “orders to provide information” and “orders to act against illegal content”.
+
+<Tabs items={["Türkiye-focused (5651/KVKK/TCC)", "EU-focused (DSA)"]}>
+  <Tab>
+    In Türkiye, reporting is associated in particular with platform responsibility and process disciplines under:
+    - **Law No. 5651** (hosting provider responsibility + traffic data/log obligations),
+    - **TCC No. 5237** (e.g. obscenity; offences against private life and communications),
+    - **KVKK No. 6698** (processing of personal data in complaint/review/appeal processes).
+  </Tab>
+  <Tab>
+    If the service is offered in the EU, reporting is structured in particular for alignment with the DSA, including:
+    - Art. 15 (annual content moderation report),
+    - Art. 16 (notice & action),
+    - Art. 17 (statement of reasons),
+    - Art. 20–21 (internal appeal and out-of-court dispute resolution),
+    - Art. 22–23 (trusted flagger and misuse),
+    - Art. 24 (additional reporting + EU average monthly active recipients + Art. 17 decision database).
+    For details, see [DSA Compliance Page](/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi).
+  </Tab>
+</Tabs>
+
+---
+
+## Section 3: Publication schedule, format, and access
+
+<Callout type="info" title="Summary of this section">
+  This section explains the frequency of reports, publication format, and where reports will be published.
+</Callout>
+
+- **Annual**: Publication at least once per year is planned (core transparency report package).
+- **Interim updates (optional)**: Interim notices may be issued in the event of critical security incidents or legal requirements.
+
+At this stage reports are prepared through **manual** processes and published as **web pages** via the Platform’s corporate website and this documentation portal.
+
+<Callout type="warning" title="No publication of personal data">
+  Reports do not contain information that can identify users/accounts/events at an individual level. If small numbers would undermine anonymity, related rows may be merged or suppressed.
+</Callout>
+
+### 3.3 Report packages (map)
+
+| Report package | Purpose | Typical period | Related document reference |
+|---|---|---:|---|
+| **Community safety and moderation** | View of Community Guidelines violations | Annual (+ optional interim) | `Community Guidelines`, `Terms of Use` |
+| **Illegal content (Notice & Action)** | DSA-style illegal content notices | Annual (if EU target) | `DSA Compliance Page` |
+| **Appeals and redress** | Decision quality, user rights, process efficiency | Annual | `Terms of Use`, `DSA` |
+| **Government/law enforcement requests** | Volume of official requests and response approach | Annual | `Law Enforcement Guide` |
+| **Intellectual property notices** | Copyright/trademark takedown view | Annual | `Intellectual Property Policy` |
+| **Product security** | Vulnerability reports and remediation | Annual | `Vulnerability Disclosure Policy` |
+
+---
+
+## Section 4: Report Package A — Community safety and moderation
+
+<Callout type="info" title="Summary of this section">
+  This section explains how reporting and moderation metrics relating to Community Guidelines violations will be reported.
+</Callout>
+
+### 4.1 Scope
+
+This package covers reports made under the **Community Guidelines** and moderation actions applied by WIN:
+
+- Profile content (text, photo),
+- Messaging content (where applicable and to the extent feasible),
+- Behaviour violations (harassment, threats, fraud, etc.),
+- Off-platform conduct allegations (limited by an appropriate evidence standard and operational framework).
+
+### 4.2 Core metric set
+
+| Metric | Description | Breakdowns |
+|---|---|---|
+| Total number of reports | Reports submitted by users | category, content type, country/region |
+| Number of unique reported accounts | How many distinct accounts were reported | category, period |
+| Number of moderation actions | Content removal / suspension / closure, etc. | action type, duration (temporary/permanent) |
+| Action-to-report ratio | In what share of reports action was taken | category |
+| Average/median handling time | Time from report to decision | category, channel |
+| Proactive detection actions | Violations detected without a report | automation/human review |
+| False/unfounded report indicators | Abuse signals | category, repetition |
+
+<Callout type="warning" title="Category standardization">
+  The category set—including “fraud”, “harassment”, “non-consensual intimate imagery”, “hate speech”,
+  “suspected minor safety (CSAE)”, “personal data disclosure”—should be standardized for both reporting and product flows.
+</Callout>
+
+### 4.3 Action types
+
+In this report, actions may be classified at least at the following levels:
+
+- **Content actions**: removal / visibility reduction / warning label.
+- **Account actions**: warning / feature restriction / temporary suspension / permanent closure.
+- **Safety actions**: automatic protective measures for the reporting party (e.g. mutual invisibility after a report) (depending on product design).
+
+### 4.4 Appeals (general)
+
+Appeals against moderation decisions are an important indicator of report quality:
+
+- total number of appeals,
+- appeal grant/denial rate,
+- appeal review time,
+- restrictions lifted / decisions reversed after appeal
+
+are reported under a separate subheading.
+
+> If EU target: Under DSA Art. 20, at least six months’ internal appeal access and human oversight are applied (see [DSA Compliance Page](/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi)). Outside the EU, the contractual framework: [Terms of Use](/sozlesmeler/kullanim-kosullari).
+
+---
+
+## Section 5: Report Package B — Illegal content (Notice & Action) and DSA transparency (if EU target)
+
+<Callout type="info" title="Summary of this section">
+  This section explains notice & action, statement of reasons, and appeal/complaint transparency metrics under the DSA when the service is offered in the EU.
+</Callout>
+
+### 5.1 Notice & Action metrics (Art. 16)
+
+The report includes at least the following (subject to applicability and exceptions):
+
+- Number of notices under Art. 16 (by category),
+- Rate of completion of “minimum elements” for notices (grounds + location/ID + good-faith statement, etc.),
+- Rate and time of sending receipt acknowledgements,
+- Average/median decision times,
+- Use of automation and its relationship to human review.
+
+### 5.2 Statement of Reasons (Art. 17)
+
+- Number of statements of reasons by restriction type,
+- Geographic scope of decisions (within the EU / by country),
+- Transparency regarding automation where used,
+- Summary of transmission of decisions to the Commission database under Art. 24(5) where applicable in the EU.
+
+### 5.3 Internal appeal and redress (Art. 20–21)
+
+This sub-report includes at least:
+
+- Appeal counts under Art. 20, grant/denial rates,
+- Review times and outcomes,
+- Number of applications proceeding to out-of-court dispute resolution under Art. 21 and outcome types.
+
+### 5.4 Trusted flagger and misuse (Art. 22–23)
+
+- Trusted flagger notice counts and prioritization metrics,
+- Counts of suspensions/restrictions relating to repetition of manifestly unfounded notices,
+- Counts of sanctions applied to accounts that frequently provide manifestly illegal content.
+
+If there is an EU target, the **average monthly active recipients** within the EU over the past six months (under Art. 24(2) DSA) will be published; because the application has not yet been released, this figure is for now treated as “0” (zero) or “not applicable”.
+
+---
+
+## Section 6: Report Package C — Government/law enforcement requests and official orders
+
+<Callout type="info" title="Summary of this section">
+  This section explains transparency metrics for public authority requests (information requests, preservation/legal hold, emergency) and, where applicable, content/account orders.
+</Callout>
+
+This package uses the same taxonomy as the [Law Enforcement Guide](/kurumsal-ve-yasal-uyumluluk/kolluk-kuvvetleri-rehberi).
+
+### 6.1 Request types
+
+- **Information/document requests** (account/profile, technical logs, content data, payment/subscription).
+- **Traffic data / log requests** (in Türkiye, in the 5651 context).
+- **Preservation / legal hold** requests.
+- **Emergency** requests (risk to life / imminent harm).
+- **Content/account orders**:
+  - Local procedures in Türkiye,
+  - Orders under the DSA in the EU (information provision / action against illegal content).
+
+### 6.2 Core metric set (recommended)
+
+| Metric | Description | Breakdowns |
+|---|---|---|
+| Total official requests | All verified requests | country, request type |
+| Fulfilled requests | Full/partial/denial | request type, data category |
+| Response times | Average/median time | request type, country |
+| Preservation requests | Number of records subject to preservation | country, duration |
+| Emergency requests | Emergency assessment counts | outcome type |
+| Orders | Removal/action orders | basis type, country |
+
+<Callout type="warning" title="Fraudulent requests and rejected applications">
+  Requests that cannot be authenticated or are unauthorized/fraudulent, and requests that are overly broad or vague,
+  may be rejected. In reporting, denial “reason categories” (no authority, insufficient information,
+  overly broad scope, etc.) may be classified in anonymized form.
+</Callout>
+
+### 6.3 User notification (general principle)
+
+As a rule, user notification is aimed at to the extent permitted by law. However, notification may be deferred or omitted if it would jeopardize an investigation, is prohibited by law, or creates a security risk (see `Law Enforcement Guide` Section 9).
+
+---
+
+## Section 7: Report Package D — Intellectual property notices
+
+<Callout type="info" title="Summary of this section">
+  This section defines the aggregated metric set for copyright/trademark and other intellectual property notices.
+</Callout>
+
+In line with the [Intellectual Property Policy](/kurumsal-ve-yasal-uyumluluk/fikri-mulkiyet-politikasi), this package may include metrics such as:
+
+- numbers of incoming notices (copyright/trademark/other),
+- number of items of content removed,
+- numbers of counter-notices/appeals,
+- repeat infringer enforcement indicators.
+
+> As a global reference framework, standards such as **DMCA** (US) and the DSA notice & action approach in the EU may be considered (see legislative index: DMCA/DSA).
+
+---
+
+## Section 8: Report Package E — Product security
+
+<Callout type="info" title="Summary of this section">
+  This section defines the numerical transparency summary for vulnerability reports (without personal data).
+</Callout>
+
+Consistent with the [Vulnerability Disclosure Policy](/kurumsal-ve-yasal-uyumluluk/guvenlik-acigi-bildirim-politikasi), this package may include metrics such as:
+
+- total vulnerability reports,
+- severity distribution (critical/high/medium/low),
+- remediation times (average/median),
+- number of out-of-scope reports (at a high level).
+
+---
+
+## Section 9: Methodology (counting rules and data sources)
+
+<Callout type="info" title="Summary of this section">
+  This section explains how numbers in reports are “produced” and the rules that ensure comparability across periods.
+</Callout>
+
+### 9.1 Counting unit: “case”, “content”, “account”
+
+Where possible, reports distinguish three units:
+
+- **Case**: A report, request, or review file.
+- **Content**: A single content item such as profile photo, profile text, message, media.
+- **Account**: A user account (unique).
+
+This distinction is critical for correct interpretation in situations such as “the same account being reported repeatedly”.
+
+### 9.2 Period, time zone, and geography
+
+- Each report clearly states the **start/end dates** it covers and the time zone.
+- If geographic breakdown is used, the country/region definition and source (e.g. user declaration, store region, IP-based estimate) are stated.
+
+### 9.3 Category taxonomy and mapping
+
+- The category set (fraud, harassment, etc.) is fixed.
+- If the in-product category set changes, backward comparability is explained in reports with a “mapping” note.
+
+### 9.4 What does “action taken” mean?
+
+The report distinguishes “action” at least into the following sub-types:
+
+- content action (removal/demotion),
+- account action (suspension/closure/feature restriction),
+- process action (requesting additional verification, applying preservation, etc.).
+
+### 9.5 Data sources (examples)
+
+Reports may collect data from:
+
+- In-app reporting/complaint system,
+- Support channels (help center / email),
+- Legal/compliance channels (official request email/KEP, etc.),
+- Moderation decision records,
+- Vulnerability reporting channel.
+
+---
+
+## Section 10: Privacy and security safeguards
+
+<Callout type="warning" title="Reports do not contain personal data">
+  Transparency reports do not publish personal data or identifiable information such as names, usernames, email, phone, message content, or raw logs.
+</Callout>
+
+The following technical/operational measures may be applied during reporting:
+
+- **suppression** for small numbers or merging categories,
+- aggregation/rounding (where necessary),
+- reporting only at “outcome type” level,
+- access authorization and audit trail.
+
+---
+
+## Section 11: User submissions and feedback
+
+Feedback on transparency reports may be submitted through the appropriate channels:
+
+- For community safety/reporting processes: in-app **Report / Notify** flow or, for written applications, the [Content Violation Form](/basvuru-formlari/icerik-ihlal-formu) or [Complaint and Report Form](/basvuru-formlari/sikayet-ve-ihbar-formu) (see [Community Guidelines](/topluluk-ve-guvenlik/topluluk-kurallari)).
+- For public authority requests: official channels under the [Law Enforcement Guide](/kurumsal-ve-yasal-uyumluluk/kolluk-kuvvetleri-rehberi).
+- For EU/DSA applications: [DSA Compliance Page](/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi).
+
+---
+
+## Section 12: Changes and version management
+
+WIN may update this page in line with legislation, product, and security needs. The “last updated” information and access to prior versions are published in the in-app “**Legal**” area and at [whoisnextapp.com](https://whoisnextapp.com).

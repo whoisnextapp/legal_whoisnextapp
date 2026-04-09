@@ -1,9 +1,434 @@
-# Biometric Data Disclosure & Consent
+import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
-import { Callout } from "nextra/components";
+# Biometric Data Disclosure and Explicit Consent Text
 
-<Callout type="info">
-  The English translation of this document is currently being prepared. Please check back soon.
+**Last updated:** 18.02.2026 · **Version:** 1.0
+
+This text has been prepared to inform you about aspects of processing that may fall within the scope of **biometric data**, such as the **selfie image** received from the user and **face verification** performed through this image, within the **selfie verification / liveness check** flow implemented under the **WIN** platform ("**Platform**"), and to obtain your **explicit consent** for these processing activities.
+
+<Callout
+  type="info"
+  title="Relationship with the KVKK Disclosure Text and Privacy Policy"
+>
+  This text **does not replace the KVKK Disclosure Text.** For data controller
+  information, general data categories, legal grounds, transfer framework, and
+  your rights under KVKK, please see: [KVKK Disclosure
+  Text](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni). This text is the
+  **specific and detailed** disclosure and **explicit consent** section
+  regarding the verification process that may constitute **biometric data** in
+  particular. For practical explanations in the Platform's daily use such as
+  "what is visible, what is not visible, and which controls are in your hands,"
+  see: [Privacy
+  Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi).
 </Callout>
 
-The full English version of this document will be available shortly. For now, please refer to the [Turkish version](./) or contact us for assistance.
+---
+
+## Related documents (shortcuts)
+
+<Cards num={3}>
+  <Card
+    title="KVKK Disclosure Text"
+    href="/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni"
+  >
+    General disclosure and your rights under Article 10 of KVKK.
+  </Card>
+  <Card
+    title="Privacy Policy"
+    href="/gizlilik-ve-veri-koruma/gizlilik-politikasi"
+  >
+    Practical explanation of the selfie/liveness step within the Platform.
+  </Card>
+  <Card
+    title="Explicit Consent Texts"
+    href="/gizlilik-ve-veri-koruma/acik-riza-metinleri"
+  >
+    Consent templates for overseas transfer and other consent topics.
+  </Card>
+  <Card title="Terms of Use" href="/sozlesmeler/kullanim-kosullari">
+    Fake account prohibition, verification processes, and user obligations.
+  </Card>
+  <Card
+    title="Community Guidelines"
+    href="/topluluk-ve-guvenlik/topluluk-kurallari"
+  >
+    Safe use, violation reporting, and enforcement approach.
+  </Card>
+  <Card
+    title="Law Enforcement Guidelines"
+    href="/kurumsal-ve-yasal-uyumluluk/kolluk-kuvvetleri-rehberi"
+  >
+    Official requests and data preservation approach.
+  </Card>
+</Cards>
+
+---
+
+## 1) Brief summary (layered disclosure)
+
+<Callout
+  type="warning"
+  title="Important — The risk level is high due to the nature of this feature"
+>
+  - **What do we do?** We take a **selfie** for profile verification and perform
+  face verification (with technical tools). This process may be evaluated as
+  **biometric data** under KVKK (KVKK Art. 6). - **Why do we do it?** To reduce
+  fake accounts, lower fraud/harassment risks, and protect Platform integrity. -
+  **Which technology?** Pose- and selfie-based profile verification is performed
+  with **Google Gemini 2.5 Flash**; inappropriate content inspection on selfie
+  images is performed with **Google Cloud Vision** (safeSearchDetection).
+  (Details: Sections 6 and 8) - **Any marketing use?** This biometric
+  processing is **not done for marketing purposes**; it is not used for
+  personalized ad targeting. - **Is it visible?** The verification selfie is
+  not published. After successful verification, a **green tick** badge is added
+  to each verified photo. To be included in the Platform's discovery flow
+  (Deck), at least one photo must be verified. - **Can you withdraw consent?**
+  Yes, but since this affects platform security, platform use may be restricted
+  or the account may be closed when consent is withdrawn. - **What happens if
+  you do not give consent?** Since selfie verification is a step designed for
+  Platform security, the **account creation** or **Platform usage** process
+  cannot be completed if consent is not given; because this step is a functional
+  requirement for Platform security.
+</Callout>
+
+---
+
+## 2) Purpose, scope, and legal basis
+
+### 2.1 Purpose
+
+The purpose of this text is to inform you in a **clear and understandable**
+way about data processing activities occurring in the Platform's selfie
+verification flow and to obtain your **explicit consent** (to the extent
+required).
+
+### 2.2 Scope
+
+This text covers the following Platform processes:
+
+- **Selfie verification / liveness check** (taking a selfie with the camera or providing a verification visual),
+- **Face verification** (technical comparison between selfie and profile photo(s) or reference visual(s)),
+- **Verification status** created as a result of verification and related **process records** (timestamp, number of attempts, etc.).
+
+> Note: There may also be other visual processes on the Platform, such as profile photo upload and photo moderation. This text specifically focuses on the **verification** process that may carry the nature of **biometric data**.
+
+### 2.3 Legal basis (references)
+
+While preparing this text, the following regulations are mainly taken as basis:
+
+- **Turkish Personal Data Protection Law No. 6698 (KVKK)**:
+  - **Art. 6** (**special categories of personal data**, including biometric and genetic data),
+  - **Art. 10** (disclosure obligation),
+  - **Arts. 11–14** (data subject rights and application procedures),
+  - **Art. 12** (obligations regarding data security).
+- **KVKK Communique on the Disclosure Obligation** (layered/clear disclosure approach).
+- **Regulation on the Transfer of Personal Data Abroad** (cross-border transfer mechanisms — to the extent applicable).
+
+If services are offered in the EU/EEA, the GDPR approach is also taken into
+account (Section 7).
+
+---
+
+## 3) What is biometric data? (in terms of this flow)
+
+Under KVKK, **biometric data** is considered special category personal data
+(KVKK Art. 6). In the Platform context, biometric data assessment comes into
+agenda particularly in the following cases:
+
+- technical processing of **facial images** such as selfies in a way that allows **uniquely identifying/verifying** a person,
+- generating **verification outputs** such as "face verification," "face matching," and "liveness."
+
+<Callout
+  type="info"
+  title="A photo is not always biometric data — but risk increases when processed for verification purposes"
+>
+  Uploading a profile photo on the Platform should, as a rule, not be designed
+  as "biometric processing." However, when a photo/selfie is subject to
+  technical processing for **identity/profile verification** purposes, it may
+  fall within the scope of "biometric data." Therefore, a separate disclosure
+  and explicit consent approach has been adopted for selfie verification.
+</Callout>
+
+---
+
+## 4) How does the selfie verification flow work? (according to WIN's current user journey)
+
+<Steps>
+### Step 1: Explicit consent layer
+Before selfie verification starts, explicit consent is requested from the user
+for "processing selfie and face information for verification purposes."
+
+### Step 2: Camera (and on some devices microphone) permission
+
+In the verification flow:
+
+- **camera permission** may be mandatory,
+- on some devices or app designs, **microphone permission** may be requested (e.g., video selfie infrastructure / technical requirement). (**Important:** Even if microphone permission is requested, no audio is recorded or stored in any way).
+
+These permissions can always be managed from your device operating system
+settings.
+
+### Step 3: Selfie capture (Pose Verification / Liveness)
+
+The Platform asks the user to take a selfie by mimicking a pose where they
+**randomly raise their right or left hand**. In this step, the **front camera**
+opens directly; to ensure security, **uploading photos from gallery is not
+offered.**
+
+### Step 4: Face verification and Moderation (Technical Comparison)
+
+The captured selfie image goes through the following technical processes:
+
+- **Google Gemini 2.5 Flash:** The requested pose (hand raise), consistency between selfie and your profile photo(s), and person verification are automatically assessed. Processing is limited to verification purposes; storing a permanent biometric template/embedding is not aimed.
+- **safeSearchDetection (Google Cloud Vision):** The selfie image is checked for inappropriate content.
+
+### Step 5: Result, Restrictions, and Objection
+
+According to the verification result:
+
+- After successful verification, a **green tick** badge is added to relevant photos. Verification is not granted to photos containing other people; only photos containing the user themselves can be verified.
+- **Error/Failure:** If verification fails, the user is informed. To prevent abuse/spam, a "cool down" (waiting period) such as **5 attempts per hour** may be applied.
+- **Objection:** Users can contact the support team at **support@whoisnextapp.com** for verification issues.
+
+</Steps>
+
+<Callout type="warning" title='This flow is considered "high sensitivity"'>
+  Since processes such as face verification may create risks such as false
+  match, discrimination/bias, account lockout, and privacy concerns; data
+  minimization, short retention periods, and strong security measures are
+  particularly important.
+</Callout>
+
+---
+
+## 5) Which data is processed? (by category)
+
+The data types that may be processed in this process are summarized below:
+
+| Data / Output                         | Description                                                             | Source                | Note                                                                  |
+| ------------------------------------- | ----------------------------------------------------------------------- | --------------------- | --------------------------------------------------------------------- |
+| **Verification selfie image**         | Photo taken for verification (or verification visual)                   | User                  | It is not intended to be published as a profile photo.               |
+| **Face verification outputs**         | Technical outputs such as similarity score, match result, verification status | Platform / provider   | Technical outputs are handled within the scope of "biometric assessment." |
+| **Liveness signals**                  | Pose compliance, number of retry attempts, technical quality signals    | Platform              | May vary according to the product's technical design.                |
+| **Process metadata**                  | Verification time, number of attempts, error code/success result        | Platform              | Limited to security and quality purposes.                            |
+| **Security records**                  | Fake account suspicion, objection/review notes                          | Platform              | Retention may be required for dispute and security purposes.         |
+
+<Callout
+  type="info"
+  title="Commitment not to use biometric data for marketing"
+>
+  Biometric data processed within the scope of selfie verification is not used
+  for **ad targeting**, **marketing profiling**, or **campaign message
+  personalization**.
+</Callout>
+
+---
+
+## 6) For which purposes do we process?
+
+Within selfie verification, your biometric data is processed for the following
+purposes and **limited** to these purposes:
+
+1.  **Profile verification**: Increasing the likelihood that a profile belongs to a real person and reducing fake profiles.
+2.  **Security and abuse prevention**: Reducing risks of bot/spam, identity impersonation, and fraud.
+3.  **Service integrity**: Supporting a reliable matching experience on the Platform.
+4.  **Objection/review**: Being able to conduct quality and security reviews in verification failures or objections.
+5.  **Legal obligations and protection of rights**: Records may need to be retained in cases of official requests, disputes, or legal claims.
+
+---
+
+## 7) Legal ground and explicit consent approach
+
+<Tabs items={["KVKK (Turkey)", "GDPR (EU/EEA) — disclosure note"]}>
+  <Tab>
+    Under KVKK, **biometric data is special category personal data** (KVKK Art.
+    6). In the Platform's selfie verification flow, processing biometric data is
+    generally based on your **explicit consent**.
+
+    In this scope:
+
+    - explicit consent is obtained as consent related to a specific subject, based on disclosure, and given with free will,
+    - you can **withdraw your consent at any time**,
+    - when consent is withdrawn, the verification feature and some related functions may not work (Section 10).
+
+    > Note: For the Platform's general KVKK framework, data controller information, and your rights, see: [KVKK Disclosure Text](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni).
+
+  </Tab>
+  <Tab>
+    If the Platform is offered in the EU/EEA, biometric data is assessed as
+    "special category data," and the typical approach in processes such as selfie
+    verification is **explicit consent** (GDPR Art. 9(2)(a)).
+
+    This tab is for general information purposes. Depending on your country,
+    additional rights may arise (objection, portability, complaint to a
+    regulatory authority, etc.).
+
+  </Tab>
+</Tabs>
+
+---
+
+## 8) Explicit consent text (template to be presented to the user in-app)
+
+The text below is the **recommended** template of the explicit consent text to
+be presented to the user in the application. The language may be simplified
+according to the product flow; however, the elements of "what is processed, who
+it is shared with, for what purpose, for how long, and withdrawal of consent"
+must be preserved.
+
+<Callout type="info" title="Explicit consent template">
+**Explicit Consent for Processing Selfie/Face Data (Biometric Data)**
+
+For profile verification on the Platform and prevention of fake accounts, I
+**give explicit consent** to the processing of my **selfie image** provided for
+verification and **face verification** operations to be performed through this
+image (including technical processing and outputs that may constitute biometric
+assessment).
+
+In this scope:
+
+- The verification process is carried out using **Google Gemini 2.5 Flash** and **Google Cloud Vision** (safeSearchDetection) services.
+- I know that for the verification process, **only instant camera image** will be used, and photos cannot be uploaded via gallery access.
+- I know that the selfie image I provide for verification **will not be published on my profile** and will not be shown to other users. In case of successful verification, a green tick badge will be added to my photos. I understand that at least one of my photos must be verified in this way to be included in the Platform's discovery flow (Deck).
+- I know that this biometric processing **will not be done for marketing purposes** and will not be used in ad targeting.
+- Retention period and disposal approach of my biometric data and transfer/cross-border transfer information are explained in this text.
+
+I know that I can **withdraw my consent at any time** and that withdrawal will
+not affect the lawfulness of processing carried out before withdrawal.
+
+</Callout>
+
+<Callout type="warning" title="Topics requiring separate consent">
+  If processing/transfer of biometric data by service providers **abroad** is
+  involved within the scope of selfie verification, a separate **cross-border
+  transfer mechanism** must be established under KVKK Art. 9 and the relevant
+  secondary legislation. Text and consent approach for this topic: [Explicit
+  Consent Texts](/gizlilik-ve-veri-koruma/acik-riza-metinleri) and [KVKK
+  Disclosure Text](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni).
+</Callout>
+
+---
+
+## 9) Retention period and disposal (specific to biometric data)
+
+Biometric data processed within selfie verification is retained **limited to the
+purpose** and for the **necessary period**; when the period expires or the
+processing purpose ceases, it is securely deleted/disposed of (KVKK Art. 7).
+
+| Data / record                               | Retention approach                                                                                                           | Disposal triggers                 |
+| ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| **Biometric Map / Face Recognition Data**   | Immediately after the face recognition process is completed and the person's authenticity is confirmed, it is **destroyed immediately.** | Completion of verification process |
+| **Verification Status (Verified Log)**      | Only a simple log remains in the system in the form of "Verified: Yes/No." Does not include biometric data.               | Account deletion                  |
+| **Audit Records**                           | Technical metadata kept for process security (non-biometric) may be retained for legal limitation periods.                  | Expiry of legal period            |
+
+### 9.1 What happens if consent is withdrawn?
+
+**Important:** Biometric data is not retained with a "it may be needed later"
+approach.
+
+    When you withdraw your consent:
+    - Biometric data processing is stopped,
+    - Biometric data in the system is deleted **immediately and irreversibly**. No grace period is applied.
+    - The "Verified" badge on your profile is removed, and related security/privilege mechanisms are disabled.
+
+### 9.2 Exceptions
+
+In the following cases, data may need to be retained longer:
+
+- an ongoing dispute/objection process,
+- official authority requests or legal obligations,
+- security/preservation (evidence preservation) processes.
+
+For the framework of these exceptions: [Law Enforcement
+Guidelines](/kurumsal-ve-yasal-uyumluluk/kolluk-kuvvetleri-rehberi).
+
+---
+
+## 10) Possible consequences of not giving or withdrawing consent
+
+Selfie verification is part of the Platform's approach to reduce fake accounts
+and increase user safety. Therefore:
+
+- if consent is not given, the **account creation** or **Platform usage** process cannot be completed; because this step is a functional requirement for Platform security,
+- if consent is withdrawn, your verification status is removed and your access/use of the Platform may be restricted.
+- for security reasons, certain operations may remain pending "until verification is completed."
+
+<Callout type="info" title="User control">
+For consent/permission management, you may use the in-app "Settings > Legal >
+Consents/Permissions" area or submit a request via KVKK application channels.
+For detailed application procedure: [KVKK Disclosure
+Text](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni).
+</Callout>
+
+---
+
+## 11) Transfers and service providers (specific to biometric process)
+
+In the selfie verification process, service providers may be involved for
+infrastructure and verification purposes. In the current setup:
+
+- verification selfie and related records may be stored on **Google Cloud / Firebase** infrastructure,
+- **Google Gemini 2.5 Flash** may be used for pose and face/profile consistency verification.
+
+> Important: The role of service providers may vary as "data processor" or "independent data controller." For the general role approach, see: [KVKK Disclosure Text](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) and [Privacy Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi).
+
+| Provider / system               | Purpose                                                                 | Data type                               | Location             | Note                                                                                                          |
+| ------------------------------- | ----------------------------------------------------------------------- | --------------------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------- |
+| **Google Cloud / Firebase**     | Hosting, retention; inappropriate content inspection on selfie (Google Cloud Vision — Safe Search) | Selfie image and technical records       | **EU (multi-region)** | Data is encrypted.                                                                                            |
+| **Google Gemini 2.5 Flash**     | Pose- and selfie-based profile verification (consistency / person verification)                     | Selfie image (instant), profile visuals  | **[GEMINI_REGION]**  | Automated assessment limited to verification purpose; storing permanent biometric template/embedding is not aimed. |
+
+<Callout type="warning" title="Cross-border transfer note">
+  If transfer of data to servers abroad is involved, an appropriate transfer
+  mechanism must be established under KVKK Art. 9 and the relevant regulation.
+  Details on this topic: [KVKK Disclosure
+  Text](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) and [Explicit Consent
+  Texts](/gizlilik-ve-veri-koruma/acik-riza-metinleri).
+</Callout>
+
+---
+
+## 12) Security measures (additional sensitivity for special category data)
+
+Since biometric data is considered **special category** under KVKK, security
+measures are handled with higher sensitivity. In this scope (examples):
+
+- **Encryption**: TLS in data transfer; encryption at rest and secure key management in storage.
+- **Access control**: least privilege, role-based authorization, MFA, logging.
+- **Segregation**: managing verification selfie separately from profile photos and general content with separate logical storage/access policies.
+- **Audit trail**: retaining access and process logs; anomaly/breach detection.
+- **Vendor management**: data processing agreements with service providers, confidentiality obligations, and security audits.
+- **Disposal procedures**: automatic deletion on period expiry, rapid disposal on deletion requests; deletion approach in backups.
+
+For the general data security approach: [KVKK Disclosure
+Text](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) and [Security
+Vulnerability Disclosure
+Policy](/kurumsal-ve-yasal-uyumluluk/guvenlik-acigi-bildirim-politikasi).
+
+---
+
+## 13) Your rights and application methods
+
+Under KVKK Art. 11, you have rights such as learning whether your personal data
+is processed, requesting information, learning whether it is used in accordance
+with its purpose, knowing third parties to whom it is transferred, requesting
+correction/deletion, objecting, and requesting compensation for your damage.
+
+For exercising these rights and application procedure: [KVKK Disclosure
+Text](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni).
+
+---
+
+## 14) Changes
+
+This text may be updated in line with changes in the Platform's verification
+setup, vendor infrastructure, or legislation. Updates are published in the
+in-app "Legal" section and at
+[whoisnextapp.com](https://whoisnextapp.com).
+
+---
+
+## 15) Contact
+
+For your questions regarding this text and your requests under KVKK, you may
+use the communication channels stated in the [KVKK Disclosure
+Text](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni).

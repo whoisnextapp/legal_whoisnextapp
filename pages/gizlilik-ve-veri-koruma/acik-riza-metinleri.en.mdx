@@ -1,9 +1,470 @@
+import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
+
 # Explicit Consent Texts
 
-import { Callout } from "nextra/components";
+**Last updated:** 20.02.2026 · **Version:** 1.0
 
-<Callout type="info">
-  The English translation of this document is currently being prepared. Please check back soon.
+This page contains the **explicit consent** ("**Explicit Consent**") texts that may be obtained from users for specific data processing activities within the scope of the **WIN** platform ("**Platform**"), together with in-app design recommendations.
+
+<Callout
+  type="warning"
+  title="Important — This page does not replace the KVKK Disclosure Text"
+>
+  For the data controller information under KVKK, processing purposes, legal bases,
+  transfer framework, and your rights: [KVKK Disclosure
+  Text](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni). For the Platform's practical
+  privacy explanation: [Privacy
+  Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi).
 </Callout>
 
-The full English version of this document will be available shortly. For now, please refer to the [Turkish version](./) or contact us for assistance.
+---
+
+## Related documents (shortcuts)
+
+<Cards num={3}>
+  <Card
+    title="KVKK Disclosure Text"
+    href="/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni"
+  >
+    Legal bases, transfer, retention, and your KVKK rights.
+  </Card>
+  <Card
+    title="Privacy Policy"
+    href="/gizlilik-ve-veri-koruma/gizlilik-politikasi"
+  >
+    Visibility, control, and practical explanations in daily use.
+  </Card>
+  <Card
+    title="Cookie Policy"
+    href="/gizlilik-ve-veri-koruma/cerez-politikasi"
+  >
+    Web cookies and mobile SDK/tracker technologies.
+  </Card>
+  <Card
+    title="Biometric Data Disclosure and Consent"
+    href="/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza"
+  >
+    Separate (special) consent text for selfie/liveness verification.
+  </Card>
+  <Card title="Terms of Use" href="/sozlesmeler/kullanim-kosullari">
+    Platform usage rules and contractual framework.
+  </Card>
+  <Card
+    title="Subscription and Purchase Terms"
+    href="/sozlesmeler/abonelik-ve-satin-alma-kosullari"
+  >
+    Premium and purchase processes (to the extent applicable).
+  </Card>
+</Cards>
+
+---
+
+## 1) What is explicit consent? (KVKK Art. 3)
+
+Under KVKK, explicit consent is defined as **"consent relating to a specific subject, based on information, and expressed with free will"** (KVKK Art. 3).
+
+In practice, the following elements are jointly sought in a "valid" explicit consent design:
+
+- **Subject-specificity (granularity)**: Consent is **separated by subject** instead of a single "general package" (e.g., location, marketing, cross-border transfer are separate).
+- **Information**: The user is informed clearly on headings such as "what is processed, with whom it may be shared, for what purpose, withdrawal of consent, consequences."
+- **Free will**: Consent should not be imposed as a **mandatory prerequisite for service provision** (especially for marketing consent).
+- **Withdrawability**: The user must be able to **withdraw consent easily**; withdrawal does not affect the lawfulness of processing before withdrawal.
+- **Provability**: The fact that consent was obtained, its scope, and timing are **recorded** (Disclosure Communique Art. 5/e; ETK/İYS record obligations).
+
+<Callout
+  type="info"
+  title="Distinction between disclosure and explicit consent (Disclosure Communique Art. 5/f)"
+>
+  Where personal data processing relies on explicit consent, **the disclosure
+  obligation** and **the obtaining of explicit consent** must be fulfilled
+  **separately**. Therefore, even if "KVKK Disclosure Text link + brief
+  information" and "consent via checkbox" are on the same screen in the app,
+  they should be **separated in both text and flow.**
+</Callout>
+
+---
+
+## 2) "Consent/permission/approval" layers in WIN (do not mix)
+
+Not all "yes" responses obtained from users in WIN belong to the same legal category. The distinctions below are critical both for correctly structuring texts and for correctly keeping records:
+
+<Tabs items={["KVKK Explicit Consent", "ETK Commercial Message Approval (İYS)", "Device Permissions (OS)"]}>
+  <Tab>
+    **KVKK explicit consent** is relevant under KVKK Art. 5/1 and especially under KVKK Art. 6 for **special categories of personal data**.  
+    Typical headings that may require explicit consent in the WIN context:
+
+    - Selfie/liveness verification that may qualify as **biometric data** (instant capture with camera and technical verification via **Google Gemini 2.5 Flash** - see separate text)
+    - Onboarding preferences related to special category data such as **religion / political opinion** or capable of creating inferences within this scope
+    - Depending on the mechanism, **cross-border transfer** (KVKK Art. 9)
+    - Depending on product design, **location** and similarly high-sensitivity data
+
+    **Important:** Granting certain consents (especially biometric verification and cross-border transfer) may be designated as a **functional necessity** for platform security and technical provision of the service; in this case, failure to grant consent may restrict use of the Platform.
+
+  </Tab>
+  <Tab>
+    **Commercial electronic message approval** falls within the scope of Law No. 6563 (ETK) and the **Regulation on Commercial Communication and Commercial Electronic Messages**.  
+    This approval:
+
+    - is generally for campaign-promotion communication via **SMS/email/push/calls**,
+    - is carried out together with **İYS** (Message Management System) processes and record obligations,
+    - should **not be confused** with "service messages" (subscription, security, password, transaction information).
+
+    Pursuant to the Regulation: approval cannot be **pre-selected** (Art. 7/8) and cannot be put forward as a **prerequisite** for service provision (Art. 7/9).
+
+  </Tab>
+  <Tab>
+    **Device permissions** are the operating system "permission" layer on iOS/Android (e.g., location, camera, microphone, notifications).  
+    These permissions:
+
+    - do not **replace** KVKK explicit consent (always),
+    - but in practice technically start/stop "data collection,"
+    - can always be managed by the user from OS settings.
+
+    Example: For location data, (i) OS permission + (ii) user information under KVKK/ETK should be designed together.
+
+  </Tab>
+</Tabs>
+
+---
+
+## 3) Explicit consent management in the app (recommended design)
+
+The following flow proposes a **consent management** standard compatible with WIN's current onboarding and "Legal" architecture.
+
+<Steps>
+### Step 1: Layered information (link + brief summary)
+On the onboarding "Legal Approval & Explicit Consent" screen, at minimum the following links should be visible:
+
+- [KVKK Disclosure Text](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni)
+- [Privacy Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi)
+- [Terms of Use](/sozlesmeler/kullanim-kosullari)
+- (To the extent applicable) [Cookie Policy](/gizlilik-ve-veri-koruma/cerez-politikasi)
+
+Then, the consent checkboxes below are shown **separately**. **Important:** In order to ensure the security and functional operation of the Platform, granting these consents is kept **mandatory** at the onboarding stage.
+
+### Step 2: Separate consents (do not put "everything" into one checkbox)
+
+Sample separation:
+
+- Location data processing (GPS - Foreground Only)
+- Special category/sensitive fields (religion/political opinion, etc.)
+- Cross-border transfer (**[GEMINI_REGION]** / Firebase EU)
+- Marketing messages (SMS, Email, Push)
+- Personalized advertising/tracking (IDFA/GAID, etc.)
+
+### Step 3: One-click access to the "detailed text"
+
+With the "Detail" link next to each checkbox, the **detailed text** of the relevant consent (templates on this page) should be openable.
+
+### Step 4: Keep logs suitable for record/proof
+
+In order for the user to start using the platform, granting these consents is mandatory. Therefore, the user's **registration date and the policy version in force on that date** form the basis of consent proof.
+
+### Step 5: Withdrawal and preference management
+
+The user can manage or withdraw consents via the in-app **Settings > Legal > Consents** screen.
+
+</Steps>
+
+---
+
+## 4) Text templates (adapted for WIN)
+
+<Callout type="info" title="How should this section be used?">
+  The texts in this section are **templates** that can be used as in-app
+  "checkbox", "detail pop-up", or "full-page text." As product and supplier
+  architecture becomes clear, the bracketed fields should be filled and updated
+  according to the providers used.
+</Callout>
+
+---
+
+## 4.1 Explicit Consent for Processing Location Data (location-based matching)
+
+<Callout type="info" title="Checkbox label (short text) — recommended">
+  I accept the processing of my location information (approximate/precise) for
+  the purpose of **recommending nearby users** and **displaying distance**.
+</Callout>
+
+<Callout type="info" title="Detailed explicit consent text (popup / page) — template">
+On the Platform, I give explicit consent to the processing of my **precise location (GPS latitude-longitude)** information obtained from my device for the purposes of **recommending nearby users**, **displaying distance information**, and enabling the matching experience.
+
+Within this scope:
+
+- I acknowledge that location data will be processed **only while the app is open (foreground)** and that no background location tracking will be performed,
+- I acknowledge that I can always manage location permission via **device settings** or the in-app **Settings** section,
+- I acknowledge that if I withdraw my consent, location-based features (matching, distance display, etc.) will not function,
+- I acknowledge that withdrawal of consent will not affect the lawfulness of processing prior to withdrawal
+
+I hereby declare that I have been informed and accept.
+
+</Callout>
+
+<Callout
+  type="warning"
+  title="Application note — OS permission + KVKK consent must be managed separately"
+>
+  For location data: 1) iOS/Android **location permission** (technical
+  permission), 2) **KVKK explicit consent** in this text (legal consent) are
+  separate concepts and must be recorded separately.
+</Callout>
+
+---
+
+## 4.2 Processing of Matching Preferences (profile/filtering)
+
+This consent relates to the processing of certain preferences provided by the user to create the matching experience. In dating applications, these preferences may, in some scenarios, create a risk of **inference related to special category data** (see [KVKK Disclosure Text](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) — Section 4.1).
+
+<Callout type="info" title="Checkbox label (short text) — recommended">
+  I accept the processing of my matching preferences (e.g., gender/age and
+  similar matching parameters).
+</Callout>
+
+<Callout type="info" title="Detailed explicit consent text (popup / page) — template">
+**Explicit Consent Regarding the Processing of Matching Preferences**
+
+On the Platform, I give explicit consent to the processing of my matching preferences declared to the Platform and compatibility parameters derived from these preferences for the purposes of **operation of the matching and recommendation (deck) system**, **profile filtering**, and **generation of compatibility scores**.
+
+These preferences may, in some cases, create **indirect inferences** regarding sensitive areas such as sexual life/sexual orientation. Therefore:
+
+- I acknowledge that these preferences will be used only to provide the matching experience and to perform the Platform's core functions,
+- I acknowledge that they will not be used for marketing/advertising targeting,
+- I acknowledge that I can update my preferences in in-app settings and (depending on product design) withdraw my consent
+
+I hereby declare that I have been informed and accept.
+
+</Callout>
+
+---
+
+## 4.3 Special Category / Sensitive Areas (religion, political opinion, etc.) — Explicit Consent
+
+Certain questions in WIN onboarding (e.g., "**How important is religion in your life?**", "**Political opinion compatibility**") may involve data processing that can be considered **special category data** under KVKK Art. 6 or may create such **inferences**.
+
+<Callout type="info" title="Checkbox label (short text) — recommended">
+  I accept the processing of my preference and compatibility parameters related
+  to sensitive areas such as religion/political opinion for matching purposes.
+</Callout>
+
+<Callout type="info" title="Detailed explicit consent text (popup / page) — template">
+**Explicit Consent for Processing Preferences Related to Special Category / Sensitive Areas**
+
+On the Platform, for the purposes of **increasing matching compatibility**, **creating preference/compatibility parameters**, and personalizing my profile, I give explicit consent to the processing of data related to the following fields that I declare during onboarding and use:
+
+- **Religion:** preference/importance level related to religion/belief (including the options I do not believe, Not central in my life, Important, Very important),
+- **Political Opinion:** preference/importance level related to political opinion compatibility (including the options I am not interested in politics, May have different views, Important at some point, It is very important that we share the same view),
+- I acknowledge that for these questions, I can choose not to share data by using the **"I do not want to specify"** option,
+- I acknowledge that these data will not be used **for marketing purposes** and will not be used in advertising targeting,
+- I acknowledge that I can withdraw my consent at any time.
+
+</Callout>
+
+<Callout
+  type="warning"
+  title="Product note — 'I do not want to specify / answer later' option"
+>
+  For such sensitive questions, designing an "**I do not want to specify**" or
+  "**Answer later**" option in the app is recommended in terms of granting
+  explicit consent with free will and data minimization.
+</Callout>
+
+---
+
+## 4.4 Biometric Data (Selfie/Liveness) — separate text
+
+Selfie verification / liveness control is managed with a separate text due to biometric assessment risk:
+
+- [Biometric Data Disclosure and Explicit Consent Text](/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza)
+
+On this page, only a short checkbox template is provided to reference "biometric" consent in the onboarding consent layer.
+
+<Callout type="info" title="Checkbox label (short text) — recommended">
+  I accept the processing of my selfie/face data for profile verification
+  through **Google Gemini 2.5 Flash** and **Google Cloud Vision** (Safe Search)
+  infrastructure, using only instant camera image (without gallery access).
+  (Detail: Biometric Data Text)
+</Callout>
+
+---
+
+## 4.5 Cross-Border Transfer (KVKK Art. 9) — templates by mechanism
+
+With the 2024 amendment, KVKK Art. 9 provides mechanisms such as **adequacy decision**, **appropriate safeguards** (e.g., standard contract), and **exceptional explicit consent** only under certain conditions for cross-border transfer. For details: [KVKK Disclosure Text](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) — Section 8.
+
+<Tabs items={["A) Transfer with Appropriate Safeguards (consent may not be required)", "B) Explicit Consent (exceptional/incidental transfer)"]}>
+  <Tab>
+    <Callout type="info" title="Information text (can be used without consent checkbox) — template">
+    **Cross-Border Transfer Information (with Appropriate Safeguards)**
+
+    The Platform may require your personal data to be processed in systems located abroad due to cloud infrastructure and service providers. Such transfers are carried out under KVKK Art. 9 and the "Regulation on Procedures and Principles Regarding the Transfer of Personal Data Abroad" through mechanisms such as an **adequacy decision** or **appropriate safeguards** (e.g., standard contracts announced by the Board).
+
+    In the Platform's current technical architecture, the following providers are used and these providers' servers are predominantly located **abroad** (EU/US):
+
+    - **Google Cloud / Firebase:** Hosting, database, notification infrastructure; inappropriate content control on selfie (Google Cloud Vision - Safe Search). (Location: **EU**)
+    - **Google Gemini 2.5 Flash:** Pose and selfie-based profile verification. (Location: **[GEMINI_REGION]**)
+    - **MeiliSearch:** Search and filtering (catalog) infrastructure.
+    - **Twilio:** SMS and email verification channels.
+    - **Google Sign-In:** Authentication interface.
+
+    For the cross-border transfer approach, recipient categories, and your rights: [KVKK Disclosure Text](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni).
+    </Callout>
+
+  </Tab>
+  <Tab>
+    <Callout type="warning" title="When is it used?">
+    This explicit consent template is a "backup" approach for cases where **adequacy decision/appropriate safeguards cannot be established** and transfer needs to be assessed as **exceptional/incidental** under KVKK Art. 9.  
+    In regular and continuous cloud transfers, product-legal architecture should be designed with **appropriate safeguards** (e.g., standard contract).
+    </Callout>
+
+    <Callout type="info" title="Checkbox label (short text) — recommended">
+    I accept the transfer of my personal data to servers/providers abroad.
+    </Callout>
+
+    <Callout type="info" title="Detailed explicit consent text (popup / page) — template">
+    **Explicit Consent for Cross-Border Transfer of Personal Data (Exceptional)**
+
+    Within the scope of operating the Platform, I give explicit consent to the transfer of my personal data to service providers/systems located abroad for the purposes of providing hosting, infrastructure, security, verification, and similar services.
+
+    Within this scope:
+
+    - I acknowledge that **risks** may arise such as the absence of a data protection regime at the level in Turkey in the country/organization where transfer will be made,
+    - I acknowledge that appropriate mechanisms under KVKK Art. 9 are established in cross-border transfers; however, in some situations transfer may rely on **my explicit consent**,
+    - I acknowledge that the main purpose of the transfer is operation of the Platform (hosting/infrastructure/operations),
+    - I acknowledge that I can withdraw my consent at any time; and that withdrawal will not affect the lawfulness of processing before withdrawal
+
+    I hereby declare that I have been informed and accept.
+    </Callout>
+
+  </Tab>
+</Tabs>
+
+---
+
+## 4.6 Commercial Electronic Message / Marketing Permission (ETK + İYS)
+
+If WIN wishes to communicate for campaign-promotion and promotional purposes, **prior approval** (opt-in) must be obtained (ETK Art. 6; Regulation Art. 5 and Art. 7).  
+This approval remains valid until consent is withdrawn and is managed through İYS processes.
+
+<Callout type="warning" title="Mandatory messages ≠ marketing">
+  "**Functional notifications**" (Regulation Art. 6) such as subscription/payment,
+  security, account verification, and important service changes are not marketing
+  and must be managed separately. Not granting marketing permission does not
+  prevent mandatory service notifications.
+</Callout>
+
+### 4.6.1 Channel-based separation (recommended)
+
+Commercial message permissions should be separated by channel (example):
+
+- Marketing messages via **SMS**
+- Marketing messages via **Email**
+- Marketing messages via **Push notifications**
+- Promotional calls via **Calls (call center)**
+
+<Callout type="info" title="Checkbox label (short text) — examples">
+  **(SMS)** I would like to receive WIN's campaigns and promotions via SMS.
+  **(Email)** I would like to receive WIN's campaigns and promotions via email.
+  **(Notification)** I would like to receive campaign and promotion Push
+  (Instant) notifications from WIN.
+</Callout>
+
+<Callout type="info" title="Detailed approval text (ETK/İYS) — template">
+By WIN TECH Bilişim Organizasyon ve Ticaret A.Ş., regarding campaigns, promotions, announcements, and introductions related to the Platform; I **approve** the sending of commercial electronic messages via **SMS** (through Twilio), **Email** (through support@whoisnextapp.com), and **Marketing Push Notifications** channels.
+
+Within this scope:
+
+- **Push Notifications:** I acknowledge that I can enable/disable marketing push notifications from in-app settings; and that if I enable them, I may see a brief summary of the content on the lock screen,
+- I acknowledge that my approval is valid only for the channels I selected,
+- I acknowledge that I may withdraw my approval at any time, without giving any reason (right to refuse),
+- I acknowledge that I can exercise my right to refuse via methods in sent messages (unsubscribe link, STOP code, etc.), in-app settings, and/or through **İYS**.
+
+</Callout>
+
+<Callout
+  type="warning"
+  title="Operational note — approval text design rules (Regulation Art. 7)"
+>
+  - In the approval text, "positive declaration of will" cannot be **pre-selected**
+  (Art. 7/8). - Marketing approval cannot be put forward as a **prerequisite** for
+  service provision (Art. 7/9). - In approvals obtained electronically, information
+  that approval has been obtained must be delivered to the recipient **within 24
+  hours** (Art. 7/3) (there may be an exception for approvals obtained via İYS).
+</Callout>
+
+İYS (Message Management System) is a national database that ensures all commercial electronic message permissions in Turkey are collected in a single center. WIN is obliged by legislation to register the marketing approvals it obtains in İYS. Users may also check or reject the approvals they have given at [iys.org.tr](https://iys.org.tr) at any time.
+
+---
+
+## 4.7 Personalized advertising/tracking consent (IDFA/GAID, SDKs)
+
+When WIN's advertising/attribution/measurement infrastructure is activated, it is recommended to present users with a separate consent where they can manage **personalized advertising/tracking** preferences. Cookies may come into play on the web side; SDKs and advertising identifiers (IDFA/GAID) on mobile.
+
+For a detailed inventory and preference management framework: [Cookie Policy](/gizlilik-ve-veri-koruma/cerez-politikasi).
+
+<Callout type="info" title="Checkbox label (short text)">
+  I accept the processing of my advertising identifiers (IDFA/GAID) and usage
+  data for personalized advertising and marketing measurement purposes.
+</Callout>
+
+<Callout type="info" title="Detailed consent text (popup / page) — template">
+**Personalized Advertising Consent (AdMob)**
+
+**Google AdMob** infrastructure is used for ad display on the Platform. Although personalized ad targeting is not currently active, I give explicit consent to the processing of my advertising identifiers (such as IDFA/GAID) and usage data for ad performance measurement purposes.
+
+Within this scope:
+
+- I acknowledge that I can withdraw my consent at any time,
+- I acknowledge that the processed data types and provider details are explained in the [Cookie Policy](/gizlilik-ve-veri-koruma/cerez-politikasi).
+
+</Callout>
+
+---
+
+## 5) Consent records (logging) — recommended minimum fields
+
+<Callout type="info" title="Why is it important?">
+  Both under KVKK (Disclosure Communique Art. 5/e) and ETK/İYS processes, consents/
+  approvals must be **provable**. In WIN, granting certain consents is designed as
+  a mandatory step (blocking factor) to start using the Platform. Therefore, the
+  user's registration date and the policy version in force on that date form the
+  basis of consent proof. Updates are presented via pop-up notifications, and
+  continued use is deemed confirmation of updated consent.
+</Callout>
+
+Recommended minimum consent record fields:
+
+| Field                  | Description                                                                |
+| ---------------------- | -------------------------------------------------------------------------- |
+| **consent_id**         | Unique record ID for each consent event                                    |
+| **user_id**            | WIN user ID (technical)                                                    |
+| **subject**            | Consent title (location / marketing-SMS / cross-border transfer, etc.)     |
+| **status**             | granted / rejected / withdrawn                                             |
+| **timestamp**          | date-time + timezone                                                       |
+| **policy_version**     | text version (e.g., 2026-02-17 v1)                                         |
+| **app_version**        | app version                                                                |
+| **collection_point**   | screen/flow where consent was obtained (checkbox during registration, etc.) |
+| **retention_period**   | Consent records are retained for **10 years** due to proof and legal limitation periods. |
+| **channel (for ETK)**  | Notification / SMS / Email                                                 |
+
+---
+
+## 6) Consent withdrawal — general note
+
+Consent withdrawal channels:
+
+- **In-app**: Settings / Account Settings > Legal/Consents
+- **Help and Support**: Submit withdrawal request through in-app ticketing system or support email.
+- **OS permissions**: Device settings for location/camera/microphone/notification permissions.
+- **ETK/İYS**: Withdrawal mechanism within SMS/email + withdrawal via İYS.
+
+Withdrawal of consent does not affect the lawfulness of processing carried out before withdrawal. However, after withdrawal, certain consent-dependent features may not function or may be restricted.
+
+---
+
+## 7) Children's data and age restriction
+
+WIN is a service intended only for individuals **aged 18 and above**. Accordingly:
+
+- Age verification is performed during registration.
+- Processing of data of individuals under 18 is not intended.
+- If it is detected that a user under 18 has shared data, such data is immediately deleted and the account is closed.

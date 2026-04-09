@@ -1,9 +1,600 @@
+import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
+
 # KVKK Disclosure Text
 
-import { Callout } from "nextra/components";
+**Last update:** 02.04.2026 · **Version:** 1.1
 
-<Callout type="info">
-  The English translation of this document is currently being prepared. Please check back soon.
+This text has been prepared for the purpose of fulfilling the **disclosure obligation** regarding the processing of your personal data under the **Personal Data Protection Law No. 6698** ("**KVKK**") (KVKK Art. 10 and the **Communique on the Procedures and Principles to be Complied with in Fulfilling the Disclosure Obligation**) within the scope of the **WIN** platform ("**Platform**").
+
+This text provides information especially on the following matters:
+
+- **Data controller identity and communication channels**
+- **Categories of personal data processed** (profile, location, verification, usage/device, payment, etc.)
+- **Processing purposes and legal bases** (KVKK Art. 5 and Art. 6)
+- **Transfer (sharing) and cross-border transfer approach** (KVKK Art. 8 and Art. 9)
+- **Retention periods and destruction** (KVKK Art. 7 and secondary legislation)
+- **Data subject rights and application methods** (KVKK Art. 11-14)
+
+<Callout type="warning" title="Important - Brief summary (layered disclosure)">
+  - **Platform type:** WIN is a social matching/dating application where users
+  create profiles, match, and message each other. Some of your profile
+  information may become visible to other users. - **Sensitive areas:**
+  Selfie/liveness verification (**biometric assessment risk**), location data,
+  and certain onboarding questions (such as religion/political opinion) may
+  constitute **special categories of personal data** or lead to inferences that
+  fall within this scope. A separate **explicit consent** design is adopted for
+  these areas. - **Third parties:** The Platform may work with service providers
+  for purposes such as hosting, security, analytics, notifications, payment,
+  and verification. Some providers may act as **data processors**, while others
+  may act as **independent data controllers**. - **Your rights:** You may
+  exercise your rights under KVKK Art. 11; application channels and identity
+  verification steps are provided below.
 </Callout>
 
-The full English version of this document will be available shortly. For now, please refer to the [Turkish version](./) or contact us for assistance.
+---
+
+## Related documents
+
+This disclosure text should be read together with the following documents:
+
+<Cards num={3}>
+  <Card
+    title="Privacy Policy"
+    href="/gizlilik-ve-veri-koruma/gizlilik-politikasi"
+  >
+    Data processing activities, retention, and transfer principles.
+  </Card>
+  <Card
+    title="Cookie Policy"
+    href="/gizlilik-ve-veri-koruma/cerez-politikasi"
+  >
+    Transparency regarding web cookies and mobile SDK/tracker technologies.
+  </Card>
+  <Card
+    title="Explicit Consent Texts"
+    href="/gizlilik-ve-veri-koruma/acik-riza-metinleri"
+  >
+    Consents for marketing, cross-border transfer, and special category data.
+  </Card>
+  <Card
+    title="Biometric Data Disclosure and Consent"
+    href="/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza"
+  >
+    Selfie/liveness verification and biometric assessment processes.
+  </Card>
+  <Card title="Terms of Use" href="/sozlesmeler/kullanim-kosullari">
+    Platform usage rules, content, and account processes.
+  </Card>
+  <Card
+    title="Law Enforcement Guide"
+    href="/kurumsal-ve-yasal-uyumluluk/kolluk-kuvvetleri-rehberi"
+  >
+    Approach to official authority requests and data preservation.
+  </Card>
+  <Card title="KVKK Application Form" href="/basvuru-formlari/kvkk-basvuru-formu">
+    Application form and communication to exercise your rights under KVKK Art.
+    11.
+  </Card>
+  <Card
+    title="Illegal Content Notification Form"
+    href="/basvuru-formlari/yasa-disi-icerik-bildirim-formu"
+  >
+    Form to be used by official authorities for illegal content notifications
+    within the scope of Law No. 5651/DSA.
+  </Card>
+</Cards>
+
+---
+
+## Section 1: Purpose, scope, and legal basis
+
+<Callout type="info" title="Summary of this section">
+  This section explains the purpose of the disclosure text, which channels it
+  covers, and the core legal references.
+</Callout>
+
+### 1.1 Purpose
+
+The purpose of this text is to inform you **clearly, comprehensibly, and accessibly** in accordance with KVKK Art. 10 and the Communique on the Disclosure Obligation regarding the processing of your personal data within the scope of the Platform.
+
+### 1.2 Scope (which channels)
+
+This text covers the following channels:
+
+- **WIN mobile application** (iOS/Android)
+- **WIN web domains** (https://whoisnextapp.com/ and https://legal.whoisnextapp.com/)
+- **Help center** / **campaign pages** that may be associated with the Platform (under these domains)
+
+> Note: On web domains, cookies may be used; in the mobile application, "cookie-like" technologies such as **SDKs** and device/advertising identifiers (e.g., IDFA/GAID) may often be used. For details, please review the [Cookie Policy](/gizlilik-ve-veri-koruma/cerez-politikasi).
+
+### 1.3 Core legislation (general reference)
+
+WIN's data protection approach particularly considers the following regulations:
+
+- **KVKK No. 6698** (Art. 4, Art. 5, Art. 6, Art. 7, Art. 8, Art. 9, Art. 10, Art. 11-14)
+- **Communique on the Procedures and Principles to be Complied with in Fulfilling the Disclosure Obligation**
+- **Communique on the Procedures and Principles of Application to the Data Controller**
+- **Regulation on the Transfer of Personal Data Abroad**
+- **Regulation on the Deletion, Destruction or Anonymization of Personal Data**
+- **Regulation on the Deletion, Destruction or Anonymization of Personal Data**
+- **Law No. 5651** (hosting provider obligations and traffic data/log retention approach)
+- **E-Commerce Law No. 6563** and **Regulation on Commercial Communication and Commercial Electronic Messages** (commercial electronic communication consents and burden of proof)
+- **Tax Procedure Law No. 213** and secondary regulations (retention of financial records - to the extent applicable)
+
+If services are provided in the EU/EEA, **GDPR** and relevant local regulations are also taken into account (see "Annex: GDPR Information Note").
+
+---
+
+## Section 2: Data controller and communication
+
+<Callout type="info" title="Summary of this section">
+  This section specifies the identity of the data controller under KVKK and the
+  communication channels for KVKK applications.
+</Callout>
+
+### 2.1 Data controller
+
+The data controller under KVKK is:
+
+- **Company name:** **WIN TECH Bilişim Organizasyon ve Ticaret A.Ş.** ("**WIN**", "**we**")
+- **Website:** [whoisnextapp.com](https://whoisnextapp.com)
+
+### 2.2 Channels for communication and KVKK applications
+
+For your requests under KVKK and your questions regarding this text:
+
+| Channel                             | Information                                                     |
+| ----------------------------------- | --------------------------------------------------------------- |
+| **E-mail (General & KVKK)**         | **support@whoisnextapp.com**                                   |
+| **Web**                             | [whoisnextapp.com](https://whoisnextapp.com)                   |
+| **Contact Form**                    | In-app Help and website contact forms                           |
+| **Address**                         | Acıbadem Mah. Asafbey Sk. İmer Apt. No: 7 A, Kadıköy / İstanbul |
+| **Tax Office / Tax ID Number**      | Kadıköy Tax Office - 8111599712                                |
+
+> Note: You may submit your requests under KVKK to us via the above e-mail address together with information that allows us to verify your identity. For a standard application, you may use the form on the [KVKK Application Form](/basvuru-formlari/kvkk-basvuru-formu) page (sending a wet-signed copy by physical mail is recommended for the commencement of legal periods).
+
+### 2.3 Identity verification
+
+In KVKK applications, **identity verification** may be requested for the security of both you and other users. If identity cannot be verified or the application contains incomplete information, additional information may be requested.
+
+---
+
+---
+
+## Section 3: Our methods and sources of collecting personal data
+
+<Callout type="info" title="Summary of this section">
+  This section explains through which methods personal data is collected
+  (direct/automatic/third party) and in which processes data is generated.
+</Callout>
+
+Your personal data may be obtained from you directly, from your device/application usage, or from third parties by **automatic**, **partially automatic**, or (provided that it is part of a data recording system) **non-automatic** methods.
+
+Examples of collection methods:
+
+- **In-app screens/forms** (profile fields, preferences, photo upload),
+- Authentication methods such as **Google sign-in (OAuth)** and **phone number sign-in (OTP)**,
+- **Selfie/liveness verification** and similar security steps,
+- **Device/technical logs** and usage data,
+- **Cookie/SDK/tracking technologies** (web and mobile),
+- **Support/complaint channels** (in-app help, e-mail; and phone where applicable),
+- **Official applications** (KVKK applications; requests from competent authorities). The [Illegal Content Notification Form](/basvuru-formlari/yasa-disi-icerik-bildirim-formu) is used by competent authorities for illegal content notifications.
+
+<Tabs items={["Onboarding & Profile", "Verification", "Matching & Messaging", "Premium & Payment", "Visitor & Cookie/SDK", "Support & Complaints"]}>
+  <Tab>
+    While registering on the Platform and creating your profile, data is
+    generally collected **directly from you**. Example:
+
+    - **Third-party sign-in and registration:** Google OAuth (name-surname, e-mail, profile photo, age, Google ID), Apple Sign-in (Apple ID), and phone number sign-in (SMS/OTP) may be used.
+    - **E-mail and phone verification:** In phone sign-in, e-mail and phone verification steps are completed **during profile creation**. In Google sign-in, e-mail is generally considered verified on Google's side; **phone verification** may be mandatory for interactions such as **like** after profile creation.
+    - **Profile fields:** Name/profile name, gender, profession, height, zodiac sign, smoking/alcohol frequency, profile note (bio).
+    - **Preference/compatibility parameters:**
+        - **Religion:** I do not believe (Atheist/Agnostic), Not central in my life, Important, Very important.
+        - **Political Opinion:** I am not interested in politics, May have a different opinion, Important to some extent, It is very important that we have the same opinion.
+        - Other: Degree of importance for physical appearance, financial status, etc.
+    - **Photo upload:** Profile photos (e.g., 6 slots).
+
+    Some fields may be necessary for providing the service; if you do not
+    provide them, certain parts of the service may not function.
+
+  </Tab>
+  <Tab>
+    The Platform may implement **e-mail verification**, **phone number
+    verification (OTP)**, and **selfie/liveness verification** steps to reduce
+    fake accounts and increase user safety. E-mail/phone verification is
+    requested at the profile creation or pre-interaction stage depending on the
+    sign-in method (see "Onboarding & Profile" tab).
+
+    In this process:
+    - **Biometric verification:** Liveness/pose selfie captured via camera to prevent fake accounts, and pose vs profile photo consistency/person verification processes with **Google Gemini 2.5 Flash**. At least one photo must be verified with this method to be included in the Discovery flow (Deck). A green check/badge is shown on verified photos.
+
+    - **Camera** and (in some scenarios) **microphone** permission may be requested. Although microphone permission is obtained due to technical requirements, no audio recording is performed.
+    - The user may be asked to take a selfie by imitating a specific pose.
+    - Verification images are, as a rule, **not published on the profile**.
+
+    Since this process may create a **biometric assessment** risk, it is managed
+    through separate disclosure and explicit consent texts (see
+    [Biometric Data Disclosure and Consent](/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza)).
+
+  </Tab>
+  <Tab>
+    Interaction data is generated while you use the Platform. Example:
+
+    - Like/reject behaviors, matches, dual picking processes.
+    - **Evaluation:** After a certain message interaction limit in chat, data for rating the other party according to **Intelligence**, **Politeness**, and **Fun** criteria.
+    - **Cooldown:** Algorithmic restriction periods related to re-displaying users shown in Deck but not selected.
+    - **Messaging:** Chat contents and metadata. Messages are **not end-to-end encrypted**; they may be reviewed by authorized admins for security and moderation purposes.
+    - Security signals (e.g., spam/fraud suspicion).
+
+    These data may be used for providing the service, security and prevention of
+    misuse, product improvement, and moderation processes.
+
+  </Tab>
+  <Tab>
+    In premium subscription and purchase processes, data vary depending on the
+    purchase channel:
+
+    - In purchases via **Apple App Store / Google Play**: order/transaction information generated by the store, subscription status, and "receipt" data for verification purposes may be processed.
+    - **Payment providers** (if direct payment exists): payment and billing data may be processed.
+
+    For the contractual framework of the purchase process, please review the
+    [Subscription and Purchase Terms](/sozlesmeler/abonelik-ve-satin-alma-kosullari).
+
+  </Tab>
+  <Tab>
+    When you visit web domains or when SDK/analytics run in the application,
+    some data may be collected **automatically**. Example:
+
+    - IP address, device/application version, browser information,
+    - session and log records (may qualify as traffic data),
+    - cookie/SDK IDs, advertising identifiers (IDFA/GAID).
+
+    For details, please review the
+    [Cookie Policy](/gizlilik-ve-veri-koruma/cerez-politikasi).
+
+  </Tab>
+  <Tab>
+    In support, complaint, and notification processes, information you provide
+    and operational records may be processed. Example:
+
+    - support requests, e-mail correspondence, in-app support messages,
+    - complaint/notification contents, screenshots, review notes,
+    - decision and objection records.
+
+    These data are important both for user safety and legal obligations.
+
+  </Tab>
+</Tabs>
+
+---
+
+## Section 4: Categories of personal data processed
+
+<Callout type="info" title="Summary of this section">
+  This section lists the types of personal data that may be processed within the
+  scope of the Platform by category with examples and highlights sensitive /
+  special category areas in particular.
+</Callout>
+
+Depending on the operation of the Platform, the following data categories may be processed:
+
+| Data category                                   | Examples (WIN context)                                                                      | Note                                                                                                                    |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| **Identity**                                    | name, profile name (nickname), date of birth/age, gender                                   | Some fields may be visible to other users within profile visibility.                                                   |
+| **Contact**                                     | e-mail (Google/OAuth or verified in profile), phone number (verified via OTP), support contact details | Official notifications may be made via registered e-mail/in-app notification.                                          |
+| **Account/Platform identifiers**                | user ID, Google user ID (technical), session information                                   | Required for security and account management.                                                                           |
+| **Profile data**                                | profession, height, zodiac sign, smoking/alcohol frequency, profile note                   | Since profile note is free text, it is recommended that you do not share sensitive data.                              |
+| **Preference/compatibility parameters (profiling)** | selections such as importance of religion, compatibility in physical appearance/financial status/political opinion | These data are additionally assessed as they may constitute **special category data** or lead to inferences within this scope. |
+| **Visual/Content**                              | profile photos, uploaded visuals, message content                                           | You are responsible for your content (see [Terms of Use](/sozlesmeler/kullanim-kosullari)).                           |
+| **Verification data**                           | e-mail/phone verification status; selfie/liveness image, verification result/badge; age/identity verification data | Verification image is, as a rule, not published on profile.                                                            |
+| **Location**                                    | precise location (latitude/longitude - GPS), approximate location/distance (such as 5 km away) | If "Precise" permission is given, Fine GPS (High Accuracy) data is primarily processed. Location history is not kept. |
+| **Online status information**                   | Online/Last seen information                                                                | Visible only to Premium members.                                                                                        |
+| **Usage/interaction**                           | like/reject, matching, messaging metadata, deck behavior                                   | May be used in recommendation/matching systems and security.                                                           |
+| **Device/technical/log**                        | IP, device model, operating system, app version, crash records, advertising identifiers    | May qualify as "traffic data/log" within the scope of Law No. 5651.                                                    |
+| **Financial/transaction**                       | subscription status, order/transaction number, refund records                              | Varies by App Store/Google Play or payment providers.                                                                   |
+| **Legal process/compliance**                    | complaint/objection records, moderation decisions, request records                          | Retention may be necessary for disputes and obligations.                                                                |
+
+**Special categories of personal data** under KVKK Art. 6 are subject to special protection. On the Platform:
+
+- Verification processes that may qualify as **biometric data** (selfie/liveness),
+- Degree-of-importance selections regarding fields such as **religion** and **political opinion** (e.g., "How important is religion in your life?"),
+- Data that may create indirect inferences regarding **gender expression/sexual orientation** due to matching preferences/filters,
+
+may be evaluated as special category data or may create this risk. Therefore, these areas are handled with **separate disclosure**, **separate explicit consent**, and **high technical security measures**.
+
+---
+
+## Section 5: For which purposes do we process personal data?
+
+<Callout type="info" title="Summary of this section">
+  This section explains for which purposes personal data is processed for the
+  operation of the Platform, security, contractual, and compliance processes.
+</Callout>
+
+Your personal data may be processed for the following purposes depending on the Platform's features and your usage:
+
+- **Account creation and management** (Google or phone sign-in, session, profile creation, e-mail/phone verification)
+- **Provision of the service** (matching flow, profile display, messaging)
+- **Operation of recommendation/matching systems** (profiling, compatibility scores, ranking/recommendation)
+- **User safety and prevention of misuse** (fake account, bot/spam, fraud detection; complaint/blocking)
+- **Selfie/liveness verification** (profile verification, service integrity)
+- **Location-based features** (nearby user recommendation, distance display)
+- **Premium subscription and purchase processes** (activation, verification, refund/objection)
+- **Customer support and communication processes** (request/complaint management, support records)
+- **Fulfillment of legal obligations** (Law No. 5651, ETK, KVKK applications, official requests)
+- **Resolution of disputes and protection of rights** (request, objection, evidence retention)
+- **Product development, analytics, and performance** (error/crash analysis, service improvement)
+- **Marketing/announcement communications** (where applicable and to the extent you consent)
+
+---
+
+## Section 6: Legal bases of processing (KVKK Art. 5 and Art. 6)
+
+<Callout type="info" title="Summary of this section">
+  This section explains which conditions under KVKK personal data processing is
+  based on (explicit consent, contract, legitimate interest, etc.). Special
+  category data is addressed separately.
+</Callout>
+
+### 6.1 Bases under KVKK Art. 5
+
+Your personal data may be based on one or more of the following legal bases depending on the nature of the relevant processing activity:
+
+- **KVKK Art. 5/2(c):** Necessity for the establishment or performance of a contract
+- **KVKK Art. 5/2(ç):** Fulfillment of legal obligations
+- **KVKK Art. 5/2(e):** Necessity for the establishment, exercise, or protection of a right
+- **KVKK Art. 5/2(f):** Legitimate interest (provided that fundamental rights and freedoms are not harmed)
+- **KVKK Art. 5/1:** Explicit consent (especially for non-mandatory cases such as profiling/sensitive areas and marketing)
+
+Example mapping table:
+
+| Process / purpose                        | Typical data types                                | Typical legal basis                |
+| ---------------------------------------- | ------------------------------------------------- | ---------------------------------- |
+| Account creation and service provision   | account/profile data, session                     | KVKK Art. 5/2(c)                   |
+| Security and misuse prevention           | device/log, complaint/blocking, behavioral signals | KVKK Art. 5/2(f) and/or Art. 5/2(e) |
+| Subscription and purchase                | purchase/transaction data                         | KVKK Art. 5/2(c) and/or Art. 5/2(ç) |
+| Official authority requests and legal compliance | traffic data/log, application records              | KVKK Art. 5/2(ç)                   |
+| Marketing communication (if any)         | contact + consent records                         | KVKK Art. 5/1 + ETK                |
+
+### 6.2 Special categories of personal data (KVKK Art. 6)
+
+Some of the data processed on the Platform may constitute **special category data** or may create inferences that could fall within this scope. Such data are:
+
+- as a rule, processed only with your **explicit consent** (KVKK Art. 6/2),
+- and by taking **special security measures**.
+
+Example: selfie/liveness verification, location data, preference questions regarding religion/political opinion, and matching preferences.
+
+### 6.3 Management and withdrawal of explicit consent
+
+You may withdraw your consent at any time where processing requires explicit consent. Withdrawal of consent does not affect the lawfulness of processing carried out before withdrawal.
+
+Consent management can be carried out:
+
+- through the onboarding "explicit consent layer",
+- through in-app settings,
+- through KVKK application channels.
+
+### 6.4 Profiling and exclusively automated analysis
+
+The Platform may perform **profiling** by evaluating preferences, lifestyle, and usage/interaction data together and may produce recommendation/matching rankings.
+
+Under KVKK Art. 11, you have the right to **object to a result against you arising from analysis of your processed data exclusively through automated systems** (see Section 11).
+
+---
+
+## Section 7: Transfer of personal data (KVKK Art. 8)
+
+<Callout type="info" title="Summary of this section">
+  This section explains with whom and for what purposes your data may be
+  shared/transferred. "Visibility to other users" is also specified separately.
+</Callout>
+
+### 7.1 Sharing with other users (profile visibility)
+
+By the nature of the Platform, some data in your profile **may be visible to other users**.
+
+**Public / In-Platform Visibility Matrix:**
+
+- **Basic Information:** Name, Age, Profile Photos, Spotify Favorite Song (anthem selection), online status (**visible only to Premium members**).
+- **Location:** Approximate location proximity (e.g., "5 km away").
+- **Feedback:** Intelligence, Politeness, and Fun score averages given by other users (**visible only to Premium members**).
+- **Sensitive Parameters:** Answers to the questions "How important is religion in your life?", "How important is physical appearance in your life?", "How important is financial status in your life?", "How important is political opinion in your life?".
+- **Personal Characteristics:** Height, work/profession information, alcohol and smoking habits, zodiac sign.
+- **Free Text:** Profile note/bio written in the "About yourself" field (data shared here is under the user's responsibility).
+
+**Premium Privilege:** Premium package holders have the right to see 20 decks per day (Standard: 5), x2 visibility advantage in decks, deck filtering feature, profile hiding (**hide profile**) feature, read (seen) information in messages, seeing online/offline status, and seeing their own scores / the scores users give to you and others. These features are not provided to free users.
+
+> Warning: In free-text fields (profile note, messages), it is recommended that you do not share personal information such as phone number, e-mail, or full address, and sensitive/special category data. For detailed content rules, [Terms of Use](/sozlesmeler/kullanim-kosullari) and [Community Rules](/topluluk-ve-guvenlik/topluluk-kurallari) apply.
+
+### 7.2 Service providers and business partners
+
+WIN may work with service providers to operate and improve the Platform. In this scope, your data may be transferred to, for example, the following recipient categories:
+
+- **Hosting and infrastructure providers** (Google Cloud / Firebase - **EU Region**, Wix CMS)
+- **Analytics and performance/error monitoring** providers (Google Analytics - GA4, Sentry)
+- **Marketing and Advertising** providers (Google AdMob - via advertising identifiers)
+- **Notification and communication** providers (Google, Store Vantage CRM)
+- **Payment and subscription** infrastructures (Apple App Store / Google Play)
+- **Verification providers** (**Google Gemini 2.5 Flash** - region: **[GEMINI_REGION]**; **Google Cloud Vision** - inappropriate content control via Safe Search on selfie)
+
+These providers may act as **data processors** or **independent data controllers** depending on the conditions.
+
+### 7.3 Official institutions, courts, and similar requests
+
+Where legally required, your data may be shared with **competent public institutions and organizations** (e.g., court order, prosecutor request, administrative authority request). Such sharing is made within the framework of KVKK Art. 5/2(ç) and relevant legislation.
+
+Process approach for official authority requests: [Law Enforcement Guide](/kurumsal-ve-yasal-uyumluluk/kolluk-kuvvetleri-rehberi).
+
+### 7.4 Corporate transactions
+
+In transactions such as merger, acquisition, demerger, or asset transfer, data may be transferred to transaction parties and their advisors under **confidentiality** obligations. In such cases, the scope of transfer and security measures are determined within the framework of proportionality and legislation.
+
+---
+
+## Section 8: Cross-border transfer (KVKK Art. 9)
+
+<Callout type="info" title="Summary of this section">
+  This section explains the possibility of cross-border transfer, applicable
+  legal mechanisms, and the explicit consent approach (if required).
+</Callout>
+
+The Platform may require cross-border transfer of personal data due to cloud infrastructure or some service providers being located abroad. In such transfer cases:
+
+- Necessary conditions are met under **KVKK Art. 9** and the **Regulation on the Transfer of Personal Data Abroad**.
+- **Explicit consent** will be obtained from users for these transfers, and transfer will only be performed in line with such consent.
+- Depending on applicable mechanisms, an adequacy decision or appropriate safeguards (standard contracts) may also be evaluated.
+
+Cross-border transfer consents are obtained in accordance with the principle of purpose-specificity, as detailed in [Explicit Consent Texts](/gizlilik-ve-veri-koruma/acik-riza-metinleri).
+
+---
+
+## Section 9: Retention periods and destruction
+
+<Callout type="info" title="Summary of this section">
+  This section summarizes the data retention approach, mandatory retention
+  periods arising from legislation, and the principles of deletion/destruction/anonymization.
+</Callout>
+
+WIN aims to retain your personal data for the period required by processing purposes and limited to retention periods prescribed by relevant legislation.
+
+Sample retention approach (final periods should be clarified according to technical architecture and processes):
+
+| Data set                                                | Typical retention approach                                                                                                     | Basis / Note                                                                        |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
+| **IP and Traffic Records (Logs)**                       | **2 years**                                                                                                                    | Pursuant to hosting provider obligations under Law No. 5651                         |
+| **Account/profile data**                                | as long as the account is active; as a rule, deletion/destruction upon deletion request                                       | KVKK Art. 7 and data minimization principles (legal retention periods reserved)     |
+| **Decision Records and Violation Evidence (Moderation/Ban)** | **2 years**                                                                                                                    | Within the scope of the Company's right of defense and legitimate interest (KVKK Art. 5/2-f) |
+| **Messaging and interaction**                           | proportional period in line with service provision + security/dispute needs                                                   | Misuse reviews and objection processes may affect this                              |
+| **Selfie/liveness verification**                        | Verification image is processed instantly on Google (Gemini) side for verification; Firebase/Audit records are retained for a proportional period (2-10 years) for dispute and security purposes | High protection for biometric data; see biometric text                              |
+| **Contract Approvals and Commercial Evidence**          | **10 years**                                                                                                                   | General limitation period under Turkish Code of Obligations Art. 146 and financial obligations |
+| **Explicit consent / approval records**                 | proportional period for compliance and proof needs                                                                            | Burden of proof under ETK and KVKK and limitation periods may be considered         |
+| **KVKK applications**                                   | completion of the application + accountability period                                                                         | Application records may be retained for audit and proof purposes                    |
+
+If the reasons for processing cease to exist, data are **deleted**, **destroyed**, or **anonymized**.
+
+### 9.1 How are retention periods determined?
+
+When determining retention periods, the following criteria are evaluated together in particular:
+
+- **Period required by the processing purpose** (purpose limitation and data minimization),
+- **Mandatory retention obligations** arising from legislation (e.g., Law No. 5651, TPL),
+- **Reasonable evidence retention need** in terms of **dispute resolution and protection of rights** (limitation periods),
+- **Security** (fraud/misuse reviews) and accountability.
+
+### 9.2 Deletion, destruction, and anonymization
+
+If reasons for processing cease to exist and the relevant retention period expires, personal data are handled under the **Regulation on the Deletion, Destruction or Anonymization of Personal Data** as follows:
+
+- **deleted** (made inaccessible/non-reusable),
+- **destroyed** (disposed of by physical or technical methods),
+- or **anonymized** (made irreversibly unrelatable to an identity).
+
+---
+
+## Section 10: Data security
+
+<Callout type="info" title="Summary of this section">
+  This section summarizes core technical and administrative measures taken to
+  protect personal data and bridges to security notification channels.
+</Callout>
+
+To ensure the security of personal data, WIN implements **technical** and **administrative** measures suitable for the Platform's structure. Examples:
+
+- **Technical measures:** encryption/masking (to the extent applicable), firewall and unauthorized access prevention, regular security scans, backup and restore, logging/monitoring, updates and vulnerability management.
+- **Administrative measures:** policies/procedures, employee awareness and trainings, security assessment in supplier selection, authorization processes, and audit trail.
+- **Access control:** role-based authorization, least privilege, recording of accesses, and regular review.
+
+For vulnerability notifications, [Vulnerability Disclosure Policy](/kurumsal-ve-yasal-uyumluluk/guvenlik-acigi-bildirim-politikasi) may be reviewed.
+
+---
+
+## Section 11: Data subject rights and application methods
+
+<Callout type="info" title="Summary of this section">
+  This section explains your rights under KVKK Art. 11, application channels,
+  and response periods.
+</Callout>
+
+### 11.1 Your rights under KVKK Art. 11
+
+Pursuant to KVKK Art. 11, by applying to WIN as the data controller, you have the right to:
+
+- learn whether your personal data are processed,
+- request information if processed,
+- learn the purpose of processing and whether data are used in accordance with that purpose,
+- know the third parties to whom data are transferred domestically/abroad,
+- request correction if data are processed incompletely/incorrectly,
+- request deletion/destruction within the framework of KVKK Art. 7 conditions,
+- request notification of correction/deletion/destruction operations to third parties to whom data were transferred,
+- object to the emergence of a result against you by means of analysis of processed data exclusively through automated systems,
+- request compensation for damage if you suffer damage due to unlawful processing.
+
+### 11.2 How to apply?
+
+Pursuant to KVKK Art. 13 and the **Communique on the Procedures and Principles of Application to the Data Controller**, you may submit your requests through the following methods (applicable channels):
+
+| Method                           | Description                                                                                                                                  |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Written application**          | By mail/courier or hand delivery with a wet-signed petition                                                                                |
+| **Notary**                       | Official notification via notary                                                                                                            |
+| **Registered Electronic Mail**   | Via Registered Electronic Mail (KEP), with secure electronic signature/mobile signature                                                    |
+| **Secure e-signature / mobile signature** | E-mail signed with secure electronic signature or mobile signature                                                                          |
+| **E-mail registered in our system** | Through your e-mail address registered in our systems (identity verification may be required)                                               |
+| **Application form**             | [KVKK Application Form](/basvuru-formlari/kvkk-basvuru-formu) provided on our website (sending a wet-signed copy by mail/courier is recommended) |
+
+<Steps>
+### 1. Clarify your request
+Identify which right you want to exercise and the scope of your request (e.g., access, correction, deletion).
+
+### 2. Choose an application channel
+
+Apply through one of the channels in Section 2.2 (in-app, e-mail, KEP, mail).
+
+### 3. Identity verification
+
+Where necessary, additional information/documents may be requested to verify your identity.
+
+### 4. Response period
+
+Applications are, as a rule, concluded **within 30 days at the latest**.
+
+### 5. Complaint to the Board
+
+If the application is rejected, the response is found insufficient, or no response is provided in due time, you may file a complaint with the Personal Data Protection Board within **30 days** from the date you learn of the response, and in any case within **60 days** from the application date.
+
+</Steps>
+
+#### Minimum information recommended/required in an application
+
+For your application to be concluded properly and quickly (including the minimum elements set out in the Communique), it is recommended that you share the following information:
+
+- name, surname, and signature if the application is in writing,
+- if you are a citizen of the Republic of Turkey, your **Turkish ID number**; if you are a foreigner, your nationality, passport number, or identity number if any,
+- residence or business address for notification,
+- if any, e-mail address, telephone and fax number for notification,
+- subject of the request (which right you want to exercise) and, if possible, relevant information/documents.
+
+> Note: If you request data belonging to another person (e.g., a copy of another user's messages), the request may be rejected or additional verification/consent may be requested in order to protect that person's rights and freedoms.
+
+### 11.3 Fees
+
+As a rule, applications are free of charge. However, if a fee is envisaged within the tariff that may be published by the Board, a fee may be requested.
+
+---
+
+## Section 12: Updates
+
+WIN may update this text due to legislation, product architecture, security needs, or service provider changes. The current version is published in the in-app "**Legal**" area and on [whoisnextapp.com](https://whoisnextapp.com).
+
+---
+
+## Annex: GDPR Information Note (EU/EEA)
+
+If the Platform is offered in the EU/EEA, **GDPR** provisions may also apply in the processing of personal data. In this case:
+
+- Additional rights under GDPR (e.g., **data portability**, **objection to processing**, **withdrawal of consent**) may come into play.
+- In cross-border transfer, appropriate transfer mechanisms under GDPR (e.g., **SCC**) may be used.
+- Users in the EU/EEA may have the right to lodge a complaint with the relevant data protection authority.
+
+For communication and representative information in the EU/DSA context, please additionally review the [DSA Compliance Page](/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi).
