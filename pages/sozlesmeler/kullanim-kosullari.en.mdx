@@ -2,7 +2,7 @@
 
 import { Callout, Steps, Card, Cards } from "nextra/components";
 
-**Last updated:** 02.04.2026 · **Version:** 1.1
+**Last updated:** 24.09.2026 · **Version:** 1.2
 
 This document governs the legal relationship between the user and the operator regarding use of the WIN mobile application and related services. You are advised to read it carefully before accepting it. For ease of reading, short summaries appear at the start of sections; **these summaries do not replace the full text.**
 
@@ -90,12 +90,12 @@ Within the scope of Law No. 6563 on the Regulation of Electronic Commerce (ETK) 
 | **Account** | The user account created in your name. |
 | **Profile** | Information and content linked to your account and shown to other users. |
 | **Member** | A registered user. |
-| **Deck / Card** | Profile cards shown in the matching interface. |
-| **Match** | The possibility of communication resulting from mutual likes. |
+| **Deck / Card** | A set of 4 profile cards shown two at a time in the discovery feed; finishing a deck results in at most one pick. |
+| **Match** | The possibility of communication that arises when the picked person starts the chat (there is no mutual-like mechanism). |
 | **Verification** | A photo‑based verification process for account security and to reduce fake‑profile risk (e.g. selfie/liveness verification). |
 | **Selfie Verification / Liveness** | Verification that you are a real person by live selfie/pose steps matching your profile photo. |
-| **You Picked** | People you liked and added to your list when choosing between two profiles in the discovery feed (Deck). |
-| **Picked You** | Users who liked you and added you to their “You Picked” list. Messaging starts from this list. |
+| **You Picked** | People you picked and added to your list when finishing a deck in the discovery feed (Deck). |
+| **Picked You** | Users who picked you and added you to their “You Picked” list. Messaging starts from this list. |
 | **Report** | Reporting a user or content through in‑app channels on suspicion of a breach. |
 | **Moderation** | Assessment of user content and conduct under the Terms and legislation, and application of necessary measures. |
 | **Restriction / Suspension / Closure** | Limiting access to the account or features, temporarily stopping them, or terminating the account. |
@@ -147,7 +147,7 @@ Access to the account may be provided via **Google Sign‑In (OAuth)** or **sign
 
 **Phone sign‑in:** After the first identity step, **email verification** and **phone number verification** (OTP, etc.) are completed during **profile creation**, separately from the registration screen. Until these steps are completed, relevant parts of the service may be restricted.
 
-**Google sign‑in:** The email address shared via your Google account is generally treated as **already verified** under Google’s processes. After profile creation, you may be directed in the app to **phone number verification** to give likes and similar interactions on the deck; this verification is **mandatory**.
+**Google sign‑in:** The email address shared via your Google account is generally treated as **already verified** under Google’s processes. After profile creation, you may be directed in the app to **phone number verification** to make picks on the deck, send messages in chats and for similar interactions; this verification is **mandatory**.
 
 By your sign‑in method you accept that:
 
@@ -202,7 +202,7 @@ WIN is a platform used for social dating and matching. It does not provide marri
 
 ### 4.2 Free and Paid Features
 
-Features such as basic matching and messaging may be offered free of charge. Advanced features (e.g. extra visibility, advanced filters, statistics) are within WIN Premium.
+Viewing profiles, being chosen, receiving notifications and messaging are free. Choosing is a paid feature: every account starts with at least 2 free decks; the free allowance and the WIN Premium subscription required to keep choosing once it has been used are set out in Section 3.7 of the [Subscription and Purchase Terms](/sozlesmeler/abonelik-ve-satin-alma-kosullari). Advanced features (e.g. deck filtering, profile hiding, score viewing) are also within WIN Premium.
 
 The [Subscription and Purchase Terms](/sozlesmeler/abonelik-ve-satin-alma-kosullari) apply to paid features, trial periods, auto‑renewal, pricing, and cancellation/refund processes. To the extent permitted by law, WIN may change the scope of paid packages and feature availability over time.
 
@@ -271,10 +271,10 @@ WIN may send in‑app notifications on security, account management, and service
 
 WIN’s core discovery experience works as follows:
 
-- **Dual Picking:** Two different profile cards are shown. You choose one by liking it. A new candidate opens next to the profile you chose and you are asked to choose again.
-- **You Picked:** At the end of this flow, the last person you liked is added to your list as “You Picked”.
+- **Dual Picking:** A deck consists of 4 profiles shown two at a time. Two different profile cards are shown; you choose one by double-tapping it. A new candidate opens next to the profile you chose and you are asked to choose again.
+- **You Picked:** At the end of this flow, the last person you picked is added to your list as “You Picked”.
 - **Picked You:** Users who chose you as “You Picked” appear on this list.
-- **Messaging restriction:** To start a chat with a user, that person must have liked you and appear on your **“Picked You”** list.
+- **Messaging restriction:** To start a chat with a user, that person must have picked you and appear on your **“Picked You”** list. The picked person always decides whether to start the chat; making a pick does not guarantee a reply, a chat or a match.
 - **List updates:** Users with whom you start a chat are removed from the “Picked You” list and moved to your messages list.
 
 The following may be shown on cards and in profile detail:
@@ -283,7 +283,7 @@ The following may be shown on cards and in profile detail:
 - **Parameters:** height, job/occupation, zodiac sign, habits, and scores.
 
 **Premium benefits:**
-Premium members may request: (i) the right to view **20 decks** per day (Standard: 5 decks/day), (ii) **x2** greater visibility advantage on decks, (iii) the ability to filter decks, (iv) **hide profile**, (v) viewing read receipts in messages, (vi) seeing other members’ online/offline status, and (vii) viewing their own scores and scores users gave to you/others (Intelligence, Politeness, Fun).
+Premium members may request: (i) continuing to choose after the free allowance has been used, (ii) **12 decks** that renew every 12 hours, (iii) appearing near the top of the “Picked You” list of the person they picked, (iv) priority access to newly joined profiles in decks, (v) the ability to filter decks, (vi) **hide profile**, (vii) seeing other members’ online/offline status, (viii) viewing their own scores and scores users gave to you/others (Intelligence, Politeness, Fun), (ix) sending voice messages, and (x) detailed astrological compatibility analysis. For the free allowance and the subscription requirement, see Section 3.7 of the [Subscription and Purchase Terms](/sozlesmeler/abonelik-ve-satin-alma-kosullari).
 
 <Callout type="warning" title="Profile and content visibility">
   Your profile and content you share may be seen by users in the geography
@@ -518,7 +518,7 @@ The following situations should be reported, for example:
 - Content/suspicion relating to minors
 - Unauthorised sharing of third parties’ personal data
 
-Situations such as not receiving replies to messages, likes not being returned, or differences of opinion or identity are not generally treated as “breaches”.
+Situations such as not receiving replies to messages, picks not leading to a chat, or differences of opinion or identity are not generally treated as “breaches”.
 
 #### 7.2.2 How to report?
 
@@ -670,7 +670,7 @@ Payment and subscription terms are set out in the following documents:
 
 ### 9.3 Virtual Items
 
-At this stage WIN only sells **Premium membership / subscription**. Package prices may **vary** according to market conditions; current prices are always shown on in‑app purchase screens. Virtual currency, credits, or spendable items purchasable in the app are of a licence nature; they are non‑assignable and not redeemable for cash. If such virtual items are added in the future, refund and use terms will be additionally stated in the [Subscription and Purchase Terms](/sozlesmeler/abonelik-ve-satin-alma-kosullari).
+At this stage WIN sells the **WIN Premium subscription** and one-time **deck packs** and **Visibility Week** (see Section 3.5 of the [Subscription and Purchase Terms](/sozlesmeler/abonelik-ve-satin-alma-kosullari)). Package prices may **vary** according to market conditions; current prices are always shown on in‑app purchase screens. Virtual currency, credits, or spendable items purchasable in the app are of a licence nature; they are non‑assignable and not redeemable for cash. If such virtual items are added in the future, refund and use terms will be additionally stated in the [Subscription and Purchase Terms](/sozlesmeler/abonelik-ve-satin-alma-kosullari).
 
 ---
 

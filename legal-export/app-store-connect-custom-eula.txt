@@ -9,7 +9,7 @@ BÖLÜM I — KULLANIM KOŞULLARI
 
 # Kullanım Koşulları
 
-**Son güncelleme:** 02.04.2026 · **Sürüm:** 1.1
+**Son güncelleme:** 24.09.2026 · **Sürüm:** 1.2
 
 Bu belge, WIN mobil uygulaması ve ilgili hizmetlerin kullanımına ilişkin kullanıcı ile işletmeci arasındaki hukuki ilişkiyi düzenler. Belgeyi kabul etmeden önce dikkatle okumanız önerilir. Kolay okunabilirlik için bölüm başlarında kısa özetlere yer verilmiştir; **bu özetler metnin tamamının yerine geçmez.**
 
@@ -96,12 +96,12 @@ Aşağıdaki terimler (Uygulama, Hizmetler, Üye, Eşleşme, Moderasyon vb.) ve
 | **Hesap**                                  | Sizin adınıza oluşturulan kullanıcı hesabı.                                                                                     |
 | **Profil**                                 | Hesabınıza bağlı, diğer kullanıcılara gösterilen bilgi ve içerikler.                                                            |
 | **Üye**                                    | Kayıtlı kullanıcı.                                                                                                              |
-| **Deck / Kart**                            | Eşleşme arayüzünde gösterilen profil kartları.                                                                                  |
-| **Eşleşme (Match)**                        | Karşılıklı beğeni sonucu oluşan iletişim imkânı.                                                                                |
+| **Deck / Kart**                            | Keşif akışında ikişer ikişer gösterilen 4 profil kartından oluşan set (deste); desteyi bitirmek tek bir seçimle sonuçlanır.     |
+| **Eşleşme (Match)**                        | Seçilen kişinin sohbeti başlatmasıyla oluşan iletişim imkânı (karşılıklı beğeni mekanizması yoktur).                            |
 | **Doğrulama (Verification)**               | Hesap güvenliği ve sahte profil riskinin azaltılması için yapılan fotoğrafla doğrulama süreci (örn. selfie/canlılık doğrulama). |
 | **Selfie Doğrulama / Canlılık (Liveness)** | Kullanıcının profil fotoğrafıyla eşleşen canlı selfie/poz adımlarıyla gerçek kişi olduğu doğrulanması.                          |
-| **You Picked (Senin Seçtiklerin)**         | Keşif akışında (Deck) karşınıza çıkan iki profil arasından beğendiğiniz ve listenize eklenen kişiler.                           |
-| **Picked You (Seni Seçenler)**             | Sizi beğenerek "You Picked" listesine ekleyen kullanıcılar. Mesajlaşma bu liste üzerinden başlatılır.                           |
+| **You Picked (Senin Seçtiklerin)**         | Keşif akışında (Deck) bir desteyi bitirdiğinizde seçtiğiniz ve listenize eklenen kişiler.                                       |
+| **Picked You (Seni Seçenler)**             | Sizi seçerek "You Picked" listesine ekleyen kullanıcılar. Mesajlaşma bu liste üzerinden başlatılır.                             |
 | **Bildirim / Raporlama (Report)**          | Bir kullanıcıyı veya içeriği, ihlal şüphesiyle uygulama içi kanallar üzerinden bildirme işlemi.                                 |
 | **Moderasyon**                             | Kullanıcı içeriği ve davranışlarının Koşullar ve mevzuat kapsamında değerlendirilmesi ve gerekli önlemlerin uygulanması.        |
 | **Kısıtlama / Askıya Alma / Kapatma**      | Hesap veya özelliklere erişimin sınırlanması, geçici durdurulması veya hesabın sonlandırılması.                                 |
@@ -153,7 +153,7 @@ Hesaba erişim; **Google Sign-In (OAuth)** veya **telefon numarası ile giriş**
 
 **Telefon ile giriş:** İlk kimlik adımından sonra **e-posta doğrulaması** ve **telefon numarası doğrulaması** (OTP vb.), kayıt ekranından ayrı olarak **profil oluşturma sürecinde** tamamlanır. Bu adımlar tamamlanmadan hizmetin ilgili bölümleri kısıtlanabilir.
 
-**Google ile giriş:** Google hesabınız üzerinden paylaşılan e-posta adresi, Google’ın süreçleri uyarınca genellikle **zaten doğrulanmış** kabul edilir. Profil oluşturma sonrasında, deck üzerinde **beğeni (like)** verebilmek ve benzeri etkileşimler için uygulama içinde **telefon numarası doğrulamasına** yönlendirilebilirsiniz; bu doğrulama **zorunludur**.
+**Google ile giriş:** Google hesabınız üzerinden paylaşılan e-posta adresi, Google’ın süreçleri uyarınca genellikle **zaten doğrulanmış** kabul edilir. Profil oluşturma sonrasında, desteden **seçim yapabilmek**, sohbette **mesaj gönderebilmek** ve benzeri etkileşimler için uygulama içinde **telefon numarası doğrulamasına** yönlendirilebilirsiniz; bu doğrulama **zorunludur**.
 
 Giriş yönteminizi kullanarak:
 
@@ -209,7 +209,7 @@ WIN, sosyal tanışma ve eşleşme amacıyla kullanılan bir platformdur. Evlili
 
 ### 4.2 Ücretsiz ve Ücretli Özellikler
 
-Temel eşleşme ve mesajlaşma gibi özellikler ücretsiz sunulabilir. Gelişmiş özellikler (örn. ek görünürlük, gelişmiş filtreler, istatistikler vb.) WIN Premium kapsamındadır.
+Profilleri görmek, seçilmek, bildirim almak ve mesajlaşmak ücretsizdir. Seçim yapmak ücretli bir özelliktir: her hesap en az 2 ücretsiz desteyle başlar; ücretsiz kullanım hakkı ve bu hak kullanıldıktan sonra seçmeye devam etmek için gereken WIN Premium aboneliği Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari) Bölüm 3.7’de düzenlenir. Gelişmiş özellikler (örn. deste filtreleme, profil gizleme, puan görüntüleme vb.) de WIN Premium kapsamındadır.
 
 Ücretli özellikler, deneme süreleri, otomatik yenileme, fiyatlandırma ve iptal/iade süreçleri için Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari) geçerlidir. WIN, mevzuatın izin verdiği ölçüde, ücretli paketlerin kapsamını ve özelliklerin erişilebilirliğini zaman içinde değiştirebilir.
 
@@ -273,10 +273,10 @@ WIN, güvenlik, hesap yönetimi ve hizmet güncellemeleri gibi konularda uygulam
 
 WIN’in temel keşif deneyimi şu akışla sunulur:
 
-- **İkili Seçim (Dual Picking):** Karşınıza iki farklı profil kartı çıkar. Bunlardan birini beğenerek seçersiniz. Seçtiğiniz profil yanına yeni bir aday açılır ve yeniden seçim yapmanız istenir.
-- **You Picked (Senin Seçtiklerin):** Bu akışın sonunda en son beğendiğiniz kişi "You Picked" olarak listenize eklenir.
+- **İkili Seçim (Dual Picking):** Bir deste, ikişer ikişer gösterilen 4 profilden oluşur. Karşınıza iki farklı profil kartı çıkar; birine çift dokunarak seçersiniz. Seçtiğiniz profil yanına yeni bir aday açılır ve yeniden seçim yapmanız istenir.
+- **You Picked (Senin Seçtiklerin):** Bu akışın sonunda en son seçtiğiniz kişi "You Picked" olarak listenize eklenir.
 - **Picked You (Seni Seçenler):** Sizi "You Picked" olarak seçen kullanıcılar bu listede yer alır.
-- **Mesajlaşma Kısıtı:** Bir kullanıcıyla sohbet başlatabilmeniz için o kişinin sizi beğenerek **"Picked You"** listenizde yer alması gerekir.
+- **Mesajlaşma Kısıtı:** Bir kullanıcıyla sohbet başlatabilmeniz için o kişinin sizi seçerek **"Picked You"** listenizde yer alması gerekir. Sohbeti başlatıp başlatmamaya her zaman seçilen kişi karar verir; seçim yapmak cevap, sohbet veya eşleşme garantisi vermez.
 - **Listenin Güncellenmesi:** Sohbet başlattığınız kullanıcılar, "Picked You" listesinden kaldırılarak mesajlar listenize aktarılır.
 
 Kartlarda ve profil detayında aşağıdaki bilgiler gösterilebilir:
@@ -285,7 +285,7 @@ Kartlarda ve profil detayında aşağıdaki bilgiler gösterilebilir:
 - **Parametreler:** Boy, iş/meslek, burç, alışkanlıklar ve puanlar.
 
 **Premium Ayrıcalıkları:**
-Premium üyeler; (i) günde **20 deck** görme hakkına (Standart: 5 deck/gün) sahip olmayı, (ii) decklerde **x2** daha fazla görünürlük avantajını, (iii) deckleri filtreleyebilme özelliğini, (iv) profillerini tamamen gizleme (**hide profile**) özelliğini, (v) mesajlarda okundu (görüldü) bilgisini görüntülemeyi, (vi) diğer üyelerin online/offline durumlarını görmeyi ve (vii) kendi puanlarını ve kullanıcıların size/diğerlerine verdiği puanları (Intelligence, Politeness, Fun) görmeyi talep edebilirler.
+Premium üyeler; (i) ücretsiz kullanım hakkı bittikten sonra seçim yapmaya devam etmeyi, (ii) 12 saatte bir yenilenen **12 deste** hakkını, (iii) seçtikleri kişinin "Picked You" listesinde üst sırada görünmeyi, (iv) destelerde yeni katılan profillere öncelikli erişimi, (v) desteleri filtreleyebilme özelliğini, (vi) profillerini tamamen gizleme (**hide profile**) özelliğini, (vii) diğer üyelerin online/offline durumlarını görmeyi, (viii) kendi puanlarını ve kullanıcıların size/diğerlerine verdiği puanları (Intelligence, Politeness, Fun) görmeyi, (ix) sesli mesaj göndermeyi ve (x) detaylı astrolojik uyum analizini talep edebilirler. Ücretsiz kullanım hakkı ve abonelik şartı için bkz. Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari) Bölüm 3.7.
 
 ── Profil ve içerik görünürlüğü ──
 
@@ -520,7 +520,7 @@ WIN, moderasyonu; kullanıcı bildirimleri, otomatik sistemler ve insan moderat�
 - Reşit olmayanlara ilişkin içerik/şüphe
 - Üçüncü kişilerin kişisel verilerinin izinsiz paylaşımı
 
-Sadece mesajlara cevap verilmemesi, beğenilerin geri dönmemesi, görüş/kimlik farklılığı gibi durumlar kural olarak “ihlal” sayılmaz.
+Sadece mesajlara cevap verilmemesi, seçimlerin sohbete dönüşmemesi, görüş/kimlik farklılığı gibi durumlar kural olarak “ihlal” sayılmaz.
 
 #### 7.2.2 Bildirim nasıl yapılır?
 
@@ -672,7 +672,7 @@ AB’de bulunan kullanıcılar için, DSA kapsamındaki raporlama ve şeffaflık
 
 ### 9.3 Sanal Öğeler
 
-WIN, şu aşamada yalnızca **Premium üyelik / abonelik** satışı yapmaktadır. Paket fiyatları pazar koşullarına göre **değişkenlik gösterebilir**; güncel fiyatlar her zaman uygulama içi satın alma ekranlarında gösterilir. Uygulama içinde satın alınabilir sanal para, kredi veya harcanabilir öğeler lisans niteliğindedir; devredilemez ve nakde çevrilemez. Gelecekte bu tür sanal öğelerin eklenmesi hâlinde, iade ve kullanım koşulları Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari)nda ayrıca belirtilir.
+WIN, şu aşamada **WIN Premium aboneliği** ile tek seferlik **deste paketleri** ve **Görünürlük Haftası** satışı yapmaktadır (bkz. Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari) Bölüm 3.5). Paket fiyatları pazar koşullarına göre **değişkenlik gösterebilir**; güncel fiyatlar her zaman uygulama içi satın alma ekranlarında gösterilir. Uygulama içinde satın alınabilir sanal para, kredi veya harcanabilir öğeler lisans niteliğindedir; devredilemez ve nakde çevrilemez. Gelecekte bu tür sanal öğelerin eklenmesi hâlinde, iade ve kullanım koşulları Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari)nda ayrıca belirtilir.
 
 ---
 

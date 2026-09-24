@@ -14,19 +14,19 @@
   "Apple Store": {
     "title": "Apple Store",
     "type": "page",
-    "href": "https://apps.apple.com/tr/app/win-who-is-next/id6751457863",
+    "href": "https://apps.apple.com/tr/app/id6761012908",
     "newWindow": true
   },
   "Google Play": {
     "title": "Google Play",
     "type": "page",
-    "href": "https://play.google.com/store/apps/details?id=com.winapp.dating",
+    "href": "https://play.google.com/store/apps/details?id=com.whoisnext.app",
     "newWindow": true
   },
   "contact": {
     "title": "Contact",
     "type": "page",
-    "href": "https://whoisnextapp.com/company",
+    "href": "https://whoisnextapp.com/contact",
     "newWindow": true
   }
 }

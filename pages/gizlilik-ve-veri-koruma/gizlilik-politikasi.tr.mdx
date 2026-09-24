@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # Gizlilik Politikası
 
-**Son güncelleme:** 02.04.2026 · **Sürüm:** 1.2
+**Son güncelleme:** 24.09.2026 · **Sürüm:** 1.3
 
 Bu Gizlilik Politikası; **WIN** platformunu (“**Platform**”) kullanırken, kişisel verilerinizi nasıl ele aldığımızı **anlaşılır** ve **pratik** bir dille açıklar.
 
@@ -74,7 +74,7 @@ Temel ilkelerimiz:
 
 ## 3. Platformda “görünürlük” nasıl çalışır?
 
-WIN’in temel işlevi; profil oluşturmanız, profilleri görmeniz, eşleşmeniz ve (eşleşme sonrası) mesajlaşmanızdır. Bu nedenle bazı bilgileriniz diğer kullanıcılar tarafından görülebilir.
+WIN’in temel işlevi; profil oluşturmanız, profilleri görüp seçim yapmanız ve seçilen kişinin sohbeti başlatmasıyla mesajlaşmanızdır. Bu nedenle bazı bilgileriniz diğer kullanıcılar tarafından görülebilir.
 
 <Callout type="warning" title="Önemli: Paylaştığınız içerik kontrolünüzden çıkabilir">
 Profilinizin veya mesajlarınızın **ekran görüntüsü alınması**, başka bir platformda paylaşılması veya üçüncü kişiler tarafından saklanması teknik olarak mümkündür. Bu tür paylaşımlar üzerinde her zaman kontrol kuramayabilirsiniz.  
@@ -100,8 +100,8 @@ Bu nedenle profil notu ve mesajlarda telefon numarası, e‑posta, açık adres 
   <Tab>
     Eşleşme ve mesajlaşma, genellikle aşağıdaki koşullara bağlıdır:
 
-    - **Beğeni/ret** gibi etkileşimler “eşleşme” mantığıyla çalışabilir.
-    - **Mesajlaşma** çoğu senaryoda yalnızca **eşleşen kullanıcılar** arasında açılır.
+    - Bir desteyi bitirdiğinizde yaptığınız **seçim**, seçilen kişiye bildirilir; karşılıklı beğeni mekanizması yoktur.
+    - **Mesajlaşmayı** yalnızca **seçilen kişi** başlatabilir; seçim yapmak cevap veya sohbet garantisi vermez.
     - Eşleşme sonrası mesajlaşma, taciz ve dolandırıcılık riskleri doğurabileceği için; bildirim/şikayet hâlinde inceleme süreçleri işletilebilir.
 
     Güvenli kullanım için [Güvenlik İpuçları](/topluluk-ve-guvenlik/guvenlik-ipuclari) sayfası incelenmelidir.
@@ -128,7 +128,7 @@ Bu bölümde, Platformun tipik akışlarına göre “hangi adımda hangi veri�
 
 WIN’e giriş; **Google ile giriş (OAuth)** veya **telefon numarası ile giriş** (SMS/OTP) üzerinden sağlanabilir.
 
-**Google ile giriş:** Google, hesabınızdan Platformla paylaşılacağını bildirdiği bilgileri iletir. Tipik olarak ad (veya Google profili adı), e‑posta adresi, profil fotoğrafı ve Google user ID (teknik) alınabilir. E‑posta adresi, Google süreçleri uyarınca genellikle **doğrulanmış** kabul edilir. Profil oluşturma sonrasında, deck üzerinde beğeni gibi bazı etkileşimler için **telefon numarası doğrulaması** istenebilir; bu doğrulama tamamlanana kadar ilgili işlevler kısıtlanabilir.
+**Google ile giriş:** Google, hesabınızdan Platformla paylaşılacağını bildirdiği bilgileri iletir. Tipik olarak ad (veya Google profili adı), e‑posta adresi, profil fotoğrafı ve Google user ID (teknik) alınabilir. E‑posta adresi, Google süreçleri uyarınca genellikle **doğrulanmış** kabul edilir. Profil oluşturma sonrasında, seçim yapma ve mesaj gönderme gibi bazı etkileşimler için **telefon numarası doğrulaması** istenebilir; bu doğrulama tamamlanana kadar ilgili işlevler kısıtlanabilir.
 
 **Telefon ile giriş:** Kimlik doğrulama OTP tabanlıdır. **E‑posta doğrulaması** ve **telefon numarası doğrulaması** adımları, kayıt anından ziyade **profil oluşturma sürecinde** tamamlanacak şekilde konumlandırılmıştır.
 
@@ -243,13 +243,14 @@ Bu veriler; eşleşme deneyimini yürütmek, kötüye kullanımı önlemek ve uy
 
 Premium abonelik kapsamında ek gizlilik ve görünürlük özellikleri sunulabilir:
 
-- **Günlük deck görme hakkı:** Günde 20 deck görüntüleme (Standart: 5 deck/gün).
-- **Decklerde görünürlük:** Decklerde 2 kat (x2) daha fazla görünürlük avantajı.
-- **Deck filtreleme:** Deckleri filtreleyebilme özelliği.
-- **Profil Gizleme (Hide Profile):** Profilinizi deck'lerde tamamen gizleyebilirsiniz. Bu durumda sadece sizin beğendiğiniz kişiler sizi (kendi "PICKED YOU" bölümlerinde) görebilir.
-- **Mesajlarda okundu bilgisi:** Mesajlarda okundu (görüldü) bilgisini görüntüleme.
+- **Seçmeye devam etme:** Ücretsiz kullanım hakkı bittikten sonra seçim yapmaya devam edebilme (bkz. [Abonelik ve Satın Alma Koşulları](/sozlesmeler/abonelik-ve-satin-alma-kosullari) Bölüm 3.7).
+- **Deste hakkı:** 12 saatte bir yenilenen 12 deste hakkı.
+- **Üst sırada görünme:** Seçtiğiniz kişinin "PICKED YOU" listesinde üst sırada görünme.
+- **Deste filtreleme:** Desteleri filtreleyebilme özelliği.
+- **Profil Gizleme (Hide Profile):** Profilinizi deck'lerde tamamen gizleyebilirsiniz. Bu durumda sadece sizin seçtiğiniz kişiler sizi (kendi "PICKED YOU" bölümlerinde) görebilir.
 - **Çevrim içi (Online/Offline) Durumu:** Diğer kullanıcıların aktiflik durumunu görebilme yetkisi.
 - **Puan Görme:** Kendi puanınızı ve kullanıcıların size ve diğerlerine verdiği puanları görebilme.
+- **Astrolojik uyum:** Detaylı astrolojik uyum analizi.
 
 Sözleşmesel çerçeve ve ödeme detayları için: [Abonelik ve Satın Alma Koşulları](/sozlesmeler/abonelik-ve-satin-alma-kosullari) incelenmelidir.
 
@@ -306,7 +307,7 @@ WIN; eşleşme ve öneri (deck) akışında, belirli parametreleri birlikte değ
 - **Kullanım davranışları**: beğeni/ret, eşleşme örüntüleri (Platform içinde)
 - **Doğrulama sinyalleri**: profil doğrulama durumu ve rozetler
 - **Cooldown (Soğuma Süresi)**: Deck akışında karşınıza çıkan ancak seçilmeyen profillerin belirli bir süre tekrar gösterilmemesi kuralı
-- **Premium etkileri**: günde 20 deck (Standart: 5), x2 görünürlük, deck filtreleme, profil gizleme, mesajlarda okundu bilgisi, online/offline durum görme, puan görüntüleme
+- **Premium etkileri**: 12 saatte 12 deste, destelerde ek görünürlük ağırlığı, yeni katılan profillere öncelikli erişim, seçilen kişinin listesinde üst sırada görünme, deste filtreleme, profil gizleme, online/offline durum görme, puan görüntüleme; tek seferlik Görünürlük Haftası da süresi boyunca destelerde ek görünürlük ağırlığı sağlar (seçim hakkı vermez)
 
 <Callout type="info" title="Kontrol sizde: ne yapabilirsiniz?">
 - Tercihlerinizi güncelleyebilir ve izinlerinizi yönetebilirsiniz.  
