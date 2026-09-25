@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # Gizlilik Politikası
 
-**Son güncelleme:** 25.09.2026 · **Sürüm:** 1.4
+**Son güncelleme:** 25.09.2026 · **Sürüm:** 1.5
 
 Bu Gizlilik Politikası; **WIN** platformunu (“**Platform**”) kullanırken, kişisel verilerinizi nasıl ele aldığımızı **anlaşılır** ve **pratik** bir dille açıklar.
 
@@ -246,7 +246,7 @@ Platformu kullandığınızda, şu tür veriler oluşabilir:
 - **Etkileşimler:** Beğeni/ret, eşleşme, ikili seçim (dual picking) ve profil görüntüleme kayıtları.
 - **Puanlama (Evaluation):** Sohbet başladıktan sonra belirli bir etkileşim limitini aşan kullanıcılara; karşı tarafı Intelligence (Zeka), Politeness (Kibarlık) ve Fun (Eğlence) nitelikleri üzerinden değerlendirmesini sağlayan bir oylama aracı sunulur. Bu puanlar profil ortalamasına dahil edilir.
 - **Mesajlaşma:** Mesaj içeriği ve zaman meta verileri. Mesajlar **uçtan uca şifreli değildir**; moderasyon ve güvenlik amacıyla admin/moderatörler tarafından incelenebilir.
-- **Sesli mesajlar (WIN Premium):** Gönderdiğiniz ses kaydı (ses dosyası), süresi ve gönderim zamanı. Ses dosyaları Google Cloud / Firebase Storage üzerinde saklanır; uygulama içinde yalnızca sohbetin iki tarafı erişebilir ve metin mesajlar gibi moderasyon ve güvenlik amacıyla yetkili admin/moderatörlerce incelenebilir. Sesli mesajlar, kural olarak gönderimden **30 gün sonra** otomatik olarak silinir; hesap silme sırasında hukuki arşive alınan kopyalar için bkz. Bölüm 9. Ses kayıtlarınız üzerinden ses tanıma veya biyometrik analiz yapılmaz.
+- **Sesli mesajlar (WIN Premium):** Gönderdiğiniz ses kaydı (ses dosyası), süresi ve gönderim zamanı. Ses dosyaları Google Cloud / Firebase Storage üzerinde saklanır; uygulama içinde yalnızca sohbetin iki tarafı erişebilir ve metin mesajlar gibi moderasyon ve güvenlik amacıyla yetkili admin/moderatörlerce incelenebilir. Sesli mesajlar, kural olarak gönderimden **30 gün sonra** sohbetten otomatik olarak kaldırılır; kaldırılan sesli mesajın (ses dosyası ve mesaj kaydı) bir kopyası, güvenlik ve hukuki talepler amacıyla erişimi yetkili personelle sınırlı hukuki arşivde (sohbet arşivi) saklanır (bkz. Bölüm 9). Ses kayıtlarınız üzerinden ses tanıma veya biyometrik analiz yapılmaz.
 - **Güvenlik sinyalleri:** Şikayet, engelleme ve şüpheli davranış kayıtları.
 
 Bu veriler; eşleşme deneyimini yürütmek, kötüye kullanımı önlemek ve uyuşmazlıkları yönetmek amacıyla kullanılabilir.
@@ -400,10 +400,16 @@ Verilerin saklama süresi; işleme amacına, mevzuat yükümlülüklerine ve uyu
 Örnek:
 
 - **Hesabınız aktifken**: hizmeti sunmak için gerekli veriler saklanır.
-- **Sesli mesajlar**: kural olarak gönderimden 30 gün sonra otomatik olarak silinir; bu silmede arşiv kopyası alınmaz.
+- **Sohbet arşivi**: Sohbetleriniz arşivlenmeden silinmez. Bir sohbet veya mesaj uygulamadan kaldırıldığında, ilgili mesajlar ve sesli mesaj dosyaları silinmeden önce erişimi yetkili personelle sınırlı bir hukuki arşive alınır; arşivdeki kopyalar diğer kullanıcılara kapalıdır ve uygulamada yeniden gösterilmez. Bu arşiv, uyuşmazlıklar ve resmî makam talepleri için ilgili zamanaşımı süreleri boyunca saklanır. Bu kural özellikle şu durumlarda uygulanır:
+  - **Hesap silme:** sizinle karşı taraflar arasındaki mesajlar ve sesli mesaj dosyaları,
+  - **Hesap dondurma:** karşı tarafların mesaj listelerinden kaldırılan sohbetlerinizin mesaj kayıtları; bu sohbetlerdeki sesli mesaj dosyaları dondurma sırasında silinmez, 30 günlük süreleri dolduğunda arşive alınarak kaldırılır,
+  - **Kişiyi kaldırma:** siz veya karşı taraf “Kişiyi kaldır” seçeneğini kullandığında iki taraftan da kaldırılan sohbet (sesli mesaj dosyaları dahil),
+  - **Sesli mesajların 30 günlük süresi:** gönderimden 30 gün sonra sohbetten kaldırılan sesli mesajlar,
+  - **Gönderilemeyen sesli mesaj yüklemeleri:** yüklenip bir mesaja bağlanamayan (örneğin gönderimi yarıda kalan) ses dosyaları, temizlenirken aynı arşive alınır.
+- **Sesli mesajlar**: kural olarak gönderimden 30 gün sonra sohbetten otomatik olarak kaldırılır. Kaldırılan sesli mesajın (ses dosyası ve mesaj kaydı) bir kopyası, güvenlik ve hukuki talepler amacıyla yukarıdaki sohbet arşivine alınır ve sohbet arşivinin saklama süresine tabidir.
 - **Hesap silindiğinde**: profiliniz, fotoğraflarınız, doğrulama selfie’leriniz, destek ekleriniz ve giriş kaydınız silinir ve profiliniz diğer kullanıcılara kapanır. Ancak **tüm verileriniz hemen silinmez**; aşağıdaki kayıtlar belirtilen sürelerle saklanır:
   - **Silinen hesabın kopyası:** Hesap silindiği anda profil kaydınızın (bildirim jetonları hariç) tam bir kopyası ve seçtiğiniz silme nedeni, erişimi yetkili personelle sınırlı olarak **90 gün** saklanır ve bu sürenin sonunda otomatik olarak silinir. Bu saklama kuralının uygulanmaya başladığı Eylül 2026’dan önce silinmiş hesaplara ait kopyalar için 90 günlük süre, kuralın uygulanmaya başladığı tarihten itibaren işler. Amaç: kötüye kullanım ve dolandırıcılık incelemeleri, olası uyuşmazlıklar ve resmî makam talepleri.
-  - **Sohbet arşivi:** Hesap silme sırasında sohbetleriniz arşivlenmeden silinmez. Hesap silindiğinde, sizinle karşı taraf arasındaki mesajlar ve henüz 30 günlük otomatik silme süresi dolmamış sesli mesaj dosyaları diğer kullanıcılara kapatılır ve erişimi yetkili personelle sınırlı bir hukuki arşive alınır; bu arşiv, uyuşmazlıklar ve resmî makam talepleri için ilgili zamanaşımı süreleri boyunca saklanır.
+  - **Sohbet arşivi:** Hesap silindiğinde, sizinle karşı taraflar arasındaki mesajlar ve sesli mesaj dosyaları diğer kullanıcılara kapatılır ve yukarıda açıklanan sohbet arşivine alınır.
   - **Yasaklı hesaplar:** Topluluk Kuralları ihlali nedeniyle erişimi engellenmiş bir hesap silinirse, yasaklı kişinin yeni hesap açmasını önlemek için bu hesaba ait yasak kaydı (WIN kullanıcı kimliği, telefon numarası, varsa e‑posta adresi ve yasak gerekçesi), yasak kaldırılmadıkça **süre sınırı olmaksızın** saklanır.
   - **Diğer kayıtlar:** log/trafik kayıtları, moderasyon kararları ve ihlal delilleri ile ticari/işlem kayıtları mevzuatın ve [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) Bölüm 9’daki sürelerle saklanır. Üçüncü taraf sağlayıcılarda (ör. abonelik altyapısı, analitik ve reklam ölçümü) tutulan kayıtlar, ilgili sağlayıcının saklama sürelerine tabidir.
 

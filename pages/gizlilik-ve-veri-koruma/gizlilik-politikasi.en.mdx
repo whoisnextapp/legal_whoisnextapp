@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # Privacy Policy
 
-**Last updated:** 25.09.2026 · **Version:** 1.4
+**Last updated:** 25.09.2026 · **Version:** 1.5
 
 This Privacy Policy explains, in a **clear** and **practical** language, how we handle your personal data while you use the **WIN** platform (the "**Platform**").
 
@@ -246,7 +246,7 @@ When you use the Platform, the following types of data may be generated:
 - **Interactions:** Like/dislike, matching, dual picking, and profile view logs.
 - **Evaluation:** After the chat starts, users exceeding a specific interaction threshold are provided with a voting tool that allows evaluating the other party on Intelligence, Politeness, and Fun attributes. These scores are included in profile average.
 - **Messaging:** Message content and timestamp metadata. Messages are **not end-to-end encrypted**; they may be reviewed by admins/moderators for moderation and security purposes.
-- **Voice messages (WIN Premium):** The audio recording (audio file) you send, its duration and the time it was sent. Audio files are stored on Google Cloud / Firebase Storage; within the app only the two parties to the chat can access them and, like text messages, they may be reviewed by authorised admins/moderators for moderation and security purposes. As a rule, voice messages are deleted automatically **30 days after** they are sent; for copies placed in the legal archive when an account is deleted, see Section 9. No voice recognition or biometric analysis is performed on your recordings.
+- **Voice messages (WIN Premium):** The audio recording (audio file) you send, its duration and the time it was sent. Audio files are stored on Google Cloud / Firebase Storage; within the app only the two parties to the chat can access them and, like text messages, they may be reviewed by authorised admins/moderators for moderation and security purposes. As a rule, voice messages are removed from the chat automatically **30 days after** they are sent; a copy of the removed voice message (the audio file and the message record) is kept for security and legal-claims purposes in a legal archive (the chat archive) with access limited to authorised staff (see Section 9). No voice recognition or biometric analysis is performed on your recordings.
 - **Security signals:** Complaint, blocking, and suspicious behavior records.
 
 This data may be used to operate the matching experience, prevent abuse, and manage disputes.
@@ -400,10 +400,16 @@ The retention period of data varies according to processing purpose, legal oblig
 Example:
 
 - **While your account is active**: data required to provide the service is retained.
-- **Voice messages**: as a rule, deleted automatically 30 days after they are sent; no archive copy is made in this deletion.
+- **Chat archive**: Your chats are not deleted without being archived. When a chat or message is removed from the app, the messages and voice message files concerned are moved, before they are deleted, to a legal archive with access limited to authorised staff; archived copies are closed to other users and are not shown in the app again. This archive is retained for the relevant limitation periods for disputes and requests from authorities. This rule applies in particular in the following cases:
+  - **Account deletion:** the messages and voice message files between you and the other parties,
+  - **Account deactivation (freezing):** the message records of your chats that are removed from the other parties' message lists; the voice message files in these chats are not deleted when you deactivate your account and are moved to the archive and removed when their 30-day period expires,
+  - **Removing a person:** the chat that is removed from both sides when you or the other party use the “Remove” option (including voice message files),
+  - **30-day period of voice messages:** voice messages removed from the chat 30 days after they are sent,
+  - **Unsent voice uploads:** audio files that were uploaded but never attached to a message (for example, an interrupted send) are moved to the same archive when they are cleaned up.
+- **Voice messages**: as a rule, removed from the chat automatically 30 days after they are sent. A copy of the removed voice message (the audio file and the message record) is moved to the chat archive above for security and legal-claims purposes and is subject to the retention period of the chat archive.
 - **When your account is deleted**: your profile, photos, verification selfies, support attachments and sign-in record are deleted and your profile is closed to other users. However, **not all of your data is deleted immediately**; the following records are retained for the periods stated:
   - **Copy of the deleted account:** At the moment of deletion, a full copy of your profile record (excluding notification tokens) and the deletion reason you selected are retained for **90 days**, with access limited to authorised staff, and are deleted automatically at the end of that period. For copies of accounts deleted before this retention rule began to be applied in September 2026, the 90-day period runs from the date the rule began to be applied. Purpose: abuse and fraud investigations, possible disputes and requests from authorities.
-  - **Chat archive:** During account deletion your chats are not deleted without being archived. When an account is deleted, the messages between you and the other party and the voice message files whose automatic 30-day deletion period has not yet expired are closed to other users and moved to a legal archive with access limited to authorised staff; this archive is retained for the relevant limitation periods for disputes and requests from authorities.
+  - **Chat archive:** When an account is deleted, the messages and voice message files between you and the other parties are closed to other users and moved to the chat archive described above.
   - **Banned accounts:** If an account whose access was blocked for violating the Community Guidelines is deleted, the ban record of that account (WIN user ID, phone number, e-mail address where available and the reason for the ban) is retained **without a time limit** unless the ban is lifted, to prevent the banned person from opening a new account.
   - **Other records:** log/traffic records, moderation decisions and evidence of violations, and commercial/transaction records are retained for the periods in the legislation and in Section 9 of the [KVKK Information Notice](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni). Records held by third-party providers (e.g. subscription infrastructure, analytics and advertising measurement) are subject to the retention periods of the relevant provider.
 

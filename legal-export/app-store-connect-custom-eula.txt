@@ -9,7 +9,7 @@ BÖLÜM I — KULLANIM KOŞULLARI
 
 # Kullanım Koşulları
 
-**Son güncelleme:** 25.09.2026 · **Sürüm:** 1.3
+**Son güncelleme:** 25.09.2026 · **Sürüm:** 1.4
 
 Bu belge, WIN mobil uygulaması ve ilgili hizmetlerin kullanımına ilişkin kullanıcı ile işletmeci arasındaki hukuki ilişkiyi düzenler. Belgeyi kabul etmeden önce dikkatle okumanız önerilir. Kolay okunabilirlik için bölüm başlarında kısa özetlere yer verilmiştir; **bu özetler metnin tamamının yerine geçmez.**
 
@@ -811,7 +811,7 @@ Hesabınıza ilişkin sonlandırma işlemleri iki farklı şekilde gerçekleşeb
 İsterseniz hesabınızı silmeden, uygulamadaki **Ayarlar > Hesabımı Dondur** adımıyla hesabınızı **dondurabilirsiniz**. Hesap dondurulduğunda:
 
 - Profiliniz diğer kullanıcılara gösterilmez, keşif akışından (Deck) çıkarılır ve kimse sizi seçemez. Dondurma, yalnızca çıkış yapmaktan farklı bir işlemdir; işlem tamamlandığında oturumunuz da kapatılır.
-- **Seni Seçenler** ve **Seçtiklerin** listeleriniz temizlenir ve sohbetleriniz karşı tarafların mesaj listelerinden kaldırılır. Hesabınızı yeniden etkinleştirdiğinizde bu seçimler ve sohbetler **geri gelmez**. Uygulama, dondurma işleminden önce bu sonucu ayrıca uyarı olarak gösterir.
+- **Seni Seçenler** ve **Seçtiklerin** listeleriniz temizlenir ve sohbetleriniz karşı tarafların mesaj listelerinden kaldırılır. Hesabınızı yeniden etkinleştirdiğinizde bu seçimler ve sohbetler **geri gelmez**. Kaldırılan sohbetler arşivlenmeden silinmez: mesaj kayıtları erişimi yetkili personelle sınırlı hukuki arşive alınır; bu sohbetlerdeki sesli mesaj dosyaları dondurma sırasında silinmez ve 30 günlük süreleri dolduğunda aynı arşive alınır (bkz. Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi) Bölüm 9). Uygulama, dondurma işleminden önce bu sonucu ayrıca uyarı olarak gösterir.
 - Tekrar giriş yaptığınızda hesabınızı yeniden etkinleştirebilirsiniz; profil bilgileriniz ve fotoğraflarınız korunur.
 - Dondurma, mağaza üzerinden alınmış aboneliği iptal etmez (bkz. 13.1.4) ve veri saklama ile yasal yükümlülüklere ilişkin saklama sürelerini kendiliğinden ortadan kaldırmaz (detay için Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi)). Dondurulmuş hesaplar bakımından 13.3’teki pasif hesap kuralları saklıdır.
 
@@ -821,7 +821,7 @@ Hesabınızı uygulama içindeki **Ayarlar > Hesabı Sil** adımlarını (silme 
 
 - **Silme derhal başlar:** Uygulamanın güncel sürümlerinde silme, onayınızın ardından derhal başlatılır; bekleme süresi yoktur. Silme teknik bir nedenle tamamlanamazsa sistem tarafından otomatik olarak yeniden denenir. Uygulamanın eski sürümlerinden 14 günlük bekleme süreli bir silme talebi oluşturulmuşsa, bu süre içinde tekrar giriş yaparak talebi iptal edebilir veya silmeyi hemen tamamlayabilirsiniz.
 - Profiliniz ve hesabınıza bağlı görünür alanlar diğer kullanıcılara kapatılır; profil bilgileriniz, fotoğraflarınız, doğrulama selfie’leriniz ve giriş kaydınız silinir.
-- **Tüm veriler hemen silinmez:** Silinen hesabın profil kaydının bir kopyası **90 gün** saklanıp otomatik olarak silinir; hesap silme sırasında sohbetler arşivlenmeden silinmez ve hukuki arşive alınır (sesli mesajların 30 günlük otomatik silinmesi saklıdır); yasaklı hesaplara ait yasak kaydı (telefon numarası, varsa e‑posta adresi ve yasak gerekçesi dahil), yasak kaldırılmadıkça saklanır. Ayrıntılar ve süreler: Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi) Bölüm 9 ve KVKK Aydınlatma Metni (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) Bölüm 9.
+- **Tüm veriler hemen silinmez:** Silinen hesabın profil kaydının bir kopyası **90 gün** saklanıp otomatik olarak silinir; hesap silme sırasında sohbetler arşivlenmeden silinmez ve hukuki arşive alınır (gönderimden 30 gün sonra sohbetten kaldırılan sesli mesajlar da aynı arşive alınır); yasaklı hesaplara ait yasak kaydı (telefon numarası, varsa e‑posta adresi ve yasak gerekçesi dahil), yasak kaldırılmadıkça saklanır. Ayrıntılar ve süreler: Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi) Bölüm 9 ve KVKK Aydınlatma Metni (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) Bölüm 9.
 - Hesabınıza bağlı seçim, mesajlaşma ve benzeri kayıtların uygulama içinden erişimi sona erer.
 - Uygulama içi sanal öğeler/avantajlar ve promosyon tanımları, hesapla birlikte sonlanabilir ve iade/bedel ödenmesi söz konusu olmayabilir (zorunlu yasal haklar saklıdır).
 
