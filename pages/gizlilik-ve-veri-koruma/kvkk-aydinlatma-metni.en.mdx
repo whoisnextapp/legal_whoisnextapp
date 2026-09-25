@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # KVKK Disclosure Text
 
-**Last update:** 24.09.2026 · **Version:** 1.2
+**Last update:** 25.09.2026 · **Version:** 1.3
 
 This text has been prepared for the purpose of fulfilling the **disclosure obligation** regarding the processing of your personal data under the **Personal Data Protection Law No. 6698** ("**KVKK**") (KVKK Art. 10 and the **Communique on the Procedures and Principles to be Complied with in Fulfilling the Disclosure Obligation**) within the scope of the **WIN** platform ("**Platform**").
 
@@ -173,7 +173,7 @@ Your personal data may be obtained from you directly, from your device/applicati
 Examples of collection methods:
 
 - **In-app screens/forms** (profile fields, preferences, photo upload),
-- Authentication methods such as **Google sign-in (OAuth)** and **phone number sign-in (OTP)**,
+- Authentication methods such as **Google sign-in (OAuth)**, **Sign in with Apple** (iOS) and **phone number sign-in (OTP)**,
 - **Selfie/liveness verification** and similar security steps,
 - **Device/technical logs** and usage data,
 - **Cookie/SDK/tracking technologies** (web and mobile),
@@ -185,9 +185,10 @@ Examples of collection methods:
     While registering on the Platform and creating your profile, data is
     generally collected **directly from you**. Example:
 
-    - **Third-party sign-in and registration:** Google OAuth (name-surname, e-mail, profile photo, age, Google ID), Apple Sign-in (Apple ID), and phone number sign-in (SMS/OTP) may be used.
+    - **Third-party sign-in and registration:** Google OAuth (name-surname, e-mail, profile photo, Google user ID), Sign in with Apple — iOS only (Apple user identifier, e-mail address — Apple's relay address if "Hide My Email" is chosen — and your name if you choose to share it), and phone number sign-in (SMS/OTP) may be used. Date of birth is not obtained from Google; it is requested from you during profile creation.
     - **E-mail and phone verification:** In phone sign-in, e-mail and phone verification steps are completed **during profile creation**. In Google sign-in, e-mail is generally considered verified on Google's side; **phone verification** may be mandatory for interactions such as **making picks** and **sending messages** after profile creation.
-    - **Profile fields:** Name/profile name, gender, profession, height, zodiac sign, smoking/alcohol frequency, profile note (bio).
+    - **Profile fields:** Name/profile name, date of birth, gender, profession, height, zodiac sign, smoking/alcohol frequency, profile note (bio).
+    - **Birth details (astrology):** Place of birth (country/province/district; its approximate coordinates and time zone) and optional time of birth (stored as "unknown" if not known); the zodiac sign and natal chart results calculated from these. Place and time of birth are not shown to other users on the profile screen; however, for the astrological compatibility calculation they are technically transmitted to the app of the user to whom your profile is shown (see Section 4.5 of the [Privacy Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi)).
     - **Preference/compatibility parameters:**
         - **Religion:** I do not believe (Atheist/Agnostic), Not central in my life, Important, Very important.
         - **Political Opinion:** I am not interested in politics, May have a different opinion, Important to some extent, It is very important that we have the same opinion.
@@ -206,9 +207,9 @@ Examples of collection methods:
     sign-in method (see "Onboarding & Profile" tab).
 
     In this process:
-    - **Biometric verification:** Liveness/pose selfie captured via camera to prevent fake accounts, and pose vs profile photo consistency/person verification processes with **Google Gemini 2.5 Flash**. At least one photo must be verified with this method to be included in the Discovery flow (Deck). A green check/badge is shown on verified photos.
+    - **Biometric verification:** Liveness/pose selfie captured via camera to prevent fake accounts, and pose vs profile photo consistency/person verification processes with **Google Gemini 2.5 Flash**. As a rule, at least one photo must be verified with this method to be included in the Discovery flow (Deck); WIN may, by administrator decision and in limited cases, grant an exception to this rule for certain accounts. A green check/badge is shown on verified photos.
 
-    - **Camera** and (in some scenarios) **microphone** permission may be requested. Although microphone permission is obtained due to technical requirements, no audio recording is performed.
+    - **Camera** permission may be requested. **No audio is recorded** during selfie verification. (Microphone permission is requested only for the voice message feature included in WIN Premium; see the "Matching & Messaging" tab.)
     - The user may be asked to take a selfie by imitating a specific pose.
     - Verification images are, as a rule, **not published on the profile**.
 
@@ -224,6 +225,7 @@ Examples of collection methods:
     - **Evaluation:** After a certain message interaction limit in chat, data for rating the other party according to **Intelligence**, **Politeness**, and **Fun** criteria.
     - **Cooldown:** Algorithmic restriction periods related to re-displaying users shown in Deck but not selected.
     - **Messaging:** Chat contents and metadata. Messages are **not end-to-end encrypted**; they may be reviewed by authorized admins for security and moderation purposes.
+    - **Voice messages (WIN Premium):** Audio files you record with the microphone and send, their duration and time sent. Audio files are stored on Google Cloud / Firebase Storage, are accessible within the app only to the two parties to the chat and, as a rule, are deleted automatically 30 days after they are sent (except the account-deletion archive; see Section 9).
     - Security signals (e.g., spam/fraud suspicion).
 
     These data may be used for providing the service, security and prevention of
@@ -236,6 +238,7 @@ Examples of collection methods:
 
     - In purchases via **Apple App Store / Google Play**: order/transaction information generated by the store, subscription status, and "receipt" data for verification purposes may be processed.
     - **Payment providers** (if direct payment exists): payment and billing data may be processed.
+    - **Subscription infrastructure (RevenueCat):** To validate your purchases and link them to your account, your WIN user ID, purchase/subscription records, device/app information and the device identifiers used for advertising measurement (on iOS the IDFV and, if permitted, the IDFA; on Android the GAID and the Android device ID) as well as your IP address are processed by RevenueCat, Inc. (USA) (see Section 7.2).
 
     For the contractual framework of the purchase process, please review the
     [Subscription and Purchase Terms](/sozlesmeler/abonelik-ve-satin-alma-kosullari).
@@ -247,7 +250,9 @@ Examples of collection methods:
 
     - IP address, device/application version, browser information,
     - session and log records (may qualify as traffic data),
-    - cookie/SDK IDs, advertising identifiers (IDFA/GAID).
+    - cookie/SDK IDs, advertising identifiers (IDFA/GAID; on iOS the IDFA only if tracking permission is granted),
+    - **app installation/device identifier** (on Android a random identifier generated by the app starting with "wn-"; on iOS the IDFV): to keep the account signed in on one device at a time (single-device session) and for device/IP-based abuse limits on SMS verification codes,
+    - app events transmitted to the Meta and TikTok SDKs for advertising campaign measurement (attribution) (see Section 4.14 of the [Privacy Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi)).
 
     For details, please review the
     [Cookie Policy](/gizlilik-ve-veri-koruma/cerez-politikasi).
@@ -282,7 +287,10 @@ Depending on the operation of the Platform, the following data categories may be
 | ----------------------------------------------- | ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | **Identity**                                    | name, profile name (nickname), date of birth/age, gender                                   | Some fields may be visible to other users within profile visibility.                                                   |
 | **Contact**                                     | e-mail (Google/OAuth or verified in profile), phone number (verified via OTP), support contact details | Official notifications may be made via registered e-mail/in-app notification.                                          |
-| **Account/Platform identifiers**                | user ID, Google user ID (technical), session information                                   | Required for security and account management.                                                                           |
+| **Account/Platform identifiers**                | user ID, Google user ID and Apple user identifier (technical), session information          | Required for security and account management.                                                                           |
+| **Device/session identifier**                   | app installation identifier (Android: "wn-…"; iOS: IDFV), device- and IP-based sending counters for SMS verification | Used for the single-device session and account security; it is not an advertising identifier.                         |
+| **Birth details (astrology)**                   | place of birth (and its approximate coordinates/time zone), optional time of birth, natal chart results | Not shown to other users on the profile screen (technically transmitted, for the compatibility calculation, to the app of the user to whom the profile is shown); the zodiac sign and (where offered) compatibility result may be shown.        |
+| **Audio recording**                             | voice message files (WIN Premium), duration and time sent                                  | As a rule deleted automatically after 30 days; no voice recognition or biometric analysis is performed.                |
 | **Profile data**                                | profession, height, zodiac sign, smoking/alcohol frequency, profile note                   | Since profile note is free text, it is recommended that you do not share sensitive data.                              |
 | **Preference/compatibility parameters (profiling)** | selections such as importance of religion, compatibility in physical appearance/financial status/political opinion | These data are additionally assessed as they may constitute **special category data** or lead to inferences within this scope. |
 | **Visual/Content**                              | profile photos, uploaded visuals, message content                                           | You are responsible for your content (see [Terms of Use](/sozlesmeler/kullanim-kosullari)).                           |
@@ -291,7 +299,8 @@ Depending on the operation of the Platform, the following data categories may be
 | **Online status information**                   | Online/Last seen information                                                                | Visible only to Premium members.                                                                                        |
 | **Usage/interaction**                           | like/reject, matching, messaging metadata, deck behavior                                   | May be used in recommendation/matching systems and security.                                                           |
 | **Device/technical/log**                        | IP, device model, operating system, app version, crash records, advertising identifiers    | May qualify as "traffic data/log" within the scope of Law No. 5651.                                                    |
-| **Financial/transaction**                       | subscription status, order/transaction number, refund records                              | Varies by App Store/Google Play or payment providers.                                                                   |
+| **Advertising measurement (attribution)**       | app events (open, sign-up, registration completion — with gender, login, pick, purchase), WIN user ID; for the pick event the picked person's technical user ID; advertising identifiers (if permitted), Meta anonymous ID, Apple Search Ads attribution data; to RevenueCat additionally device identifiers (IDFV on iOS; the Android device ID on Android) and the IP address | Transmitted to Meta, TikTok and RevenueCat (Section 7.2). Message content, photos and device location (GPS) are not shared.        |
+| **Financial/transaction**                       | subscription status, order/transaction number, refund records, one-time purchases (deck packs, Visibility Week), gift deck balance | Varies by App Store/Google Play, RevenueCat or payment providers.                                                       |
 | **Legal process/compliance**                    | complaint/objection records, moderation decisions, request records                          | Retention may be necessary for disputes and obligations.                                                                |
 
 **Special categories of personal data** under KVKK Art. 6 are subject to special protection. On the Platform:
@@ -313,18 +322,23 @@ may be evaluated as special category data or may create this risk. Therefore, th
 
 Your personal data may be processed for the following purposes depending on the Platform's features and your usage:
 
-- **Account creation and management** (Google or phone sign-in, session, profile creation, e-mail/phone verification)
+- **Account creation and management** (Google, Apple or phone sign-in, session, profile creation, e-mail/phone verification)
+- **Single-device session and account security** (keeping the account signed in on one device at a time via the installation identifier; preventing abuse of SMS verification codes)
 - **Provision of the service** (matching flow, profile display, messaging)
 - **Operation of recommendation/matching systems** (profiling, compatibility scores, ranking/recommendation)
 - **User safety and prevention of misuse** (fake account, bot/spam, fraud detection; complaint/blocking)
 - **Selfie/liveness verification** (profile verification, service integrity)
 - **Location-based features** (nearby user recommendation, distance display)
+- **Provision of the voice message feature** (WIN Premium)
+- **Provision of the astrology features** (zodiac sign, natal chart, astrological compatibility)
 - **Premium subscription and purchase processes** (activation, verification, refund/objection)
 - **Customer support and communication processes** (request/complaint management, support records)
 - **Fulfillment of legal obligations** (Law No. 5651, ETK, KVKK applications, official requests)
 - **Resolution of disputes and protection of rights** (request, objection, evidence retention)
 - **Product development, analytics, and performance** (error/crash analysis, service improvement)
 - **Marketing/announcement communications** (where applicable and to the extent you consent)
+- **Measuring the effectiveness of advertising campaigns (attribution)** (Meta, TikTok and RevenueCat integrations)
+- **Abuse investigations relating to deleted accounts and preventing banned persons from re-registering**
 
 ---
 
@@ -355,6 +369,11 @@ Example mapping table:
 | Subscription and purchase                | purchase/transaction data                         | KVKK Art. 5/2(c) and/or Art. 5/2(ç) |
 | Official authority requests and legal compliance | traffic data/log, application records              | KVKK Art. 5/2(ç)                   |
 | Marketing communication (if any)         | contact + consent records                         | KVKK Art. 5/1 + ETK                |
+| Astrology features                       | place/time of birth, natal chart results          | KVKK Art. 5/2(c)                   |
+| Voice messages                           | audio recording, duration, time sent              | KVKK Art. 5/2(c); for moderation Art. 5/2(f) |
+| Single-device session and SMS abuse limits | installation/device identifier, IP address      | KVKK Art. 5/2(c) and Art. 5/2(f)   |
+| Advertising measurement (attribution)    | app events, user and device/advertising identifiers | KVKK Art. 5/2(f); iOS tracking permission for the advertising identifier; explicit consent (Art. 5/1) for sending e-mail/phone to TikTok |
+| 90-day copy after deletion, chat archive, ban record | profile copy, messages/voice messages, ban record (user ID, phone number, e-mail address where available, reason for the ban) | KVKK Art. 5/2(e) and Art. 5/2(f)   |
 
 ### 6.2 Special categories of personal data (KVKK Art. 6)
 
@@ -412,10 +431,11 @@ By the nature of the Platform, some data in your profile **may be visible to oth
 WIN may work with service providers to operate and improve the Platform. In this scope, your data may be transferred to, for example, the following recipient categories:
 
 - **Hosting and infrastructure providers** (Google Cloud / Firebase - **EU Region**, Wix CMS)
-- **Analytics and performance/error monitoring** providers (Google Analytics - GA4, Sentry)
-- **Marketing and Advertising** providers (Google AdMob - via advertising identifiers)
-- **Notification and communication** providers (Google, Store Vantage CRM)
-- **Payment and subscription** infrastructures (Apple App Store / Google Play)
+- **Search and deck (recommendation) infrastructure** (Meilisearch Cloud — EU/Frankfurt region: profile summary fields for the deck draw — age, gender and the gender(s) you want to see, approximate location, lifestyle and importance answers, verification/premium status, activity and moderation visibility information)
+- **Analytics and performance/error monitoring** providers (Google Analytics - GA4, Firebase Crashlytics, Sentry)
+- **Advertising measurement (attribution)** providers (Meta Platforms — Facebook SDK; TikTok — TikTok Events SDK; on iOS Apple Search Ads attribution data via RevenueCat). The Google Mobile Ads (AdMob) SDK is installed in the app, but **no ads are currently shown**; if ads are shown in the future this text will be updated.
+- **Notification and communication** providers (Google, Store Vantage CRM; Twilio for SMS verification)
+- **Payment and subscription** infrastructures (Apple App Store / Google Play; RevenueCat, Inc. — USA — for subscription management)
 - **Verification providers** (**Google Gemini 2.5 Flash** - region: **[GEMINI_REGION]**; **Google Cloud Vision** - inappropriate content control via Safe Search on selfie)
 
 These providers may act as **data processors** or **independent data controllers** depending on the conditions.
@@ -447,6 +467,8 @@ The Platform may require cross-border transfer of personal data due to cloud inf
 
 Cross-border transfer consents are obtained in accordance with the principle of purpose-specificity, as detailed in [Explicit Consent Texts](/gizlilik-ve-veri-koruma/acik-riza-metinleri).
 
+Main recipients located abroad: Google (cloud infrastructure, analytics, error monitoring, verification), RevenueCat, Inc. (USA — subscription infrastructure), Meta Platforms and TikTok (advertising measurement), Twilio (SMS verification) and Meilisearch Cloud (EU — search/deck infrastructure).
+
 ---
 
 ## Section 9: Retention periods and destruction
@@ -463,9 +485,15 @@ Sample retention approach (final periods should be clarified according to techni
 | Data set                                                | Typical retention approach                                                                                                     | Basis / Note                                                                        |
 | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
 | **IP and Traffic Records (Logs)**                       | **2 years**                                                                                                                    | Pursuant to hosting provider obligations under Law No. 5651                         |
-| **Account/profile data**                                | as long as the account is active; as a rule, deletion/destruction upon deletion request                                       | KVKK Art. 7 and data minimization principles (legal retention periods reserved)     |
+| **Account/profile data**                                | as long as the account is active; when the account is deleted, profile, photos, verification selfies, support attachments and sign-in record are deleted (subject to the exceptions below) | KVKK Art. 7 and data minimization principles (legal retention periods reserved)     |
+| **Copy of the deleted account**                         | full copy of the profile record (excluding notification tokens) and the deletion reason, **90 days** from deletion (for accounts deleted before September 2026, 90 days from the date this rule began to be applied); deleted automatically at the end of the period | Abuse/fraud investigation, disputes and official requests (KVKK Art. 5/2-e, f)      |
+| **Chat archive (account deletion)**                     | during account deletion chats are not deleted without archiving; on account deletion both parties' messages and the voice message files whose automatic 30-day deletion period has not yet expired are moved to a restricted legal archive and retained for the relevant limitation periods | Disputes and requests from authorities (KVKK Art. 5/2-e)                            |
+| **Ban record of banned accounts**                       | user ID, phone number, e-mail address where available and the reason for the ban; even if an account blocked for violating the Community Guidelines is deleted, **without a time limit** unless the ban is lifted | Preventing the banned person from opening a new account (KVKK Art. 5/2-f)           |
+| **Voice messages**                                      | as a rule deleted automatically **30 days** after sending (except copies in the account-deletion archive)                      | Service provision and data minimization                                            |
+| **Installation/device identifier**                      | as long as the account is active (if the account is deleted, within the 90-day account copy); the copy on the device until the app is uninstalled | Single-device session and account security                                         |
+| **Birth details (astrology)**                           | as long as the account is active; if the account is deleted, within the 90-day account copy                                    | Provision of the astrology features                                                |
 | **Decision Records and Violation Evidence (Moderation/Ban)** | **2 years**                                                                                                                    | Within the scope of the Company's right of defense and legitimate interest (KVKK Art. 5/2-f) |
-| **Messaging and interaction**                           | proportional period in line with service provision + security/dispute needs                                                   | Misuse reviews and objection processes may affect this                              |
+| **Messaging and interaction**                           | proportional period in line with service provision + security/dispute needs; on account deletion the chat archive rule above applies                                                   | Misuse reviews and objection processes may affect this                              |
 | **Selfie/liveness verification**                        | Verification image is processed instantly on Google (Gemini) side for verification; Firebase/Audit records are retained for a proportional period (2-10 years) for dispute and security purposes | High protection for biometric data; see biometric text                              |
 | **Contract Approvals and Commercial Evidence**          | **10 years**                                                                                                                   | General limitation period under Turkish Code of Obligations Art. 146 and financial obligations |
 | **Explicit consent / approval records**                 | proportional period for compliance and proof needs                                                                            | Burden of proof under ETK and KVKK and limitation periods may be considered         |

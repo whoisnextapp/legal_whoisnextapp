@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # DSA Compliance Page (Digital Services Act)
 
-**Last updated:** 24.09.2026 · **Version:** 1.4
+**Last updated:** 25.09.2026 · **Version:** 1.5
 
 This page explains WIN's ("**Platform**") compliance approach under the European Union **Digital Services Act** (**Digital Services Act — Regulation (EU) 2022/2065**, "**DSA**"), including **points of contact**, **illegal content notice** (notice & action), **objection/complaint** and **transparency** mechanisms.
 
@@ -490,7 +490,7 @@ For related consumer/subscription processes, see [Subscription and Purchase Term
   need arises to mark user content as "commercial communication" (Art. 26 DSA).
 </Callout>
 
-WIN uses the **Google AdMob** ad network within the application. Within DSA Article 26 requirements:
+**No ads are currently shown in the app.** The Google Mobile Ads (AdMob) software component is installed in the app, but no ad units are used. If ads are shown in the future, within DSA Article 26 requirements:
 
 - **Ad labeling:** All ads are marked **clearly** in a way distinguishable from organic content.
 - **Targeting information:** "Why this ad" / targeting parameter information provided by the ad network is presented to the user as far as possible; DSA-compliant interfaces are used.
@@ -521,6 +521,15 @@ Under DSA Article 27, WIN explains the **main parameters** in the recommendation
 - **Profile quality/consistency**: Missing fields, repetitive behavior patterns.
 - **Cooldown**: Profiles that appeared in your deck but were not selected are not shown again for a certain period.
 - **Premium effects**: 12 decks every 12 hours, additional visibility weight in decks, priority access to newly joined profiles, appearing near the top of the picked person's list, deck filtering, profile hiding, seeing online/offline status, score display. The one-time Visibility Week purchase also adds visibility weight in decks while it is active; it does not grant choosing.
+- **New-user visibility**: Newly joined profiles receive additional visibility weight in deck draws during their first days after joining. The level of this additional weight differs by profile group: it varies according to the profile's gender and whether the profile is able to start conversations (phone verification).
+- **Recent activity**: Profiles that have used the app in recent days are prioritised; profiles that have not signed in for a long time are shown with a much lower likelihood.
+- **Profile score**: A technical score based on how complete the profile is affects the display weight.
+- **Editorial selection (curation)**: The WIN team may highlight certain profiles for a limited time; this selection is time-limited, ends automatically when the period expires and is not paid for.
+- **Moderation visibility limits**: Upon suspicion or a decision of a Community Guidelines violation, a profile's visibility may be reduced for a limited time, the profile may be temporarily removed from the discovery flow or the account may be hidden entirely (see Section 4.2).
+- **Display balance**: The weight of profiles that have received many deck displays within the past week may be temporarily reduced so that displays are distributed more evenly. This parameter does not apply to all profiles; which profile groups it applies to, and at what level, differs according to the profile's gender.
+- **Deck composition**: As far as possible, two profiles that are not able to start conversations are not shown together in the same pair.
+
+**Relative importance of the parameters:** The deck is built by a **weighted random draw** using the signals above; profiles are not ranked by a single score. First, eligibility conditions are applied (gender preferences, location/distance, photo verification as a rule, exclusion of profiles previously shown or picked and of moderation restrictions). The age range is also applied at this first stage; however, if not enough eligible profiles are found to fill the deck it may be relaxed, in which case profiles outside the range may also be shown. Priority is then given according to recent activity and location. WIN Premium deck filters are not an exclusion condition: profiles matching the filters are drawn first, and if there are not enough matching profiles, profiles that do not match the filters may also be shown. Within this pool newness, WIN Premium/Visibility Week, editorial selection and profile score increase the likelihood of being shown, while moderation limits and display balance reduce it. No parameter guarantees being shown or being picked.
 
 **User control:** Preferences and filters can be changed in Settings; location permission is managed in device settings. Recommendation parameters are presented in in-app "Settings" and relevant screens.
 
@@ -539,7 +548,8 @@ WIN is not intended for users under 18. The DSA Article 28 approach regarding pr
 
 **Registration and age verification** (aligned with Section 3 of the [Terms of Use](/sozlesmeler/kullanim-kosullari)):
 
-- **Google Sign-In (OAuth):** During registration, name, e-mail and profile photo from Google account are shared; if birth date data from store/account source exists, it is taken as basis.
+- **Google Sign-In (OAuth):** During registration, name, e-mail and profile photo from the Google account are shared; date of birth is not obtained from Google and is entered by the user during profile creation.
+- **Sign in with Apple (iOS only):** The Apple user identifier, e-mail address (Apple's relay address if "Hide My Email" is chosen) and, if shared, name are received; date of birth is entered by the user during profile creation.
 - **Phone login (SMS/OTP):** Phone-based identity verification may be used; e-mail and phone verification are completed **during profile creation process**.
 - **User declaration:** When date of birth data cannot be obtained, a screen where the user selects age is presented and confirmation of the checkbox "I declare that I am over 18 years old" is requested.
 - **Additional control:** Upon suspicion or notice of being under 18, accounts understood to belong to minors are immediately suspended or closed. If age verification cannot be completed, the account is not included in the discovery flow.

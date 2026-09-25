@@ -2,7 +2,7 @@
 
 import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
-**Son güncelleme:** 02.04.2026 · **Sürüm:** 1.1
+**Son güncelleme:** 25.09.2026 · **Sürüm:** 1.2
 
 Bu sayfa, WIN (“**Platform**”) tarafından sunulan hizmetlerin; engelli bireyler dahil olmak üzere tüm kullanıcılar için **erişilebilir**, **kapsayıcı** ve **kullanılabilir** olmasına ilişkin yaklaşımı, uygulanan standartları ve geri bildirim kanallarını açıklar.
 
@@ -233,7 +233,7 @@ Erişilebilirlik testleri, hizmetin niteliğine göre aşağıdaki alanları kap
 
 - **Kayıt/giriş** (Google OAuth akışı dahil),
 - **KVKK & sözleşme onayları** ve açık rıza kutuları,
-- **Kamera/mikrofon izinleri** ve doğrulama akışı (selfie/liveness),
+- **Kamera izni** ve doğrulama akışı (selfie/liveness),
 - **Eşleşme/mesajlaşma** arayüzleri,
 - **Şikayet/engelleme** akışları,
 - **Premium/abonelik** yönetimi (mağaza yönlendirmeleri dahil),
@@ -248,7 +248,7 @@ Erişilebilirlik testleri, hizmetin niteliğine göre aşağıdaki alanları kap
   hedeflenen tedbirleri örnekli şekilde açıklar.
 </Callout>
 
-### 5.1 Kayıt/Giriş (Google ve telefon ile giriş)
+### 5.1 Kayıt/Giriş (Google, Apple ve telefon ile giriş)
 
 - Giriş/hesap seçimi, OAuth yönlendirmesi ve telefon/OTP alanlarında etkileşimli öğelerin ekran okuyucularla **anlaşılır şekilde seslendirilmesi**,
 - Hata durumlarında (ör. oturum açılamadı, kod gönderilemedi) **açık hata mesajı** ve tekrar deneme yönlendirmesi,
@@ -282,9 +282,9 @@ Bu akışta hedeflenen erişilebilirlik tedbirleri:
 - Yükleme/hata durumlarında kullanıcıya **net geri bildirim** (örn. dosya tipi, boyut),
 - (Varsa) görsel düzenleme/kırpma arayüzlerinde alternatif yönlendirme.
 
-### 5.5 Doğrulama katmanı (kamera/mikrofon izinleri, selfie/liveness)
+### 5.5 Doğrulama katmanı (kamera izni, selfie/liveness)
 
-WIN’de “sahte hesap önleme” amacıyla kamera/mikrofon izinleri ve selfie/liveness benzeri doğrulama adımları bulunabilir.
+WIN’de “sahte hesap önleme” amacıyla kamera izni ve selfie/liveness benzeri doğrulama adımları bulunabilir.
 
 - Talimatların **metin ve sesli** destekle anlaşılır sunumu,
 - Zaman kısıtı/tekrar deneme gibi durumlarda **kullanıcıya kontrol** sunulması hedeflenir.
@@ -334,7 +334,15 @@ esas alınır. (Bkz. [Abonelik ve Satın Alma Koşulları](/sozlesmeler/abonelik
   alternatifler yer alır.
 </Callout>
 
-WIN, tüm kullanıcılar için erişilebilir bir deneyim sağlamayı hedefler. Halihazırda ekran okuyucu, kontrast, yazı büyütme veya navigasyon bazlı **bilinen spesifik bir erişilebilirlik sorunu bulunmamaktadır.** Ancak aşağıdaki durumlarda genel teknolojik sınırlamalar görülebilir:
+WIN, tüm kullanıcılar için erişilebilir bir deneyim sağlamayı hedefler. Uygulamanın güncel sürümünde **bilinen erişilebilirlik sınırlamaları** aşağıdadır; bunları giderdikçe bu listeyi güncelleriz:
+
+- **Ekran okuyucu (VoiceOver / TalkBack):** Destek **kısmidir**. Alt menü sekmeleri gibi bazı öğeler erişilebilir etiketlere sahiptir; ancak bazı düğmeler, görseller ve özellikle deste (kart) akışı ekran okuyucuyla tam olarak kullanılamayabilir.
+- **Büyük yazı (sistem yazı boyutu):** Sistem yazı boyutu uygulamanın birçok ekranına yansır; ancak deste kartlarında yazı ölçeği **%130 ile sınırlandırılır** ve bazı sabit boyutlu alanlarda metin, sığması için küçültülerek gösterilebilir. Çok büyük yazı ayarlarında tam destek sunulmamaktadır.
+- **Renk kontrastı:** Marka renk geçişli (gradyan) düğmelerdeki beyaz yazılar ve sohbet ekranındaki bazı küçük metinler (ör. mesaj saatleri) **WCAG 2.2 AA** kontrast oranını her yerde karşılamamaktadır. Bu nedenle mağaza erişilebilirlik beyanlarımızda “Yeterli Kontrast” (Sufficient Contrast) özelliğini beyan etmiyoruz.
+- **Tema:** Uygulama yalnızca koyu temayla sunulur; açık tema seçeneği yoktur.
+- **Hareketi azalt:** Sayfa geçişleri ve deste animasyonları cihazın “hareketi azalt” ayarına uyar; bazı küçük animasyonlar (ör. yükleme logosu, bazı geri bildirim animasyonları) bu ayardan etkilenmeyebilir.
+- **Sesli mesajlar:** Sesli mesajlar için yazıya döküm (transkript) veya altyazı sunulmamaktadır.
+- **Selfie doğrulaması:** Bölüm 5.5’te belirtildiği gibi, bu adımı tamamlayamayan kullanıcılar için şu aşamada alternatif bir teknolojik doğrulama yöntemi bulunmamaktadır.
 
 <Callout type="warning" title="Alternatif çözüm talebi">
   Bir engel nedeniyle kritik bir işlemi (örn. hesap erişimi, doğrulama, abonelik

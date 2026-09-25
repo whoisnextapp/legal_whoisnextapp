@@ -2,7 +2,7 @@
 
 import { Callout, Steps, Card, Cards } from "nextra/components";
 
-**Son güncelleme:** 24.09.2026 · **Sürüm:** 1.2
+**Son güncelleme:** 25.09.2026 · **Sürüm:** 1.3
 
 Bu belge, WIN mobil uygulaması ve ilgili hizmetlerin kullanımına ilişkin kullanıcı ile işletmeci arasındaki hukuki ilişkiyi düzenler. Belgeyi kabul etmeden önce dikkatle okumanız önerilir. Kolay okunabilirlik için bölüm başlarında kısa özetlere yer verilmiştir; **bu özetler metnin tamamının yerine geçmez.**
 
@@ -144,16 +144,18 @@ Bu kapsamda:
 
 ### 3.2 Kayıt Yöntemleri ve Kimlik Doğrulama Adımları
 
-Hesaba erişim; **Google Sign-In (OAuth)** veya **telefon numarası ile giriş** (SMS/OTP tabanlı kimlik doğrulama) yollarından biriyle sağlanabilir. Bu yollarla aktarılan veriler [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) ve [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) kapsamında işlenir.
+Hesaba erişim; **Google Sign-In (OAuth)**, **Apple ile Giriş** (Sign in with Apple — yalnızca iOS cihazlarda) veya **telefon numarası ile giriş** (SMS/OTP tabanlı kimlik doğrulama) yollarından biriyle sağlanabilir. Bu yollarla aktarılan veriler [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) ve [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) kapsamında işlenir.
 
 **Telefon ile giriş:** İlk kimlik adımından sonra **e-posta doğrulaması** ve **telefon numarası doğrulaması** (OTP vb.), kayıt ekranından ayrı olarak **profil oluşturma sürecinde** tamamlanır. Bu adımlar tamamlanmadan hizmetin ilgili bölümleri kısıtlanabilir.
 
 **Google ile giriş:** Google hesabınız üzerinden paylaşılan e-posta adresi, Google’ın süreçleri uyarınca genellikle **zaten doğrulanmış** kabul edilir. Profil oluşturma sonrasında, desteden **seçim yapabilmek**, sohbette **mesaj gönderebilmek** ve benzeri etkileşimler için uygulama içinde **telefon numarası doğrulamasına** yönlendirilebilirsiniz; bu doğrulama **zorunludur**.
 
+**Apple ile giriş (iOS):** Apple’ın hesabınız için oluşturduğu teknik kullanıcı kimliği, e‑posta adresiniz (Apple’ın “E‑postamı Gizle” seçeneğini kullanırsanız Apple’ın oluşturduğu aktarma adresi) ve paylaşmayı seçerseniz adınız kullanılır. Profil oluşturma sonrasında, desteden **seçim yapabilmek**, sohbette **mesaj gönderebilmek** ve benzeri etkileşimler için **telefon numarası doğrulaması** burada da zorunludur.
+
 Giriş yönteminizi kullanarak:
 
-- İlgili hesabı (Google hesabı veya telefon hattı) kullanma yetkisine sahip olduğunuzu,
-- Google kullanıyorsanız hesabınıza ilişkin güvenlik önlemlerini (şifre, cihaz güvenliği, iki aşamalı doğrulama vb.) almanın sizin sorumluluğunuzda olduğunu,
+- İlgili hesabı (Google hesabı, Apple Kimliği veya telefon hattı) kullanma yetkisine sahip olduğunuzu,
+- Google veya Apple kullanıyorsanız hesabınıza ilişkin güvenlik önlemlerini (şifre, cihaz güvenliği, iki aşamalı doğrulama vb.) almanın sizin sorumluluğunuzda olduğunu,
 - Giriş ve profil kurulumu sırasında sözleşme ve KVKK metinlerinin gösterilebileceğini ve bazı işlemler için ayrı ayrı onay/açık rıza seçenekleri sunulabileceğini,
   kabul edersiniz.
 
@@ -185,8 +187,9 @@ Giriş bilgilerinizi (OAuth ve telefon tabanlı giriş dahil) gizli tutmak ve ye
 
 Bu kapsamda:
 
-- Cihazınızı, giriş yönteminize bağlı hesabınızı (Google veya telefon tabanlı oturum) ve uygulama erişimlerinizi güvenli tutmalı; şüpheli durumları gecikmeksizin WIN’e bildirmelisiniz.
+- Cihazınızı, giriş yönteminize bağlı hesabınızı (Google, Apple veya telefon tabanlı oturum) ve uygulama erişimlerinizi güvenli tutmalı; şüpheli durumları gecikmeksizin WIN’e bildirmelisiniz.
 - WIN, hesap güvenliği ve kötüye kullanımın önlenmesi amacıyla, şüpheli giriş/işlem tespit ettiğinde hesabınızı geçici olarak kısıtlayabilir ve ek doğrulama isteyebilir (örn. selfie doğrulama gibi).
+- **Tek cihaz:** Hesabınız kural olarak aynı anda yalnızca bir cihazda açık kalabilir. Başka bir cihazdan giriş yapıldığında hesap o cihaza geçer ve önceki cihazdaki oturum kapatılır. Bu amaçla kullanılan kurulum/cihaz kimliği [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) Bölüm 4.13’te açıklanır.
 
 ---
 
@@ -214,6 +217,7 @@ Profil oluştururken bazı alanlar zorunlu olabilir. Örnek olarak:
 
 - **İsim / profil adı**: Google ile girişte isim Google üzerinden atanabilir; telefon akışında profil oluşturma sırasında siz belirleyebilirsiniz. Her iki durumda da ismi uygulama içinden **değiştirebilirsiniz**. Profil adının **gerçek adınız olması zorunlu değildir**; ancak [Topluluk Kuralları](/topluluk-ve-guvenlik/topluluk-kurallari)na (hakaret, yanıltma vb. olmaması) uygun olmalıdır.
 - **Cinsiyet**, **doğum tarihi (yaş)**
+- **Doğum yeri** (burç, doğum haritası ve astrolojik uyum özellikleri için; doğum saati isteğe bağlıdır ve bilinmiyorsa “bilmiyorum” seçilebilir). Doğum yeri ve saati profil ekranında diğer kullanıcılara gösterilmez; astrolojik uyum hesabı için teknik olarak iletilmesi hakkında bkz. [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) Bölüm 4.5.
 - En az **bir profil fotoğrafı** (yüzün net görünmesi istenebilir)
 
 Uygulama; profilinizi zenginleştirmek ve eşleşme/filtreleme deneyimini iyileştirmek amacıyla ayrıca şu tür alanları da sorabilir: **meslek**, **boy**, **sigara/alkol sıklığı**, **burç**, **profil notu (serbest metin)**, çeşitli **tercih/önem soruları** ve **fotoğraf yükleme** (örn. çoklu fotoğraf slotları).
@@ -228,14 +232,14 @@ Uygulama; profilinizi zenginleştirmek ve eşleşme/filtreleme deneyimini iyile�
 
 WIN, hesap ve profil güvenliği için **Google Gemini 2.5 Flash** kullanarak fotoğraf tabanlı selfie (canlılık / liveness) doğrulaması yapar. Bu süreçte:
 
-- Profilin aktif olarak keşif akışında yer alabilmesi için **en az 1 (bir) adet fotoğrafının doğrulanmış olması** şarttır.
+- Profilin aktif olarak keşif akışında yer alabilmesi için **kural olarak en az 1 (bir) adet fotoğrafının doğrulanmış olması** gerekir. WIN, yönetici kararıyla ve sınırlı hâllerde bazı hesaplara bu kurala istisna tanıyabilir; bu nedenle keşif akışındaki her profilin doğrulanmış olduğu garanti edilmez. Bir fotoğrafın doğrulanıp doğrulanmadığı üzerindeki rozetten anlaşılır.
 - Doğrulama işlemi, yüklenen profil fotoğrafındaki kişinin, o an çekilen canlı selfie'deki kişiyle aynı olduğunu teyit eder. **Başkasına ait fotoğraflarla doğrulama yapılamaz.**
 - Sadece doğrulanan fotoğraflarda **yeşil tik** (veya benzeri bir doğrulama ibaresi) yer alır.
 - Profilinizde başkalarıyla çekilmiş fotoğraflar yer alabilir; ancak doğrulama yalnızca "size" ait olan ve yüzünüzün net göründüğü fotoğraflar üzerinden gerçekleştirilir.
 - Doğrulama adımı tamamlanana kadar hizmetin belirli bölümleri (örn. deckte görünme) kısıtlanabilir.
 
 <Steps>
-  ### 1. İzinler Doğrulama sürecinde kamera ve/veya mikrofon izni istenebilir.
+  ### 1. İzinler Doğrulama sürecinde kamera izni istenebilir; doğrulama sırasında ses kaydı alınmaz.
   ### 2. Canlılık (liveness) adımı Kullanıcıdan o an çekilecek canlı bir
   selfie/poz ile profil fotoğrafını eşleştirmesi istenir. ### 3. Sonuç ve
   İşaretleme Eşleşme başarılıysa ilgili fotoğraf "doğrulanmış" olarak
@@ -617,7 +621,12 @@ WIN, Hizmetleri daha kullanışlı hâle getirmek amacıyla **öneri sistemleri*
 - **Konum bilgisi** (izin verdiğiniz ölçüde) ve konumla ilişkili eşleşme sinyalleri
 - **Etkileşim geçmişi** (ör. beğeni/ret davranışları, mesajlaşma etkileşimleri)
 - **Güvenlik sinyalleri** (ör. engelleme/şikayet ilişkileri, doğrulama durumları)
-- **Profil kalitesi/tutarlılığına ilişkin sinyaller** (ör. eksik alanlar, tekrar eden davranış örüntüleri)
+- **Profil kalitesi/tutarlılığına ilişkin sinyaller** (ör. eksik alanlar, tekrar eden davranış örüntüleri; profil doluluğuna dayalı teknik bir profil puanı)
+- **Yenilik ve aktiflik** (yeni katılan profillere ilk günlerde tanınan ek görünürlük; son zamanlarda aktif olma durumu)
+- **Editoryal seçim** (WIN ekibinin süreli olarak öne çıkardığı profiller) ve **moderasyon kararları** (görünürlüğün süreli olarak azaltılması veya keşif akışından çıkarılma)
+- **Ücretli görünürlük** (WIN Premium ve Görünürlük Haftası; bkz. [Abonelik ve Satın Alma Koşulları](/sozlesmeler/abonelik-ve-satin-alma-kosullari))
+
+Deste, bu sinyallerle ağırlıklandırılmış bir **rastgele çekiliş** ile oluşturulur; ağırlıklar bir profilin gösterilme olasılığını artırır veya azaltır, ancak gösterimi garanti etmez. Ana parametrelerin ayrıntılı listesi [DSA Uyum Sayfası](/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi) Bölüm 12’dedir.
 
 Bu değerlendirmeler, eşleşme olasılığını artırmaya yönelik bir tahmin mekanizmasıdır; belirli bir eşleşme veya sonuç garanti edilmez.
 
@@ -690,15 +699,15 @@ AB’de bulunan kullanıcılar için, DSA kapsamındaki raporlama ve şeffaflık
 
 ### 9.3 Sanal Öğeler
 
-WIN, şu aşamada **WIN Premium aboneliği** ile tek seferlik **deste paketleri** ve **Görünürlük Haftası** satışı yapmaktadır (bkz. [Abonelik ve Satın Alma Koşulları](/sozlesmeler/abonelik-ve-satin-alma-kosullari) Bölüm 3.5). Paket fiyatları pazar koşullarına göre **değişkenlik gösterebilir**; güncel fiyatlar her zaman uygulama içi satın alma ekranlarında gösterilir. Uygulama içinde satın alınabilir sanal para, kredi veya harcanabilir öğeler lisans niteliğindedir; devredilemez ve nakde çevrilemez. Gelecekte bu tür sanal öğelerin eklenmesi hâlinde, iade ve kullanım koşulları [Abonelik ve Satın Alma Koşulları](/sozlesmeler/abonelik-ve-satin-alma-kosullari)nda ayrıca belirtilir.
+WIN, şu aşamada **WIN Premium aboneliği** ile tek seferlik **deste paketleri** ve **Görünürlük Haftası** satışı yapmaktadır (bkz. [Abonelik ve Satın Alma Koşulları](/sozlesmeler/abonelik-ve-satin-alma-kosullari) Bölüm 3.5). Paket fiyatları pazar koşullarına göre **değişkenlik gösterebilir**; güncel fiyatlar her zaman uygulama içi satın alma ekranlarında gösterilir. Uygulama içinde satın alınabilir sanal para, coin veya kredi bulunmamaktadır. Deste paketleri ile promosyon amaçlı verilen **hediye desteler** (başarım rozetleri ve davet programı) hesaba bağlı, lisans niteliğinde kullanım haklarıdır; devredilemez ve nakde çevrilemez. Hediye destelerin hangi hesaplarda WIN Premium olmadan kullanılabileceği [Abonelik ve Satın Alma Koşulları](/sozlesmeler/abonelik-ve-satin-alma-kosullari) Bölüm 3.7’de düzenlenir. Gelecekte bu tür sanal öğelerin eklenmesi hâlinde, iade ve kullanım koşulları [Abonelik ve Satın Alma Koşulları](/sozlesmeler/abonelik-ve-satin-alma-kosullari)nda ayrıca belirtilir.
 
 ---
 
 ## Bölüm 9A: Reklamlar ve Üçüncü Taraf İçerikleri
 
-Hizmetler; üçüncü taraflarca sunulan **reklamlar**, **tanıtımlar**, **sponsorlu içerikler** (banner, video vb.) veya dış web sitelerine/kaynaklara yönlendiren bağlantılar içerebilir. Uygulama içinde reklam hizmetleri için **AdMob (Google)** altyapısı kullanılabilir.
+**Şu an uygulamada reklam gösterilmemektedir.** Uygulamada Google Mobile Ads (AdMob) yazılım bileşeni yüklü olmakla birlikte reklam birimi kullanılmamaktadır. İleride Hizmetlerde üçüncü taraflarca sunulan **reklamlar**, **tanıtımlar** veya **sponsorlu içerikler** (banner, video vb.) gösterilmesi hâlinde bu Koşullar, [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) ve [Çerez Politikası](/gizlilik-ve-veri-koruma/cerez-politikasi) buna göre güncellenir ve gerekli izinler ayrıca istenir. Hizmetler ayrıca dış web sitelerine/kaynaklara yönlendiren bağlantılar içerebilir.
 
-WIN; bu tür reklamları veya üçüncü taraf içeriklerini **onaylamaz**; üçüncü taraf sitelerinin, kaynaklarının veya sundukları ürün/hizmetlerin erişilebilirliği, doğruluğu veya içeriğinden **sorumlu değildir**. Bu tür içeriklerle etkileşiminiz, ilgili üçüncü tarafın kendi kullanım koşulları ve gizlilik politikalarına tabidir. Reklamların her zaman sunulacağı veya belirli bir biçimde gösterileceği yönünde garanti verilmez; WIN, reklam modellerini dilediği zaman değiştirme hakkını saklı tutar.
+Reklam gösterilmesi hâlinde WIN; bu tür reklamları veya üçüncü taraf içeriklerini **onaylamaz**; üçüncü taraf sitelerinin, kaynaklarının veya sundukları ürün/hizmetlerin erişilebilirliği, doğruluğu veya içeriğinden **sorumlu değildir**. Bu tür içeriklerle etkileşiminiz, ilgili üçüncü tarafın kendi kullanım koşulları ve gizlilik politikalarına tabidir. Reklamların her zaman sunulacağı veya belirli bir biçimde gösterileceği yönünde garanti verilmez; WIN, reklam modellerini dilediği zaman değiştirme hakkını saklı tutar.
 
 ---
 
@@ -813,23 +822,25 @@ Bu madde, WIN’in kendi kusurundan kaynaklanan zararlardan doğan sorumluluğun
 
 ### 13.1 Kullanıcı Tarafından Sonlandırma
 
-Hesabınıza ilişkin sonlandırma işlemleri iki farklı şekilde gerçekleşebilir: **(i) profilin devre dışı bırakılması (görünürlüğün kapatılması)** ve **(ii) hesabın silinmesi (kalıcı kapatma)**. Uygulama içi adımlar ve hukuki sonuçlar aşağıda (özellikle **13.1.2 Hesabı silme**) ayrıntılandırılmıştır.
+Hesabınıza ilişkin sonlandırma işlemleri iki farklı şekilde gerçekleşebilir: **(i) hesabın dondurulması (görünürlüğün kapatılması)** ve **(ii) hesabın silinmesi (kalıcı kapatma)**. Uygulama içi adımlar ve hukuki sonuçlar aşağıda (özellikle **13.1.2 Hesabı silme**) ayrıntılandırılmıştır.
 
-#### 13.1.1 Profili devre dışı bırakma (görünürlüğü kapatma)
+#### 13.1.1 Hesabı dondurma (görünürlüğü kapatma)
 
-İsterseniz hesabınızı silmeden, profilinizi geçici olarak **devre dışı** bırakabilir ve diğer kullanıcılara görünmez hâle getirebilirsiniz. Profil devre dışı bırakıldığında:
+İsterseniz hesabınızı silmeden, uygulamadaki **Ayarlar > Hesabımı Dondur** adımıyla hesabınızı **dondurabilirsiniz**. Hesap dondurulduğunda:
 
-- Profiliniz diğer kullanıcılara görünmez.
-- Bu işlem, veri saklama ve yasal yükümlülüklere ilişkin saklama sürelerini kendiliğinden ortadan kaldırmaz (detay için [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi)).
-- Profilünüzü devre dışı bıraktıktan sonra, belirli bir süre içinde hesabınızı yeniden etkinleştirmeniz hâlinde, profiliniz ve hesabınıza bağlı veriler (mevzuatın izin verdiği ölçüde) geri getirilebilir. Bu sürenin sonunda, hesabın tamamen silinmesi söz konusu olabilir.
+- Profiliniz diğer kullanıcılara gösterilmez, keşif akışından (Deck) çıkarılır ve kimse sizi seçemez. Dondurma, yalnızca çıkış yapmaktan farklı bir işlemdir; işlem tamamlandığında oturumunuz da kapatılır.
+- **Seni Seçenler** ve **Seçtiklerin** listeleriniz temizlenir ve sohbetleriniz karşı tarafların mesaj listelerinden kaldırılır. Hesabınızı yeniden etkinleştirdiğinizde bu seçimler ve sohbetler **geri gelmez**. Uygulama, dondurma işleminden önce bu sonucu ayrıca uyarı olarak gösterir.
+- Tekrar giriş yaptığınızda hesabınızı yeniden etkinleştirebilirsiniz; profil bilgileriniz ve fotoğraflarınız korunur.
+- Dondurma, mağaza üzerinden alınmış aboneliği iptal etmez (bkz. 13.1.4) ve veri saklama ile yasal yükümlülüklere ilişkin saklama sürelerini kendiliğinden ortadan kaldırmaz (detay için [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi)). Dondurulmuş hesaplar bakımından 13.3’teki pasif hesap kuralları saklıdır.
 
 #### 13.1.2 Hesabı silme (kalıcı kapatma)
 
-Hesabınızı uygulama içindeki **Ayarlar > Hesap > Hesabı Sil** (veya benzeri) adımlarını takip ederek silebilirsiniz. Hesap silme işlemi kural olarak **geri döndürülemez** olup, aşağıdaki sonuçları doğurabilir:
+Hesabınızı uygulama içindeki **Ayarlar > Hesabı Sil** adımlarını (silme nedeni seçimi ve onay) takip ederek silebilirsiniz. Hesap silme işlemi **geri döndürülemez** olup, aşağıdaki sonuçları doğurur:
 
-- Profiliniz ve hesabınıza bağlı görünür alanlar diğer kullanıcılara kapatılır.
-- **Geçici Dondurma (Deactivation):** Silme talebinizle birlikte hesabınız **14 gün boyunca** geçici olarak dondurulur. Bu süre zarfında uygulamaya tekrar giriş yaparsanız, silme işlemini iptal ederek devam edebilir veya kalıcı silme sürecini manuel olarak tamamlayabilirsiniz. 14 günlük sürenin sonunda verileriniz kalıcı olarak silinir.
-- Hesabınıza bağlı eşleşme, mesajlaşma ve benzeri kayıtların uygulama içinden erişimi sona erebilir.
+- **Silme derhal başlar:** Uygulamanın güncel sürümlerinde silme, onayınızın ardından derhal başlatılır; bekleme süresi yoktur. Silme teknik bir nedenle tamamlanamazsa sistem tarafından otomatik olarak yeniden denenir. Uygulamanın eski sürümlerinden 14 günlük bekleme süreli bir silme talebi oluşturulmuşsa, bu süre içinde tekrar giriş yaparak talebi iptal edebilir veya silmeyi hemen tamamlayabilirsiniz.
+- Profiliniz ve hesabınıza bağlı görünür alanlar diğer kullanıcılara kapatılır; profil bilgileriniz, fotoğraflarınız, doğrulama selfie’leriniz ve giriş kaydınız silinir.
+- **Tüm veriler hemen silinmez:** Silinen hesabın profil kaydının bir kopyası **90 gün** saklanıp otomatik olarak silinir; hesap silme sırasında sohbetler arşivlenmeden silinmez ve hukuki arşive alınır (sesli mesajların 30 günlük otomatik silinmesi saklıdır); yasaklı hesaplara ait yasak kaydı (telefon numarası, varsa e‑posta adresi ve yasak gerekçesi dahil), yasak kaldırılmadıkça saklanır. Ayrıntılar ve süreler: [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) Bölüm 9 ve [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) Bölüm 9.
+- Hesabınıza bağlı seçim, mesajlaşma ve benzeri kayıtların uygulama içinden erişimi sona erer.
 - Uygulama içi sanal öğeler/avantajlar ve promosyon tanımları, hesapla birlikte sonlanabilir ve iade/bedel ödenmesi söz konusu olmayabilir (zorunlu yasal haklar saklıdır).
 
 #### 13.1.3 Uygulamayı cihazdan kaldırma
@@ -873,7 +884,7 @@ Hesabın silinmesi veya kapatılması sonrasında:
 
 - Profiliniz ve hesabınıza bağlı görünür alanlar uygulama içinde kapatılır.
 - Hesabınıza bağlı dijital avantajlar ve sanal öğeler sona erebilir; bu durumda kural olarak ek bir tazminat ödenmez (zorunlu yasal haklar saklıdır).
-- Kişisel verilerin saklanması ve silinmesi süreçleri [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) ve 6698 sayılı KVKK çerçevesinde yürütülür. KVKK uyarınca, işleme sebeplerinin ortadan kalkması hâlinde veriler silinir/yok edilir/anonim hâle getirilir; diğer kanunlardaki saklama hükümleri saklıdır.
+- Kişisel verilerin saklanması ve silinmesi süreçleri [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) (özellikle Bölüm 9: 90 günlük hesap kopyası, sohbet arşivi ve yasak kaydı) ve 6698 sayılı KVKK çerçevesinde yürütülür. KVKK uyarınca, işleme sebeplerinin ortadan kalkması hâlinde veriler silinir/yok edilir/anonim hâle getirilir; diğer kanunlardaki saklama hükümleri saklıdır.
 - 5651 sayılı Kanun uyarınca, yer sağlayıcıların hizmete ilişkin **trafik bilgilerini** belirli sürelerle saklama yükümlülüğü bulunabilir. Bu kapsamda trafik verileri, mevzuatta öngörülen sürelerle (5651 Md. 5/3: **bir yıldan az ve iki yıldan fazla olmamak üzere**) muhafaza edilebilir.
 
 ### 13.5 Süreklilik (Survival)

@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # KVKK Aydınlatma Metni
 
-**Son güncelleme:** 24.09.2026 · **Sürüm:** 1.2
+**Son güncelleme:** 25.09.2026 · **Sürüm:** 1.3
 
 Bu metin; **WIN** platformu (“**Platform**”) kapsamında kişisel verilerinizin **6698 sayılı Kişisel Verilerin Korunması Kanunu** (“**KVKK**”) uyarınca işlenmesine ilişkin **aydınlatma yükümlülüğünün** (KVKK m. 10 ve **KVKK Aydınlatma Yükümlülüğü Tebliği**) yerine getirilmesi amacıyla hazırlanmıştır.
 
@@ -172,7 +172,7 @@ Kişisel verileriniz; **otomatik**, **kısmen otomatik** veya (veri kayıt siste
 Toplama yöntemlerine örnekler:
 
 - **Uygulama içi ekranlar/formlar** (profil alanları, tercihler, fotoğraf yükleme),
-- **Google ile giriş (OAuth)** ve **telefon numarası ile giriş (OTP)** gibi kimlik doğrulama yöntemleri,
+- **Google ile giriş (OAuth)**, **Apple ile Giriş** (iOS) ve **telefon numarası ile giriş (OTP)** gibi kimlik doğrulama yöntemleri,
 - **Selfie/liveness doğrulama** ve benzeri güvenlik adımları,
 - **Cihaz/teknik log** ve kullanım verileri,
 - **Çerez/SDK/izleyici teknolojileri** (web ve mobil),
@@ -183,9 +183,10 @@ Toplama yöntemlerine örnekler:
   <Tab>
     Platforma kayıt olurken ve profilinizi oluştururken, genellikle **doğrudan sizden** veri alınır. Örnek:
 
-    - **Üçüncü taraf giriş ve kayıt:** Google OAuth (ad-soyad, e‑posta, profil fotoğrafı, yaş, Google ID), Apple Sign-in (Apple ID) ve telefon numarası ile giriş (SMS/OTP) kullanılabilir.
+    - **Üçüncü taraf giriş ve kayıt:** Google OAuth (ad-soyad, e‑posta, profil fotoğrafı, Google kullanıcı kimliği), Apple ile Giriş — yalnızca iOS (Apple kullanıcı kimliği, e‑posta adresi — “E‑postamı Gizle” seçilirse Apple’ın aktarma adresi — ve paylaşmayı seçerseniz ad) ve telefon numarası ile giriş (SMS/OTP) kullanılabilir. Doğum tarihi Google’dan alınmaz; profil oluşturma sırasında sizden istenir.
     - **E‑posta ve telefon doğrulaması:** Telefon ile girişte e‑posta ve telefon doğrulama adımları **profil oluşturma sürecinde** tamamlanır. Google ile girişte e‑posta genellikle Google tarafında doğrulanmış kabul edilir; profil sonrası **seçim yapma** ve **mesaj gönderme** gibi etkileşimler için **telefon doğrulaması** zorunlu olabilir.
-    - **Profil alanları:** İsim/profil adı, cinsiyet, meslek, boy, burç, sigara/alkol sıklığı, profil notu (bio).
+    - **Profil alanları:** İsim/profil adı, doğum tarihi, cinsiyet, meslek, boy, burç, sigara/alkol sıklığı, profil notu (bio).
+    - **Doğum bilgileri (astroloji):** Doğum yeri (ülke/il/ilçe; bu yerin yaklaşık koordinatları ve saat dilimi) ve isteğe bağlı doğum saati (bilinmiyorsa “bilinmiyor” olarak kaydedilir); bunlardan hesaplanan burç ve doğum haritası sonuçları. Doğum yeri ve saati profil ekranında diğer kullanıcılara gösterilmez; ancak astrolojik uyum hesabı için profilinizin gösterildiği kullanıcının uygulamasına teknik olarak iletilir (bkz. [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) Bölüm 4.5).
     - **Tercih/uyum parametreleri:**
         - **Din:** İnanmıyorum (Ateist/Agnostik), Hayatımın merkezinde değil, Önemli, Çok önemli.
         - **Siyasi Görüş:** Politikayla ilgilenmiyorum, Farklı görüşte olabilir, Bir noktada önemli, Aynı görüşte olmamız çok önemli.
@@ -199,9 +200,9 @@ Toplama yöntemlerine örnekler:
     Platform, sahte hesapları azaltmak ve kullanıcı güvenliğini artırmak için **e‑posta doğrulaması**, **telefon numarası doğrulaması (OTP)** ve **selfie/liveness doğrulama** adımları uygulayabilir. E‑posta/telefon doğrulaması; giriş yöntemine göre profil oluşturma veya etkileşim öncesi aşamada istenir (bkz. “Onboarding & Profil” sekmesi).
 
     Bu süreçte ayrıca:
-    - **Biyometrik doğrulama:** Sahte hesapları önlemek amacıyla kamera aracılığıyla çekilen liveness/pose selfie'si ve **Google Gemini 2.5 Flash** ile poz ile profil fotoğrafı tutarlılığı / kişi doğrulaması işlemleri. Keşif akışında (Deck) yer alabilmek için en az bir fotoğrafın bu yöntemle doğrulanmış olması zorunludur. Doğrulanan fotoğraflarda yeşil tik/rozet gösterilir.
+    - **Biyometrik doğrulama:** Sahte hesapları önlemek amacıyla kamera aracılığıyla çekilen liveness/pose selfie'si ve **Google Gemini 2.5 Flash** ile poz ile profil fotoğrafı tutarlılığı / kişi doğrulaması işlemleri. Kural olarak, keşif akışında (Deck) yer alabilmek için en az bir fotoğrafın bu yöntemle doğrulanmış olması gerekir; WIN, yönetici kararıyla ve sınırlı hâllerde bazı hesaplara bu kurala istisna tanıyabilir. Doğrulanan fotoğraflarda yeşil tik/rozet gösterilir.
 
-    - **Kamera** ve (bazı senaryolarda) **mikrofon** izni istenebilir. Teknik gereklilikler nedeniyle mikrofon izni alınmakla birlikte, herhangi bir ses kaydı gerçekleştirilmemektedir.
+    - **Kamera** izni istenebilir. Selfie doğrulaması sırasında **ses kaydı alınmaz**. (Mikrofon izni yalnızca WIN Premium kapsamındaki sesli mesaj özelliği için istenir; bkz. “Eşleşme & Mesajlaşma” sekmesi.)
     - Kullanıcıdan belirli bir pozu taklit ederek selfie çekmesi talep edilebilir.
     - Doğrulama görüntüleri kural olarak **profilde yayımlanmaz**.
 
@@ -215,6 +216,7 @@ Toplama yöntemlerine örnekler:
     - **Puanlama (Evaluation):** Sohbet sırasında belirli bir mesaj etkileşim limitinden sonra karşı tarafı **Intelligence** (Zeka), **Politeness** (Kibarlık) ve **Fun** (Eğlence) kriterlerine göre değerlendirme verileri.
     - **Cooldown (Soğuma Süresi):** Deck'te gösterilen ancak seçilmeyen kullanıcıların tekrar gösterilmesine ilişkin algoritmik kısıtlama süreleri.
     - **Mesajlaşma:** Sohbet içerikleri ve meta veriler. Mesajlar **uçtan uca şifreli değildir**; güvenlik ve moderasyon amacıyla yetkili adminler tarafından incelenebilir.
+    - **Sesli mesajlar (WIN Premium):** Mikrofon aracılığıyla kaydedip gönderdiğiniz ses dosyaları, süreleri ve gönderim zamanları. Ses dosyaları Google Cloud / Firebase Storage üzerinde saklanır, uygulama içinde yalnızca sohbetin iki tarafına açıktır ve kural olarak gönderimden 30 gün sonra otomatik olarak silinir (hesap silme arşivi hariç; bkz. Bölüm 9).
     - Güvenlik sinyalleri (spam/fraud şüphesi vb.).
 
     Bu veriler; hizmetin sunulması, güvenlik ve kötüye kullanımın önlenmesi, ürün iyileştirme ve moderasyon süreçlerinde kullanılabilir.
@@ -225,6 +227,7 @@ Toplama yöntemlerine örnekler:
 
     - **Apple App Store / Google Play** üzerinden satın alımda: mağaza tarafından üretilen sipariş/işlem bilgileri, abonelik durumu ve doğrulama amaçlı “receipt” verileri işlenebilir.
     - **Ödeme sağlayıcıları** (varsa doğrudan ödeme): ödeme ve faturalama verileri işlenebilir.
+    - **Abonelik altyapısı (RevenueCat):** Satın alımlarınızın doğrulanması ve hesabınıza bağlanması için WIN kullanıcı kimliğiniz, satın alma/abonelik kayıtları, cihaz/uygulama bilgileri ile reklam ölçümüne yönelik cihaz tanımlayıcıları (iOS’ta IDFV ve izin varsa IDFA; Android’de GAID ve Android cihaz kimliği) ve IP adresiniz RevenueCat, Inc. (ABD) tarafından işlenir (bkz. Bölüm 7.2).
 
     Satın alma sürecinin sözleşmesel çerçevesi için [Abonelik ve Satın Alma Koşulları](/sozlesmeler/abonelik-ve-satin-alma-kosullari) incelenmelidir.
 
@@ -234,7 +237,9 @@ Toplama yöntemlerine örnekler:
 
     - IP adresi, cihaz/uygulama sürümü, tarayıcı bilgisi,
     - oturum ve log kayıtları (trafik verisi niteliği taşıyabilir),
-    - çerez/SDK kimlikleri, reklam tanımlayıcıları (IDFA/GAID).
+    - çerez/SDK kimlikleri, reklam tanımlayıcıları (IDFA/GAID; iOS’ta IDFA yalnızca izleme izni verilirse),
+    - **uygulama kurulum/cihaz kimliği** (Android’de uygulamanın ürettiği “wn-” ile başlayan rastgele kimlik; iOS’ta IDFV): hesabın aynı anda tek cihazda açık kalması (tek cihaz oturumu) ve SMS doğrulama kodlarında cihaz/IP bazlı kötüye kullanım sınırları için,
+    - reklam kampanyası ölçümü (atıf) amacıyla Meta ve TikTok SDK’larına iletilen uygulama olayları (bkz. [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) Bölüm 4.14).
 
     Detaylar için [Çerez Politikası](/gizlilik-ve-veri-koruma/cerez-politikasi) incelenmelidir.
 
@@ -266,7 +271,10 @@ Platformun işleyişine göre aşağıdaki veri kategorileri işlenebilir:
 | ---------------------------------------------- | ------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | **Kimlik**                                     | ad, profil adı (nickname), doğum tarihi/yaş, cinsiyet                                       | Bazı alanlar profil görünürlüğü kapsamında diğer kullanıcılara açık olabilir.                                          |
 | **İletişim**                                   | e‑posta (Google/OAuth veya profilde doğrulanan), telefon numarası (OTP ile doğrulanan), destek iletişim bilgileri | Resmî bildirimler kayıtlı e‑posta/uygulama içi bildirimle yapılabilir.                                                 |
-| **Hesap/Platform kimlikleri**                  | kullanıcı ID, Google user ID (teknik), oturum bilgileri                                     | Güvenlik ve hesap yönetimi için gereklidir.                                                                            |
+| **Hesap/Platform kimlikleri**                  | kullanıcı ID, Google user ID ve Apple kullanıcı kimliği (teknik), oturum bilgileri          | Güvenlik ve hesap yönetimi için gereklidir.                                                                            |
+| **Cihaz/oturum kimliği**                       | uygulama kurulum kimliği (Android: “wn-…”; iOS: IDFV), SMS doğrulama için cihaz ve IP bazlı gönderim sayaçları | Tek cihaz oturumu ve hesap güvenliği için kullanılır; reklam tanımlayıcısı değildir.                                  |
+| **Doğum bilgileri (astroloji)**                | doğum yeri (ve yaklaşık koordinatı/saat dilimi), isteğe bağlı doğum saati, doğum haritası sonuçları | Profil ekranında diğer kullanıcılara gösterilmez (uyum hesabı için profilin gösterildiği kullanıcının uygulamasına teknik olarak iletilir); burç ve (sunulduğu ölçüde) uyum sonucu gösterilebilir.                      |
+| **Ses kaydı**                                  | sesli mesaj dosyaları (WIN Premium), süre ve gönderim zamanı                                | Kural olarak 30 gün sonra otomatik silinir; ses tanıma veya biyometrik analiz yapılmaz.                                |
 | **Profil verileri**                            | meslek, boy, burç, sigara/alkol sıklığı, profil notu                                        | Profil notu serbest metin olduğundan hassas veri paylaşmamanız önerilir.                                               |
 | **Tercih/uyum parametreleri (profil çıkarma)** | dinin önemi, dış görünüş/maddi durum/siyasi görüş uyumu gibi seçimler                       | Bu veriler, **özel nitelikli veri** veya bu kapsama girebilecek çıkarımlar doğurabileceği için ayrıca değerlendirilir. |
 | **Görsel/İçerik**                              | profil fotoğrafları, yüklenen görseller, mesaj içerikleri                                   | İçeriklerinizden siz sorumlusunuz (bkz. [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari)).                        |
@@ -275,7 +283,8 @@ Platformun işleyişine göre aşağıdaki veri kategorileri işlenebilir:
 | **Çevrim içi bilgisi**                         | Online/Son görülme bilgisi                                                                  | Sadece Premium üyeler tarafından görülebilir.                                                                          |
 | **Kullanım/etkileşim**                         | beğeni/ret, eşleşme, mesajlaşma meta verisi, deck davranışı                                 | Öneri/eşleşme sistemlerinde ve güvenlikte kullanılabilir.                                                              |
 | **Cihaz/teknik/log**                           | IP, cihaz modeli, işletim sistemi, uygulama sürümü, çökme kayıtları, reklam tanımlayıcıları | 5651 bağlamında “trafik verisi/log” niteliği doğabilir.                                                                |
-| **Finans/işlem**                               | abonelik durumu, sipariş/işlem numarası, iade kayıtları                                     | App Store/Google Play veya ödeme sağlayıcılarına göre değişir.                                                         |
+| **Reklam ölçümü (atıf)**                       | uygulama olayları (açılış, kayıt, kayıt tamamlama — cinsiyetle, giriş, seçim, satın alma), WIN kullanıcı kimliği; seçim olayında seçilen kişinin teknik kullanıcı kimliği; reklam tanımlayıcıları (izin varsa), Meta anonim kimliği, Apple Search Ads atıf bilgisi; RevenueCat’e ayrıca cihaz tanımlayıcıları (iOS’ta IDFV; Android’de Android cihaz kimliği) ve IP adresi | Meta, TikTok ve RevenueCat’e iletilir (Bölüm 7.2). Mesaj içeriği, fotoğraf ve cihaz konumu (GPS) paylaşılmaz.                    |
+| **Finans/işlem**                               | abonelik durumu, sipariş/işlem numarası, iade kayıtları, tek seferlik satın alımlar (deste paketleri, Görünürlük Haftası), hediye deste bakiyesi | App Store/Google Play, RevenueCat veya ödeme sağlayıcılarına göre değişir.                                             |
 | **Hukuki işlem/uyum**                          | şikayet/itiraz kayıtları, moderasyon kararları, talep kayıtları                             | Uyuşmazlık ve yükümlülükler bakımından saklama gerekebilir.                                                            |
 
 KVKK m. 6 kapsamında **özel nitelikli kişisel veriler**, özel korumaya tabidir. Platformda:
@@ -297,18 +306,23 @@ KVKK m. 6 kapsamında **özel nitelikli kişisel veriler**, özel korumaya tabid
 
 Kişisel verileriniz; Platformun özelliklerine ve kullanımınıza bağlı olarak aşağıdaki amaçlarla işlenebilir:
 
-- **Hesap oluşturma ve yönetimi** (Google veya telefon ile giriş, oturum, profil oluşturma, e‑posta/telefon doğrulama)
+- **Hesap oluşturma ve yönetimi** (Google, Apple veya telefon ile giriş, oturum, profil oluşturma, e‑posta/telefon doğrulama)
+- **Tek cihaz oturumu ve hesap güvenliği** (kurulum kimliği ile hesabın aynı anda tek cihazda açık kalması; SMS doğrulama kodlarının kötüye kullanımının önlenmesi)
 - **Hizmetin sunulması** (eşleşme akışı, profil gösterimi, mesajlaşma)
 - **Öneri/eşleşme sistemlerinin çalıştırılması** (profil çıkarma, uyumluluk skorları, sıralama/öneri)
 - **Kullanıcı güvenliği ve kötüye kullanımın önlenmesi** (sahte hesap, bot/spam, dolandırıcılık tespiti; şikayet/engelleme)
 - **Selfie/liveness doğrulaması** (profil doğrulama, hizmet bütünlüğü)
 - **Konum bazlı özellikler** (yakın kullanıcı önerisi, mesafe gösterimi)
+- **Sesli mesaj özelliğinin sunulması** (WIN Premium)
+- **Astroloji özelliklerinin sunulması** (burç, doğum haritası, astrolojik uyum)
 - **Premium abonelik ve satın alma süreçleri** (aktivasyon, doğrulama, iade/itiraz)
 - **Müşteri destek ve iletişim süreçleri** (talep/şikayet yönetimi, destek kayıtları)
 - **Hukuki yükümlülüklerin yerine getirilmesi** (5651, ETK, KVKK başvuruları, resmî talepler)
 - **Uyuşmazlıkların çözümü ve hakların korunması** (talep, itiraz, delil saklama)
 - **Ürün geliştirme, analitik ve performans** (hata/çökme analizi, hizmet iyileştirme)
 - **Pazarlama/duyuru iletişimi** (varsa ve izin verdiğiniz ölçüde)
+- **Reklam kampanyalarının etkisinin ölçülmesi (atıf)** (Meta, TikTok ve RevenueCat entegrasyonları)
+- **Silinen hesaplara ilişkin kötüye kullanım incelemeleri ve yasaklı kişilerin yeniden kayıt olmasının önlenmesi**
 
 ---
 
@@ -339,6 +353,11 @@ Kişisel verileriniz; ilgili işleme faaliyetinin niteliğine göre aşağıdaki
 | Abonelik ve satın alma                 | satın alma/işlem verileri                         | KVKK m. 5/2(c) ve/veya m. 5/2(ç) |
 | Resmî makam talepleri ve mevzuat uyumu | trafik verisi/log, başvuru kayıtları              | KVKK m. 5/2(ç)                   |
 | Pazarlama iletişimi (varsa)            | iletişim + izin kayıtları                         | KVKK m. 5/1 + ETK                |
+| Astroloji özellikleri                  | doğum yeri/saati, doğum haritası sonuçları        | KVKK m. 5/2(c)                   |
+| Sesli mesaj                            | ses kaydı, süre, gönderim zamanı                  | KVKK m. 5/2(c); moderasyon için m. 5/2(f) |
+| Tek cihaz oturumu ve SMS kötüye kullanım sınırları | kurulum/cihaz kimliği, IP adresi       | KVKK m. 5/2(c) ve m. 5/2(f)      |
+| Reklam ölçümü (atıf)                   | uygulama olayları, kullanıcı ve cihaz/reklam tanımlayıcıları | KVKK m. 5/2(f); reklam tanımlayıcısı için iOS izleme izni; TikTok’a e‑posta/telefon iletimi için açık rıza (m. 5/1) |
+| Silme sonrası 90 günlük hesap kopyası, sohbet arşivi, yasak kaydı | profil kopyası, mesajlar/sesli mesajlar, yasak kaydı (kullanıcı kimliği, telefon numarası, varsa e‑posta adresi, yasak gerekçesi) | KVKK m. 5/2(e) ve m. 5/2(f)      |
 
 ### 6.2 Özel nitelikli kişisel veriler (KVKK m. 6)
 
@@ -401,10 +420,11 @@ Platformun doğası gereği, profilinizdeki bazı veriler **diğer kullanıcıla
 WIN; Platformu işletmek ve iyileştirmek için hizmet sağlayıcılarla çalışabilir. Bu kapsamda verileriniz; örneğin aşağıdaki alıcı kategorilerine aktarılabilir:
 
 - **Barındırma ve altyapı sağlayıcıları** (Google Cloud / Firebase - **EU Region**, Wix CMS)
-- **Analitik ve performans/hata izleme** sağlayıcıları (Google Analytics - GA4, Sentry)
-- **Pazarlama ve Reklam** sağlayıcıları (Google AdMob - reklam tanımlayıcıları üzerinden)
-- **Bildirim ve iletişim** sağlayıcıları (Google, Store Vantage CRM)
-- **Ödeme ve abonelik** altyapıları (Apple App Store / Google Play)
+- **Arama ve deste (öneri) altyapısı** (Meilisearch Cloud — AB/Frankfurt bölgesi: deste çekilişi için profil özet alanları — yaş, cinsiyet ve görmek istenen cinsiyet, yaklaşık konum, yaşam tarzı ve önem derecesi cevapları, doğrulama/premium durumu, aktiflik ve moderasyon görünürlük bilgileri)
+- **Analitik ve performans/hata izleme** sağlayıcıları (Google Analytics - GA4, Firebase Crashlytics, Sentry)
+- **Reklam ölçümü (atıf)** sağlayıcıları (Meta Platforms — Facebook SDK; TikTok — TikTok Events SDK; iOS’ta Apple Search Ads atıf bilgisi RevenueCat üzerinden). Uygulamada Google Mobile Ads (AdMob) SDK’sı yüklüdür ancak **şu an reklam gösterilmemektedir**; ileride reklam gösterilirse bu metin güncellenir.
+- **Bildirim ve iletişim** sağlayıcıları (Google, Store Vantage CRM; SMS doğrulama için Twilio)
+- **Ödeme ve abonelik** altyapıları (Apple App Store / Google Play; abonelik yönetimi için RevenueCat, Inc. — ABD)
 - **Doğrulama sağlayıcıları** (**Google Gemini 2.5 Flash** — bölge: **[GEMINI_REGION]**; **Google Cloud Vision** — selfie üzerinde Safe Search ile uygunsuz içerik denetimi)
 
 Bu sağlayıcılar, koşullara göre **veri işleyen** veya **bağımsız veri sorumlusu** konumunda olabilir.
@@ -436,6 +456,8 @@ Platform; bulut altyapısı veya bazı hizmet sağlayıcıların yurt dışında
 
 Yurt dışı aktarım rızaları, [Açık Rıza Metinleri](/gizlilik-ve-veri-koruma/acik-riza-metinleri) içinde detaylandırıldığı şekilde, amaç-özgülük ilkesine uygun olarak alınır.
 
+Yurt dışında bulunan başlıca alıcılar: Google (bulut altyapısı, analitik, hata izleme, doğrulama), RevenueCat, Inc. (ABD — abonelik altyapısı), Meta Platforms ve TikTok (reklam ölçümü), Twilio (SMS doğrulama) ve Meilisearch Cloud (AB — arama/deste altyapısı).
+
 ---
 
 ## Bölüm 9: Saklama süreleri ve imha
@@ -452,9 +474,15 @@ WIN, kişisel verilerinizi; işleme amaçlarının gerektirdiği süre boyunca v
 | Veri seti                                               | Tipik saklama yaklaşımı                                                                                                       | Dayanak / Not                                                                      |
 | ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | **IP ve Trafik Kayıtları (Loglar)**                     | **2 yıl**                                                                                                                     | 5651 sayılı Kanun kapsamındaki yer sağlayıcı yükümlülükleri uyarınca               |
-| **Hesap/profil verileri**                               | hesap aktif olduğu sürece; silme talebinde kural olarak silme/imha                                                            | KVKK m. 7 ve veri minimizasyonu ilkeleri (yasal saklama süreleri saklıdır)         |
+| **Hesap/profil verileri**                               | hesap aktif olduğu sürece; hesap silindiğinde profil, fotoğraflar, doğrulama selfie’leri, destek ekleri ve giriş kaydı silinir (aşağıdaki istisnalar saklıdır) | KVKK m. 7 ve veri minimizasyonu ilkeleri (yasal saklama süreleri saklıdır)         |
+| **Silinen hesabın kopyası**                             | profil kaydının (bildirim jetonları hariç) tam kopyası ve silme nedeni, silme anından itibaren **90 gün** (Eylül 2026’dan önce silinmiş hesaplarda, bu kuralın uygulanmaya başladığı tarihten itibaren 90 gün); süre sonunda otomatik silinir | Kötüye kullanım/dolandırıcılık incelemesi, uyuşmazlık ve resmî talepler (KVKK m. 5/2-e, f) |
+| **Sohbet arşivi (hesap silme)**                         | hesap silme sırasında sohbetler arşivlenmeden silinmez; hesap silindiğinde iki tarafın mesajları ve 30 günlük otomatik silme süresi dolmamış sesli mesaj dosyaları erişimi kısıtlı hukuki arşive alınır ve ilgili zamanaşımı süreleri boyunca saklanır | Uyuşmazlıklar ve resmî makam talepleri (KVKK m. 5/2-e)                              |
+| **Yasaklı hesaplara ait yasak kaydı**                   | kullanıcı kimliği, telefon numarası, varsa e‑posta adresi ve yasak gerekçesi; Topluluk Kuralları ihlali nedeniyle erişimi engellenen hesap silinse dahi, yasak kaldırılmadıkça **süre sınırı olmaksızın** | Yasaklı kişinin yeni hesap açmasının önlenmesi (KVKK m. 5/2-f)                      |
+| **Sesli mesajlar**                                      | kural olarak gönderimden **30 gün** sonra otomatik silinir (hesap silme arşivindeki kopyalar hariç)                            | Hizmetin sunumu ve veri minimizasyonu                                              |
+| **Kurulum/cihaz kimliği**                               | hesap aktif olduğu sürece (hesap silinirse 90 günlük hesap kopyası kapsamında); cihazdaki kopya uygulama kaldırılana kadar      | Tek cihaz oturumu ve hesap güvenliği                                              |
+| **Doğum bilgileri (astroloji)**                         | hesap aktif olduğu sürece; hesap silindiğinde 90 günlük hesap kopyası kapsamında                                                | Astroloji özelliklerinin sunulması                                                 |
 | **Karar Kayıtları ve İhlal Delilleri (Moderasyon/Ban)** | **2 yıl**                                                                                                                     | Şirket'in savunma hakkı ve meşru menfaati (KVKK Md. 5/2-f) kapsamında              |
-| **Mesajlaşma ve etkileşim**                             | hizmetin sunumu + güvenlik/uyuşmazlık ihtiyacı ile ölçülü süre                                                                | Kötüye kullanım incelemeleri ve itiraz süreçleri etkileyebilir                     |
+| **Mesajlaşma ve etkileşim**                             | hizmetin sunumu + güvenlik/uyuşmazlık ihtiyacı ile ölçülü süre; hesap silindiğinde yukarıdaki sohbet arşivi kuralı uygulanır    | Kötüye kullanım incelemeleri ve itiraz süreçleri etkileyebilir                     |
 | **Selfie/liveness doğrulama**                           | Doğrulama görüntüsü Google (Gemini) tarafında doğrulama amacıyla anlık işlenir; Firebase/Audit kayıtları uyuşmazlık ve güvenlik amacıyla ölçülü süre (2-10 yıl) saklanır | Biyometrik veri için yüksek koruma; bkz. biyometrik metin                          |
 | **Sözleşme Onay ve Ticari Deliller**                    | **10 yıl**                                                                                                                    | TBK md. 146 uyarınca genel zamanaşımı süresi ve mali yükümlülükler                 |
 | **Açık rıza / onay kayıtları**                          | uyum ve ispat ihtiyacı ile ölçülü süre                                                                                        | ETK ve KVKK kapsamında ispat yükümlülüğü ve zamanaşımı süreleri dikkate alınabilir |

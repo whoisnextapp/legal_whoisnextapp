@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # DSA Uyum Sayfası (Digital Services Act)
 
-**Son güncelleme:** 24.09.2026 · **Sürüm:** 1.4
+**Son güncelleme:** 25.09.2026 · **Sürüm:** 1.5
 
 Bu sayfa, Avrupa Birliği **Dijital Hizmetler Yasası** (**Digital Services Act — Regulation (EU) 2022/2065**, “**DSA**”) kapsamında WIN’in (“**Platform**”) uyum yaklaşımını, **iletişim noktalarını**, **yasa dışı içerik bildirimi** (notice & action), **itiraz/şikayet** ve **şeffaflık** mekanizmalarını açıklar.
 
@@ -493,7 +493,7 @@ Uygulanan pratikler:
   uygulanır (Art. 26 DSA).
 </Callout>
 
-WIN, uygulama içerisinde **Google AdMob** reklam ağını kullanmaktadır. DSA Madde 26 gereklilikleri kapsamında:
+**Şu an uygulamada reklam gösterilmemektedir.** Uygulamada Google Mobile Ads (AdMob) yazılım bileşeni yüklü olmakla birlikte reklam birimi kullanılmamaktadır. İleride reklam gösterilmesi hâlinde DSA Madde 26 gereklilikleri kapsamında:
 
 - **Reklam işaretlemesi:** Tüm reklamlar, organik içerikten ayırt edilebilecek şekilde **belirgin** olarak işaretlenir.
 - **Hedefleme bilgisi:** Reklam ağının sağladığı “neden bu reklam” / hedefleme parametreleri bilgisi, mümkün olduğunca kullanıcıya sunulur; DSA uyumlu arayüzler kullanılır.
@@ -525,6 +525,15 @@ DSA Madde 27 uyarınca WIN, öneri/eşleşme sistemindeki **ana parametreleri** 
 - **Profil kalitesi/tutarlılık**: Eksik alanlar, tekrar eden davranış örüntüleri.
 - **Cooldown (soğuma süresi)**: Deck’te karşınıza çıkan ancak seçmediğiniz profiller belirli süre tekrar gösterilmez.
 - **Premium etkileri**: 12 saatte 12 deste hakkı, destelerde ek görünürlük ağırlığı, yeni katılan profillere öncelikli erişim, seçilen kişinin listesinde üst sırada görünme, deste filtreleme, profil gizleme, online/offline durum görme, puan görüntüleme. Tek seferlik satın alınan Görünürlük Haftası da süresi boyunca destelerde ek görünürlük ağırlığı sağlar; seçim hakkı vermez.
+- **Yeni kullanıcı görünürlüğü**: Yeni katılan profiller, katılımı izleyen ilk günlerde deste çekilişlerinde ek görünürlük ağırlığı alır. Bu ek ağırlığın düzeyi profil grubuna göre farklıdır: profilin cinsiyetine ve sohbet başlatabilecek durumda olup olmamasına (telefon doğrulaması) göre farklılaşır.
+- **Son aktiflik**: Son günlerde uygulamayı kullanmış profiller önceliklidir; uzun süredir giriş yapmayan profiller çok daha düşük olasılıkla gösterilir.
+- **Profil puanı**: Profilin doluluk düzeyine dayalı teknik bir puan, gösterilme ağırlığını etkiler.
+- **Editoryal seçim (kürasyon)**: WIN ekibi bazı profilleri belirli bir süre için öne çıkarabilir; bu seçim süreli olup süre sonunda kendiliğinden sona erer ve ücretli değildir.
+- **Moderasyon görünürlük sınırları**: Topluluk Kuralları ihlali şüphesi veya kararı üzerine bir profilin görünürlüğü süreli olarak azaltılabilir, profil geçici olarak keşif akışından çıkarılabilir veya hesap tamamen gizlenebilir (bkz. Bölüm 4.2).
+- **Gösterim dengesi**: Son bir hafta içinde çok sayıda deste gösterimi almış profillerin ağırlığı, gösterimlerin daha dengeli dağılması için geçici olarak azaltılabilir. Bu parametre tüm profillere uygulanmaz; hangi profil gruplarına ve hangi düzeyde uygulandığı profilin cinsiyetine göre farklılaşır.
+- **Deste düzeni**: Aynı ikilide sohbet başlatamayacak durumdaki iki profilin birlikte gösterilmesi mümkün olduğunca önlenir.
+
+**Parametrelerin göreli önemi:** Deste, yukarıdaki sinyallerle **ağırlıklandırılmış bir rastgele çekiliş** ile oluşturulur; profiller tek bir puana göre sıralanmaz. Önce uygunluk koşulları uygulanır (cinsiyet tercihleri, konum/mesafe, kural olarak fotoğraf doğrulaması, daha önce gösterilen veya seçilen profillerin ve moderasyon kısıtlarının dışlanması). Yaş aralığı da ilk aşamada uygulanır; ancak desteyi dolduracak kadar uygun profil bulunamazsa gevşetilebilir ve bu durumda aralığın dışındaki profiller de gösterilebilir. Ardından son aktiflik ve konuma göre öncelik verilir. WIN Premium deste filtreleri bir dışlama koşulu değildir: filtrelere uyan profiller önce çekilir, yeterli sayıda uyan profil yoksa filtrelere uymayan profiller de gösterilebilir. Bu havuzda yenilik, WIN Premium/Görünürlük Haftası, editoryal seçim ve profil puanı gösterilme olasılığını artırır, moderasyon sınırları ve gösterim dengesi azaltır. Hiçbir parametre gösterimi veya seçilmeyi garanti etmez.
 
 **Kullanıcı kontrolü:** Tercih ve filtreler Ayarlar’dan değiştirilebilir; konum izni cihaz ayarlarından yönetilir. Öneri parametreleri uygulama içi “Ayarlar” ve ilgili ekranlarda sunulur.
 
@@ -543,7 +552,8 @@ WIN, 18 yaş altına yönelik değildir. DSA Madde 28’in küçüklerin korunma
 
 **Kayıt ve yaş doğrulaması** ([Kullanım Koşulları](/sozlesmeler/kullanim-kosullari) Bölüm 3 ile uyumlu):
 
-- **Google Sign-In (OAuth):** Kayıt sırasında Google hesabından gelen ad, e-posta ve profil fotoğrafı paylaşılır; mağaza/hesap kaynaklı doğum tarihi verisi varsa esas alınır.
+- **Google Sign-In (OAuth):** Kayıt sırasında Google hesabından gelen ad, e-posta ve profil fotoğrafı paylaşılır; doğum tarihi Google’dan alınmaz, profil oluşturma sırasında kullanıcı tarafından girilir.
+- **Apple ile Giriş (yalnızca iOS):** Apple kullanıcı kimliği, e-posta adresi (“E-postamı Gizle” seçilirse Apple’ın aktarma adresi) ve paylaşılırsa ad bilgisi alınır; doğum tarihi profil oluşturma sırasında kullanıcı tarafından girilir.
 - **Telefon ile giriş (SMS/OTP):** Telefon tabanlı kimlik doğrulaması kullanılabilir; e‑posta ve telefon doğrulaması **profil oluşturma sürecinde** tamamlanır.
 - **Kullanıcı beyanı:** Doğum tarihi verisi alınamadığında, kullanıcının yaşını seçtiği ekran sunulur ve “18 yaşından büyük olduğumu beyan ediyorum” kutucuğunun onaylanması istenir.
 - **Ek kontrol:** 18 yaş altı şüphesi veya bildirim üzerine, küçük olduğu anlaşılan hesaplar derhal askıya alınır veya kapatılır. Yaş doğrulaması tamamlanamazsa hesap keşif akışına dahil edilmez.

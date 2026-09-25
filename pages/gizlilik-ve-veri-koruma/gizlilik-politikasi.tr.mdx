@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # Gizlilik Politikası
 
-**Son güncelleme:** 24.09.2026 · **Sürüm:** 1.3
+**Son güncelleme:** 25.09.2026 · **Sürüm:** 1.4
 
 Bu Gizlilik Politikası; **WIN** platformunu (“**Platform**”) kullanırken, kişisel verilerinizi nasıl ele aldığımızı **anlaşılır** ve **pratik** bir dille açıklar.
 
@@ -124,16 +124,18 @@ Bu nedenle profil notu ve mesajlarda telefon numarası, e‑posta, açık adres 
 
 Bu bölümde, Platformun tipik akışlarına göre “hangi adımda hangi veri” oluştuğunu anlatıyoruz. Hukuki çerçeve ve veri kategorileri tablosu için ayrıca [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) incelenmelidir.
 
-### 4.1 Hesap oluşturma ve giriş (Google / telefon)
+### 4.1 Hesap oluşturma ve giriş (Google / Apple / telefon)
 
-WIN’e giriş; **Google ile giriş (OAuth)** veya **telefon numarası ile giriş** (SMS/OTP) üzerinden sağlanabilir.
+WIN’e giriş; **Google ile giriş (OAuth)**, **Apple ile Giriş** (yalnızca iOS cihazlarda) veya **telefon numarası ile giriş** (SMS/OTP) üzerinden sağlanabilir.
 
 **Google ile giriş:** Google, hesabınızdan Platformla paylaşılacağını bildirdiği bilgileri iletir. Tipik olarak ad (veya Google profili adı), e‑posta adresi, profil fotoğrafı ve Google user ID (teknik) alınabilir. E‑posta adresi, Google süreçleri uyarınca genellikle **doğrulanmış** kabul edilir. Profil oluşturma sonrasında, seçim yapma ve mesaj gönderme gibi bazı etkileşimler için **telefon numarası doğrulaması** istenebilir; bu doğrulama tamamlanana kadar ilgili işlevler kısıtlanabilir.
+
+**Apple ile Giriş (iOS):** Apple, giriş sırasında paylaşmayı seçtiğiniz bilgileri iletir: Apple tarafından hesabınız için oluşturulan teknik kullanıcı kimliği, e‑posta adresi (Apple’ın “E‑postamı Gizle” seçeneğini kullanırsanız Apple’ın oluşturduğu ve gerçek adresinize yönlendiren bir aktarma adresi) ve paylaşmayı seçerseniz adınız (Apple bu bilgiyi genellikle yalnızca ilk girişte iletir). Apple ile girişte de seçim yapma ve mesaj gönderme gibi etkileşimler için **telefon numarası doğrulaması** istenebilir.
 
 **Telefon ile giriş:** Kimlik doğrulama OTP tabanlıdır. **E‑posta doğrulaması** ve **telefon numarası doğrulaması** adımları, kayıt anından ziyade **profil oluşturma sürecinde** tamamlanacak şekilde konumlandırılmıştır.
 
 <Callout type="info" title="Üçüncü taraf giriş (OAuth) notu">
-Google; kendi hizmetleri bakımından **bağımsız veri sorumlusu** olarak hareket eder. Platform, Google’dan aldığı bilgileri; hesap oluşturma ve giriş işlemlerini yürütmek için kullanır. SMS/OTP doğrulamasında iletişim sağlayıcıları (ör. Twilio) teknik işlemci olarak devreye girebilir. Ayrıntılı rol ve aktarım açıklamaları için [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) ve ilgili üçüncü tarafların kendi politikaları geçerlidir.
+Google ve Apple; kendi hizmetleri bakımından **bağımsız veri sorumlusu** olarak hareket eder. Platform, Google’dan veya Apple’dan aldığı bilgileri; hesap oluşturma ve giriş işlemlerini yürütmek için kullanır. SMS/OTP doğrulamasında iletişim sağlayıcıları (ör. Twilio) teknik işlemci olarak devreye girebilir. Ayrıntılı rol ve aktarım açıklamaları için [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) ve ilgili üçüncü tarafların kendi politikaları geçerlidir.
 </Callout>
 
 ### 4.2 Hukuki onay & açık rıza katmanı (ilk giriş)
@@ -153,6 +155,8 @@ Detaylı metinler: [Açık Rıza Metinleri](/gizlilik-ve-veri-koruma/acik-riza-m
 Onboarding akışında tipik olarak aşağıdaki profil alanları alınır. **Telefon numarası ile giriş** kullananlarda **e‑posta** ve **telefon** doğrulama adımları da bu profil oluşturma sürecinde tamamlanır.
 
 - **Profil adı** (max 16 karakter)
+- **Doğum tarihi** (yaş bu bilgiden hesaplanır)
+- **Doğum yeri** ve isteğe bağlı **doğum saati** (astroloji özellikleri için; bkz. Bölüm 4.5)
 - **Cinsiyet**
 - **Meslek**
 - **Boy**
@@ -180,12 +184,12 @@ Bu soruların bazıları; **özel nitelikli kişisel veri** niteliğinde veri i�
 
 Hukuki çerçeve için: [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) ve [Açık Rıza Metinleri](/gizlilik-ve-veri-koruma/acik-riza-metinleri).
 
-Profilinizde tipik olarak **6 fotoğraf slotu** bulunur. Platformda güvenliği sağlamak amacıyla **yüzünüzün net göründüğü** en az bir fotoğrafın yüklenmesi ve selfie doğrulama adımının tamamlanması **zorunludur.**
+Profilinizde tipik olarak **6 fotoğraf slotu** bulunur. Platformda güvenliği sağlamak amacıyla **yüzünüzün net göründüğü** en az bir fotoğrafın yüklenmesi ve selfie doğrulama adımının tamamlanması **kural olarak gereklidir.**
 
 **Selfie Doğrulama Akışı:**
 - Sadece **ön kamera** aracılığıyla anlık çekim yapılır; **galeri üzerinden fotoğraf yüklenemez.**
 - **Google Gemini 2.5 Flash** ile poz ve profil fotoğrafı tutarlılığını; **safeSearchDetection (Google Cloud Vision)** ile selfie üzerinde uygunsuz içerik denetimini gerçekleştiririz.
-- Bu adım, sahte hesapları önlemek için fonksiyonel bir zorunluluktur; rıza verilmemesi ve en az bir fotoğrafın doğrulanmaması halinde hesap keşif akışına (Deck) dahil edilmez.
+- Bu adım, sahte hesapları önlemek için fonksiyonel bir gerekliliktir; **kural olarak**, rıza verilmemesi veya en az bir fotoğrafın doğrulanmaması hâlinde hesap keşif akışına (Deck) dahil edilmez. WIN, yönetici kararıyla ve sınırlı hâllerde bazı hesaplara bu kurala istisna tanıyabilir; bu durumda doğrulanmamış fotoğraflarda doğrulama rozeti görünmez. Bu nedenle keşif akışındaki her profilin doğrulanmış olduğu garanti edilmez; bir fotoğrafın doğrulanıp doğrulanmadığını üzerindeki rozetten görebilirsiniz.
 - Doğrulanan her fotoğrafın üzerinde yeşil tik/rozet yer alır. Başkalarıyla olan fotoğraflarda doğrulama yapılmaz; sadece kullanıcının kendisinin olduğu fotoğraflarda doğrulama ibaresi yer alır.
 - Fotoğraf yükleme sırasında:
 
@@ -196,20 +200,27 @@ içerilebilir.
 
 > Not: Fotoğraflarınız üzerinden biyometrik çıkarım yapılmaması hedeflenir; ancak selfie doğrulama gibi özellikler ayrıca biyometrik değerlendirme riski doğurabileceği için ayrı metinlerle yönetilir.
 
+### 4.5 Doğum bilgileri ve astroloji özellikleri
+
+Profil oluşturma sırasında **doğum tarihiniz** ile birlikte **doğum yeriniz** (ülke / il / ilçe) ve **doğum saatiniz** sorulur. Doğum yeri bu adımda doldurulması gereken bir alandır; doğum saatini bilmiyorsanız “bilmiyorum” seçeneğini işaretleyebilirsiniz (bu durumda saat yerine “bilinmiyor” bilgisi kaydedilir).
+
+- **Ne işlenir?** Doğum yerinin adı; bu yerin yaklaşık koordinatları (yerleşim yeri düzeyinde) ve saat dilimi; doğum saati veya “bilinmiyor” bilgisi; bunlardan hesaplanan burç ve doğum haritası (natal chart) sonuçları.
+- **Nasıl?** Doğum yerinizin koordinatları, cihazınızın işletim sistemine ait adres çözümleme (geocoding) hizmetiyle bulunur (iOS’ta Apple, Android’de Google hizmetleri). Doğum haritası ve astrolojik uyum hesaplamaları WIN’in bulut altyapısında (Google Cloud) yapılır.
+- **Neden?** Burcunuzu göstermek, doğum haritası ve astrolojik uyum analizlerini sunmak (detaylı analizler WIN Premium kapsamındadır).
+- **Görünürlük:** Doğum yeriniz ve doğum saatiniz profil ekranında diğer kullanıcılara gösterilmez; diğer kullanıcılar burcunuzu ve (sunulduğu ölçüde) sizinle aralarındaki astrolojik uyum sonucunu görebilir. Ancak astrolojik uyumun hesaplanabilmesi için, profiliniz başka bir kullanıcının destesine geldiğinde doğum tarihiniz, doğum saatiniz ve doğum yeriniz (yer adı ve yaklaşık koordinatları dahil) o kullanıcının uygulamasına teknik olarak iletilir; bu bilgiler o kullanıcının ekranında gösterilmez.
+- **Hukuki sebep:** Astroloji özelliklerinin sunulması (sözleşmenin ifası, KVKK m. 5/2-c). Ayrıntılar: [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni).
+
 ### 4.6 Konum (yaklaşık/kesin) ve mesafe
 
 WIN, yakın kullanıcıları göstermek için konum bilgisini kullanır. **Konum geçmişi (location history) tutulmaz**; konum verisi uygulama açılışında GPS veya ağ sinyalleri üzerinden anlık olarak alınarak mesafe hesaplamalarında kullanılır. Konum izni verilmezse; konuma dayalı özellikler sınırlanabilir. İzin yönetimi: cihaz ayarları ve [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) (konum ve çerez/SDK sekmeleri).
 
-### 4.7 Selfie / liveness doğrulama (kamera/mikrofon izinleri)
+### 4.7 Selfie / liveness doğrulama (kamera izni) ve mikrofon izni
 
-Sahte hesabı azaltmak ve kullanıcı güvenini artırmak için selfie/liveness doğrulaması uygulanabilir. Bu akışta:
+Sahte hesabı azaltmak ve kullanıcı güvenini artırmak için selfie/liveness doğrulaması uygulanabilir. Bu akışta **kamera izni** istenebilir.
 
-- **kamera izni**,
- istenebilir.
-
-<Callout type="info" title="Teknik Not">
-  Mevcut API yapısı nedeniyle kamera açılırken otomatik olarak mikrofon izni de talep edilmektedir. 
-  Ancak WIN bünyesinde **hiçbir şekilde ses kaydı alınmamakta ve saklanmamaktadır.**
+<Callout type="info" title="Mikrofon ve ses kaydı">
+  **Selfie doğrulaması sırasında ses kaydı alınmaz**; doğrulama kamerası ses kaydı kapalı olarak çalışır.
+  Mikrofon izni, WIN Premium kapsamındaki **sesli mesaj** özelliği için istenir. Mikrofon yalnızca sohbet ekranında kayıt düğmesine basılı tuttuğunuz sürece kayıt yapar; kayıt, siz gönderdiğinizde sunucuya yüklenir. Sesli mesajların işlenmesi ve saklanması için bkz. Bölüm 4.9.
 </Callout>
 
 Selfie doğrulama görüntülerinin profilde gösterilmemesi hedeflenir; bu alandaki işleme, saklama ve imha yaklaşımı için: [Biyometrik Veri Aydınlatma ve Rıza](/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza).
@@ -226,7 +237,7 @@ Platform şeffaflık taahhüdümüz doğrultusunda; **yüz verisi** ifadesiyle k
 
 **Saklama süresi** Yüz tanıma işlemine konu **biyometrik harita** niteliğindeki veri, doğrulama tamamlandıktan sonra **derhal imha** edilir. Sistemde, biyometrik içerik taşımayan **“doğrulandı: evet/hayır”** durumu tutulabilir. İşlem güvenliği için tutulan **biyometrik olmayan** audit/teknik meta kayıtları ise yasal zamanaşımı ve meşru menfaat süreleri çerçevesinde sınırlı süreyle saklanabilir. Rıza geri çekilmesi ve istisnai uzun saklama halleri: [Biyometrik Veri Aydınlatma ve Rıza](/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza) **Bölüm 9–10**.
 
-İlgili diğer bölümler: **4.2** (rıza katmanı), **4.4** (profil fotoğrafları ve doğrulama akışı özeti), **4.7** (izinler ve teknik not).
+İlgili diğer bölümler: **4.2** (rıza katmanı), **4.4** (profil fotoğrafları ve doğrulama akışı özeti), **4.7** (izinler ve mikrofon notu).
 
 ### 4.9 Mesajlaşma ve etkileşimler
 
@@ -235,6 +246,7 @@ Platformu kullandığınızda, şu tür veriler oluşabilir:
 - **Etkileşimler:** Beğeni/ret, eşleşme, ikili seçim (dual picking) ve profil görüntüleme kayıtları.
 - **Puanlama (Evaluation):** Sohbet başladıktan sonra belirli bir etkileşim limitini aşan kullanıcılara; karşı tarafı Intelligence (Zeka), Politeness (Kibarlık) ve Fun (Eğlence) nitelikleri üzerinden değerlendirmesini sağlayan bir oylama aracı sunulur. Bu puanlar profil ortalamasına dahil edilir.
 - **Mesajlaşma:** Mesaj içeriği ve zaman meta verileri. Mesajlar **uçtan uca şifreli değildir**; moderasyon ve güvenlik amacıyla admin/moderatörler tarafından incelenebilir.
+- **Sesli mesajlar (WIN Premium):** Gönderdiğiniz ses kaydı (ses dosyası), süresi ve gönderim zamanı. Ses dosyaları Google Cloud / Firebase Storage üzerinde saklanır; uygulama içinde yalnızca sohbetin iki tarafı erişebilir ve metin mesajlar gibi moderasyon ve güvenlik amacıyla yetkili admin/moderatörlerce incelenebilir. Sesli mesajlar, kural olarak gönderimden **30 gün sonra** otomatik olarak silinir; hesap silme sırasında hukuki arşive alınan kopyalar için bkz. Bölüm 9. Ses kayıtlarınız üzerinden ses tanıma veya biyometrik analiz yapılmaz.
 - **Güvenlik sinyalleri:** Şikayet, engelleme ve şüpheli davranış kayıtları.
 
 Bu veriler; eşleşme deneyimini yürütmek, kötüye kullanımı önlemek ve uyuşmazlıkları yönetmek amacıyla kullanılabilir.
@@ -272,13 +284,33 @@ Platformu kullandığınızda, bazı veriler **otomatik** olarak oluşur/toplan�
 
 - **Cihaz ve uygulama bilgileri**: cihaz modeli, işletim sistemi sürümü, uygulama sürümü, dil/ülke ayarları
 - **Ağ ve güvenlik bilgileri**: IP adresi, oturum/log kayıtları, hata/çökme (crash) verileri
-- **Tanımlayıcılar**: cihaz tanımlayıcıları ve reklam tanımlayıcıları (IDFA/GAID)
+- **Tanımlayıcılar**: uygulama kurulum/cihaz kimliği (bkz. Bölüm 4.13), cihaz tanımlayıcıları ve reklam tanımlayıcıları (IDFA/GAID; iOS’ta IDFA yalnızca “Uygulama Takibi Şeffaflığı” izni verirseniz)
 - **Web tarafında**: Wix, GA4 ve benzeri teknolojiler üzerinden çerezler ve piksel/etiketler
-- **Mobil uygulamada**: **AdMob** ve Firebase SDK’ları aracılığıyla toplanan analitik/reklam ve performans sinyalleri
+- **Mobil uygulamada**: Firebase SDK’ları (Analytics, Crashlytics, App Check, Cloud Messaging) aracılığıyla toplanan analitik, hata/çökme ve performans sinyalleri; Meta (Facebook) ve TikTok SDK’ları aracılığıyla toplanan reklam ölçümü (atıf) sinyalleri; RevenueCat aracılığıyla işlenen abonelik/satın alma kayıtları (bkz. Bölüm 4.14)
+
+<Callout type="info" title="Reklamlar hakkında">
+  Uygulamada Google Mobile Ads (AdMob) yazılım bileşeni (SDK) yüklü olmakla birlikte **şu an uygulamada reklam gösterilmemektedir**. İleride reklam gösterilmesi hâlinde bu politika ve [Çerez Politikası](/gizlilik-ve-veri-koruma/cerez-politikasi) güncellenir ve gerekli izinler (ör. iOS’ta izleme izni, gerektiğinde açık rıza) ayrıca istenir.
+</Callout>
 
 Bu veriler; Platformun güvenli çalışması, hata ayıklama, performans ölçümü, kötüye kullanımın önlenmesi ve (tercihinize bağlı olarak) analitik/pazarlama ölçümü amaçlarıyla kullanılabilir.
 
 Detaylı açıklama ve tercih yönetimi için: [Çerez Politikası](/gizlilik-ve-veri-koruma/cerez-politikasi).
+
+### 4.13 Tek cihaz oturumu ve kurulum kimliği
+
+WIN hesabınız kural olarak aynı anda **tek bir cihazda** açık kalabilir. Bunu sağlamak için uygulama, her kurulum için bir **kurulum/cihaz kimliği** kullanır ve bunu hesabınıza kaydeder:
+
+- **Android:** Uygulamanın ilk açılışta ürettiği rastgele bir kurulum kimliği (“wn-” ile başlar).
+- **iOS:** Apple’ın her uygulama geliştiricisi için cihaz bazında verdiği tanımlayıcı (IDFV).
+
+Başka bir cihazdan giriş yaptığınızda hesabınız o cihaza geçer ve önceki cihazdaki oturum kapatılır. Aynı kimlik ve IP adresiniz, SMS doğrulama kodlarının kötüye kullanımını önlemek için cihaz ve IP bazlı gönderim sınırlarında da kullanılır. Android’de, kimliğin yedekten başka bir telefona taşınıp taşınmadığını anlamak için cihaz üretici/marka/model bilgisinden oluşan bir imza yalnızca cihazınızda tutulur; sunucuya gönderilmez (iOS’ta bu kontrol, hesaba da kaydedilen IDFV’nin kendisiyle yapılır). WIN bu kimliği tek cihaz oturumu ve hesap güvenliği amacıyla kullanır (iOS’ta aynı IDFV değeri abonelik altyapısı sağlayıcımız tarafından da toplanabilir; bkz. Bölüm 4.14). Hukuki sebep: sözleşmenin ifası ve meşru menfaat (hesap ve hizmet güvenliği).
+
+### 4.14 Abonelik altyapısı ve reklam ölçümü (atıf) ortakları
+
+- **RevenueCat (abonelik altyapısı):** Satın alımlar Apple App Store / Google Play üzerinden yapılır; aboneliğinizin ve tek seferlik satın alımlarınızın doğrulanması, hesabınıza bağlanması ve yönetilmesi için **RevenueCat, Inc. (ABD)** kullanılır. RevenueCat’e WIN kullanıcı kimliğiniz, satın alma/abonelik kayıtları (ürün, fiyat, para birimi, işlem ve yenileme/iptal bilgileri) ve cihaz/uygulama bilgileri iletilir. Ayrıca reklam kampanyalarının ölçülebilmesi için cihaz tanımlayıcıları (iOS’ta IDFV ve—izin verdiyseniz—IDFA; Android’de Google reklam kimliği/GAID ve Android cihaz kimliği/Android ID), IP adresiniz, Meta tarafından atanan anonim kimlik ve iOS’ta Apple Search Ads atıf bilgisi RevenueCat’e iletilir; RevenueCat satın alma ve yenileme olaylarını bu kimliklerle birlikte Meta ve TikTok’a iletebilir.
+- **Meta (Facebook) ve TikTok (reklam ölçümü):** Reklam kampanyalarımızın etkisini ölçmek (hangi reklamın uygulama indirme, kayıt veya satın almaya yol açtığını anlamak) için Meta Platforms ve TikTok yazılım bileşenleri (SDK) uygulamada yer alır. Bu SDK’lar; uygulama açılışı, kayıt, kayıt tamamlama (cinsiyet bilgisiyle), giriş, seçim yapma ve satın alma gibi uygulama olaylarını WIN kullanıcı kimliğinizle birlikte; seçim olayında ayrıca seçtiğiniz kişinin WIN kullanıcı kimliğiyle (teknik, takma ad niteliğinde bir kimlik) birlikte; cihaz bilgileri ve—izin verilmişse—reklam tanımlayıcısıyla ilgili platformlara iletir. TikTok’a e‑posta adresiniz ve telefon numaranız yalnızca pazarlama ve yurt dışına aktarım rızalarınızın her ikisini de vermişseniz iletilir. Meta ve TikTok bu verileri kendi politikaları uyarınca kendi platformlarındaki reklam gösterimini iyileştirmek için de kullanabilir. WIN; mesaj içeriklerinizi, fotoğraflarınızı ve cihaz konumunuzu (GPS) bu platformlarla paylaşmaz.
+- **İzinleriniz:** iOS’ta reklam tanımlayıcısı (IDFA) yalnızca “Uygulama Takibi Şeffaflığı” (ATT) iznini verirseniz paylaşılır; bu izni Ayarlar > Gizlilik ve Güvenlik > İzleme bölümünden değiştirebilirsiniz. Android’de reklam kimliğinizi cihaz ayarlarından sıfırlayabilir veya silebilirsiniz.
+- Bu sağlayıcılar yurt dışında bulunabilir; aktarım çerçevesi için [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) Bölüm 7–8. Facebook ile giriş seçeneği uygulamadan kaldırılmıştır; Meta SDK’sı yalnızca reklam ölçümü amacıyla bulunmaktadır.
 
 ---
 
@@ -307,6 +339,9 @@ WIN; eşleşme ve öneri (deck) akışında, belirli parametreleri birlikte değ
 - **Kullanım davranışları**: beğeni/ret, eşleşme örüntüleri (Platform içinde)
 - **Doğrulama sinyalleri**: profil doğrulama durumu ve rozetler
 - **Cooldown (Soğuma Süresi)**: Deck akışında karşınıza çıkan ancak seçilmeyen profillerin belirli bir süre tekrar gösterilmemesi kuralı
+- **Yenilik ve aktiflik**: yeni katılan profillere ilk günlerde tanınan ek görünürlük; son zamanlarda aktif olma durumu (uzun süredir giriş yapmayan profiller çok daha az gösterilir)
+- **Profil puanı**: profilin doluluk düzeyine dayalı teknik bir puan
+- **Editoryal seçim ve moderasyon**: WIN ekibinin süreli olarak öne çıkardığı profiller; moderasyon kararıyla görünürlüğü süreli olarak azaltılan veya keşif akışından çıkarılan hesaplar (ayrıntı: [DSA Uyum Sayfası](/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi) Bölüm 12)
 - **Premium etkileri**: 12 saatte 12 deste, destelerde ek görünürlük ağırlığı, yeni katılan profillere öncelikli erişim, seçilen kişinin listesinde üst sırada görünme, deste filtreleme, profil gizleme, online/offline durum görme, puan görüntüleme; tek seferlik Görünürlük Haftası da süresi boyunca destelerde ek görünürlük ağırlığı sağlar (seçim hakkı vermez)
 
 <Callout type="info" title="Kontrol sizde: ne yapabilirsiniz?">
@@ -365,7 +400,12 @@ Verilerin saklama süresi; işleme amacına, mevzuat yükümlülüklerine ve uyu
 Örnek:
 
 - **Hesabınız aktifken**: hizmeti sunmak için gerekli veriler saklanır.
-- **Hesap silme sonrası**: bazı kayıtlar (özellikle log/işlem/uyuşmazlık) mevzuat ve güvenlik gerekleriyle sınırlı süre saklanabilir.
+- **Sesli mesajlar**: kural olarak gönderimden 30 gün sonra otomatik olarak silinir; bu silmede arşiv kopyası alınmaz.
+- **Hesap silindiğinde**: profiliniz, fotoğraflarınız, doğrulama selfie’leriniz, destek ekleriniz ve giriş kaydınız silinir ve profiliniz diğer kullanıcılara kapanır. Ancak **tüm verileriniz hemen silinmez**; aşağıdaki kayıtlar belirtilen sürelerle saklanır:
+  - **Silinen hesabın kopyası:** Hesap silindiği anda profil kaydınızın (bildirim jetonları hariç) tam bir kopyası ve seçtiğiniz silme nedeni, erişimi yetkili personelle sınırlı olarak **90 gün** saklanır ve bu sürenin sonunda otomatik olarak silinir. Bu saklama kuralının uygulanmaya başladığı Eylül 2026’dan önce silinmiş hesaplara ait kopyalar için 90 günlük süre, kuralın uygulanmaya başladığı tarihten itibaren işler. Amaç: kötüye kullanım ve dolandırıcılık incelemeleri, olası uyuşmazlıklar ve resmî makam talepleri.
+  - **Sohbet arşivi:** Hesap silme sırasında sohbetleriniz arşivlenmeden silinmez. Hesap silindiğinde, sizinle karşı taraf arasındaki mesajlar ve henüz 30 günlük otomatik silme süresi dolmamış sesli mesaj dosyaları diğer kullanıcılara kapatılır ve erişimi yetkili personelle sınırlı bir hukuki arşive alınır; bu arşiv, uyuşmazlıklar ve resmî makam talepleri için ilgili zamanaşımı süreleri boyunca saklanır.
+  - **Yasaklı hesaplar:** Topluluk Kuralları ihlali nedeniyle erişimi engellenmiş bir hesap silinirse, yasaklı kişinin yeni hesap açmasını önlemek için bu hesaba ait yasak kaydı (WIN kullanıcı kimliği, telefon numarası, varsa e‑posta adresi ve yasak gerekçesi), yasak kaldırılmadıkça **süre sınırı olmaksızın** saklanır.
+  - **Diğer kayıtlar:** log/trafik kayıtları, moderasyon kararları ve ihlal delilleri ile ticari/işlem kayıtları mevzuatın ve [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) Bölüm 9’daki sürelerle saklanır. Üçüncü taraf sağlayıcılarda (ör. abonelik altyapısı, analitik ve reklam ölçümü) tutulan kayıtlar, ilgili sağlayıcının saklama sürelerine tabidir.
 
 Detaylı saklama yaklaşımı için: [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) ve [Kullanım Koşulları — Bölüm 13](/sozlesmeler/kullanim-kosullari#bölüm-13-hesap-sonlandırma-ve-fesih).
 

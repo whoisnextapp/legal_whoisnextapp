@@ -123,8 +123,13 @@ def convert_mdx(path: Path) -> str:
 
 
 def main() -> None:
-    kk = ROOT / "pages/sozlesmeler/kullanim-kosullari.mdx"
-    eula = ROOT / "pages/sozlesmeler/uygulama-ici-lisans-sozlesmesi.mdx"
+    # Sayfalar Nextra i18n düzeninde dil ekli (.tr.mdx / .en.mdx); App Store Connect
+    # Özel EULA alanına Türkçe kaynak aktarılır.
+    kk = ROOT / "pages/sozlesmeler/kullanim-kosullari.tr.mdx"
+    eula = ROOT / "pages/sozlesmeler/uygulama-ici-lisans-sozlesmesi.tr.mdx"
+    for p in (kk, eula):
+        if not p.exists():
+            raise SystemExit(f"Kaynak bulunamadı: {p}")
     sep = "=" * 72
     header = (
         "WIN — App Store Connect Özel EULA / Kullanım Koşulları (düz metin)\n"

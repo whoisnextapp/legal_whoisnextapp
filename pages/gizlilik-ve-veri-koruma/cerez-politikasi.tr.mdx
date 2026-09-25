@@ -2,7 +2,7 @@
 
 import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
-**Son güncelleme:** 20.02.2026 · **Sürüm:** 1.0
+**Son güncelleme:** 25.09.2026 · **Sürüm:** 1.1
 
 Bu politika; **WIN** platformu (“**Platform**”) kapsamında işletilen web alanlarında ve **WIN mobil uygulamasında** kullanılan **çerezler** ve **benzeri izleme teknolojileri** (piksel, SDK, cihaz/reklam tanımlayıcıları vb.) hakkında şeffaf bilgilendirme sağlar. Bu metin, [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) ve [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) ile birlikte değerlendirilmelidir.
 
@@ -112,6 +112,7 @@ Bu politika kapsamındaki çerez/izleme faaliyetleri bakımından veri sorumlusu
 
     - **SDK (Software Development Kit)**: Uygulama içine gömülen ve analitik, hata raporlama, bildirim gönderimi gibi işlevleri sağlayabilen yazılım bileşenleri,
     - **Cihaz tanımlayıcıları (device ID)** ve **reklam tanımlayıcıları** (örn. iOS’ta **IDFA**, Android’de **Google Advertising ID/GAID**),
+    - **Uygulama kurulum kimliği**: WIN’in tek cihaz oturumu ve hesap güvenliği için kullandığı kimlik (Android’de uygulamanın ürettiği “wn-” ile başlayan rastgele kimlik; iOS’ta IDFV),
     - **Piksel/etiket (pixel/tag)** mantığında çalışan ölçüm bileşenleri,
     - **Takip URL’leri (tracking URLs)** gibi kampanya atfı araçları.
 
@@ -178,7 +179,10 @@ Analitik/ölçüm teknolojileri, kullanılan araca ve ayara göre **toplulaştı
 
 ### 3.4 Reklam / pazarlama çerezleri ve izleyicileri
 
-Mobil uygulamalarda reklam amaçlı izleme genellikle **IDFA/GAID** gibi reklam tanımlayıcıları üzerinden çalışır ve cihaz/OS düzeyindeki ayarlara tabidir. WIN, uygulama içinde **AdMob** aracılığıyla kişiselleştirilmiş reklamlar sunabilir.
+Mobil uygulamalarda reklam amaçlı izleme genellikle **IDFA/GAID** gibi reklam tanımlayıcıları üzerinden çalışır ve cihaz/OS düzeyindeki ayarlara tabidir.
+
+- **Reklam gösterimi:** Uygulamada Google Mobile Ads (AdMob) SDK’sı yüklü olmakla birlikte **şu an uygulamada reklam gösterilmemektedir**. İleride reklam gösterilmesi hâlinde bu politika güncellenir ve gerekli izinler (ör. iOS’ta izleme izni, gerektiğinde açık rıza) ayrıca istenir.
+- **Reklam kampanyası ölçümü (atıf):** WIN’in kendi reklam kampanyalarının etkisini ölçmek için uygulamada **Meta (Facebook) SDK** ve **TikTok Events SDK** kullanılır; satın alma ve yenileme olayları ayrıca **RevenueCat** üzerinden bu platformlara iletilebilir. Bu kapsamda aktarılan olaylar ve tanımlayıcılar [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) Bölüm 4.14’te açıklanır. iOS’ta reklam tanımlayıcısı (IDFA) yalnızca izleme (ATT) izni verirseniz paylaşılır.
 
 ### 3.5 Sosyal medya ve üçüncü taraf entegrasyonlar
 
@@ -295,7 +299,11 @@ WIN; Platformun işletilmesi, güvenliği, analitiği, pazarlama ve benzeri ama�
 
 - **Wix:** Web sitesi altyapısı (CMS) ve e-ticaret bileşenleri.
 - **Google Analytics (GA4):** Web ve uygulama trafik analizi ve performans ölçümü.
-- **AdMob (Google):** Uygulama içi reklam ve kişiselleştirilmiş reklam hizmetleri.
+- **Google Mobile Ads / AdMob (Google):** SDK uygulamada yüklüdür; **şu an reklam gösterilmemektedir**.
+- **RevenueCat (ABD):** Abonelik ve satın alma doğrulama/yönetimi; reklam ölçümü için cihaz tanımlayıcılarının Meta ve TikTok’a iletilmesi.
+- **Meta (Facebook) SDK:** Uygulama olayları ve reklam kampanyası ölçümü (atıf). Facebook ile giriş seçeneği kaldırılmıştır.
+- **TikTok Events SDK:** Uygulama olayları ve reklam kampanyası ölçümü (atıf).
+- **Firebase Crashlytics (Google):** Uygulama çökme ve hata raporları.
 - **Sentry:** Yazılım hata izleme ve çökme raporlama (Issue tracking).
 - **Google Cloud / Firebase:** Bulut altyapısı, Firebase Analytics ve teknik SDK'lar.
 - **Google Gemini 2.5 Flash:** Profil doğrulama (selfie/liveness) teknolojisi.
@@ -333,7 +341,7 @@ Web alanlarını ilk kez ziyaret ettiğinizde (veya tercih yenileme gerektiğind
 
 ### Adım 2: Mobil uygulamada tercihlerinizi yönetin
 
-Mobil uygulamada **Ayarlar > Gizlilik / Reklam / İzleme Tercihleri** üzerinden analitik veya kişiselleştirilmiş reklam gibi tercihler değiştirilebilir.
+Uygulamada şu an ayrı bir “izleme tercihleri” ekranı bulunmamaktadır. iOS’ta reklam tanımlayıcısının paylaşılmasını **Uygulama Takibi Şeffaflığı (ATT)** izniyle yönetebilirsiniz (Ayarlar > Gizlilik ve Güvenlik > İzleme). Android’de reklam kimliğinizi cihaz ayarlarından sıfırlayabilir veya silebilirsiniz. Pazarlama iletişimi ve yurt dışına aktarım rızalarınızı geri almak için [KVKK Başvuru Formu](/basvuru-formlari/kvkk-basvuru-formu) kanallarını kullanabilirsiniz.
 
 ### Adım 3: Tarayıcı ve cihaz ayarlarından kontrol edin
 
@@ -357,14 +365,14 @@ WIN, tarayıcınız veya işletim sisteminiz tarafından gönderilen "Do Not Tra
     iOS’ta izleme tercihleri, cihaz sürümünüze göre değişebilir. Örneğin iOS 14.5 ve üzeri sürümlerde **Uygulama Takibi Şeffaflığı (ATT)** kapsamında izleme izni ayrıca yönetilebilir:
 
     - **Ayarlar > Gizlilik ve Güvenlik > İzleme** bölümünden uygulamaların izleme iznini yönetebilirsiniz.
-    - “Kişiselleştirilmiş reklamlar” tercihi, uygulama içi ayarlardan da yönetilebilir.
+    - Uygulamada şu an reklam gösterilmemektedir; reklam ölçümüne ilişkin izinler bu bölümde anlatılan cihaz ayarlarıyla yönetilir.
 
   </Tab>
   <Tab>
     Android’de reklam tanımlayıcısı ayarları cihaz üreticisine göre değişebilir. Genel olarak:
 
     - **Ayarlar > Google > Reklamlar** (veya benzeri) menüsünden reklam tanımlayıcısını sıfırlama/tercihleri yönetme seçenekleri bulunabilir.
-    - “Kişiselleştirilmiş reklamlar” tercihi, uygulama içi ayarlardan da yönetilebilir.
+    - Uygulamada şu an reklam gösterilmemektedir; reklam ölçümüne ilişkin izinler bu bölümde anlatılan cihaz ayarlarıyla yönetilir.
 
   </Tab>
   <Tab>
@@ -415,7 +423,13 @@ WIN, web ve mobil ortamda aşağıdaki teknolojileri kullanmaktadır. Bu envante
 | **Wix Cookies**             | Wix           | Zorunlu            | Güvenlik, CSRF koruması ve oturum yönetimi       | Oturum / 12 Ay          | Yurt Dışı (Wix)    |
 | **\_ga, \_gid**             | Google        | Analitik           | Kullanıcı trafiği analizi (GA4)                  | 2 Yıl / 24 Saat         | Yurt Dışı (Google) |
 | **Sentry ID**               | Sentry        | Zorunlu            | Yazılım hatalarını ve çökmeleri izleme           | 90 Gün                  | Yurt Dışı (Sentry) |
-| **Device ID / IDFA / GAID** | Apple/Google  | Pazarlama          | AdMob üzerinden kişiselleştirilmiş reklam sunumu | Kalıcı (Sıfırlanabilir) | Yurt Dışı (Google) |
+| **IDFA / GAID (reklam tanımlayıcıları)** | Apple/Google | Pazarlama (ölçüm) | Meta, TikTok ve RevenueCat üzerinden reklam kampanyası ölçümü (atıf); iOS’ta yalnızca ATT izniyle. Şu an reklam gösterilmez | Kalıcı (Sıfırlanabilir) | Yurt Dışı |
+| **Kurulum kimliği (wn-… / IDFV)** | WIN | Zorunlu | Tek cihaz oturumu; SMS doğrulama kötüye kullanım sınırları | Cihazda: uygulama kaldırılana kadar; sunucuda: hesap süresince | Google Cloud / Firebase |
+| **RevenueCat SDK**          | RevenueCat    | Zorunlu (satın alma) | Abonelik/satın alma doğrulama ve yönetimi; atıf için cihaz tanımlayıcıları (IDFV, izin varsa IDFA, GAID, Android cihaz kimliği) ve IP adresinin iletilmesi | Hizmet süresince | Yurt Dışı (ABD) |
+| **Meta (Facebook) SDK**     | Meta          | Pazarlama (ölçüm)  | Uygulama olayları ve reklam atfı                 | Sağlayıcı politikasına göre | Yurt Dışı |
+| **TikTok Events SDK**       | TikTok        | Pazarlama (ölçüm)  | Uygulama olayları ve reklam atfı                 | Sağlayıcı politikasına göre | Yurt Dışı |
+| **Firebase Crashlytics**    | Google        | Zorunlu            | Uygulama çökme ve hata raporları                 | Sağlayıcı politikasına göre | Yurt Dışı (Google) |
+| **Google Mobile Ads SDK**   | Google        | —                  | Uygulamada yüklü; şu an reklam gösterilmez       | —                       | —                  |
 | **Firebase SDK**            | Google        | Zorunlu / Analitik | Uygulama altyapısı ve teknik performans takibi   | 14 Ay                   | Yurt Dışı (Google) |
 | **Store Vantage / CRM**     | Store Vantage | İşlevsellik        | Müşteri ilişkileri ve destek bileşenleri         | Oturum                  | Yurt Dışı          |
 | **HSTS / Security**         | WIN           | Zorunlu            | SSL/TLS bağlantı güvenliği                       | 1 Yıl                   | -                  |

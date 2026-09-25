@@ -2,7 +2,7 @@
 
 import { Callout, Steps, Card, Cards } from "nextra/components";
 
-**Last updated:** 24.09.2026 · **Version:** 1.2
+**Last updated:** 25.09.2026 · **Version:** 1.3
 
 This document governs the legal relationship between the user and the operator regarding use of the WIN mobile application and related services. You are advised to read it carefully before accepting it. For ease of reading, short summaries appear at the start of sections; **these summaries do not replace the full text.**
 
@@ -143,16 +143,18 @@ In this respect:
 
 ### 3.2 Registration Methods and Identity Verification Steps
 
-Access to the account may be provided via **Google Sign‑In (OAuth)** or **sign‑in with phone number** (SMS/OTP‑based authentication). Data transferred through these routes is processed under the [Privacy Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi) and [KVKK Privacy Notice](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni).
+Access to the account may be provided via **Google Sign-In (OAuth)**, **Sign in with Apple** (iOS devices only) or **sign-in with phone number** (SMS/OTP-based authentication). Data transferred through these routes is processed under the [Privacy Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi) and [KVKK Privacy Notice](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni).
 
 **Phone sign‑in:** After the first identity step, **email verification** and **phone number verification** (OTP, etc.) are completed during **profile creation**, separately from the registration screen. Until these steps are completed, relevant parts of the service may be restricted.
 
 **Google sign‑in:** The email address shared via your Google account is generally treated as **already verified** under Google’s processes. After profile creation, you may be directed in the app to **phone number verification** to make picks on the deck, send messages in chats and for similar interactions; this verification is **mandatory**.
 
+**Sign in with Apple (iOS):** The technical user identifier Apple creates for your account, your email address (Apple's relay address if you use Apple's "Hide My Email" option) and, if you choose to share it, your name are used. After profile creation, **phone number verification** is mandatory here as well to make picks on the deck, send messages in chats and for similar interactions.
+
 By your sign‑in method you accept that:
 
-- You are authorised to use the relevant account (Google account or phone line),
-- If you use Google, taking security measures for your account (password, device security, two‑step verification, etc.) is your responsibility,
+- You are authorised to use the relevant account (Google account, Apple ID or phone line),
+- If you use Google or Apple, taking security measures for your account (password, device security, two-step verification, etc.) is your responsibility,
 - Contract and KVKK texts may be shown during sign‑in and profile setup, and separate consent/explicit consent options may be offered for certain actions.
 
 ### 3.3 Eligibility Commitments
@@ -183,8 +185,9 @@ Keeping your sign‑in credentials confidential (including OAuth and phone‑bas
 
 In this respect:
 
-- You must keep your device, account tied to your sign‑in method (Google or phone‑based session), and app access secure; you must notify WIN without delay of suspicious activity.
+- You must keep your device, account tied to your sign-in method (Google, Apple or phone-based session), and app access secure; you must notify WIN without delay of suspicious activity.
 - For account security and prevention of abuse, WIN may temporarily restrict your account and request additional verification (e.g. selfie verification) when it detects suspicious sign‑ins or transactions.
+- **Single device:** As a rule, your account can be signed in on only one device at a time. When someone signs in from another device, the account moves to that device and the session on the previous device is closed. The installation/device identifier used for this is described in Section 4.13 of the [Privacy Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi).
 
 ---
 
@@ -212,6 +215,7 @@ Certain fields may be mandatory when creating a profile. For example:
 
 - **Name / profile name:** With Google sign‑in the name may be taken from Google; in the phone flow you may set it during profile creation. In both cases you may **change** the name in the app. The profile name **does not have to be your real name**; however it must comply with the [Community Guidelines](/topluluk-ve-guvenlik/topluluk-kurallari) (no insults, misleading information, etc.).
 - **Gender**, **date of birth (age)**
+- **Place of birth** (for the zodiac sign, natal chart and astrological compatibility features; the time of birth is optional and "I don't know" can be selected). Place and time of birth are not shown to other users on the profile screen; on their technical transmission for the astrological compatibility calculation see Section 4.5 of the [Privacy Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi).
 - At least **one profile photo** (a clear view of the face may be required)
 
 The app may also ask for fields such as **occupation**, **height**, **smoking/alcohol frequency**, **zodiac sign**, **profile note (free text)**, various **preference/importance questions**, and **photo uploads** (e.g. multiple photo slots) to enrich your profile and improve matching/filtering.
@@ -226,7 +230,7 @@ The app may also ask for fields such as **occupation**, **height**, **smoking/al
 
 For account and profile security WIN performs photo‑based selfie (liveness) verification using **Google Gemini 2.5 Flash**. In this process:
 
-- For your profile to appear actively in the discovery feed, **at least one (1) photo must be verified**.
+- For your profile to appear actively in the discovery feed, **as a rule at least one (1) photo must be verified**. WIN may, by administrator decision and in limited cases, grant an exception to this rule for certain accounts; it is therefore not guaranteed that every profile in the discovery feed is verified. Whether a photo is verified can be seen from the badge on it.
 - Verification confirms that the person in the uploaded profile photo is the same as the person in the live selfie taken at that moment. **Verification with photos belonging to someone else is not possible.**
 - A **green checkmark** (or similar verification indicator) appears only on verified photos.
 - Your profile may include photos taken with others; however verification is only performed on photos that belong to “you” and show your face clearly.
@@ -234,7 +238,7 @@ For account and profile security WIN performs photo‑based selfie (liveness) ve
 
 <Steps>
 ### 1. Permissions
-Camera and/or microphone permission may be requested during the verification process.
+Camera permission may be requested during the verification process; no audio is recorded during verification.
 
 ### 2. Liveness step
 You are asked to match a live selfie/pose taken at that moment with your profile photo.
@@ -599,7 +603,12 @@ Recommendation systems may jointly evaluate some of the following data and signa
 - **Location information** (to the extent you permit) and location‑related matching signals
 - **Interaction history** (e.g. like/pass behaviour, messaging interactions)
 - **Security signals** (e.g. block/report relationships, verification status)
-- **Signals relating to profile quality/consistency** (e.g. missing fields, repeated behaviour patterns)
+- **Signals relating to profile quality/consistency** (e.g. missing fields, repeated behaviour patterns; a technical profile score based on how complete the profile is)
+- **Newness and activity** (additional visibility given to newly joined profiles in their first days; whether a profile has been active recently)
+- **Editorial selection** (profiles highlighted by the WIN team for a limited time) and **moderation decisions** (visibility reduced for a limited time or removal from the discovery feed)
+- **Paid visibility** (WIN Premium and Visibility Week; see the [Subscription and Purchase Terms](/sozlesmeler/abonelik-ve-satin-alma-kosullari))
+
+The deck is built by a **random draw** weighted by these signals; the weights increase or decrease the likelihood of a profile being shown but do not guarantee that it is shown. The detailed list of main parameters is in Section 12 of the [DSA Compliance Page](/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi).
 
 These assessments are a predictive mechanism to increase matching likelihood; no particular match or outcome is guaranteed.
 
@@ -670,15 +679,15 @@ Payment and subscription terms are set out in the following documents:
 
 ### 9.3 Virtual Items
 
-At this stage WIN sells the **WIN Premium subscription** and one-time **deck packs** and **Visibility Week** (see Section 3.5 of the [Subscription and Purchase Terms](/sozlesmeler/abonelik-ve-satin-alma-kosullari)). Package prices may **vary** according to market conditions; current prices are always shown on in‑app purchase screens. Virtual currency, credits, or spendable items purchasable in the app are of a licence nature; they are non‑assignable and not redeemable for cash. If such virtual items are added in the future, refund and use terms will be additionally stated in the [Subscription and Purchase Terms](/sozlesmeler/abonelik-ve-satin-alma-kosullari).
+At this stage WIN sells the **WIN Premium subscription** and one-time **deck packs** and **Visibility Week** (see Section 3.5 of the [Subscription and Purchase Terms](/sozlesmeler/abonelik-ve-satin-alma-kosullari)). Package prices may **vary** according to market conditions; current prices are always shown on in-app purchase screens. There is no virtual currency, coin or credit purchasable in the app. Deck packs and promotional **gift decks** (achievement badges and the invite programme) are account-bound usage rights of a licence nature; they are non-assignable and not redeemable for cash. Which accounts can use gift decks without WIN Premium is set out in Section 3.7 of the [Subscription and Purchase Terms](/sozlesmeler/abonelik-ve-satin-alma-kosullari). If virtual currency or similar items are added in the future, refund and use terms will be additionally stated in the [Subscription and Purchase Terms](/sozlesmeler/abonelik-ve-satin-alma-kosullari).
 
 ---
 
 ## Section 9A: Advertisements and Third‑Party Content
 
-The Services may include **advertisements**, **promotions**, **sponsored content** (banners, video, etc.) provided by third parties, or links to external websites/resources. **AdMob (Google)** infrastructure may be used for in‑app advertising services.
+**No ads are currently shown in the app.** The Google Mobile Ads (AdMob) software component is installed in the app, but no ad units are used. If **advertisements**, **promotions** or **sponsored content** (banners, video, etc.) provided by third parties are shown in the Services in the future, these Terms, the [Privacy Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi) and the [Cookie Policy](/gizlilik-ve-veri-koruma/cerez-politikasi) will be updated accordingly and any required permissions will be requested separately. The Services may also include links to external websites/resources.
 
-WIN **does not endorse** such advertisements or third‑party content; it is **not responsible** for the availability, accuracy, or content of third‑party sites, resources, or products/services they offer. Your interaction with such content is subject to the third party’s own terms of use and privacy policies. No guarantee is given that advertisements will always be shown or in a particular format; WIN reserves the right to change advertising models at any time.
+If ads are shown, WIN **does not endorse** such advertisements or third-party content; it is **not responsible** for the availability, accuracy, or content of third-party sites, resources, or products/services they offer. Your interaction with such content is subject to the third party's own terms of use and privacy policies. No guarantee is given that advertisements will always be shown or in a particular format; WIN reserves the right to change advertising models at any time.
 
 ---
 
@@ -787,23 +796,25 @@ This clause does not eliminate WIN’s liability for damages arising from WIN’
 
 ### 13.1 Termination by User
 
-Termination relating to your account may take two forms: **(i) deactivating the profile (turning off visibility)** and **(ii) deleting the account (permanent closure)**. In‑app steps and legal consequences are detailed below (in particular **13.1.2 Deleting the account**).
+Termination relating to your account may take two forms: **(i) deactivating (freezing) the account (turning off visibility)** and **(ii) deleting the account (permanent closure)**. In-app steps and legal consequences are detailed below (in particular **13.1.2 Deleting the account**).
 
-#### 13.1.1 Deactivating the profile (turning off visibility)
+#### 13.1.1 Deactivating (freezing) the account (turning off visibility)
 
-If you wish, you may **deactivate** your profile temporarily without deleting your account and make it invisible to other users. When the profile is deactivated:
+If you wish, you may **deactivate (freeze)** your account without deleting it via **Settings > Deactivate Account** in the app. When the account is deactivated:
 
-- Your profile is not visible to other users.
-- This does not automatically eliminate data retention and retention periods for legal obligations (see [Privacy Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi) for details).
-- After you deactivate your profile, if you reactivate your account within a certain period, your profile and data linked to your account may be restored (to the extent permitted by law). After that period, full deletion of the account may occur.
+- Your profile is not shown to other users, is removed from the discovery feed (Deck) and nobody can pick you. Deactivation is different from simply signing out; when it is completed you are also signed out.
+- Your **Picked You** and **You Picked** lists are cleared and your chats are removed from the other parties' message lists. When you reactivate your account these picks and chats **do not come back**. The app shows this consequence as a separate warning before deactivation.
+- You can reactivate your account when you sign in again; your profile information and photos are kept.
+- Deactivation does not cancel a subscription purchased through a store (see 13.1.4) and does not automatically eliminate data retention and retention periods for legal obligations (see [Privacy Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi) for details). The inactive-account rules in 13.3 remain applicable to deactivated accounts.
 
 #### 13.1.2 Deleting the account (permanent closure)
 
-You may delete your account by following **Settings > Account > Delete Account** (or similar) in the app. Account deletion is generally **irreversible** and may have the following consequences:
+You may delete your account by following **Settings > Delete Account** in the app (selecting a deletion reason and confirming). Account deletion is **irreversible** and has the following consequences:
 
-- Your profile and visible areas linked to your account are closed to other users.
-- **Temporary freeze (deactivation):** With your deletion request your account is **frozen for 14 days**. During that period if you sign in to the app again, you may cancel deletion and continue or manually complete the permanent deletion process. After the 14‑day period your data is permanently deleted.
-- In‑app access to matches, messages, and similar records linked to your account may end.
+- **Deletion starts immediately:** In current app versions deletion starts immediately after your confirmation; there is no waiting period. If deletion cannot be completed for a technical reason it is retried automatically by the system. If a deletion request with a 14-day waiting period was created from an older app version, you can cancel it or complete the deletion immediately by signing in again during that period.
+- Your profile and visible areas linked to your account are closed to other users; your profile information, photos, verification selfies and sign-in record are deleted.
+- **Not all data is deleted immediately:** a copy of the deleted account's profile record is kept for **90 days** and then deleted automatically; during account deletion chats are not deleted without archiving and are moved to a legal archive (the automatic 30-day deletion of voice messages remains applicable); the ban record of banned accounts (including the phone number, the e-mail address where available and the reason for the ban) is kept unless the ban is lifted. Details and periods: Section 9 of the [Privacy Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi) and Section 9 of the [KVKK Information Notice](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni).
+- In-app access to picks, messages, and similar records linked to your account ends.
 - In‑app virtual items/benefits and promotion definitions may end with the account and refund/payment may not be available (mandatory legal rights reserved).
 
 #### 13.1.3 Removing the app from the device
@@ -840,7 +851,7 @@ After the account is deleted or closed:
 
 - Your profile and visible areas linked to your account are closed within the app.
 - Digital benefits and virtual items linked to your account may end; in that case no additional compensation is generally paid (mandatory legal rights reserved).
-- Retention and erasure of personal data are carried out under the [Privacy Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi) and Law No. 6698 (KVKK). Under KVKK, where processing grounds cease, data is erased/destroyed/anonymised; retention provisions in other laws remain reserved.
+- Retention and erasure of personal data are carried out under the [Privacy Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi) (in particular Section 9: the 90-day account copy, the chat archive and the ban record) and Law No. 6698 (KVKK). Under KVKK, where processing grounds cease, data is erased/destroyed/anonymised; retention provisions in other laws remain reserved.
 - Under Law No. 5651, hosting providers may have an obligation to retain **traffic data** relating to the service for certain periods. In this respect traffic data may be retained for the periods provided by law (5651 Art. 5/3: **not less than one year and not more than two years**).
 
 ### 13.5 Survival

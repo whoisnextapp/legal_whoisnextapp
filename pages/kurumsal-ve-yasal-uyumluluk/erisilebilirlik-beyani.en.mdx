@@ -2,7 +2,7 @@
 
 import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
-**Last updated:** 02.04.2026 · **Version:** 1.1
+**Last updated:** 25.09.2026 · **Version:** 1.2
 
 This page explains the approach, applied standards, and feedback channels regarding ensuring that the services provided by WIN ("**Platform**") are **accessible**, **inclusive**, and **usable** for all users, including individuals with disabilities.
 
@@ -213,7 +213,7 @@ Depending on the nature of the service, accessibility tests may cover the follow
 
 - **Registration/login** (including Google OAuth flow),
 - **KVKK & contract approvals** and explicit consent boxes,
-- **Camera/microphone permissions** and verification flow (selfie/liveness),
+- **Camera permission** and verification flow (selfie/liveness),
 - **Matching/messaging** interfaces,
 - **Complaint/blocking** flows,
 - **Premium/subscription** management (including store redirects),
@@ -227,7 +227,7 @@ Depending on the nature of the service, accessibility tests may cover the follow
   This section explains, with examples, the measures targeted for accessibility across WIN's main user flows.
 </Callout>
 
-### 5.1 Registration/Login (Google and phone login)
+### 5.1 Registration/Login (Google, Apple and phone login)
 
 - Ensuring interactive elements in login/account selection, OAuth redirects, and phone/OTP fields are **announced clearly** by screen readers,
 - In error cases (e.g., session could not be opened, code could not be sent), providing a **clear error message** and retry guidance,
@@ -261,9 +261,9 @@ Targeted accessibility measures in this flow:
 - Providing the user with **clear feedback** on upload/error states (e.g., file type, size),
 - (If available) alternative guidance in visual editing/cropping interfaces.
 
-### 5.5 Verification layer (camera/microphone permissions, selfie/liveness)
+### 5.5 Verification layer (camera permission, selfie/liveness)
 
-In WIN, there may be verification steps such as camera/microphone permissions and selfie/liveness for the purpose of "fake account prevention."
+In WIN, there may be verification steps such as camera permission and selfie/liveness for the purpose of "fake account prevention."
 
 - Presenting instructions clearly with **text and audio** support,
 - In situations such as time limits/retries, the goal is to provide **user control**.
@@ -312,7 +312,15 @@ These are taken as a basis. (See [Subscription and Purchase Terms](/sozlesmeler/
   This section includes typical accessibility limitations that may be encountered and recommended alternatives.
 </Callout>
 
-WIN aims to provide an accessible experience for all users. At present, there is **no known specific accessibility issue** related to screen readers, contrast, text enlargement, or navigation. However, general technological limitations may occur in the following situations:
+WIN aims to provide an accessible experience for all users. The **known accessibility limitations** in the current version of the app are listed below; we will update this list as we resolve them:
+
+- **Screen readers (VoiceOver / TalkBack):** Support is **partial**. Some elements such as the bottom menu tabs have accessible labels; however, some buttons, images and in particular the deck (card) flow may not be fully usable with a screen reader.
+- **Larger text (system text size):** The system text size is reflected on many screens of the app; however, on deck cards the text scale is **capped at 130%** and in some fixed-size areas text may be shown scaled down to fit. Very large text settings are not fully supported.
+- **Colour contrast:** White text on brand-gradient buttons and some small text on the chat screen (e.g. message times) do not meet the **WCAG 2.2 AA** contrast ratio everywhere. For this reason we do not declare the "Sufficient Contrast" feature in our store accessibility declarations.
+- **Theme:** The app is offered only with a dark theme; there is no light theme option.
+- **Reduce motion:** Page transitions and deck animations follow the device's "reduce motion" setting; some small animations (e.g. the loading logo, some feedback animations) may not be affected by this setting.
+- **Voice messages:** No transcript or captions are provided for voice messages.
+- **Selfie verification:** As stated in Section 5.5, there is currently no alternative technological verification method for users who cannot complete this step.
 
 <Callout type="warning" title="Alternative solution request">
   If you cannot complete a critical process (e.g., account access, verification, subscription management) due to a barrier, please contact us through the channels under [Section 7](#section-7-feedback-barrier-reporting-and-contact). To the extent appropriate, we will try to produce an alternative solution.
