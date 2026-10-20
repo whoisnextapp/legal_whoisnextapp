@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # Gizlilik Politikası
 
-**Son güncelleme:** 17.10.2026 · **Sürüm:** 1.9
+**Son güncelleme:** 20.10.2026 · **Sürüm:** 2.0
 
 Bu Gizlilik Politikası; **WIN** platformunu (“**Platform**”) kullanırken, kişisel verilerinizi nasıl ele aldığımızı **anlaşılır** ve **pratik** bir dille açıklar.
 
@@ -216,13 +216,13 @@ Profil oluşturma sırasında **doğum tarihiniz** ile birlikte **doğum yeriniz
 
 WIN, yakın kullanıcıları göstermek için konum bilgisini kullanır. **Konum geçmişi (location history) tutulmaz**; konum verisi uygulama açılışında GPS veya ağ sinyalleri üzerinden anlık olarak alınarak mesafe hesaplamalarında kullanılır. Konum izni verilmezse; konuma dayalı özellikler sınırlanabilir. İzin yönetimi: cihaz ayarları ve [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) (konum ve çerez/SDK sekmeleri).
 
-### 4.7 Selfie / liveness doğrulama (kamera izni) ve mikrofon izni
+### 4.7 Selfie / liveness doğrulama, kamera, galeri ve mikrofon izinleri
 
-Sahte hesabı azaltmak ve kullanıcı güvenini artırmak için selfie/liveness doğrulaması uygulanabilir. Bu akışta **kamera izni** istenebilir.
+Sahte hesabı azaltmak ve kullanıcı güvenini artırmak için selfie/liveness doğrulaması uygulanabilir. Bu akışta **kamera izni** istenebilir. **Kamera** ve **fotoğraf (galeri)** izni sohbette fotoğraf göndermek için de istenebilir; yalnızca sizin çektiğiniz ya da seçtiğiniz fotoğraf kullanılır (bkz. Bölüm 4.9).
 
 <Callout type="info" title="Mikrofon ve ses kaydı">
   **Selfie doğrulaması sırasında ses kaydı alınmaz**; doğrulama kamerası ses kaydı kapalı olarak çalışır.
-  Mikrofon izni, WIN Premium kapsamındaki **sesli mesaj** özelliği için istenir. Mikrofon yalnızca sohbet ekranında kayıt düğmesine basılı tuttuğunuz sürece kayıt yapar; kayıt, siz gönderdiğinizde sunucuya yüklenir. Sesli mesajların işlenmesi ve saklanması için bkz. Bölüm 4.9.
+  Mikrofon izni **sesli mesaj** özelliği için istenir. Mikrofon yalnızca sohbet ekranında kayıt düğmesine basılı tuttuğunuz sürece kayıt yapar; kayıt, siz gönderdiğinizde sunucuya yüklenir. Sesli mesajların işlenmesi ve saklanması için bkz. Bölüm 4.9.
 </Callout>
 
 Selfie doğrulama görüntülerinin profilde gösterilmemesi hedeflenir; bu alandaki işleme, saklama ve imha yaklaşımı için: [Biyometrik Veri Aydınlatma ve Rıza](/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza).
@@ -248,7 +248,8 @@ Platformu kullandığınızda, şu tür veriler oluşabilir:
 - **Etkileşimler:** Beğeni/ret, eşleşme, ikili seçim (dual picking) ve profil görüntüleme kayıtları.
 - **Puanlama (Evaluation):** Sohbet başladıktan sonra belirli bir etkileşim limitini aşan kullanıcılara; karşı tarafı Intelligence (Zeka), Politeness (Kibarlık) ve Fun (Eğlence) nitelikleri üzerinden değerlendirmesini sağlayan bir oylama aracı sunulur. Bu puanlar profil ortalamasına dahil edilir.
 - **Mesajlaşma:** Mesaj içeriği ve zaman meta verileri. Mesajlar **uçtan uca şifreli değildir**; moderasyon ve güvenlik amacıyla admin/moderatörler tarafından incelenebilir.
-- **Sesli mesajlar (WIN Premium):** Gönderdiğiniz ses kaydı (ses dosyası), süresi ve gönderim zamanı. Ses dosyaları Google Cloud / Firebase Storage üzerinde saklanır; uygulama içinde yalnızca sohbetin iki tarafı erişebilir ve metin mesajlar gibi moderasyon ve güvenlik amacıyla yetkili admin/moderatörlerce incelenebilir. Sesli mesajlar, kural olarak gönderimden **30 gün sonra** sohbetten otomatik olarak kaldırılır; kaldırılan sesli mesajın (ses dosyası ve mesaj kaydı) bir kopyası, güvenlik ve hukuki talepler amacıyla erişimi yetkili personelle sınırlı hukuki arşivde (sohbet arşivi) saklanır (bkz. Bölüm 9). Ses kayıtlarınız üzerinden ses tanıma veya biyometrik analiz yapılmaz.
+- **Sesli mesajlar:** Gönderdiğiniz ses kaydı (ses dosyası), süresi ve gönderim zamanı. Ses dosyaları Google Cloud / Firebase Storage üzerinde saklanır; uygulama içinde yalnızca sohbetin iki tarafı erişebilir ve metin mesajlar gibi moderasyon ve güvenlik amacıyla yetkili admin/moderatörlerce incelenebilir. Sesli mesajlar, kural olarak gönderimden **30 gün sonra** sohbetten otomatik olarak kaldırılır; kaldırılan sesli mesajın (ses dosyası ve mesaj kaydı) bir kopyası, güvenlik ve hukuki talepler amacıyla erişimi yetkili personelle sınırlı hukuki arşivde (sohbet arşivi) saklanır (bkz. Bölüm 9). Ses kayıtlarınız üzerinden ses tanıma veya biyometrik analiz yapılmaz.
+- **Sohbette fotoğraflar (uygulamanın 1.0.69 (124) sürümünden itibaren; App Store’daki sürüm adı 2.2):** Sohbette gönderdiğiniz fotoğraf, boyutları ve gönderim zamanı. Fotoğraf karşı tarafa iletilmeden önce WIN’in sunucularında yeniden işlenir (konum dahil fotoğraf meta verileri silinir) ve uygunsuz içerik bakımından **Google Cloud Vision** ile otomatik olarak denetlenir; denetimden geçmeyen fotoğraf karşı tarafa iletilmez ve [Topluluk Kuralları](/topluluk-ve-guvenlik/topluluk-kurallari) kapsamında değerlendirilebilir. Fotoğraflar Google Cloud / Firebase Storage üzerinde saklanır; uygulama içinde yalnızca sohbetin iki tarafı erişebilir ve metin mesajlar gibi moderasyon ve güvenlik amacıyla yetkili admin/moderatörlerce incelenebilir. Şikayet ettiğiniz ya da denetimden geçmeyen bir fotoğrafın bir kopyası, inceleme ve ihlal kaydı amacıyla erişimi yetkili personelle sınırlı olarak saklanır (bkz. Bölüm 9). Fotoğraflar, kural olarak gönderimden **30 gün sonra** sohbetten otomatik olarak kaldırılır; kaldırılan fotoğrafın (fotoğraf dosyası ve mesaj kaydı) bir kopyası sohbet arşivinde saklanır (bkz. Bölüm 9). Fotoğraflarınız üzerinden yüz tanıma veya biyometrik analiz yapılmaz.
 - **Güvenlik sinyalleri:** Şikayet, engelleme ve şüpheli davranış kayıtları.
 
 Bu veriler; eşleşme deneyimini yürütmek, kötüye kullanımı önlemek ve uyuşmazlıkları yönetmek amacıyla kullanılabilir.
@@ -402,18 +403,20 @@ Verilerin saklama süresi; işleme amacına, mevzuat yükümlülüklerine ve uyu
 Örnek:
 
 - **Hesabınız aktifken**: hizmeti sunmak için gerekli veriler saklanır.
-- **Sohbet arşivi**: Sohbetleriniz arşivlenmeden silinmez. Bir sohbet veya mesaj uygulamadan kaldırıldığında, ilgili mesajlar ve sesli mesaj dosyaları silinmeden önce erişimi yetkili personelle sınırlı bir hukuki arşive alınır; arşivdeki kopyalar diğer kullanıcılara kapalıdır ve uygulamada yeniden gösterilmez. Bu arşiv, uyuşmazlıklar ve resmî makam talepleri için ilgili zamanaşımı süreleri boyunca saklanır. Bu kural özellikle şu durumlarda uygulanır:
-  - **Hesap silme:** sizinle karşı taraflar arasındaki mesajlar ve sesli mesaj dosyaları,
-  - **Hesap dondurma:** karşı tarafların mesaj listelerinden kaldırılan sohbetlerinizin mesaj kayıtları; bu sohbetlerdeki sesli mesaj dosyaları dondurma sırasında silinmez, 30 günlük süreleri dolduğunda arşive alınarak kaldırılır,
-  - **Kişiyi kaldırma:** siz veya karşı taraf “Kişiyi kaldır” seçeneğini kullandığında iki taraftan da kaldırılan sohbet (sesli mesaj dosyaları dahil),
-  - **Sesli mesajların 30 günlük süresi:** gönderimden 30 gün sonra sohbetten kaldırılan sesli mesajlar,
+- **Sohbet arşivi**: Sohbetleriniz arşivlenmeden silinmez. Bir sohbet veya mesaj uygulamadan kaldırıldığında, ilgili mesajlar ile sesli mesaj ve fotoğraf dosyaları silinmeden önce erişimi yetkili personelle sınırlı bir hukuki arşive alınır; arşivdeki kopyalar diğer kullanıcılara kapalıdır ve uygulamada yeniden gösterilmez. Bu arşiv, uyuşmazlıklar ve resmî makam talepleri için ilgili zamanaşımı süreleri boyunca saklanır. Bu kural özellikle şu durumlarda uygulanır:
+  - **Hesap silme:** sizinle karşı taraflar arasındaki mesajlar ile sesli mesaj ve fotoğraf dosyaları,
+  - **Hesap dondurma:** karşı tarafların mesaj listelerinden kaldırılan sohbetlerinizin mesaj kayıtları; bu sohbetlerdeki sesli mesaj ve fotoğraf dosyaları dondurma sırasında silinmez, 30 günlük süreleri dolduğunda arşive alınarak kaldırılır,
+  - **Kişiyi kaldırma:** siz veya karşı taraf “Kişiyi kaldır” seçeneğini kullandığında iki taraftan da kaldırılan sohbet (sesli mesaj ve fotoğraf dosyaları dahil),
+  - **Sesli mesajların ve fotoğrafların 30 günlük süresi:** gönderimden 30 gün sonra sohbetten kaldırılan sesli mesajlar ve fotoğraflar,
   - **Gönderilemeyen sesli mesaj yüklemeleri:** yüklenip bir mesaja bağlanamayan (örneğin gönderimi yarıda kalan) ses dosyaları, temizlenirken aynı arşive alınır.
+  - **Mesajı bulunmayan fotoğraf dosyaları:** karşı tarafa iletildikten sonra hiçbir mesaja bağlı kalmayan fotoğraf dosyaları, temizlenirken aynı arşive alınır. Karşı tarafa hiç iletilmeyen fotoğraf yüklemeleri ise arşive alınmadan kısa süre içinde silinir (denetimden geçmeyen bir fotoğrafın ihlal kaydı için saklanan kopyası hariç; bkz. aşağıda “Diğer kayıtlar”).
 - **Sesli mesajlar**: kural olarak gönderimden 30 gün sonra sohbetten otomatik olarak kaldırılır. Kaldırılan sesli mesajın (ses dosyası ve mesaj kaydı) bir kopyası, güvenlik ve hukuki talepler amacıyla yukarıdaki sohbet arşivine alınır ve sohbet arşivinin saklama süresine tabidir.
+- **Sohbet fotoğrafları**: kural olarak gönderimden 30 gün sonra sohbetten otomatik olarak kaldırılır. Kaldırılan fotoğrafın (fotoğraf dosyası ve mesaj kaydı) bir kopyası, güvenlik ve hukuki talepler amacıyla yukarıdaki sohbet arşivine alınır ve sohbet arşivinin saklama süresine tabidir.
 - **Hesap silindiğinde**: profiliniz, fotoğraflarınız, doğrulama selfie’leriniz, destek ekleriniz ve giriş kaydınız silinir ve profiliniz diğer kullanıcılara kapanır. Ancak **tüm verileriniz hemen silinmez**; aşağıdaki kayıtlar belirtilen sürelerle saklanır:
   - **Silinen hesabın kopyası:** Hesap silindiği anda profil kaydınızın (bildirim jetonları hariç) tam bir kopyası ve seçtiğiniz silme nedeni, erişimi yetkili personelle sınırlı olarak **90 gün** saklanır ve bu sürenin sonunda otomatik olarak silinir. Bu saklama kuralının uygulanmaya başladığı Eylül 2026’dan önce silinmiş hesaplara ait kopyalar için 90 günlük süre, kuralın uygulanmaya başladığı tarihten itibaren işler. Amaç: kötüye kullanım ve dolandırıcılık incelemeleri, olası uyuşmazlıklar ve resmî makam talepleri.
-  - **Sohbet arşivi:** Hesap silindiğinde, sizinle karşı taraflar arasındaki mesajlar ve sesli mesaj dosyaları diğer kullanıcılara kapatılır ve yukarıda açıklanan sohbet arşivine alınır.
+  - **Sohbet arşivi:** Hesap silindiğinde, sizinle karşı taraflar arasındaki mesajlar ile sesli mesaj ve fotoğraf dosyaları diğer kullanıcılara kapatılır ve yukarıda açıklanan sohbet arşivine alınır.
   - **Yasaklı hesaplar:** Topluluk Kuralları ihlali nedeniyle erişimi engellenmiş bir hesap silinirse, yasaklı kişinin yeni hesap açmasını önlemek için bu hesaba ait yasak kaydı (WIN kullanıcı kimliği, telefon numarası, varsa e‑posta adresi ve yasak gerekçesi), yasak kaldırılmadıkça **süre sınırı olmaksızın** saklanır.
-  - **Diğer kayıtlar:** log/trafik kayıtları, moderasyon kararları ve ihlal delilleri ile ticari/işlem kayıtları mevzuatın ve [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) Bölüm 9’daki sürelerle saklanır. Üçüncü taraf sağlayıcılarda (ör. abonelik altyapısı, analitik ve reklam ölçümü) tutulan kayıtlar, ilgili sağlayıcının saklama sürelerine tabidir.
+  - **Diğer kayıtlar:** log/trafik kayıtları, moderasyon kararları ve ihlal delilleri (şikayet edilen ya da denetimden geçmeyen sohbet fotoğraflarının kopyaları dahil) ile ticari/işlem kayıtları mevzuatın ve [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) Bölüm 9’daki sürelerle saklanır. Üçüncü taraf sağlayıcılarda (ör. abonelik altyapısı, analitik ve reklam ölçümü) tutulan kayıtlar, ilgili sağlayıcının saklama sürelerine tabidir.
 
 Detaylı saklama yaklaşımı için: [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) ve [Kullanım Koşulları — Bölüm 13](/sozlesmeler/kullanim-kosullari#bölüm-13-hesap-sonlandırma-ve-fesih).
 

@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # Privacy Policy
 
-**Last updated:** 17.10.2026 · **Version:** 1.9
+**Last updated:** 20.10.2026 · **Version:** 2.0
 
 This Privacy Policy explains, in a **clear** and **practical** language, how we handle your personal data while you use the **WIN** platform (the "**Platform**").
 
@@ -216,13 +216,13 @@ During profile creation you are asked for your **date of birth** together with y
 
 WIN uses location information to show nearby users. **Location history is not kept**; location data is obtained instantly via GPS or network signals when the app is opened and used in distance calculations. If location permission is not granted, location-based features may be limited. Permission management: device settings and [KVKK Information Notice](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) (location and cookie/SDK tabs).
 
-### 4.7 Selfie / liveness verification (camera permission) and microphone permission
+### 4.7 Selfie / liveness verification, camera, gallery and microphone permissions
 
-Selfie/liveness verification may be applied to reduce fake accounts and increase user trust. In this flow **camera permission** may be requested.
+Selfie/liveness verification may be applied to reduce fake accounts and increase user trust. In this flow **camera permission** may be requested. **Camera** and **photo (gallery)** permission may also be requested for sending photos in chat; only the photo you take or select is used (see Section 4.9).
 
 <Callout type="info" title="Microphone and audio recording">
   **No audio is recorded during selfie verification**; the verification camera runs with audio recording turned off.
-  Microphone permission is requested for the **voice message** feature included in WIN Premium. The microphone records only while you press and hold the record button on the chat screen; the recording is uploaded to the server when you send it. For how voice messages are processed and retained, see Section 4.9.
+  Microphone permission is requested for the **voice message** feature. The microphone records only while you press and hold the record button on the chat screen; the recording is uploaded to the server when you send it. For how voice messages are processed and retained, see Section 4.9.
 </Callout>
 
 The selfie verification images are intended not to be displayed on the profile; for the processing, retention, and destruction approach in this area: [Biometric Data Notice and Consent](/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza).
@@ -248,7 +248,8 @@ When you use the Platform, the following types of data may be generated:
 - **Interactions:** Like/dislike, matching, dual picking, and profile view logs.
 - **Evaluation:** After the chat starts, users exceeding a specific interaction threshold are provided with a voting tool that allows evaluating the other party on Intelligence, Politeness, and Fun attributes. These scores are included in profile average.
 - **Messaging:** Message content and timestamp metadata. Messages are **not end-to-end encrypted**; they may be reviewed by admins/moderators for moderation and security purposes.
-- **Voice messages (WIN Premium):** The audio recording (audio file) you send, its duration and the time it was sent. Audio files are stored on Google Cloud / Firebase Storage; within the app only the two parties to the chat can access them and, like text messages, they may be reviewed by authorised admins/moderators for moderation and security purposes. As a rule, voice messages are removed from the chat automatically **30 days after** they are sent; a copy of the removed voice message (the audio file and the message record) is kept for security and legal-claims purposes in a legal archive (the chat archive) with access limited to authorised staff (see Section 9). No voice recognition or biometric analysis is performed on your recordings.
+- **Voice messages:** The audio recording (audio file) you send, its duration and the time it was sent. Audio files are stored on Google Cloud / Firebase Storage; within the app only the two parties to the chat can access them and, like text messages, they may be reviewed by authorised admins/moderators for moderation and security purposes. As a rule, voice messages are removed from the chat automatically **30 days after** they are sent; a copy of the removed voice message (the audio file and the message record) is kept for security and legal-claims purposes in a legal archive (the chat archive) with access limited to authorised staff (see Section 9). No voice recognition or biometric analysis is performed on your recordings.
+- **Photos in chat (from version 1.0.69 (124) of the app; App Store version name 2.2):** The photo you send in a chat, its dimensions and the time it was sent. Before it is delivered to the other party, the photo is re-processed on WIN's servers (photo metadata, including location, is removed) and automatically checked for inappropriate content with **Google Cloud Vision**; a photo that does not pass this check is not delivered to the other party and may be assessed under the [Community Guidelines](/topluluk-ve-guvenlik/topluluk-kurallari). Photos are stored on Google Cloud / Firebase Storage; within the app only the two parties to the chat can access them and, like text messages, they may be reviewed by authorised admins/moderators for moderation and security purposes. A copy of a photo you report, or of a photo that does not pass the check, is kept for review and as a record of the violation, with access limited to authorised staff (see Section 9). As a rule, photos are removed from the chat automatically **30 days after** they are sent; a copy of the removed photo (the photo file and the message record) is kept in the chat archive (see Section 9). No facial recognition or biometric analysis is performed on your photos.
 - **Security signals:** Complaint, blocking, and suspicious behavior records.
 
 This data may be used to operate the matching experience, prevent abuse, and manage disputes.
@@ -402,18 +403,20 @@ The retention period of data varies according to processing purpose, legal oblig
 Example:
 
 - **While your account is active**: data required to provide the service is retained.
-- **Chat archive**: Your chats are not deleted without being archived. When a chat or message is removed from the app, the messages and voice message files concerned are moved, before they are deleted, to a legal archive with access limited to authorised staff; archived copies are closed to other users and are not shown in the app again. This archive is retained for the relevant limitation periods for disputes and requests from authorities. This rule applies in particular in the following cases:
-  - **Account deletion:** the messages and voice message files between you and the other parties,
-  - **Account deactivation (freezing):** the message records of your chats that are removed from the other parties' message lists; the voice message files in these chats are not deleted when you deactivate your account and are moved to the archive and removed when their 30-day period expires,
-  - **Removing a person:** the chat that is removed from both sides when you or the other party use the “Remove” option (including voice message files),
-  - **30-day period of voice messages:** voice messages removed from the chat 30 days after they are sent,
+- **Chat archive**: Your chats are not deleted without being archived. When a chat or message is removed from the app, the messages, voice message files and photo files concerned are moved, before they are deleted, to a legal archive with access limited to authorised staff; archived copies are closed to other users and are not shown in the app again. This archive is retained for the relevant limitation periods for disputes and requests from authorities. This rule applies in particular in the following cases:
+  - **Account deletion:** the messages, voice message files and photo files between you and the other parties,
+  - **Account deactivation (freezing):** the message records of your chats that are removed from the other parties' message lists; the voice message and photo files in these chats are not deleted when you deactivate your account and are moved to the archive and removed when their 30-day period expires,
+  - **Removing a person:** the chat that is removed from both sides when you or the other party use the “Remove” option (including voice message and photo files),
+  - **30-day period of voice messages and photos:** voice messages and photos removed from the chat 30 days after they are sent,
   - **Unsent voice uploads:** audio files that were uploaded but never attached to a message (for example, an interrupted send) are moved to the same archive when they are cleaned up.
+  - **Photo files without a message:** photo files that no longer belong to any message after being delivered to the other party are moved to the same archive when they are cleaned up. Photo uploads that were never delivered to the other party are deleted within a short time without being archived (except for the copy of a photo that did not pass the check, kept as a record of the violation; see “Other records” below).
 - **Voice messages**: as a rule, removed from the chat automatically 30 days after they are sent. A copy of the removed voice message (the audio file and the message record) is moved to the chat archive above for security and legal-claims purposes and is subject to the retention period of the chat archive.
+- **Chat photos**: as a rule, removed from the chat automatically 30 days after they are sent. A copy of the removed photo (the photo file and the message record) is moved to the chat archive above for security and legal-claims purposes and is subject to the retention period of the chat archive.
 - **When your account is deleted**: your profile, photos, verification selfies, support attachments and sign-in record are deleted and your profile is closed to other users. However, **not all of your data is deleted immediately**; the following records are retained for the periods stated:
   - **Copy of the deleted account:** At the moment of deletion, a full copy of your profile record (excluding notification tokens) and the deletion reason you selected are retained for **90 days**, with access limited to authorised staff, and are deleted automatically at the end of that period. For copies of accounts deleted before this retention rule began to be applied in September 2026, the 90-day period runs from the date the rule began to be applied. Purpose: abuse and fraud investigations, possible disputes and requests from authorities.
-  - **Chat archive:** When an account is deleted, the messages and voice message files between you and the other parties are closed to other users and moved to the chat archive described above.
+  - **Chat archive:** When an account is deleted, the messages, voice message files and photo files between you and the other parties are closed to other users and moved to the chat archive described above.
   - **Banned accounts:** If an account whose access was blocked for violating the Community Guidelines is deleted, the ban record of that account (WIN user ID, phone number, e-mail address where available and the reason for the ban) is retained **without a time limit** unless the ban is lifted, to prevent the banned person from opening a new account.
-  - **Other records:** log/traffic records, moderation decisions and evidence of violations, and commercial/transaction records are retained for the periods in the legislation and in Section 9 of the [KVKK Information Notice](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni). Records held by third-party providers (e.g. subscription infrastructure, analytics and advertising measurement) are subject to the retention periods of the relevant provider.
+  - **Other records:** log/traffic records, moderation decisions and evidence of violations (including copies of chat photos that were reported or did not pass the check), and commercial/transaction records are retained for the periods in the legislation and in Section 9 of the [KVKK Information Notice](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni). Records held by third-party providers (e.g. subscription infrastructure, analytics and advertising measurement) are subject to the retention periods of the relevant provider.
 
 For the detailed retention approach: [KVKK Information Notice](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) and [Terms of Use — Section 13](/sozlesmeler/kullanim-kosullari#bölüm-13-hesap-sonlandırma-ve-fesih).
 
