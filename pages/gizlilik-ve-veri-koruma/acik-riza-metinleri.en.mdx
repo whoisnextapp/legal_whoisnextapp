@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # Explicit Consent Texts
 
-**Last updated:** 17.10.2026 · **Version:** 1.2
+**Last updated:** 20.10.2026 · **Version:** 1.3
 
 This page contains the **explicit consent** ("**Explicit Consent**") texts that may be obtained from users for specific data processing activities within the scope of the **WIN** platform ("**Platform**"), together with in-app design recommendations.
 
@@ -300,7 +300,8 @@ With the 2024 amendment, KVKK Art. 9 provides mechanisms such as **adequacy deci
 
     In the Platform's current technical architecture, the following providers are used and these providers' servers are predominantly located **abroad** (EU/US):
 
-    - **Google Cloud / Firebase:** Hosting, database, notification infrastructure; inappropriate content control on selfie (Google Cloud Vision - Safe Search). (Location: **EU**)
+    - **Google Cloud / Firebase:** Hosting, database, notification infrastructure. (Location: **EU**)
+    - **Google Cloud Vision:** Automated inappropriate content checks on photos (including profile photos and photos sent in chat). (Location: Google’s global infrastructure; may be processed outside the EU)
     - **Google Gemini 2.5 Flash:** Pose and selfie-based profile verification. (Location: **[GEMINI_REGION]**)
     - **MeiliSearch:** Search and filtering (catalog) infrastructure.
     - **Twilio:** SMS and email verification channels.
