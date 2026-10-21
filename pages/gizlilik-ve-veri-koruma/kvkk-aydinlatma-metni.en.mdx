@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # KVKK Disclosure Text
 
-**Last update:** 20.10.2026 · **Version:** 1.8
+**Last update:** 21.10.2026 · **Version:** 1.9
 
 This text has been prepared for the purpose of fulfilling the **disclosure obligation** regarding the processing of your personal data under the **Personal Data Protection Law No. 6698** ("**KVKK**") (KVKK Art. 10 and the **Communique on the Procedures and Principles to be Complied with in Fulfilling the Disclosure Obligation**) within the scope of the **WIN** platform ("**Platform**").
 
@@ -372,6 +372,8 @@ Example mapping table:
 | Official authority requests and legal compliance | traffic data/log, application records              | KVKK Art. 5/2(ç)                   |
 | Marketing communication (if you consent; including deciding to whom and when a notification is sent) | contact + consent records; notification token; app usage status | KVKK Art. 5/1 + ETK                |
 | Keeping users who have made a purchase out of purchase reminders, and aggregate measurement of the effect of marketing notifications | subscription and purchase status; marketing notification record (Section 9) | KVKK Art. 5/2(f)                   |
+| Reserving one of the first places in some decks (deck layout) and aggregate measurement of its effect | membership status (WIN Premium), app usage status (e.g. use of the free deck allowance), recent activity and verification status; deck layout record (Section 9) | KVKK Art. 5/2(c) and Art. 5/2(f) |
+| Reminding WIN Premium subscribers of chats awaiting their reply (service notification) | chat metadata (time, sender and read status of the last message), notification preference and token; chat reminder record (Section 9) | KVKK Art. 5/2(c) |
 | Astrology features                       | place/time of birth, natal chart results          | KVKK Art. 5/2(c)                   |
 | Voice messages                           | audio recording, duration, time sent              | KVKK Art. 5/2(c); for moderation Art. 5/2(f) |
 | Photos in chat                           | photo, dimensions, time sent, check result        | KVKK Art. 5/2(c); for automated content checks, moderation and report evidence Art. 5/2(f) |
@@ -503,6 +505,8 @@ Sample retention approach (final periods should be clarified according to techni
 | **Messaging and interaction**                           | proportional period in line with service provision + security/dispute needs; when a chat is removed from the app (account deletion, deactivation, removing a person) the chat archive rule above applies | Misuse reviews and objection processes may affect this                              |
 | **Selfie/liveness verification**                        | Verification image is processed instantly on Google (Gemini) side for verification; Firebase/Audit records are retained for a proportional period (2-10 years) for dispute and security purposes | High protection for biometric data; see biometric text                              |
 | **Contract Approvals and Commercial Evidence**          | **10 years**                                                                                                                   | General limitation period under Turkish Code of Obligations Art. 146 and financial obligations |
+| **Deck layout record**                                  | record of reserving one of the first places in some decks and of the related picks; deleted automatically **120 days** after the record was last updated | Provision of the service and aggregate measurement of its effect (KVKK Art. 5/2-c, f) |
+| **Chat reminder record**                                | record of reply reminders sent to WIN Premium subscribers (to apply per-person and per-chat limits); each reminder entry is kept for at most **30 days**, and the record is deleted automatically **30 days** after it was last updated | Provision of the service (KVKK Art. 5/2-c) |
 | **Marketing notification record**                       | record relating to sending marketing notifications and measuring their effect (app usage status, send and delivery information); kept for at most **90 days**, then deleted automatically. If you withdraw your marketing permission or delete your account, no marketing notifications are sent to you; until the end of this period the record is kept only for aggregate measurement of the effect | Sending: KVKK Art. 5/1 + ETK; aggregate measurement of the effect: KVKK Art. 5/2-f |
 | **Explicit consent / approval records**                 | proportional period for compliance and proof needs                                                                            | Burden of proof under ETK and KVKK and limitation periods may be considered         |
 | **KVKK applications**                                   | completion of the application + accountability period                                                                         | Application records may be retained for audit and proof purposes                    |

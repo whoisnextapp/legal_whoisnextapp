@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # KVKK Aydınlatma Metni
 
-**Son güncelleme:** 20.10.2026 · **Sürüm:** 1.8
+**Son güncelleme:** 21.10.2026 · **Sürüm:** 1.9
 
 Bu metin; **WIN** platformu (“**Platform**”) kapsamında kişisel verilerinizin **6698 sayılı Kişisel Verilerin Korunması Kanunu** (“**KVKK**”) uyarınca işlenmesine ilişkin **aydınlatma yükümlülüğünün** (KVKK m. 10 ve **KVKK Aydınlatma Yükümlülüğü Tebliği**) yerine getirilmesi amacıyla hazırlanmıştır.
 
@@ -356,6 +356,8 @@ Kişisel verileriniz; ilgili işleme faaliyetinin niteliğine göre aşağıdaki
 | Resmî makam talepleri ve mevzuat uyumu | trafik verisi/log, başvuru kayıtları              | KVKK m. 5/2(ç)                   |
 | Pazarlama iletişimi (izin verdiyseniz; bildirimin kime ve ne zaman gönderileceğinin belirlenmesi dahil) | iletişim + izin kayıtları; bildirim jetonu; uygulama kullanım durumu | KVKK m. 5/1 + ETK                |
 | Satın alma yapmış kullanıcıların satın almaya yönelik hatırlatmaların dışında tutulması ve pazarlama bildirimlerinin etkisinin toplu ölçümü | abonelik ve satın alma durumu; pazarlama bildirimi kaydı (Bölüm 9) | KVKK m. 5/2(f)                   |
+| Bazı destelerde ilk sıralardan birinin ayrılması (deste düzeni) ve bunun etkisinin toplu ölçümü | üyelik durumu (WIN Premium), uygulama kullanım durumu (ör. ücretsiz deste hakkının kullanımı), son aktiflik ve doğrulama durumu; deste düzeni kaydı (Bölüm 9) | KVKK m. 5/2(c) ve m. 5/2(f) |
+| WIN Premium abonelerine cevap bekleyen sohbet hatırlatması (hizmet bildirimi) | sohbet meta verisi (son mesajın zamanı, göndereni ve okunma durumu), bildirim tercihi ve jetonu; sohbet hatırlatması kaydı (Bölüm 9) | KVKK m. 5/2(c) |
 | Astroloji özellikleri                  | doğum yeri/saati, doğum haritası sonuçları        | KVKK m. 5/2(c)                   |
 | Sesli mesaj                            | ses kaydı, süre, gönderim zamanı                  | KVKK m. 5/2(c); moderasyon için m. 5/2(f) |
 | Sohbette fotoğraf                      | fotoğraf, boyut, gönderim zamanı, denetim sonucu  | KVKK m. 5/2(c); otomatik içerik denetimi, moderasyon ve şikayet kanıtı için m. 5/2(f) |
@@ -493,6 +495,8 @@ WIN, kişisel verilerinizi; işleme amaçlarının gerektirdiği süre boyunca v
 | **Selfie/liveness doğrulama**                           | Doğrulama görüntüsü Google (Gemini) tarafında doğrulama amacıyla anlık işlenir; Firebase/Audit kayıtları uyuşmazlık ve güvenlik amacıyla ölçülü süre (2-10 yıl) saklanır | Biyometrik veri için yüksek koruma; bkz. biyometrik metin                          |
 | **Sözleşme Onay ve Ticari Deliller**                    | **10 yıl**                                                                                                                    | TBK md. 146 uyarınca genel zamanaşımı süresi ve mali yükümlülükler                 |
 | **Pazarlama bildirimi kaydı**                           | pazarlama bildirimlerinin gönderimi ve etkisinin ölçümüne ilişkin kayıt (uygulama kullanım durumu, gönderim ve teslim bilgileri); en fazla **90 gün** saklanır, ardından otomatik olarak silinir. Pazarlama izninizi geri alırsanız veya hesabınızı silerseniz size pazarlama bildirimi gönderilmez; kayıt bu sürenin sonuna kadar yalnızca etkinin toplu ölçümü için tutulur | Gönderim: KVKK m. 5/1 + ETK; etkinin toplu ölçümü: KVKK m. 5/2-f |
+| **Deste düzeni kaydı**                                  | bazı destelerde ilk sıralardan birinin ayrılmasına ve buna bağlı seçimlere ilişkin kayıt; kaydın son güncellenmesinden **120 gün** sonra otomatik olarak silinir | Hizmetin sunumu ve etkinin toplu ölçümü (KVKK m. 5/2-c, f) |
+| **Sohbet hatırlatması kaydı**                           | WIN Premium abonelerine gönderilen cevap hatırlatmalarının kaydı (kişi ve sohbet başına sınırların uygulanması için); kayıttaki her hatırlatma bilgisi en fazla **30 gün** tutulur, kayıt son güncellenmesinden **30 gün** sonra otomatik olarak silinir | Hizmetin sunumu (KVKK m. 5/2-c) |
 | **Açık rıza / onay kayıtları**                          | uyum ve ispat ihtiyacı ile ölçülü süre                                                                                        | ETK ve KVKK kapsamında ispat yükümlülüğü ve zamanaşımı süreleri dikkate alınabilir |
 | **KVKK başvuruları**                                    | başvurunun sonuçlandırılması + hesap verebilirlik süresi                                                                      | Başvuru kayıtları denetim ve ispat amacıyla saklanabilir                           |
 
