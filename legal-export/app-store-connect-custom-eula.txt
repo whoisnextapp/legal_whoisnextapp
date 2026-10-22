@@ -9,7 +9,7 @@ BÖLÜM I — KULLANIM KOŞULLARI
 
 # Kullanım Koşulları
 
-**Son güncelleme:** 25.09.2026 · **Sürüm:** 1.4
+**Son güncelleme:** 22.10.2026 · **Sürüm:** 1.9
 
 Bu belge, WIN mobil uygulaması ve ilgili hizmetlerin kullanımına ilişkin kullanıcı ile işletmeci arasındaki hukuki ilişkiyi düzenler. Belgeyi kabul etmeden önce dikkatle okumanız önerilir. Kolay okunabilirlik için bölüm başlarında kısa özetlere yer verilmiştir; **bu özetler metnin tamamının yerine geçmez.**
 
@@ -96,12 +96,12 @@ Aşağıdaki terimler (Uygulama, Hizmetler, Üye, Eşleşme, Moderasyon vb.) ve
 | **Hesap**                                  | Sizin adınıza oluşturulan kullanıcı hesabı.                                                                                     |
 | **Profil**                                 | Hesabınıza bağlı, diğer kullanıcılara gösterilen bilgi ve içerikler.                                                            |
 | **Üye**                                    | Kayıtlı kullanıcı.                                                                                                              |
-| **Deck / Kart**                            | Keşif akışında ikişer ikişer gösterilen 4 profil kartından oluşan set (deste); desteyi bitirmek en fazla bir seçimle sonuçlanır.     |
+| **Deck / Kart**                            | Keşif akışında ikişer ikişer gösterilen en fazla 4 (bazen daha az) profil kartından oluşan set (deste); desteyi bitirmek en fazla bir seçimle sonuçlanır. |
 | **Eşleşme (Match)**                        | Seçilen kişinin sohbeti başlatmasıyla oluşan iletişim imkânı (karşılıklı beğeni mekanizması yoktur).                            |
 | **Doğrulama (Verification)**               | Hesap güvenliği ve sahte profil riskinin azaltılması için yapılan fotoğrafla doğrulama süreci (örn. selfie/canlılık doğrulama). |
 | **Selfie Doğrulama / Canlılık (Liveness)** | Kullanıcının profil fotoğrafıyla eşleşen canlı selfie/poz adımlarıyla gerçek kişi olduğu doğrulanması.                          |
 | **You Picked (Senin Seçtiklerin)**         | Keşif akışında (Deck) bir desteyi bitirdiğinizde seçtiğiniz ve listenize eklenen kişiler.                                       |
-| **Picked You (Seni Seçenler)**             | Sizi seçerek "You Picked" listesine ekleyen kullanıcılar. Mesajlaşma bu liste üzerinden başlatılır.                             |
+| **Picked You (Seni Seçenler)**             | Sizi seçerek "You Picked" listesine ekleyen kullanıcılar. Mesajlaşma bu liste üzerinden başlatılır; erkek hesaplarda bu listenin kapsamı ve mesaj gönderme Abonelik ve Satın Alma Koşulları Bölüm 3.8'e tabidir. |
 | **Bildirim / Raporlama (Report)**          | Bir kullanıcıyı veya içeriği, ihlal şüphesiyle uygulama içi kanallar üzerinden bildirme işlemi.                                 |
 | **Moderasyon**                             | Kullanıcı içeriği ve davranışlarının Koşullar ve mevzuat kapsamında değerlendirilmesi ve gerekli önlemlerin uygulanması.        |
 | **Kısıtlama / Askıya Alma / Kapatma**      | Hesap veya özelliklere erişimin sınırlanması, geçici durdurulması veya hesabın sonlandırılması.                                 |
@@ -212,7 +212,7 @@ WIN, sosyal tanışma ve eşleşme amacıyla kullanılan bir platformdur. Evlili
 
 ### 4.2 Ücretsiz ve Ücretli Özellikler
 
-Profilleri görmek, seçilmek, bildirim almak ve mesajlaşmak ücretsizdir. Seçim yapmak ücretli bir özelliktir: her hesap en az 2 ücretsiz desteyle başlar; ücretsiz kullanım hakkı ve bu hak kullanıldıktan sonra seçmeye devam etmek için gereken WIN Premium aboneliği Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari) Bölüm 3.7’de düzenlenir. Gelişmiş özellikler (örn. deste filtreleme, profil gizleme, puan görüntüleme vb.) de WIN Premium kapsamındadır.
+Profilleri görmek, seçilmek ve bildirim almak ücretsizdir; profil cinsiyeti "Erkek" olmayan hesaplarda "Seni Seçenler" listesini görmek ve mesajlaşmak da ücretsizdir. Uygulamanın 2.0 sürümünden itibaren erkek hesaplarda "Seni Seçenler" listesindeki kişilerin kim olduğunu görmek, onlarla sohbet başlatmak ve yeni sohbetlerde mesaj göndermek WIN Premium kapsamındadır (Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari) Bölüm 3.8). Seçim yapmak ücretli bir özelliktir: her hesap en az 2 ücretsiz desteyle başlar; ücretsiz kullanım hakkı ve bu hak kullanıldıktan sonra seçmeye devam etmek için gereken WIN Premium aboneliği Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari) Bölüm 3.7’de düzenlenir. Gelişmiş özellikler (örn. deste filtreleme, profil gizleme, puan görüntüleme vb.) de WIN Premium kapsamındadır.
 
 Ücretli özellikler, deneme süreleri, otomatik yenileme, fiyatlandırma ve iptal/iade süreçleri için Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari) geçerlidir. WIN, mevzuatın izin verdiği ölçüde, ücretli paketlerin kapsamını ve özelliklerin erişilebilirliğini zaman içinde değiştirebilir.
 
@@ -277,10 +277,10 @@ WIN, güvenlik, hesap yönetimi ve hizmet güncellemeleri gibi konularda uygulam
 
 WIN’in temel keşif deneyimi şu akışla sunulur:
 
-- **İkili Seçim (Dual Picking):** Bir deste, ikişer ikişer gösterilen 4 profilden oluşur. Karşınıza iki farklı profil kartı çıkar; birine çift dokunarak seçersiniz. Seçtiğiniz profil yanına yeni bir aday açılır ve yeniden seçim yapmanız istenir.
+- **İkili Seçim (Dual Picking):** Bir deste, ikişer ikişer gösterilen en fazla 4 profilden (bazen daha az) oluşur. Karşınıza iki farklı profil kartı çıkar; birine çift dokunarak seçersiniz. Seçtiğiniz profil yanına yeni bir aday açılır ve yeniden seçim yapmanız istenir.
 - **You Picked (Senin Seçtiklerin):** Bu akışın sonunda en son seçtiğiniz kişi "You Picked" olarak listenize eklenir.
-- **Picked You (Seni Seçenler):** Sizi "You Picked" olarak seçen kullanıcılar bu listede yer alır.
-- **Mesajlaşma Kısıtı:** Bir kullanıcıyla sohbet başlatabilmeniz için o kişinin sizi seçerek **"Picked You"** listenizde yer alması gerekir. Sohbeti başlatıp başlatmamaya her zaman seçilen kişi karar verir; seçim yapmak cevap, sohbet veya eşleşme garantisi vermez.
+- **Picked You (Seni Seçenler):** Sizi "You Picked" olarak seçen kullanıcılar bu listede yer alır. Uygulamanın 2.0 sürümünden itibaren erkek hesaplarda, aktif WIN Premium yoksa liste seçen kişilerin sayısını ve en fazla 3 seçenin küçültülmüş, bulanık fotoğrafını gösterir.
+- **Mesajlaşma Kısıtı:** Bir kullanıcıyla sohbet başlatabilmeniz için o kişinin sizi seçerek **"Picked You"** listenizde yer alması gerekir. Sohbeti başlatıp başlatmamaya her zaman seçilen kişi karar verir; seçim yapmak cevap, sohbet veya eşleşme garantisi vermez. Uygulamanın 2.0 sürümünden itibaren erkek hesaplarda sohbet başlatmak ve yeni sohbetlerde mesaj göndermek için ayrıca aktif bir WIN Premium aboneliği gerekir (Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari) Bölüm 3.8). Bu nedenle seçtiğiniz kişi bu kapsamdaysa sohbeti başlatması WIN Premium gerektirir; sizi seçen kişi bu kapsamdaysa ve sohbeti siz başlatırsanız, o kişi mesajlarınızı okuyabilir, ancak cevap yazması WIN Premium gerektirir.
 - **Listenin Güncellenmesi:** Sohbet başlattığınız kullanıcılar, "Picked You" listesinden kaldırılarak mesajlar listenize aktarılır.
 
 Kartlarda ve profil detayında aşağıdaki bilgiler gösterilebilir:
@@ -289,7 +289,7 @@ Kartlarda ve profil detayında aşağıdaki bilgiler gösterilebilir:
 - **Parametreler:** Boy, iş/meslek, burç, alışkanlıklar ve puanlar.
 
 **Premium Ayrıcalıkları:**
-Premium üyeler; (i) ücretsiz kullanım hakkı bittikten sonra seçim yapmaya devam etmeyi, (ii) 12 saatte bir yenilenen **12 deste** hakkını, (iii) seçtikleri kişinin "Picked You" listesinde üst sırada görünmeyi, (iv) destelerde yeni katılan profillere öncelikli erişimi, (v) desteleri filtreleyebilme özelliğini, (vi) profillerini tamamen gizleme (**hide profile**) özelliğini, (vii) diğer üyelerin online/offline durumlarını görmeyi, (viii) kendi puanlarını ve kullanıcıların size/diğerlerine verdiği puanları (Intelligence, Politeness, Fun) görmeyi, (ix) sesli mesaj göndermeyi ve (x) detaylı astrolojik uyum analizini talep edebilirler. Ücretsiz kullanım hakkı ve abonelik şartı için bkz. Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari) Bölüm 3.7.
+Premium üyeler; (i) erkek hesaplarda "Picked You" listesindeki kişileri görmeyi, onlarla sohbet başlatmayı ve yeni sohbetlerde mesaj göndermeyi, (ii) ücretsiz kullanım hakkı bittikten sonra seçim yapmaya devam etmeyi, (iii) 12 saatte bir yenilenen **12 deste** hakkını, (iv) seçtikleri kişinin "Picked You" listesinde üst sırada görünmeyi, (v) destelerde yeni katılan profillere öncelikli erişimi ve geçtikleri profillerin destelerde daha kısa sürede yeniden gösterilebilmesini, (vi) desteleri filtreleyebilme özelliğini, (vii) profillerini tamamen gizleme (**hide profile**) özelliğini, (viii) diğer üyelerin online/offline durumlarını görmeyi, (ix) kendi puanlarını ve kullanıcıların size/diğerlerine verdiği puanları (Intelligence, Politeness, Fun) görmeyi, (x) sesli mesaj ve (sunulduğu hâllerde) sohbette fotoğraf göndermeyi (uygulamanın 1.0.70 (126) ve sonraki sürümlerinde kadın ve non-binary hesaplarda ücretsizdir) ve (xi) detaylı astrolojik uyum analizini talep edebilirler. Ücretsiz kullanım hakkı, abonelik şartı ve erkek hesaplara ilişkin kapsam için bkz. Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari) Bölüm 3.7 ve 3.8.
 
 ── Profil ve içerik görünürlüğü ──
 
@@ -508,7 +508,7 @@ WIN, moderasyonu; kullanıcı bildirimleri, otomatik sistemler ve insan moderat�
 
 **Mesajlaşma ve Gizlilik:** Platformdaki mesajlaşmalar **uçtan uca şifreli (end-to-end encrypted) değildir.** Moderasyon ekipleri ve sistem yöneticileri; şikayet, güvenlik sinyali veya hukuka aykırılık şüphesi hâlinde mesaj içeriklerini inceleme yetkisine sahiptir. Moderasyon, hem hukuka aykırı içeriklere hem de Koşullara/Topluluk Kurallarına aykırı davranışlara yönelik olabilir.
 
-**Kullanıcı Değerlendirme (Intelligence, Politeness, Fun):** Sohbet sırasında, belirli bir etkileşim limitine (örn. 10 cümle) ulaşıldığında, tarafınıza diğer kullanıcıyı **karakteristik özellikler** (Zeka, Kibarlık, Eğlence vb.) üzerinden puanlamanızı öneren bir buton açılır. Bu puanlar anonimleştirilerek profillerin puan ortalamasını oluşturur ve güvenilir topluluk deneyimi için kullanılır.
+**Kullanıcı Değerlendirme (Intelligence, Politeness, Fun):** Sohbet sırasında, belirli bir etkileşim düzeyine ulaşıldığında, tarafınıza diğer kullanıcıyı **karakteristik özellikler** (Zeka, Kibarlık, Eğlence vb.) üzerinden puanlamanızı öneren bir buton açılır. Bu puanlar anonimleştirilerek profillerin puan ortalamasını oluşturur ve güvenilir topluluk deneyimi için kullanılır.
 
 ### 7.2 Şikayet Mekanizması
 
@@ -529,7 +529,7 @@ Sadece mesajlara cevap verilmemesi, seçimlerin sohbete dönüşmemesi, görüş
 #### 7.2.2 Bildirim nasıl yapılır?
 
 ### 1. Uygulama içinden bildirim
-Profil veya mesaj ekranındaki **“Şikayet Et”** seçeneği ile bildirim oluşturun.
+Profil veya mesaj ekranındaki **“Şikayet Et”** seçeneği ile bildirim oluşturun. Sohbette gelen bir fotoğrafı, fotoğrafa uzun basarak **“Fotoğrafı şikâyet et”** seçeneğiyle bildirebilirsiniz; şikayet edilen fotoğrafın bir kopyası inceleme için şikayet kaydına eklenebilir.
 
 ### 2. Sebep seçimi ve delil
 
@@ -597,18 +597,18 @@ Eşleşme ve öneri sistemleri, profil çıkarma (profiling), yapay zeka kullan�
 
 WIN, Hizmetleri daha kullanışlı hâle getirmek amacıyla **öneri sistemleri** kullanabilir. Bu sistemler; size gösterilen profilleri **sıralayabilir**, **önerebilir** veya belirli profilleri **daha az görünür** hâle getirebilir.
 
-Öneri sistemleri, aşağıdaki veri ve sinyallerin bir kısmını birlikte değerlendirebilir:
+Öneri sistemleri genel olarak şu bilgileri birlikte değerlendirir:
 
-- **Tercihleriniz ve filtreleriniz** (ör. yaş aralığı, mesafe, temel eşleşme tercihleri)
-- **Konum bilgisi** (izin verdiğiniz ölçüde) ve konumla ilişkili eşleşme sinyalleri
-- **Etkileşim geçmişi** (ör. beğeni/ret davranışları, mesajlaşma etkileşimleri)
-- **Güvenlik sinyalleri** (ör. engelleme/şikayet ilişkileri, doğrulama durumları)
-- **Profil kalitesi/tutarlılığına ilişkin sinyaller** (ör. eksik alanlar, tekrar eden davranış örüntüleri; profil doluluğuna dayalı teknik bir profil puanı)
-- **Yenilik ve aktiflik** (yeni katılan profillere ilk günlerde tanınan ek görünürlük; son zamanlarda aktif olma durumu)
-- **Editoryal seçim** (WIN ekibinin süreli olarak öne çıkardığı profiller) ve **moderasyon kararları** (görünürlüğün süreli olarak azaltılması veya keşif akışından çıkarılma)
-- **Ücretli görünürlük** (WIN Premium ve Görünürlük Haftası; bkz. Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari))
+- **Tercihleriniz ve filtreleriniz** (ör. kimi görmek istediğiniz, yaş aralığı)
+- **Konum ve yakınlık** (izin verdiğiniz ölçüde)
+- **Uygulamadaki etkinlik ve etkileşimler** (ör. son zamanlarda aktif olma, beğeni/ret ve seçimler)
+- **Profil bilgileri ve doğrulama durumu**
+- **Güvenlik ve moderasyon** (ör. engelleme/şikayet ilişkileri, moderasyon kararları)
+- **Editoryal seçim** (WIN ekibinin süreli olarak öne çıkardığı profiller; ücretli değildir)
+- **Deste düzeni** (bazı destelerde ilk sıralardan biri, son zamanlarda aktif ve doğrulama durumu uygun üyeler arasından üyelik veya kullanım durumu dikkate alınarak ayrılabilir; bkz. DSA Uyum Sayfası (https://legal.whoisnextapp.com/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi) Bölüm 12)
+- **WIN Premium** (WIN Premium üyeliği gösterilme olasılığını artırabilir; bkz. Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari))
 
-Deste, bu sinyallerle ağırlıklandırılmış bir **rastgele çekiliş** ile oluşturulur; ağırlıklar bir profilin gösterilme olasılığını artırır veya azaltır, ancak gösterimi garanti etmez. Ana parametrelerin ayrıntılı listesi DSA Uyum Sayfası (https://legal.whoisnextapp.com/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi) Bölüm 12’dedir.
+Bu bilgiler bir profilin gösterilme olasılığını artırabilir veya azaltabilir. Ana parametreler, göreli önemleri ve bunları nasıl değiştirebileceğiniz DSA Uyum Sayfası (https://legal.whoisnextapp.com/kurumsal-ve-yasal-uyumluluk/dsa-uyum-sayfasi) Bölüm 12’de açıklanır.
 
 Bu değerlendirmeler, eşleşme olasılığını artırmaya yönelik bir tahmin mekanizmasıdır; belirli bir eşleşme veya sonuç garanti edilmez.
 
@@ -640,7 +640,8 @@ WIN, Hizmet güvenliği ve dolandırıcılığın önlenmesi amacıyla bazı dur
 
 - şüpheli davranış örüntülerinde belirli özelliklerin geçici kısıtlanması,
 - şüpheli ödeme/işlem denemelerinde işlemin engellenmesi,
-- bot/spam davranışlarının tespitinde hesap güvenliği adımlarının tetiklenmesi.
+- bot/spam davranışlarının tespitinde hesap güvenliği adımlarının tetiklenmesi,
+- sohbette gönderilen fotoğrafların otomatik içerik denetimi; uygun bulunmayanların karşı tarafa iletilmemesi ve bunun Topluluk Kuralları ihlali sayılarak hesabın geçici olarak kısıtlanması veya inceleme için askıya alınması.
 
 Bu tür bir otomatik karar, sizin açınızdan önemli bir etki doğuruyorsa, mümkün olduğu ölçüde bilgilendirme yapılır ve itiraz/inceleme talebi için başvuru kanalı sunulur.
 
@@ -681,7 +682,7 @@ AB’de bulunan kullanıcılar için, DSA kapsamındaki raporlama ve şeffaflık
 
 ### 9.3 Sanal Öğeler
 
-WIN, şu aşamada **WIN Premium aboneliği** ile tek seferlik **deste paketleri** ve **Görünürlük Haftası** satışı yapmaktadır (bkz. Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari) Bölüm 3.5). Paket fiyatları pazar koşullarına göre **değişkenlik gösterebilir**; güncel fiyatlar her zaman uygulama içi satın alma ekranlarında gösterilir. Uygulama içinde satın alınabilir sanal para, coin veya kredi bulunmamaktadır. Deste paketleri ile promosyon amaçlı verilen **hediye desteler** (başarım rozetleri ve davet programı) hesaba bağlı, lisans niteliğinde kullanım haklarıdır; devredilemez ve nakde çevrilemez. Hediye destelerin hangi hesaplarda WIN Premium olmadan kullanılabileceği Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari) Bölüm 3.7’de düzenlenir. Gelecekte bu tür sanal öğelerin eklenmesi hâlinde, iade ve kullanım koşulları Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari)nda ayrıca belirtilir.
+WIN, şu aşamada **WIN Premium aboneliği** ile tek seferlik **deste paketleri** satışı yapmaktadır (bkz. Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari) Bölüm 3.5). Paket fiyatları pazar koşullarına göre **değişkenlik gösterebilir**; güncel fiyatlar her zaman uygulama içi satın alma ekranlarında gösterilir. Uygulama içinde satın alınabilir sanal para, coin veya kredi bulunmamaktadır. Deste paketleri ile promosyon amaçlı verilen **hediye desteler** (başarım rozetleri ve davet programı) hesaba bağlı, lisans niteliğinde kullanım haklarıdır; devredilemez ve nakde çevrilemez. Hediye destelerin hangi hesaplarda WIN Premium olmadan kullanılabileceği Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari) Bölüm 3.7’de düzenlenir. Gelecekte bu tür sanal öğelerin eklenmesi hâlinde, iade ve kullanım koşulları Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari)nda ayrıca belirtilir.
 
 ---
 
@@ -811,7 +812,7 @@ Hesabınıza ilişkin sonlandırma işlemleri iki farklı şekilde gerçekleşeb
 İsterseniz hesabınızı silmeden, uygulamadaki **Ayarlar > Hesabımı Dondur** adımıyla hesabınızı **dondurabilirsiniz**. Hesap dondurulduğunda:
 
 - Profiliniz diğer kullanıcılara gösterilmez, keşif akışından (Deck) çıkarılır ve kimse sizi seçemez. Dondurma, yalnızca çıkış yapmaktan farklı bir işlemdir; işlem tamamlandığında oturumunuz da kapatılır.
-- **Seni Seçenler** ve **Seçtiklerin** listeleriniz temizlenir ve sohbetleriniz karşı tarafların mesaj listelerinden kaldırılır. Hesabınızı yeniden etkinleştirdiğinizde bu seçimler ve sohbetler **geri gelmez**. Kaldırılan sohbetler arşivlenmeden silinmez: mesaj kayıtları erişimi yetkili personelle sınırlı hukuki arşive alınır; bu sohbetlerdeki sesli mesaj dosyaları dondurma sırasında silinmez ve 30 günlük süreleri dolduğunda aynı arşive alınır (bkz. Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi) Bölüm 9). Uygulama, dondurma işleminden önce bu sonucu ayrıca uyarı olarak gösterir.
+- **Seni Seçenler** ve **Seçtiklerin** listeleriniz temizlenir ve sohbetleriniz karşı tarafların mesaj listelerinden kaldırılır. Hesabınızı yeniden etkinleştirdiğinizde bu seçimler ve sohbetler **geri gelmez**. Kaldırılan sohbetler arşivlenmeden silinmez: mesaj kayıtları erişimi yetkili personelle sınırlı hukuki arşive alınır; bu sohbetlerdeki sesli mesaj ve fotoğraf dosyaları dondurma sırasında silinmez ve 30 günlük süreleri dolduğunda aynı arşive alınır (bkz. Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi) Bölüm 9). Uygulama, dondurma işleminden önce bu sonucu ayrıca uyarı olarak gösterir.
 - Tekrar giriş yaptığınızda hesabınızı yeniden etkinleştirebilirsiniz; profil bilgileriniz ve fotoğraflarınız korunur.
 - Dondurma, mağaza üzerinden alınmış aboneliği iptal etmez (bkz. 13.1.4) ve veri saklama ile yasal yükümlülüklere ilişkin saklama sürelerini kendiliğinden ortadan kaldırmaz (detay için Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi)). Dondurulmuş hesaplar bakımından 13.3’teki pasif hesap kuralları saklıdır.
 
@@ -821,7 +822,7 @@ Hesabınızı uygulama içindeki **Ayarlar > Hesabı Sil** adımlarını (silme 
 
 - **Silme derhal başlar:** Uygulamanın güncel sürümlerinde silme, onayınızın ardından derhal başlatılır; bekleme süresi yoktur. Silme teknik bir nedenle tamamlanamazsa sistem tarafından otomatik olarak yeniden denenir. Uygulamanın eski sürümlerinden 14 günlük bekleme süreli bir silme talebi oluşturulmuşsa, bu süre içinde tekrar giriş yaparak talebi iptal edebilir veya silmeyi hemen tamamlayabilirsiniz.
 - Profiliniz ve hesabınıza bağlı görünür alanlar diğer kullanıcılara kapatılır; profil bilgileriniz, fotoğraflarınız, doğrulama selfie’leriniz ve giriş kaydınız silinir.
-- **Tüm veriler hemen silinmez:** Silinen hesabın profil kaydının bir kopyası **90 gün** saklanıp otomatik olarak silinir; hesap silme sırasında sohbetler arşivlenmeden silinmez ve hukuki arşive alınır (gönderimden 30 gün sonra sohbetten kaldırılan sesli mesajlar da aynı arşive alınır); yasaklı hesaplara ait yasak kaydı (telefon numarası, varsa e‑posta adresi ve yasak gerekçesi dahil), yasak kaldırılmadıkça saklanır. Ayrıntılar ve süreler: Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi) Bölüm 9 ve KVKK Aydınlatma Metni (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) Bölüm 9.
+- **Tüm veriler hemen silinmez:** Silinen hesabın profil kaydının bir kopyası **90 gün** saklanıp otomatik olarak silinir; hesap silme sırasında sohbetler arşivlenmeden silinmez ve hukuki arşive alınır (gönderimden 30 gün sonra sohbetten kaldırılan sesli mesajlar ve fotoğraflar da aynı arşive alınır); yasaklı hesaplara ait yasak kaydı (telefon numarası, varsa e‑posta adresi ve yasak gerekçesi dahil), yasak kaldırılmadıkça saklanır. Ayrıntılar ve süreler: Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi) Bölüm 9 ve KVKK Aydınlatma Metni (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) Bölüm 9.
 - Hesabınıza bağlı seçim, mesajlaşma ve benzeri kayıtların uygulama içinden erişimi sona erer.
 - Uygulama içi sanal öğeler/avantajlar ve promosyon tanımları, hesapla birlikte sonlanabilir ve iade/bedel ödenmesi söz konusu olmayabilir (zorunlu yasal haklar saklıdır).
 
@@ -999,7 +1000,7 @@ BÖLÜM II — UYGULAMA İÇİ LİSANS SÖZLEŞMESİ (EULA)
 
 # Uygulama İçi Lisans Sözleşmesi (EULA)
 
-**Son güncelleme:** 25.09.2026 · **Sürüm:** 1.1
+**Son güncelleme:** 22.10.2026 · **Sürüm:** 1.2
 
 Bu belge; **WIN** mobil uygulamasının ("**Uygulama**") **yazılım olarak lisanslanmasına** ilişkin kuralları düzenleyen **Son Kullanıcı Lisans Sözleşmesi**’dir ("**EULA**"). Bu EULA, Uygulama yazılımını **hangi şartlarda** kullanabileceğinizi, **hangi kısıtların** bulunduğunu, **fikri mülkiyet haklarını** ve **mağaza/işletim sistemi ek koşullarını** açıklar.
 
@@ -1370,8 +1371,8 @@ Uygulama, işlevleri gereği aşağıdaki izinleri isteyebilir:
 
 | İzin            | Neden gerekli olabilir?                   | İlgili hukuki metin                                                                                                                      |
 | **Konum**       | Konum bazlı öneriler/eşleşmeler           | Açık Rıza Metinleri (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/acik-riza-metinleri), Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi) |
-| **Kamera**      | Profil fotoğrafı çekimi, selfie doğrulama | Biyometrik Veri Aydınlatma ve Rıza (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza)                                           |
-| **Mikrofon**    | Sesli mesaj kaydı (WIN Premium; yalnızca sohbet ekranında kayıt düğmesine basılı tuttuğunuz sürece). Selfie doğrulamasında ses kaydı alınmaz. | Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi) (Bölüm 4.7 ve 4.9)                                                    |
+| **Kamera**      | Profil fotoğrafı çekimi, selfie doğrulama, sohbette fotoğraf çekimi | Biyometrik Veri Aydınlatma ve Rıza (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza), Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi) (Bölüm 4.7 ve 4.9) |
+| **Mikrofon**    | Sesli mesaj kaydı (yalnızca sizin başlattığınız kayıt sürerken; sohbet ekranında ya da ilk mesaj panelinde). Selfie doğrulamasında ses kaydı alınmaz. | Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi) (Bölüm 4.7 ve 4.9)                                                    |
 | **Bildirimler** | Uygulama içi bildirim/push                | Açık Rıza Metinleri (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/acik-riza-metinleri)                                                                      |
 | **İzleme (yalnızca iOS, ATT)** | İsteğe bağlı; reklam kampanyalarının ölçümü için reklam tanımlayıcısının (IDFA) paylaşılması. İzin vermemeniz uygulamanın kullanımını etkilemez. | Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi) (Bölüm 4.14), Çerez Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/cerez-politikasi) |
 
