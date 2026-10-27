@@ -2,7 +2,7 @@
 
 import { Callout, Steps, Card, Cards } from "nextra/components";
 
-**Last updated:** 22.10.2026 · **Version:** 1.9
+**Last updated:** 27.10.2026 · **Version:** 2.0
 
 This document governs the legal relationship between the user and the operator regarding use of the WIN mobile application and related services. You are advised to read it carefully before accepting it. For ease of reading, short summaries appear at the start of sections; **these summaries do not replace the full text.**
 
@@ -147,9 +147,9 @@ Access to the account may be provided via **Google Sign-In (OAuth)**, **Sign in 
 
 **Phone sign‑in:** After the first identity step, **email verification** and **phone number verification** (OTP, etc.) are completed during **profile creation**, separately from the registration screen. Until these steps are completed, relevant parts of the service may be restricted.
 
-**Google sign‑in:** The email address shared via your Google account is generally treated as **already verified** under Google’s processes. After profile creation, you may be directed in the app to **phone number verification** to make picks on the deck, send messages in chats and for similar interactions; this verification is **mandatory**.
+**Google sign‑in:** The email address shared via your Google account is generally treated as **already verified** under Google’s processes. After profile creation, you may be directed in the app to **phone number verification** so that your picks on the deck can be delivered, to send messages in chats and for similar interactions; this verification is **mandatory**.
 
-**Sign in with Apple (iOS):** The technical user identifier Apple creates for your account, your email address (Apple's relay address if you use Apple's "Hide My Email" option) and, if you choose to share it, your name are used. After profile creation, **phone number verification** is mandatory here as well to make picks on the deck, send messages in chats and for similar interactions.
+**Sign in with Apple (iOS):** The technical user identifier Apple creates for your account, your email address (Apple's relay address if you use Apple's "Hide My Email" option) and, if you choose to share it, your name are used. After profile creation, **phone number verification** is mandatory here as well for your picks on the deck to be delivered, to send messages in chats and for similar interactions.
 
 By your sign‑in method you accept that:
 
@@ -215,7 +215,7 @@ Certain fields may be mandatory when creating a profile. For example:
 
 - **Name / profile name:** With Google sign‑in the name may be taken from Google; in the phone flow you may set it during profile creation. In both cases you may **change** the name in the app. The profile name **does not have to be your real name**; however it must comply with the [Community Guidelines](/topluluk-ve-guvenlik/topluluk-kurallari) (no insults, misleading information, etc.).
 - **Gender**, **date of birth (age)**
-- **Place of birth** (for the zodiac sign, natal chart and astrological compatibility features; the time of birth is optional and "I don't know" can be selected). Place and time of birth are not shown to other users on the profile screen; on their technical transmission for the astrological compatibility calculation see Section 4.5 of the [Privacy Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi).
+- **Place of birth** (for the natal chart and astrological compatibility features; optional from version 1.0.71 of the app, not asked during profile creation and can be added or deleted from your profile; the time of birth is optional as well and "I don't know" can be selected). Place and time of birth are not shown to other users; for details see Section 4.5 of the [Privacy Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi).
 - At least **one profile photo** (a clear view of the face may be required)
 
 The app may also ask for fields such as **occupation**, **height**, **smoking/alcohol frequency**, **zodiac sign**, **profile note (free text)**, various **preference/importance questions**, and **photo uploads** (e.g. multiple photo slots) to enrich your profile and improve matching/filtering.
@@ -251,7 +251,7 @@ If the match is successful, the relevant photo is marked as “verified” and r
 
 Matching suggestions and nearby experience may rely on location information. The app may show **distance** on cards (e.g. “5 km away”).
 
-WIN **does not keep location history**; location data is obtained in real time when the app opens via GPS or network signals and is used in distance calculations and the matching algorithm. If you turn off location permission, location‑based features may work in a limited way or not at all. Details on processing of location data are in the [Privacy Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi) and KVKK texts.
+WIN **does not keep location history**; if you have granted location permission on your device, location data is obtained in real time when the app opens via GPS or network signals and is used in distance calculations and the matching algorithm. If you turn off location permission, location‑based features may work in a limited way or not at all. In version 1.0.71 (131) of the app and later versions, granting location permission is optional: you can use the service without granting it; in this case the service is provided based on general regional information and distance is not shown. Details on processing of location data are in the [Privacy Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi) and KVKK texts.
 
 ### 4.6 Onboarding: Contracts, KVKK, and Explicit Consent Layer
 
@@ -277,6 +277,7 @@ WIN’s core discovery experience works as follows:
 
 - **Dual Picking:** A deck consists of up to 4 profiles (sometimes fewer) shown two at a time. Two different profile cards are shown; you choose one by double-tapping it. A new candidate opens next to the profile you chose and you are asked to choose again.
 - **You Picked:** At the end of this flow, the last person you picked is added to your list as “You Picked”.
+- **Delivery of picks:** For your pick to be delivered to the other person, you must have verified your phone number and had at least one of your profile photos verified with a selfie (see Sections 3.2 and 4.4). From version 1.0.71 of the app, where offered, a user who has not yet completed these verifications may also make a pick; that pick is delivered after the verifications are completed. If the verifications are not completed within a certain period, or if the picked profile is no longer available at that time, the pick is not delivered.
 - **Picked You:** Users who chose you as “You Picked” appear on this list. From app version 2.0, for male accounts without an active WIN Premium, the list shows the number of people who picked you and reduced, blurred photos of up to 3 of them.
 - **Messaging restriction:** To start a chat with a user, that person must have picked you and appear on your **“Picked You”** list. The picked person always decides whether to start the chat; making a pick does not guarantee a reply, a chat or a match. From app version 2.0, for male accounts, starting a chat and sending messages in new chats also require an active WIN Premium subscription (Section 3.8 of the [Subscription and Purchase Terms](/sozlesmeler/abonelik-ve-satin-alma-kosullari)). So if the person you picked falls under this rule, they need WIN Premium to start the chat; if the person who picked you falls under this rule and you start the chat, they can read your messages, but replying requires WIN Premium.
 - **List updates:** Users with whom you start a chat are removed from the “Picked You” list and moved to your messages list.
@@ -686,7 +687,7 @@ At this stage WIN sells the **WIN Premium subscription** and one-time **deck pac
 
 ## Section 9A: Advertisements and Third‑Party Content
 
-**No ads are currently shown in the app.** The Google Mobile Ads (AdMob) software component is installed in the app, but no ad units are used. If **advertisements**, **promotions** or **sponsored content** (banners, video, etc.) provided by third parties are shown in the Services in the future, these Terms, the [Privacy Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi) and the [Cookie Policy](/gizlilik-ve-veri-koruma/cerez-politikasi) will be updated accordingly and any required permissions will be requested separately. The Services may also include links to external websites/resources.
+**No ads are currently shown in the app.** If **advertisements**, **promotions** or **sponsored content** (banners, video, etc.) provided by third parties are shown in the Services in the future, these Terms, the [Privacy Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi) and the [Cookie Policy](/gizlilik-ve-veri-koruma/cerez-politikasi) will be updated accordingly and any required permissions will be requested separately. The Services may also include links to external websites/resources.
 
 If ads are shown, WIN **does not endorse** such advertisements or third-party content; it is **not responsible** for the availability, accuracy, or content of third-party sites, resources, or products/services they offer. Your interaction with such content is subject to the third party's own terms of use and privacy policies. No guarantee is given that advertisements will always be shown or in a particular format; WIN reserves the right to change advertising models at any time.
 

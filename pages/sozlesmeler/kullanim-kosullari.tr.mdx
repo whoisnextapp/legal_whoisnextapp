@@ -2,7 +2,7 @@
 
 import { Callout, Steps, Card, Cards } from "nextra/components";
 
-**Son güncelleme:** 22.10.2026 · **Sürüm:** 1.9
+**Son güncelleme:** 27.10.2026 · **Sürüm:** 2.0
 
 Bu belge, WIN mobil uygulaması ve ilgili hizmetlerin kullanımına ilişkin kullanıcı ile işletmeci arasındaki hukuki ilişkiyi düzenler. Belgeyi kabul etmeden önce dikkatle okumanız önerilir. Kolay okunabilirlik için bölüm başlarında kısa özetlere yer verilmiştir; **bu özetler metnin tamamının yerine geçmez.**
 
@@ -148,9 +148,9 @@ Hesaba erişim; **Google Sign-In (OAuth)**, **Apple ile Giriş** (Sign in with A
 
 **Telefon ile giriş:** İlk kimlik adımından sonra **e-posta doğrulaması** ve **telefon numarası doğrulaması** (OTP vb.), kayıt ekranından ayrı olarak **profil oluşturma sürecinde** tamamlanır. Bu adımlar tamamlanmadan hizmetin ilgili bölümleri kısıtlanabilir.
 
-**Google ile giriş:** Google hesabınız üzerinden paylaşılan e-posta adresi, Google’ın süreçleri uyarınca genellikle **zaten doğrulanmış** kabul edilir. Profil oluşturma sonrasında, desteden **seçim yapabilmek**, sohbette **mesaj gönderebilmek** ve benzeri etkileşimler için uygulama içinde **telefon numarası doğrulamasına** yönlendirilebilirsiniz; bu doğrulama **zorunludur**.
+**Google ile giriş:** Google hesabınız üzerinden paylaşılan e-posta adresi, Google’ın süreçleri uyarınca genellikle **zaten doğrulanmış** kabul edilir. Profil oluşturma sonrasında, desteden yaptığınız **seçimin iletilmesi**, sohbette **mesaj gönderebilmek** ve benzeri etkileşimler için uygulama içinde **telefon numarası doğrulamasına** yönlendirilebilirsiniz; bu doğrulama **zorunludur**.
 
-**Apple ile giriş (iOS):** Apple’ın hesabınız için oluşturduğu teknik kullanıcı kimliği, e‑posta adresiniz (Apple’ın “E‑postamı Gizle” seçeneğini kullanırsanız Apple’ın oluşturduğu aktarma adresi) ve paylaşmayı seçerseniz adınız kullanılır. Profil oluşturma sonrasında, desteden **seçim yapabilmek**, sohbette **mesaj gönderebilmek** ve benzeri etkileşimler için **telefon numarası doğrulaması** burada da zorunludur.
+**Apple ile giriş (iOS):** Apple’ın hesabınız için oluşturduğu teknik kullanıcı kimliği, e‑posta adresiniz (Apple’ın “E‑postamı Gizle” seçeneğini kullanırsanız Apple’ın oluşturduğu aktarma adresi) ve paylaşmayı seçerseniz adınız kullanılır. Profil oluşturma sonrasında, desteden yaptığınız **seçimin iletilmesi**, sohbette **mesaj gönderebilmek** ve benzeri etkileşimler için **telefon numarası doğrulaması** burada da zorunludur.
 
 Giriş yönteminizi kullanarak:
 
@@ -217,7 +217,7 @@ Profil oluştururken bazı alanlar zorunlu olabilir. Örnek olarak:
 
 - **İsim / profil adı**: Google ile girişte isim Google üzerinden atanabilir; telefon akışında profil oluşturma sırasında siz belirleyebilirsiniz. Her iki durumda da ismi uygulama içinden **değiştirebilirsiniz**. Profil adının **gerçek adınız olması zorunlu değildir**; ancak [Topluluk Kuralları](/topluluk-ve-guvenlik/topluluk-kurallari)na (hakaret, yanıltma vb. olmaması) uygun olmalıdır.
 - **Cinsiyet**, **doğum tarihi (yaş)**
-- **Doğum yeri** (burç, doğum haritası ve astrolojik uyum özellikleri için; doğum saati isteğe bağlıdır ve bilinmiyorsa “bilmiyorum” seçilebilir). Doğum yeri ve saati profil ekranında diğer kullanıcılara gösterilmez; astrolojik uyum hesabı için teknik olarak iletilmesi hakkında bkz. [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) Bölüm 4.5.
+- **Doğum yeri** (doğum haritası ve astrolojik uyum özellikleri için; uygulamanın 1.0.71 sürümünden itibaren isteğe bağlıdır, profil oluşturma sırasında sorulmaz ve profilinizden eklenebilir veya silinebilir; doğum saati de isteğe bağlıdır ve bilinmiyorsa “bilmiyorum” seçilebilir). Doğum yeri ve saati diğer kullanıcılara gösterilmez; ayrıntılar için bkz. [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) Bölüm 4.5.
 - En az **bir profil fotoğrafı** (yüzün net görünmesi istenebilir)
 
 Uygulama; profilinizi zenginleştirmek ve eşleşme/filtreleme deneyimini iyileştirmek amacıyla ayrıca şu tür alanları da sorabilir: **meslek**, **boy**, **sigara/alkol sıklığı**, **burç**, **profil notu (serbest metin)**, çeşitli **tercih/önem soruları** ve **fotoğraf yükleme** (örn. çoklu fotoğraf slotları).
@@ -250,7 +250,7 @@ WIN, hesap ve profil güvenliği için **Google Gemini 2.5 Flash** kullanarak fo
 
 Eşleşme önerileri ve yakın çevre deneyimi konum bilgisine dayanabilir. Uygulamada kartlarda **mesafe** bilgisi gösterilebilir (örn. “5 km uzakta”).
 
-WIN, **konum geçmişi (location history) tutmamaktadır**; konum verisi, uygulama açılışında GPS veya ağ sinyalleri üzerinden anlık olarak alınarak mesafe hesaplamalarında ve eşleşme algoritmasında kullanılır. Konum iznini kapatmanız hâlinde, konum temelli özellikler sınırlı çalışabilir veya kullanılamayabilir. Konum verisinin işlenmesine ilişkin detaylar için [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) ve KVKK metinleri geçerlidir.
+WIN, **konum geçmişi (location history) tutmamaktadır**; konum verisi, cihazınızda konum izni verdiyseniz, uygulama açılışında GPS veya ağ sinyalleri üzerinden anlık olarak alınarak mesafe hesaplamalarında ve eşleşme algoritmasında kullanılır. Konum iznini kapatmanız hâlinde, konum temelli özellikler sınırlı çalışabilir veya kullanılamayabilir. Uygulamanın 1.0.71 (131) ve sonraki sürümlerinde konum izni vermek isteğe bağlıdır: izin vermeseniz de hizmeti kullanabilirsiniz; bu durumda hizmet genel bölge bilgisiyle sunulur ve mesafe gösterilmez. Konum verisinin işlenmesine ilişkin detaylar için [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) ve KVKK metinleri geçerlidir.
 
 ### 4.6 Onboarding: Sözleşmeler, KVKK ve Açık Rıza Katmanı
 
@@ -276,6 +276,7 @@ WIN’in temel keşif deneyimi şu akışla sunulur:
 
 - **İkili Seçim (Dual Picking):** Bir deste, ikişer ikişer gösterilen en fazla 4 profilden (bazen daha az) oluşur. Karşınıza iki farklı profil kartı çıkar; birine çift dokunarak seçersiniz. Seçtiğiniz profil yanına yeni bir aday açılır ve yeniden seçim yapmanız istenir.
 - **You Picked (Senin Seçtiklerin):** Bu akışın sonunda en son seçtiğiniz kişi "You Picked" olarak listenize eklenir.
+- **Seçimin İletilmesi:** Seçiminizin karşı tarafa iletilmesi için telefon numaranızı doğrulamış ve en az bir profil fotoğrafınızı selfie ile doğrulatmış olmanız gerekir (bkz. Bölüm 3.2 ve 4.4). Uygulamanın 1.0.71 sürümünden itibaren, sunulduğu hâllerde, bu doğrulamaları henüz tamamlamamış bir kullanıcı da seçim yapabilir; bu seçim, doğrulamalar tamamlandıktan sonra iletilir. Doğrulamalar belirli bir süre içinde tamamlanmazsa veya seçilen profil o sırada artık uygun değilse seçim iletilmez.
 - **Picked You (Seni Seçenler):** Sizi "You Picked" olarak seçen kullanıcılar bu listede yer alır. Uygulamanın 2.0 sürümünden itibaren erkek hesaplarda, aktif WIN Premium yoksa liste seçen kişilerin sayısını ve en fazla 3 seçenin küçültülmüş, bulanık fotoğrafını gösterir.
 - **Mesajlaşma Kısıtı:** Bir kullanıcıyla sohbet başlatabilmeniz için o kişinin sizi seçerek **"Picked You"** listenizde yer alması gerekir. Sohbeti başlatıp başlatmamaya her zaman seçilen kişi karar verir; seçim yapmak cevap, sohbet veya eşleşme garantisi vermez. Uygulamanın 2.0 sürümünden itibaren erkek hesaplarda sohbet başlatmak ve yeni sohbetlerde mesaj göndermek için ayrıca aktif bir WIN Premium aboneliği gerekir ([Abonelik ve Satın Alma Koşulları](/sozlesmeler/abonelik-ve-satin-alma-kosullari) Bölüm 3.8). Bu nedenle seçtiğiniz kişi bu kapsamdaysa sohbeti başlatması WIN Premium gerektirir; sizi seçen kişi bu kapsamdaysa ve sohbeti siz başlatırsanız, o kişi mesajlarınızı okuyabilir, ancak cevap yazması WIN Premium gerektirir.
 - **Listenin Güncellenmesi:** Sohbet başlattığınız kullanıcılar, "Picked You" listesinden kaldırılarak mesajlar listenize aktarılır.
@@ -706,7 +707,7 @@ WIN, şu aşamada **WIN Premium aboneliği** ile tek seferlik **deste paketleri*
 
 ## Bölüm 9A: Reklamlar ve Üçüncü Taraf İçerikleri
 
-**Şu an uygulamada reklam gösterilmemektedir.** Uygulamada Google Mobile Ads (AdMob) yazılım bileşeni yüklü olmakla birlikte reklam birimi kullanılmamaktadır. İleride Hizmetlerde üçüncü taraflarca sunulan **reklamlar**, **tanıtımlar** veya **sponsorlu içerikler** (banner, video vb.) gösterilmesi hâlinde bu Koşullar, [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) ve [Çerez Politikası](/gizlilik-ve-veri-koruma/cerez-politikasi) buna göre güncellenir ve gerekli izinler ayrıca istenir. Hizmetler ayrıca dış web sitelerine/kaynaklara yönlendiren bağlantılar içerebilir.
+**Şu an uygulamada reklam gösterilmemektedir.** İleride Hizmetlerde üçüncü taraflarca sunulan **reklamlar**, **tanıtımlar** veya **sponsorlu içerikler** (banner, video vb.) gösterilmesi hâlinde bu Koşullar, [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) ve [Çerez Politikası](/gizlilik-ve-veri-koruma/cerez-politikasi) buna göre güncellenir ve gerekli izinler ayrıca istenir. Hizmetler ayrıca dış web sitelerine/kaynaklara yönlendiren bağlantılar içerebilir.
 
 Reklam gösterilmesi hâlinde WIN; bu tür reklamları veya üçüncü taraf içeriklerini **onaylamaz**; üçüncü taraf sitelerinin, kaynaklarının veya sundukları ürün/hizmetlerin erişilebilirliği, doğruluğu veya içeriğinden **sorumlu değildir**. Bu tür içeriklerle etkileşiminiz, ilgili üçüncü tarafın kendi kullanım koşulları ve gizlilik politikalarına tabidir. Reklamların her zaman sunulacağı veya belirli bir biçimde gösterileceği yönünde garanti verilmez; WIN, reklam modellerini dilediği zaman değiştirme hakkını saklı tutar.
 

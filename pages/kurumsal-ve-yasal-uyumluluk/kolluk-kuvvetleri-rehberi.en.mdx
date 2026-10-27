@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # Law Enforcement Guidelines
 
-**Last updated:** 13.02.2026 · **Version:** 1.0
+**Last updated:** 27.10.2026 · **Version:** 1.1
 
 This guide explains how **legal data requests** submitted by **law enforcement** and other **competent public authorities** (courts, Offices of the Chief Public Prosecutor, regulatory/administrative authorities, etc.) are received, verified, assessed, and answered in connection with services operated by **WIN** (“**Platform**”).
 
@@ -542,7 +542,7 @@ Public authorities may use the form on the [Illegal Content Notice Form](/basvur
 | **Messaging data** | Message content, attachments | Stored on Google Firebase; not end-to-end encrypted. |
 | **Report/complaint data** | User reports, screenshots | May contain third-party data; minimization is important. |
 | **Technical/session data** | Device ID, IP, session login/last seen time, error logs | Last seen data is on the server; technical error logs are stored on Firebase/SDK infrastructure. |
-| **Location data** | Approximate or precise (GPS) location information | The app is location-based (finding the nearest user). Retained for the legal retention periods foreseen in legislation. |
+| **Location data** | Approximate or precise (GPS) location information | Processed if the user has granted location permission on their device (showing nearby users, distance); location permission is optional. Retained for the legal retention periods foreseen in legislation. |
 | **Payment/subscription** | Transaction ID, package type, period | Store records and commercial evidence retention periods (10 years) apply. |
 | **Verification data** | Selfie photos, verification result (success/fail) | Photo verification is performed with **Google Gemini 2.5 Flash**. Raw selfie/profile photos are stored on Firebase. WIN accesses the verification result (success/fail) through this process. |
 

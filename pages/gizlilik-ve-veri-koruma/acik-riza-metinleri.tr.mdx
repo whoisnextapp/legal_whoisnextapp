@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # Açık Rıza Metinleri
 
-**Son güncelleme:** 20.10.2026 · **Sürüm:** 1.3
+**Son güncelleme:** 27.10.2026 · **Sürüm:** 1.4
 
 Bu sayfa; **WIN** platformu (“**Platform**”) kapsamında, belirli veri işleme faaliyetleri için kullanıcıdan alınabilecek **açık rıza** (“**Açık Rıza**”) metinlerini ve uygulama içi tasarım önerilerini içerir.
 
@@ -98,7 +98,7 @@ WIN’de kullanıcıdan alınan “evet”lerin tamamı aynı hukuki kategori de
     - (Mekanizmaya göre) **yurt dışına aktarım** (KVKK m. 9)
     - (Ürün kurgusuna göre) **konum** ve benzeri yüksek hassasiyetli veriler
 
-    **Önemli:** Belirli rızaların (özellikle biyometrik doğrulama ve yurt dışı aktarım) verilmesi, Platformun güvenliği ve hizmetin teknik olarak sunulabilmesi için **fonksiyonel bir zorunluluk** olarak belirlenebilir; bu durumda rıza verilmemesi Platform kullanımını kısıtlayabilir.
+    **Önemli:** Belirli rızaların (özellikle biyometrik doğrulama ve yurt dışı aktarım) verilmesi, Platformun güvenliği ve hizmetin teknik olarak sunulabilmesi için **fonksiyonel bir zorunluluk** olarak belirlenebilir; bu durumda rıza verilmemesi Platform kullanımını kısıtlayabilir. Uygulamanın 1.0.71 (131) ve sonraki sürümlerinde **konum** bu kapsamda değildir: konum bilgisi yalnızca cihazınızda konum iznini verirseniz işlenir; konum izni vermemeniz Platformu kullanmanızı engellemez.
 
   </Tab>
   <Tab>
@@ -140,13 +140,13 @@ Onboarding “Hukuki Onay & Açık Rıza” ekranında; en az şu linkler görü
 - [Kullanım Koşulları](/sozlesmeler/kullanim-kosullari)
 - (Uygulanabilir olduğu ölçüde) [Çerez Politikası](/gizlilik-ve-veri-koruma/cerez-politikasi)
 
-Ardından, aşağıdaki rıza kutuları **ayrı ayrı** gösterilir. **Önemli:** Platformun güvenliğini ve fonksiyonel işleyişini sağlamak adına bu rızaların verilmesi onboarding aşamasında **zorunlu** tutulmuştur.
+Ardından, aşağıdaki rıza kutuları **ayrı ayrı** gösterilir. **Önemli:** Platformun güvenliğini ve fonksiyonel işleyişini sağlamak adına bu rızaların verilmesi onboarding aşamasında **zorunlu** tutulmuştur. Uygulamanın 1.0.71 (131) ve sonraki sürümlerinde konum bu zorunluluğun dışındadır: kayıt sırasındaki rıza, konum bilgisi bakımından yalnızca cihazınızda konum iznini vermeniz hâlinde geçerlidir; konum izni isteğe bağlıdır ve izin vermeseniz de Platformu kullanabilirsiniz.
 
 ### Adım 2: Rızaları ayrıştır (tek kutuya “her şey” koyma)
 
 Örnek ayrıştırma:
 
-- Konum verisi işleme (GPS - Sadece Ön Plan)
+- Konum verisi işleme (GPS - Sadece Ön Plan; isteğe bağlı, konum izni verilirse)
 - Özel nitelikli/hassas alanlar (din/siyasi görüş vb.)
 - Yurt dışına aktarım (**[GEMINI_REGION]** / Firebase EU)
 - Pazarlama iletileri (SMS, E-posta, Push)
@@ -158,7 +158,7 @@ Her checkbox yanında “Detay” linki ile, ilgili rızanın **detaylı metni**
 
 ### Adım 4: Kayıt/ispata uygun log tut
 
-Kullanıcının platformu kullanmaya başlaması için bu rızaları vermesi zorunludur. Bu nedenle, kullanıcının **kayıt olduğu tarih ve o tarihte yürürlükte olan politika sürümü**, rıza ispatının temelini oluşturur.
+Kullanıcının platformu kullanmaya başlaması için bu rızaları vermesi zorunludur (uygulamanın 1.0.71 (131) ve sonraki sürümlerinde konum hariç; bkz. Adım 1). Bu nedenle, kullanıcının **kayıt olduğu tarih ve o tarihte yürürlükte olan politika sürümü**, rıza ispatının temelini oluşturur.
 
 ### Adım 5: Geri çekme ve tercih yönetimi
 
@@ -179,21 +179,23 @@ Kullanıcı; rızalarını uygulama içindeki **Ayarlar > Yasal > Rızalar** ekr
 
 ---
 
-## 4.1 Konum Verisi İşleme Açık Rızası (konum bazlı eşleşme)
+## 4.1 Konum Verisi İşleme Açık Rızası (isteğe bağlı)
 
 <Callout type="info" title="Checkbox etiketi (kısa metin) — önerilen">
-  Konum bilgilerimin (yaklaşık/kesin) **yakınımdaki kullanıcıları önermek** ve
-  **mesafe göstermek** amacıyla işlenmesini kabul ediyorum.
+  Konum iznini verirsem, konum bilgilerimin (yaklaşık/kesin) **yakınımdaki
+  kullanıcıları önermek** ve **mesafe göstermek** amacıyla işlenmesini kabul
+  ediyorum.
 </Callout>
 
 <Callout type="info" title="Detaylı açık rıza metni (popup / sayfa) — şablon">
-Platformda; **yakınımdaki kullanıcıları önermek**, **mesafe bilgisi göstermek** ve eşleşme deneyimini sağlamak amacıyla, cihazımdan elde edilen **kesin konum (GPS enlem-boylam)** bilgilerimin işlenmesine açık rıza veriyorum.
+Platformda; cihazımda konum iznini vermem hâlinde, **yakınımdaki kullanıcıları önermek**, **mesafe bilgisi göstermek** ve eşleşme deneyimini iyileştirmek amacıyla, cihazımdan elde edilen **kesin konum (GPS enlem-boylam)** bilgilerimin işlenmesine açık rıza veriyorum.
 
 Bu kapsamda:
 
+- Konum iznini vermenin **isteğe bağlı** olduğunu ve bu rızanın yalnızca cihazımda konum iznini vermem hâlinde geçerli olduğunu,
 - Konum verisinin **yalnızca uygulama açıkken (ön planda)** işleneceğini, arka planda konum takibi yapılmayacağını,
 - Konum iznini **cihaz ayarlarımdan** veya uygulama içi **Ayarlar** bölümünden her zaman yönetebileceğimi,
-- Rızamı geri çektiğimde konuma dayalı özelliklerin (eşleşme, mesafe gösterme vb.) çalışmayacağını,
+- Uygulamanın 1.0.71 (131) ve sonraki sürümlerinde konum iznini vermemem veya rızamı geri çekmem hâlinde de Platformu kullanabileceğimi; bu durumda yakınımdaki kullanıcıları önerme ve mesafe gösterme gibi konuma dayalı özelliklerin çalışmayabileceğini veya sınırlanabileceğini,
 - Rızayı geri çekmenin, geri çekme öncesi işlemlerin hukuka uygunluğunu etkilemeyeceğini
 
 bildiğimi kabul ederim.
@@ -412,9 +414,9 @@ Detaylı envanter ve tercih yönetimi çerçevesi için: [Çerez Politikası](/g
 </Callout>
 
 <Callout type="info" title="Detaylı rıza metni (popup / sayfa) — şablon">
-**Kişiselleştirilmiş Reklam Rızası (AdMob)**
+**Kişiselleştirilmiş Reklam Rızası**
 
-Platformda reklam gösterimi amacıyla **Google AdMob** altyapısı kullanılmaktadır. Şu an için kişiselleştirilmiş reklam hedeflemesi aktif olmasa da; reklam tanımlayıcılarımın (IDFA/GAID gibi) ve kullanım verilerimin reklam performansı ölçümü amacıyla işlenmesine açık rıza veriyorum.
+Reklam tanımlayıcılarımın (IDFA/GAID gibi) ve kullanım verilerimin reklam performansı ölçümü amacıyla işlenmesine açık rıza veriyorum.
 
 Bu kapsamda:
 

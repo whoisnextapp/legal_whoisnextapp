@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # Onboarding İzin Ekranları (Cihaz İzinleri ve Açıklamalar)
 
-**Son güncelleme:** 22.10.2026 · **Sürüm:** 1.3
+**Son güncelleme:** 27.10.2026 · **Sürüm:** 1.4
 
 Bu doküman, WIN’in ilk açılış (onboarding) sürecinde kullanıcıdan isteyebileceği **cihaz izinlerini** (konum, bildirim, kamera, mikrofon, fotoğraflar/galeri) **ekran ekran** ve **metin metin** tarif eder.
 
@@ -102,9 +102,13 @@ Konum kullanan özellik ilk kez çalıştırılmadan hemen önce **konum izni** 
 
 ### 3.4 Kullanıcıya gösterilecek ön açıklama (öneri metin)
 
-> Konum izni, sana yakın kullanıcıları gösterebilmemiz ve mesafe bilgisini hesaplayabilmemiz için gereklidir.  
-> Konumunu **kesin adres olarak paylaşmayız**; uygulama içinde yalnızca mesafe gibi türetilmiş bilgiler gösterilir.  
-> İzni istemezsen, konum bazlı eşleşme ve mesafe özellikleri çalışmayabilir.
+Uygulamanın 1.0.71 (131) ve sonraki sürümlerinde konum izni **isteğe bağlıdır**. Ön açıklama ekranı cihaz başına en fazla bir kez gösterilir ve tek bir düğmesi vardır: **“Devam”**. Kullanıcı sistem penceresinde hangi yanıtı verirse versin uygulamaya geçer. Ekranda “izin vermelisin” / “izin ver” gibi zorlayıcı ifade kullanılmaz (Apple 5.1.1(iv) ve 5.1.5).
+Uygulamadaki metin (`locationPrePromptBody` + `locationPrePromptContinue`):
+
+> Yakınındaki profilleri gösterebilmek için konumunu kullanmak istiyoruz. İzin vermesen de uygulamayı kullanmaya devam edebilirsin.  
+> [Devam]
+
+Kayıt ekranındaki zorunlu rıza metni konumu izne bağlar: “Kişisel verilerimin, konum iznini verirsem konum bilgimin ve özel nitelikli verilerimin …”. Ayarlar > Yasal > Rızalar ekranında konum “İsteğe bağlı” başlığı altındadır.
 
 ### 3.5 Sistem izin penceresi (iOS/Android) için notlar
 
@@ -123,9 +127,10 @@ Konum kullanan özellik ilk kez çalıştırılmadan hemen önce **konum izni** 
 
 ### 3.6 İzin verilmezse ne olur?
 
+- Uygulama kullanılmaya devam eder (1.0.71 (131) ve sonraki sürümler); hizmet genel bölge bilgisiyle sunulur
 - Konum bazlı öneriler çalışmayabilir veya sınırlı çalışır
-- Mesafe bilgisi gösterilemeyebilir
-- Kullanıcı, daha sonra Ayarlar’dan izni vererek özelliği yeniden etkinleştirebilir
+- Mesafe bilgisi gösterilmez
+- Kullanıcı, daha sonra Ayarlar’daki “Konum izni” satırından veya cihaz ayarlarından izni vererek özelliği yeniden etkinleştirebilir
 
 ---
 

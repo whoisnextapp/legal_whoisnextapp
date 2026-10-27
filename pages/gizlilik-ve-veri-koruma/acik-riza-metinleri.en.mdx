@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # Explicit Consent Texts
 
-**Last updated:** 20.10.2026 · **Version:** 1.3
+**Last updated:** 27.10.2026 · **Version:** 1.4
 
 This page contains the **explicit consent** ("**Explicit Consent**") texts that may be obtained from users for specific data processing activities within the scope of the **WIN** platform ("**Platform**"), together with in-app design recommendations.
 
@@ -98,7 +98,7 @@ Not all "yes" responses obtained from users in WIN belong to the same legal cate
     - Depending on the mechanism, **cross-border transfer** (KVKK Art. 9)
     - Depending on product design, **location** and similarly high-sensitivity data
 
-    **Important:** Granting certain consents (especially biometric verification and cross-border transfer) may be designated as a **functional necessity** for platform security and technical provision of the service; in this case, failure to grant consent may restrict use of the Platform.
+    **Important:** Granting certain consents (especially biometric verification and cross-border transfer) may be designated as a **functional necessity** for platform security and technical provision of the service; in this case, failure to grant consent may restrict use of the Platform. In version 1.0.71 (131) of the app and later versions, **location** is not within this scope: location information is processed only if you grant location permission on your device; not granting location permission does not prevent you from using the Platform.
 
   </Tab>
   <Tab>
@@ -140,13 +140,13 @@ On the onboarding "Legal Approval & Explicit Consent" screen, at minimum the fol
 - [Terms of Use](/sozlesmeler/kullanim-kosullari)
 - (To the extent applicable) [Cookie Policy](/gizlilik-ve-veri-koruma/cerez-politikasi)
 
-Then, the consent checkboxes below are shown **separately**. **Important:** In order to ensure the security and functional operation of the Platform, granting these consents is kept **mandatory** at the onboarding stage.
+Then, the consent checkboxes below are shown **separately**. **Important:** In order to ensure the security and functional operation of the Platform, granting these consents is kept **mandatory** at the onboarding stage. In version 1.0.71 (131) of the app and later versions, location is outside this requirement: with respect to location information, the consent given at registration applies only if you grant location permission on your device; location permission is optional and you can use the Platform without granting it.
 
 ### Step 2: Separate consents (do not put "everything" into one checkbox)
 
 Sample separation:
 
-- Location data processing (GPS - Foreground Only)
+- Location data processing (GPS - Foreground Only; optional, if location permission is granted)
 - Special category/sensitive fields (religion/political opinion, etc.)
 - Cross-border transfer (**[GEMINI_REGION]** / Firebase EU)
 - Marketing messages (SMS, Email, Push)
@@ -158,7 +158,7 @@ With the "Detail" link next to each checkbox, the **detailed text** of the relev
 
 ### Step 4: Keep logs suitable for record/proof
 
-In order for the user to start using the platform, granting these consents is mandatory. Therefore, the user's **registration date and the policy version in force on that date** form the basis of consent proof.
+In order for the user to start using the platform, granting these consents is mandatory (except location in version 1.0.71 (131) of the app and later versions; see Step 1). Therefore, the user's **registration date and the policy version in force on that date** form the basis of consent proof.
 
 ### Step 5: Withdrawal and preference management
 
@@ -179,21 +179,23 @@ The user can manage or withdraw consents via the in-app **Settings > Legal > Con
 
 ---
 
-## 4.1 Explicit Consent for Processing Location Data (location-based matching)
+## 4.1 Explicit Consent for Processing Location Data (optional)
 
 <Callout type="info" title="Checkbox label (short text) — recommended">
-  I accept the processing of my location information (approximate/precise) for
-  the purpose of **recommending nearby users** and **displaying distance**.
+  If I allow location access, I accept the processing of my location information
+  (approximate/precise) for the purpose of **recommending nearby users** and
+  **displaying distance**.
 </Callout>
 
 <Callout type="info" title="Detailed explicit consent text (popup / page) — template">
-On the Platform, I give explicit consent to the processing of my **precise location (GPS latitude-longitude)** information obtained from my device for the purposes of **recommending nearby users**, **displaying distance information**, and enabling the matching experience.
+On the Platform, if I grant location permission on my device, I give explicit consent to the processing of my **precise location (GPS latitude-longitude)** information obtained from my device for the purposes of **recommending nearby users**, **displaying distance information**, and improving the matching experience.
 
 Within this scope:
 
+- I acknowledge that granting location permission is **optional** and that this consent applies only if I grant location permission on my device,
 - I acknowledge that location data will be processed **only while the app is open (foreground)** and that no background location tracking will be performed,
 - I acknowledge that I can always manage location permission via **device settings** or the in-app **Settings** section,
-- I acknowledge that if I withdraw my consent, location-based features (matching, distance display, etc.) will not function,
+- I acknowledge that in version 1.0.71 (131) of the app and later versions I can use the Platform even if I do not grant location permission or withdraw my consent, and that in this case location-based features such as recommending nearby users and displaying distance may not work or may be limited,
 - I acknowledge that withdrawal of consent will not affect the lawfulness of processing prior to withdrawal
 
 I hereby declare that I have been informed and accept.
@@ -411,9 +413,9 @@ For a detailed inventory and preference management framework: [Cookie Policy](/g
 </Callout>
 
 <Callout type="info" title="Detailed consent text (popup / page) — template">
-**Personalized Advertising Consent (AdMob)**
+**Personalized Advertising Consent**
 
-**Google AdMob** infrastructure is used for ad display on the Platform. Although personalized ad targeting is not currently active, I give explicit consent to the processing of my advertising identifiers (such as IDFA/GAID) and usage data for ad performance measurement purposes.
+I give explicit consent to the processing of my advertising identifiers (such as IDFA/GAID) and usage data for ad performance measurement purposes.
 
 Within this scope:
 

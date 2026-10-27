@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # KVKK Aydınlatma Metni
 
-**Son güncelleme:** 22.10.2026 · **Sürüm:** 1.9
+**Son güncelleme:** 27.10.2026 · **Sürüm:** 2.0
 
 Bu metin; **WIN** platformu (“**Platform**”) kapsamında kişisel verilerinizin **6698 sayılı Kişisel Verilerin Korunması Kanunu** (“**KVKK**”) uyarınca işlenmesine ilişkin **aydınlatma yükümlülüğünün** (KVKK m. 10 ve **KVKK Aydınlatma Yükümlülüğü Tebliği**) yerine getirilmesi amacıyla hazırlanmıştır.
 
@@ -186,7 +186,7 @@ Toplama yöntemlerine örnekler:
     - **Üçüncü taraf giriş ve kayıt:** Google OAuth (ad-soyad, e‑posta, profil fotoğrafı, Google kullanıcı kimliği), Apple ile Giriş — yalnızca iOS (Apple kullanıcı kimliği, e‑posta adresi — “E‑postamı Gizle” seçilirse Apple’ın aktarma adresi — ve paylaşmayı seçerseniz ad) ve telefon numarası ile giriş (SMS/OTP) kullanılabilir. Doğum tarihi Google’dan alınmaz; profil oluşturma sırasında sizden istenir.
     - **E‑posta ve telefon doğrulaması:** Telefon ile girişte e‑posta ve telefon doğrulama adımları **profil oluşturma sürecinde** tamamlanır. Google ile girişte e‑posta genellikle Google tarafında doğrulanmış kabul edilir; profil sonrası **seçim yapma** ve **mesaj gönderme** gibi etkileşimler için **telefon doğrulaması** zorunlu olabilir.
     - **Profil alanları:** İsim/profil adı, doğum tarihi, cinsiyet, meslek, boy, burç, sigara/alkol sıklığı, profil notu (bio).
-    - **Doğum bilgileri (astroloji):** Doğum yeri (ülke/il/ilçe; bu yerin yaklaşık koordinatları ve saat dilimi) ve isteğe bağlı doğum saati (bilinmiyorsa “bilinmiyor” olarak kaydedilir); bunlardan hesaplanan burç ve doğum haritası sonuçları. Doğum yeri ve saati profil ekranında diğer kullanıcılara gösterilmez; ancak astrolojik uyum hesabı için profilinizin gösterildiği kullanıcının uygulamasına teknik olarak iletilir (bkz. [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) Bölüm 4.5).
+    - **Doğum bilgileri (astroloji):** Doğum yeri (ülke/il/ilçe; bu yerin yaklaşık koordinatları ve saat dilimi) ve isteğe bağlı doğum saati (bilinmiyorsa “bilinmiyor” olarak kaydedilir); bunlardan hesaplanan burç ve doğum haritası sonuçları. Uygulamanın 1.0.71 sürümünden itibaren doğum yeri de isteğe bağlıdır; doğum yeri ve saati profil oluşturma sırasında sorulmaz, dilediğiniz zaman profilinizden ekleyebilir veya silebilirsiniz. Doğum yeri ve saati diğer kullanıcılara gösterilmez; profiliniz bazı ekranlarda görüntülendiğinde o kullanıcının uygulamasına teknik olarak iletilebilir (bkz. [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) Bölüm 4.5).
     - **Tercih/uyum parametreleri:**
         - **Din:** İnanmıyorum (Ateist/Agnostik), Hayatımın merkezinde değil, Önemli, Çok önemli.
         - **Siyasi Görüş:** Politikayla ilgilenmiyorum, Farklı görüşte olabilir, Bir noktada önemli, Aynı görüşte olmamız çok önemli.
@@ -274,7 +274,7 @@ Platformun işleyişine göre aşağıdaki veri kategorileri işlenebilir:
 | **İletişim**                                   | e‑posta (Google/OAuth veya profilde doğrulanan), telefon numarası (OTP ile doğrulanan), destek iletişim bilgileri | Resmî bildirimler kayıtlı e‑posta/uygulama içi bildirimle yapılabilir.                                                 |
 | **Hesap/Platform kimlikleri**                  | kullanıcı ID, Google user ID ve Apple kullanıcı kimliği (teknik), oturum bilgileri          | Güvenlik ve hesap yönetimi için gereklidir.                                                                            |
 | **Cihaz/oturum kimliği**                       | uygulama kurulum kimliği (Android: “wn-…”; iOS: IDFV), SMS doğrulama için cihaz ve IP bazlı gönderim sayaçları | Tek cihaz oturumu ve hesap güvenliği için kullanılır; reklam tanımlayıcısı değildir.                                  |
-| **Doğum bilgileri (astroloji)**                | doğum yeri (ve yaklaşık koordinatı/saat dilimi), isteğe bağlı doğum saati, doğum haritası sonuçları | Profil ekranında diğer kullanıcılara gösterilmez (uyum hesabı için profilin gösterildiği kullanıcının uygulamasına teknik olarak iletilir); burç ve (sunulduğu ölçüde) uyum sonucu gösterilebilir.                      |
+| **Doğum bilgileri (astroloji)**                | doğum yeri (ve yaklaşık koordinatı/saat dilimi; 1.0.71 sürümünden itibaren isteğe bağlı), isteğe bağlı doğum saati, doğum haritası sonuçları | Diğer kullanıcılara gösterilmez (profilin görüntülendiği bazı ekranlarda o kullanıcının uygulamasına teknik olarak iletilebilir); burç ve (sunulduğu ölçüde) uyum sonucu gösterilebilir.                      |
 | **Ses kaydı**                                  | sesli mesaj dosyaları, süre ve gönderim zamanı                                              | Kural olarak 30 gün sonra sohbetten otomatik kaldırılır; bir kopyası erişimi kısıtlı sohbet arşivinde saklanır (Bölüm 9). Ses tanıma veya biyometrik analiz yapılmaz. |
 | **Sohbet fotoğrafı**                           | sohbette gönderilen fotoğraflar, boyut, gönderim zamanı, otomatik denetim sonucu            | İletilmeden önce konum dahil meta veriler silinir ve otomatik olarak denetlenir; kural olarak 30 gün sonra sohbetten kaldırılır, bir kopyası erişimi kısıtlı sohbet arşivinde saklanır (Bölüm 9). Yüz tanıma veya biyometrik analiz yapılmaz. |
 | **Profil verileri**                            | meslek, boy, burç, sigara/alkol sıklığı, profil notu                                        | Profil notu serbest metin olduğundan hassas veri paylaşmamanız önerilir.                                               |
@@ -358,7 +358,7 @@ Kişisel verileriniz; ilgili işleme faaliyetinin niteliğine göre aşağıdaki
 | Satın alma yapmış kullanıcıların satın almaya yönelik hatırlatmaların dışında tutulması ve pazarlama bildirimlerinin etkisinin toplu ölçümü | abonelik ve satın alma durumu; pazarlama bildirimi kaydı (Bölüm 9) | KVKK m. 5/2(f)                   |
 | Bazı destelerde ilk sıralardan birinin ayrılması ve deste sıralaması (deste düzeni) ile bunların etkisinin toplu ölçümü | üyelik durumu (WIN Premium), uygulama kullanım durumu (ör. ücretsiz deste hakkının kullanımı), son aktiflik ve doğrulama durumu; deste düzeni kaydı (Bölüm 9) | KVKK m. 5/2(c) ve m. 5/2(f) |
 | Cevap bekleyen veya henüz görülmemiş sohbetler için hatırlatma (hizmet bildirimi) | sohbet meta verisi (son mesajın zamanı, göndereni ve okunma durumu), bildirim tercihi ve jetonu; sohbet hatırlatması kaydı (Bölüm 9) | KVKK m. 5/2(c) |
-| Astroloji özellikleri                  | doğum yeri/saati, doğum haritası sonuçları        | KVKK m. 5/2(c)                   |
+| Astroloji özellikleri                  | doğum yeri/saati (girildiyse), doğum haritası sonuçları | KVKK m. 5/2(c)                   |
 | Sesli mesaj                            | ses kaydı, süre, gönderim zamanı                  | KVKK m. 5/2(c); moderasyon için m. 5/2(f) |
 | Sohbette fotoğraf                      | fotoğraf, boyut, gönderim zamanı, denetim sonucu  | KVKK m. 5/2(c); otomatik içerik denetimi, moderasyon ve şikayet kanıtı için m. 5/2(f) |
 | Tek cihaz oturumu ve SMS kötüye kullanım sınırları | kurulum/cihaz kimliği, IP adresi       | KVKK m. 5/2(c) ve m. 5/2(f)      |
@@ -430,10 +430,11 @@ WIN; Platformu işletmek ve iyileştirmek için hizmet sağlayıcılarla çalı�
 - **Barındırma ve altyapı sağlayıcıları** (Google Cloud / Firebase - **EU Region**, Wix CMS)
 - **Arama ve deste (öneri) altyapısı** (Meilisearch Cloud — AB/Frankfurt bölgesi: deste oluşturmak için profil özet alanları — yaş, cinsiyet ve görmek istenen cinsiyet, yaklaşık konum, yaşam tarzı ve önem derecesi cevapları, doğrulama/premium durumu, aktiflik ve moderasyon görünürlük bilgileri)
 - **Analitik ve performans/hata izleme** sağlayıcıları (Google Analytics - GA4, Firebase Crashlytics, Sentry)
-- **Reklam ölçümü (atıf)** sağlayıcıları (Meta Platforms — Facebook SDK; TikTok — TikTok Events SDK; iOS’ta Apple Search Ads atıf bilgisi RevenueCat üzerinden). Uygulamada Google Mobile Ads (AdMob) SDK’sı yüklüdür ancak **şu an reklam gösterilmemektedir**; ileride reklam gösterilirse bu metin güncellenir.
+- **Reklam ölçümü (atıf)** sağlayıcıları (Meta Platforms — Facebook SDK; TikTok — TikTok Events SDK; iOS’ta Apple Search Ads atıf bilgisi RevenueCat üzerinden). Uygulamada **şu an reklam gösterilmemektedir**; ileride reklam gösterilirse bu metin güncellenir.
 - **Bildirim ve iletişim** sağlayıcıları (Google, Store Vantage CRM; SMS doğrulama için Twilio)
 - **Ödeme ve abonelik** altyapıları (Apple App Store / Google Play; abonelik yönetimi için RevenueCat, Inc. — ABD)
 - **Doğrulama ve içerik denetimi sağlayıcıları** (**Google Gemini 2.5 Flash** — bölge: **[GEMINI_REGION]**; **Google Cloud Vision** — fotoğraflar (profil fotoğrafları ve sohbette gönderilen fotoğraflar dahil) üzerinde otomatik uygunsuz içerik denetimi)
+- **Destek hizmeti sağlayıcıları** (yapay zekâ tabanlı araçlar dahil)
 
 Bu sağlayıcılar, koşullara göre **veri işleyen** veya **bağımsız veri sorumlusu** konumunda olabilir.
 
@@ -464,7 +465,7 @@ Platform; bulut altyapısı veya bazı hizmet sağlayıcıların yurt dışında
 
 Yurt dışı aktarım rızaları, [Açık Rıza Metinleri](/gizlilik-ve-veri-koruma/acik-riza-metinleri) içinde detaylandırıldığı şekilde, amaç-özgülük ilkesine uygun olarak alınır.
 
-Yurt dışında bulunan başlıca alıcılar: Google (bulut altyapısı, analitik, hata izleme, doğrulama, içerik denetimi), RevenueCat, Inc. (ABD — abonelik altyapısı), Meta Platforms ve TikTok (reklam ölçümü), Twilio (SMS doğrulama) ve Meilisearch Cloud (AB — arama/deste altyapısı).
+Yurt dışında bulunan başlıca alıcılar: Google (bulut altyapısı, analitik, hata izleme, doğrulama, içerik denetimi), RevenueCat, Inc. (ABD — abonelik altyapısı), Meta Platforms ve TikTok (reklam ölçümü), Twilio (SMS doğrulama), Meilisearch Cloud (AB — arama/deste altyapısı) ve destek hizmeti sağlayıcıları (yapay zekâ tabanlı araçlar dahil).
 
 ---
 

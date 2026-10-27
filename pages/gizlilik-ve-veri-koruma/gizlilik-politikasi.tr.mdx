@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # Gizlilik Politikası
 
-**Son güncelleme:** 22.10.2026 · **Sürüm:** 2.1
+**Son güncelleme:** 27.10.2026 · **Sürüm:** 2.2
 
 Bu Gizlilik Politikası; **WIN** platformunu (“**Platform**”) kullanırken, kişisel verilerinizi nasıl ele aldığımızı **anlaşılır** ve **pratik** bir dille açıklar.
 
@@ -91,7 +91,7 @@ Bu nedenle profil notu ve mesajlarda telefon numarası, e‑posta, açık adres 
     - **Profil notu** (kısa serbest metin)
     - **Profil özet alanları** (örn. burç, boy, meslek, sigara/alkol sıklığı gibi alanlar)
     - **“O mu, bu mu?” cevapları** (yanıtladıysanız). Bunlardan biri, aynı cevabı veren bir üyeye deste kartında veya bildirimde ortak cevap olarak ya da siz işaretlerseniz seçtiğiniz kişiye seçme nedeni olarak (bkz. Bölüm 4.9) kısaca gösterilebilir.
-    - **Mesafe / yaklaşık konum** (örn. “5 km uzakta”)
+    - **Mesafe / yaklaşık konum** (örn. “5 km uzakta”; konum izni verdiyseniz)
     - **Uyumluluk/puan göstergeleri:** Sohbet esnasındaki değerlendirmelerden türetilen Intelligence (Zeka), Politeness (Kibarlık) ve Fun (Eğlence) kategorilerindeki puan ortalamaları.
     - **Çevrim içi (Online) / Son görülme:** Uygulamadaki aktiflik durumunuz (Bu bilgi **yalnızca Premium** üyeler tarafından görülebilir).
     - **Mavi/Yeşil Tik:** Fotoğrafla doğrulanmış profillerde görülen doğrulama rozeti.
@@ -143,7 +143,7 @@ Google ve Apple; kendi hizmetleri bakımından **bağımsız veri sorumlusu** ol
 
 İlk kullanımda; KVKK metinleri ve sözleşmeler için bağlantılar sunulur ve ayrı ayrı işaretlenebilir izin/rıza kutuları gösterilir. Örnek rıza konuları:
 
-- **Konum verisi işleme**
+- **Konum verisi işleme** (isteğe bağlı; cihazınızda konum izni verirseniz — bkz. Bölüm 4.6)
 - **Selfie/yüz doğrulama**
 - **Eşleşme tercihleri ve uyumluluk parametreleri**
 - **Yurt dışına aktarım** (bulut altyapısı / sağlayıcılar)
@@ -157,7 +157,7 @@ Onboarding akışında tipik olarak aşağıdaki profil alanları alınır. **Te
 
 - **Profil adı** (max 16 karakter)
 - **Doğum tarihi** (yaş bu bilgiden hesaplanır)
-- **Doğum yeri** ve isteğe bağlı **doğum saati** (astroloji özellikleri için; bkz. Bölüm 4.5)
+- **Doğum yeri** ve isteğe bağlı **doğum saati** (astroloji özellikleri için; uygulamanın 1.0.71 sürümünden itibaren doğum yeri de isteğe bağlıdır ve ikisi de profil oluşturma sırasında sorulmaz; bkz. Bölüm 4.5)
 - **Cinsiyet**
 - **Meslek**
 - **Boy**
@@ -205,17 +205,17 @@ içerilebilir.
 
 ### 4.5 Doğum bilgileri ve astroloji özellikleri
 
-Profil oluşturma sırasında **doğum tarihiniz** ile birlikte **doğum yeriniz** (ülke / il / ilçe) ve **doğum saatiniz** sorulur. Doğum yeri bu adımda doldurulması gereken bir alandır; doğum saatini bilmiyorsanız “bilmiyorum” seçeneğini işaretleyebilirsiniz (bu durumda saat yerine “bilinmiyor” bilgisi kaydedilir).
+**Doğum tarihiniz** profil oluşturma sırasında sorulur. Uygulamanın 1.0.71 sürümünden itibaren **doğum yeriniz** (ülke / il / ilçe) ve **doğum saatiniz** isteğe bağlıdır: profil oluşturma sırasında sorulmaz; dilediğiniz zaman profilinizden ekleyebilir, değiştirebilir veya silebilirsiniz. Daha önceki sürümlerde doğum yeri ve doğum saati profil oluşturma sırasında sorulur ve doğum yeri bu adımda doldurulması gereken bir alandır. Doğum saatini bilmiyorsanız “bilmiyorum” seçeneğini işaretleyebilirsiniz (bu durumda saat yerine “bilinmiyor” bilgisi kaydedilir).
 
 - **Ne işlenir?** Doğum yerinin adı; bu yerin yaklaşık koordinatları (yerleşim yeri düzeyinde) ve saat dilimi; doğum saati veya “bilinmiyor” bilgisi; bunlardan hesaplanan burç ve doğum haritası (natal chart) sonuçları.
 - **Nasıl?** Doğum yerinizin koordinatları, cihazınızın işletim sistemine ait adres çözümleme (geocoding) hizmetiyle bulunur (iOS’ta Apple, Android’de Google hizmetleri). Doğum haritası ve astrolojik uyum hesaplamaları WIN’in bulut altyapısında (Google Cloud) yapılır.
 - **Neden?** Burcunuzu göstermek, doğum haritası ve astrolojik uyum analizlerini sunmak (detaylı analizler WIN Premium kapsamındadır).
-- **Görünürlük:** Doğum yeriniz ve doğum saatiniz profil ekranında diğer kullanıcılara gösterilmez; diğer kullanıcılar burcunuzu ve (sunulduğu ölçüde) sizinle aralarındaki astrolojik uyum sonucunu görebilir. Ancak astrolojik uyumun hesaplanabilmesi için, profiliniz başka bir kullanıcının destesine geldiğinde doğum tarihiniz, doğum saatiniz ve doğum yeriniz (yer adı ve yaklaşık koordinatları dahil) o kullanıcının uygulamasına teknik olarak iletilir; bu bilgiler o kullanıcının ekranında gösterilmez.
+- **Görünürlük:** Doğum yeriniz ve doğum saatiniz diğer kullanıcılara gösterilmez; diğer kullanıcılar burcunuzu ve (sunulduğu ölçüde) sizinle aralarındaki astrolojik uyum sonucunu görebilir. Profiliniz bazı ekranlarda görüntülendiğinde doğum tarihiniz ile girdiyseniz doğum yeriniz ve doğum saatiniz o kullanıcının uygulamasına teknik olarak iletilebilir; bu bilgiler o kullanıcının ekranında gösterilmez.
 - **Hukuki sebep:** Astroloji özelliklerinin sunulması (sözleşmenin ifası, KVKK m. 5/2-c). Ayrıntılar: [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni).
 
 ### 4.6 Konum (yaklaşık/kesin) ve mesafe
 
-WIN, yakın kullanıcıları göstermek için konum bilgisini kullanır. **Konum geçmişi (location history) tutulmaz**; konum verisi uygulama açılışında GPS veya ağ sinyalleri üzerinden anlık olarak alınarak mesafe hesaplamalarında kullanılır. Konum izni verilmezse; konuma dayalı özellikler sınırlanabilir. İzin yönetimi: cihaz ayarları ve [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) (konum ve çerez/SDK sekmeleri).
+WIN, yakın kullanıcıları göstermek için, cihazınızda konum izni verdiyseniz konum bilgisini kullanır. **Konum geçmişi (location history) tutulmaz**; konum verisi uygulama açılışında GPS veya ağ sinyalleri üzerinden anlık olarak alınarak mesafe hesaplamalarında kullanılır. Uygulamanın 1.0.71 (131) ve sonraki sürümlerinde konum izni isteğe bağlıdır: izin vermeseniz de Platformu kullanabilirsiniz; bu durumda hizmet genel bölge bilgisiyle sunulur ve mesafe gösterilmez. İzni dilediğiniz zaman cihaz ayarlarından verebilir veya kapatabilirsiniz; izni kapatırsanız yeni konum bilgisi alınmaz. Daha önceki sürümlerde konum izni verilmezse konuma dayalı özellikler sınırlanabilir. İzin yönetimi: cihaz ayarları ve [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) (konum ve çerez/SDK sekmeleri).
 
 ### 4.7 Selfie / liveness doğrulama, kamera, galeri ve mikrofon izinleri
 
@@ -277,6 +277,8 @@ Sözleşmesel çerçeve ve ödeme detayları için: [Abonelik ve Satın Alma Ko�
 
 Profil kartlarında ve sohbet ekranlarında yer alan **"Bildir"** (Report) veya "Engelle" butonları aracılığıyla bildirimde bulunduğunuzda; destek kaydınız, yazışmalar ve inceleme notları işlenebilir.
 
+Destek talepleriniz, bizim adımıza hizmet veren ve Türkiye’de veya yurt dışında bulunabilecek hizmet sağlayıcıların (yapay zekâ tabanlı araçlar dahil) yardımıyla yanıtlanabilir. Aktarım çerçevesi için bkz. [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) Bölüm 7–8.
+
 İlgili dokümanlar:
 
 - [Topluluk Kuralları](/topluluk-ve-guvenlik/topluluk-kurallari)
@@ -296,7 +298,7 @@ Platformu kullandığınızda, bazı veriler **otomatik** olarak oluşur/toplan�
 - **Mobil uygulamada**: Firebase SDK’ları (Analytics, Crashlytics, App Check, Cloud Messaging) aracılığıyla toplanan analitik, hata/çökme ve performans sinyalleri; Meta (Facebook) ve TikTok SDK’ları aracılığıyla toplanan reklam ölçümü (atıf) sinyalleri; RevenueCat aracılığıyla işlenen abonelik/satın alma kayıtları (bkz. Bölüm 4.14)
 
 <Callout type="info" title="Reklamlar hakkında">
-  Uygulamada Google Mobile Ads (AdMob) yazılım bileşeni (SDK) yüklü olmakla birlikte **şu an uygulamada reklam gösterilmemektedir**. İleride reklam gösterilmesi hâlinde bu politika ve [Çerez Politikası](/gizlilik-ve-veri-koruma/cerez-politikasi) güncellenir ve gerekli izinler (ör. iOS’ta izleme izni, gerektiğinde açık rıza) ayrıca istenir.
+  **Şu an uygulamada reklam gösterilmemektedir.** İleride reklam gösterilmesi hâlinde bu politika ve [Çerez Politikası](/gizlilik-ve-veri-koruma/cerez-politikasi) güncellenir ve gerekli izinler (ör. iOS’ta izleme izni, gerektiğinde açık rıza) ayrıca istenir.
 </Callout>
 
 Bu veriler; Platformun güvenli çalışması, hata ayıklama, performans ölçümü, kötüye kullanımın önlenmesi ve (tercihinize bağlı olarak) analitik/pazarlama ölçümü amaçlarıyla kullanılabilir.
@@ -420,7 +422,7 @@ Verilerin saklama süresi; işleme amacına, mevzuat yükümlülüklerine ve uyu
   - **Sohbet arşivi:** Hesap silindiğinde, sizinle karşı taraflar arasındaki mesajlar ile sesli mesaj ve fotoğraf dosyaları diğer kullanıcılara kapatılır ve yukarıda açıklanan sohbet arşivine alınır.
   - **Yasaklı hesaplar:** Topluluk Kuralları ihlali nedeniyle erişimi engellenmiş bir hesap silinirse, yasaklı kişinin yeni hesap açmasını önlemek için bu hesaba ait yasak kaydı (WIN kullanıcı kimliği, telefon numarası, varsa e‑posta adresi ve yasak gerekçesi), yasak kaldırılmadıkça **süre sınırı olmaksızın** saklanır.
   - **Şikayet ve otomatik denetim kapsamındaki fotoğraf kopyaları:** şikayet edilen sohbet fotoğraflarının ve otomatik denetimden geçmeyen fotoğrafların (profil fotoğrafları dahil) kopyaları, hesap silinse de erişimi yetkili personelle sınırlı olarak inceleme, olası uyuşmazlıklar ve resmî makam talepleri için ilgili zamanaşımı süreleri boyunca saklanır.
-  - **Diğer kayıtlar:** log/trafik kayıtları, moderasyon kararları ve ihlal delilleri ile ticari/işlem kayıtları mevzuatın ve [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) Bölüm 9’daki sürelerle saklanır. Üçüncü taraf sağlayıcılarda (ör. abonelik altyapısı, analitik ve reklam ölçümü) tutulan kayıtlar, ilgili sağlayıcının saklama sürelerine tabidir.
+  - **Diğer kayıtlar:** log/trafik kayıtları, moderasyon kararları ve ihlal delilleri ile ticari/işlem kayıtları mevzuatın ve [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) Bölüm 9’daki sürelerle saklanır. Üçüncü taraf sağlayıcılarda (ör. abonelik altyapısı, analitik, reklam ölçümü ve destek hizmetleri) tutulan kayıtlar, ilgili sağlayıcının saklama sürelerine tabidir.
 
 Detaylı saklama yaklaşımı için: [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) ve [Kullanım Koşulları — Bölüm 13](/sozlesmeler/kullanim-kosullari#bölüm-13-hesap-sonlandırma-ve-fesih).
 

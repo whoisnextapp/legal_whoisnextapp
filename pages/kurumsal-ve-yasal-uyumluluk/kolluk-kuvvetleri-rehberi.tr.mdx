@@ -2,7 +2,7 @@
 
 import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
-**Son güncelleme:** 13.02.2026 · **Sürüm:** 1.0
+**Son güncelleme:** 27.10.2026 · **Sürüm:** 1.1
 
 Bu rehber; **WIN** (“**Platform**”) tarafından işletilen hizmetler kapsamında, **kolluk kuvvetleri** ve diğer **yetkili resmî makamlar** (mahkemeler, Cumhuriyet başsavcılıkları, düzenleyici/idarî otoriteler vb.) tarafından iletilen **yasal veri taleplerinin** nasıl alınacağını, doğrulanacağını, değerlendirileceğini ve yanıtlanacağını açıklar.
 
@@ -541,7 +541,7 @@ Resmî makamlar, yasa dışı içerik bildirimini standart ve izlenebilir biçim
 | **Mesajlaşma verileri**    | Mesaj içerikleri, ekler                                    | Google Firebase'de saklanır; uçtan uca şifreleme yoktur.                                                                                                                      |
 | **Rapor/şikayet verileri** | Kullanıcı raporları, ekran görüntüleri                     | Üçüncü kişilere ait veri içerebilir; minimizasyon önemli.                                                                                                                     |
 | **Teknik/oturum verileri** | Device ID, IP, oturum giriş/last seen zamanı, hata logları | Last seen verileri serverda; teknik hata logları Firebase/SDK altyapısında saklanır.                                                                                          |
-| **Konum verileri**         | Yaklaşık veya kesin (GPS) konum bilgileri                  | Uygulama konum tabanlıdır (en yakındaki kullanıcıyı bulma). Mevzuatta öngörülen yasal saklama süreleri boyunca muhafaza edilir.                                               |
+| **Konum verileri**         | Yaklaşık veya kesin (GPS) konum bilgileri                  | Kullanıcı cihazında konum izni verdiyse işlenir (yakındaki kullanıcıları gösterme, mesafe); konum izni isteğe bağlıdır. Mevzuatta öngörülen yasal saklama süreleri boyunca muhafaza edilir.                                               |
 | **Ödeme/abonelik**         | İşlem kimliği, paket türü, dönem                           | Mağaza kayıtları ve ticari delil saklama süreleri (10 yıl) geçerlidir.                                                                                                        |
 | **Doğrulama verileri**     | Selfie fotoğrafları, doğrulama sonucu (success/fail)       | **Google Gemini 2.5 Flash** ile fotoğraf doğrulama yapılır. Ham selfie/profil fotoğrafları Firebase üzerinde saklanır. WIN, doğrulama sonucuna (success/fail) bu süreç üzerinden erişir. |
 

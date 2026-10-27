@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # Privacy Policy
 
-**Last updated:** 22.10.2026 · **Version:** 2.1
+**Last updated:** 27.10.2026 · **Version:** 2.2
 
 This Privacy Policy explains, in a **clear** and **practical** language, how we handle your personal data while you use the **WIN** platform (the "**Platform**").
 
@@ -91,7 +91,7 @@ You may not always be able to maintain control over such sharing. Therefore, it 
     - **Profile note** (short free text)
     - **Profile summary fields** (e.g., sign, height, profession, smoking/alcohol frequency)
     - **“This or That” answers** (if you answered). One of them may be shown briefly, as a shared answer, on a deck card or in a notification to a member who gave the same answer, or, if you mark it, to the person you picked as the reason for your pick (see Section 4.9).
-    - **Distance / approximate location** (e.g., "5 km away")
+    - **Distance / approximate location** (e.g., "5 km away"; if you have granted location permission)
     - **Compatibility/score indicators:** Average scores in Intelligence, Politeness, and Fun categories derived from evaluations during chats.
     - **Online / Last seen:** Your activity status in the app (This information is visible **only to Premium** members).
     - **Blue/Green Checkmark:** Verification badge shown on photo-verified profiles.
@@ -143,7 +143,7 @@ Google and Apple act as **independent data controllers** for their own services.
 
 At first use, links to KVKK texts and agreements are presented, and separately selectable permission/consent checkboxes are shown. Example consent topics:
 
-- **Processing of location data**
+- **Processing of location data** (optional; if you grant location permission on your device — see Section 4.6)
 - **Selfie/face verification**
 - **Matching preferences and compatibility parameters**
 - **Cross-border transfer** (cloud infrastructure / providers)
@@ -157,7 +157,7 @@ In the onboarding flow, the following profile fields are typically collected. Fo
 
 - **Profile name** (max 16 characters)
 - **Date of birth** (your age is calculated from it)
-- **Place of birth** and optional **time of birth** (for astrology features; see Section 4.5)
+- **Place of birth** and optional **time of birth** (for astrology features; from version 1.0.71 of the app the place of birth is optional as well and neither is asked during profile creation; see Section 4.5)
 - **Gender**
 - **Profession**
 - **Height**
@@ -205,17 +205,17 @@ may be included.
 
 ### 4.5 Birth details and astrology features
 
-During profile creation you are asked for your **date of birth** together with your **place of birth** (country / province / district) and your **time of birth**. The place of birth must be filled in at this step; if you do not know your time of birth you can tick "I don't know" (in that case "unknown" is stored instead of a time).
+You are asked for your **date of birth** during profile creation. From version 1.0.71 of the app, your **place of birth** (country / province / district) and your **time of birth** are optional: they are not asked during profile creation, and you can add, change or delete them from your profile at any time. In earlier versions, place and time of birth are asked during profile creation and the place of birth must be filled in at that step. If you do not know your time of birth you can tick "I don't know" (in that case "unknown" is stored instead of a time).
 
 - **What is processed?** The name of the place of birth; its approximate coordinates (at settlement level) and time zone; the time of birth or the "unknown" flag; and the zodiac sign and natal chart results calculated from these.
 - **How?** The coordinates of your place of birth are obtained through your device operating system's address resolution (geocoding) service (Apple on iOS, Google services on Android). Natal chart and astrological compatibility calculations run on WIN's cloud infrastructure (Google Cloud).
 - **Why?** To show your zodiac sign and to provide natal chart and astrological compatibility analyses (detailed analyses are part of WIN Premium).
-- **Visibility:** Your place and time of birth are not shown to other users on the profile screen; other users may see your zodiac sign and (where offered) the astrological compatibility result between you and them. However, so that astrological compatibility can be calculated, when your profile appears in another user's deck your date of birth, time of birth and place of birth (including the place name and its approximate coordinates) are technically transmitted to that user's app; this information is not displayed on that user's screen.
+- **Visibility:** Your place and time of birth are not shown to other users; other users may see your zodiac sign and (where offered) the astrological compatibility result between you and them. When your profile is viewed on some screens, your date of birth and, if you have provided them, your place and time of birth may be technically transmitted to that user's app; this information is not displayed on that user's screen.
 - **Legal basis:** Provision of the astrology features (performance of the contract, KVKK Art. 5/2-c). Details: [KVKK Information Notice](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni).
 
 ### 4.6 Location (approximate/precise) and distance
 
-WIN uses location information to show nearby users. **Location history is not kept**; location data is obtained instantly via GPS or network signals when the app is opened and used in distance calculations. If location permission is not granted, location-based features may be limited. Permission management: device settings and [KVKK Information Notice](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) (location and cookie/SDK tabs).
+WIN uses location information to show nearby users if you have granted location permission on your device. **Location history is not kept**; location data is obtained instantly via GPS or network signals when the app is opened and used in distance calculations. In version 1.0.71 (131) of the app and later versions, location permission is optional: you can use the Platform without granting it; in this case the service is provided based on general regional information and distance is not shown. You can grant or turn off the permission at any time in your device settings; if you turn it off, no new location information is obtained. In earlier versions, if location permission is not granted, location-based features may be limited. Permission management: device settings and [KVKK Information Notice](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) (location and cookie/SDK tabs).
 
 ### 4.7 Selfie / liveness verification, camera, gallery and microphone permissions
 
@@ -277,6 +277,8 @@ For contractual framework and payment details: [Subscription and Purchase Terms]
 
 When you submit a notification via **"Report"** or "Block" buttons on profile cards and chat screens, your support record, correspondence, and review notes may be processed.
 
+Your support requests may be answered with the help of service providers acting on our behalf, including AI-based tools, which may be located in Türkiye or abroad. For the transfer framework, see Sections 7–8 of the [KVKK Information Notice](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni).
+
 Related documents:
 
 - [Community Guidelines](/topluluk-ve-guvenlik/topluluk-kurallari)
@@ -296,7 +298,7 @@ When you use the Platform, some data is generated/collected **automatically**. E
 - **In mobile app**: analytics, error/crash and performance signals collected via Firebase SDKs (Analytics, Crashlytics, App Check, Cloud Messaging); advertising measurement (attribution) signals collected via the Meta (Facebook) and TikTok SDKs; subscription/purchase records processed via RevenueCat (see Section 4.14)
 
 <Callout type="info" title="About advertising">
-  The Google Mobile Ads (AdMob) software component (SDK) is installed in the app, but **no ads are currently shown in the app**. If ads are shown in the future, this policy and the [Cookie Policy](/gizlilik-ve-veri-koruma/cerez-politikasi) will be updated and any required permissions (e.g. tracking permission on iOS, explicit consent where required) will be requested separately.
+  **No ads are currently shown in the app.** If ads are shown in the future, this policy and the [Cookie Policy](/gizlilik-ve-veri-koruma/cerez-politikasi) will be updated and any required permissions (e.g. tracking permission on iOS, explicit consent where required) will be requested separately.
 </Callout>
 
 This data may be used for secure operation of the Platform, debugging, performance measurement, prevention of abuse, and (depending on your preference) analytics/marketing measurement purposes.
@@ -420,7 +422,7 @@ Example:
   - **Chat archive:** When an account is deleted, the messages, voice message files and photo files between you and the other parties are closed to other users and moved to the chat archive described above.
   - **Banned accounts:** If an account whose access was blocked for violating the Community Guidelines is deleted, the ban record of that account (WIN user ID, phone number, e-mail address where available and the reason for the ban) is retained **without a time limit** unless the ban is lifted, to prevent the banned person from opening a new account.
   - **Photo copies from reports and automated checks:** copies of chat photos that were reported and of photos (including profile photos) that did not pass the automated check are kept, even if the account is deleted, with access limited to authorised staff, for review, possible disputes and requests from authorities for the relevant limitation periods.
-  - **Other records:** log/traffic records, moderation decisions and evidence of violations, and commercial/transaction records are retained for the periods in the legislation and in Section 9 of the [KVKK Information Notice](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni). Records held by third-party providers (e.g. subscription infrastructure, analytics and advertising measurement) are subject to the retention periods of the relevant provider.
+  - **Other records:** log/traffic records, moderation decisions and evidence of violations, and commercial/transaction records are retained for the periods in the legislation and in Section 9 of the [KVKK Information Notice](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni). Records held by third-party providers (e.g. subscription infrastructure, analytics, advertising measurement and support services) are subject to the retention periods of the relevant provider.
 
 For the detailed retention approach: [KVKK Information Notice](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) and [Terms of Use — Section 13](/sozlesmeler/kullanim-kosullari#bölüm-13-hesap-sonlandırma-ve-fesih).
 
