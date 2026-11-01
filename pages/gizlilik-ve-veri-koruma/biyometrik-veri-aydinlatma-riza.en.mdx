@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # Biometric Data Disclosure and Explicit Consent Text
 
-**Last updated:** 18.02.2026 · **Version:** 1.0
+**Last updated:** 02.11.2026 · **Version:** 1.1
 
 This text has been prepared to inform you about aspects of processing that may fall within the scope of **biometric data**, such as the **selfie image** received from the user and **face verification** performed through this image, within the **selfie verification / liveness check** flow implemented under the **WIN** platform ("**Platform**"), and to obtain your **explicit consent** for these processing activities.
 
@@ -375,7 +375,7 @@ infrastructure and verification purposes. In the current setup:
 | Provider / system               | Purpose                                                                 | Data type                               | Location             | Note                                                                                                          |
 | ------------------------------- | ----------------------------------------------------------------------- | --------------------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------- |
 | **Google Cloud / Firebase**     | Hosting, retention; inappropriate content inspection on selfie (Google Cloud Vision — Safe Search) | Selfie image and technical records       | **EU (multi-region)** | Data is encrypted.                                                                                            |
-| **Google Gemini 2.5 Flash**     | Pose- and selfie-based profile verification (consistency / person verification)                     | Selfie image (instant), profile visuals  | **[GEMINI_REGION]**  | Automated assessment limited to verification purpose; storing permanent biometric template/embedding is not aimed. |
+| **Google Gemini 2.5 Flash**     | Pose- and selfie-based profile verification (consistency / person verification)                     | Selfie image (instant), profile visuals  | Google’s global infrastructure; may be processed in any country where Google or its agents maintain facilities, including outside the EU | Automated assessment limited to verification purpose; storing permanent biometric template/embedding is not aimed. |
 
 <Callout type="warning" title="Cross-border transfer note">
   If transfer of data to servers abroad is involved, an appropriate transfer

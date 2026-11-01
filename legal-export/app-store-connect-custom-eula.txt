@@ -9,7 +9,7 @@ BÖLÜM I — KULLANIM KOŞULLARI
 
 # Kullanım Koşulları
 
-**Son güncelleme:** 01.11.2026 · **Sürüm:** 2.1
+**Son güncelleme:** 02.11.2026 · **Sürüm:** 2.2
 
 Bu belge, WIN mobil uygulaması ve ilgili hizmetlerin kullanımına ilişkin kullanıcı ile işletmeci arasındaki hukuki ilişkiyi düzenler. Belgeyi kabul etmeden önce dikkatle okumanız önerilir. Kolay okunabilirlik için bölüm başlarında kısa özetlere yer verilmiştir; **bu özetler metnin tamamının yerine geçmez.**
 
@@ -380,7 +380,7 @@ WIN, kullanıcı güvenliğini ve dolandırıcılık risklerinin azaltılmasın�
 - **Kişisel iletişim bilgisi paylaşımı** (telefon, e-posta, sosyal medya hesabı, açık adres vb.) yasaktır.
 - **Banka bilgileri, kredi kartı numarası veya P2P ödeme kullanıcı adı** (ör. para transferi uygulaması kullanıcı adı) profilde veya mesajlarda sergilenemez / paylaşılamaz.
 - **Üçüncü kişilerin kişisel verilerini** (başkasının telefonu, adresi, kimlik bilgisi, özel görüntüsü, mesaj içeriği vb.) izinsiz paylaşmak yasaktır.
-- Profil fotoğrafı/biografide **çocukların tek başına** yer aldığı görseller ile çocukları tehlikeye sokabilecek içerikler yasaktır.
+- Profil fotoğraflarında **18 yaş altı bir kişinin** tek başına, fotoğrafın odağında veya ana kişisi olarak yer aldığı görseller (kendi çocukluk fotoğraflarınız ve “şimdi / çocukken” gibi kolajlar dahil) ile profil fotoğrafı veya profil notunda çocukları tehlikeye sokabilecek içerikler yasaktır. Bu kurala aykırı olabileceği değerlendirilen fotoğraf, inceleme tamamlanana kadar gizlenebilir (ayrıntı: Topluluk Kuralları (https://legal.whoisnextapp.com/topluluk-ve-guvenlik/topluluk-kurallari) Bölüm 2.1).
 - Kimliğinizi belirsizleştiren veya gerçeğe aykırı izlenim yaratan **aşırı filtre / manipülasyon** (görsel değiştirme, yüzü gizleme vb.) kullanımı yasaklanabilir veya kısıtlanabilir.
 - Profil ve içeriklerde; yönlendirme linkleri, reklam, “satış” veya “iş teklifi” gibi **ticari amaçlı** paylaşımlar yasaktır.
 

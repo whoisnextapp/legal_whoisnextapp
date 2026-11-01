@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # KVKK Aydınlatma Metni
 
-**Son güncelleme:** 01.11.2026 · **Sürüm:** 2.1
+**Son güncelleme:** 02.11.2026 · **Sürüm:** 2.2
 
 Bu metin; **WIN** platformu (“**Platform**”) kapsamında kişisel verilerinizin **6698 sayılı Kişisel Verilerin Korunması Kanunu** (“**KVKK**”) uyarınca işlenmesine ilişkin **aydınlatma yükümlülüğünün** (KVKK m. 10 ve **KVKK Aydınlatma Yükümlülüğü Tebliği**) yerine getirilmesi amacıyla hazırlanmıştır.
 
@@ -191,7 +191,7 @@ Toplama yöntemlerine örnekler:
         - **Din:** İnanmıyorum (Ateist/Agnostik), Hayatımın merkezinde değil, Önemli, Çok önemli.
         - **Siyasi Görüş:** Politikayla ilgilenmiyorum, Farklı görüşte olabilir, Bir noktada önemli, Aynı görüşte olmamız çok önemli.
         - Diğer: Dış görünüş, maddi durum vb. önem dereceleri.
-    - **Fotoğraf yükleme:** profil fotoğrafları (ör. 6 slot).
+    - **Fotoğraf yükleme:** profil fotoğrafları (ör. 6 slot). Profil fotoğrafları, uygunsuz içerik ve 18 yaş altı bir kişiyi gösterip göstermediği bakımından otomatik olarak kontrol edilir (bkz. Bölüm 7.2); Topluluk Kuralları’na aykırı olarak 18 yaş altı bir kişiyi gösterdiği değerlendirilen fotoğraf, inceleme tamamlanana kadar gizlenebilir.
 
     Bazı alanlar hizmetin sunulması için gerekli olabilir; vermemeniz hâlinde hizmetin bazı bölümleri çalışmayabilir.
 
@@ -312,7 +312,7 @@ Kişisel verileriniz; Platformun özelliklerine ve kullanımınıza bağlı olar
 - **Tek cihaz oturumu ve hesap güvenliği** (kurulum kimliği ile hesabın aynı anda tek cihazda açık kalması; SMS doğrulama kodlarının kötüye kullanımının önlenmesi)
 - **Hizmetin sunulması** (eşleşme akışı, profil gösterimi, mesajlaşma)
 - **Öneri/eşleşme sistemlerinin çalıştırılması** (profil çıkarma, uyumluluk skorları, sıralama/öneri)
-- **Kullanıcı güvenliği ve kötüye kullanımın önlenmesi** (sahte hesap, bot/spam, dolandırıcılık tespiti; şikayet/engelleme)
+- **Kullanıcı güvenliği ve kötüye kullanımın önlenmesi** (sahte hesap, bot/spam, dolandırıcılık tespiti; profil fotoğraflarında yaş ve içerik kontrolü; şikayet/engelleme)
 - **Selfie/liveness doğrulaması** (profil doğrulama, hizmet bütünlüğü)
 - **Konum bazlı özellikler** (yakın kullanıcı önerisi, mesafe gösterimi)
 - **Sesli mesaj ve sohbette fotoğraf özelliklerinin sunulması** (sohbet fotoğraflarının otomatik içerik denetimi dahil)
@@ -351,7 +351,7 @@ Kişisel verileriniz; ilgili işleme faaliyetinin niteliğine göre aşağıdaki
 | Süreç / amaç                           | Tipik veri türleri                                | Tipik hukuki sebep               |
 | -------------------------------------- | ------------------------------------------------- | -------------------------------- |
 | Hesap oluşturma ve hizmet sunumu       | hesap/profil verileri, oturum                     | KVKK m. 5/2(c)                   |
-| Güvenlik ve kötüye kullanım önleme     | cihaz/log, şikayet/engelleme, davranış sinyalleri | KVKK m. 5/2(f) ve/veya m. 5/2(e) |
+| Güvenlik ve kötüye kullanım önleme (profil fotoğraflarında yaş ve içerik kontrolü dahil) | cihaz/log, şikayet/engelleme, davranış sinyalleri; profil fotoğrafları ve denetim sonucu | KVKK m. 5/2(f) ve/veya m. 5/2(e) |
 | Abonelik ve satın alma                 | satın alma/işlem verileri                         | KVKK m. 5/2(c) ve/veya m. 5/2(ç) |
 | Resmî makam talepleri ve mevzuat uyumu | trafik verisi/log, başvuru kayıtları              | KVKK m. 5/2(ç)                   |
 | Pazarlama iletişimi (izin verdiyseniz; bildirimin kime ve ne zaman gönderileceğinin belirlenmesi dahil) | iletişim + izin kayıtları; bildirim jetonu; uygulama kullanım durumu | KVKK m. 5/1 + ETK                |
@@ -433,7 +433,7 @@ WIN; Platformu işletmek ve iyileştirmek için hizmet sağlayıcılarla çalı�
 - **Reklam ölçümü (atıf)** sağlayıcıları (Meta Platforms — Facebook SDK; TikTok — TikTok Events SDK; iOS’ta Apple Search Ads atıf bilgisi RevenueCat üzerinden). Uygulamada **şu an reklam gösterilmemektedir**; ileride reklam gösterilirse bu metin güncellenir.
 - **Bildirim ve iletişim** sağlayıcıları (Google, Store Vantage CRM; SMS doğrulama için Twilio)
 - **Ödeme ve abonelik** altyapıları (Apple App Store / Google Play; abonelik yönetimi için RevenueCat, Inc. — ABD)
-- **Doğrulama ve içerik denetimi sağlayıcıları** (**Google Gemini 2.5 Flash** — bölge: **[GEMINI_REGION]**; **Google Cloud Vision** — fotoğraflar (profil fotoğrafları ve sohbette gönderilen fotoğraflar dahil) üzerinde otomatik uygunsuz içerik denetimi)
+- **Doğrulama ve içerik denetimi sağlayıcıları** (**Google Gemini 2.5 Flash** — profil doğrulama ile profil fotoğraflarında yaş ve içerik kontrolü; bölge: Google’ın küresel altyapısı; Google’ın veya alt yüklenicilerinin tesis bulundurduğu herhangi bir ülkede, AB dışında da işlenebilir; **Google Cloud Vision** — fotoğraflar (profil fotoğrafları ve sohbette gönderilen fotoğraflar dahil) üzerinde otomatik uygunsuz içerik denetimi)
 - **Destek hizmeti sağlayıcıları** (yapay zekâ tabanlı araçlar dahil)
 
 Bu sağlayıcılar, koşullara göre **veri işleyen** veya **bağımsız veri sorumlusu** konumunda olabilir.

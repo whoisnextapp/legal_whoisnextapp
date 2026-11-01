@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # KVKK Disclosure Text
 
-**Last update:** 01.11.2026 · **Version:** 2.1
+**Last update:** 02.11.2026 · **Version:** 2.2
 
 This text has been prepared for the purpose of fulfilling the **disclosure obligation** regarding the processing of your personal data under the **Personal Data Protection Law No. 6698** ("**KVKK**") (KVKK Art. 10 and the **Communique on the Procedures and Principles to be Complied with in Fulfilling the Disclosure Obligation**) within the scope of the **WIN** platform ("**Platform**").
 
@@ -193,7 +193,7 @@ Examples of collection methods:
         - **Religion:** I do not believe (Atheist/Agnostic), Not central in my life, Important, Very important.
         - **Political Opinion:** I am not interested in politics, May have a different opinion, Important to some extent, It is very important that we have the same opinion.
         - Other: Degree of importance for physical appearance, financial status, etc.
-    - **Photo upload:** Profile photos (e.g., 6 slots).
+    - **Photo upload:** Profile photos (e.g., 6 slots). Profile photos are automatically checked for inappropriate content and for whether they show a person under 18 (see Section 7.2); a photo assessed as showing a person under 18 in breach of the Community Guidelines may be hidden until review is completed.
 
     Some fields may be necessary for providing the service; if you do not
     provide them, certain parts of the service may not function.
@@ -328,7 +328,7 @@ Your personal data may be processed for the following purposes depending on the 
 - **Single-device session and account security** (keeping the account signed in on one device at a time via the installation identifier; preventing abuse of SMS verification codes)
 - **Provision of the service** (matching flow, profile display, messaging)
 - **Operation of recommendation/matching systems** (profiling, compatibility scores, ranking/recommendation)
-- **User safety and prevention of misuse** (fake account, bot/spam, fraud detection; complaint/blocking)
+- **User safety and prevention of misuse** (fake account, bot/spam, fraud detection; age and content checks on profile photos; complaint/blocking)
 - **Selfie/liveness verification** (profile verification, service integrity)
 - **Location-based features** (nearby user recommendation, distance display)
 - **Provision of the voice message and photos-in-chat features** (including automated content checks of chat photos)
@@ -367,7 +367,7 @@ Example mapping table:
 | Process / purpose                        | Typical data types                                | Typical legal basis                |
 | ---------------------------------------- | ------------------------------------------------- | ---------------------------------- |
 | Account creation and service provision   | account/profile data, session                     | KVKK Art. 5/2(c)                   |
-| Security and misuse prevention           | device/log, complaint/blocking, behavioral signals | KVKK Art. 5/2(f) and/or Art. 5/2(e) |
+| Security and misuse prevention (including age and content checks on profile photos) | device/log, complaint/blocking, behavioral signals; profile photos and check results | KVKK Art. 5/2(f) and/or Art. 5/2(e) |
 | Subscription and purchase                | purchase/transaction data                         | KVKK Art. 5/2(c) and/or Art. 5/2(ç) |
 | Official authority requests and legal compliance | traffic data/log, application records              | KVKK Art. 5/2(ç)                   |
 | Marketing communication (if you consent; including deciding to whom and when a notification is sent) | contact + consent records; notification token; app usage status | KVKK Art. 5/1 + ETK                |
@@ -444,7 +444,7 @@ WIN may work with service providers to operate and improve the Platform. In this
 - **Advertising measurement (attribution)** providers (Meta Platforms — Facebook SDK; TikTok — TikTok Events SDK; on iOS Apple Search Ads attribution data via RevenueCat). **No ads are currently shown** in the app; if ads are shown in the future this text will be updated.
 - **Notification and communication** providers (Google, Store Vantage CRM; Twilio for SMS verification)
 - **Payment and subscription** infrastructures (Apple App Store / Google Play; RevenueCat, Inc. — USA — for subscription management)
-- **Verification and content moderation providers** (**Google Gemini 2.5 Flash** - region: **[GEMINI_REGION]**; **Google Cloud Vision** - automated inappropriate content checks on photos (including profile photos and photos sent in chat))
+- **Verification and content moderation providers** (**Google Gemini 2.5 Flash** - profile verification and age and content checks on profile photos; region: Google’s global infrastructure; may be processed in any country where Google or its agents maintain facilities, including outside the EU; **Google Cloud Vision** - automated inappropriate content checks on photos (including profile photos and photos sent in chat))
 - **Support service providers** (including AI-based tools)
 
 These providers may act as **data processors** or **independent data controllers** depending on the conditions.

@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # Biyometrik Veri Aydınlatma ve Açık Rıza Metni
 
-**Son güncelleme:** 18.02.2026 · **Sürüm:** 1.0
+**Son güncelleme:** 02.11.2026 · **Sürüm:** 1.1
 
 Bu metin; **WIN** platformu (“**Platform**”) kapsamında uygulanan **selfie doğrulama / liveness kontrolü** akışında, kullanıcıdan alınan **selfie görüntüsü** ve bu görüntü üzerinden yapılan **yüz doğrulama** gibi işlemlerin **biyometrik veri** kapsamına girebilecek yönleri hakkında sizi bilgilendirmek ve bu işleme faaliyetleri için **açık rızanızı** almak amacıyla hazırlanmıştır.
 
@@ -339,7 +339,7 @@ Selfie doğrulama sürecinde; altyapı ve doğrulama amacıyla hizmet sağlayıc
 | Sağlayıcı / sistem           | Amaç                                      | Veri türü                           | Lokasyon              | Not                                               |
 | ---------------------------- | ----------------------------------------- | ----------------------------------- | --------------------- | ------------------------------------------------- |
 | **Google Cloud / Firebase**     | Barındırma, saklama; selfie üzerinde uygunsuz içerik denetimi (Google Cloud Vision — Safe Search) | Selfie görüntüsü ve teknik kayıtlar        | **EU (multi-region)**     | Veriler şifrelenmektedir.                                                                 |
-| **Google Gemini 2.5 Flash**     | Poz ve selfie tabanlı profil doğrulama (tutarlılık / kişi doğrulaması)                              | Selfie görüntüsü (anlık), profil görselleri | **[GEMINI_REGION]** | Doğrulama amacıyla sınırlı otomatik değerlendirme; kalıcı biyometrik şablon/embedding saklanması hedeflenmez. |
+| **Google Gemini 2.5 Flash**     | Poz ve selfie tabanlı profil doğrulama (tutarlılık / kişi doğrulaması)                              | Selfie görüntüsü (anlık), profil görselleri | Google’ın küresel altyapısı; Google’ın veya alt yüklenicilerinin tesis bulundurduğu herhangi bir ülkede, AB dışında da işlenebilir | Doğrulama amacıyla sınırlı otomatik değerlendirme; kalıcı biyometrik şablon/embedding saklanması hedeflenmez. |
 
 <Callout type="warning" title="Yurt dışı aktarım notu">
   Verilerin yurt dışındaki sunuculara aktarımı söz konusuysa; KVKK m. 9 ve

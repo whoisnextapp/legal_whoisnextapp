@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # DSA Uyum Sayfası (Digital Services Act)
 
-**Son güncelleme:** 27.10.2026 · **Sürüm:** 2.0
+**Son güncelleme:** 02.11.2026 · **Sürüm:** 2.1
 
 Bu sayfa, Avrupa Birliği **Dijital Hizmetler Yasası** (**Digital Services Act — Regulation (EU) 2022/2065**, “**DSA**”) kapsamında WIN’in (“**Platform**”) uyum yaklaşımını, **iletişim noktalarını**, **yasa dışı içerik bildirimi** (notice & action), **itiraz/şikayet** ve **şeffaflık** mekanizmalarını açıklar.
 
@@ -261,7 +261,7 @@ WIN, bildirimleri **zamanında**, **özenli**, **keyfî olmayan** ve **objektif*
 
 WIN, güvenlik ve topluluk bütünlüğü için **otomatik sistemler**, **kullanıcı raporları** ve **insan moderasyon** süreçlerini birlikte kullanır. Topluluk Kuralları ve Kullanım Koşulları ile uyumlu olarak:
 
-- **Otomatik görsel/metin denetimi**: Fotoğraflar (sohbette gönderilenler dahil) ve profil metinleri **Google Cloud Vision** ve **MeiliSearch** altyapıları üzerinden taranır; müstehcenlik, çıplaklık veya şiddet içerdiği değerlendirilen görseller reddedilir.
+- **Otomatik görsel/metin denetimi**: Fotoğraflar (sohbette gönderilenler dahil) ve profil metinleri **Google Cloud Vision** ve **MeiliSearch** altyapıları üzerinden taranır; müstehcenlik, çıplaklık veya şiddet içerdiği değerlendirilen görseller reddedilir. Profil fotoğraflarında yaş ve içerik kontrolü için ayrıca **Google Gemini 2.5 Flash** kullanılır; [Topluluk Kuralları](/topluluk-ve-guvenlik/topluluk-kurallari) Bölüm 2.1’e aykırı olarak 18 yaş altı bir kişiyi gösterdiği değerlendirilen fotoğraflar, insan incelemesi tamamlanana kadar gizlenebilir.
 - **Selfie doğrulama (liveness)**: Profil fotoğrafı ile canlı selfie eşleştirmesi ve poz doğrulaması **Google Gemini 2.5 Flash** ile yapılır; selfie üzerinde uygunsuz içerik denetimi **Google Cloud Vision** (Safe Search) ile desteklenir; sahte hesap riski bu süreçlerle azaltılır.
 - **Raporlama bazlı inceleme**: Kullanıcı bildirimleri sonrasında içerikler moderasyon ekibi tarafından incelenir.
 - **İnsan incelemesi**: Karmaşık vakalar, itirazlar ve yüksek öncelikli güvenlik raporları (şiddet, CSAE vb.) uzman moderatörler tarafından manuel değerlendirilir.
@@ -295,6 +295,8 @@ Gerekçe bildirimi asgari olarak şunları içerir (Art. 17/3):
 - **Yasa dışılık iddiası varsa**: Hukuki dayanak + neden yasa dışı sayıldığı
 - **Kural ihlali varsa**: Sözleşmesel dayanak + neden ihlal sayıldığı
 - **Düzeltme yolları**: İç şikayet/itiraz, yargı dışı çözüm, yargı yolu
+
+**Gizlenen fotoğraflar:** Bir profil fotoğrafı inceleme tamamlanana kadar gizlendiğinde (ör. 18 yaş altı bir kişiyi gösterdiğinin değerlendirilmesi nedeniyle), gerekçe bildirimi uygulama içinde iletilir. Bildirimde fotoğrafın gizlendiği, tespitte otomatik araçların kullanıldığı ve nihai kararın insan incelemesiyle verileceği, dayanak olan kural ([Topluluk Kuralları](/topluluk-ve-guvenlik/topluluk-kurallari) Bölüm 2.1) ve itiraz yolu (bildirime uygulama içinden yanıt vermek veya Bölüm 5’teki kanallar) belirtilir. Çocukların korunmasına ilişkin ağır şüphelerde bildirim, delillerin korunması için gerekli olduğu ölçüde insan incelemesi tamamlandığında yapılabilir.
 
 <Callout type="info" title="İtiraz süresi">
   DSA Madde 20 uyarınca, kullanıcılar **en az 6 ay** boyunca iç şikayet/itiraz
