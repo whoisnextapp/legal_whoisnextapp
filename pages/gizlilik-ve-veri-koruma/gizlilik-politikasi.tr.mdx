@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # Gizlilik Politikası
 
-**Son güncelleme:** 03.11.2026 · **Sürüm:** 2.4
+**Son güncelleme:** 03.11.2026 · **Sürüm:** 2.5
 
 Bu Gizlilik Politikası; **WIN** platformunu (“**Platform**”) kullanırken, kişisel verilerinizi nasıl ele aldığımızı **anlaşılır** ve **pratik** bir dille açıklar.
 
@@ -193,7 +193,7 @@ Profilinizde tipik olarak **6 fotoğraf slotu** bulunur. Platformda güvenliği 
 
 **Selfie Doğrulama Akışı:**
 - Sadece **ön kamera** aracılığıyla anlık çekim yapılır; **galeri üzerinden fotoğraf yüklenemez.**
-- **Google Gemini 2.5 Flash** ile poz ve profil fotoğrafı tutarlılığını; **safeSearchDetection (Google Cloud Vision)** ile selfie üzerinde uygunsuz içerik denetimini gerçekleştiririz.
+- **Google Gemini** ile poz ve profil fotoğrafı tutarlılığını; **safeSearchDetection (Google Cloud Vision)** ile selfie üzerinde uygunsuz içerik denetimini gerçekleştiririz.
 - Bu adım, sahte hesapları önlemek için fonksiyonel bir gerekliliktir; **kural olarak**, rıza verilmemesi veya en az bir fotoğrafın doğrulanmaması hâlinde hesap keşif akışına (Deck) dahil edilmez. WIN, yönetici kararıyla ve sınırlı hâllerde bazı hesaplara bu kurala istisna tanıyabilir; bu durumda doğrulanmamış fotoğraflarda doğrulama rozeti görünmez. Bu nedenle keşif akışındaki her profilin doğrulanmış olduğu garanti edilmez; bir fotoğrafın doğrulanıp doğrulanmadığını üzerindeki rozetten görebilirsiniz.
 - Doğrulanan her fotoğrafın üzerinde yeşil tik/rozet yer alır. Başkalarıyla olan fotoğraflarda doğrulama yapılmaz; sadece kullanıcının kendisinin olduğu fotoğraflarda doğrulama ibaresi yer alır.
 - Fotoğraf yükleme sırasında:
@@ -238,7 +238,7 @@ Platform şeffaflık taahhüdümüz doğrultusunda; **yüz verisi** ifadesiyle k
 
 **Hangi amaçlarla kullanılıyor?** Profilin gerçek bir kişiye ait olma ihtimalini artırmak, **sahte hesapları** ve kötüye kullanımı azaltmak, Platform güvenliğini ve hizmet bütünlüğünü korumak; doğrulama itirazlarında inceleme yapabilmek; yasal yükümlülükler ve hakların korunması. Bu kapsamda işlenen yüz/biyometrik nitelikli veri **reklam hedefleme, pazarlama profillemesi veya kampanya kişiselleştirmesi** amacıyla kullanılmaz.
 
-**Üçüncü taraflar ve saklama yeri** Doğrulama işlemi; **Google Gemini 2.5 Flash** (poz ve profil tutarlılığı / kişi doğrulaması) ve **Google Cloud Vision** (**safeSearchDetection** — uygunsuz içerik denetimi) ile sınırlı otomatik değerlendirme için kullanılabilir. Altyapı olarak **Google Cloud / Firebase** tarafında barındırma ve teknik kayıtlar söz konusu olabilir. Kalıcı **biyometrik şablon** veya **embedding** saklanması **hedeflenmez**. Sağlayıcıların rolü ve lokasyon/aktarım ayrıntıları [Biyometrik Veri Aydınlatma ve Rıza](/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza) ile [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) içinde açıklanır.
+**Üçüncü taraflar ve saklama yeri** Doğrulama işlemi; **Google Gemini** (poz ve profil tutarlılığı / kişi doğrulaması) ve **Google Cloud Vision** (**safeSearchDetection** — uygunsuz içerik denetimi) ile sınırlı otomatik değerlendirme için kullanılabilir. Altyapı olarak **Google Cloud / Firebase** tarafında barındırma ve teknik kayıtlar söz konusu olabilir. Kalıcı **biyometrik şablon** veya **embedding** saklanması **hedeflenmez**. Sağlayıcıların rolü ve lokasyon/aktarım ayrıntıları [Biyometrik Veri Aydınlatma ve Rıza](/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza) ile [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) içinde açıklanır.
 
 **Saklama süresi** Yüz tanıma işlemine konu **biyometrik harita** niteliğindeki veri, doğrulama tamamlandıktan sonra **derhal imha** edilir. Sistemde, biyometrik içerik taşımayan **“doğrulandı: evet/hayır”** durumu tutulabilir. İşlem güvenliği için tutulan **biyometrik olmayan** audit/teknik meta kayıtları ise yasal zamanaşımı ve meşru menfaat süreleri çerçevesinde sınırlı süreyle saklanabilir. Rıza geri çekilmesi ve istisnai uzun saklama halleri: [Biyometrik Veri Aydınlatma ve Rıza](/gizlilik-ve-veri-koruma/biyometrik-veri-aydinlatma-riza) **Bölüm 9–10**.
 

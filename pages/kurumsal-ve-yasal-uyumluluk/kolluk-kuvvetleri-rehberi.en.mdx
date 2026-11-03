@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # Law Enforcement Guidelines
 
-**Last updated:** 27.10.2026 · **Version:** 1.1
+**Last updated:** 03.11.2026 · **Version:** 1.2
 
 This guide explains how **legal data requests** submitted by **law enforcement** and other **competent public authorities** (courts, Offices of the Chief Public Prosecutor, regulatory/administrative authorities, etc.) are received, verified, assessed, and answered in connection with services operated by **WIN** (“**Platform**”).
 
@@ -544,7 +544,7 @@ Public authorities may use the form on the [Illegal Content Notice Form](/basvur
 | **Technical/session data** | Device ID, IP, session login/last seen time, error logs | Last seen data is on the server; technical error logs are stored on Firebase/SDK infrastructure. |
 | **Location data** | Approximate or precise (GPS) location information | Processed if the user has granted location permission on their device (showing nearby users, distance); location permission is optional. Retained for the legal retention periods foreseen in legislation. |
 | **Payment/subscription** | Transaction ID, package type, period | Store records and commercial evidence retention periods (10 years) apply. |
-| **Verification data** | Selfie photos, verification result (success/fail) | Photo verification is performed with **Google Gemini 2.5 Flash**. Raw selfie/profile photos are stored on Firebase. WIN accesses the verification result (success/fail) through this process. |
+| **Verification data** | Selfie photos, verification result (success/fail) | Photo verification is performed with **Google Gemini**. Raw selfie/profile photos are stored on Firebase. WIN accesses the verification result (success/fail) through this process. |
 
 <Callout type="warning" title="Examples of data not shared/provided (general)">
   - User **passwords**, secret keys, or authentication secrets. - Raw data held

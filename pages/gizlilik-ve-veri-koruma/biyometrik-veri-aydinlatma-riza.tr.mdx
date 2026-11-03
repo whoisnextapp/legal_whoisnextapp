@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # Biyometrik Veri Aydınlatma ve Açık Rıza Metni
 
-**Son güncelleme:** 03.11.2026 · **Sürüm:** 1.1
+**Son güncelleme:** 03.11.2026 · **Sürüm:** 1.2
 
 Bu metin; **WIN** platformu (“**Platform**”) kapsamında uygulanan **selfie doğrulama / liveness kontrolü** akışında, kullanıcıdan alınan **selfie görüntüsü** ve bu görüntü üzerinden yapılan **yüz doğrulama** gibi işlemlerin **biyometrik veri** kapsamına girebilecek yönleri hakkında sizi bilgilendirmek ve bu işleme faaliyetleri için **açık rızanızı** almak amacıyla hazırlanmıştır.
 
@@ -74,7 +74,7 @@ Bu metin; **WIN** platformu (“**Platform**”) kapsamında uygulanan **selfie 
   veri** kapsamında değerlendirilebilir (KVKK m. 6). - **Neden yapıyoruz?**
   Sahte hesapları azaltmak, dolandırıcılık/taciz risklerini düşürmek ve Platform
   bütünlüğünü korumak için. - **Hangi teknoloji?** Poz ve selfie tabanlı profil
-  doğrulaması **Google Gemini 2.5 Flash** ile; selfie görüntüsünde uygunsuz içerik
+  doğrulaması **Google Gemini** ile; selfie görüntüsünde uygunsuz içerik
   denetimi **Google Cloud Vision** (safeSearchDetection) ile yapılır. (Detaylar:
   Bölüm 6 ve 8) -
   **Pazarlama var mı?** Bu biyometrik işleme, **pazarlama amacıyla yapılmaz**;
@@ -168,7 +168,7 @@ Platform, kullanıcıdan **sağ veya sol elini rastgele şekilde kaldırdığı*
 
 Çekilen selfie görüntüsü aşağıdaki teknik süreçlerden geçer:
 
-- **Google Gemini 2.5 Flash:** İstenen poz (el kaldırma), selfie ile profil fotoğraf(lar)ınız arasındaki tutarlılık ve kişi doğrulaması otomatik değerlendirilir. Doğrulama amacıyla sınırlı işlemdir; kalıcı biyometrik şablon/embedding saklanması hedeflenmez.
+- **Google Gemini:** İstenen poz (el kaldırma), selfie ile profil fotoğraf(lar)ınız arasındaki tutarlılık ve kişi doğrulaması otomatik değerlendirilir. Doğrulama amacıyla sınırlı işlemdir; kalıcı biyometrik şablon/embedding saklanması hedeflenmez.
 - **safeSearchDetection (Google Cloud Vision):** Selfie görüntüsünde uygunsuz içerik olup olmadığı denetlenir.
 
 ### Adım 5: Sonuç, Kısıtlamalar ve İtiraz
@@ -261,7 +261,7 @@ Platformda profil doğrulama ve sahte hesapların önlenmesi amacıyla; doğrula
 
 Bu kapsamda:
 
-- Doğrulama işlemi, **Google Gemini 2.5 Flash** ve **Google Cloud Vision** (safeSearchDetection) servisleri kullanılarak gerçekleştirilir.
+- Doğrulama işlemi, **Google Gemini** ve **Google Cloud Vision** (safeSearchDetection) servisleri kullanılarak gerçekleştirilir.
 - Doğrulama işlemi için **yalnızca anlık kamera görüntüsünün** kullanılacağını, galeri erişimi ile fotoğraf yüklenemeyeceğini biliyorum.
 - Doğrulama için sağladığım selfie görüntüsünün **profilimde yayımlanmayacağını** ve diğer kullanıcılara gösterilmeyeceğini biliyorum. Başarılı doğrulama halinde fotoğraflarıma yeşil tik rozeti eklenecektir. Platformun keşif akışında (Deck) yer alabilmek için en az bir fotoğrafımın bu şekilde doğrulanmış olması gerektiğini anlıyorum.
 - Bu biyometrik işlemenin **pazarlama amacıyla** yapılmayacağını ve reklam hedeflemesinde kullanılmayacağını biliyorum.
@@ -332,14 +332,14 @@ Rıza/izin yönetimi için uygulama içi “Ayarlar > Yasal > Rızalar/İzinler�
 Selfie doğrulama sürecinde; altyapı ve doğrulama amacıyla hizmet sağlayıcılar devreye girebilir. Mevcut kurguda:
 
 - doğrulama selfie’si ve ilişkili kayıtlar, **Google Cloud / Firebase** altyapısında saklanabilir,
-- poz ve yüz/profil tutarlılığı doğrulaması için **Google Gemini 2.5 Flash** kullanılabilir.
+- poz ve yüz/profil tutarlılığı doğrulaması için **Google Gemini** kullanılabilir.
 
 > Önemli: Hizmet sağlayıcıların rolü; “veri işleyen” veya “bağımsız veri sorumlusu” olarak değişebilir. Genel rol yaklaşımı için: [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) ve [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi).
 
 | Sağlayıcı / sistem           | Amaç                                      | Veri türü                           | Lokasyon              | Not                                               |
 | ---------------------------- | ----------------------------------------- | ----------------------------------- | --------------------- | ------------------------------------------------- |
 | **Google Cloud / Firebase**     | Barındırma, saklama; selfie üzerinde uygunsuz içerik denetimi (Google Cloud Vision — Safe Search) | Selfie görüntüsü ve teknik kayıtlar        | **EU (multi-region)**     | Veriler şifrelenmektedir.                                                                 |
-| **Google Gemini 2.5 Flash**     | Poz ve selfie tabanlı profil doğrulama (tutarlılık / kişi doğrulaması)                              | Selfie görüntüsü (anlık), profil görselleri | Google’ın küresel altyapısı; Google’ın veya alt yüklenicilerinin tesis bulundurduğu herhangi bir ülkede, AB dışında da işlenebilir | Doğrulama amacıyla sınırlı otomatik değerlendirme; kalıcı biyometrik şablon/embedding saklanması hedeflenmez. |
+| **Google Gemini**               | Poz ve selfie tabanlı profil doğrulama (tutarlılık / kişi doğrulaması)                              | Selfie görüntüsü (anlık), profil görselleri | Google’ın küresel altyapısı; Google’ın veya alt yüklenicilerinin tesis bulundurduğu herhangi bir ülkede, AB dışında da işlenebilir | Doğrulama amacıyla sınırlı otomatik değerlendirme; kalıcı biyometrik şablon/embedding saklanması hedeflenmez. |
 
 <Callout type="warning" title="Yurt dışı aktarım notu">
   Verilerin yurt dışındaki sunuculara aktarımı söz konusuysa; KVKK m. 9 ve

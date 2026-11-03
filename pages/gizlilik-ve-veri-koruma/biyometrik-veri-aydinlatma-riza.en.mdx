@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # Biometric Data Disclosure and Explicit Consent Text
 
-**Last updated:** 03.11.2026 · **Version:** 1.1
+**Last updated:** 03.11.2026 · **Version:** 1.2
 
 This text has been prepared to inform you about aspects of processing that may fall within the scope of **biometric data**, such as the **selfie image** received from the user and **face verification** performed through this image, within the **selfie verification / liveness check** flow implemented under the **WIN** platform ("**Platform**"), and to obtain your **explicit consent** for these processing activities.
 
@@ -75,7 +75,7 @@ This text has been prepared to inform you about aspects of processing that may f
   **biometric data** under KVKK (KVKK Art. 6). - **Why do we do it?** To reduce
   fake accounts, lower fraud/harassment risks, and protect Platform integrity. -
   **Which technology?** Pose- and selfie-based profile verification is performed
-  with **Google Gemini 2.5 Flash**; inappropriate content inspection on selfie
+  with **Google Gemini**; inappropriate content inspection on selfie
   images is performed with **Google Cloud Vision** (safeSearchDetection).
   (Details: Sections 6 and 8) - **Any marketing use?** This biometric
   processing is **not done for marketing purposes**; it is not used for
@@ -179,7 +179,7 @@ offered.**
 
 The captured selfie image goes through the following technical processes:
 
-- **Google Gemini 2.5 Flash:** The requested pose (hand raise), consistency between selfie and your profile photo(s), and person verification are automatically assessed. Processing is limited to verification purposes; storing a permanent biometric template/embedding is not aimed.
+- **Google Gemini:** The requested pose (hand raise), consistency between selfie and your profile photo(s), and person verification are automatically assessed. Processing is limited to verification purposes; storing a permanent biometric template/embedding is not aimed.
 - **safeSearchDetection (Google Cloud Vision):** The selfie image is checked for inappropriate content.
 
 ### Step 5: Result, Restrictions, and Objection
@@ -287,7 +287,7 @@ assessment).
 
 In this scope:
 
-- The verification process is carried out using **Google Gemini 2.5 Flash** and **Google Cloud Vision** (safeSearchDetection) services.
+- The verification process is carried out using **Google Gemini** and **Google Cloud Vision** (safeSearchDetection) services.
 - I know that for the verification process, **only instant camera image** will be used, and photos cannot be uploaded via gallery access.
 - I know that the selfie image I provide for verification **will not be published on my profile** and will not be shown to other users. In case of successful verification, a green tick badge will be added to my photos. I understand that at least one of my photos must be verified in this way to be included in the Platform's discovery flow (Deck).
 - I know that this biometric processing **will not be done for marketing purposes** and will not be used in ad targeting.
@@ -368,14 +368,14 @@ In the selfie verification process, service providers may be involved for
 infrastructure and verification purposes. In the current setup:
 
 - verification selfie and related records may be stored on **Google Cloud / Firebase** infrastructure,
-- **Google Gemini 2.5 Flash** may be used for pose and face/profile consistency verification.
+- **Google Gemini** may be used for pose and face/profile consistency verification.
 
 > Important: The role of service providers may vary as "data processor" or "independent data controller." For the general role approach, see: [KVKK Disclosure Text](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) and [Privacy Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi).
 
 | Provider / system               | Purpose                                                                 | Data type                               | Location             | Note                                                                                                          |
 | ------------------------------- | ----------------------------------------------------------------------- | --------------------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------- |
 | **Google Cloud / Firebase**     | Hosting, retention; inappropriate content inspection on selfie (Google Cloud Vision — Safe Search) | Selfie image and technical records       | **EU (multi-region)** | Data is encrypted.                                                                                            |
-| **Google Gemini 2.5 Flash**     | Pose- and selfie-based profile verification (consistency / person verification)                     | Selfie image (instant), profile visuals  | Google’s global infrastructure; may be processed in any country where Google or its agents maintain facilities, including outside the EU | Automated assessment limited to verification purpose; storing permanent biometric template/embedding is not aimed. |
+| **Google Gemini**               | Pose- and selfie-based profile verification (consistency / person verification)                     | Selfie image (instant), profile visuals  | Google’s global infrastructure; may be processed in any country where Google or its agents maintain facilities, including outside the EU | Automated assessment limited to verification purpose; storing permanent biometric template/embedding is not aimed. |
 
 <Callout type="warning" title="Cross-border transfer note">
   If transfer of data to servers abroad is involved, an appropriate transfer
