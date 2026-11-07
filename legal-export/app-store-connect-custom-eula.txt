@@ -9,7 +9,7 @@ BÖLÜM I — KULLANIM KOŞULLARI
 
 # Kullanım Koşulları
 
-**Son güncelleme:** 05.11.2026 · **Sürüm:** 2.3
+**Son güncelleme:** 07.11.2026 · **Sürüm:** 2.4
 
 Bu belge, WIN mobil uygulaması ve ilgili hizmetlerin kullanımına ilişkin kullanıcı ile işletmeci arasındaki hukuki ilişkiyi düzenler. Belgeyi kabul etmeden önce dikkatle okumanız önerilir. Kolay okunabilirlik için bölüm başlarında kısa özetlere yer verilmiştir; **bu özetler metnin tamamının yerine geçmez.**
 
@@ -683,7 +683,7 @@ AB’de bulunan kullanıcılar için, DSA kapsamındaki raporlama ve şeffaflık
 
 ### 9.3 Sanal Öğeler
 
-WIN, şu aşamada **WIN Premium aboneliği** ile tek seferlik **deste paketleri** satışı yapmaktadır (bkz. Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari) Bölüm 3.5). Paket fiyatları pazar koşullarına göre **değişkenlik gösterebilir**; güncel fiyatlar her zaman uygulama içi satın alma ekranlarında gösterilir. Uygulama içinde satın alınabilir sanal para, coin veya kredi bulunmamaktadır. Deste paketleri ile promosyon amaçlı verilen **hediye desteler** (başarım rozetleri ve davet programı) hesaba bağlı, lisans niteliğinde kullanım haklarıdır; devredilemez ve nakde çevrilemez. Hediye destelerin hangi hesaplarda WIN Premium olmadan kullanılabileceği Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari) Bölüm 3.7’de düzenlenir. Gelecekte bu tür sanal öğelerin eklenmesi hâlinde, iade ve kullanım koşulları Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari)nda ayrıca belirtilir.
+WIN, şu aşamada **WIN Premium aboneliği** ile tek seferlik **deste paketleri** satışı yapmaktadır (bkz. Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari) Bölüm 3.5). Paket fiyatları pazar koşullarına göre **değişkenlik gösterebilir**; güncel fiyatlar her zaman uygulama içi satın alma ekranlarında gösterilir. Uygulama içinde satın alınabilir sanal para, coin veya kredi bulunmamaktadır. Deste paketleri ile promosyon amaçlı verilen **hediye desteler** hesaba bağlı, lisans niteliğinde kullanım haklarıdır; devredilemez ve nakde çevrilemez. Hediye destelerin nasıl tanımlandığı ve hangi hesaplarda WIN Premium olmadan kullanılabileceği Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari) Bölüm 3.7’de düzenlenir. Gelecekte bu tür sanal öğelerin eklenmesi hâlinde, iade ve kullanım koşulları Abonelik ve Satın Alma Koşulları (https://legal.whoisnextapp.com/sozlesmeler/abonelik-ve-satin-alma-kosullari)nda ayrıca belirtilir.
 
 ---
 
