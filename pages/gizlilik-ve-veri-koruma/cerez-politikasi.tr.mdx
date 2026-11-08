@@ -304,7 +304,7 @@ WIN; Platformun işletilmesi, güvenliği, analitiği, pazarlama ve benzeri ama�
 - **Firebase Crashlytics (Google):** Uygulama çökme ve hata raporları.
 - **Google Cloud / Firebase:** Bulut altyapısı, Firebase Analytics ve teknik SDK'lar.
 - **Google Gemini:** Profil doğrulama (selfie/liveness) teknolojisi.
-- **GSAP & Bootstrap:** Web arayüzü ve performans/animasyon kütüphaneleri.
+- **Site barındırma (ABD; bazı hizmetler küresel):** Web sitelerimizin barındırılması.
 
 Bu sağlayıcıların sunucuları ve operasyon merkezleri ağırlıklı olarak **yurt dışında** (AB/ABD) bulunmakta olup, bu teknolojilerin kullanımı kapsamında yurt dışına veri aktarımı söz konusu olabilir. Detaylar ve rıza yönetimi için [Açık Rıza Metinleri](/gizlilik-ve-veri-koruma/acik-riza-metinleri) incelenmelidir.
 
@@ -417,7 +417,7 @@ WIN, web ve mobil ortamda aşağıdaki teknolojileri kullanmaktadır. Bu envante
 | Tanımlayıcı / Araç          | Sağlayıcı     | Kategori           | Amaç                                             | Saklama Süresi          | Aktarım            |
 | :-------------------------- | :------------ | :----------------- | :----------------------------------------------- | :---------------------- | :----------------- |
 | **\_ga, \_gid**             | Google        | Analitik           | Kullanıcı trafiği analizi (GA4)                  | 2 Yıl / 24 Saat         | Yurt Dışı (Google) |
-| **IDFA / GAID (reklam tanımlayıcıları)** | Apple/Google | Pazarlama (ölçüm) | Meta, TikTok ve RevenueCat üzerinden reklam kampanyası ölçümü (atıf); iOS’ta yalnızca ATT izniyle. Şu an reklam gösterilmez | Kalıcı (Sıfırlanabilir) | Yurt Dışı |
+| **IDFA / GAID (reklam tanımlayıcıları)** | Apple/Google | Pazarlama (ölçüm) | Meta, TikTok, Google Ads ve RevenueCat üzerinden reklam kampanyası ölçümü (atıf); iOS’ta yalnızca ATT izniyle. Şu an reklam gösterilmez | Kalıcı (Sıfırlanabilir) | Yurt Dışı |
 | **Kurulum kimliği (wn-… / IDFV)** | WIN | Zorunlu | Tek cihaz oturumu; SMS doğrulama kötüye kullanım sınırları | Cihazda: uygulama kaldırılana kadar; sunucuda: hesap süresince | Google Cloud / Firebase |
 | **RevenueCat SDK**          | RevenueCat    | Zorunlu (satın alma) | Abonelik/satın alma doğrulama ve yönetimi; atıf için cihaz tanımlayıcıları (IDFV, izin varsa IDFA, GAID, Android cihaz kimliği) ve IP adresinin iletilmesi | Hizmet süresince | Yurt Dışı (ABD) |
 | **Meta (Facebook) SDK**     | Meta          | Pazarlama (ölçüm)  | Uygulama olayları ve reklam atfı                 | Sağlayıcı politikasına göre | Yurt Dışı |
@@ -426,6 +426,5 @@ WIN, web ve mobil ortamda aşağıdaki teknolojileri kullanmaktadır. Bu envante
 | **Google Mobile Ads SDK**   | Google        | —                  | Yalnızca uygulamanın 1.0.71’den önceki sürümlerinde yüklüdür; reklam gösterilmez | —                       | —                  |
 | **Firebase SDK**            | Google        | Zorunlu / Analitik | Uygulama altyapısı ve teknik performans takibi   | 14 Ay                   | Yurt Dışı (Google) |
 | **HSTS / Security**         | WIN           | Zorunlu            | SSL/TLS bağlantı güvenliği                       | 1 Yıl                   | -                  |
-| **Cloud CDN**               | Google Cloud  | Zorunlu            | İçeriklerin hızlı ve performanslı yüklenmesi     | Oturum                  | Yurt Dışı          |
 
 Tercihlerinizi web sitemizdeki **Çerez Tercih Paneli** veya uygulamanızın **Ayarlar** menüsü üzerinden dilediğiniz zaman güncelleyebilirsiniz.
