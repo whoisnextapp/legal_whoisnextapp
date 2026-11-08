@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # KVKK Aydınlatma Metni
 
-**Son güncelleme:** 07.11.2026 · **Sürüm:** 2.4
+**Son güncelleme:** 08.11.2026 · **Sürüm:** 2.5
 
 Bu metin; **WIN** platformu (“**Platform**”) kapsamında kişisel verilerinizin **6698 sayılı Kişisel Verilerin Korunması Kanunu** (“**KVKK**”) uyarınca işlenmesine ilişkin **aydınlatma yükümlülüğünün** (KVKK m. 10 ve **KVKK Aydınlatma Yükümlülüğü Tebliği**) yerine getirilmesi amacıyla hazırlanmıştır.
 
@@ -113,7 +113,7 @@ WIN’in veri koruma yaklaşımında özellikle şu düzenlemeler dikkate alın�
 - **6698 sayılı KVKK** (m. 4, m. 5, m. 6, m. 7, m. 8, m. 9, m. 10, m. 11–14)
 - **KVKK Aydınlatma Yükümlülüğü Tebliği**
 - **Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ**
-- **Kişisel Verilerin Yurt Dışına Aktarılması Yönetmeliği**
+- **Kişisel Verilerin Yurt Dışına Aktarılmasına İlişkin Usul ve Esaslar Hakkında Yönetmelik**
 - **Kişisel Verilerin Silinmesi, Yok Edilmesi veya Anonim Hale Getirilmesi Hakkında Yönetmelik**
 - **Kişisel Verilerin Silinmesi, Yok Edilmesi veya Anonim Hale Getirilmesi Hakkında Yönetmelik**
 - **5651 sayılı Kanun** (yer sağlayıcı yükümlülükleri ve trafik verisi/log saklama yaklaşımı)
@@ -431,13 +431,16 @@ Platformun doğası gereği, profilinizdeki bazı veriler **diğer kullanıcıla
 
 WIN; Platformu işletmek ve iyileştirmek için hizmet sağlayıcılarla çalışabilir. Bu kapsamda verileriniz; örneğin aşağıdaki alıcı kategorilerine aktarılabilir:
 
-- **Barındırma ve altyapı sağlayıcıları** (Google Cloud / Firebase - **EU Region**, Wix CMS)
+- **Barındırma ve altyapı sağlayıcıları** (Google Cloud / Firebase — **AB ve ABD; bazı hizmetler küresel**)
+- **Site barındırma** sağlayıcıları (web sitelerimizin barındırılması — ABD; bazı hizmetler küresel)
 - **Arama ve deste (öneri) altyapısı** (Meilisearch Cloud — AB/Frankfurt bölgesi: deste oluşturmak için profil özet alanları — yaş, cinsiyet ve görmek istenen cinsiyet, yaklaşık konum, yaşam tarzı ve önem derecesi cevapları, doğrulama/premium durumu, aktiflik ve moderasyon görünürlük bilgileri)
-- **Analitik ve performans/hata izleme** sağlayıcıları (Google Analytics - GA4, Firebase Crashlytics, Sentry)
-- **Reklam ölçümü (atıf)** sağlayıcıları (Meta Platforms — Facebook SDK; TikTok — TikTok Events SDK; iOS’ta Apple Search Ads atıf bilgisi RevenueCat üzerinden). Uygulamada **şu an reklam gösterilmemektedir**; ileride reklam gösterilirse bu metin güncellenir.
-- **Bildirim ve iletişim** sağlayıcıları (Google, Store Vantage CRM; SMS doğrulama için Twilio)
+- **Analitik ve performans/hata izleme** sağlayıcıları (Google Analytics - GA4, Firebase Crashlytics)
+- **Reklam ölçümü (atıf)** sağlayıcıları (Meta Platforms — Facebook SDK; TikTok — TikTok Events SDK; Google Ads — ABD, bazı hizmetler küresel; iOS’ta Apple Search Ads atıf bilgisi RevenueCat üzerinden). Uygulamada **şu an reklam gösterilmemektedir**; ileride reklam gösterilirse bu metin güncellenir.
+- **Bildirim ve iletişim** sağlayıcıları (Google; SMS doğrulama için Twilio)
 - **Ödeme ve abonelik** altyapıları (Apple App Store / Google Play; abonelik yönetimi için RevenueCat, Inc. — ABD)
+- **Mobil platform hizmetleri** (Apple ve Google Play — uygulama mağazası, satın alma, bildirim, giriş ve uygulama bütünlüğü gibi platform hizmetleri; bu hizmetler bakımından **bağımsız veri sorumlusu** olarak — ABD ve İrlanda; bazı hizmetler küresel)
 - **Doğrulama ve içerik denetimi sağlayıcıları** (**Google Gemini** — profil doğrulama ile profil fotoğraflarında yaş ve içerik kontrolü; bölge: Google’ın küresel altyapısı; Google’ın veya alt yüklenicilerinin tesis bulundurduğu herhangi bir ülkede, AB dışında da işlenebilir; **Google Cloud Vision** — fotoğraflar (profil fotoğrafları ve sohbette gönderilen fotoğraflar dahil) üzerinde otomatik uygunsuz içerik denetimi)
+- **E-posta ve destek altyapısı** (destek ve başvuru yazışmaları ile e-posta doğrulama kodlarının gönderimi — ABD; bazı hizmetler küresel)
 - **Destek hizmeti sağlayıcıları** (yapay zekâ tabanlı araçlar dahil)
 
 Bu sağlayıcılar, koşullara göre **veri işleyen** veya **bağımsız veri sorumlusu** konumunda olabilir.
@@ -463,13 +466,13 @@ Bir birleşme, devralma, bölünme veya varlık devri gibi işlemlerde; veriler,
 
 Platform; bulut altyapısı veya bazı hizmet sağlayıcıların yurt dışında bulunması nedeniyle kişisel verilerin yurt dışına aktarılmasını gerektirebilir. Bu tür aktarım hâllerinde:
 
-- **KVKK m. 9** ve **Kişisel Verilerin Yurt Dışına Aktarılması Yönetmeliği** kapsamında gerekli şartlar sağlanır.
+- **KVKK m. 9** ve **Kişisel Verilerin Yurt Dışına Aktarılmasına İlişkin Usul ve Esaslar Hakkında Yönetmelik** kapsamında gerekli şartlar sağlanır.
 - İşbu aktarımlar için kullanıcılardan **açık rıza (consent)** alınacak ve ancak bu onay doğrultusunda aktarım gerçekleştirilecektir.
 - Uygulanabilir mekanizmalara göre; yeterlilik kararı veya uygun güvenceler (standart sözleşmeler) de değerlendirilebilir.
 
 Yurt dışı aktarım rızaları, [Açık Rıza Metinleri](/gizlilik-ve-veri-koruma/acik-riza-metinleri) içinde detaylandırıldığı şekilde, amaç-özgülük ilkesine uygun olarak alınır.
 
-Yurt dışında bulunan başlıca alıcılar: Google (bulut altyapısı, analitik, hata izleme, doğrulama, içerik denetimi), RevenueCat, Inc. (ABD — abonelik altyapısı), Meta Platforms ve TikTok (reklam ölçümü), Twilio (SMS doğrulama), Meilisearch Cloud (AB — arama/deste altyapısı) ve destek hizmeti sağlayıcıları (yapay zekâ tabanlı araçlar dahil).
+Yurt dışında bulunan başlıca alıcılar: Google (AB ve ABD; bazı hizmetler küresel — bulut altyapısı, analitik, hata izleme, reklam ölçümü, doğrulama, içerik denetimi, e-posta ve destek altyapısı), RevenueCat, Inc. (ABD — abonelik altyapısı), Meta Platforms (ABD — reklam ölçümü), TikTok (Singapur, Malezya, ABD ve AB — reklam ölçümü), Twilio (ABD — SMS ve e-posta doğrulama), Meilisearch Cloud (AB — arama/deste altyapısı), site barındırma sağlayıcıları (ABD; bazı hizmetler küresel), mobil platform hizmetleri (Apple ve Google Play — bağımsız veri sorumlusu olarak; ABD ve İrlanda, bazı hizmetler küresel) ve destek hizmeti sağlayıcıları (yapay zekâ tabanlı araçlar dahil).
 
 ---
 

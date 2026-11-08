@@ -2,7 +2,7 @@
 
 import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
-**Son güncelleme:** 05.11.2026 · **Sürüm:** 1.3
+**Son güncelleme:** 08.11.2026 · **Sürüm:** 1.4
 
 Bu politika; **WIN** platformu (“**Platform**”) kapsamında işletilen web alanlarında ve **WIN mobil uygulamasında** kullanılan **çerezler** ve **benzeri izleme teknolojileri** (piksel, SDK, cihaz/reklam tanımlayıcıları vb.) hakkında şeffaf bilgilendirme sağlar. Bu metin, [Gizlilik Politikası](/gizlilik-ve-veri-koruma/gizlilik-politikasi) ve [KVKK Aydınlatma Metni](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni) ile birlikte değerlendirilmelidir.
 
@@ -77,7 +77,7 @@ WIN’in çerez/izleme yaklaşımı, özellikle aşağıdaki düzenlemeler dikka
 
 - **6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK)**
 - **KVKK Aydınlatma Yükümlülüğü Tebliği**
-- **Kişisel Verilerin Yurt Dışına Aktarılması Yönetmeliği**
+- **Kişisel Verilerin Yurt Dışına Aktarılmasına İlişkin Usul ve Esaslar Hakkında Yönetmelik**
 - **6563 sayılı Elektronik Ticaretin Düzenlenmesi Hakkında Kanun (ETK)** ve **Ticari İletişim ve Ticari Elektronik İletiler Yönetmeliği** (özellikle pazarlama/ileti izinleri bakımından)
 - **General Data Protection Regulation (GDPR)** (AB/AEA’da hizmet sunulması veya AB/AEA’daki kullanıcıların verilerinin işlenmesi hâlinde)
 
@@ -247,7 +247,7 @@ WIN, çerezleri/izleyicileri (kullanılan kanala ve özelliğe bağlı olarak) a
 
     ### 6.2 Yurt dışına aktarım
 
-    Çerez/izleme sağlayıcılarının yurt dışında bulunması veya verilerin yurt dışına aktarılması ihtimalinde, KVKK m. 9 ve **Kişisel Verilerin Yurt Dışına Aktarılması Yönetmeliği** kapsamındaki şartlar dikkate alınır. Bu durumda, gereken hallerde **yurt dışı aktarım rızası** alınır (bkz. [Açık Rıza Metinleri](/gizlilik-ve-veri-koruma/acik-riza-metinleri)).
+    Çerez/izleme sağlayıcılarının yurt dışında bulunması veya verilerin yurt dışına aktarılması ihtimalinde, KVKK m. 9 ve **Kişisel Verilerin Yurt Dışına Aktarılmasına İlişkin Usul ve Esaslar Hakkında Yönetmelik** kapsamındaki şartlar dikkate alınır. Bu durumda, gereken hallerde **yurt dışı aktarım rızası** alınır (bkz. [Açık Rıza Metinleri](/gizlilik-ve-veri-koruma/acik-riza-metinleri)).
 
   </Tab>
   <Tab>
@@ -297,17 +297,14 @@ her zaman değiştirilebilir. Rızanın geri alınması, geri alma öncesi yapı
 
 WIN; Platformun işletilmesi, güvenliği, analitiği, pazarlama ve benzeri amaçlarla aşağıdaki **hizmet sağlayıcılarla** ve bunların sağladığı **SDK/çerez** benzeri izleme teknolojileriyle çalışmaktadır:
 
-- **Wix:** Web sitesi altyapısı (CMS) ve e-ticaret bileşenleri.
 - **Google Analytics (GA4):** Web ve uygulama trafik analizi ve performans ölçümü.
 - **RevenueCat (ABD):** Abonelik ve satın alma doğrulama/yönetimi; reklam ölçümü için cihaz tanımlayıcılarının Meta ve TikTok’a iletilmesi.
 - **Meta (Facebook) SDK:** Uygulama olayları ve reklam kampanyası ölçümü (atıf). Facebook ile giriş seçeneği kaldırılmıştır.
 - **TikTok Events SDK:** Uygulama olayları ve reklam kampanyası ölçümü (atıf).
 - **Firebase Crashlytics (Google):** Uygulama çökme ve hata raporları.
-- **Sentry:** Yazılım hata izleme ve çökme raporlama (Issue tracking).
 - **Google Cloud / Firebase:** Bulut altyapısı, Firebase Analytics ve teknik SDK'lar.
 - **Google Gemini:** Profil doğrulama (selfie/liveness) teknolojisi.
 - **GSAP & Bootstrap:** Web arayüzü ve performans/animasyon kütüphaneleri.
-- **Store Vantage:** CRM ve müşteri ilişkileri yönetimi bileşenleri.
 
 Bu sağlayıcıların sunucuları ve operasyon merkezleri ağırlıklı olarak **yurt dışında** (AB/ABD) bulunmakta olup, bu teknolojilerin kullanımı kapsamında yurt dışına veri aktarımı söz konusu olabilir. Detaylar ve rıza yönetimi için [Açık Rıza Metinleri](/gizlilik-ve-veri-koruma/acik-riza-metinleri) incelenmelidir.
 
@@ -419,9 +416,7 @@ WIN, web ve mobil ortamda aşağıdaki teknolojileri kullanmaktadır. Bu envante
 
 | Tanımlayıcı / Araç          | Sağlayıcı     | Kategori           | Amaç                                             | Saklama Süresi          | Aktarım            |
 | :-------------------------- | :------------ | :----------------- | :----------------------------------------------- | :---------------------- | :----------------- |
-| **Wix Cookies**             | Wix           | Zorunlu            | Güvenlik, CSRF koruması ve oturum yönetimi       | Oturum / 12 Ay          | Yurt Dışı (Wix)    |
 | **\_ga, \_gid**             | Google        | Analitik           | Kullanıcı trafiği analizi (GA4)                  | 2 Yıl / 24 Saat         | Yurt Dışı (Google) |
-| **Sentry ID**               | Sentry        | Zorunlu            | Yazılım hatalarını ve çökmeleri izleme           | 90 Gün                  | Yurt Dışı (Sentry) |
 | **IDFA / GAID (reklam tanımlayıcıları)** | Apple/Google | Pazarlama (ölçüm) | Meta, TikTok ve RevenueCat üzerinden reklam kampanyası ölçümü (atıf); iOS’ta yalnızca ATT izniyle. Şu an reklam gösterilmez | Kalıcı (Sıfırlanabilir) | Yurt Dışı |
 | **Kurulum kimliği (wn-… / IDFV)** | WIN | Zorunlu | Tek cihaz oturumu; SMS doğrulama kötüye kullanım sınırları | Cihazda: uygulama kaldırılana kadar; sunucuda: hesap süresince | Google Cloud / Firebase |
 | **RevenueCat SDK**          | RevenueCat    | Zorunlu (satın alma) | Abonelik/satın alma doğrulama ve yönetimi; atıf için cihaz tanımlayıcıları (IDFV, izin varsa IDFA, GAID, Android cihaz kimliği) ve IP adresinin iletilmesi | Hizmet süresince | Yurt Dışı (ABD) |
@@ -430,7 +425,6 @@ WIN, web ve mobil ortamda aşağıdaki teknolojileri kullanmaktadır. Bu envante
 | **Firebase Crashlytics**    | Google        | Zorunlu            | Uygulama çökme ve hata raporları                 | Sağlayıcı politikasına göre | Yurt Dışı (Google) |
 | **Google Mobile Ads SDK**   | Google        | —                  | Yalnızca uygulamanın 1.0.71’den önceki sürümlerinde yüklüdür; reklam gösterilmez | —                       | —                  |
 | **Firebase SDK**            | Google        | Zorunlu / Analitik | Uygulama altyapısı ve teknik performans takibi   | 14 Ay                   | Yurt Dışı (Google) |
-| **Store Vantage / CRM**     | Store Vantage | İşlevsellik        | Müşteri ilişkileri ve destek bileşenleri         | Oturum                  | Yurt Dışı          |
 | **HSTS / Security**         | WIN           | Zorunlu            | SSL/TLS bağlantı güvenliği                       | 1 Yıl                   | -                  |
 | **Cloud CDN**               | Google Cloud  | Zorunlu            | İçeriklerin hızlı ve performanslı yüklenmesi     | Oturum                  | Yurt Dışı          |
 

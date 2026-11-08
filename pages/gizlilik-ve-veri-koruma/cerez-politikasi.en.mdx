@@ -2,7 +2,7 @@
 
 import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
-**Last updated:** 05.11.2026 · **Version:** 1.3
+**Last updated:** 08.11.2026 · **Version:** 1.4
 
 This policy provides transparent information about the **cookies** and **similar tracking technologies** (pixels, SDKs, device/advertising identifiers, etc.) used on web domains operated within the scope of the **WIN** platform ("**Platform**") and in the **WIN mobile application**. This text should be evaluated together with the [Privacy Policy](/gizlilik-ve-veri-koruma/gizlilik-politikasi) and the [KVKK Clarification Notice](/gizlilik-ve-veri-koruma/kvkk-aydinlatma-metni).
 
@@ -77,7 +77,7 @@ WIN's cookie/tracking approach is designed with particular consideration to the 
 
 - **Law No. 6698 on the Protection of Personal Data (KVKK)**
 - **Communique on the Procedures and Principles to Fulfill the Obligation to Inform under KVKK**
-- **Regulation on the Transfer of Personal Data Abroad**
+- **Regulation on the Procedures and Principles for the Transfer of Personal Data Abroad**
 - **Law No. 6563 on the Regulation of Electronic Commerce (ETK)** and **Regulation on Commercial Communication and Commercial Electronic Messages** (especially regarding marketing/communication consents)
 - **General Data Protection Regulation (GDPR)** (if services are offered in the EU/EEA or data of users in the EU/EEA is processed)
 
@@ -247,7 +247,7 @@ Through cookies and similar tracking technologies (depending on the channel used
 
     ### 6.2 Transfer abroad
 
-    In case cookie/tracking providers are located abroad or data may be transferred abroad, conditions under KVKK Art. 9 and the **Regulation on the Transfer of Personal Data Abroad** are considered. In such cases, where required, **consent for overseas transfer** is obtained (see [Explicit Consent Texts](/gizlilik-ve-veri-koruma/acik-riza-metinleri)).
+    In case cookie/tracking providers are located abroad or data may be transferred abroad, conditions under KVKK Art. 9 and the **Regulation on the Procedures and Principles for the Transfer of Personal Data Abroad** are considered. In such cases, where required, **consent for overseas transfer** is obtained (see [Explicit Consent Texts](/gizlilik-ve-veri-koruma/acik-riza-metinleri)).
 
   </Tab>
   <Tab>
@@ -296,17 +296,14 @@ can always be changed. Withdrawal of consent does not affect the lawfulness of p
 
 WIN works for operation, security, analytics, marketing, and similar purposes of the Platform with the following **service providers** and **SDK/cookie-like** tracking technologies they provide:
 
-- **Wix:** Website infrastructure (CMS) and e-commerce components.
 - **Google Analytics (GA4):** Web and app traffic analysis and performance measurement.
 - **RevenueCat (USA):** Subscription and purchase validation/management; forwarding device identifiers to Meta and TikTok for advertising measurement.
 - **Meta (Facebook) SDK:** App events and advertising campaign measurement (attribution). The Facebook login option has been removed.
 - **TikTok Events SDK:** App events and advertising campaign measurement (attribution).
 - **Firebase Crashlytics (Google):** App crash and error reports.
-- **Sentry:** Software error monitoring and crash reporting (Issue tracking).
 - **Google Cloud / Firebase:** Cloud infrastructure, Firebase Analytics, and technical SDKs.
 - **Google Gemini:** Profile verification (selfie/liveness) technology.
 - **GSAP & Bootstrap:** Web interface and performance/animation libraries.
-- **Store Vantage:** CRM and customer relationship management components.
 
 The servers and operation centers of these providers are predominantly located **abroad** (EU/US), and data transfer abroad may occur within the scope of use of these technologies. For details and consent management, [Explicit Consent Texts](/gizlilik-ve-veri-koruma/acik-riza-metinleri) should be reviewed.
 
@@ -417,9 +414,7 @@ WIN uses the following technologies in web and mobile environments. This invento
 
 | Identifier / Tool            | Provider      | Category            | Purpose                                            | Retention Period         | Transfer            |
 | :--------------------------- | :------------ | :------------------ | :------------------------------------------------- | :----------------------- | :------------------ |
-| **Wix Cookies**              | Wix           | Mandatory           | Security, CSRF protection, and session management  | Session / 12 Months      | Abroad (Wix)        |
 | **\_ga, \_gid**              | Google        | Analytics           | User traffic analysis (GA4)                        | 2 Years / 24 Hours       | Abroad (Google)     |
-| **Sentry ID**                | Sentry        | Mandatory           | Monitoring software errors and crashes             | 90 Days                  | Abroad (Sentry)     |
 | **IDFA / GAID (advertising identifiers)** | Apple/Google | Marketing (measurement) | Advertising campaign measurement (attribution) via Meta, TikTok and RevenueCat; on iOS only with ATT permission. No ads are currently shown | Persistent (Resettable) | Abroad |
 | **Installation ID (wn-… / IDFV)** | WIN | Mandatory | Single-device session; SMS verification abuse limits | On device: until the app is uninstalled; on server: for the life of the account | Google Cloud / Firebase |
 | **RevenueCat SDK**           | RevenueCat    | Mandatory (purchases) | Subscription/purchase validation and management; forwarding device identifiers (IDFV, IDFA if permitted, GAID, Android device ID) and the IP address for attribution | For the duration of the service | Abroad (USA) |
@@ -428,7 +423,6 @@ WIN uses the following technologies in web and mobile environments. This invento
 | **Firebase Crashlytics**     | Google        | Mandatory           | App crash and error reports                        | Per provider policy      | Abroad (Google)     |
 | **Google Mobile Ads SDK**    | Google        | —                   | Installed only in app versions earlier than 1.0.71; no ads are shown | —                        | —                   |
 | **Firebase SDK**             | Google        | Mandatory / Analytics| App infrastructure and technical performance tracking| 14 Months              | Abroad (Google)     |
-| **Store Vantage / CRM**      | Store Vantage | Functionality       | Customer relationship and support components       | Session                  | Abroad              |
 | **HSTS / Security**          | WIN           | Mandatory           | SSL/TLS connection security                        | 1 Year                   | -                   |
 | **Cloud CDN**                | Google Cloud  | Mandatory           | Fast and high-performance loading of content       | Session                  | Abroad              |
 

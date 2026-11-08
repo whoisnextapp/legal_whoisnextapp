@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # Biometric Data Disclosure and Explicit Consent Text
 
-**Last updated:** 05.11.2026 · **Version:** 1.2
+**Last updated:** 08.11.2026 · **Version:** 1.3
 
 This text has been prepared to inform you about aspects of processing that may fall within the scope of **biometric data**, such as the **selfie image** received from the user and **face verification** performed through this image, within the **selfie verification / liveness check** flow implemented under the **WIN** platform ("**Platform**"), and to obtain your **explicit consent** for these processing activities.
 
@@ -122,7 +122,7 @@ While preparing this text, the following regulations are mainly taken as basis:
   - **Arts. 11–14** (data subject rights and application procedures),
   - **Art. 12** (obligations regarding data security).
 - **KVKK Communique on the Disclosure Obligation** (layered/clear disclosure approach).
-- **Regulation on the Transfer of Personal Data Abroad** (cross-border transfer mechanisms — to the extent applicable).
+- **Regulation on the Procedures and Principles for the Transfer of Personal Data Abroad** (cross-border transfer mechanisms — to the extent applicable).
 
 If services are offered in the EU/EEA, the GDPR approach is also taken into
 account (Section 7).
@@ -374,7 +374,7 @@ infrastructure and verification purposes. In the current setup:
 
 | Provider / system               | Purpose                                                                 | Data type                               | Location             | Note                                                                                                          |
 | ------------------------------- | ----------------------------------------------------------------------- | --------------------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------- |
-| **Google Cloud / Firebase**     | Hosting, retention; inappropriate content inspection on selfie (Google Cloud Vision — Safe Search) | Selfie image and technical records       | **EU (multi-region)** | Data is encrypted.                                                                                            |
+| **Google Cloud / Firebase**     | Hosting, retention; inappropriate content inspection on selfie (Google Cloud Vision — Safe Search) | Selfie image and technical records       | **EU** (storage; server processing in Belgium); content inspection and some technical records: Google’s global infrastructure | Data is encrypted.                                                                                            |
 | **Google Gemini**               | Pose- and selfie-based profile verification (consistency / person verification)                     | Selfie image (instant), profile visuals  | Google’s global infrastructure; may be processed in any country where Google or its agents maintain facilities, including outside the EU | Automated assessment limited to verification purpose; storing permanent biometric template/embedding is not aimed. |
 
 <Callout type="warning" title="Cross-border transfer note">

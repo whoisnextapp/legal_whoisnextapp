@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # Biyometrik Veri Aydınlatma ve Açık Rıza Metni
 
-**Son güncelleme:** 05.11.2026 · **Sürüm:** 1.2
+**Son güncelleme:** 08.11.2026 · **Sürüm:** 1.3
 
 Bu metin; **WIN** platformu (“**Platform**”) kapsamında uygulanan **selfie doğrulama / liveness kontrolü** akışında, kullanıcıdan alınan **selfie görüntüsü** ve bu görüntü üzerinden yapılan **yüz doğrulama** gibi işlemlerin **biyometrik veri** kapsamına girebilecek yönleri hakkında sizi bilgilendirmek ve bu işleme faaliyetleri için **açık rızanızı** almak amacıyla hazırlanmıştır.
 
@@ -119,7 +119,7 @@ Bu metin hazırlanırken özellikle şu düzenlemeler esas alınır:
   - **m. 11–14** (ilgili kişi hakları ve başvuru usulleri),
   - **m. 12** (veri güvenliğine ilişkin yükümlülükler).
 - **KVKK Aydınlatma Yükümlülüğü Tebliği** (katmanlı/açık bilgilendirme yaklaşımı).
-- **Kişisel Verilerin Yurt Dışına Aktarılması Yönetmeliği** (yurt dışı aktarım mekanizmaları — uygulanabilir olduğu ölçüde).
+- **Kişisel Verilerin Yurt Dışına Aktarılmasına İlişkin Usul ve Esaslar Hakkında Yönetmelik** (yurt dışı aktarım mekanizmaları — uygulanabilir olduğu ölçüde).
 
 AB/AEA’da hizmet sunulması hâlinde ayrıca GDPR yaklaşımı da dikkate alınır (Bölüm 7).
 
@@ -338,7 +338,7 @@ Selfie doğrulama sürecinde; altyapı ve doğrulama amacıyla hizmet sağlayıc
 
 | Sağlayıcı / sistem           | Amaç                                      | Veri türü                           | Lokasyon              | Not                                               |
 | ---------------------------- | ----------------------------------------- | ----------------------------------- | --------------------- | ------------------------------------------------- |
-| **Google Cloud / Firebase**     | Barındırma, saklama; selfie üzerinde uygunsuz içerik denetimi (Google Cloud Vision — Safe Search) | Selfie görüntüsü ve teknik kayıtlar        | **EU (multi-region)**     | Veriler şifrelenmektedir.                                                                 |
+| **Google Cloud / Firebase**     | Barındırma, saklama; selfie üzerinde uygunsuz içerik denetimi (Google Cloud Vision — Safe Search) | Selfie görüntüsü ve teknik kayıtlar        | **AB** (saklama; sunucu işlemleri Belçika); içerik denetimi ve bazı teknik kayıtlar: Google’ın küresel altyapısı | Veriler şifrelenmektedir.                                                                 |
 | **Google Gemini**               | Poz ve selfie tabanlı profil doğrulama (tutarlılık / kişi doğrulaması)                              | Selfie görüntüsü (anlık), profil görselleri | Google’ın küresel altyapısı; Google’ın veya alt yüklenicilerinin tesis bulundurduğu herhangi bir ülkede, AB dışında da işlenebilir | Doğrulama amacıyla sınırlı otomatik değerlendirme; kalıcı biyometrik şablon/embedding saklanması hedeflenmez. |
 
 <Callout type="warning" title="Yurt dışı aktarım notu">

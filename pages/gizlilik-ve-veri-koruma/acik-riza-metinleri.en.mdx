@@ -2,7 +2,7 @@ import { Callout, Tabs, Tab, Steps, Cards, Card } from "nextra/components";
 
 # Explicit Consent Texts
 
-**Last updated:** 05.11.2026 · **Version:** 1.6
+**Last updated:** 08.11.2026 · **Version:** 1.7
 
 This page contains the **explicit consent** ("**Explicit Consent**") texts that may be obtained from users for specific data processing activities within the scope of the **WIN** platform ("**Platform**"), together with in-app design recommendations.
 
@@ -148,7 +148,7 @@ Sample separation:
 
 - Location data processing (GPS - Foreground Only; optional, if location permission is granted)
 - Special category/sensitive fields (religion/political opinion, etc.)
-- Cross-border transfer (Google’s global infrastructure / Firebase EU)
+- Cross-border transfer (Google Cloud / Firebase — EU and USA; some services global)
 - Marketing messages (SMS, Email, Push)
 - Personalized advertising/tracking (IDFA/GAID, etc.)
 
@@ -298,11 +298,11 @@ With the 2024 amendment, KVKK Art. 9 provides mechanisms such as **adequacy deci
     <Callout type="info" title="Information text (can be used without consent checkbox) — template">
     **Cross-Border Transfer Information (with Appropriate Safeguards)**
 
-    The Platform may require your personal data to be processed in systems located abroad due to cloud infrastructure and service providers. Such transfers are carried out under KVKK Art. 9 and the "Regulation on Procedures and Principles Regarding the Transfer of Personal Data Abroad" through mechanisms such as an **adequacy decision** or **appropriate safeguards** (e.g., standard contracts announced by the Board).
+    The Platform may require your personal data to be processed in systems located abroad due to cloud infrastructure and service providers. Such transfers are carried out under KVKK Art. 9 and the "Regulation on the Procedures and Principles for the Transfer of Personal Data Abroad" through mechanisms such as an **adequacy decision** or **appropriate safeguards** (e.g., standard contracts announced by the Board).
 
     In the Platform's current technical architecture, the following providers are used and these providers' servers are predominantly located **abroad** (EU/US):
 
-    - **Google Cloud / Firebase:** Hosting, database, notification infrastructure. (Location: **EU**)
+    - **Google Cloud / Firebase:** Hosting, database, notification infrastructure. (Location: **EU and USA; some services global**)
     - **Google Cloud Vision:** Automated inappropriate content checks on photos (including profile photos and photos sent in chat). (Location: Google’s global infrastructure; may be processed outside the EU)
     - **Google Gemini:** Pose and selfie-based profile verification; age and content checks on profile photos. (Location: Google’s global infrastructure; may be processed in any country where Google or its agents maintain facilities, including outside the EU)
     - **MeiliSearch:** Search and filtering (catalog) infrastructure.
