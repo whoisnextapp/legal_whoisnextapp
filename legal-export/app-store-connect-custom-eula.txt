@@ -9,7 +9,7 @@ BÖLÜM I — KULLANIM KOŞULLARI
 
 # Kullanım Koşulları
 
-**Son güncelleme:** 08.11.2026 · **Sürüm:** 2.5
+**Son güncelleme:** 07.11.2026 · **Sürüm:** 2.4
 
 Bu belge, WIN mobil uygulaması ve ilgili hizmetlerin kullanımına ilişkin kullanıcı ile işletmeci arasındaki hukuki ilişkiyi düzenler. Belgeyi kabul etmeden önce dikkatle okumanız önerilir. Kolay okunabilirlik için bölüm başlarında kısa özetlere yer verilmiştir; **bu özetler metnin tamamının yerine geçmez.**
 
@@ -715,7 +715,7 @@ Gizlilik ve kişisel veri işleme kuralları aşağıdaki belgelerde açıklanı
 
 ### 10.2 Özet
 
-WIN, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında veri sorumlusudur. Verileriniz hizmet sunumu, güvenlik, analitik ve yasal yükümlülükler dahil amaçlarla işlenir; KVKK Aydınlatma Yükümlülüğü Tebliği’ne uygun aydınlatma metinleri sunulur. KVKK m. 11 kapsamındaki haklarınızı (bilgi talep etme, düzeltme, silme, itiraz vb.) kullanmak için KVKK Başvuru Formu (https://legal.whoisnextapp.com/basvuru-formlari/kvkk-basvuru-formu) sayfasından formu indirip başvurunuzu iletebilirsiniz. Web alanlarımızda çerez yönetimi için bir Çerez Tercih Paneli (**CMP**) sunulmakta olup tercihlerinizi dilediğiniz zaman güncelleyebilirsiniz. Yurt dışına aktarım varsa Gizlilik Politikası ve Kişisel Verilerin Yurt Dışına Aktarılmasına İlişkin Usul ve Esaslar Hakkında Yönetmelik çerçevesinde belirtilir.
+WIN, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında veri sorumlusudur. Verileriniz hizmet sunumu, güvenlik, analitik ve yasal yükümlülükler dahil amaçlarla işlenir; KVKK Aydınlatma Yükümlülüğü Tebliği’ne uygun aydınlatma metinleri sunulur. KVKK m. 11 kapsamındaki haklarınızı (bilgi talep etme, düzeltme, silme, itiraz vb.) kullanmak için KVKK Başvuru Formu (https://legal.whoisnextapp.com/basvuru-formlari/kvkk-basvuru-formu) sayfasından formu indirip başvurunuzu iletebilirsiniz. Web alanlarımızda çerez yönetimi için bir Çerez Tercih Paneli (**CMP**) sunulmakta olup tercihlerinizi dilediğiniz zaman güncelleyebilirsiniz. Yurt dışına aktarım varsa Gizlilik Politikası ve Kişisel Verilerin Yurt Dışına Aktarılması Yönetmeliği çerçevesinde belirtilir.
 
 Kanuni zorunluluk, bu Koşulların uygulanması, üçüncü taraf veya WIN haklarının korunması veya suç/dolandırıcılık şüphesi incelemesi gibi hallerde WIN’in hesap bilgilerinize (içerik dahil) **erişebileceğini**, **saklayabileceğini** veya **ifşa edebileceğini** kabul edersiniz; ayrıntılar Gizlilik Politikası (https://legal.whoisnextapp.com/gizlilik-ve-veri-koruma/gizlilik-politikasi) içinde yer alır.
 
